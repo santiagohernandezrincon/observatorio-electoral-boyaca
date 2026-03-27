@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Observatorio Electoral de Boyacá | Análisis Político</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="title-section">
+                <h1>🗳️ Observatorio Electoral de Boyacá</h1>
+                <p class="subtitle">
+                    Análisis integral de resultados electorales 2019–2026 | Mapas interactivos, comparaciones, trayectorias de candidatos y desagregación por puestos de votación
+                </p>
+            </div>
+            <div class="credits">
+                <p><i class="fas fa-database"></i> Datos oficiales de la <strong>Registraduría Nacional del Estado Civil</strong> · Procesamiento y visualización por <strong>Santiago Hernández Rincón</strong> | Politólogo – Universidad Nacional</p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/tuusuario/dashboard-boyaca" target="_blank">Código abierto</a> · Metodología disponible en el repositorio</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Controles -->
+    <div class="controls-panel">
+        <div class="control-group">
+            <label>Año</label>
+            <select id="anio-selector">
+                <option value="2026">2026</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2019">2019</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label>Elección / Corporación</label>
+            <select id="corporacion-selector"></select>
+        </div>
+        <div class="control-group">
+            <label>Visualización</label>
+            <select id="tipo-vista">
+                <option value="partido">Partido ganador por municipio</option>
+                <option value="partido_heat">Mapa de calor: partido específico</option>
+                <option value="candidato_heat">Mapa de calor: candidato específico</option>
+                <option value="candidato_ganador">Candidato ganador municipal</option>
+                <option value="candidato_ganador_por_partido">Ganador municipal por partido</option>
+                <option value="comparar">Comparar dos elementos</option>
+            </select>
+        </div>
+        <div class="control-group" id="partido-selector-container" style="display:none;">
+            <label>Partido</label>
+            <select id="partido-selector"></select>
+        </div>
+        <div class="control-group" id="candidato-selector-container" style="display:none;">
+            <label>Candidato</label>
+            <select id="candidato-selector"></select>
+        </div>
+        <div class="control-group" id="partido-ganador-container" style="display:none;">
+            <label>Partido</label>
+            <select id="partido-ganador-selector"></select>
+        </div>
+        <div class="control-group" id="candidato-ganador-filtro-container" style="display:none;">
+            <label>Filtrar candidato</label>
+            <select id="candidato-ganador-filtro"></select>
+        </div>
+        <div class="control-group" id="heatmap-porcentaje-container" style="display:none;">
+            <label><input type="checkbox" id="heatmap-porcentaje-checkbox"> Mostrar porcentaje</label>
+        </div>
+        <div class="control-group">
+            <label>Escala</label>
+            <select id="escala-selector">
+                <option value="municipio">Municipio</option>
+                <option value="provincia">Provincia</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label><input type="checkbox" id="toggle-puestos"> Mostrar puestos de votación</label>
+        </div>
+        <div class="control-group">
+            <button id="actualizar" class="btn-primary">Actualizar mapa</button>
+        </div>
+        <div id="comparar-controls" style="display:none; gap:0.5rem; align-items:flex-end; flex-wrap:wrap;">
+            <div class="control-group">
+                <label>Elemento A</label>
+                <select id="comparar-tipo-a"><option value="partido">Partido</option><option value="candidato">Candidato</option></select>
+                <select id="comparar-valor-a"></select>
+            </div>
+            <div class="control-group">
+                <label>Elemento B</label>
+                <select id="comparar-tipo-b"><option value="partido">Partido</option><option value="candidato">Candidato</option></select>
+                <select id="comparar-valor-b"></select>
+            </div>
+            <div class="control-group">
+                <button id="comparar-update" class="btn-secondary">Comparar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de búsqueda y herramientas -->
+    <div class="toolbar">
+        <div class="search-box">
+            <input type="text" id="buscador-municipio" placeholder="Buscar municipio...">
+            <button id="btn-buscar" class="btn-secondary"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="graph-tools">
+            <button id="btn-barras" class="btn-icon active"><i class="fas fa-chart-bar"></i> Barras</button>
+            <button id="btn-circular" class="btn-icon"><i class="fas fa-chart-pie"></i> Circular</button>
+            <button id="btn-filtrar-consejos" class="btn-icon"><i class="fas fa-filter"></i> Excluir Consejos</button>
+        </div>
+    </div>
+
+    <!-- Mapa + panel lateral -->
+    <div class="dashboard-layout">
+        <!-- Mapa principal y comparación -->
+        <div id="map-container-simple" class="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="map-container-comparison" class="map-container" style="display:none;">
+            <div class="comparison-maps">
+                <div class="map-card"><div id="map-a" class="map-sub"></div><div class="map-label" id="label-a"></div></div>
+                <div class="map-card"><div id="map-b" class="map-sub"></div><div class="map-label" id="label-b"></div></div>
+            </div>
+            <div id="detalle-compare" class="detail-panel"></div>
+        </div>
+
+        <!-- Panel lateral de detalle (solo texto, sin gráfico) -->
+        <div class="detail-panel">
+            <div class="detail-header">
+                <h3><i class="fas fa-info-circle"></i> Información del municipio / puesto</h3>
+                <button id="toggle-resumen" class="btn-icon-sm"><i class="fas fa-chart-line"></i> Resumen</button>
+            </div>
+            <div id="detalle-municipio" class="detail-content">
+                <p>Haz clic en un municipio para ver detalles</p>
+            </div>
+            <div id="resumen-panel" class="resumen-panel" style="display:none;">
+                <h4>Resumen departamental</h4>
+                <div id="resumen-contenido"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE GRÁFICOS (independiente, debajo del mapa) -->
+    <div class="charts-section">
+        <h3><i class="fas fa-chart-simple"></i> Visualización detallada</h3>
+        <div class="chart-card">
+            <canvas id="chart-municipio"></canvas>
+        </div>
+    </div>
+
+    <!-- Análisis de trayectoria municipal -->
+    <div class="trajectory-section">
+        <h3><i class="fas fa-chart-line"></i> Análisis de trayectoria municipal</h3>
+        <div class="trajectory-controls">
+            <select id="municipio-selector-trayectoria"><option value="">Seleccione municipio</option></select>
+            <div id="comparaciones-list" class="comparaciones-list"></div>
+            <button id="btn-agregar-comparacion" class="btn-secondary">+ Agregar comparación</button>
+            <button id="btn-actualizar-trayectoria-municipio" class="btn-primary">Actualizar gráfico</button>
+        </div>
+        <div class="trajectory-municipio-container">
+            <canvas id="trajectory-municipio-chart"></canvas>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><i class="fas fa-chalkboard-teacher"></i> Desarrollado por <strong>Santiago Hernández Rincón</strong> | Politólogo, Universidad Nacional de Colombia</p>
+            <p><i class="fas fa-database"></i> Fuente: Registraduría Nacional del Estado Civil – Escrutinios 2019, 2022, 2023, 2026. Datos procesados con Python y visualizados con Leaflet y Chart.js.</p>
+            <p><i class="fab fa-creative-commons"></i> Licencia: Creative Commons BY-NC 4.0 · Proyecto de código abierto</p>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
