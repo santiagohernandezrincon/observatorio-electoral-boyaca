@@ -419,3 +419,58 @@ select:focus, input:focus {
         max-height: 300px;
     }
 }
+/* ============================================
+   RESPONSIVE — añadir al final del CSS actual
+   ============================================ */
+
+/* Tablet (768px y menor) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #sidebar,
+  #panel-controles,
+  .controles {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+
+  #mapa,
+  #map {
+    height: 55vh !important;
+    min-height: 300px;
+  }
+
+  .panel-analisis,
+  #panel-graficas,
+  #contenedor-graficas {
+    width: 100% !important;
+    padding: 8px !important;
+  }
+
+  select,
+  button,
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* Móvil (480px y menor) */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.1rem;
+  }
+
+  #mapa,
+  #map {
+    height: 45vh !important;
+  }
+
+  .grid-municipios,
+  .contenedor-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
