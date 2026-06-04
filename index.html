@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Observatorio Electoral de Boyacá | Análisis Político 2011–2026</title>
-  <meta name="description" content="Análisis integral de resultados electorales en Boyacá 2011–2026. Mapas interactivos, comparaciones históricas y trayectorias de candidatos desagregadas por puestos de votación. Datos oficiales Registraduría." />
+  <meta name="description" content="Análisis integral de resultados electorales en Boyacá 2019-2026. Mapas interactivos por municipio y puesto de votación. Datos oficiales Registraduría Nacional." />
   <meta name="author" content="Santiago Hernández Rincón — Politólogo, Universidad Nacional de Colombia" />
   <meta name="keywords" content="elecciones Boyacá, resultados electorales, observatorio electoral, Registraduría, política Colombia, análisis electoral" />
 
@@ -20,7 +20,18 @@
   <meta name="twitter:title" content="Observatorio Electoral de Boyacá" />
   <meta name="twitter:description" content="Análisis electoral de Boyacá 2011–2026 con mapas interactivos y desagregación por puestos de votación." />
 
-  <!-- El resto de tus <link> y <script> de Leaflet, Chart.js, etc. van aquí -->
+  <!-- Estilos locales -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Leaflet 1.9.4 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- FontAwesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Chart.js 4.4.1 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -191,6 +202,10 @@
     </footer>
 </div>
 
-<script src="script.js"></script>
+<script src="js/globals.js"></script>
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/ui.js"></script>
 </body>
 </html>

@@ -141,7 +141,7 @@ function getColorCandidato(nombreCandidato) {
 
 // ==================== CONFIGURACIÓN DE RUTAS Y ARCHIVOS ====================
 const basePath = 'data/';
-const geojsonPath = 'https://raw.githubusercontent.com/mwlware/geojson_boyaca/main/boyaca_geojson_123_municipios.geojson';
+const geojsonPath = 'geojson/boyaca_municipios_simple.geojson';
 
 const archivosPorAnio = {
     2026: {
