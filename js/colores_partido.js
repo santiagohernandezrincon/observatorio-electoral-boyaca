@@ -7,6 +7,8 @@ const NORMALIZAR_PARTIDO = {
   // PARTIDO CONSERVADOR
   'Partido Conservador Colombiano':'Partido Conservador Colombiano',
   'PARTIDO CONSERVADOR COLOMBIANO':'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR':'Partido Conservador Colombiano',
+  'Partido Conservador':'Partido Conservador Colombiano',
   // PARTIDO DE LA U
   'Partido de la U':'Partido de la U',
   'Partido De La U':'Partido de la U',
@@ -250,6 +252,17 @@ function normalizePartido(nombre) {
   const u = s.toUpperCase();
   for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
     if (k.replace(/\s+/g, ' ').toUpperCase() === u) return NORMALIZAR_PARTIDO[k];
+  }
+  // Aval compartido: "PARTIDO A - PARTIDO B" → tomar el primer partido
+  if (s.includes(' - ') || s.includes(' – ')) {
+    const primero = s.split(/ [-–] /)[0].trim();
+    const normPrimero = NORMALIZAR_PARTIDO[primero];
+    if (normPrimero) return normPrimero;
+    // intento case-insensitive
+    const uPrimero = primero.toUpperCase();
+    for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
+      if (k.toUpperCase() === uPrimero) return NORMALIZAR_PARTIDO[k];
+    }
   }
   return s;
 }
