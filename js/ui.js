@@ -571,19 +571,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     animarKPIs();
 
-    const heroSection = document.getElementById('hero-section');
-    if (heroSection) {
-        let heroVisible = true;
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY > 80;
-            if (scrolled && heroVisible) {
-                heroSection.classList.add('hero-hidden');
-                heroVisible = false;
-            } else if (!scrolled && !heroVisible) {
-                heroSection.classList.remove('hero-hidden');
-                heroVisible = true;
+    const hero = document.getElementById('hero-section');
+    const colapsarHero = () => {
+        if (hero) hero.classList.add('hero-collapsed');
+    };
+    if (hero) {
+        // Colapsa al primer scroll
+        window.addEventListener('scroll', colapsarHero, { once: true, passive: true });
+        // Colapsa al primer clic en cualquier filtro
+        document.addEventListener('click', function handler(e) {
+            if (e.target.closest('.filter-bar')) {
+                colapsarHero();
+                document.removeEventListener('click', handler);
             }
-        }, { passive: true });
+        });
     }
 });
 
