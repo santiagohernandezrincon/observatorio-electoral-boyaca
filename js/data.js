@@ -2,31 +2,19 @@
 const basePath = 'data/';
 const geojsonPath = 'geojson/boyaca_municipios_simple.geojson';
 
-const archivosPorAnio = {
-    2026: {
-        camara:  { partido: 'votos_partido_municipio_2026_camara.csv',    candidato: 'votos_candidato_municipio_2026_camara.csv' },
-        senado:  { partido: 'votos_partido_municipio_2026_senado.csv',    candidato: 'votos_candidato_municipio_2026_senado.csv' },
-        consulta:{ partido: 'votos_partido_municipio_2026_consultas.csv', candidato: 'votos_candidato_municipio_2026_consultas.csv' }
-    },
-    2022: {
-        camara: { partido: 'votos_partido_municipio_2022_camara.csv', candidato: 'votos_candidato_municipio_2022_camara.csv' },
-        senado: { partido: 'votos_partido_municipio_2022_senado.csv', candidato: 'votos_candidato_municipio_2022_senado.csv' }
-    },
-    2023: {
-        gobernador: { partido: 'votos_partido_municipio_2023_gobernador.csv', candidato: 'votos_candidato_municipio_2023_gobernador.csv' },
-        asamblea:   { partido: 'votos_partido_municipio_2023_asamblea.csv',   candidato: 'votos_candidato_municipio_2023_asamblea.csv' },
-        alcalde:    { partido: 'votos_partido_municipio_2023_alcalde.csv',    candidato: 'votos_candidato_municipio_2023_alcalde.csv' },
-        concejo:    { partido: 'votos_partido_municipio_2023_concejo.csv',    candidato: 'votos_candidato_municipio_2023_concejo.csv' },
-        jal:        { partido: 'votos_partido_municipio_2023_jal.csv',        candidato: 'votos_candidato_municipio_2023_jal.csv' }
-    },
-    2019: {
-        gobernador: { partido: 'votos_partido_municipio_2019_gobernador.csv', candidato: 'votos_candidato_municipio_2019_gobernador.csv' },
-        asamblea:   { partido: 'votos_partido_municipio_2019_asamblea.csv',   candidato: 'votos_candidato_municipio_2019_asamblea.csv' },
-        alcalde:    { partido: 'votos_partido_municipio_2019_alcalde.csv',    candidato: 'votos_candidato_municipio_2019_alcalde.csv' },
-        concejo:    { partido: 'votos_partido_municipio_2019_concejo.csv',    candidato: 'votos_candidato_municipio_2019_concejo.csv' },
-        jal:        { partido: 'votos_partido_municipio_2019_jal.csv',        candidato: 'votos_candidato_municipio_2019_jal.csv' }
-    }
-};
+const archivosPorAnio = (() => {
+    const result = {};
+    Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
+        result[anio] = {};
+        corps.forEach(corp => {
+            result[anio][corp] = {
+                partido:   `votos_partido_municipio_${anio}_${corp}.csv`,
+                candidato: `votos_candidato_municipio_${anio}_${corp}.csv`
+            };
+        });
+    });
+    return result;
+})();
 
 // ==================== COLORES DE PARTIDOS ====================
 const palabrasClave = {

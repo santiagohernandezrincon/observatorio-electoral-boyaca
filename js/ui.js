@@ -214,34 +214,35 @@ function crearFilaComparacion(index) {
     const div = document.createElement('div');
     div.className = 'comparacion-item';
     div.setAttribute('data-index', index);
+
+    const aniosOptions = Object.keys(DATOS_DISPONIBLES)
+        .map(Number).sort((a, b) => b - a)
+        .map(a => `<option value="${a}">${a}</option>`).join('');
+
     div.innerHTML = `
-        <select class="comparacion-anio" style="width:80px">
-            <option value="2019">2019</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2026">2026</option>
-        </select>
-        <select class="comparacion-corporacion" style="width:100px">
-            <option value="camara">Cámara</option>
-            <option value="senado">Senado</option>
-            <option value="asamblea">Asamblea</option>
-            <option value="gobernador">Gobernador</option>
-            <option value="alcalde">Alcalde</option>
-            <option value="concejo">Concejo</option>
-        </select>
+        <select class="comparacion-anio" style="width:80px">${aniosOptions}</select>
+        <select class="comparacion-corporacion" style="width:200px"></select>
         <select class="comparacion-candidato" style="width:200px">
             <option value="">Seleccione candidato</option>
         </select>
         <button class="btn-eliminar-comparacion">🗑️</button>
     `;
-    const anioSel  = div.querySelector('.comparacion-anio');
-    const corpSel  = div.querySelector('.comparacion-corporacion');
-    const canSel   = div.querySelector('.comparacion-candidato');
+    const anioSel = div.querySelector('.comparacion-anio');
+    const corpSel = div.querySelector('.comparacion-corporacion');
+    const canSel  = div.querySelector('.comparacion-candidato');
+
+    function actualizarCorpSel() {
+        corpSel.innerHTML = (DATOS_DISPONIBLES[anioSel.value] || [])
+            .map(corp => `<option value="${corp}">${LABELS_CORPORACION[corp] || corp}</option>`).join('');
+    }
+
     const cargar = () => {
         if (anioSel.value && corpSel.value) cargarCandidatosParaSelector(anioSel.value, corpSel.value, canSel);
         else canSel.innerHTML = '<option value="">Seleccione año y corporación</option>';
     };
-    anioSel.addEventListener('change', cargar);
+
+    actualizarCorpSel();
+    anioSel.addEventListener('change', () => { actualizarCorpSel(); cargar(); });
     corpSel.addEventListener('change', cargar);
     div.querySelector('.btn-eliminar-comparacion').addEventListener('click', () => {
         div.remove();
@@ -283,18 +284,34 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Error cargando provincias:', error);
     }
 
+    // Selector de año
+    function inicializarSelectorAnio() {
+        const selector = document.getElementById('anio-selector');
+        selector.innerHTML = '';
+        Object.keys(DATOS_DISPONIBLES)
+            .map(Number).sort((a, b) => b - a)
+            .forEach(anio => {
+                const opt = document.createElement('option');
+                opt.value = String(anio);
+                opt.textContent = String(anio);
+                if (String(anio) === '2026') opt.selected = true;
+                selector.appendChild(opt);
+            });
+    }
+
     // Selector de corporación
     function actualizarSelectorCorporacion(anio) {
         const selector = document.getElementById('corporacion-selector');
         selector.innerHTML = '';
-        Object.keys(archivosPorAnio[anio] || {}).forEach(corp => {
+        (DATOS_DISPONIBLES[anio] || []).forEach(corp => {
             const opt = document.createElement('option');
             opt.value = corp;
-            opt.textContent = corp.charAt(0).toUpperCase() + corp.slice(1);
+            opt.textContent = LABELS_CORPORACION[corp] || corp;
             selector.appendChild(opt);
         });
     }
 
+    inicializarSelectorAnio();
     actualizarSelectorCorporacion('2026');
     await cargarDatos('2026', 'camara');
 
@@ -372,7 +389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('anio-selector').addEventListener('change', e => {
         currentAnio = e.target.value;
         actualizarSelectorCorporacion(currentAnio);
-        const primera = Object.keys(archivosPorAnio[currentAnio])[0];
+        const primera = (DATOS_DISPONIBLES[currentAnio] || [])[0];
         if (primera) { currentCorporacion = primera; cargarDatos(currentAnio, currentCorporacion); }
     });
     document.getElementById('corporacion-selector').addEventListener('change', e => {
