@@ -40,7 +40,7 @@
 
 <div class="app-container">
     <!-- Hero -->
-    <section class="hero-observatory">
+    <section class="hero-observatory" id="hero-section">
       <div class="hero-bg-pattern"></div>
       <div class="hero-content">
         <div class="hero-badge" id="hero-badge">
@@ -179,6 +179,10 @@
         <div class="map-main">
             <div id="map-container-simple" class="map-container">
                 <div id="map"></div>
+                <button class="map-toggle-btn" id="map-toggle-btn"
+                        onclick="toggleMapSize()" title="Expandir/reducir mapa">
+                  <span id="map-toggle-icon">⛶</span>
+                </button>
             </div>
             <div id="map-container-comparison" class="map-container" style="display:none;">
                 <div class="comparison-maps">
@@ -209,7 +213,7 @@
 
     <!-- Sección de análisis con tabs -->
     <div class="analysis-section">
-        <div class="tabs-bar">
+        <div class="analysis-tabs">
             <button class="tab-btn active" data-tab="resultados"><i class="fas fa-chart-bar"></i> Resultados</button>
             <button class="tab-btn" data-tab="trayectoria"><i class="fas fa-chart-line"></i> Trayectoria</button>
             <button class="tab-btn" data-tab="comparacion"><i class="fas fa-balance-scale"></i> Comparación</button>

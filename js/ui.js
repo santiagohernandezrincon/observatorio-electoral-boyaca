@@ -570,4 +570,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     animarKPIs();
+
+    const heroSection = document.getElementById('hero-section');
+    if (heroSection) {
+        let heroVisible = true;
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 80;
+            if (scrolled && heroVisible) {
+                heroSection.classList.add('hero-hidden');
+                heroVisible = false;
+            } else if (!scrolled && !heroVisible) {
+                heroSection.classList.remove('hero-hidden');
+                heroVisible = true;
+            }
+        }, { passive: true });
+    }
 });
+
+function toggleMapSize() {
+    const layout = document.getElementById('map-layout');
+    const icon = document.getElementById('map-toggle-icon');
+    if (!layout) return;
+    const expanded = layout.classList.toggle('map-expanded');
+    if (icon) icon.textContent = expanded ? '⛶' : '⛶';
+    setTimeout(() => {
+        if (typeof mapSimple !== 'undefined' && mapSimple) {
+            mapSimple.invalidateSize();
+        }
+    }, 320);
+}
