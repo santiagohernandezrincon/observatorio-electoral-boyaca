@@ -145,6 +145,66 @@ const NORMALIZAR_PARTIDO = {
   // PLEBISCITO 2016
   'Sí':'Sí','SI':'Sí','SÍ':'Sí','Si':'Sí','Si Se Puede':'Sí',
   'No':'No','NO':'No',
+  // AICO
+  'AICO':'AICO',
+  'MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA':'AICO',
+  'MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA AICO':'AICO',
+  'MOVIMIENTO DE AUTORIDADES INDIGENAS DE COLOMBIA AICO':'AICO',
+  'Movimiento Autoridades Indigenas De Colombia':'AICO',
+  'Movimiento De Autoridades Indigenas De Colombia Aico':'AICO',
+  // PACTO HISTÓRICO — variantes sin tilde
+  'PACTO HISTORICO':'Pacto Histórico',
+  'PACTO HISTORICO COLOMBIA PUEDE':'Pacto Histórico',
+  'PACTO HISTÓRICO COLOMBIA PUEDE':'Pacto Histórico',
+  'COLOMBIA HUMANA - UNION PATRIOTICA':'Pacto Histórico',
+  'MOVIMIENTO POLITICO COLOMBIA HUMANA':'Pacto Histórico',
+  // ASI — variantes
+  'ALIANZA SOCIAL INDIGENA':'Alianza Social Independiente',
+  'ALIANZA SOCIAL INDIGENA ASI':'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE "ASI"':'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE ASI':'Alianza Social Independiente',
+  'Alianza Social Indigena':'Alianza Social Independiente',
+  'Alianza Social Indigena Asi':'Alianza Social Independiente',
+  'Partido Alianza Social Independiente Asi':'Alianza Social Independiente',
+  'Partido ASI':'Alianza Social Independiente',
+  // CAMBIO RADICAL
+  'PARTIDO CAMBIO RADICAL COLOMBIANO':'Cambio Radical',
+  'Partido Cambio Radical Colombiano':'Cambio Radical',
+  // PARTIDO DE LA U
+  'PARTIDO SOCIAL DE LA U':'Partido de la U',
+  'Partido Social De La U':'Partido de la U',
+  // LIGA DE GOBERNANTES
+  'PARTIDO LIGA GOBERNANTES ANTICORRUPCION - LIGA':'Liga de Gobernantes',
+  // COLOMBIA JUSTA LIBRES
+  'PARTIDO COLOMBIA JUSTA LIBRES':'Colombia Justa Libres',
+  // CENTRO DEMOCRÁTICO
+  'PARTIDO CENTRO DEMOCRATICO MANO FIRME CORAZON GRANDE':'Centro Democrático',
+  'Partido Centro Democratico Mano Firme Corazon Grande':'Centro Democrático',
+  // PIN
+  'PARTIDO DE INTEGRACION NACIONAL':'Partido PIN',
+  'Partido De Integracion Nacional':'Partido PIN',
+  // FUERZA CIUDADANA
+  'MOVIMIENTO POLITICO FUERZA CIUDADANA':'Fuerza Ciudadana',
+  // CREEMOS
+  'PARTIDO POLITICO CREEMOS':'Creemos',
+  // MAIS — Title Case
+  'Movimiento Alternativo Indigena Y Social Mais':'MAIS',
+  // MIRA — Title Case
+  'Movimiento Independiente De Renovacion Absoluta Mira':'Movimiento MIRA',
+  // No son partidos
+  'VOTOS EN BLANCO':'Partido sin identificar',
+  'VOTOS NULOS':'Partido sin identificar',
+  'VOTOS NO MARCADOS':'Partido sin identificar',
+  'Votos en blanco':'Partido sin identificar',
+  'Votos nulos':'Partido sin identificar',
+  'Votos no marcados':'Partido sin identificar',
+  'CANDIDATOS TOTALES':'Partido sin identificar',
+  'Sin nombre':'Partido sin identificar',
+  'Sin partido':'Partido sin identificar',
+  'Candidata Retirada':'Partido sin identificar',
+  'Candidatura No Aceptada':'Partido sin identificar',
+  'Revocado (A)':'Partido sin identificar',
+  'Promotores Voto En Blanco':'Partido sin identificar',
   // FALLBACK
   'Partido sin identificar':'Partido sin identificar',
   'Sin identificar':'Partido sin identificar',
@@ -169,6 +229,7 @@ const COLORES_PARTIDO = {
   'Centro Esperanza':              '#8BC34A',
   'Equipo por Colombia':           '#546E7A',
   'Gran Consulta por Colombia':    '#64B5F6',
+  'AICO':                          '#795548',
   'MAIS':                          '#8D4E2A',
   'Creemos':                       '#5C6BC0',
   'MIO':                           '#FFA000',
@@ -184,11 +245,11 @@ const COLORES_PARTIDO = {
 
 function normalizePartido(nombre) {
   if (!nombre) return 'Partido sin identificar';
-  const s = String(nombre).trim();
+  const s = String(nombre).trim().replace(/\s+/g, ' ');
   if (NORMALIZAR_PARTIDO[s]) return NORMALIZAR_PARTIDO[s];
   const u = s.toUpperCase();
   for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
-    if (k.toUpperCase() === u) return NORMALIZAR_PARTIDO[k];
+    if (k.replace(/\s+/g, ' ').toUpperCase() === u) return NORMALIZAR_PARTIDO[k];
   }
   return s;
 }

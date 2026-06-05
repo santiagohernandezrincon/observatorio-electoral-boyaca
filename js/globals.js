@@ -31,6 +31,7 @@ const ABREV_PARTIDO = {
   'Centro Esperanza':              'C. Esperanza',
   'Equipo por Colombia':           'Equipo Colombia',
   'Gran Consulta por Colombia':    'Gran Consulta',
+  'AICO':                          'AICO',
   'MAIS':                          'MAIS',
   'Creemos':                       'Creemos',
   'MIO':                           'MIO',
