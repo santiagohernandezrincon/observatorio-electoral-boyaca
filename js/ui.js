@@ -315,7 +315,7 @@ function inicializarNav() {
       pillsAnio.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');
       actualizarPillsCorp();
-      cargarDatos();
+      cargarDatos(currentAnio, currentCorporacion);
     };
     pillsAnio.appendChild(btn);
   });
@@ -339,7 +339,7 @@ function actualizarPillsCorp() {
       currentCorporacion = c;
       pillsCorp.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');
-      cargarDatos();
+      cargarDatos(currentAnio, currentCorporacion);
     };
     pillsCorp.appendChild(btn);
   });

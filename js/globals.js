@@ -13,28 +13,35 @@ const DATOS_DISPONIBLES = {
 };
 
 const ABREV_PARTIDO = {
-  'Partido Liberal Colombiano':     'P. Liberal',
-  'Partido Conservador Colombiano': 'P. Conservador',
-  'Partido de la U':                'P. de la U',
-  'Cambio Radical':                 'Cambio Radical',
-  'Alianza Verde':                  'A. Verde',
-  'Partido Verde Oxígeno':          'Verde Oxígeno',
-  'Centro Democrático':             'C. Democrático',
-  'Polo Democrático Alternativo':   'Polo Democrático',
-  'Pacto Histórico':                'Pacto Histórico',
-  'Opción Ciudadana':               'Opción Ciudadana',
-  'Movimiento MIRA':                'MIRA',
-  'Alianza Social Independiente':   'ASI',
-  'Comunes':                        'Comunes',
-  'Colombia Justa Libres':          'Col. Justa Libres',
-  'Liga de Gobernantes':            'Liga Gobernantes',
-  'Coalición Colombia':             'Coal. Colombia',
-  'Centro Esperanza':               'Centro Esperanza',
-  'Equipo por Colombia':            'Equipo Colombia',
-  'Gran Consulta por Colombia':     'Gran Consulta',
-  'Partido sin identificar':        'Sin identificar',
-  'Sí':                             'Sí',
-  'No':                             'No',
+  'Partido Liberal Colombiano':    'P. Liberal',
+  'Partido Conservador Colombiano':'P. Conservador',
+  'Partido de la U':               'P. de la U',
+  'Cambio Radical':                'C. Radical',
+  'Alianza Verde':                 'A. Verde',
+  'Partido Verde Oxígeno':         'Verde Oxígeno',
+  'Centro Democrático':            'C. Democrático',
+  'Polo Democrático Alternativo':  'Polo Democrático',
+  'Pacto Histórico':               'Pacto Histórico',
+  'Opción Ciudadana':              'Op. Ciudadana',
+  'Movimiento MIRA':               'MIRA',
+  'Alianza Social Independiente':  'ASI',
+  'Comunes':                       'Comunes',
+  'Colombia Justa Libres':         'Col. Justa Libres',
+  'Liga de Gobernantes':           'Liga Gobernantes',
+  'Centro Esperanza':              'C. Esperanza',
+  'Equipo por Colombia':           'Equipo Colombia',
+  'Gran Consulta por Colombia':    'Gran Consulta',
+  'MAIS':                          'MAIS',
+  'Creemos':                       'Creemos',
+  'MIO':                           'MIO',
+  'Nuevo Liberalismo':             'Nuevo Liberal.',
+  'Unión Patriótica':              'UP',
+  'Fuerza Ciudadana':              'F. Ciudadana',
+  'Colombia Piensa en Grande':     'Col. P. Grande',
+  'Partido PIN':                   'PIN',
+  'Sí':                            'Sí',
+  'No':                            'No',
+  'Partido sin identificar':       'Sin identificar',
 };
 
 const CIRCUNSCRIPCIONES_EXCLUIR = [
@@ -49,7 +56,8 @@ const CIRCUNSCRIPCIONES_EXCLUIR = [
 
 function abreviarPartido(nombre) {
   if (!nombre) return 'Sin partido';
-  return ABREV_PARTIDO[nombre] || nombre;
+  const canonical = (typeof normalizePartido === 'function') ? normalizePartido(nombre) : nombre;
+  return ABREV_PARTIDO[canonical] || canonical;
 }
 
 function abreviarCandidato(nombre) {

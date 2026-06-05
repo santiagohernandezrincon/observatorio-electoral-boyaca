@@ -167,7 +167,7 @@ function getColorCandidato(nombreCandidato) {
         coloresCandidatos[nombreUpper] = color;
         return color;
     }
-    const colorBase = asignarColorPartido(partido);
+    const colorBase = colorPartido(partido);
     let hash = 0;
     for (let i = 0; i < nombreUpper.length; i++) { hash = ((hash << 5) - hash) + nombreUpper.charCodeAt(i); hash |= 0; }
     const colorFinal = variarColorBase(colorBase, Math.abs(hash % 30));
@@ -306,16 +306,19 @@ async function cargarDatos(anio, corporacion) {
                          'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));
         currentPartidoData = partidosFiltrados.map(row => {
+            const parNorm = normalizePartido(row['PARNOMBRE']);
             const colorBase = (row['PARTIDO_BASE'] && coloresBase[row['PARTIDO_BASE']])
                 ? coloresBase[row['PARTIDO_BASE']]
-                : asignarColorPartido(row['PARNOMBRE']);
-            return { ...row, COLOR_BASE: colorBase };
+                : colorPartido(parNorm);
+            return { ...row, PARNOMBRE: parNorm, COLOR_BASE: colorBase };
         });
         console.log(`Partidos cargados: ${currentPartidoData.length} filas`);
 
         const respCandidato = await fetch(basePath + archivos.candidato);
         const csvCandidato = await respCandidato.text();
-        currentCandidatoData = parseCandidatosCSV(csvCandidato).filter(row => !excluir.includes(row['CANNOMBRE']));
+        currentCandidatoData = parseCandidatosCSV(csvCandidato)
+            .filter(row => !excluir.includes(row['CANNOMBRE']))
+            .map(row => ({ ...row, PARNOMBRE: normalizePartido(row['PARNOMBRE']) }));
         console.log(`Candidatos cargados: ${currentCandidatoData.length} filas`);
 
         candidatoPartidoMap.clear();
