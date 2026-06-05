@@ -39,7 +39,103 @@ EXCLUIR = {
     'CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL',
     'VOTOS NULOS TERRITORIAL', 'TARJETAS NO MARCADAS',
+    'RETIRADO', 'RETIRADO (A)', 'RETIRADO(A)', 'CANDIDATO RETIRADO',
 }
+
+# ── Tabla de equivalencia de partidos históricos ───────────────────────────────
+NOMBRES_PARTIDO = {
+    # Partidos grandes históricos
+    '2003001':  'Partido Liberal Colombiano',
+    '2003002':  'Partido Conservador Colombiano',
+    '2005001':  'Partido de la U',
+    '20050001': 'Partido de la U',
+    '20050002': 'Partido de la U',
+    '2005002':  'Cambio Radical',
+    '20050003': 'Cambio Radical',
+    '2003003':  'Polo Democrático Alternativo',
+    '2005003':  'Polo Democrático Alternativo',
+    '2009001':  'Partido Verde',
+    '20090001': 'Partido Verde',
+    '20090002': 'Alianza Verde',
+    '2009002':  'Alianza Verde',
+    '2010001':  'Partido PIN',
+    '20100001': 'Partido PIN',
+    '2003004':  'Movimiento MIRA',
+    '20030004': 'Movimiento MIRA',
+    '2011001':  'Opción Ciudadana',
+    '20110001': 'Opción Ciudadana',
+    '2013001':  'Centro Democrático',
+    '20130001': 'Centro Democrático',
+    '20130002': 'Centro Democrático',
+    '2003005':  'Partido ASI',
+    '20140001': 'Colombia Justa Libres',
+    '20150001': 'Coalición de Gobierno',
+    '20180001': 'Colombia Humana',
+    '20180002': 'Partido de la U',
+    '20180003': 'Partido Liberal Colombiano',
+    '20180004': 'Partido Conservador Colombiano',
+    '20180005': 'Cambio Radical',
+    '20180006': 'Centro Democrático',
+    '20180007': 'Partido Verde',
+    '20180008': 'Polo Democrático',
+    '20180009': 'FARC',
+    '20050004': 'Partido Liberal Colombiano',
+    '20030001': 'Partido Liberal Colombiano',
+    '20030002': 'Partido Conservador Colombiano',
+    # Otros códigos observados en diagnóstico
+    '18480001': 'Partido Conservador Colombiano',
+    '18490002': 'Partido Liberal Colombiano',
+    '19930001': 'Movimiento MIRA',
+    '20060003': 'Polo Democrático Alternativo',
+    '20100063': 'Partido PIN',
+    '19910001': 'Partido ASI',
+    '19910006': 'Partido ASI',
+    '19850001': 'Partido Liberal Colombiano',
+    '20170002': 'Cambio Radical',
+}
+
+def resolver_partido(row):
+    """Resuelve el nombre del partido desde codigo_partido (con fallback a codigo_lista)."""
+    for col in ['codigo_partido', 'codigo_lista']:
+        if col in row.index:
+            val = str(row[col]).strip().split('.')[0]  # quitar decimales si los hay
+            if val in NOMBRES_PARTIDO:
+                return NOMBRES_PARTIDO[val]
+            # Si no es numérico puro, usarlo directamente como nombre
+            if val and not val.replace('-', '').isdigit():
+                return val
+    fallback = str(row.get('codigo_partido', row.get('codigo_lista', 'Sin partido'))).strip()
+    return fallback.split('.')[0]
+
+def formatear_nombre(row):
+    """Produce 'Nombres Apellido1 Apellido2' en Title Case."""
+    _nan = {'nan', 'none', '', 'nat'}
+
+    def _v(s):
+        return str(s).strip() if str(s).strip().lower() not in _nan else ''
+
+    nombres    = _v(row.get('nombres', ''))
+    p_apellido = _v(row.get('primer_apellido', ''))
+    s_apellido = _v(row.get('segundo_apellido', ''))
+
+    if nombres:
+        apellidos = ' '.join(x for x in [p_apellido, s_apellido] if x)
+        result = (nombres + (' ' + apellidos if apellidos else '')).strip().title()
+    elif p_apellido:
+        result = (p_apellido + (' ' + s_apellido if s_apellido else '')).strip().title()
+    else:
+        result = 'Sin nombre'
+
+    # Si el resultado es solo 'Retirado', priorizar apellidos reales
+    if result.strip().upper() == 'RETIRADO':
+        apellidos_real = ' '.join(x.title() for x in [p_apellido, s_apellido]
+                                  if x and x.upper() != 'RETIRADO')
+        if apellidos_real:
+            return apellidos_real
+        nombres_real = nombres if nombres and nombres.upper() != 'RETIRADO' else ''
+        return nombres_real.title() if nombres_real else 'Sin nombre'
+
+    return result
 
 # ── Utilidades ────────────────────────────────────────────────────────────────
 def sep(n=60): print('─' * n)
@@ -113,31 +209,41 @@ def procesar_dta(ruta, anio, cargo_raw):
     df['VOTOS']    = pd.to_numeric(df['votos'], errors='coerce').fillna(0).astype(int)
     df['MUNNOMBRE'] = df['municipio'].str.strip().str.upper()
 
-    # Construir CANNOMBRE
-    df['CANNOMBRE'] = df.apply(build_candidato, axis=1)
+    # Construir CANNOMBRE con formato "Nombres Apellidos"
+    df['CANNOMBRE'] = df.apply(formatear_nombre, axis=1)
 
     # Construir mapa codigo_partido → nombre partido
-    # (filas donde primer_apellido está vacío = el campo 'nombres' tiene el nombre del partido)
+    # (filas donde primer_apellido está vacío = 'nombres' tiene el nombre del partido)
     mask_lista = df['primer_apellido'].apply(clean_str) == ''
     partido_map = {}
     for _, r in df[mask_lista].iterrows():
         cod = clean_str(r.get('codigo_partido', ''))
         nom = clean_str(r.get('nombres', ''))
-        if cod and nom and cod not in partido_map:
+        if (cod and nom and nom.upper() not in EXCLUIR
+                and 'RETIRADO' not in nom.upper() and cod not in partido_map):
             partido_map[cod] = nom
 
     def get_parnombre(row):
-        # Lista: CANNOMBRE ya es el nombre del partido
+        # Fila de lista (sin candidato individual): el nombre del partido está en CANNOMBRE
         if clean_str(row.get('primer_apellido', '')) == '':
             return row['CANNOMBRE']
-        # Candidato individual: buscar en mapa, fallback a codigo_partido
         cod = clean_str(row.get('codigo_partido', ''))
-        return partido_map.get(cod, cod)
+        # 1) Nombre extraído del propio archivo (partido_map)
+        if cod in partido_map:
+            return partido_map[cod]
+        # 2) Tabla de equivalencia histórica (NOMBRES_PARTIDO)
+        if cod in NOMBRES_PARTIDO:
+            return NOMBRES_PARTIDO[cod]
+        # 3) Fallback: resolver_partido intenta el código y texto libre
+        return resolver_partido(row)
 
     df['PARNOMBRE'] = df.apply(get_parnombre, axis=1)
 
-    # Excluir votos especiales
-    df_valido = df[~df['CANNOMBRE'].str.upper().isin(EXCLUIR)].copy()
+    # Excluir votos especiales y candidaturas retiradas
+    df_valido = df[
+        ~df['CANNOMBRE'].str.upper().isin(EXCLUIR) &
+        ~df['PARNOMBRE'].str.upper().isin(EXCLUIR)
+    ].copy()
 
     guardar_candidato(df_valido, anio, cargo)
     guardar_partido(df_valido, anio, cargo)
