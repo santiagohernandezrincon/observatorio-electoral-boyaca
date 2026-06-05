@@ -39,6 +39,7 @@ const ABREV_PARTIDO = {
   'Unión Patriótica':              'UP',
   'Fuerza Ciudadana':              'F. Ciudadana',
   'Colombia Piensa en Grande':     'Col. P. Grande',
+  'Dignidad y Compromiso':         'Dignidad y C.',
   'Partido PIN':                   'PIN',
   'Sí':                            'Sí',
   'No':                            'No',

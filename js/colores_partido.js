@@ -25,6 +25,9 @@ const NORMALIZAR_PARTIDO = {
   'PARTIDO CAMBIO RADICAL':'Cambio Radical',
   // ALIANZA VERDE (incluye era Mockus - Partido Verde)
   'Alianza Verde':'Alianza Verde',
+  'Alianza por Colombia':'Alianza Verde',
+  'ALIANZA POR COLOMBIA':'Alianza Verde',
+  'alianza por colombia':'Alianza Verde',
   'Partido Alianza Verde':'Alianza Verde',
   'PARTIDO ALIANZA VERDE':'Alianza Verde',
   'Partido Verde':'Alianza Verde',
@@ -207,6 +210,11 @@ const NORMALIZAR_PARTIDO = {
   'Candidatura No Aceptada':'Partido sin identificar',
   'Revocado (A)':'Partido sin identificar',
   'Promotores Voto En Blanco':'Partido sin identificar',
+  // DIGNIDAD Y COMPROMISO
+  'Dignidad y Compromiso':'Dignidad y Compromiso',
+  'DIGNIDAD Y COMPROMISO':'Dignidad y Compromiso',
+  'Partido Dignidad y Compromiso':'Dignidad y Compromiso',
+  'PARTIDO DIGNIDAD Y COMPROMISO':'Dignidad y Compromiso',
   // SHORT-FORMS (segmentos en coaliciones)
   'MIRA':'Movimiento MIRA',
   'ASI':'Alianza Social Independiente',
@@ -217,9 +225,48 @@ const NORMALIZAR_PARTIDO = {
   'AICO':'AICO',
   'PIN':'Partido PIN',
   'ALMA':'Alianza Social Independiente',
+  // Códigos numéricos Gobernación Boyacá 2015 — verificados Registraduría
+  '20150606':'Alianza Verde',
+  '20150607':'Cambio Radical',
+  '20150608':'Partido Conservador Colombiano',
+  // Corrección: 20130002 es MAIS, no CD (error en procesar_raw.py)
+  '20130002':'MAIS',
   // FALLBACK
   'Partido sin identificar':'Partido sin identificar',
   'Sin identificar':'Partido sin identificar',
+};
+
+// Lookup candidato → partido para cargos uninominales
+// Fuente: Registraduría Nacional. Formato: 'NOMBRE COMPLETO EN MAYUSCULAS'
+const CANDIDATOS_PARTIDO = {
+  // GOBERNACIÓN BOYACÁ 2015
+  'CARLOS ANDRES AMAYA RODRIGUEZ':   'Alianza Verde',
+  'CARLOS ANDRÉS AMAYA RODRÍGUEZ':   'Alianza Verde',
+  'OSMAN HIPOLITO ROA SARMIENTO':    'Cambio Radical',
+  'OSMAN HIPÓLITO ROA SARMIENTO':    'Cambio Radical',
+  'CESAR AUGUSTO PACHON ACHURY':     'MAIS',
+  'CÉSAR AUGUSTO PACHÓN ACHURY':     'MAIS',
+  'GONZALO GUARIN VIVAS':            'Centro Democrático',
+  'GONZALO GUARÍN VIVAS':            'Centro Democrático',
+  'JUAN DE JESUS CORDOBA SUAREZ':    'Partido Conservador Colombiano',
+  'JUAN DE JESÚS CÓRDOBA SUÁREZ':    'Partido Conservador Colombiano',
+  // PRESIDENCIA 2018
+  'GUSTAVO FRANCISCO PETRO URREGO':  'Pacto Histórico',
+  'IVAN DUQUE MARQUEZ':              'Centro Democrático',
+  'IVÁN DUQUE MÁRQUEZ':              'Centro Democrático',
+  'SERGIO FAJARDO VALDERRAMA':       'Centro Esperanza',
+  'GERMAN VARGAS LLERAS':            'Cambio Radical',
+  'GERMÁN VARGAS LLERAS':            'Cambio Radical',
+  'JORGE ANTONIO TRUJILLO SALGADO':  'Partido Liberal Colombiano',
+  'VIVIANE MORALES HOYOS':           'Partido Liberal Colombiano',
+  'HUMBERTO DE LA CALLE LOMBANA':    'Partido Liberal Colombiano',
+  // PRESIDENCIA 2022
+  'GUSTAVO PETRO':                   'Pacto Histórico',
+  'FEDERICO GUTIERREZ ZULUAGA':      'Equipo por Colombia',
+  'FEDERICO GUTIÉRREZ ZULUAGA':      'Equipo por Colombia',
+  'RODOLFO HERNANDEZ SUAREZ':        'Liga de Gobernantes',
+  'RODOLFO HERNÁNDEZ SUÁREZ':        'Liga de Gobernantes',
+  // PRESIDENCIA 2026 (añadir cuando confirmes candidatos finales)
 };
 
 const COLORES_PARTIDO = {
@@ -249,6 +296,7 @@ const COLORES_PARTIDO = {
   'Unión Patriótica':              '#880E4F',
   'Fuerza Ciudadana':              '#00897B',
   'Colombia Piensa en Grande':     '#FF7043',
+  'Dignidad y Compromiso':         '#7E57C2',
   'Partido PIN':                   '#78909C',
   'Sí':                            '#43A047',
   'No':                            '#E53935',
@@ -262,6 +310,15 @@ function normalizePartido(nombre) {
   const u = s.toUpperCase();
   for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
     if (k.replace(/\s+/g, ' ').toUpperCase() === u) return NORMALIZAR_PARTIDO[k];
+  }
+  // Lookup directo por nombre de candidato (uninominal)
+  if (typeof CANDIDATOS_PARTIDO !== 'undefined') {
+    const su = s.toUpperCase().replace(/\s+/g, ' ').trim();
+    for (const k of Object.keys(CANDIDATOS_PARTIDO)) {
+      if (k.toUpperCase().replace(/\s+/g, ' ') === su) {
+        return CANDIDATOS_PARTIDO[k];
+      }
+    }
   }
   // Coaliciones y avales compartidos
   if (s.includes('-') || s.includes(';')) {
