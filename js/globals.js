@@ -12,6 +12,54 @@ const DATOS_DISPONIBLES = {
     2026: ['camara', 'senado', 'consultas']
 };
 
+const ABREV_PARTIDO = {
+  'Partido Liberal Colombiano':     'P. Liberal',
+  'Partido Conservador Colombiano': 'P. Conservador',
+  'Partido de la U':                'P. de la U',
+  'Cambio Radical':                 'Cambio Radical',
+  'Alianza Verde':                  'A. Verde',
+  'Partido Verde Oxígeno':          'Verde Oxígeno',
+  'Centro Democrático':             'C. Democrático',
+  'Polo Democrático Alternativo':   'Polo Democrático',
+  'Pacto Histórico':                'Pacto Histórico',
+  'Opción Ciudadana':               'Opción Ciudadana',
+  'Movimiento MIRA':                'MIRA',
+  'Alianza Social Independiente':   'ASI',
+  'Comunes':                        'Comunes',
+  'Colombia Justa Libres':          'Col. Justa Libres',
+  'Liga de Gobernantes':            'Liga Gobernantes',
+  'Coalición Colombia':             'Coalición Colombia',
+  'Centro Esperanza':               'Centro Esperanza',
+  'Equipo por Colombia':            'Equipo Colombia',
+  'Gran Consulta por Colombia':     'Gran Consulta',
+  'Sí':                             'Sí',
+  'No':                             'No',
+};
+
+const CIRCUNSCRIPCIONES_EXCLUIR = [
+  'CIRCUNSCRIPCION ESPECIAL AFRODESCENDIENTE',
+  'CIRCUNSCRIPCION ESPECIAL INDIGENA',
+  'CIRCUNSCRIPCION ESPECIAL COLOMBIANOS EN EL EXTERIOR',
+  'ESPECIAL AFRO',
+  'ESPECIAL INDIGENA',
+  'CIRCUNSCRIPCION AFRO',
+  'CIRCUNSCRIPCION INDIGENA',
+];
+
+function abreviarPartido(nombre) {
+  if (!nombre) return 'Sin partido';
+  return ABREV_PARTIDO[nombre] || nombre;
+}
+
+function abreviarCandidato(nombre) {
+  if (!nombre) return '—';
+  const partes = nombre.trim().split(' ');
+  if (partes.length <= 2) return nombre;
+  // "Juan Carlos Pérez García" → "Pérez García, J."
+  const apellidos = partes.slice(2).join(' ');
+  return apellidos + ', ' + partes[0][0] + '.';
+}
+
 const LABELS_CORPORACION = {
     alcalde:        'Alcaldía',
     asamblea:       'Asamblea Departamental',
