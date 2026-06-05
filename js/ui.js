@@ -251,6 +251,30 @@ function crearFilaComparacion(index) {
     return div;
 }
 
+// ==================== KPI ANIMATION ====================
+function animarKPIs() {
+    const cards = document.querySelectorAll('.kpi-card[data-count]');
+    cards.forEach(card => {
+        const target = parseInt(card.dataset.count);
+        const el = card.querySelector('.kpi-number');
+        const duration = 1200;
+        const steps = 40;
+        const increment = target / steps;
+        let current = 0;
+        let step = 0;
+        const timer = setInterval(() => {
+            step++;
+            current = Math.min(Math.round(increment * step), target);
+            el.textContent = current.toLocaleString('es-CO');
+            if (step >= steps) clearInterval(timer);
+        }, duration / steps);
+    });
+    const kpiReg = document.getElementById('kpi-registros');
+    if (kpiReg) {
+        setTimeout(() => { kpiReg.textContent = '+50.000'; }, 800);
+    }
+}
+
 // ==================== INIT + EVENTOS ====================
 document.addEventListener('DOMContentLoaded', async () => {
     // Inicialización de mapas Leaflet
@@ -457,4 +481,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('escala-selector')?.addEventListener('change', () => {
         if (!modoComparacion) actualizarMapaSimple();
     });
+
+    animarKPIs();
 });
