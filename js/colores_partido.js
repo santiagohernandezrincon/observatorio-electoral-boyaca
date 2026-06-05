@@ -207,6 +207,16 @@ const NORMALIZAR_PARTIDO = {
   'Candidatura No Aceptada':'Partido sin identificar',
   'Revocado (A)':'Partido sin identificar',
   'Promotores Voto En Blanco':'Partido sin identificar',
+  // SHORT-FORMS (segmentos en coaliciones)
+  'MIRA':'Movimiento MIRA',
+  'ASI':'Alianza Social Independiente',
+  'UP':'Unión Patriótica',
+  'MAIS':'MAIS',
+  'CR':'Cambio Radical',
+  'PDA':'Polo Democrático Alternativo',
+  'AICO':'AICO',
+  'PIN':'Partido PIN',
+  'ALMA':'Alianza Social Independiente',
   // FALLBACK
   'Partido sin identificar':'Partido sin identificar',
   'Sin identificar':'Partido sin identificar',
@@ -253,15 +263,32 @@ function normalizePartido(nombre) {
   for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
     if (k.replace(/\s+/g, ' ').toUpperCase() === u) return NORMALIZAR_PARTIDO[k];
   }
-  // Aval compartido: "PARTIDO A - PARTIDO B" → tomar el primer partido
-  if (s.includes(' - ') || s.includes(' – ')) {
-    const primero = s.split(/ [-–] /)[0].trim();
-    const normPrimero = NORMALIZAR_PARTIDO[primero];
-    if (normPrimero) return normPrimero;
-    // intento case-insensitive
-    const uPrimero = primero.toUpperCase();
-    for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
-      if (k.toUpperCase() === uPrimero) return NORMALIZAR_PARTIDO[k];
+  // Coaliciones y avales compartidos
+  if (s.includes('-') || s.includes(';')) {
+    const partes = s.replace(/[()]/g, ';').split(/\s*[-;]\s+|\s+-\s*|\s*;\s*/);
+    const _STRIP = /^(COALICI[OÓ]N|COALICIÓN|PARTIDO|PARTIDOS|MOVIMIENTO|GSC|LISTA\s+DE\s+LA|AGRUPACI[OÓ]N)\s+/i;
+    for (const parte of partes) {
+      const limpio = parte.replace(/[()]/g, '').trim();
+      if (!limpio || limpio.length < 3) continue;
+      // intento directo
+      if (NORMALIZAR_PARTIDO[limpio]) return NORMALIZAR_PARTIDO[limpio];
+      const lu = limpio.toUpperCase().replace(/\s+/g, ' ');
+      let found = null;
+      for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
+        if (k.toUpperCase().replace(/\s+/g, ' ') === lu) { found = NORMALIZAR_PARTIDO[k]; break; }
+      }
+      if (found) return found;
+      // intento sin prefijo
+      const sinPrefijo = limpio.replace(_STRIP, '').trim();
+      if (sinPrefijo !== limpio && sinPrefijo.length > 2) {
+        if (NORMALIZAR_PARTIDO[sinPrefijo]) return NORMALIZAR_PARTIDO[sinPrefijo];
+        const su = sinPrefijo.toUpperCase().replace(/\s+/g, ' ');
+        for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
+          const ku = k.toUpperCase().replace(/\s+/g, ' ').replace(_STRIP, '');
+          if (ku === su) { found = NORMALIZAR_PARTIDO[k]; break; }
+        }
+        if (found) return found;
+      }
     }
   }
   return s;
