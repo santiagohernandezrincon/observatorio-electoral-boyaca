@@ -46,6 +46,7 @@ function mostrarDetalleProvincia(provincia, datosProv) {
         ultimoElementoDetalle = null;
         return;
     }
+    abrirSidebar();
     ultimoElementoDetalle = { nombre: provincia, tipo: 'provincia', datosPartidos: datosProv.partidos, datosCandidatos: datosProv.candidatos };
 
     const partidosOrdenados = [...datosProv.partidos].sort((a, b) => b['VOTOS'] - a['VOTOS']);
@@ -78,6 +79,7 @@ function mostrarDetalleMunicipio(municipioNombre, partidosMunicipio, candidatosM
         ultimoElementoDetalle = null;
         return;
     }
+    abrirSidebar();
     ultimoElementoDetalle = { nombre: municipioNombre, tipo: 'municipio', datosPartidos: partidosMunicipio, datosCandidatos: candidatosMunicipio };
 
     if (tipoVista === 'candidato_heat' || tipoVista === 'candidato_ganador' || tipoVista === 'candidato_ganador_por_partido') {
@@ -251,6 +253,73 @@ function crearFilaComparacion(index) {
     return div;
 }
 
+// ==================== FILTER PILLS ====================
+function renderFilterPills() {
+    const pillsAnio = document.getElementById('pills-anio');
+    if (!pillsAnio) return;
+    pillsAnio.innerHTML = '';
+    Object.keys(DATOS_DISPONIBLES)
+        .map(Number).sort((a, b) => b - a)
+        .forEach(anio => {
+            const btn = document.createElement('button');
+            btn.className = 'pill' + (String(anio) === currentAnio ? ' active' : '');
+            btn.textContent = String(anio);
+            btn.dataset.value = String(anio);
+            btn.addEventListener('click', () => {
+                currentAnio = String(anio);
+                document.querySelectorAll('#pills-anio .pill').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                const sel = document.getElementById('anio-selector');
+                sel.value = currentAnio;
+                sel.dispatchEvent(new Event('change'));
+            });
+            pillsAnio.appendChild(btn);
+        });
+    renderCorpPills(currentAnio);
+}
+
+function renderCorpPills(anio) {
+    const pillsCorp = document.getElementById('pills-corp');
+    if (!pillsCorp) return;
+    pillsCorp.innerHTML = '';
+    (DATOS_DISPONIBLES[anio] || []).forEach(corp => {
+        const btn = document.createElement('button');
+        btn.className = 'pill' + (corp === currentCorporacion ? ' active' : '');
+        btn.textContent = LABELS_CORPORACION[corp] || corp;
+        btn.dataset.value = corp;
+        btn.addEventListener('click', () => {
+            currentCorporacion = corp;
+            document.querySelectorAll('#pills-corp .pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            const sel = document.getElementById('corporacion-selector');
+            sel.value = corp;
+            sel.dispatchEvent(new Event('change'));
+        });
+        pillsCorp.appendChild(btn);
+    });
+}
+
+// ==================== SIDEBAR ====================
+function abrirSidebar() {
+    const layout = document.getElementById('map-layout');
+    if (layout) layout.classList.add('sidebar-open');
+    setTimeout(() => {
+        if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+        if (typeof mapA !== 'undefined' && mapA) mapA.invalidateSize();
+        if (typeof mapB !== 'undefined' && mapB) mapB.invalidateSize();
+    }, 350);
+}
+
+function cerrarSidebar() {
+    const layout = document.getElementById('map-layout');
+    if (layout) layout.classList.remove('sidebar-open');
+    setTimeout(() => {
+        if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+        if (typeof mapA !== 'undefined' && mapA) mapA.invalidateSize();
+        if (typeof mapB !== 'undefined' && mapB) mapB.invalidateSize();
+    }, 350);
+}
+
 // ==================== KPI ANIMATION ====================
 function animarKPIs() {
     const cards = document.querySelectorAll('.kpi-card[data-count]');
@@ -414,7 +483,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentAnio = e.target.value;
         actualizarSelectorCorporacion(currentAnio);
         const primera = (DATOS_DISPONIBLES[currentAnio] || [])[0];
-        if (primera) { currentCorporacion = primera; cargarDatos(currentAnio, currentCorporacion); }
+        if (primera) {
+            currentCorporacion = primera;
+            renderCorpPills(currentAnio);
+            cargarDatos(currentAnio, currentCorporacion);
+        }
     });
     document.getElementById('corporacion-selector').addEventListener('change', e => {
         currentCorporacion = e.target.value;
@@ -480,6 +553,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('escala-selector')?.addEventListener('change', () => {
         if (!modoComparacion) actualizarMapaSimple();
+    });
+
+    renderFilterPills();
+
+    // Tabs de análisis
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.dataset.tab;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            const panel = document.getElementById('tab-' + tabId);
+            if (panel) panel.classList.add('active');
+        });
     });
 
     animarKPIs();
