@@ -299,6 +299,71 @@ function renderCorpPills(anio) {
     });
 }
 
+// ==================== OBS NAV ====================
+function inicializarNav() {
+  const pillsAnio = document.getElementById('pills-anio');
+  const pillsCorp = document.getElementById('pills-corp');
+  if (!pillsAnio || !pillsCorp) return;
+  const years = Object.keys(DATOS_DISPONIBLES).sort((a, b) => b - a);
+  pillsAnio.innerHTML = '';
+  years.forEach(y => {
+    const btn = document.createElement('button');
+    btn.className = 'obs-pill obs-pill-year' + (String(y) === String(currentAnio) ? ' active' : '');
+    btn.textContent = y;
+    btn.onclick = () => {
+      currentAnio = y;
+      pillsAnio.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      actualizarPillsCorp();
+      cargarDatos();
+    };
+    pillsAnio.appendChild(btn);
+  });
+  actualizarPillsCorp();
+}
+
+function actualizarPillsCorp() {
+  const pillsCorp = document.getElementById('pills-corp');
+  if (!pillsCorp) return;
+  const corps = DATOS_DISPONIBLES[currentAnio] || [];
+  const labels = typeof LABELS_CORPORACION !== 'undefined' ? LABELS_CORPORACION : {};
+  pillsCorp.innerHTML = '';
+  if (!corps.includes(currentCorporacion) && corps.length > 0) {
+    currentCorporacion = corps[0];
+  }
+  corps.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = 'obs-pill' + (c === currentCorporacion ? ' active' : '');
+    btn.textContent = labels[c] || c;
+    btn.onclick = () => {
+      currentCorporacion = c;
+      pillsCorp.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      cargarDatos();
+    };
+    pillsCorp.appendChild(btn);
+  });
+}
+
+function inicializarBuscador() {
+  const input = document.getElementById('obs-search');
+  if (!input) return;
+  input.addEventListener('input', function() {
+    const q = this.value.trim().toLowerCase();
+    if (!q || q.length < 2) return;
+    if (typeof mapSimple !== 'undefined' && mapSimple && typeof currentGeojson !== 'undefined' && currentGeojson) {
+      currentGeojson.eachLayer(layer => {
+        const props = layer.feature?.properties || {};
+        const nombre = (props.MPIO_CNMBR || props.nombre || props.NOM_MPIO || '').toLowerCase();
+        if (nombre.includes(q)) {
+          mapSimple.fitBounds(layer.getBounds(), { padding: [40, 40] });
+          layer.openPopup && layer.openPopup();
+        }
+      });
+    }
+  });
+}
+
 // ==================== SIDEBAR ====================
 function abrirSidebar() {
     const layout = document.getElementById('map-layout');
@@ -586,6 +651,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
     }
+
+    inicializarNav();
+    inicializarBuscador();
+
+    // Lógica botones de modo (Ganadores / Por partido / Mapa de calor)
+    document.querySelectorAll('.obs-pill-modo').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.obs-pill-modo').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const modo = btn.dataset.modo;
+            const groupPartido = document.getElementById('group-partido');
+            if (groupPartido) {
+                groupPartido.style.display = (modo === 'partido') ? 'flex' : 'none';
+            }
+        });
+    });
 });
 
 function toggleMapSize() {

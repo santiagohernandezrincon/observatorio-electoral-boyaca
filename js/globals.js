@@ -28,10 +28,11 @@ const ABREV_PARTIDO = {
   'Comunes':                        'Comunes',
   'Colombia Justa Libres':          'Col. Justa Libres',
   'Liga de Gobernantes':            'Liga Gobernantes',
-  'Coalición Colombia':             'Coalición Colombia',
+  'Coalición Colombia':             'Coal. Colombia',
   'Centro Esperanza':               'Centro Esperanza',
   'Equipo por Colombia':            'Equipo Colombia',
   'Gran Consulta por Colombia':     'Gran Consulta',
+  'Partido sin identificar':        'Sin identificar',
   'Sí':                             'Sí',
   'No':                             'No',
 };
@@ -55,9 +56,7 @@ function abreviarCandidato(nombre) {
   if (!nombre) return '—';
   const partes = nombre.trim().split(' ');
   if (partes.length <= 2) return nombre;
-  // "Juan Carlos Pérez García" → "Pérez García, J."
-  const apellidos = partes.slice(2).join(' ');
-  return apellidos + ', ' + partes[0][0] + '.';
+  return partes[0] + ' ' + partes[1] + (partes[2] ? ', ' + partes[2][0] + '.' : '');
 }
 
 const LABELS_CORPORACION = {
