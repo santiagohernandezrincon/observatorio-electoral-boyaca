@@ -49,6 +49,8 @@ const palabrasClave = {
 };
 
 const coloresBase = {
+    'SI': '#2ecc71', 'si': '#2ecc71', 'Sí': '#2ecc71', 'SÍ': '#2ecc71',
+    'NO': '#e74c3c', 'no': '#e74c3c', 'No': '#e74c3c',
     'PARTIDO ALIANZA VERDE': '#2ecc71',
     'PARTIDO LIBERAL COLOMBIANO': '#e74c3c',
     'PARTIDO CONSERVADOR COLOMBIANO': '#2c3e50',
@@ -74,6 +76,7 @@ function asignarColorPartido(nombrePartido) {
     if (!nombrePartido) return '#95a5a6';
     let nombreLimpio = nombrePartido.toUpperCase().trim().replace(/["']/g, '').replace(/\s+/g, ' ');
     if (coloresBase[nombrePartido]) return coloresBase[nombrePartido];
+    if (coloresBase[nombreLimpio])  return coloresBase[nombreLimpio];
     for (let [partidoBase, palabras] of Object.entries(palabrasClave)) {
         for (let palabra of palabras) {
             if (nombreLimpio.includes(palabra.toUpperCase())) {

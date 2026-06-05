@@ -199,9 +199,9 @@ def procesar_mmv(vuelta):
     # Limpiar nombres de columna (a veces tienen espacios)
     df.columns = [c.strip() for c in df.columns]
 
-    # Filtrar Boyacá: DEP == 15
-    df['DEP'] = df['DEP'].astype(str).str.strip().str.lstrip('0')
-    df_boy = df[df['DEP'] == '15'].copy()
+    # Filtrar Boyacá por DEPNOMBRE (el código numérico varía según fuente)
+    df['DEPNOMBRE_CLEAN'] = df['DEPNOMBRE'].astype(str).str.strip().str.upper()
+    df_boy = df[df['DEPNOMBRE_CLEAN'].str.contains('BOYAC', na=False)].copy()
     print(f"    filas Boyacá  : {len(df_boy)}")
     if df_boy.empty:
         print("    ⚠  Sin datos para Boyacá — archivo omitido.")
