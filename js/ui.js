@@ -253,30 +253,6 @@ function crearFilaComparacion(index) {
     return div;
 }
 
-// ==================== FILTER PILLS ====================
-function renderFilterPills() {
-    const pillsAnio = document.getElementById('pills-anio');
-    if (!pillsAnio) return;
-    pillsAnio.innerHTML = '';
-    Object.keys(DATOS_DISPONIBLES)
-        .map(Number).sort((a, b) => b - a)
-        .forEach(anio => {
-            const btn = document.createElement('button');
-            btn.className = 'pill' + (String(anio) === currentAnio ? ' active' : '');
-            btn.textContent = String(anio);
-            btn.dataset.value = String(anio);
-            btn.addEventListener('click', () => {
-                currentAnio = String(anio);
-                document.querySelectorAll('#pills-anio .pill').forEach(p => p.classList.remove('active'));
-                btn.classList.add('active');
-                const sel = document.getElementById('anio-selector');
-                sel.value = currentAnio;
-                sel.dispatchEvent(new Event('change'));
-            });
-            pillsAnio.appendChild(btn);
-        });
-    renderCorpPills(currentAnio);
-}
 
 function renderCorpPills(anio) {
     const pillsCorp = document.getElementById('pills-corp');
@@ -311,11 +287,18 @@ function inicializarNav() {
     btn.className = 'obs-pill obs-pill-year' + (String(y) === String(currentAnio) ? ' active' : '');
     btn.textContent = y;
     btn.onclick = () => {
-      currentAnio = y;
+      // 1. Actualizar variable global si existe
+      if (typeof currentAnio !== 'undefined') currentAnio = y;
+      // 2. Sincronizar el selector original para que el pipeline existente lo detecte
+      const sel = document.getElementById('anio-selector');
+      if (sel) {
+        sel.value = y;
+        sel.dispatchEvent(new Event('change'));
+      }
+      // 3. UI: marcar pill activa
       pillsAnio.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');
       actualizarPillsCorp();
-      cargarDatos(currentAnio, currentCorporacion);
     };
     pillsAnio.appendChild(btn);
   });
@@ -336,10 +319,14 @@ function actualizarPillsCorp() {
     btn.className = 'obs-pill' + (c === currentCorporacion ? ' active' : '');
     btn.textContent = labels[c] || c;
     btn.onclick = () => {
-      currentCorporacion = c;
+      if (typeof currentCorporacion !== 'undefined') currentCorporacion = c;
+      const sel = document.getElementById('corporacion-selector');
+      if (sel) {
+        sel.value = c;
+        sel.dispatchEvent(new Event('change'));
+      }
       pillsCorp.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');
-      cargarDatos(currentAnio, currentCorporacion);
     };
     pillsCorp.appendChild(btn);
   });
@@ -619,8 +606,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('escala-selector')?.addEventListener('change', () => {
         if (!modoComparacion) actualizarMapaSimple();
     });
-
-    renderFilterPills();
 
     // Tabs de análisis
     document.querySelectorAll('.tab-btn').forEach(btn => {
