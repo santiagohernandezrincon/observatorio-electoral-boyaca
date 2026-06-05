@@ -143,6 +143,150 @@ NORMALIZACION = {
   # PLEBISCITO 2016
   'SI': 'Sí', 'Sí': 'Sí', 'si': 'Sí',
   'NO': 'No', 'No': 'No', 'no': 'No',
+
+  # ══════════════════════════════════════════════════════════
+  # VARIANTES ADICIONALES Y FORMAS LARGAS
+  # Aliases detectados en concejo/asamblea 2011–2023
+  # ══════════════════════════════════════════════════════════
+
+  # ── Alianza Social Independiente ──
+  'ALIANZA SOCIAL INDIGENA  ASI':                          'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE':                  'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE  ASI':             'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE ASI':              'Alianza Social Independiente',
+  'PARTIDO ALIANZA SOCIAL INDEPENDIENTE "ASI"':            'Alianza Social Independiente',
+  'Partido Alianza Social Independiente':                  'Alianza Social Independiente',
+  'Partido Alianza Social Independiente  Asi':             'Alianza Social Independiente',
+  'Partido ASI':                                           'Alianza Social Independiente',
+
+  # ── Cambio Radical ──
+  'PARTIDO CAMBIO RADICAL COLOMBIANO':                     'Cambio Radical',
+  'Partido Cambio Radical Colombiano':                     'Cambio Radical',
+
+  # ── Centro Democrático ──
+  'CENTRO DEMOCRATICO MANO FIRME CORAZON GRANDE':          'Centro Democrático',
+  'Centro Democratico Mano Firme Corazon Grande':          'Centro Democrático',
+  'PARTIDO CENTRO DEMOCRATICO MANO FIRME CORAZON GRANDE':  'Centro Democrático',
+  'Partido Centro Democratico Mano Firme Corazon Grande':  'Centro Democrático',
+  'PARTIDO CENTRO DEMOCRÁTICO':                            'Centro Democrático',
+  'PARTIDO CENTRO DEMOCRATICO':                            'Centro Democrático',
+
+  # ── Colombia Justa Libres ──
+  'PARTIDO COLOMBIA JUSTA LIBRES':                         'Colombia Justa Libres',
+  'GSC COLOMBIA JUSTA LIBRES':                             'Colombia Justa Libres',
+  'Gsc Colombia Justa Libres':                             'Colombia Justa Libres',
+  'Partido Fuerza Alternativa Revolucionaria Del Comu':    'Comunes',
+
+  # ── Gran Consulta por Colombia ──
+  'LA GRAN CONSULTA POR COLOMBIA':                         'Gran Consulta por Colombia',
+  'LA LISTA DE OVIEDO - CON TODA POR COLOMBIA':            'Gran Consulta por Colombia',
+
+  # ── Movimiento MIRA ──
+  'PARTIDO POLITICO  MIRA':                                'Movimiento MIRA',
+  'PARTIDO POLITICO MIRA':                                 'Movimiento MIRA',
+  'Partido Politico Mira':                                 'Movimiento MIRA',
+  'MOVIMIENTO INDEPENDIENTE DE RENOVACION ABSOLUTA  MIRA': 'Movimiento MIRA',
+  'Movimiento Independiente De Renovacion Absoluta  Mira': 'Movimiento MIRA',
+
+  # ── Mov. Salvación Nacional ──
+  'MOVIMIENTO SALVACIÓN NACIONAL':                         'Mov. Salvación Nacional',
+  'MOVIMIENTO DE SALVACIÓN NACIONAL':                      'Mov. Salvación Nacional',
+  'MOVIMIENTO SALVACION NACIONAL':                         'Mov. Salvación Nacional',
+
+  # ── Nuevo Liberalismo ──
+  'PARTIDO NUEVO LIBERALISMO':                             'Nuevo Liberalismo',
+  'Partido Nuevo Liberalismo':                             'Nuevo Liberalismo',
+  'CR-NUEVO LIBERALISMO':                                  'Nuevo Liberalismo',
+
+  # ── Opción Ciudadana / PIN ──
+  'PARTIDO OPCION CIUDADANA':                              'Opción Ciudadana',
+  'Partido Opcion Ciudadana':                              'Opción Ciudadana',
+  'PARTIDO DE INTEGRACION NACIONAL  PIN':                  'Opción Ciudadana',
+  'PARTIDO DE INTEGRACION NACIONAL PIN':                   'Opción Ciudadana',
+  'Partido De Integracion Nacional  Pin':                  'Opción Ciudadana',
+  'Partido PIN':                                           'Opción Ciudadana',
+
+  # ── Pacto Histórico ──
+  'PACTO HISTÓRICO':                                       'Pacto Histórico',
+  'PACTO HISTÓRICO BOYACÁ':                                'Pacto Histórico',
+  'PACTO HISTÓRICO SENADO':                                'Pacto Histórico',
+  'PACTO HISTORICO COLOMBIA PUEDE':                        'Pacto Histórico',
+  'COLOMBIA HUMANA - UNION PATRIOTICA':                    'Pacto Histórico',
+  'MOVIMIENTO POLÍTICO COLOMBIA HUMANA':                   'Pacto Histórico',
+  'AGRUPACIÓN POLÍTICA EN MARCHA':                         'Pacto Histórico',
+
+  # ── Partido de la U ──
+  'PARTIDO SOCIAL DE LA U':                                'Partido de la U',
+  'Partido Social De La U':                                'Partido de la U',
+  'PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U':    'Partido de la U',
+  'Partido Social De Unidad Nacional  Partido De La U':    'Partido de la U',
+  'PARTIDO DE LA UNIÓN POR LA GENTE "PARTIDO DE LA U"':   'Partido de la U',
+  'PARTIDO DE LA UNIÓN POR LA GENTE - PARTIDO DE LA U':   'Partido de la U',
+  'PARTIDO SOCIAL UNIDAD NACIONAL - PARTIDO ALIANZA  SOCIAL INDEPENDIENTE - ASI': 'Partido de la U',
+
+  # ── Polo Democrático Alternativo ──
+  'PARTIDO POLO DEMOCRATICO ALTERNATIVO':                  'Polo Democrático Alternativo',
+  'Partido Polo Democratico Alternativo':                  'Polo Democrático Alternativo',
+  'PARTIDO POLO DEMOCRÁTICO ALTERNATIVO':                  'Polo Democrático Alternativo',
+
+  # ── Unión Patriótica ──
+  'PARTIDO UNION PATRIOTICA':                              'Unión Patriótica',
+  'PARTIDO UNION PATRIOTICA  UP':                          'Unión Patriótica',
+  'PARTIDO UNIÓN PATRIÓTICA  UP':                          'Unión Patriótica',
+  'PARTIDO UNIÓN PATRIÓTICA "UP"':                         'Unión Patriótica',
+  'Partido Union Patriotica':                              'Unión Patriótica',
+  'Partido Union Patriotica  Up':                          'Unión Patriótica',
+
+  # ── Fuerza Ciudadana ──
+  'MOVIMIENTO POLITICO FUERZA CIUDADANA':                  'Fuerza Ciudadana',
+  'COALICIÓN FUERZA CIUDADANA':                            'Fuerza Ciudadana',
+
+  # ── Pacto Histórico (variantes con tilde en COALICIÓN) ──
+  'COALICIÓN PACTO HISTÓRICO':                             'Pacto Histórico',
+
+  # ── MAIS — Movimiento Alternativo Indígena y Social ──
+  'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL  MAIS':        'MAIS',
+  'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL MAIS':         'MAIS',
+  'MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL  MAIS':        'MAIS',
+  'MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL "MAIS"':       'MAIS',
+  'MOVIMIENTO ALTERNATIVO INDÍGENA SOCIAL "MAIS"':         'MAIS',
+  'Movimiento Alternativo Indigena Y Social  Mais':        'MAIS',
+  'Movimiento Alternativo Indigena Y Social Mais':         'MAIS',
+  'MAIS - POLO':                                           'MAIS',
+
+  # ── AICO — Autoridades Indígenas de Colombia ──
+  'MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA':          'AICO',
+  'MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA AICO':     'AICO',
+  'MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA  AICO':    'AICO',
+  'MOVIMIENTO AUTORIDADES INDÍGENAS DE COLOMBIA "AICO"':   'AICO',
+  'MOVIMIENTO DE AUTORIDADES INDIGENAS DE COLOMBIA  AICO': 'AICO',
+  'Movimiento Autoridades Indigenas De Colombia':          'AICO',
+  'Movimiento Autoridades Indigenas De Colombia  Aico':    'AICO',
+  'Movimiento De Autoridades Indigenas De Colombia  Aico': 'AICO',
+
+  # ── MIO — Movimiento de Inclusión y Oportunidades ──
+  'MOVIMIENTO DE INCLUSION Y OPORTUNIDADES':               'MIO',
+  'MOVIMIENTO DE INCLUSION Y OPORTUNIDADES  MIO':          'MIO',
+  'Movimiento De Inclusion Y Oportunidades':               'MIO',
+  'Movimiento De Inclusion Y Oportunidades  Mio':          'MIO',
+
+  # ── Creemos ──
+  'CREEMOS':                                               'Creemos',
+  'PARTIDO POLÍTICO CREEMOS':                              'Creemos',
+
+  # ── Votos especiales ──
+  'PROMOTORES VOTO EN BLANCO':                             'Votos en blanco',
+  'Promotores Voto En Blanco':                             'Votos en blanco',
+
+  # ── Administrativos / sin candidato real ──
+  'Candidata Retirada':                                    'Sin partido',
+  'Candidatura No Aceptada':                               'Sin partido',
+  'Revocado (A)':                                          'Sin partido',
+  'Inscripcion Revocada Cne Res No 1932018':               'Sin partido',
+  'Inscripcion Revocada Cne Res No 2232018':               'Sin partido',
+  'Sin nombre':                                            'Sin partido',
+  'CANDIDATOS TOTALES':                                    'Sin partido',
+  'Candidatos Totales':                                    'Sin partido',
 }
 
 
@@ -252,6 +396,11 @@ COLORES_PARTIDO = {
   'Partido Verde':                  '#27AE60',
   # Coalición Colombia 2018 (Fajardo)
   'Coalición Colombia':             '#5DADE2',
+  # Partidos indígenas y movimientos menores
+  'MAIS':                           '#27AE60',
+  'AICO':                           '#1E8449',
+  'MIO':                            '#B7950B',
+  'Creemos':                        '#6C3483',
   # Códigos numéricos sin tabla de decodificación
   'Partido sin identificar':        '#B2BEB5',
   # Catch-all
@@ -287,6 +436,10 @@ def normalizar_partido(nombre, es_presidencial=False, anio=None, candidato=None)
     for alias, canonico in NORMALIZACION.items():
         if alias.upper() == nombre_upper:
             return canonico
+
+    # Residuos de run anterior con la etiqueta antigua
+    if nombre_str.startswith('[SIN RESOLVER:'):
+        return 'Partido sin identificar'
 
     # Si es código numérico puro sin tabla de decodificación disponible
     if re.match(r'^\d+(\.\d+)?$', nombre_str):
