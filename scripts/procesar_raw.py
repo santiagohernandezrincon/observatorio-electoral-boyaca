@@ -66,13 +66,13 @@ NOMBRES_PARTIDO = {
     '20110001': 'Opción Ciudadana',
     '2013001':  'Centro Democrático',
     '20130001': 'Centro Democrático',
-    '20130002': 'Centro Democrático',
+    '20130002': 'MAIS',
     '2003005':  'Partido ASI',
     '20140001': 'Colombia Justa Libres',
     '20150001': 'Coalición de Gobierno',
     '20180001': 'Colombia Humana',
-    '20180002': 'Partido de la U',
-    '20180003': 'Partido Liberal Colombiano',
+    '20180002': 'Partido Liberal Colombiano',
+    '20180003': 'Colombia Humana',
     '20180004': 'Partido Conservador Colombiano',
     '20180005': 'Cambio Radical',
     '20180006': 'Centro Democrático',
@@ -83,8 +83,8 @@ NOMBRES_PARTIDO = {
     '20030001': 'Partido Liberal Colombiano',
     '20030002': 'Partido Conservador Colombiano',
     # Otros códigos observados en diagnóstico
-    '18480001': 'Partido Conservador Colombiano',
-    '18490002': 'Partido Liberal Colombiano',
+    '18480001': 'Partido Liberal Colombiano',    # Liberal fundado 1848
+    '18490002': 'Partido Conservador Colombiano', # Conservador fundado 1849
     '19930001': 'Movimiento MIRA',
     '20060003': 'Polo Democrático Alternativo',
     '20100063': 'Partido PIN',
@@ -92,6 +92,10 @@ NOMBRES_PARTIDO = {
     '19910006': 'Partido ASI',
     '19850001': 'Partido Liberal Colombiano',
     '20170002': 'Cambio Radical',
+    # Códigos 2015 gobernación Boyacá
+    '20150606': 'Alianza Verde',
+    '20150607': 'Cambio Radical',
+    '20150608': 'Partido Conservador Colombiano',
 }
 
 def resolver_partido(row):
