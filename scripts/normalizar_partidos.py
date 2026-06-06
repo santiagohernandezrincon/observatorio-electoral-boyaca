@@ -410,6 +410,8 @@ COLORES_PARTIDO = {
   'Creemos':                        '#6C3483',
   # Códigos numéricos sin tabla de decodificación
   'Partido sin identificar':        '#B2BEB5',
+  # Movimientos ciudadanos (avales locales sin partido nacional)
+  'Movimiento Ciudadano':           '#B0B8C1',
   # Catch-all
   'Sin partido':                    '#BDC3C7',
   'Otro':                           '#D5D8DC',

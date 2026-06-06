@@ -1,9 +1,9 @@
 MUNNOMBRE;CANNOMBRE;PARNOMBRE;VOTOS
 ALMEIDA;Orlando Castaneda Montenegro;Partido de la U;829
-ALMEIDA;Carlos Alberto Acevedo Velasquez;Partido Liberal Colombiano;435
+ALMEIDA;Carlos Alberto Acevedo Velasquez;Centro Democrático;435
 ALMEIDA;Angel Custodio Sanchez Roa;Partido ASI;31
 AQUITANIA;Carlos Ernesto Torres Aguirre;Alianza Verde;3941
-AQUITANIA;Felipe Absalon Cardozo Montana;19970004;2571
+AQUITANIA;Felipe Absalon Cardozo Montana;Partido Conservador Colombiano;2571
 AQUITANIA;Alexander Riveros Pedraza;Partido Conservador Colombiano;2000
 AQUITANIA;Victor Manuel Perez Torrez;Partido Liberal Colombiano;156
 ARCABUCO;Jairo Ruiz Salazar;Partido de la U;1954
@@ -16,7 +16,7 @@ BERBEO;Nestor Melo Gaona;Partido de la U;372
 BETEITIVA;Jorge Enrique Albarracin Vargas;Partido de la U;630
 BETEITIVA;Edgar Gerardo Fernandez Neita;Partido Liberal Colombiano;520
 BETEITIVA;Luis Orlando Estevez Estevez;Partido Liberal Colombiano;165
-BETEITIVA;Jose Bernardo Rojas Rojas;19970004;89
+BETEITIVA;Jose Bernardo Rojas Rojas;Partido Conservador Colombiano;89
 BETEITIVA;Aureliano Joya Leon;Partido ASI;24
 BOAVITA;Jairo Correa Acevedo;Partido de la U;1939
 BOAVITA;Jairo Cordoba Suarez;Partido Conservador Colombiano;1216
@@ -28,7 +28,7 @@ BRICENO;Edgar Parra;Partido Conservador Colombiano;828
 BRICENO;Pedro Isaias Quesada Delgado;Partido Liberal Colombiano;528
 BRICENO;Elmer Arfait Wilches Tijo;Partido de la U;65
 BUENAVISTA;Miguel Antonio Castillo Barragan;Partido Liberal Colombiano;1136
-BUENAVISTA;Carlos Augusto Salinas Medina;Partido Conservador Colombiano;847
+BUENAVISTA;Carlos Augusto Salinas Medina;Movimiento Ciudadano;847
 BUENAVISTA;Uriel Hernando Forero Matallana;Partido de la U;640
 BUENAVISTA;Hernando Peraza Salinas;Partido ASI;171
 BUENAVISTA;William Rivera Villamil;Alianza Verde;111
@@ -49,13 +49,13 @@ CHIQUINQUIRA;Nelson Orlando Rincon Sierra;Partido Liberal Colombiano;13444
 CHIQUINQUIRA;Cesar Augusto Carrillo Ortegon;Partido de la U;4944
 CHIQUINQUIRA;Luz Deyanira Gonzalez Castillo;Alianza Verde;1476
 CHIQUINQUIRA;Pablo Aurelio Suarez Garcia;Partido Conservador Colombiano;1186
-CHIQUINQUIRA;Edgar Orlando Pineda Martinez;19970004;572
+CHIQUINQUIRA;Edgar Orlando Pineda Martinez;Partido Conservador Colombiano;572
 CHIQUINQUIRA;Hector Alonzo Cortes Sanchez;Partido de la U;323
 CHIQUIZA;Carlos Eduardo Borras Buitrago;Partido Liberal Colombiano;2208
 CHIQUIZA;Milton Julio Reyes Reyes;Alianza Verde;1326
 CHISCAS;Gerson Aymer Ruiz Carreno;Partido Liberal Colombiano;804
 CHISCAS;Nacianzeno Herrera Baron;Alianza Verde;628
-CHISCAS;Javier Orlando Suescun Cardenas;Partido ASI;377
+CHISCAS;Javier Orlando Suescun Cardenas;Centro Democrático;377
 CHISCAS;Gloria Isabel Duarte Mendez;Partido Liberal Colombiano;222
 CHISCAS;Jose Yobany Mendez Caicedo;Partido de la U;188
 CHITA;Dora Belkis Gomez Cetina;Partido Conservador Colombiano;2241
@@ -67,7 +67,7 @@ CHITARAQUE;Amilkar Januario Abaunza Mejia;Partido Liberal Colombiano;138
 CHIVATA;Ana Isabel Bernal Camargo;Alianza Verde;910
 CHIVATA;David Jacinto Montero Cruz;Partido Conservador Colombiano;735
 CHIVATA;Ruby Stella Bernal Hernandez;Partido de la U;204
-CHIVATA;Nelson Andres Montero Ramirez;19970004;4
+CHIVATA;Nelson Andres Montero Ramirez;Partido Conservador Colombiano;4
 CHIVOR;Ana Yolanda Hernandez Daza;Alianza Verde;591
 CHIVOR;Jose Ricardo Vargas Parra;Partido Conservador Colombiano;486
 CHIVOR;Huimer Danilo Arevalo Salguero;Partido de la U;82
@@ -90,7 +90,7 @@ CUBARA;Jhon Jairo Alonso Rincon;Partido Liberal Colombiano;1185
 CUBARA;Zehir Elias Rodriguez Suescun;Partido ASI;699
 CUBARA;Isaias Sanchez Alvarez;Partido Conservador Colombiano;532
 CUCAITA;Marcos Daniel Borda Parra;Partido de la U;956
-CUCAITA;Luis Alonso Castillo Duarte;19970004;826
+CUCAITA;Luis Alonso Castillo Duarte;Partido Conservador Colombiano;826
 CUCAITA;Carlos Eduardo Luis Vanegas;Partido Liberal Colombiano;293
 CUCAITA;Abel Buitrago Ruiz;Partido ASI;194
 CUCAITA;Jose Roberto Largo Borda;Partido Conservador Colombiano;58
@@ -121,14 +121,14 @@ GACHANTIVA;Pedro Alfonso Sanchez Cubides;Partido Conservador Colombiano;861
 GAMEZA;Jose Samuel Medina Alfonso;Partido Conservador Colombiano;1394
 GAMEZA;Carlos Alirio Parra Parra;Partido Liberal Colombiano;1275
 GAMEZA;Manuel Cely;Partido ASI;188
-GAMEZA;Rafael Antonio Nontoa Socha;19970004;14
+GAMEZA;Rafael Antonio Nontoa Socha;Partido Conservador Colombiano;14
 GARAGOA;Reinaldo Vera Amaya;Partido Liberal Colombiano;2208
 GARAGOA;Julio Ernesto Sanabria Guerra;Partido Liberal Colombiano;1939
 GARAGOA;Jose Ricardo Manrique Lara;Partido Conservador Colombiano;1408
 GARAGOA;Hugo Jose Moreno Alfonso;Alianza Verde;921
 GARAGOA;Yongar Johnson Gordillo Bermudez;Partido ASI;240
 GARAGOA;Diana Carolina Beltran Castaneda;20000036;210
-GUACAMAYAS;Wilson Fernando Baron Gomez;19970004;755
+GUACAMAYAS;Wilson Fernando Baron Gomez;Partido Conservador Colombiano;755
 GUACAMAYAS;Holman Nepomuceno Baron Neira;Partido de la U;258
 GUACAMAYAS;Dario Alexander Albarracin Valderrama;Partido Liberal Colombiano;229
 GUATEQUE;Fabian Bulla Sanchez;Partido Liberal Colombiano;4257
@@ -153,7 +153,7 @@ LA CAPILLA;Rober Eduardo Cardenas Moreno;Partido Liberal Colombiano;31
 LA UVITA;Hector Mauricio Cuevas Berrio;Alianza Verde;650
 LA UVITA;Victor Manuel Rosas Hernandez;Partido de la U;571
 LA UVITA;Mario Raul Medina Garcia;Partido Conservador Colombiano;346
-LA UVITA;Victor Hugo Hernandez Leon;19970004;151
+LA UVITA;Victor Hugo Hernandez Leon;Partido Conservador Colombiano;151
 LA VICTORIA;Cesar Eduardo Palacios Florido;Partido de la U;653
 LA VICTORIA;Jose Gilberto Sanabria Delgado;Partido Liberal Colombiano;500
 LABRANZAGRANDE;Hernando Abrahan Perez Fernandez;Partido Liberal Colombiano;1089
@@ -168,8 +168,8 @@ MARIPI;Albeiro Acosta Rendon;Partido de la U;1752
 MIRAFLORES;Nelson Hernando Roa Rubio;Partido Liberal Colombiano;2522
 MIRAFLORES;Willinthon Jaime Alfonso Prieto;Partido de la U;2455
 MONGUA;Nelson De Jesus Medina Merchan;Partido Liberal Colombiano;1411
-MONGUA;Reyes Bernardo Perez Alvarez;Partido de la U;610
-MONGUA;Cesar Facundo Torres Serrano;19970004;592
+MONGUA;Reyes Bernardo Perez Alvarez;Cambio Radical;610
+MONGUA;Cesar Facundo Torres Serrano;Partido Conservador Colombiano;592
 MONGUA;Jose Silverio Tapias Vega;Partido Conservador Colombiano;293
 MONGUA;Juan Manuel Alvarez Alvarez;Alianza Verde;19
 MONGUI;Segundo Anatolio Pedraza Parada;Partido Liberal Colombiano;897
@@ -177,31 +177,31 @@ MONGUI;Reyes Gutierrez Bernal;Partido Conservador Colombiano;894
 MONGUI;Carmen Luisa Barrera Carrero;Partido de la U;708
 MONIQUIRA;Servilio Caicedo Ulloa;Partido Conservador Colombiano;3950
 MONIQUIRA;Fredy Iovanny Pardo Pinzon;Partido de la U;3804
-MONIQUIRA;Jaison Gilberto Baron Motta;19970004;1012
+MONIQUIRA;Jaison Gilberto Baron Motta;Partido Conservador Colombiano;1012
 MONIQUIRA;Jorge Eliecer Ruano;Partido Liberal Colombiano;429
 MONIQUIRA;Luis Arturo Serrano Monsalve;Partido Liberal Colombiano;237
-MOTAVITA;Dalila Yazmin Pamplona Pacheco;19970004;1707
+MOTAVITA;Dalila Yazmin Pamplona Pacheco;Partido Conservador Colombiano;1707
 MOTAVITA;Alveiro Malaver Echeverria;Partido Liberal Colombiano;1685
 MOTAVITA;Buenaventura Quintero Malaver;Alianza Verde;7
 MUZO;Luis Carlos Salazar Acosta;Partido Conservador Colombiano;2857
-MUZO;Elin Jose Bohorquez Ariza;Partido Liberal Colombiano;1109
+MUZO;Elin Jose Bohorquez Ariza;Cambio Radical;1109
 MUZO;Luis Alberto Rodriguez;Partido de la U;131
 NOBSA;Ramiro Barragan Adame;Alianza Verde;3403
-NOBSA;Luis Hernando Calixto Paipa;Partido Liberal Colombiano;2097
+NOBSA;Luis Hernando Calixto Paipa;Cambio Radical;2097
 NOBSA;Alfredo Hernando Nino Sierra;Partido ASI;1232
 NOBSA;Felix Albeiro Siachoque Diaz;Partido Liberal Colombiano;898
 NOBSA;Mario Alexander Monroy Gallo;20110195;534
 NUEVO COLON;Bernardo Andres Pulido Garcia;Partido de la U;1325
 NUEVO COLON;Rosa Maria Castelblanco Castelblanco;Partido Liberal Colombiano;1170
 NUEVO COLON;Hector Wilson Castelblanco Rodriguez;Alianza Verde;727
-NUEVO COLON;Doris Lucila Jimenez Vargas;19970004;43
+NUEVO COLON;Doris Lucila Jimenez Vargas;Partido Conservador Colombiano;43
 OICATA;Ever Nino Cuervo;20110050;1125
 OICATA;Rafael Humberto Riano Nino;Partido Conservador Colombiano;577
-OICATA;Angel Marino Lancheros Ramirez;19970004;22
+OICATA;Angel Marino Lancheros Ramirez;Partido Conservador Colombiano;22
 OTANCHE;Wilson Guerrero Vasquez;Partido Conservador Colombiano;2153
 OTANCHE;Norbey Octavio Garavito Cancelado;Partido de la U;1062
 OTANCHE;Clinton Rene Sanchez Candela;Alianza Verde;403
-OTANCHE;Gabriel Parra Benitez;19970004;354
+OTANCHE;Gabriel Parra Benitez;Partido Conservador Colombiano;354
 PACHAVITA;Fabio Ernesto Huertas Leguizamon;Partido Conservador Colombiano;1190
 PACHAVITA;Arquimedes Gamboa Castellanos;Alianza Verde;198
 PAEZ;Juan Diego Morales Calderon;Partido de la U;676
@@ -212,7 +212,7 @@ PAIPA;Henry De Jesus Puerto Vasquez;Partido Conservador Colombiano;5283
 PAJARITO;Jesus Noe Riveros Lopez;Partido de la U;862
 PAJARITO;Felix Eduardo Sanchez Porras;Partido Liberal Colombiano;368
 PANQUEBA;Eduar Escamilla Correa;Partido de la U;540
-PANQUEBA;Luis Antonio Mojica Carrillo;19970004;359
+PANQUEBA;Luis Antonio Mojica Carrillo;Partido Conservador Colombiano;359
 PANQUEBA;Marco Rodrigo Perez Perez;Partido Conservador Colombiano;130
 PAUNA;Omar Casallas Sanchez;Partido de la U;1650
 PAUNA;Julio Ramiro Pena Ramirez;Partido Liberal Colombiano;1585
@@ -225,13 +225,13 @@ PAZ DE RIO;Maria Elena Ortiz Nova;Alianza Verde;908
 PAZ DE RIO;Carlos Abel Calderon;Partido Liberal Colombiano;809
 PAZ DE RIO;Jauregui Ramos Amaya;Partido Liberal Colombiano;167
 PESCA;Carlos Arturo Ramirez Bayona;Partido Conservador Colombiano;1846
-PESCA;Justo Pastor Rodriguez Herrera;19970004;1773
+PESCA;Justo Pastor Rodriguez Herrera;Alianza Social Independiente;1773
 PESCA;Pedro Antonio Barrera Ochoa;Alianza Verde;318
 PESCA;Marco Aurelio Chaparro Bautista;Partido ASI;24
 PISBA;Neyla Ruiz Correa;Alianza Verde;476
 PISBA;Jairo Enrique Millan Malpica;Partido Conservador Colombiano;266
 PUERTO BOYACA;Fernando Rubio Lopez;Partido de la U;7405
-PUERTO BOYACA;Oscar Fernando Botero Alzate;Partido Liberal Colombiano;5728
+PUERTO BOYACA;Oscar Fernando Botero Alzate;Partido Conservador Colombiano;5728
 PUERTO BOYACA;Luis Eduardo Alvarez Acevedo;20100007;4790
 PUERTO BOYACA;Ismael Guzman Perez;Partido Liberal Colombiano;361
 PUERTO BOYACA;Alicia Salgado Forero;20000036;313
@@ -257,7 +257,7 @@ SACHICA;Jose Orlando Piraquive Suarez;Partido Liberal Colombiano;563
 SACHICA;Luz Marina Medina De Sierra;Alianza Verde;442
 SACHICA;Hugo Buitrago;Partido Liberal Colombiano;431
 SAMACA;Luis Alberto Aponte Gomez;Alianza Verde;4490
-SAMACA;Wilson Castiblanco Gil;Partido Liberal Colombiano;2698
+SAMACA;Wilson Castiblanco Gil;Partido de la U;2698
 SAMACA;Alirio Lopez Torres;Partido Liberal Colombiano;1211
 SAMACA;Jorge Marin Jerez Amado;Partido de la U;171
 SAN EDUARDO;Oscar Hernando Parra Aponte;Alianza Verde;468
@@ -291,7 +291,7 @@ SANTA ROSA DE VITERBO;German Dario Nunez Solano;Alianza Verde;994
 SANTA ROSA DE VITERBO;Miyer Alexander Gonzalez Alvarez;Partido Liberal Colombiano;759
 SANTA ROSA DE VITERBO;German Orlando Castiblanco Camacho;Partido de la U;442
 SANTA SOFIA;William Gustavo Parra Merchan;Partido Conservador Colombiano;1209
-SANTA SOFIA;Wilson Rene Jimenez Lara;19970004;760
+SANTA SOFIA;Wilson Rene Jimenez Lara;Partido Conservador Colombiano;760
 SANTA SOFIA;Luis Eduardo Gonzalez Forero;Alianza Verde;153
 SANTANA;Henry Armando Sanchez Forero;Partido ASI;2177
 SANTANA;Jesus Antonio Barrera Fandino;Partido Liberal Colombiano;1838
@@ -299,11 +299,11 @@ SANTANA;Nubia Amanda Ramos De Pena;Partido Liberal Colombiano;3
 SATIVANORTE;Jose Maximino Suarez Leon;Partido de la U;836
 SATIVANORTE;Juan De Dios Suarez Suarez;Partido Conservador Colombiano;632
 SATIVANORTE;Pablo Emilio Higuera Baez;Alianza Verde;321
-SATIVANORTE;Felix Maria Gomez Ruiz;19970004;47
+SATIVANORTE;Felix Maria Gomez Ruiz;Partido Conservador Colombiano;47
 SATIVASUR;Sandra Celmira Pedroza Sandoval;Partido Conservador Colombiano;471
 SATIVASUR;Omar Lopez Delgado;Partido Liberal Colombiano;451
 SIACHOQUE;Oscar Enrique Avila Galan;Alianza Verde;2413
-SIACHOQUE;Segundo Andres Cuitiva Jimenez;19970004;1523
+SIACHOQUE;Segundo Andres Cuitiva Jimenez;Partido Conservador Colombiano;1523
 SIACHOQUE;Juan Vicente Jimenez Espinosa;Partido Conservador Colombiano;328
 SIACHOQUE;Elvis Gerardo Moreno Nova;Partido de la U;14
 SIACHOQUE;Jose William Rativa Rocha;Partido Liberal Colombiano;6
@@ -328,13 +328,13 @@ SOMONDOCO;Edilberto Lopez Salinas;20100007;824
 SOMONDOCO;Carlos Eduardo Salcedo Duarte;Partido de la U;339
 SORA;Hernan Alonso Acosta Medina;Alianza Verde;774
 SORA;Marisol Rodriguez Barajas;Partido de la U;554
-SORA;Alveiro Acosta Pineda;19970004;431
+SORA;Alveiro Acosta Pineda;Partido Conservador Colombiano;431
 SORA;Jesus Armando Lopez Lopez;Partido Liberal Colombiano;216
 SORACA;Oscar Ricardo Corredor Quintero;Alianza Verde;2431
 SORACA;Yuber Fredy Fonseca Fuquen;Partido de la U;1246
-SORACA;Luciano Martinez Medina;19970004;19
+SORACA;Luciano Martinez Medina;Partido Conservador Colombiano;19
 SOTAQUIRA;Hector Alfonso Garcia Garcia;Partido Liberal Colombiano;1466
-SOTAQUIRA;Royman Andre Garavito Coronado;19970004;1274
+SOTAQUIRA;Royman Andre Garavito Coronado;Partido Conservador Colombiano;1274
 SOTAQUIRA;Luis Felipe Higuera Robles;Alianza Verde;783
 SUSACON;Silvio Alberto Rincon Ortega;Partido Conservador Colombiano;1037
 SUSACON;Hector Josue Camacho Acosta;Partido de la U;693
@@ -348,14 +348,14 @@ SUTATENZA;Nayive Sastoque Quintero;Partido de la U;421
 SUTATENZA;Fabio Marin Corba Ramirez;Alianza Verde;272
 SUTATENZA;Heliodoro Sastoque Medina;Partido Liberal Colombiano;88
 SUTATENZA;Teresa De Jesus Vargas Cuesta;Partido ASI;64
-SUTATENZA;Manuel Bulla Duenas;19970004;30
+SUTATENZA;Manuel Bulla Duenas;Partido Conservador Colombiano;30
 TASCO;Jhon Fredy Cristancho Berdugo;Partido de la U;1663
 TASCO;Frey Fernando Castillo Garcia;Partido Liberal Colombiano;1046
 TASCO;Nelson Javier Garcia Castellanos;Alianza Verde;752
 TENZA;Jorge Vidal Martin Martin;Partido Conservador Colombiano;1723
 TENZA;Luis Guillermo Guerrero Barreto;Alianza Verde;631
 TIBANA;Luis Alberto Casteblanco Quincos;Partido Liberal Colombiano;3708
-TIBANA;Yury Diaz Patino;19970004;549
+TIBANA;Yury Diaz Patino;Partido Conservador Colombiano;549
 TIBANA;Johanna Catalina Garcia Garcia;Alianza Verde;346
 TIBASOSA;Carlos Arturo Triana Vega;Partido Conservador Colombiano;2035
 TIBASOSA;Anselmo Perez Molano;Partido de la U;1907
@@ -365,7 +365,7 @@ TINJACA;Alsilver Sierra Mendieta;Partido Conservador Colombiano;1042
 TINJACA;Felix Roberto Sierra Sierra;Partido de la U;694
 TIPACOQUE;Wilmer Enrique Sanabria Nino;Partido Liberal Colombiano;930
 TIPACOQUE;Juan De Dios Figueroa Malaver;Alianza Verde;848
-TIPACOQUE;Luis Humberto Ramirez Escobar;19970004;397
+TIPACOQUE;Luis Humberto Ramirez Escobar;Partido Conservador Colombiano;397
 TOCA;Segundo Crisanto Ochoa Diaz;Partido de la U;2679
 TOCA;Camilo Fernando Caicedo Fonseca;Partido Liberal Colombiano;1696
 TOCA;Aquilino Amaya Guio;Alianza Verde;506
@@ -377,7 +377,7 @@ TOGUI;Merly Sanchez Poveda;Partido de la U;48
 TOPAGA;Jose Oswaldo Castro Tejedor;20110064;1282
 TOPAGA;Hector Guillermo Cruz Barrera;Partido Conservador Colombiano;820
 TOTA;Yury Neill Diaz Aranguren;20110074;1969
-TOTA;Edgar Antonio Moreno Chaparro;Partido Conservador Colombiano;821
+TOTA;Edgar Antonio Moreno Chaparro;Movimiento Ciudadano;821
 TUNJA;Fernando Florez Espinosa;Alianza Verde;29613
 TUNJA;Ricardo Hernando Vargas Perez;Partido Liberal Colombiano;22790
 TUNJA;Armando Guerrero Castro;Partido Liberal Colombiano;6607
@@ -388,9 +388,9 @@ TURMEQUE;Hernando Orjuela Malagon;Partido Liberal Colombiano;1377
 TURMEQUE;Victor Orlando Osorio Robayo;Partido Liberal Colombiano;495
 TURMEQUE;Pedro Nel Pulido Jimenez;Partido ASI;336
 TUTA;Wilder Ivan Suesca Ochoa;Partido Conservador Colombiano;2909
-TUTA;Elkin Alejandro Rincon Salamanca;Partido Liberal Colombiano;2048
+TUTA;Elkin Alejandro Rincon Salamanca;Movimiento Ciudadano;2048
 TUTA;Luis Alfonso Barreiro;Partido de la U;149
-TUTAZA;Gonzalo Castro Triana;19970004;725
+TUTAZA;Gonzalo Castro Triana;Partido Conservador Colombiano;725
 TUTAZA;Fabio Antonio Guarin Gomez;Alianza Verde;457
 TUTAZA;Aura Delia Alarcon Sisa;Partido Liberal Colombiano;185
 TUTAZA;Nelson Albeiro Castro Arguello;Partido Conservador Colombiano;33
@@ -403,7 +403,7 @@ VENTAQUEMADA;Carlos Alberto Otalora Avendano;Alianza Verde;1704
 VENTAQUEMADA;Carlos Arturo Barragan Blanco;Partido Liberal Colombiano;223
 VILLA DE LEYVA;Fabian Camilo Igua Robles;20110178;2820
 VILLA DE LEYVA;Victor Hugo Forero Sanchez;Partido de la U;2596
-VILLA DE LEYVA;Juan Evangelista Farfan Corzo;Partido Liberal Colombiano;1075
+VILLA DE LEYVA;Juan Evangelista Farfan Corzo;Opción Ciudadana;1075
 VIRACACHA;Jose Vicente Vargas Patino;Partido Conservador Colombiano;1254
 VIRACACHA;Luis Angel Lopez Puin;Partido Liberal Colombiano;515
 VIRACACHA;Francisco Emerson Parra Pedraza;Partido Liberal Colombiano;150

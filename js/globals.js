@@ -50,6 +50,7 @@ const ABREV_PARTIDO = {
   'Todos Somos Colombia':          'Todos Somos',
   'Partido Somos':                 'P. Somos',
   'Partido sin identificar':       'Sin identificar',
+  'Movimiento Ciudadano':          'Mov. Ciudadano',
 };
 
 const CIRCUNSCRIPCIONES_EXCLUIR = [
