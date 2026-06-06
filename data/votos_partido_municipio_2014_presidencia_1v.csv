@@ -1,616 +1,739 @@
-MUNNOMBRE;PARNOMBRE;VOTOS
-ALMEIDA;Alianza Verde;17
-ALMEIDA;Centro Democrático;460
-ALMEIDA;Partido Conservador Colombiano;50
-ALMEIDA;Partido de la U;109
-ALMEIDA;Polo Democrático Alternativo;58
-AQUITANIA;Alianza Verde;127
-AQUITANIA;Centro Democrático;3467
-AQUITANIA;Partido Conservador Colombiano;1168
-AQUITANIA;Partido de la U;300
-AQUITANIA;Polo Democrático Alternativo;421
-ARCABUCO;Alianza Verde;71
-ARCABUCO;Centro Democrático;483
-ARCABUCO;Partido Conservador Colombiano;559
-ARCABUCO;Partido de la U;348
-ARCABUCO;Polo Democrático Alternativo;302
-BELEN;Alianza Verde;113
-BELEN;Centro Democrático;542
-BELEN;Partido Conservador Colombiano;1142
-BELEN;Partido de la U;364
-BELEN;Polo Democrático Alternativo;544
-BERBEO;Alianza Verde;39
-BERBEO;Centro Democrático;151
-BERBEO;Partido Conservador Colombiano;66
-BERBEO;Partido de la U;90
-BERBEO;Polo Democrático Alternativo;84
-BETEITIVA;Alianza Verde;43
-BETEITIVA;Centro Democrático;183
-BETEITIVA;Partido Conservador Colombiano;151
-BETEITIVA;Partido de la U;215
-BETEITIVA;Polo Democrático Alternativo;98
-BOAVITA;Alianza Verde;43
-BOAVITA;Centro Democrático;1043
-BOAVITA;Partido Conservador Colombiano;451
-BOAVITA;Partido de la U;325
-BOAVITA;Polo Democrático Alternativo;194
-BOYACA;Alianza Verde;80
-BOYACA;Centro Democrático;300
-BOYACA;Partido Conservador Colombiano;194
-BOYACA;Partido de la U;230
-BOYACA;Polo Democrático Alternativo;263
-BRICENO;Alianza Verde;15
-BRICENO;Centro Democrático;341
-BRICENO;Partido Conservador Colombiano;148
-BRICENO;Partido de la U;279
-BRICENO;Polo Democrático Alternativo;42
-BUENAVISTA;Alianza Verde;33
-BUENAVISTA;Centro Democrático;813
-BUENAVISTA;Partido Conservador Colombiano;250
-BUENAVISTA;Partido de la U;562
-BUENAVISTA;Polo Democrático Alternativo;125
-BUSBANZA;Alianza Verde;21
-BUSBANZA;Centro Democrático;76
-BUSBANZA;Partido Conservador Colombiano;184
-BUSBANZA;Partido de la U;51
-BUSBANZA;Polo Democrático Alternativo;38
-CALDAS;Alianza Verde;29
-CALDAS;Centro Democrático;344
-CALDAS;Partido Conservador Colombiano;278
-CALDAS;Partido de la U;203
-CALDAS;Polo Democrático Alternativo;162
-CAMPOHERMOSO;Alianza Verde;27
-CAMPOHERMOSO;Centro Democrático;659
-CAMPOHERMOSO;Partido Conservador Colombiano;142
-CAMPOHERMOSO;Partido de la U;149
-CAMPOHERMOSO;Polo Democrático Alternativo;74
-CERINZA;Alianza Verde;77
-CERINZA;Centro Democrático;334
-CERINZA;Partido Conservador Colombiano;593
-CERINZA;Partido de la U;158
-CERINZA;Polo Democrático Alternativo;385
-CHINAVITA;Alianza Verde;30
-CHINAVITA;Centro Democrático;556
-CHINAVITA;Partido Conservador Colombiano;200
-CHINAVITA;Partido de la U;214
-CHINAVITA;Polo Democrático Alternativo;136
-CHIQUINQUIRA;Alianza Verde;1279
-CHIQUINQUIRA;Centro Democrático;5103
-CHIQUINQUIRA;Partido Conservador Colombiano;4245
-CHIQUINQUIRA;Partido de la U;2956
-CHIQUINQUIRA;Polo Democrático Alternativo;3275
-CHIQUIZA;Alianza Verde;77
-CHIQUIZA;Centro Democrático;158
-CHIQUIZA;Partido Conservador Colombiano;121
-CHIQUIZA;Partido de la U;444
-CHIQUIZA;Polo Democrático Alternativo;178
-CHISCAS;Alianza Verde;16
-CHISCAS;Centro Democrático;1116
-CHISCAS;Partido Conservador Colombiano;28
-CHISCAS;Partido de la U;246
-CHISCAS;Polo Democrático Alternativo;78
-CHITA;Alianza Verde;41
-CHITA;Centro Democrático;2324
-CHITA;Partido Conservador Colombiano;115
-CHITA;Partido de la U;150
-CHITA;Polo Democrático Alternativo;163
-CHITARAQUE;Alianza Verde;20
-CHITARAQUE;Centro Democrático;758
-CHITARAQUE;Partido Conservador Colombiano;154
-CHITARAQUE;Partido de la U;487
-CHITARAQUE;Polo Democrático Alternativo;119
-CHIVATA;Alianza Verde;164
-CHIVATA;Centro Democrático;190
-CHIVATA;Partido Conservador Colombiano;441
-CHIVATA;Partido de la U;116
-CHIVATA;Polo Democrático Alternativo;193
-CHIVOR;Alianza Verde;14
-CHIVOR;Centro Democrático;396
-CHIVOR;Partido Conservador Colombiano;164
-CHIVOR;Partido de la U;145
-CHIVOR;Polo Democrático Alternativo;26
-CIENEGA;Alianza Verde;62
-CIENEGA;Centro Democrático;847
-CIENEGA;Partido Conservador Colombiano;582
-CIENEGA;Partido de la U;94
-CIENEGA;Polo Democrático Alternativo;119
-COMBITA;Alianza Verde;310
-COMBITA;Centro Democrático;581
-COMBITA;Partido Conservador Colombiano;795
-COMBITA;Partido de la U;443
-COMBITA;Polo Democrático Alternativo;691
-COPER;Alianza Verde;20
-COPER;Centro Democrático;320
-COPER;Partido Conservador Colombiano;264
-COPER;Partido de la U;617
-COPER;Polo Democrático Alternativo;66
-CORRALES;Alianza Verde;80
-CORRALES;Centro Democrático;217
-CORRALES;Partido Conservador Colombiano;373
-CORRALES;Partido de la U;109
-CORRALES;Polo Democrático Alternativo;223
-COVARACHIA;Alianza Verde;21
-COVARACHIA;Centro Democrático;917
-COVARACHIA;Partido Conservador Colombiano;83
-COVARACHIA;Partido de la U;105
-COVARACHIA;Polo Democrático Alternativo;54
-CUBARA;Alianza Verde;32
-CUBARA;Centro Democrático;436
-CUBARA;Partido Conservador Colombiano;207
-CUBARA;Partido de la U;394
-CUBARA;Polo Democrático Alternativo;248
-CUCAITA;Alianza Verde;77
-CUCAITA;Centro Democrático;144
-CUCAITA;Partido Conservador Colombiano;703
-CUCAITA;Partido de la U;133
-CUCAITA;Polo Democrático Alternativo;279
-CUITIVA;Alianza Verde;36
-CUITIVA;Centro Democrático;326
-CUITIVA;Partido Conservador Colombiano;238
-CUITIVA;Partido de la U;142
-CUITIVA;Polo Democrático Alternativo;110
-DUITAMA;Alianza Verde;5660
-DUITAMA;Centro Democrático;9830
-DUITAMA;Partido Conservador Colombiano;7699
-DUITAMA;Partido de la U;4597
-DUITAMA;Polo Democrático Alternativo;12141
-EL COCUY;Alianza Verde;33
-EL COCUY;Centro Democrático;1084
-EL COCUY;Partido Conservador Colombiano;233
-EL COCUY;Partido de la U;107
-EL COCUY;Polo Democrático Alternativo;112
-EL ESPINO;Alianza Verde;12
-EL ESPINO;Centro Democrático;834
-EL ESPINO;Partido Conservador Colombiano;189
-EL ESPINO;Partido de la U;71
-EL ESPINO;Polo Democrático Alternativo;32
-FIRAVITOBA;Alianza Verde;132
-FIRAVITOBA;Centro Democrático;338
-FIRAVITOBA;Partido Conservador Colombiano;543
-FIRAVITOBA;Partido de la U;259
-FIRAVITOBA;Polo Democrático Alternativo;598
-FLORESTA;Alianza Verde;83
-FLORESTA;Centro Democrático;425
-FLORESTA;Partido Conservador Colombiano;580
-FLORESTA;Partido de la U;142
-FLORESTA;Polo Democrático Alternativo;129
-GACHANTIVA;Alianza Verde;49
-GACHANTIVA;Centro Democrático;385
-GACHANTIVA;Partido Conservador Colombiano;328
-GACHANTIVA;Partido de la U;223
-GACHANTIVA;Polo Democrático Alternativo;146
-GAMEZA;Alianza Verde;54
-GAMEZA;Centro Democrático;563
-GAMEZA;Partido Conservador Colombiano;539
-GAMEZA;Partido de la U;148
-GAMEZA;Polo Democrático Alternativo;188
-GARAGOA;Alianza Verde;287
-GARAGOA;Centro Democrático;1670
-GARAGOA;Partido Conservador Colombiano;1150
-GARAGOA;Partido de la U;832
-GARAGOA;Polo Democrático Alternativo;873
-GUACAMAYAS;Alianza Verde;5
-GUACAMAYAS;Centro Democrático;636
-GUACAMAYAS;Partido Conservador Colombiano;82
-GUACAMAYAS;Partido de la U;28
-GUACAMAYAS;Polo Democrático Alternativo;29
-GUATEQUE;Alianza Verde;293
-GUATEQUE;Centro Democrático;1043
-GUATEQUE;Partido Conservador Colombiano;565
-GUATEQUE;Partido de la U;891
-GUATEQUE;Polo Democrático Alternativo;525
-GUAYATA;Alianza Verde;46
-GUAYATA;Centro Democrático;794
-GUAYATA;Partido Conservador Colombiano;431
-GUAYATA;Partido de la U;239
-GUAYATA;Polo Democrático Alternativo;105
-GUICAN DE LA SIERRA;Alianza Verde;56
-GUICAN DE LA SIERRA;Centro Democrático;995
-GUICAN DE LA SIERRA;Partido Conservador Colombiano;184
-GUICAN DE LA SIERRA;Partido de la U;81
-GUICAN DE LA SIERRA;Polo Democrático Alternativo;107
-IZA;Alianza Verde;63
-IZA;Centro Democrático;331
-IZA;Partido Conservador Colombiano;214
-IZA;Partido de la U;98
-IZA;Polo Democrático Alternativo;190
-JENESANO;Alianza Verde;88
-JENESANO;Centro Democrático;572
-JENESANO;Partido Conservador Colombiano;208
-JENESANO;Partido de la U;398
-JENESANO;Polo Democrático Alternativo;332
-JERICO;Alianza Verde;25
-JERICO;Centro Democrático;986
-JERICO;Partido Conservador Colombiano;71
-JERICO;Partido de la U;132
-JERICO;Polo Democrático Alternativo;81
-LA CAPILLA;Alianza Verde;45
-LA CAPILLA;Centro Democrático;373
-LA CAPILLA;Partido Conservador Colombiano;254
-LA CAPILLA;Partido de la U;145
-LA CAPILLA;Polo Democrático Alternativo;158
-LA UVITA;Alianza Verde;34
-LA UVITA;Centro Democrático;675
-LA UVITA;Partido Conservador Colombiano;282
-LA UVITA;Partido de la U;119
-LA UVITA;Polo Democrático Alternativo;47
-LA VICTORIA;Alianza Verde;6
-LA VICTORIA;Centro Democrático;164
-LA VICTORIA;Partido Conservador Colombiano;14
-LA VICTORIA;Partido de la U;339
-LA VICTORIA;Polo Democrático Alternativo;16
-LABRANZAGRANDE;Alianza Verde;17
-LABRANZAGRANDE;Centro Democrático;817
-LABRANZAGRANDE;Partido Conservador Colombiano;64
-LABRANZAGRANDE;Partido de la U;114
-LABRANZAGRANDE;Polo Democrático Alternativo;69
-MACANAL;Alianza Verde;53
-MACANAL;Centro Democrático;731
-MACANAL;Partido Conservador Colombiano;279
-MACANAL;Partido de la U;183
-MACANAL;Polo Democrático Alternativo;169
-MARIPI;Alianza Verde;23
-MARIPI;Centro Democrático;1025
-MARIPI;Partido Conservador Colombiano;196
-MARIPI;Partido de la U;820
-MARIPI;Polo Democrático Alternativo;95
-MIRAFLORES;Alianza Verde;307
-MIRAFLORES;Centro Democrático;990
-MIRAFLORES;Partido Conservador Colombiano;340
-MIRAFLORES;Partido de la U;947
-MIRAFLORES;Polo Democrático Alternativo;705
-MONGUA;Alianza Verde;58
-MONGUA;Centro Democrático;1428
-MONGUA;Partido Conservador Colombiano;352
-MONGUA;Partido de la U;103
-MONGUA;Polo Democrático Alternativo;168
-MONGUI;Alianza Verde;66
-MONGUI;Centro Democrático;544
-MONGUI;Partido Conservador Colombiano;322
-MONGUI;Partido de la U;160
-MONGUI;Polo Democrático Alternativo;553
-MONIQUIRA;Alianza Verde;305
-MONIQUIRA;Centro Democrático;2059
-MONIQUIRA;Partido Conservador Colombiano;1245
-MONIQUIRA;Partido de la U;1196
-MONIQUIRA;Polo Democrático Alternativo;1552
-MOTAVITA;Alianza Verde;230
-MOTAVITA;Centro Democrático;364
-MOTAVITA;Partido Conservador Colombiano;291
-MOTAVITA;Partido de la U;405
-MOTAVITA;Polo Democrático Alternativo;463
-MUZO;Alianza Verde;58
-MUZO;Centro Democrático;1157
-MUZO;Partido Conservador Colombiano;574
-MUZO;Partido de la U;653
-MUZO;Polo Democrático Alternativo;188
-NOBSA;Alianza Verde;626
-NOBSA;Centro Democrático;860
-NOBSA;Partido Conservador Colombiano;1116
-NOBSA;Partido de la U;824
-NOBSA;Polo Democrático Alternativo;2303
-NUEVO COLON;Alianza Verde;99
-NUEVO COLON;Centro Democrático;350
-NUEVO COLON;Partido Conservador Colombiano;352
-NUEVO COLON;Partido de la U;273
-NUEVO COLON;Polo Democrático Alternativo;332
-OICATA;Alianza Verde;107
-OICATA;Centro Democrático;176
-OICATA;Partido Conservador Colombiano;268
-OICATA;Partido de la U;144
-OICATA;Polo Democrático Alternativo;252
-OTANCHE;Alianza Verde;64
-OTANCHE;Centro Democrático;1801
-OTANCHE;Partido Conservador Colombiano;221
-OTANCHE;Partido de la U;328
-OTANCHE;Polo Democrático Alternativo;153
-PACHAVITA;Alianza Verde;36
-PACHAVITA;Centro Democrático;417
-PACHAVITA;Partido Conservador Colombiano;184
-PACHAVITA;Partido de la U;93
-PACHAVITA;Polo Democrático Alternativo;83
-PAEZ;Alianza Verde;36
-PAEZ;Centro Democrático;573
-PAEZ;Partido Conservador Colombiano;55
-PAEZ;Partido de la U;481
-PAEZ;Polo Democrático Alternativo;43
-PAIPA;Alianza Verde;1692
-PAIPA;Centro Democrático;2457
-PAIPA;Partido Conservador Colombiano;1878
-PAIPA;Partido de la U;1637
-PAIPA;Polo Democrático Alternativo;2183
-PAJARITO;Alianza Verde;21
-PAJARITO;Centro Democrático;490
-PAJARITO;Partido Conservador Colombiano;42
-PAJARITO;Partido de la U;101
-PAJARITO;Polo Democrático Alternativo;63
-PANQUEBA;Alianza Verde;4
-PANQUEBA;Centro Democrático;530
-PANQUEBA;Partido Conservador Colombiano;84
-PANQUEBA;Partido de la U;49
-PANQUEBA;Polo Democrático Alternativo;28
-PAUNA;Alianza Verde;56
-PAUNA;Centro Democrático;1184
-PAUNA;Partido Conservador Colombiano;555
-PAUNA;Partido de la U;668
-PAUNA;Polo Democrático Alternativo;195
-PAYA;Alianza Verde;15
-PAYA;Centro Democrático;285
-PAYA;Partido Conservador Colombiano;241
-PAYA;Partido de la U;49
-PAYA;Polo Democrático Alternativo;39
-PAZ DE RIO;Alianza Verde;284
-PAZ DE RIO;Centro Democrático;172
-PAZ DE RIO;Partido Conservador Colombiano;328
-PAZ DE RIO;Partido de la U;304
-PAZ DE RIO;Polo Democrático Alternativo;507
-PESCA;Alianza Verde;76
-PESCA;Centro Democrático;778
-PESCA;Partido Conservador Colombiano;734
-PESCA;Partido de la U;301
-PESCA;Polo Democrático Alternativo;310
-PISBA;Alianza Verde;29
-PISBA;Centro Democrático;289
-PISBA;Partido Conservador Colombiano;35
-PISBA;Partido de la U;64
-PISBA;Polo Democrático Alternativo;34
-PUERTO BOYACA;Alianza Verde;811
-PUERTO BOYACA;Centro Democrático;4151
-PUERTO BOYACA;Partido Conservador Colombiano;2490
-PUERTO BOYACA;Partido de la U;2888
-PUERTO BOYACA;Polo Democrático Alternativo;1645
-QUIPAMA;Alianza Verde;38
-QUIPAMA;Centro Democrático;1079
-QUIPAMA;Partido Conservador Colombiano;249
-QUIPAMA;Partido de la U;363
-QUIPAMA;Polo Democrático Alternativo;109
-RAMIRIQUI;Alianza Verde;184
-RAMIRIQUI;Centro Democrático;1233
-RAMIRIQUI;Partido Conservador Colombiano;646
-RAMIRIQUI;Partido de la U;576
-RAMIRIQUI;Polo Democrático Alternativo;494
-RAQUIRA;Alianza Verde;69
-RAQUIRA;Centro Democrático;653
-RAQUIRA;Partido Conservador Colombiano;679
-RAQUIRA;Partido de la U;322
-RAQUIRA;Polo Democrático Alternativo;277
-RONDON;Alianza Verde;44
-RONDON;Centro Democrático;416
-RONDON;Partido Conservador Colombiano;180
-RONDON;Partido de la U;203
-RONDON;Polo Democrático Alternativo;67
-SABOYA;Alianza Verde;168
-SABOYA;Centro Democrático;1333
-SABOYA;Partido Conservador Colombiano;1023
-SABOYA;Partido de la U;780
-SABOYA;Polo Democrático Alternativo;461
-SACHICA;Alianza Verde;99
-SACHICA;Centro Democrático;287
-SACHICA;Partido Conservador Colombiano;298
-SACHICA;Partido de la U;412
-SACHICA;Polo Democrático Alternativo;275
-SAMACA;Alianza Verde;431
-SAMACA;Centro Democrático;905
-SAMACA;Partido Conservador Colombiano;1546
-SAMACA;Partido de la U;998
-SAMACA;Polo Democrático Alternativo;1091
-SAN EDUARDO;Alianza Verde;36
-SAN EDUARDO;Centro Democrático;247
-SAN EDUARDO;Partido Conservador Colombiano;116
-SAN EDUARDO;Partido de la U;114
-SAN EDUARDO;Polo Democrático Alternativo;60
-SAN JOSE DE PARE;Alianza Verde;62
-SAN JOSE DE PARE;Centro Democrático;724
-SAN JOSE DE PARE;Partido Conservador Colombiano;238
-SAN JOSE DE PARE;Partido de la U;426
-SAN JOSE DE PARE;Polo Democrático Alternativo;121
-SAN LUIS DE GACENO;Alianza Verde;67
-SAN LUIS DE GACENO;Centro Democrático;1153
-SAN LUIS DE GACENO;Partido Conservador Colombiano;314
-SAN LUIS DE GACENO;Partido de la U;233
-SAN LUIS DE GACENO;Polo Democrático Alternativo;163
-SAN MATEO;Alianza Verde;29
-SAN MATEO;Centro Democrático;1305
-SAN MATEO;Partido Conservador Colombiano;164
-SAN MATEO;Partido de la U;132
-SAN MATEO;Polo Democrático Alternativo;62
-SAN MIGUEL DE SEMA;Alianza Verde;43
-SAN MIGUEL DE SEMA;Centro Democrático;267
-SAN MIGUEL DE SEMA;Partido Conservador Colombiano;472
-SAN MIGUEL DE SEMA;Partido de la U;211
-SAN MIGUEL DE SEMA;Polo Democrático Alternativo;84
-SAN PABLO DE BORBUR;Alianza Verde;39
-SAN PABLO DE BORBUR;Centro Democrático;1644
-SAN PABLO DE BORBUR;Partido Conservador Colombiano;145
-SAN PABLO DE BORBUR;Partido de la U;286
-SAN PABLO DE BORBUR;Polo Democrático Alternativo;102
-SANTA MARIA;Alianza Verde;61
-SANTA MARIA;Centro Democrático;501
-SANTA MARIA;Partido Conservador Colombiano;291
-SANTA MARIA;Partido de la U;228
-SANTA MARIA;Polo Democrático Alternativo;171
-SANTA ROSA DE VITERBO;Alianza Verde;337
-SANTA ROSA DE VITERBO;Centro Democrático;1195
-SANTA ROSA DE VITERBO;Partido Conservador Colombiano;1364
-SANTA ROSA DE VITERBO;Partido de la U;415
-SANTA ROSA DE VITERBO;Polo Democrático Alternativo;602
-SANTA SOFIA;Alianza Verde;34
-SANTA SOFIA;Centro Democrático;488
-SANTA SOFIA;Partido Conservador Colombiano;365
-SANTA SOFIA;Partido de la U;198
-SANTA SOFIA;Polo Democrático Alternativo;82
-SANTANA;Alianza Verde;60
-SANTANA;Centro Democrático;724
-SANTANA;Partido Conservador Colombiano;254
-SANTANA;Partido de la U;926
-SANTANA;Polo Democrático Alternativo;212
-SATIVANORTE;Alianza Verde;20
-SATIVANORTE;Centro Democrático;456
-SATIVANORTE;Partido Conservador Colombiano;140
-SATIVANORTE;Partido de la U;210
-SATIVANORTE;Polo Democrático Alternativo;54
-SATIVASUR;Alianza Verde;15
-SATIVASUR;Centro Democrático;82
-SATIVASUR;Partido Conservador Colombiano;184
-SATIVASUR;Partido de la U;90
-SATIVASUR;Polo Democrático Alternativo;39
-SIACHOQUE;Alianza Verde;357
-SIACHOQUE;Centro Democrático;930
-SIACHOQUE;Partido Conservador Colombiano;732
-SIACHOQUE;Partido de la U;188
-SIACHOQUE;Polo Democrático Alternativo;476
-SOATA;Alianza Verde;70
-SOATA;Centro Democrático;1465
-SOATA;Partido Conservador Colombiano;949
-SOATA;Partido de la U;1019
-SOATA;Polo Democrático Alternativo;306
-SOCHA;Alianza Verde;121
-SOCHA;Centro Democrático;656
-SOCHA;Partido Conservador Colombiano;497
-SOCHA;Partido de la U;283
-SOCHA;Polo Democrático Alternativo;533
-SOCOTA;Alianza Verde;35
-SOCOTA;Centro Democrático;1568
-SOCOTA;Partido Conservador Colombiano;186
-SOCOTA;Partido de la U;367
-SOCOTA;Polo Democrático Alternativo;196
-SOGAMOSO;Alianza Verde;3817
-SOGAMOSO;Centro Democrático;9973
-SOGAMOSO;Partido Conservador Colombiano;7467
-SOGAMOSO;Partido de la U;5737
-SOGAMOSO;Polo Democrático Alternativo;14636
-SOMONDOCO;Alianza Verde;54
-SOMONDOCO;Centro Democrático;497
-SOMONDOCO;Partido Conservador Colombiano;192
-SOMONDOCO;Partido de la U;160
-SOMONDOCO;Polo Democrático Alternativo;203
-SORA;Alianza Verde;73
-SORA;Centro Democrático;186
-SORA;Partido Conservador Colombiano;297
-SORA;Partido de la U;319
-SORA;Polo Democrático Alternativo;194
-SORACA;Alianza Verde;268
-SORACA;Centro Democrático;433
-SORACA;Partido Conservador Colombiano;922
-SORACA;Partido de la U;208
-SORACA;Polo Democrático Alternativo;453
-SOTAQUIRA;Alianza Verde;195
-SOTAQUIRA;Centro Democrático;536
-SOTAQUIRA;Partido Conservador Colombiano;612
-SOTAQUIRA;Partido de la U;284
-SOTAQUIRA;Polo Democrático Alternativo;266
-SUSACON;Alianza Verde;30
-SUSACON;Centro Democrático;371
-SUSACON;Partido Conservador Colombiano;544
-SUSACON;Partido de la U;77
-SUSACON;Polo Democrático Alternativo;54
-SUTAMARCHAN;Alianza Verde;88
-SUTAMARCHAN;Centro Democrático;866
-SUTAMARCHAN;Partido Conservador Colombiano;569
-SUTAMARCHAN;Partido de la U;444
-SUTAMARCHAN;Polo Democrático Alternativo;190
-SUTATENZA;Alianza Verde;72
-SUTATENZA;Centro Democrático;698
-SUTATENZA;Partido Conservador Colombiano;235
-SUTATENZA;Partido de la U;245
-SUTATENZA;Polo Democrático Alternativo;158
-TASCO;Alianza Verde;105
-TASCO;Centro Democrático;410
-TASCO;Partido Conservador Colombiano;154
-TASCO;Partido de la U;580
-TASCO;Polo Democrático Alternativo;382
-TENZA;Alianza Verde;82
-TENZA;Centro Democrático;594
-TENZA;Partido Conservador Colombiano;263
-TENZA;Partido de la U;207
-TENZA;Polo Democrático Alternativo;123
-TIBANA;Alianza Verde;80
-TIBANA;Centro Democrático;609
-TIBANA;Partido Conservador Colombiano;232
-TIBANA;Partido de la U;767
-TIBANA;Polo Democrático Alternativo;462
-TIBASOSA;Alianza Verde;264
-TIBASOSA;Centro Democrático;821
-TIBASOSA;Partido Conservador Colombiano;1151
-TIBASOSA;Partido de la U;533
-TIBASOSA;Polo Democrático Alternativo;1061
-TINJACA;Alianza Verde;42
-TINJACA;Centro Democrático;260
-TINJACA;Partido Conservador Colombiano;481
-TINJACA;Partido de la U;213
-TINJACA;Polo Democrático Alternativo;176
-TIPACOQUE;Alianza Verde;57
-TIPACOQUE;Centro Democrático;651
-TIPACOQUE;Partido Conservador Colombiano;65
-TIPACOQUE;Partido de la U;459
-TIPACOQUE;Polo Democrático Alternativo;73
-TOCA;Alianza Verde;214
-TOCA;Centro Democrático;738
-TOCA;Partido Conservador Colombiano;696
-TOCA;Partido de la U;435
-TOCA;Polo Democrático Alternativo;612
-TOGUI;Alianza Verde;25
-TOGUI;Centro Democrático;342
-TOGUI;Partido Conservador Colombiano;349
-TOGUI;Partido de la U;399
-TOGUI;Polo Democrático Alternativo;115
-TOPAGA;Alianza Verde;64
-TOPAGA;Centro Democrático;514
-TOPAGA;Partido Conservador Colombiano;439
-TOPAGA;Partido de la U;182
-TOPAGA;Polo Democrático Alternativo;258
-TOTA;Alianza Verde;44
-TOTA;Centro Democrático;858
-TOTA;Partido Conservador Colombiano;201
-TOTA;Partido de la U;294
-TOTA;Polo Democrático Alternativo;127
-TUNJA;Alianza Verde;7507
-TUNJA;Centro Democrático;8032
-TUNJA;Partido Conservador Colombiano;11611
-TUNJA;Partido de la U;8763
-TUNJA;Polo Democrático Alternativo;18686
-TUNUNGUA;Alianza Verde;13
-TUNUNGUA;Centro Democrático;136
-TUNUNGUA;Partido Conservador Colombiano;48
-TUNUNGUA;Partido de la U;270
-TUNUNGUA;Polo Democrático Alternativo;38
-TURMEQUE;Alianza Verde;80
-TURMEQUE;Centro Democrático;375
-TURMEQUE;Partido Conservador Colombiano;350
-TURMEQUE;Partido de la U;436
-TURMEQUE;Polo Democrático Alternativo;708
-TUTA;Alianza Verde;207
-TUTA;Centro Democrático;533
-TUTA;Partido Conservador Colombiano;1355
-TUTA;Partido de la U;406
-TUTA;Polo Democrático Alternativo;737
-TUTAZA;Alianza Verde;40
-TUTAZA;Centro Democrático;285
-TUTAZA;Partido Conservador Colombiano;220
-TUTAZA;Partido de la U;67
-TUTAZA;Polo Democrático Alternativo;173
-UMBITA;Alianza Verde;77
-UMBITA;Centro Democrático;1419
-UMBITA;Partido Conservador Colombiano;804
-UMBITA;Partido de la U;309
-UMBITA;Polo Democrático Alternativo;223
-VENTAQUEMADA;Alianza Verde;185
-VENTAQUEMADA;Centro Democrático;774
-VENTAQUEMADA;Partido Conservador Colombiano;1933
-VENTAQUEMADA;Partido de la U;263
-VENTAQUEMADA;Polo Democrático Alternativo;876
-VILLA DE LEYVA;Alianza Verde;627
-VILLA DE LEYVA;Centro Democrático;1346
-VILLA DE LEYVA;Partido Conservador Colombiano;581
-VILLA DE LEYVA;Partido de la U;1205
-VILLA DE LEYVA;Polo Democrático Alternativo;865
-VIRACACHA;Alianza Verde;52
-VIRACACHA;Centro Democrático;339
-VIRACACHA;Partido Conservador Colombiano;487
-VIRACACHA;Partido de la U;112
-VIRACACHA;Polo Democrático Alternativo;102
-ZETAQUIRA;Alianza Verde;65
-ZETAQUIRA;Centro Democrático;473
-ZETAQUIRA;Partido Conservador Colombiano;128
-ZETAQUIRA;Partido de la U;297
-ZETAQUIRA;Polo Democrático Alternativo;158
+MUNNOMBRE,PARNOMBRE,TOTALVOTOSVALIDOS,PORCENTAJE
+ALMEIDA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;58,ALMEIDA;Clara Eugenia Lopez Obregon;Partido de la U;58,0.0,0.0
+ALMEIDA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;17,ALMEIDA;Enrique Penalosa Camargo;Alianza Verde;17,0.0,0.0
+ALMEIDA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;109,ALMEIDA;Juan Manuel Santos Calderon;Partido de la U;109,0.0,0.0
+ALMEIDA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;50,ALMEIDA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;50,0.0,0.0
+ALMEIDA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;460,ALMEIDA;Oscar Ivan Zuluaga Escobar;Centro Democrático;460,0.0,0.0
+ALMEIDA;TARJETAS NO MARCADAS;NAN;3,ALMEIDA;Tarjetas No  Marcadas;nan;3,0.0,0.0
+AQUITANIA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;421,AQUITANIA;Clara Eugenia Lopez Obregon;Partido de la U;421,0.0,0.0
+AQUITANIA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;127,AQUITANIA;Enrique Penalosa Camargo;Alianza Verde;127,0.0,0.0
+AQUITANIA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;300,AQUITANIA;Juan Manuel Santos Calderon;Partido de la U;300,0.0,0.0
+AQUITANIA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1168,AQUITANIA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1168,0.0,0.0
+AQUITANIA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;3467,AQUITANIA;Oscar Ivan Zuluaga Escobar;Centro Democrático;3467,0.0,0.0
+AQUITANIA;TARJETAS NO MARCADAS;NAN;35,AQUITANIA;Tarjetas No  Marcadas;nan;35,0.0,0.0
+ARCABUCO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;302,ARCABUCO;Clara Eugenia Lopez Obregon;Partido de la U;302,0.0,0.0
+ARCABUCO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;71,ARCABUCO;Enrique Penalosa Camargo;Alianza Verde;71,0.0,0.0
+ARCABUCO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;348,ARCABUCO;Juan Manuel Santos Calderon;Partido de la U;348,0.0,0.0
+ARCABUCO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;559,ARCABUCO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;559,0.0,0.0
+ARCABUCO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;483,ARCABUCO;Oscar Ivan Zuluaga Escobar;Centro Democrático;483,0.0,0.0
+ARCABUCO;TARJETAS NO MARCADAS;NAN;9,ARCABUCO;Tarjetas No  Marcadas;nan;9,0.0,0.0
+BELEN;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;544,BELEN;Clara Eugenia Lopez Obregon;Partido de la U;544,0.0,0.0
+BELEN;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;113,BELEN;Enrique Penalosa Camargo;Alianza Verde;113,0.0,0.0
+BELEN;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;364,BELEN;Juan Manuel Santos Calderon;Partido de la U;364,0.0,0.0
+BELEN;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1142,BELEN;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1142,0.0,0.0
+BELEN;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;542,BELEN;Oscar Ivan Zuluaga Escobar;Centro Democrático;542,0.0,0.0
+BELEN;TARJETAS NO MARCADAS;NAN;14,BELEN;Tarjetas No  Marcadas;nan;14,0.0,0.0
+BERBEO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;84,BERBEO;Clara Eugenia Lopez Obregon;Partido de la U;84,0.0,0.0
+BERBEO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;39,BERBEO;Enrique Penalosa Camargo;Alianza Verde;39,0.0,0.0
+BERBEO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;90,BERBEO;Juan Manuel Santos Calderon;Partido de la U;90,0.0,0.0
+BERBEO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;66,BERBEO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;66,0.0,0.0
+BERBEO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;151,BERBEO;Oscar Ivan Zuluaga Escobar;Centro Democrático;151,0.0,0.0
+BERBEO;TARJETAS NO MARCADAS;NAN;1,BERBEO;Tarjetas No  Marcadas;nan;1,0.0,0.0
+BETEITIVA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;98,BETEITIVA;Clara Eugenia Lopez Obregon;Partido de la U;98,0.0,0.0
+BETEITIVA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;43,BETEITIVA;Enrique Penalosa Camargo;Alianza Verde;43,0.0,0.0
+BETEITIVA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;215,BETEITIVA;Juan Manuel Santos Calderon;Partido de la U;215,0.0,0.0
+BETEITIVA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;151,BETEITIVA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;151,0.0,0.0
+BETEITIVA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;183,BETEITIVA;Oscar Ivan Zuluaga Escobar;Centro Democrático;183,0.0,0.0
+BETEITIVA;TARJETAS NO MARCADAS;NAN;5,BETEITIVA;Tarjetas No  Marcadas;nan;5,0.0,0.0
+BOAVITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;194,BOAVITA;Clara Eugenia Lopez Obregon;Partido de la U;194,0.0,0.0
+BOAVITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;43,BOAVITA;Enrique Penalosa Camargo;Alianza Verde;43,0.0,0.0
+BOAVITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;325,BOAVITA;Juan Manuel Santos Calderon;Partido de la U;325,0.0,0.0
+BOAVITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;451,BOAVITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;451,0.0,0.0
+BOAVITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1043,BOAVITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1043,0.0,0.0
+BOAVITA;TARJETAS NO MARCADAS;NAN;8,BOAVITA;Tarjetas No  Marcadas;nan;8,0.0,0.0
+BOYACA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;263,BOYACA;Clara Eugenia Lopez Obregon;Partido de la U;263,0.0,0.0
+BOYACA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;80,BOYACA;Enrique Penalosa Camargo;Alianza Verde;80,0.0,0.0
+BOYACA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;230,BOYACA;Juan Manuel Santos Calderon;Partido de la U;230,0.0,0.0
+BOYACA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;194,BOYACA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;194,0.0,0.0
+BOYACA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;300,BOYACA;Oscar Ivan Zuluaga Escobar;Centro Democrático;300,0.0,0.0
+BOYACA;TARJETAS NO MARCADAS;NAN;14,BOYACA;Tarjetas No  Marcadas;nan;14,0.0,0.0
+BRICENO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;42,BRICENO;Clara Eugenia Lopez Obregon;Partido de la U;42,0.0,0.0
+BRICENO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;15,BRICENO;Enrique Penalosa Camargo;Alianza Verde;15,0.0,0.0
+BRICENO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;279,BRICENO;Juan Manuel Santos Calderon;Partido de la U;279,0.0,0.0
+BRICENO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;148,BRICENO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;148,0.0,0.0
+BRICENO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;341,BRICENO;Oscar Ivan Zuluaga Escobar;Centro Democrático;341,0.0,0.0
+BRICENO;TARJETAS NO MARCADAS;NAN;5,BRICENO;Tarjetas No  Marcadas;nan;5,0.0,0.0
+BUENAVISTA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;125,BUENAVISTA;Clara Eugenia Lopez Obregon;Partido de la U;125,0.0,0.0
+BUENAVISTA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;33,BUENAVISTA;Enrique Penalosa Camargo;Alianza Verde;33,0.0,0.0
+BUENAVISTA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;562,BUENAVISTA;Juan Manuel Santos Calderon;Partido de la U;562,0.0,0.0
+BUENAVISTA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;250,BUENAVISTA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;250,0.0,0.0
+BUENAVISTA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;813,BUENAVISTA;Oscar Ivan Zuluaga Escobar;Centro Democrático;813,0.0,0.0
+BUENAVISTA;TARJETAS NO MARCADAS;NAN;20,BUENAVISTA;Tarjetas No  Marcadas;nan;20,0.0,0.0
+BUSBANZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;38,BUSBANZA;Clara Eugenia Lopez Obregon;Partido de la U;38,0.0,0.0
+BUSBANZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;21,BUSBANZA;Enrique Penalosa Camargo;Alianza Verde;21,0.0,0.0
+BUSBANZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;51,BUSBANZA;Juan Manuel Santos Calderon;Partido de la U;51,0.0,0.0
+BUSBANZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;184,BUSBANZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;184,0.0,0.0
+BUSBANZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;76,BUSBANZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;76,0.0,0.0
+BUSBANZA;TARJETAS NO MARCADAS;NAN;4,BUSBANZA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+CALDAS;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;162,CALDAS;Clara Eugenia Lopez Obregon;Partido de la U;162,0.0,0.0
+CALDAS;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;29,CALDAS;Enrique Penalosa Camargo;Alianza Verde;29,0.0,0.0
+CALDAS;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;203,CALDAS;Juan Manuel Santos Calderon;Partido de la U;203,0.0,0.0
+CALDAS;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;278,CALDAS;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;278,0.0,0.0
+CALDAS;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;344,CALDAS;Oscar Ivan Zuluaga Escobar;Centro Democrático;344,0.0,0.0
+CALDAS;TARJETAS NO MARCADAS;NAN;7,CALDAS;Tarjetas No  Marcadas;nan;7,0.0,0.0
+CAMPOHERMOSO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;74,CAMPOHERMOSO;Clara Eugenia Lopez Obregon;Partido de la U;74,0.0,0.0
+CAMPOHERMOSO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;27,CAMPOHERMOSO;Enrique Penalosa Camargo;Alianza Verde;27,0.0,0.0
+CAMPOHERMOSO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;149,CAMPOHERMOSO;Juan Manuel Santos Calderon;Partido de la U;149,0.0,0.0
+CAMPOHERMOSO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;142,CAMPOHERMOSO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;142,0.0,0.0
+CAMPOHERMOSO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;659,CAMPOHERMOSO;Oscar Ivan Zuluaga Escobar;Centro Democrático;659,0.0,0.0
+CAMPOHERMOSO;TARJETAS NO MARCADAS;NAN;4,CAMPOHERMOSO;Tarjetas No  Marcadas;nan;4,0.0,0.0
+CERINZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;385,CERINZA;Clara Eugenia Lopez Obregon;Partido de la U;385,0.0,0.0
+CERINZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;77,CERINZA;Enrique Penalosa Camargo;Alianza Verde;77,0.0,0.0
+CERINZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;158,CERINZA;Juan Manuel Santos Calderon;Partido de la U;158,0.0,0.0
+CERINZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;593,CERINZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;593,0.0,0.0
+CERINZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;334,CERINZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;334,0.0,0.0
+CERINZA;TARJETAS NO MARCADAS;NAN;7,CERINZA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+CHINAVITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;136,CHINAVITA;Clara Eugenia Lopez Obregon;Partido de la U;136,0.0,0.0
+CHINAVITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;30,CHINAVITA;Enrique Penalosa Camargo;Alianza Verde;30,0.0,0.0
+CHINAVITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;214,CHINAVITA;Juan Manuel Santos Calderon;Partido de la U;214,0.0,0.0
+CHINAVITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;200,CHINAVITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;200,0.0,0.0
+CHINAVITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;556,CHINAVITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;556,0.0,0.0
+CHINAVITA;TARJETAS NO MARCADAS;NAN;4,CHINAVITA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+CHIQUINQUIRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;3275,CHIQUINQUIRA;Clara Eugenia Lopez Obregon;Partido de la U;3275,0.0,0.0
+CHIQUINQUIRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;1279,CHIQUINQUIRA;Enrique Penalosa Camargo;Alianza Verde;1279,0.0,0.0
+CHIQUINQUIRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;2956,CHIQUINQUIRA;Juan Manuel Santos Calderon;Partido de la U;2956,0.0,0.0
+CHIQUINQUIRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;4245,CHIQUINQUIRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;4245,0.0,0.0
+CHIQUINQUIRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;5103,CHIQUINQUIRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;5103,0.0,0.0
+CHIQUINQUIRA;TARJETAS NO MARCADAS;NAN;37,CHIQUINQUIRA;Tarjetas No  Marcadas;nan;37,0.0,0.0
+CHIQUIZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;178,CHIQUIZA;Clara Eugenia Lopez Obregon;Partido de la U;178,0.0,0.0
+CHIQUIZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;77,CHIQUIZA;Enrique Penalosa Camargo;Alianza Verde;77,0.0,0.0
+CHIQUIZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;444,CHIQUIZA;Juan Manuel Santos Calderon;Partido de la U;444,0.0,0.0
+CHIQUIZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;121,CHIQUIZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;121,0.0,0.0
+CHIQUIZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;158,CHIQUIZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;158,0.0,0.0
+CHIQUIZA;TARJETAS NO MARCADAS;NAN;14,CHIQUIZA;Tarjetas No  Marcadas;nan;14,0.0,0.0
+CHISCAS;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;78,CHISCAS;Clara Eugenia Lopez Obregon;Partido de la U;78,0.0,0.0
+CHISCAS;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;16,CHISCAS;Enrique Penalosa Camargo;Alianza Verde;16,0.0,0.0
+CHISCAS;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;246,CHISCAS;Juan Manuel Santos Calderon;Partido de la U;246,0.0,0.0
+CHISCAS;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;28,CHISCAS;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;28,0.0,0.0
+CHISCAS;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1116,CHISCAS;Oscar Ivan Zuluaga Escobar;Centro Democrático;1116,0.0,0.0
+CHISCAS;TARJETAS NO MARCADAS;NAN;9,CHISCAS;Tarjetas No  Marcadas;nan;9,0.0,0.0
+CHITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;163,CHITA;Clara Eugenia Lopez Obregon;Partido de la U;163,0.0,0.0
+CHITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;41,CHITA;Enrique Penalosa Camargo;Alianza Verde;41,0.0,0.0
+CHITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;150,CHITA;Juan Manuel Santos Calderon;Partido de la U;150,0.0,0.0
+CHITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;115,CHITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;115,0.0,0.0
+CHITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;2324,CHITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;2324,0.0,0.0
+CHITA;TARJETAS NO MARCADAS;NAN;19,CHITA;Tarjetas No  Marcadas;nan;19,0.0,0.0
+CHITARAQUE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;119,CHITARAQUE;Clara Eugenia Lopez Obregon;Partido de la U;119,0.0,0.0
+CHITARAQUE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;20,CHITARAQUE;Enrique Penalosa Camargo;Alianza Verde;20,0.0,0.0
+CHITARAQUE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;487,CHITARAQUE;Juan Manuel Santos Calderon;Partido de la U;487,0.0,0.0
+CHITARAQUE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;154,CHITARAQUE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;154,0.0,0.0
+CHITARAQUE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;758,CHITARAQUE;Oscar Ivan Zuluaga Escobar;Centro Democrático;758,0.0,0.0
+CHITARAQUE;TARJETAS NO MARCADAS;NAN;16,CHITARAQUE;Tarjetas No  Marcadas;nan;16,0.0,0.0
+CHIVATA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;193,CHIVATA;Clara Eugenia Lopez Obregon;Partido de la U;193,0.0,0.0
+CHIVATA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;164,CHIVATA;Enrique Penalosa Camargo;Alianza Verde;164,0.0,0.0
+CHIVATA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;116,CHIVATA;Juan Manuel Santos Calderon;Partido de la U;116,0.0,0.0
+CHIVATA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;441,CHIVATA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;441,0.0,0.0
+CHIVATA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;190,CHIVATA;Oscar Ivan Zuluaga Escobar;Centro Democrático;190,0.0,0.0
+CHIVATA;TARJETAS NO MARCADAS;NAN;2,CHIVATA;Tarjetas No  Marcadas;nan;2,0.0,0.0
+CHIVOR;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;26,CHIVOR;Clara Eugenia Lopez Obregon;Partido de la U;26,0.0,0.0
+CHIVOR;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;14,CHIVOR;Enrique Penalosa Camargo;Alianza Verde;14,0.0,0.0
+CHIVOR;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;145,CHIVOR;Juan Manuel Santos Calderon;Partido de la U;145,0.0,0.0
+CHIVOR;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;164,CHIVOR;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;164,0.0,0.0
+CHIVOR;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;396,CHIVOR;Oscar Ivan Zuluaga Escobar;Centro Democrático;396,0.0,0.0
+CHIVOR;TARJETAS NO MARCADAS;NAN;4,CHIVOR;Tarjetas No  Marcadas;nan;4,0.0,0.0
+CIENEGA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;119,CIENEGA;Clara Eugenia Lopez Obregon;Partido de la U;119,0.0,0.0
+CIENEGA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;62,CIENEGA;Enrique Penalosa Camargo;Alianza Verde;62,0.0,0.0
+CIENEGA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;94,CIENEGA;Juan Manuel Santos Calderon;Partido de la U;94,0.0,0.0
+CIENEGA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;582,CIENEGA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;582,0.0,0.0
+CIENEGA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;847,CIENEGA;Oscar Ivan Zuluaga Escobar;Centro Democrático;847,0.0,0.0
+CIENEGA;TARJETAS NO MARCADAS;NAN;9,CIENEGA;Tarjetas No  Marcadas;nan;9,0.0,0.0
+COMBITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;691,COMBITA;Clara Eugenia Lopez Obregon;Partido de la U;691,0.0,0.0
+COMBITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;310,COMBITA;Enrique Penalosa Camargo;Alianza Verde;310,0.0,0.0
+COMBITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;443,COMBITA;Juan Manuel Santos Calderon;Partido de la U;443,0.0,0.0
+COMBITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;795,COMBITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;795,0.0,0.0
+COMBITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;581,COMBITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;581,0.0,0.0
+COMBITA;TARJETAS NO MARCADAS;NAN;7,COMBITA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+COPER;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;66,COPER;Clara Eugenia Lopez Obregon;Partido de la U;66,0.0,0.0
+COPER;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;20,COPER;Enrique Penalosa Camargo;Alianza Verde;20,0.0,0.0
+COPER;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;617,COPER;Juan Manuel Santos Calderon;Partido de la U;617,0.0,0.0
+COPER;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;264,COPER;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;264,0.0,0.0
+COPER;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;320,COPER;Oscar Ivan Zuluaga Escobar;Centro Democrático;320,0.0,0.0
+COPER;TARJETAS NO MARCADAS;NAN;6,COPER;Tarjetas No  Marcadas;nan;6,0.0,0.0
+CORRALES;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;223,CORRALES;Clara Eugenia Lopez Obregon;Partido de la U;223,0.0,0.0
+CORRALES;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;80,CORRALES;Enrique Penalosa Camargo;Alianza Verde;80,0.0,0.0
+CORRALES;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;109,CORRALES;Juan Manuel Santos Calderon;Partido de la U;109,0.0,0.0
+CORRALES;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;373,CORRALES;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;373,0.0,0.0
+CORRALES;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;217,CORRALES;Oscar Ivan Zuluaga Escobar;Centro Democrático;217,0.0,0.0
+CORRALES;TARJETAS NO MARCADAS;NAN;3,CORRALES;Tarjetas No  Marcadas;nan;3,0.0,0.0
+COVARACHIA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;54,COVARACHIA;Clara Eugenia Lopez Obregon;Partido de la U;54,0.0,0.0
+COVARACHIA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;21,COVARACHIA;Enrique Penalosa Camargo;Alianza Verde;21,0.0,0.0
+COVARACHIA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;105,COVARACHIA;Juan Manuel Santos Calderon;Partido de la U;105,0.0,0.0
+COVARACHIA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;83,COVARACHIA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;83,0.0,0.0
+COVARACHIA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;917,COVARACHIA;Oscar Ivan Zuluaga Escobar;Centro Democrático;917,0.0,0.0
+COVARACHIA;TARJETAS NO MARCADAS;NAN;11,COVARACHIA;Tarjetas No  Marcadas;nan;11,0.0,0.0
+CUBARA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;248,CUBARA;Clara Eugenia Lopez Obregon;Partido de la U;248,0.0,0.0
+CUBARA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;32,CUBARA;Enrique Penalosa Camargo;Alianza Verde;32,0.0,0.0
+CUBARA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;394,CUBARA;Juan Manuel Santos Calderon;Partido de la U;394,0.0,0.0
+CUBARA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;207,CUBARA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;207,0.0,0.0
+CUBARA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;436,CUBARA;Oscar Ivan Zuluaga Escobar;Centro Democrático;436,0.0,0.0
+CUBARA;TARJETAS NO MARCADAS;NAN;20,CUBARA;Tarjetas No  Marcadas;nan;20,0.0,0.0
+CUCAITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;279,CUCAITA;Clara Eugenia Lopez Obregon;Partido de la U;279,0.0,0.0
+CUCAITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;77,CUCAITA;Enrique Penalosa Camargo;Alianza Verde;77,0.0,0.0
+CUCAITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;133,CUCAITA;Juan Manuel Santos Calderon;Partido de la U;133,0.0,0.0
+CUCAITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;703,CUCAITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;703,0.0,0.0
+CUCAITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;144,CUCAITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;144,0.0,0.0
+CUCAITA;TARJETAS NO MARCADAS;NAN;5,CUCAITA;Tarjetas No  Marcadas;nan;5,0.0,0.0
+CUITIVA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;110,CUITIVA;Clara Eugenia Lopez Obregon;Partido de la U;110,0.0,0.0
+CUITIVA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;36,CUITIVA;Enrique Penalosa Camargo;Alianza Verde;36,0.0,0.0
+CUITIVA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;142,CUITIVA;Juan Manuel Santos Calderon;Partido de la U;142,0.0,0.0
+CUITIVA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;238,CUITIVA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;238,0.0,0.0
+CUITIVA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;326,CUITIVA;Oscar Ivan Zuluaga Escobar;Centro Democrático;326,0.0,0.0
+CUITIVA;TARJETAS NO MARCADAS;NAN;4,CUITIVA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+DUITAMA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;12141,DUITAMA;Clara Eugenia Lopez Obregon;Partido de la U;12141,0.0,0.0
+DUITAMA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;5660,DUITAMA;Enrique Penalosa Camargo;Alianza Verde;5660,0.0,0.0
+DUITAMA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;4597,DUITAMA;Juan Manuel Santos Calderon;Partido de la U;4597,0.0,0.0
+DUITAMA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;7699,DUITAMA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;7699,0.0,0.0
+DUITAMA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;9830,DUITAMA;Oscar Ivan Zuluaga Escobar;Centro Democrático;9830,0.0,0.0
+DUITAMA;TARJETAS NO MARCADAS;NAN;44,DUITAMA;Tarjetas No  Marcadas;nan;44,0.0,0.0
+EL COCUY;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;112,EL COCUY;Clara Eugenia Lopez Obregon;Partido de la U;112,0.0,0.0
+EL COCUY;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;33,EL COCUY;Enrique Penalosa Camargo;Alianza Verde;33,0.0,0.0
+EL COCUY;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;107,EL COCUY;Juan Manuel Santos Calderon;Partido de la U;107,0.0,0.0
+EL COCUY;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;233,EL COCUY;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;233,0.0,0.0
+EL COCUY;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1084,EL COCUY;Oscar Ivan Zuluaga Escobar;Centro Democrático;1084,0.0,0.0
+EL COCUY;TARJETAS NO MARCADAS;NAN;9,EL COCUY;Tarjetas No  Marcadas;nan;9,0.0,0.0
+EL ESPINO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;32,EL ESPINO;Clara Eugenia Lopez Obregon;Partido de la U;32,0.0,0.0
+EL ESPINO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;12,EL ESPINO;Enrique Penalosa Camargo;Alianza Verde;12,0.0,0.0
+EL ESPINO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;71,EL ESPINO;Juan Manuel Santos Calderon;Partido de la U;71,0.0,0.0
+EL ESPINO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;189,EL ESPINO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;189,0.0,0.0
+EL ESPINO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;834,EL ESPINO;Oscar Ivan Zuluaga Escobar;Centro Democrático;834,0.0,0.0
+EL ESPINO;TARJETAS NO MARCADAS;NAN;6,EL ESPINO;Tarjetas No  Marcadas;nan;6,0.0,0.0
+FIRAVITOBA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;598,FIRAVITOBA;Clara Eugenia Lopez Obregon;Partido de la U;598,0.0,0.0
+FIRAVITOBA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;132,FIRAVITOBA;Enrique Penalosa Camargo;Alianza Verde;132,0.0,0.0
+FIRAVITOBA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;259,FIRAVITOBA;Juan Manuel Santos Calderon;Partido de la U;259,0.0,0.0
+FIRAVITOBA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;543,FIRAVITOBA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;543,0.0,0.0
+FIRAVITOBA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;338,FIRAVITOBA;Oscar Ivan Zuluaga Escobar;Centro Democrático;338,0.0,0.0
+FIRAVITOBA;TARJETAS NO MARCADAS;NAN;9,FIRAVITOBA;Tarjetas No  Marcadas;nan;9,0.0,0.0
+FLORESTA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;129,FLORESTA;Clara Eugenia Lopez Obregon;Partido de la U;129,0.0,0.0
+FLORESTA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;83,FLORESTA;Enrique Penalosa Camargo;Alianza Verde;83,0.0,0.0
+FLORESTA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;142,FLORESTA;Juan Manuel Santos Calderon;Partido de la U;142,0.0,0.0
+FLORESTA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;580,FLORESTA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;580,0.0,0.0
+FLORESTA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;425,FLORESTA;Oscar Ivan Zuluaga Escobar;Centro Democrático;425,0.0,0.0
+FLORESTA;TARJETAS NO MARCADAS;NAN;11,FLORESTA;Tarjetas No  Marcadas;nan;11,0.0,0.0
+GACHANTIVA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;146,GACHANTIVA;Clara Eugenia Lopez Obregon;Partido de la U;146,0.0,0.0
+GACHANTIVA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;49,GACHANTIVA;Enrique Penalosa Camargo;Alianza Verde;49,0.0,0.0
+GACHANTIVA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;223,GACHANTIVA;Juan Manuel Santos Calderon;Partido de la U;223,0.0,0.0
+GACHANTIVA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;328,GACHANTIVA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;328,0.0,0.0
+GACHANTIVA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;385,GACHANTIVA;Oscar Ivan Zuluaga Escobar;Centro Democrático;385,0.0,0.0
+GACHANTIVA;TARJETAS NO MARCADAS;NAN;8,GACHANTIVA;Tarjetas No  Marcadas;nan;8,0.0,0.0
+GAMEZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;188,GAMEZA;Clara Eugenia Lopez Obregon;Partido de la U;188,0.0,0.0
+GAMEZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;54,GAMEZA;Enrique Penalosa Camargo;Alianza Verde;54,0.0,0.0
+GAMEZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;148,GAMEZA;Juan Manuel Santos Calderon;Partido de la U;148,0.0,0.0
+GAMEZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;539,GAMEZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;539,0.0,0.0
+GAMEZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;563,GAMEZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;563,0.0,0.0
+GAMEZA;TARJETAS NO MARCADAS;NAN;7,GAMEZA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+GARAGOA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;873,GARAGOA;Clara Eugenia Lopez Obregon;Partido de la U;873,0.0,0.0
+GARAGOA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;287,GARAGOA;Enrique Penalosa Camargo;Alianza Verde;287,0.0,0.0
+GARAGOA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;832,GARAGOA;Juan Manuel Santos Calderon;Partido de la U;832,0.0,0.0
+GARAGOA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1150,GARAGOA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1150,0.0,0.0
+GARAGOA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1670,GARAGOA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1670,0.0,0.0
+GARAGOA;TARJETAS NO MARCADAS;NAN;13,GARAGOA;Tarjetas No  Marcadas;nan;13,0.0,0.0
+GUACAMAYAS;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;29,GUACAMAYAS;Clara Eugenia Lopez Obregon;Partido de la U;29,0.0,0.0
+GUACAMAYAS;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;5,GUACAMAYAS;Enrique Penalosa Camargo;Alianza Verde;5,0.0,0.0
+GUACAMAYAS;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;28,GUACAMAYAS;Juan Manuel Santos Calderon;Partido de la U;28,0.0,0.0
+GUACAMAYAS;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;82,GUACAMAYAS;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;82,0.0,0.0
+GUACAMAYAS;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;636,GUACAMAYAS;Oscar Ivan Zuluaga Escobar;Centro Democrático;636,0.0,0.0
+GUACAMAYAS;TARJETAS NO MARCADAS;NAN;5,GUACAMAYAS;Tarjetas No  Marcadas;nan;5,0.0,0.0
+GUATEQUE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;525,GUATEQUE;Clara Eugenia Lopez Obregon;Partido de la U;525,0.0,0.0
+GUATEQUE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;293,GUATEQUE;Enrique Penalosa Camargo;Alianza Verde;293,0.0,0.0
+GUATEQUE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;891,GUATEQUE;Juan Manuel Santos Calderon;Partido de la U;891,0.0,0.0
+GUATEQUE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;565,GUATEQUE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;565,0.0,0.0
+GUATEQUE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1043,GUATEQUE;Oscar Ivan Zuluaga Escobar;Centro Democrático;1043,0.0,0.0
+GUATEQUE;TARJETAS NO MARCADAS;NAN;22,GUATEQUE;Tarjetas No  Marcadas;nan;22,0.0,0.0
+GUAYATA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;105,GUAYATA;Clara Eugenia Lopez Obregon;Partido de la U;105,0.0,0.0
+GUAYATA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;46,GUAYATA;Enrique Penalosa Camargo;Alianza Verde;46,0.0,0.0
+GUAYATA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;239,GUAYATA;Juan Manuel Santos Calderon;Partido de la U;239,0.0,0.0
+GUAYATA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;431,GUAYATA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;431,0.0,0.0
+GUAYATA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;794,GUAYATA;Oscar Ivan Zuluaga Escobar;Centro Democrático;794,0.0,0.0
+GUAYATA;TARJETAS NO MARCADAS;NAN;4,GUAYATA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+GUICAN DE LA SIERRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;107,GUICAN DE LA SIERRA;Clara Eugenia Lopez Obregon;Partido de la U;107,0.0,0.0
+GUICAN DE LA SIERRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;56,GUICAN DE LA SIERRA;Enrique Penalosa Camargo;Alianza Verde;56,0.0,0.0
+GUICAN DE LA SIERRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;81,GUICAN DE LA SIERRA;Juan Manuel Santos Calderon;Partido de la U;81,0.0,0.0
+GUICAN DE LA SIERRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;184,GUICAN DE LA SIERRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;184,0.0,0.0
+GUICAN DE LA SIERRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;995,GUICAN DE LA SIERRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;995,0.0,0.0
+GUICAN DE LA SIERRA;TARJETAS NO MARCADAS;NAN;17,GUICAN DE LA SIERRA;Tarjetas No  Marcadas;nan;17,0.0,0.0
+IZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;190,IZA;Clara Eugenia Lopez Obregon;Partido de la U;190,0.0,0.0
+IZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;63,IZA;Enrique Penalosa Camargo;Alianza Verde;63,0.0,0.0
+IZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;98,IZA;Juan Manuel Santos Calderon;Partido de la U;98,0.0,0.0
+IZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;214,IZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;214,0.0,0.0
+IZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;331,IZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;331,0.0,0.0
+IZA;TARJETAS NO MARCADAS;NAN;0,IZA;Tarjetas No  Marcadas;nan;0,0.0,0.0
+JENESANO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;332,JENESANO;Clara Eugenia Lopez Obregon;Partido de la U;332,0.0,0.0
+JENESANO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;88,JENESANO;Enrique Penalosa Camargo;Alianza Verde;88,0.0,0.0
+JENESANO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;398,JENESANO;Juan Manuel Santos Calderon;Partido de la U;398,0.0,0.0
+JENESANO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;208,JENESANO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;208,0.0,0.0
+JENESANO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;572,JENESANO;Oscar Ivan Zuluaga Escobar;Centro Democrático;572,0.0,0.0
+JENESANO;TARJETAS NO MARCADAS;NAN;18,JENESANO;Tarjetas No  Marcadas;nan;18,0.0,0.0
+JERICO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;81,JERICO;Clara Eugenia Lopez Obregon;Partido de la U;81,0.0,0.0
+JERICO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;25,JERICO;Enrique Penalosa Camargo;Alianza Verde;25,0.0,0.0
+JERICO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;132,JERICO;Juan Manuel Santos Calderon;Partido de la U;132,0.0,0.0
+JERICO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;71,JERICO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;71,0.0,0.0
+JERICO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;986,JERICO;Oscar Ivan Zuluaga Escobar;Centro Democrático;986,0.0,0.0
+JERICO;TARJETAS NO MARCADAS;NAN;15,JERICO;Tarjetas No  Marcadas;nan;15,0.0,0.0
+LA CAPILLA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;158,LA CAPILLA;Clara Eugenia Lopez Obregon;Partido de la U;158,0.0,0.0
+LA CAPILLA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;45,LA CAPILLA;Enrique Penalosa Camargo;Alianza Verde;45,0.0,0.0
+LA CAPILLA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;145,LA CAPILLA;Juan Manuel Santos Calderon;Partido de la U;145,0.0,0.0
+LA CAPILLA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;254,LA CAPILLA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;254,0.0,0.0
+LA CAPILLA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;373,LA CAPILLA;Oscar Ivan Zuluaga Escobar;Centro Democrático;373,0.0,0.0
+LA CAPILLA;TARJETAS NO MARCADAS;NAN;7,LA CAPILLA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+LA UVITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;47,LA UVITA;Clara Eugenia Lopez Obregon;Partido de la U;47,0.0,0.0
+LA UVITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;34,LA UVITA;Enrique Penalosa Camargo;Alianza Verde;34,0.0,0.0
+LA UVITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;119,LA UVITA;Juan Manuel Santos Calderon;Partido de la U;119,0.0,0.0
+LA UVITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;282,LA UVITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;282,0.0,0.0
+LA UVITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;675,LA UVITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;675,0.0,0.0
+LA UVITA;TARJETAS NO MARCADAS;NAN;4,LA UVITA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+LA VICTORIA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;16,LA VICTORIA;Clara Eugenia Lopez Obregon;Partido de la U;16,0.0,0.0
+LA VICTORIA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;6,LA VICTORIA;Enrique Penalosa Camargo;Alianza Verde;6,0.0,0.0
+LA VICTORIA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;339,LA VICTORIA;Juan Manuel Santos Calderon;Partido de la U;339,0.0,0.0
+LA VICTORIA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;14,LA VICTORIA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;14,0.0,0.0
+LA VICTORIA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;164,LA VICTORIA;Oscar Ivan Zuluaga Escobar;Centro Democrático;164,0.0,0.0
+LA VICTORIA;TARJETAS NO MARCADAS;NAN;7,LA VICTORIA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+LABRANZAGRANDE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;69,LABRANZAGRANDE;Clara Eugenia Lopez Obregon;Partido de la U;69,0.0,0.0
+LABRANZAGRANDE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;17,LABRANZAGRANDE;Enrique Penalosa Camargo;Alianza Verde;17,0.0,0.0
+LABRANZAGRANDE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;114,LABRANZAGRANDE;Juan Manuel Santos Calderon;Partido de la U;114,0.0,0.0
+LABRANZAGRANDE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;64,LABRANZAGRANDE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;64,0.0,0.0
+LABRANZAGRANDE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;817,LABRANZAGRANDE;Oscar Ivan Zuluaga Escobar;Centro Democrático;817,0.0,0.0
+LABRANZAGRANDE;TARJETAS NO MARCADAS;NAN;14,LABRANZAGRANDE;Tarjetas No  Marcadas;nan;14,0.0,0.0
+MACANAL;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;169,MACANAL;Clara Eugenia Lopez Obregon;Partido de la U;169,0.0,0.0
+MACANAL;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;53,MACANAL;Enrique Penalosa Camargo;Alianza Verde;53,0.0,0.0
+MACANAL;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;183,MACANAL;Juan Manuel Santos Calderon;Partido de la U;183,0.0,0.0
+MACANAL;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;279,MACANAL;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;279,0.0,0.0
+MACANAL;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;731,MACANAL;Oscar Ivan Zuluaga Escobar;Centro Democrático;731,0.0,0.0
+MACANAL;TARJETAS NO MARCADAS;NAN;11,MACANAL;Tarjetas No  Marcadas;nan;11,0.0,0.0
+MARIPI;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;95,MARIPI;Clara Eugenia Lopez Obregon;Partido de la U;95,0.0,0.0
+MARIPI;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;23,MARIPI;Enrique Penalosa Camargo;Alianza Verde;23,0.0,0.0
+MARIPI;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;820,MARIPI;Juan Manuel Santos Calderon;Partido de la U;820,0.0,0.0
+MARIPI;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;196,MARIPI;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;196,0.0,0.0
+MARIPI;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1025,MARIPI;Oscar Ivan Zuluaga Escobar;Centro Democrático;1025,0.0,0.0
+MARIPI;TARJETAS NO MARCADAS;NAN;7,MARIPI;Tarjetas No  Marcadas;nan;7,0.0,0.0
+MIRAFLORES;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;705,MIRAFLORES;Clara Eugenia Lopez Obregon;Partido de la U;705,0.0,0.0
+MIRAFLORES;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;307,MIRAFLORES;Enrique Penalosa Camargo;Alianza Verde;307,0.0,0.0
+MIRAFLORES;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;947,MIRAFLORES;Juan Manuel Santos Calderon;Partido de la U;947,0.0,0.0
+MIRAFLORES;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;340,MIRAFLORES;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;340,0.0,0.0
+MIRAFLORES;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;990,MIRAFLORES;Oscar Ivan Zuluaga Escobar;Centro Democrático;990,0.0,0.0
+MIRAFLORES;TARJETAS NO MARCADAS;NAN;18,MIRAFLORES;Tarjetas No  Marcadas;nan;18,0.0,0.0
+MONGUA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;168,MONGUA;Clara Eugenia Lopez Obregon;Partido de la U;168,0.0,0.0
+MONGUA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;58,MONGUA;Enrique Penalosa Camargo;Alianza Verde;58,0.0,0.0
+MONGUA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;103,MONGUA;Juan Manuel Santos Calderon;Partido de la U;103,0.0,0.0
+MONGUA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;352,MONGUA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;352,0.0,0.0
+MONGUA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1428,MONGUA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1428,0.0,0.0
+MONGUA;TARJETAS NO MARCADAS;NAN;14,MONGUA;Tarjetas No  Marcadas;nan;14,0.0,0.0
+MONGUI;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;553,MONGUI;Clara Eugenia Lopez Obregon;Partido de la U;553,0.0,0.0
+MONGUI;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;66,MONGUI;Enrique Penalosa Camargo;Alianza Verde;66,0.0,0.0
+MONGUI;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;160,MONGUI;Juan Manuel Santos Calderon;Partido de la U;160,0.0,0.0
+MONGUI;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;322,MONGUI;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;322,0.0,0.0
+MONGUI;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;544,MONGUI;Oscar Ivan Zuluaga Escobar;Centro Democrático;544,0.0,0.0
+MONGUI;TARJETAS NO MARCADAS;NAN;1,MONGUI;Tarjetas No  Marcadas;nan;1,0.0,0.0
+MONIQUIRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;1552,MONIQUIRA;Clara Eugenia Lopez Obregon;Partido de la U;1552,0.0,0.0
+MONIQUIRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;305,MONIQUIRA;Enrique Penalosa Camargo;Alianza Verde;305,0.0,0.0
+MONIQUIRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;1196,MONIQUIRA;Juan Manuel Santos Calderon;Partido de la U;1196,0.0,0.0
+MONIQUIRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1245,MONIQUIRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1245,0.0,0.0
+MONIQUIRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;2059,MONIQUIRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;2059,0.0,0.0
+MONIQUIRA;TARJETAS NO MARCADAS;NAN;31,MONIQUIRA;Tarjetas No  Marcadas;nan;31,0.0,0.0
+MOTAVITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;463,MOTAVITA;Clara Eugenia Lopez Obregon;Partido de la U;463,0.0,0.0
+MOTAVITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;230,MOTAVITA;Enrique Penalosa Camargo;Alianza Verde;230,0.0,0.0
+MOTAVITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;405,MOTAVITA;Juan Manuel Santos Calderon;Partido de la U;405,0.0,0.0
+MOTAVITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;291,MOTAVITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;291,0.0,0.0
+MOTAVITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;364,MOTAVITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;364,0.0,0.0
+MOTAVITA;TARJETAS NO MARCADAS;NAN;6,MOTAVITA;Tarjetas No  Marcadas;nan;6,0.0,0.0
+MUZO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;188,MUZO;Clara Eugenia Lopez Obregon;Partido de la U;188,0.0,0.0
+MUZO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;58,MUZO;Enrique Penalosa Camargo;Alianza Verde;58,0.0,0.0
+MUZO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;653,MUZO;Juan Manuel Santos Calderon;Partido de la U;653,0.0,0.0
+MUZO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;574,MUZO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;574,0.0,0.0
+MUZO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1157,MUZO;Oscar Ivan Zuluaga Escobar;Centro Democrático;1157,0.0,0.0
+MUZO;TARJETAS NO MARCADAS;NAN;20,MUZO;Tarjetas No  Marcadas;nan;20,0.0,0.0
+NOBSA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;2303,NOBSA;Clara Eugenia Lopez Obregon;Partido de la U;2303,0.0,0.0
+NOBSA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;626,NOBSA;Enrique Penalosa Camargo;Alianza Verde;626,0.0,0.0
+NOBSA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;824,NOBSA;Juan Manuel Santos Calderon;Partido de la U;824,0.0,0.0
+NOBSA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1116,NOBSA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1116,0.0,0.0
+NOBSA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;860,NOBSA;Oscar Ivan Zuluaga Escobar;Centro Democrático;860,0.0,0.0
+NOBSA;TARJETAS NO MARCADAS;NAN;6,NOBSA;Tarjetas No  Marcadas;nan;6,0.0,0.0
+NUEVO COLON;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;332,NUEVO COLON;Clara Eugenia Lopez Obregon;Partido de la U;332,0.0,0.0
+NUEVO COLON;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;99,NUEVO COLON;Enrique Penalosa Camargo;Alianza Verde;99,0.0,0.0
+NUEVO COLON;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;273,NUEVO COLON;Juan Manuel Santos Calderon;Partido de la U;273,0.0,0.0
+NUEVO COLON;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;352,NUEVO COLON;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;352,0.0,0.0
+NUEVO COLON;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;350,NUEVO COLON;Oscar Ivan Zuluaga Escobar;Centro Democrático;350,0.0,0.0
+NUEVO COLON;TARJETAS NO MARCADAS;NAN;7,NUEVO COLON;Tarjetas No  Marcadas;nan;7,0.0,0.0
+OICATA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;252,OICATA;Clara Eugenia Lopez Obregon;Partido de la U;252,0.0,0.0
+OICATA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;107,OICATA;Enrique Penalosa Camargo;Alianza Verde;107,0.0,0.0
+OICATA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;144,OICATA;Juan Manuel Santos Calderon;Partido de la U;144,0.0,0.0
+OICATA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;268,OICATA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;268,0.0,0.0
+OICATA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;176,OICATA;Oscar Ivan Zuluaga Escobar;Centro Democrático;176,0.0,0.0
+OICATA;TARJETAS NO MARCADAS;NAN;1,OICATA;Tarjetas No  Marcadas;nan;1,0.0,0.0
+OTANCHE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;153,OTANCHE;Clara Eugenia Lopez Obregon;Partido de la U;153,0.0,0.0
+OTANCHE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;64,OTANCHE;Enrique Penalosa Camargo;Alianza Verde;64,0.0,0.0
+OTANCHE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;328,OTANCHE;Juan Manuel Santos Calderon;Partido de la U;328,0.0,0.0
+OTANCHE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;221,OTANCHE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;221,0.0,0.0
+OTANCHE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1801,OTANCHE;Oscar Ivan Zuluaga Escobar;Centro Democrático;1801,0.0,0.0
+OTANCHE;TARJETAS NO MARCADAS;NAN;21,OTANCHE;Tarjetas No  Marcadas;nan;21,0.0,0.0
+PACHAVITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;83,PACHAVITA;Clara Eugenia Lopez Obregon;Partido de la U;83,0.0,0.0
+PACHAVITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;36,PACHAVITA;Enrique Penalosa Camargo;Alianza Verde;36,0.0,0.0
+PACHAVITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;93,PACHAVITA;Juan Manuel Santos Calderon;Partido de la U;93,0.0,0.0
+PACHAVITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;184,PACHAVITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;184,0.0,0.0
+PACHAVITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;417,PACHAVITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;417,0.0,0.0
+PACHAVITA;TARJETAS NO MARCADAS;NAN;6,PACHAVITA;Tarjetas No  Marcadas;nan;6,0.0,0.0
+PAEZ;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;43,PAEZ;Clara Eugenia Lopez Obregon;Partido de la U;43,0.0,0.0
+PAEZ;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;36,PAEZ;Enrique Penalosa Camargo;Alianza Verde;36,0.0,0.0
+PAEZ;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;481,PAEZ;Juan Manuel Santos Calderon;Partido de la U;481,0.0,0.0
+PAEZ;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;55,PAEZ;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;55,0.0,0.0
+PAEZ;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;573,PAEZ;Oscar Ivan Zuluaga Escobar;Centro Democrático;573,0.0,0.0
+PAEZ;TARJETAS NO MARCADAS;NAN;8,PAEZ;Tarjetas No  Marcadas;nan;8,0.0,0.0
+PAIPA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;2183,PAIPA;Clara Eugenia Lopez Obregon;Partido de la U;2183,0.0,0.0
+PAIPA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;1692,PAIPA;Enrique Penalosa Camargo;Alianza Verde;1692,0.0,0.0
+PAIPA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;1637,PAIPA;Juan Manuel Santos Calderon;Partido de la U;1637,0.0,0.0
+PAIPA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1878,PAIPA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1878,0.0,0.0
+PAIPA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;2457,PAIPA;Oscar Ivan Zuluaga Escobar;Centro Democrático;2457,0.0,0.0
+PAIPA;TARJETAS NO MARCADAS;NAN;21,PAIPA;Tarjetas No  Marcadas;nan;21,0.0,0.0
+PAJARITO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;63,PAJARITO;Clara Eugenia Lopez Obregon;Partido de la U;63,0.0,0.0
+PAJARITO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;21,PAJARITO;Enrique Penalosa Camargo;Alianza Verde;21,0.0,0.0
+PAJARITO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;101,PAJARITO;Juan Manuel Santos Calderon;Partido de la U;101,0.0,0.0
+PAJARITO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;42,PAJARITO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;42,0.0,0.0
+PAJARITO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;490,PAJARITO;Oscar Ivan Zuluaga Escobar;Centro Democrático;490,0.0,0.0
+PAJARITO;TARJETAS NO MARCADAS;NAN;7,PAJARITO;Tarjetas No  Marcadas;nan;7,0.0,0.0
+PANQUEBA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;28,PANQUEBA;Clara Eugenia Lopez Obregon;Partido de la U;28,0.0,0.0
+PANQUEBA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;4,PANQUEBA;Enrique Penalosa Camargo;Alianza Verde;4,0.0,0.0
+PANQUEBA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;49,PANQUEBA;Juan Manuel Santos Calderon;Partido de la U;49,0.0,0.0
+PANQUEBA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;84,PANQUEBA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;84,0.0,0.0
+PANQUEBA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;530,PANQUEBA;Oscar Ivan Zuluaga Escobar;Centro Democrático;530,0.0,0.0
+PANQUEBA;TARJETAS NO MARCADAS;NAN;6,PANQUEBA;Tarjetas No  Marcadas;nan;6,0.0,0.0
+PAUNA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;195,PAUNA;Clara Eugenia Lopez Obregon;Partido de la U;195,0.0,0.0
+PAUNA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;56,PAUNA;Enrique Penalosa Camargo;Alianza Verde;56,0.0,0.0
+PAUNA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;668,PAUNA;Juan Manuel Santos Calderon;Partido de la U;668,0.0,0.0
+PAUNA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;555,PAUNA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;555,0.0,0.0
+PAUNA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1184,PAUNA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1184,0.0,0.0
+PAUNA;TARJETAS NO MARCADAS;NAN;23,PAUNA;Tarjetas No  Marcadas;nan;23,0.0,0.0
+PAYA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;39,PAYA;Clara Eugenia Lopez Obregon;Partido de la U;39,0.0,0.0
+PAYA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;15,PAYA;Enrique Penalosa Camargo;Alianza Verde;15,0.0,0.0
+PAYA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;49,PAYA;Juan Manuel Santos Calderon;Partido de la U;49,0.0,0.0
+PAYA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;241,PAYA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;241,0.0,0.0
+PAYA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;285,PAYA;Oscar Ivan Zuluaga Escobar;Centro Democrático;285,0.0,0.0
+PAYA;TARJETAS NO MARCADAS;NAN;5,PAYA;Tarjetas No  Marcadas;nan;5,0.0,0.0
+PAZ DE RIO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;507,PAZ DE RIO;Clara Eugenia Lopez Obregon;Partido de la U;507,0.0,0.0
+PAZ DE RIO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;284,PAZ DE RIO;Enrique Penalosa Camargo;Alianza Verde;284,0.0,0.0
+PAZ DE RIO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;304,PAZ DE RIO;Juan Manuel Santos Calderon;Partido de la U;304,0.0,0.0
+PAZ DE RIO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;328,PAZ DE RIO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;328,0.0,0.0
+PAZ DE RIO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;172,PAZ DE RIO;Oscar Ivan Zuluaga Escobar;Centro Democrático;172,0.0,0.0
+PAZ DE RIO;TARJETAS NO MARCADAS;NAN;7,PAZ DE RIO;Tarjetas No  Marcadas;nan;7,0.0,0.0
+PESCA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;310,PESCA;Clara Eugenia Lopez Obregon;Partido de la U;310,0.0,0.0
+PESCA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;76,PESCA;Enrique Penalosa Camargo;Alianza Verde;76,0.0,0.0
+PESCA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;301,PESCA;Juan Manuel Santos Calderon;Partido de la U;301,0.0,0.0
+PESCA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;734,PESCA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;734,0.0,0.0
+PESCA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;778,PESCA;Oscar Ivan Zuluaga Escobar;Centro Democrático;778,0.0,0.0
+PESCA;TARJETAS NO MARCADAS;NAN;10,PESCA;Tarjetas No  Marcadas;nan;10,0.0,0.0
+PISBA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;34,PISBA;Clara Eugenia Lopez Obregon;Partido de la U;34,0.0,0.0
+PISBA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;29,PISBA;Enrique Penalosa Camargo;Alianza Verde;29,0.0,0.0
+PISBA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;64,PISBA;Juan Manuel Santos Calderon;Partido de la U;64,0.0,0.0
+PISBA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;35,PISBA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;35,0.0,0.0
+PISBA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;289,PISBA;Oscar Ivan Zuluaga Escobar;Centro Democrático;289,0.0,0.0
+PISBA;TARJETAS NO MARCADAS;NAN;7,PISBA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+PUERTO BOYACA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;1645,PUERTO BOYACA;Clara Eugenia Lopez Obregon;Partido de la U;1645,0.0,0.0
+PUERTO BOYACA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;811,PUERTO BOYACA;Enrique Penalosa Camargo;Alianza Verde;811,0.0,0.0
+PUERTO BOYACA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;2888,PUERTO BOYACA;Juan Manuel Santos Calderon;Partido de la U;2888,0.0,0.0
+PUERTO BOYACA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;2490,PUERTO BOYACA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;2490,0.0,0.0
+PUERTO BOYACA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;4151,PUERTO BOYACA;Oscar Ivan Zuluaga Escobar;Centro Democrático;4151,0.0,0.0
+PUERTO BOYACA;TARJETAS NO MARCADAS;NAN;88,PUERTO BOYACA;Tarjetas No  Marcadas;nan;88,0.0,0.0
+QUIPAMA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;109,QUIPAMA;Clara Eugenia Lopez Obregon;Partido de la U;109,0.0,0.0
+QUIPAMA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;38,QUIPAMA;Enrique Penalosa Camargo;Alianza Verde;38,0.0,0.0
+QUIPAMA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;363,QUIPAMA;Juan Manuel Santos Calderon;Partido de la U;363,0.0,0.0
+QUIPAMA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;249,QUIPAMA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;249,0.0,0.0
+QUIPAMA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1079,QUIPAMA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1079,0.0,0.0
+QUIPAMA;TARJETAS NO MARCADAS;NAN;19,QUIPAMA;Tarjetas No  Marcadas;nan;19,0.0,0.0
+RAMIRIQUI;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;494,RAMIRIQUI;Clara Eugenia Lopez Obregon;Partido de la U;494,0.0,0.0
+RAMIRIQUI;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;184,RAMIRIQUI;Enrique Penalosa Camargo;Alianza Verde;184,0.0,0.0
+RAMIRIQUI;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;576,RAMIRIQUI;Juan Manuel Santos Calderon;Partido de la U;576,0.0,0.0
+RAMIRIQUI;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;646,RAMIRIQUI;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;646,0.0,0.0
+RAMIRIQUI;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1233,RAMIRIQUI;Oscar Ivan Zuluaga Escobar;Centro Democrático;1233,0.0,0.0
+RAMIRIQUI;TARJETAS NO MARCADAS;NAN;4,RAMIRIQUI;Tarjetas No  Marcadas;nan;4,0.0,0.0
+RAQUIRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;277,RAQUIRA;Clara Eugenia Lopez Obregon;Partido de la U;277,0.0,0.0
+RAQUIRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;69,RAQUIRA;Enrique Penalosa Camargo;Alianza Verde;69,0.0,0.0
+RAQUIRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;322,RAQUIRA;Juan Manuel Santos Calderon;Partido de la U;322,0.0,0.0
+RAQUIRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;679,RAQUIRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;679,0.0,0.0
+RAQUIRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;653,RAQUIRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;653,0.0,0.0
+RAQUIRA;TARJETAS NO MARCADAS;NAN;16,RAQUIRA;Tarjetas No  Marcadas;nan;16,0.0,0.0
+RONDON;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;67,RONDON;Clara Eugenia Lopez Obregon;Partido de la U;67,0.0,0.0
+RONDON;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;44,RONDON;Enrique Penalosa Camargo;Alianza Verde;44,0.0,0.0
+RONDON;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;203,RONDON;Juan Manuel Santos Calderon;Partido de la U;203,0.0,0.0
+RONDON;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;180,RONDON;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;180,0.0,0.0
+RONDON;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;416,RONDON;Oscar Ivan Zuluaga Escobar;Centro Democrático;416,0.0,0.0
+RONDON;TARJETAS NO MARCADAS;NAN;2,RONDON;Tarjetas No  Marcadas;nan;2,0.0,0.0
+SABOYA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;461,SABOYA;Clara Eugenia Lopez Obregon;Partido de la U;461,0.0,0.0
+SABOYA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;168,SABOYA;Enrique Penalosa Camargo;Alianza Verde;168,0.0,0.0
+SABOYA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;780,SABOYA;Juan Manuel Santos Calderon;Partido de la U;780,0.0,0.0
+SABOYA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1023,SABOYA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1023,0.0,0.0
+SABOYA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1333,SABOYA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1333,0.0,0.0
+SABOYA;TARJETAS NO MARCADAS;NAN;25,SABOYA;Tarjetas No  Marcadas;nan;25,0.0,0.0
+SACHICA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;275,SACHICA;Clara Eugenia Lopez Obregon;Partido de la U;275,0.0,0.0
+SACHICA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;99,SACHICA;Enrique Penalosa Camargo;Alianza Verde;99,0.0,0.0
+SACHICA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;412,SACHICA;Juan Manuel Santos Calderon;Partido de la U;412,0.0,0.0
+SACHICA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;298,SACHICA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;298,0.0,0.0
+SACHICA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;287,SACHICA;Oscar Ivan Zuluaga Escobar;Centro Democrático;287,0.0,0.0
+SACHICA;TARJETAS NO MARCADAS;NAN;7,SACHICA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+SAMACA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;1091,SAMACA;Clara Eugenia Lopez Obregon;Partido de la U;1091,0.0,0.0
+SAMACA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;431,SAMACA;Enrique Penalosa Camargo;Alianza Verde;431,0.0,0.0
+SAMACA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;998,SAMACA;Juan Manuel Santos Calderon;Partido de la U;998,0.0,0.0
+SAMACA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1546,SAMACA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1546,0.0,0.0
+SAMACA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;905,SAMACA;Oscar Ivan Zuluaga Escobar;Centro Democrático;905,0.0,0.0
+SAMACA;TARJETAS NO MARCADAS;NAN;27,SAMACA;Tarjetas No  Marcadas;nan;27,0.0,0.0
+SAN EDUARDO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;60,SAN EDUARDO;Clara Eugenia Lopez Obregon;Partido de la U;60,0.0,0.0
+SAN EDUARDO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;36,SAN EDUARDO;Enrique Penalosa Camargo;Alianza Verde;36,0.0,0.0
+SAN EDUARDO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;114,SAN EDUARDO;Juan Manuel Santos Calderon;Partido de la U;114,0.0,0.0
+SAN EDUARDO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;116,SAN EDUARDO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;116,0.0,0.0
+SAN EDUARDO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;247,SAN EDUARDO;Oscar Ivan Zuluaga Escobar;Centro Democrático;247,0.0,0.0
+SAN EDUARDO;TARJETAS NO MARCADAS;NAN;6,SAN EDUARDO;Tarjetas No  Marcadas;nan;6,0.0,0.0
+SAN JOSE DE PARE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;121,SAN JOSE DE PARE;Clara Eugenia Lopez Obregon;Partido de la U;121,0.0,0.0
+SAN JOSE DE PARE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;62,SAN JOSE DE PARE;Enrique Penalosa Camargo;Alianza Verde;62,0.0,0.0
+SAN JOSE DE PARE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;426,SAN JOSE DE PARE;Juan Manuel Santos Calderon;Partido de la U;426,0.0,0.0
+SAN JOSE DE PARE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;238,SAN JOSE DE PARE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;238,0.0,0.0
+SAN JOSE DE PARE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;724,SAN JOSE DE PARE;Oscar Ivan Zuluaga Escobar;Centro Democrático;724,0.0,0.0
+SAN JOSE DE PARE;TARJETAS NO MARCADAS;NAN;23,SAN JOSE DE PARE;Tarjetas No  Marcadas;nan;23,0.0,0.0
+SAN LUIS DE GACENO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;163,SAN LUIS DE GACENO;Clara Eugenia Lopez Obregon;Partido de la U;163,0.0,0.0
+SAN LUIS DE GACENO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;67,SAN LUIS DE GACENO;Enrique Penalosa Camargo;Alianza Verde;67,0.0,0.0
+SAN LUIS DE GACENO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;233,SAN LUIS DE GACENO;Juan Manuel Santos Calderon;Partido de la U;233,0.0,0.0
+SAN LUIS DE GACENO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;314,SAN LUIS DE GACENO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;314,0.0,0.0
+SAN LUIS DE GACENO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1153,SAN LUIS DE GACENO;Oscar Ivan Zuluaga Escobar;Centro Democrático;1153,0.0,0.0
+SAN LUIS DE GACENO;TARJETAS NO MARCADAS;NAN;20,SAN LUIS DE GACENO;Tarjetas No  Marcadas;nan;20,0.0,0.0
+SAN MATEO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;62,SAN MATEO;Clara Eugenia Lopez Obregon;Partido de la U;62,0.0,0.0
+SAN MATEO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;29,SAN MATEO;Enrique Penalosa Camargo;Alianza Verde;29,0.0,0.0
+SAN MATEO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;132,SAN MATEO;Juan Manuel Santos Calderon;Partido de la U;132,0.0,0.0
+SAN MATEO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;164,SAN MATEO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;164,0.0,0.0
+SAN MATEO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1305,SAN MATEO;Oscar Ivan Zuluaga Escobar;Centro Democrático;1305,0.0,0.0
+SAN MATEO;TARJETAS NO MARCADAS;NAN;3,SAN MATEO;Tarjetas No  Marcadas;nan;3,0.0,0.0
+SAN MIGUEL DE SEMA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;84,SAN MIGUEL DE SEMA;Clara Eugenia Lopez Obregon;Partido de la U;84,0.0,0.0
+SAN MIGUEL DE SEMA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;43,SAN MIGUEL DE SEMA;Enrique Penalosa Camargo;Alianza Verde;43,0.0,0.0
+SAN MIGUEL DE SEMA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;211,SAN MIGUEL DE SEMA;Juan Manuel Santos Calderon;Partido de la U;211,0.0,0.0
+SAN MIGUEL DE SEMA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;472,SAN MIGUEL DE SEMA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;472,0.0,0.0
+SAN MIGUEL DE SEMA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;267,SAN MIGUEL DE SEMA;Oscar Ivan Zuluaga Escobar;Centro Democrático;267,0.0,0.0
+SAN MIGUEL DE SEMA;TARJETAS NO MARCADAS;NAN;7,SAN MIGUEL DE SEMA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+SAN PABLO DE BORBUR;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;102,SAN PABLO DE BORBUR;Clara Eugenia Lopez Obregon;Partido de la U;102,0.0,0.0
+SAN PABLO DE BORBUR;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;39,SAN PABLO DE BORBUR;Enrique Penalosa Camargo;Alianza Verde;39,0.0,0.0
+SAN PABLO DE BORBUR;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;286,SAN PABLO DE BORBUR;Juan Manuel Santos Calderon;Partido de la U;286,0.0,0.0
+SAN PABLO DE BORBUR;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;145,SAN PABLO DE BORBUR;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;145,0.0,0.0
+SAN PABLO DE BORBUR;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1644,SAN PABLO DE BORBUR;Oscar Ivan Zuluaga Escobar;Centro Democrático;1644,0.0,0.0
+SAN PABLO DE BORBUR;TARJETAS NO MARCADAS;NAN;18,SAN PABLO DE BORBUR;Tarjetas No  Marcadas;nan;18,0.0,0.0
+SANTA MARIA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;171,SANTA MARIA;Clara Eugenia Lopez Obregon;Partido de la U;171,0.0,0.0
+SANTA MARIA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;61,SANTA MARIA;Enrique Penalosa Camargo;Alianza Verde;61,0.0,0.0
+SANTA MARIA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;228,SANTA MARIA;Juan Manuel Santos Calderon;Partido de la U;228,0.0,0.0
+SANTA MARIA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;291,SANTA MARIA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;291,0.0,0.0
+SANTA MARIA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;501,SANTA MARIA;Oscar Ivan Zuluaga Escobar;Centro Democrático;501,0.0,0.0
+SANTA MARIA;TARJETAS NO MARCADAS;NAN;14,SANTA MARIA;Tarjetas No  Marcadas;nan;14,0.0,0.0
+SANTA ROSA DE VITERBO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;602,SANTA ROSA DE VITERBO;Clara Eugenia Lopez Obregon;Partido de la U;602,0.0,0.0
+SANTA ROSA DE VITERBO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;337,SANTA ROSA DE VITERBO;Enrique Penalosa Camargo;Alianza Verde;337,0.0,0.0
+SANTA ROSA DE VITERBO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;415,SANTA ROSA DE VITERBO;Juan Manuel Santos Calderon;Partido de la U;415,0.0,0.0
+SANTA ROSA DE VITERBO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1364,SANTA ROSA DE VITERBO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1364,0.0,0.0
+SANTA ROSA DE VITERBO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1195,SANTA ROSA DE VITERBO;Oscar Ivan Zuluaga Escobar;Centro Democrático;1195,0.0,0.0
+SANTA ROSA DE VITERBO;TARJETAS NO MARCADAS;NAN;5,SANTA ROSA DE VITERBO;Tarjetas No  Marcadas;nan;5,0.0,0.0
+SANTA SOFIA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;82,SANTA SOFIA;Clara Eugenia Lopez Obregon;Partido de la U;82,0.0,0.0
+SANTA SOFIA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;34,SANTA SOFIA;Enrique Penalosa Camargo;Alianza Verde;34,0.0,0.0
+SANTA SOFIA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;198,SANTA SOFIA;Juan Manuel Santos Calderon;Partido de la U;198,0.0,0.0
+SANTA SOFIA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;365,SANTA SOFIA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;365,0.0,0.0
+SANTA SOFIA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;488,SANTA SOFIA;Oscar Ivan Zuluaga Escobar;Centro Democrático;488,0.0,0.0
+SANTA SOFIA;TARJETAS NO MARCADAS;NAN;11,SANTA SOFIA;Tarjetas No  Marcadas;nan;11,0.0,0.0
+SANTANA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;212,SANTANA;Clara Eugenia Lopez Obregon;Partido de la U;212,0.0,0.0
+SANTANA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;60,SANTANA;Enrique Penalosa Camargo;Alianza Verde;60,0.0,0.0
+SANTANA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;926,SANTANA;Juan Manuel Santos Calderon;Partido de la U;926,0.0,0.0
+SANTANA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;254,SANTANA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;254,0.0,0.0
+SANTANA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;724,SANTANA;Oscar Ivan Zuluaga Escobar;Centro Democrático;724,0.0,0.0
+SANTANA;TARJETAS NO MARCADAS;NAN;10,SANTANA;Tarjetas No  Marcadas;nan;10,0.0,0.0
+SATIVANORTE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;54,SATIVANORTE;Clara Eugenia Lopez Obregon;Partido de la U;54,0.0,0.0
+SATIVANORTE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;20,SATIVANORTE;Enrique Penalosa Camargo;Alianza Verde;20,0.0,0.0
+SATIVANORTE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;210,SATIVANORTE;Juan Manuel Santos Calderon;Partido de la U;210,0.0,0.0
+SATIVANORTE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;140,SATIVANORTE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;140,0.0,0.0
+SATIVANORTE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;456,SATIVANORTE;Oscar Ivan Zuluaga Escobar;Centro Democrático;456,0.0,0.0
+SATIVANORTE;TARJETAS NO MARCADAS;NAN;8,SATIVANORTE;Tarjetas No  Marcadas;nan;8,0.0,0.0
+SATIVASUR;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;39,SATIVASUR;Clara Eugenia Lopez Obregon;Partido de la U;39,0.0,0.0
+SATIVASUR;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;15,SATIVASUR;Enrique Penalosa Camargo;Alianza Verde;15,0.0,0.0
+SATIVASUR;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;90,SATIVASUR;Juan Manuel Santos Calderon;Partido de la U;90,0.0,0.0
+SATIVASUR;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;184,SATIVASUR;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;184,0.0,0.0
+SATIVASUR;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;82,SATIVASUR;Oscar Ivan Zuluaga Escobar;Centro Democrático;82,0.0,0.0
+SATIVASUR;TARJETAS NO MARCADAS;NAN;2,SATIVASUR;Tarjetas No  Marcadas;nan;2,0.0,0.0
+SIACHOQUE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;476,SIACHOQUE;Clara Eugenia Lopez Obregon;Partido de la U;476,0.0,0.0
+SIACHOQUE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;357,SIACHOQUE;Enrique Penalosa Camargo;Alianza Verde;357,0.0,0.0
+SIACHOQUE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;188,SIACHOQUE;Juan Manuel Santos Calderon;Partido de la U;188,0.0,0.0
+SIACHOQUE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;732,SIACHOQUE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;732,0.0,0.0
+SIACHOQUE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;930,SIACHOQUE;Oscar Ivan Zuluaga Escobar;Centro Democrático;930,0.0,0.0
+SIACHOQUE;TARJETAS NO MARCADAS;NAN;8,SIACHOQUE;Tarjetas No  Marcadas;nan;8,0.0,0.0
+SOATA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;306,SOATA;Clara Eugenia Lopez Obregon;Partido de la U;306,0.0,0.0
+SOATA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;70,SOATA;Enrique Penalosa Camargo;Alianza Verde;70,0.0,0.0
+SOATA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;1019,SOATA;Juan Manuel Santos Calderon;Partido de la U;1019,0.0,0.0
+SOATA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;949,SOATA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;949,0.0,0.0
+SOATA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1465,SOATA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1465,0.0,0.0
+SOATA;TARJETAS NO MARCADAS;NAN;7,SOATA;Tarjetas No  Marcadas;nan;7,0.0,0.0
+SOCHA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;533,SOCHA;Clara Eugenia Lopez Obregon;Partido de la U;533,0.0,0.0
+SOCHA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;121,SOCHA;Enrique Penalosa Camargo;Alianza Verde;121,0.0,0.0
+SOCHA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;283,SOCHA;Juan Manuel Santos Calderon;Partido de la U;283,0.0,0.0
+SOCHA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;497,SOCHA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;497,0.0,0.0
+SOCHA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;656,SOCHA;Oscar Ivan Zuluaga Escobar;Centro Democrático;656,0.0,0.0
+SOCHA;TARJETAS NO MARCADAS;NAN;11,SOCHA;Tarjetas No  Marcadas;nan;11,0.0,0.0
+SOCOTA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;196,SOCOTA;Clara Eugenia Lopez Obregon;Partido de la U;196,0.0,0.0
+SOCOTA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;35,SOCOTA;Enrique Penalosa Camargo;Alianza Verde;35,0.0,0.0
+SOCOTA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;367,SOCOTA;Juan Manuel Santos Calderon;Partido de la U;367,0.0,0.0
+SOCOTA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;186,SOCOTA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;186,0.0,0.0
+SOCOTA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1568,SOCOTA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1568,0.0,0.0
+SOCOTA;TARJETAS NO MARCADAS;NAN;22,SOCOTA;Tarjetas No  Marcadas;nan;22,0.0,0.0
+SOGAMOSO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;14636,SOGAMOSO;Clara Eugenia Lopez Obregon;Partido de la U;14636,0.0,0.0
+SOGAMOSO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;3817,SOGAMOSO;Enrique Penalosa Camargo;Alianza Verde;3817,0.0,0.0
+SOGAMOSO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;5737,SOGAMOSO;Juan Manuel Santos Calderon;Partido de la U;5737,0.0,0.0
+SOGAMOSO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;7467,SOGAMOSO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;7467,0.0,0.0
+SOGAMOSO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;9973,SOGAMOSO;Oscar Ivan Zuluaga Escobar;Centro Democrático;9973,0.0,0.0
+SOGAMOSO;TARJETAS NO MARCADAS;NAN;63,SOGAMOSO;Tarjetas No  Marcadas;nan;63,0.0,0.0
+SOMONDOCO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;203,SOMONDOCO;Clara Eugenia Lopez Obregon;Partido de la U;203,0.0,0.0
+SOMONDOCO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;54,SOMONDOCO;Enrique Penalosa Camargo;Alianza Verde;54,0.0,0.0
+SOMONDOCO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;160,SOMONDOCO;Juan Manuel Santos Calderon;Partido de la U;160,0.0,0.0
+SOMONDOCO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;192,SOMONDOCO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;192,0.0,0.0
+SOMONDOCO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;497,SOMONDOCO;Oscar Ivan Zuluaga Escobar;Centro Democrático;497,0.0,0.0
+SOMONDOCO;TARJETAS NO MARCADAS;NAN;4,SOMONDOCO;Tarjetas No  Marcadas;nan;4,0.0,0.0
+SORA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;194,SORA;Clara Eugenia Lopez Obregon;Partido de la U;194,0.0,0.0
+SORA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;73,SORA;Enrique Penalosa Camargo;Alianza Verde;73,0.0,0.0
+SORA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;319,SORA;Juan Manuel Santos Calderon;Partido de la U;319,0.0,0.0
+SORA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;297,SORA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;297,0.0,0.0
+SORA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;186,SORA;Oscar Ivan Zuluaga Escobar;Centro Democrático;186,0.0,0.0
+SORA;TARJETAS NO MARCADAS;NAN;10,SORA;Tarjetas No  Marcadas;nan;10,0.0,0.0
+SORACA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;453,SORACA;Clara Eugenia Lopez Obregon;Partido de la U;453,0.0,0.0
+SORACA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;268,SORACA;Enrique Penalosa Camargo;Alianza Verde;268,0.0,0.0
+SORACA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;208,SORACA;Juan Manuel Santos Calderon;Partido de la U;208,0.0,0.0
+SORACA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;922,SORACA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;922,0.0,0.0
+SORACA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;433,SORACA;Oscar Ivan Zuluaga Escobar;Centro Democrático;433,0.0,0.0
+SORACA;TARJETAS NO MARCADAS;NAN;9,SORACA;Tarjetas No  Marcadas;nan;9,0.0,0.0
+SOTAQUIRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;266,SOTAQUIRA;Clara Eugenia Lopez Obregon;Partido de la U;266,0.0,0.0
+SOTAQUIRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;195,SOTAQUIRA;Enrique Penalosa Camargo;Alianza Verde;195,0.0,0.0
+SOTAQUIRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;284,SOTAQUIRA;Juan Manuel Santos Calderon;Partido de la U;284,0.0,0.0
+SOTAQUIRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;612,SOTAQUIRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;612,0.0,0.0
+SOTAQUIRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;536,SOTAQUIRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;536,0.0,0.0
+SOTAQUIRA;TARJETAS NO MARCADAS;NAN;6,SOTAQUIRA;Tarjetas No  Marcadas;nan;6,0.0,0.0
+SUSACON;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;54,SUSACON;Clara Eugenia Lopez Obregon;Partido de la U;54,0.0,0.0
+SUSACON;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;30,SUSACON;Enrique Penalosa Camargo;Alianza Verde;30,0.0,0.0
+SUSACON;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;77,SUSACON;Juan Manuel Santos Calderon;Partido de la U;77,0.0,0.0
+SUSACON;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;544,SUSACON;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;544,0.0,0.0
+SUSACON;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;371,SUSACON;Oscar Ivan Zuluaga Escobar;Centro Democrático;371,0.0,0.0
+SUSACON;TARJETAS NO MARCADAS;NAN;16,SUSACON;Tarjetas No  Marcadas;nan;16,0.0,0.0
+SUTAMARCHAN;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;190,SUTAMARCHAN;Clara Eugenia Lopez Obregon;Partido de la U;190,0.0,0.0
+SUTAMARCHAN;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;88,SUTAMARCHAN;Enrique Penalosa Camargo;Alianza Verde;88,0.0,0.0
+SUTAMARCHAN;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;444,SUTAMARCHAN;Juan Manuel Santos Calderon;Partido de la U;444,0.0,0.0
+SUTAMARCHAN;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;569,SUTAMARCHAN;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;569,0.0,0.0
+SUTAMARCHAN;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;866,SUTAMARCHAN;Oscar Ivan Zuluaga Escobar;Centro Democrático;866,0.0,0.0
+SUTAMARCHAN;TARJETAS NO MARCADAS;NAN;16,SUTAMARCHAN;Tarjetas No  Marcadas;nan;16,0.0,0.0
+SUTATENZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;158,SUTATENZA;Clara Eugenia Lopez Obregon;Partido de la U;158,0.0,0.0
+SUTATENZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;72,SUTATENZA;Enrique Penalosa Camargo;Alianza Verde;72,0.0,0.0
+SUTATENZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;245,SUTATENZA;Juan Manuel Santos Calderon;Partido de la U;245,0.0,0.0
+SUTATENZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;235,SUTATENZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;235,0.0,0.0
+SUTATENZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;698,SUTATENZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;698,0.0,0.0
+SUTATENZA;TARJETAS NO MARCADAS;NAN;18,SUTATENZA;Tarjetas No  Marcadas;nan;18,0.0,0.0
+TASCO;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;382,TASCO;Clara Eugenia Lopez Obregon;Partido de la U;382,0.0,0.0
+TASCO;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;105,TASCO;Enrique Penalosa Camargo;Alianza Verde;105,0.0,0.0
+TASCO;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;580,TASCO;Juan Manuel Santos Calderon;Partido de la U;580,0.0,0.0
+TASCO;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;154,TASCO;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;154,0.0,0.0
+TASCO;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;410,TASCO;Oscar Ivan Zuluaga Escobar;Centro Democrático;410,0.0,0.0
+TASCO;TARJETAS NO MARCADAS;NAN;14,TASCO;Tarjetas No  Marcadas;nan;14,0.0,0.0
+TENZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;123,TENZA;Clara Eugenia Lopez Obregon;Partido de la U;123,0.0,0.0
+TENZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;82,TENZA;Enrique Penalosa Camargo;Alianza Verde;82,0.0,0.0
+TENZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;207,TENZA;Juan Manuel Santos Calderon;Partido de la U;207,0.0,0.0
+TENZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;263,TENZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;263,0.0,0.0
+TENZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;594,TENZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;594,0.0,0.0
+TENZA;TARJETAS NO MARCADAS;NAN;12,TENZA;Tarjetas No  Marcadas;nan;12,0.0,0.0
+TIBANA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;462,TIBANA;Clara Eugenia Lopez Obregon;Partido de la U;462,0.0,0.0
+TIBANA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;80,TIBANA;Enrique Penalosa Camargo;Alianza Verde;80,0.0,0.0
+TIBANA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;767,TIBANA;Juan Manuel Santos Calderon;Partido de la U;767,0.0,0.0
+TIBANA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;232,TIBANA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;232,0.0,0.0
+TIBANA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;609,TIBANA;Oscar Ivan Zuluaga Escobar;Centro Democrático;609,0.0,0.0
+TIBANA;TARJETAS NO MARCADAS;NAN;17,TIBANA;Tarjetas No  Marcadas;nan;17,0.0,0.0
+TIBASOSA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;1061,TIBASOSA;Clara Eugenia Lopez Obregon;Partido de la U;1061,0.0,0.0
+TIBASOSA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;264,TIBASOSA;Enrique Penalosa Camargo;Alianza Verde;264,0.0,0.0
+TIBASOSA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;533,TIBASOSA;Juan Manuel Santos Calderon;Partido de la U;533,0.0,0.0
+TIBASOSA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1151,TIBASOSA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1151,0.0,0.0
+TIBASOSA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;821,TIBASOSA;Oscar Ivan Zuluaga Escobar;Centro Democrático;821,0.0,0.0
+TIBASOSA;TARJETAS NO MARCADAS;NAN;11,TIBASOSA;Tarjetas No  Marcadas;nan;11,0.0,0.0
+TINJACA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;176,TINJACA;Clara Eugenia Lopez Obregon;Partido de la U;176,0.0,0.0
+TINJACA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;42,TINJACA;Enrique Penalosa Camargo;Alianza Verde;42,0.0,0.0
+TINJACA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;213,TINJACA;Juan Manuel Santos Calderon;Partido de la U;213,0.0,0.0
+TINJACA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;481,TINJACA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;481,0.0,0.0
+TINJACA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;260,TINJACA;Oscar Ivan Zuluaga Escobar;Centro Democrático;260,0.0,0.0
+TINJACA;TARJETAS NO MARCADAS;NAN;3,TINJACA;Tarjetas No  Marcadas;nan;3,0.0,0.0
+TIPACOQUE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;73,TIPACOQUE;Clara Eugenia Lopez Obregon;Partido de la U;73,0.0,0.0
+TIPACOQUE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;57,TIPACOQUE;Enrique Penalosa Camargo;Alianza Verde;57,0.0,0.0
+TIPACOQUE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;459,TIPACOQUE;Juan Manuel Santos Calderon;Partido de la U;459,0.0,0.0
+TIPACOQUE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;65,TIPACOQUE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;65,0.0,0.0
+TIPACOQUE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;651,TIPACOQUE;Oscar Ivan Zuluaga Escobar;Centro Democrático;651,0.0,0.0
+TIPACOQUE;TARJETAS NO MARCADAS;NAN;10,TIPACOQUE;Tarjetas No  Marcadas;nan;10,0.0,0.0
+TOCA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;612,TOCA;Clara Eugenia Lopez Obregon;Partido de la U;612,0.0,0.0
+TOCA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;214,TOCA;Enrique Penalosa Camargo;Alianza Verde;214,0.0,0.0
+TOCA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;435,TOCA;Juan Manuel Santos Calderon;Partido de la U;435,0.0,0.0
+TOCA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;696,TOCA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;696,0.0,0.0
+TOCA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;738,TOCA;Oscar Ivan Zuluaga Escobar;Centro Democrático;738,0.0,0.0
+TOCA;TARJETAS NO MARCADAS;NAN;8,TOCA;Tarjetas No  Marcadas;nan;8,0.0,0.0
+TOGUI;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;115,TOGUI;Clara Eugenia Lopez Obregon;Partido de la U;115,0.0,0.0
+TOGUI;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;25,TOGUI;Enrique Penalosa Camargo;Alianza Verde;25,0.0,0.0
+TOGUI;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;399,TOGUI;Juan Manuel Santos Calderon;Partido de la U;399,0.0,0.0
+TOGUI;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;349,TOGUI;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;349,0.0,0.0
+TOGUI;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;342,TOGUI;Oscar Ivan Zuluaga Escobar;Centro Democrático;342,0.0,0.0
+TOGUI;TARJETAS NO MARCADAS;NAN;14,TOGUI;Tarjetas No  Marcadas;nan;14,0.0,0.0
+TOPAGA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;258,TOPAGA;Clara Eugenia Lopez Obregon;Partido de la U;258,0.0,0.0
+TOPAGA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;64,TOPAGA;Enrique Penalosa Camargo;Alianza Verde;64,0.0,0.0
+TOPAGA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;182,TOPAGA;Juan Manuel Santos Calderon;Partido de la U;182,0.0,0.0
+TOPAGA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;439,TOPAGA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;439,0.0,0.0
+TOPAGA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;514,TOPAGA;Oscar Ivan Zuluaga Escobar;Centro Democrático;514,0.0,0.0
+TOPAGA;TARJETAS NO MARCADAS;NAN;3,TOPAGA;Tarjetas No  Marcadas;nan;3,0.0,0.0
+TOTA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;127,TOTA;Clara Eugenia Lopez Obregon;Partido de la U;127,0.0,0.0
+TOTA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;44,TOTA;Enrique Penalosa Camargo;Alianza Verde;44,0.0,0.0
+TOTA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;294,TOTA;Juan Manuel Santos Calderon;Partido de la U;294,0.0,0.0
+TOTA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;201,TOTA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;201,0.0,0.0
+TOTA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;858,TOTA;Oscar Ivan Zuluaga Escobar;Centro Democrático;858,0.0,0.0
+TOTA;TARJETAS NO MARCADAS;NAN;19,TOTA;Tarjetas No  Marcadas;nan;19,0.0,0.0
+TUNJA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;18686,TUNJA;Clara Eugenia Lopez Obregon;Partido de la U;18686,0.0,0.0
+TUNJA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;7507,TUNJA;Enrique Penalosa Camargo;Alianza Verde;7507,0.0,0.0
+TUNJA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;8763,TUNJA;Juan Manuel Santos Calderon;Partido de la U;8763,0.0,0.0
+TUNJA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;11611,TUNJA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;11611,0.0,0.0
+TUNJA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;8032,TUNJA;Oscar Ivan Zuluaga Escobar;Centro Democrático;8032,0.0,0.0
+TUNJA;TARJETAS NO MARCADAS;NAN;49,TUNJA;Tarjetas No  Marcadas;nan;49,0.0,0.0
+TUNUNGUA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;38,TUNUNGUA;Clara Eugenia Lopez Obregon;Partido de la U;38,0.0,0.0
+TUNUNGUA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;13,TUNUNGUA;Enrique Penalosa Camargo;Alianza Verde;13,0.0,0.0
+TUNUNGUA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;270,TUNUNGUA;Juan Manuel Santos Calderon;Partido de la U;270,0.0,0.0
+TUNUNGUA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;48,TUNUNGUA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;48,0.0,0.0
+TUNUNGUA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;136,TUNUNGUA;Oscar Ivan Zuluaga Escobar;Centro Democrático;136,0.0,0.0
+TUNUNGUA;TARJETAS NO MARCADAS;NAN;0,TUNUNGUA;Tarjetas No  Marcadas;nan;0,0.0,0.0
+TURMEQUE;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;708,TURMEQUE;Clara Eugenia Lopez Obregon;Partido de la U;708,0.0,0.0
+TURMEQUE;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;80,TURMEQUE;Enrique Penalosa Camargo;Alianza Verde;80,0.0,0.0
+TURMEQUE;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;436,TURMEQUE;Juan Manuel Santos Calderon;Partido de la U;436,0.0,0.0
+TURMEQUE;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;350,TURMEQUE;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;350,0.0,0.0
+TURMEQUE;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;375,TURMEQUE;Oscar Ivan Zuluaga Escobar;Centro Democrático;375,0.0,0.0
+TURMEQUE;TARJETAS NO MARCADAS;NAN;10,TURMEQUE;Tarjetas No  Marcadas;nan;10,0.0,0.0
+TUTA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;737,TUTA;Clara Eugenia Lopez Obregon;Partido de la U;737,0.0,0.0
+TUTA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;207,TUTA;Enrique Penalosa Camargo;Alianza Verde;207,0.0,0.0
+TUTA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;406,TUTA;Juan Manuel Santos Calderon;Partido de la U;406,0.0,0.0
+TUTA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1355,TUTA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1355,0.0,0.0
+TUTA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;533,TUTA;Oscar Ivan Zuluaga Escobar;Centro Democrático;533,0.0,0.0
+TUTA;TARJETAS NO MARCADAS;NAN;8,TUTA;Tarjetas No  Marcadas;nan;8,0.0,0.0
+TUTAZA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;173,TUTAZA;Clara Eugenia Lopez Obregon;Partido de la U;173,0.0,0.0
+TUTAZA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;40,TUTAZA;Enrique Penalosa Camargo;Alianza Verde;40,0.0,0.0
+TUTAZA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;67,TUTAZA;Juan Manuel Santos Calderon;Partido de la U;67,0.0,0.0
+TUTAZA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;220,TUTAZA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;220,0.0,0.0
+TUTAZA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;285,TUTAZA;Oscar Ivan Zuluaga Escobar;Centro Democrático;285,0.0,0.0
+TUTAZA;TARJETAS NO MARCADAS;NAN;4,TUTAZA;Tarjetas No  Marcadas;nan;4,0.0,0.0
+UMBITA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;223,UMBITA;Clara Eugenia Lopez Obregon;Partido de la U;223,0.0,0.0
+UMBITA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;77,UMBITA;Enrique Penalosa Camargo;Alianza Verde;77,0.0,0.0
+UMBITA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;309,UMBITA;Juan Manuel Santos Calderon;Partido de la U;309,0.0,0.0
+UMBITA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;804,UMBITA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;804,0.0,0.0
+UMBITA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1419,UMBITA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1419,0.0,0.0
+UMBITA;TARJETAS NO MARCADAS;NAN;15,UMBITA;Tarjetas No  Marcadas;nan;15,0.0,0.0
+VENTAQUEMADA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;876,VENTAQUEMADA;Clara Eugenia Lopez Obregon;Partido de la U;876,0.0,0.0
+VENTAQUEMADA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;185,VENTAQUEMADA;Enrique Penalosa Camargo;Alianza Verde;185,0.0,0.0
+VENTAQUEMADA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;263,VENTAQUEMADA;Juan Manuel Santos Calderon;Partido de la U;263,0.0,0.0
+VENTAQUEMADA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;1933,VENTAQUEMADA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;1933,0.0,0.0
+VENTAQUEMADA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;774,VENTAQUEMADA;Oscar Ivan Zuluaga Escobar;Centro Democrático;774,0.0,0.0
+VENTAQUEMADA;TARJETAS NO MARCADAS;NAN;17,VENTAQUEMADA;Tarjetas No  Marcadas;nan;17,0.0,0.0
+VILLA DE LEYVA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;865,VILLA DE LEYVA;Clara Eugenia Lopez Obregon;Partido de la U;865,0.0,0.0
+VILLA DE LEYVA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;627,VILLA DE LEYVA;Enrique Penalosa Camargo;Alianza Verde;627,0.0,0.0
+VILLA DE LEYVA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;1205,VILLA DE LEYVA;Juan Manuel Santos Calderon;Partido de la U;1205,0.0,0.0
+VILLA DE LEYVA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;581,VILLA DE LEYVA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;581,0.0,0.0
+VILLA DE LEYVA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;1346,VILLA DE LEYVA;Oscar Ivan Zuluaga Escobar;Centro Democrático;1346,0.0,0.0
+VILLA DE LEYVA;TARJETAS NO MARCADAS;NAN;19,VILLA DE LEYVA;Tarjetas No  Marcadas;nan;19,0.0,0.0
+VIRACACHA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;102,VIRACACHA;Clara Eugenia Lopez Obregon;Partido de la U;102,0.0,0.0
+VIRACACHA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;52,VIRACACHA;Enrique Penalosa Camargo;Alianza Verde;52,0.0,0.0
+VIRACACHA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;112,VIRACACHA;Juan Manuel Santos Calderon;Partido de la U;112,0.0,0.0
+VIRACACHA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;487,VIRACACHA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;487,0.0,0.0
+VIRACACHA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;339,VIRACACHA;Oscar Ivan Zuluaga Escobar;Centro Democrático;339,0.0,0.0
+VIRACACHA;TARJETAS NO MARCADAS;NAN;12,VIRACACHA;Tarjetas No  Marcadas;nan;12,0.0,0.0
+ZETAQUIRA;CLARA EUGENIA LOPEZ OBREGON;PARTIDO DE LA U;158,ZETAQUIRA;Clara Eugenia Lopez Obregon;Partido de la U;158,0.0,0.0
+ZETAQUIRA;ENRIQUE PENALOSA CAMARGO;ALIANZA VERDE;65,ZETAQUIRA;Enrique Penalosa Camargo;Alianza Verde;65,0.0,0.0
+ZETAQUIRA;JUAN MANUEL SANTOS CALDERON;PARTIDO DE LA U;297,ZETAQUIRA;Juan Manuel Santos Calderon;Partido de la U;297,0.0,0.0
+ZETAQUIRA;MARTHA LUCIA RAMIREZ BLANCO;PARTIDO LIBERAL COLOMBIANO;128,ZETAQUIRA;Martha Lucia Ramirez Blanco;Partido Liberal Colombiano;128,0.0,0.0
+ZETAQUIRA;OSCAR IVAN ZULUAGA ESCOBAR;CENTRO DEMOCRATICO;473,ZETAQUIRA;Oscar Ivan Zuluaga Escobar;Centro Democrático;473,0.0,0.0
+ZETAQUIRA;TARJETAS NO MARCADAS;NAN;4,ZETAQUIRA;Tarjetas No  Marcadas;nan;4,0.0,0.0
