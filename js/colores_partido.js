@@ -266,100 +266,76 @@ const NORMALIZAR_PARTIDO = {
 };
 
 // Lookup candidato → partido para cargos uninominales.
-// Úsalo cuando el PARNOMBRE en el CSV sea un código numérico o esté mal asignado.
-// Fuente: Registraduría Nacional. Formato: CANNOMBRE exacto del CSV.
+// resolverPartido() normaliza NFD antes de comparar, así que UNA sola clave
+// (sin tilde, mayúsculas) cubre todas las variantes del mismo nombre.
+// Agregar entrada cuando el PARNOMBRE del CSV sea código numérico o esté mal asignado.
 const CANDIDATOS_PARTIDO = {
-  // ══ PRESIDENCIA 2010 — PARNOMBRE del CSV incorrecto para Petro y Vargas ══
-  'JUAN MANUEL SANTOS CALDERON':          'Partido de la U',
-  'JUAN MANUEL SANTOS CALDERÓN':          'Partido de la U',
-  'Juan Manuel Santos Calderon':          'Partido de la U',
-  'AURELIJUS RUTENIS ANTANAS MOCKUS SIVICKAS': 'Alianza Verde',
-  'Aurelijus Rutenis Antanas Mockus Sivickas': 'Alianza Verde',
-  'ANTANAS MOCKUS SIVICKAS':              'Alianza Verde',
-  'GERMAN VARGAS LLERAS':                 'Cambio Radical',
-  'GERMÁN VARGAS LLERAS':                 'Cambio Radical',
-  'German Vargas Lleras':                 'Cambio Radical',
-  'NOEMI SANIN POSADA':                   'Partido Conservador Colombiano',
-  'NOEMÍ SANÍN POSADA':                   'Partido Conservador Colombiano',
-  'MARTA NOEMI DEL ESPIRITU SANTO SANIN POSADA DE RUB': 'Partido Conservador Colombiano',
-  'Marta Noemi Del Espiritu Santo Sanin Posada De Rub': 'Partido Conservador Colombiano',
-  'RAFAEL PARDO RUEDA':                   'Partido Liberal Colombiano',
-  'Rafael Pardo Rueda':                   'Partido Liberal Colombiano',
-  'GUSTAVO FRANCISCO PETRO URREGO':       'Pacto Histórico',
-  'Gustavo Francisco Petro Urrego':       'Pacto Histórico',
+  // ══ PRESIDENCIA 2010 — varios PARNOMBRE incorrectos en CSV ══
+  'JUAN MANUEL SANTOS CALDERON':               'Partido de la U',
+  'AURELIJUS RUTENIS ANTANAS MOCKUS SIVICKAS': 'Alianza Verde',   // nombre completo en CSV
+  'ANTANAS MOCKUS SIVICKAS':                   'Alianza Verde',
+  'GERMAN VARGAS LLERAS':                      'Cambio Radical',  // CSV dice Liberal
+  'GUSTAVO FRANCISCO PETRO URREGO':            'Pacto Histórico', // CSV dice Partido de la U
+  'MARTA NOEMI DEL ESPIRITU SANTO SANIN POSADA DE RUBIO': 'Partido Conservador Colombiano', // CSV dice Liberal
+  'NOEMI SANIN POSADA':                        'Partido Conservador Colombiano',
+  'RAFAEL PARDO RUEDA':                        'Partido Liberal Colombiano',   // CSV dice Conservador
 
-  // ══ PRESIDENCIA 2014 — PARNOMBRE incorrecto para Clara López y Martha Ramírez ══
-  'OSCAR IVAN ZULUAGA ESCOBAR':           'Centro Democrático',
-  'ÓSCAR IVÁN ZULUAGA ESCOBAR':           'Centro Democrático',
-  'Oscar Ivan Zuluaga Escobar':           'Centro Democrático',
-  'MARTHA LUCIA RAMIREZ BLANCO':          'Partido Conservador Colombiano',
-  'MARTHA LUCÍA RAMÍREZ BLANCO':          'Partido Conservador Colombiano',
-  'Martha Lucia Ramirez Blanco':          'Partido Conservador Colombiano',
-  'CLARA EUGENIA LOPEZ OBREGON':          'Polo Democrático Alternativo',
-  'CLARA EUGENIA LÓPEZ OBREGÓN':          'Polo Democrático Alternativo',
-  'Clara Eugenia Lopez Obregon':          'Polo Democrático Alternativo',
-  'ENRIQUE PENALOSA CAMARGO':             'Alianza Verde',
-  'ENRIQUE PEÑALOSA CAMARGO':             'Alianza Verde',
-  'Enrique Penalosa Camargo':             'Alianza Verde',
-  'ENRIQUE PENALOSA LONDONO':             'Alianza Verde',
-  'ENRIQUE PEÑALOSA LONDOÑO':             'Alianza Verde',
+  // ══ PRESIDENCIA 2014 — Clara López y Martha Ramírez mal asignadas ══
+  'OSCAR IVAN ZULUAGA ESCOBAR':                'Centro Democrático',
+  'MARTHA LUCIA RAMIREZ BLANCO':               'Partido Conservador Colombiano', // nombre exacto CSV
+  'MARTHA LUCIA RAMIREZ DE RINCON':            'Partido Conservador Colombiano', // alias
+  'CLARA EUGENIA LOPEZ OBREGON':               'Polo Democrático Alternativo',   // CSV dice Partido de la U
+  'ENRIQUE PENALOSA CAMARGO':                  'Alianza Verde', // nombre exacto CSV 2014
+  'ENRIQUE PENALOSA LONDONO':                  'Alianza Verde', // alias alternativo
 
-  // ══ PRESIDENCIA 2018 — PARNOMBRE del CSV incorrecto para 5 candidatos ══
-  'IVAN DUQUE MARQUEZ':                   'Centro Democrático',
-  'IVÁN DUQUE MÁRQUEZ':                   'Centro Democrático',
-  'Ivan Duque Marquez':                   'Centro Democrático',
-  'SERGIO FAJARDO VALDERRAMA':            'Centro Esperanza',
-  'Sergio Fajardo Valderrama':            'Centro Esperanza',
-  'HUMBERTO DE LA CALLE LOMBANA':         'Partido Liberal Colombiano',
-  'Humberto De La Calle Lombana':         'Partido Liberal Colombiano',
-  'JORGE ANTONIO TRUJILLO SARMIENTO':     'Todos Somos Colombia',
-  'Jorge Antonio Trujillo Sarmiento':     'Todos Somos Colombia',
-  'VIVIANE ALEIDA MORALES HOYOS':         'Partido Somos',
-  'Viviane Aleida Morales Hoyos':         'Partido Somos',
-  'VIVIANE MORALES HOYOS':                'Partido Somos',
+  // ══ PRESIDENCIA 2018 — 6 candidatos con PARNOMBRE incorrecto ══
+  'IVAN DUQUE MARQUEZ':                        'Centro Democrático',
+  'SERGIO FAJARDO VALDERRAMA':                 'Centro Esperanza',  // CSV dice Colombia Humana
+  'HUMBERTO DE LA CALLE LOMBANA':              'Partido Liberal Colombiano', // CSV dice Partido de la U
+  'JORGE ANTONIO TRUJILLO SARMIENTO':          'Todos Somos Colombia', // CSV dice Cambio Radical
+  'VIVIANE ALEIDA MORALES HOYOS':              'Partido Somos',     // CSV dice Cambio Radical
+  'VIVIANE MORALES HOYOS':                     'Partido Somos',
 
-  // ══ PRESIDENCIA 2022 ══
-  'RODOLFO HERNANDEZ SUAREZ':             'Liga de Gobernantes',
-  'RODOLFO HERNÁNDEZ SUÁREZ':             'Liga de Gobernantes',
-  'FEDERICO GUTIERREZ ZULUAGA':           'Equipo por Colombia',
-  'FEDERICO GUTIÉRREZ ZULUAGA':           'Equipo por Colombia',
-  'GUSTAVO PETRO':                        'Pacto Histórico',
-  'ENRIQUE GOMEZ MARTINEZ':              'Salvación Nacional',
-  'ENRIQUE GÓMEZ MARTÍNEZ':              'Salvación Nacional',
+  // ══ PRESIDENCIA 2022 — PARNOMBRE CSV correcto, pero CANNOMBRE truncado ══
+  // normalizePartido resuelve PARNOMBRE correctamente; estas entradas solo
+  // sirven si el CANNOMBRE corto algún día se usa como fuente de partido.
+  'RODOLFO HERNANDEZ':                         'Liga de Gobernantes',
+  'RODOLFO HERNANDEZ SUAREZ':                  'Liga de Gobernantes',
+  'GUSTAVO PETRO':                             'Pacto Histórico',
+  'FEDERICO GUTIERREZ':                        'Equipo por Colombia',
+  'FEDERICO GUTIERREZ ZULUAGA':                'Equipo por Colombia',
+  'ENRIQUE GOMEZ MARTINEZ':                    'Salvación Nacional',
 
   // ══ PRESIDENCIA 2026 ══
-  'ABELARDO DE LA ESPRIELLA OSORIO':      'Salvación Nacional',
-  'ABELARDO DE LA ESPRIELLA':             'Salvación Nacional',
-  'JUAN DANIEL OVIEDO ARANGO':            'Con Toda por Colombia',
-  'JUAN DANIEL OVIEDO':                   'Con Toda por Colombia',
-  'VICKY DAVILA HOYOS':                   'Valientes',
-  'VICKY DÁVILA HOYOS':                   'Valientes',
-  'VICTORIA EUGENIA DAVILA HOYOS':        'Valientes',
-  'JAIRO CRISTO CORREA':                  'Partido de la U',
-  'JAIRO CRISTO':                         'Partido de la U',
-  'PALOMA ANDREA VALENCIA LASERNA':       'Partido de la U',
-  'PALOMA VALENCIA LASERNA':              'Partido de la U',
+  'ABELARDO DE LA ESPRIELLA OSORIO':           'Salvación Nacional',
+  'ABELARDO DE LA ESPRIELLA':                  'Salvación Nacional',
+  'JUAN DANIEL OVIEDO ARANGO':                 'Con Toda por Colombia',
+  'JUAN DANIEL OVIEDO':                        'Con Toda por Colombia',
+  'VICKY DAVILA HOYOS':                        'Valientes',
+  'VICTORIA EUGENIA DAVILA HOYOS':             'Valientes',
+  'OLMEDO VARGAS HERNANDEZ':                   'Colombia Renaciente',
+  'JAIRO CRISTO CORREA':                       'Partido de la U',
+  'JAIRO CRISTO':                              'Partido de la U',
+  'PALOMA ANDREA VALENCIA LASERNA':            'Partido de la U',
+  'PALOMA VALENCIA LASERNA':                   'Partido de la U',
 
-  // ══ GOBERNACIÓN BOYACÁ 2011 — código numérico 20110258 = Partido de la U ══
-  'JUAN CARLOS GRANADOS BECERRA':         'Partido de la U',
-  'Juan Carlos Granados Becerra':         'Partido de la U',
+  // ══ GOBERNACIÓN BOYACÁ 2011 — código 20110258 = Partido de la U ══
+  'JUAN CARLOS GRANADOS BECERRA':              'Partido de la U',  // nombre exacto CSV
+  'JUAN CARLOS GRANADOS GRANADOS':             'Partido de la U',  // alias alternativo
+  'JUAN CARLOS GRANADOS':                      'Partido de la U',
 
-  // ══ GOBERNACIÓN BOYACÁ 2015 — códigos 20150606/07/08; Pachón mal clasificado como CD ══
-  'CARLOS ANDRES AMAYA RODRIGUEZ':        'Alianza Verde',
-  'CARLOS ANDRÉS AMAYA RODRÍGUEZ':        'Alianza Verde',
-  'Carlos Andres Amaya Rodriguez':        'Alianza Verde',
-  'OSMAN HIPOLITO ROA SARMIENTO':         'Cambio Radical',
-  'OSMAN HIPÓLITO ROA SARMIENTO':         'Cambio Radical',
-  'Osman Hipolito Roa Sarmiento':         'Cambio Radical',
-  'CESAR AUGUSTO PACHON ACHURY':          'MAIS',
-  'CÉSAR AUGUSTO PACHÓN ACHURY':          'MAIS',
-  'Cesar Augusto Pachon Achury':          'MAIS',
-  'GONZALO GUARIN VIVAS':                 'Centro Democrático',
-  'GONZALO GUARÍN VIVAS':                 'Centro Democrático',
-  'Gonzalo Guarin Vivas':                 'Centro Democrático',
-  'JUAN DE JESUS CORDOBA SUAREZ':         'Partido Conservador Colombiano',
-  'JUAN DE JESÚS CÓRDOBA SUÁREZ':         'Partido Conservador Colombiano',
-  'Juan De Jesus Cordoba Suarez':         'Partido Conservador Colombiano',
+  // ══ GOBERNACIÓN BOYACÁ 2015 — códigos 20150606/07/08; Pachón mal asignado ══
+  'CARLOS ANDRES AMAYA RODRIGUEZ':             'Alianza Verde',
+  'OSMAN HIPOLITO ROA SARMIENTO':              'Cambio Radical',
+  'CESAR AUGUSTO PACHON ACHURY':               'MAIS',            // CSV dice Centro Democrático
+  'GONZALO GUARIN VIVAS':                      'Centro Democrático',
+  'JUAN DE JESUS CORDOBA SUAREZ':              'Partido Conservador Colombiano',
+
+  // ══ GOBERNACIÓN BOYACÁ 2023 — alias por si acaso ══
+  'RODRIGO ARTURO ROJAS':                      'Partido Liberal Colombiano',
+  'RODRIGO ARTURO ROJAS LARA':                 'Partido Liberal Colombiano',
+  'GIOVANNY PINZON':                           'Pacto Histórico',
+  'GIOVANNY PINZON BAEZ':                      'Pacto Histórico',
 };
 
 const COLORES_PARTIDO = {

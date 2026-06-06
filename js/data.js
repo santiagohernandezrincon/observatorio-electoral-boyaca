@@ -298,9 +298,12 @@ function parseCandidatosCSV(text) {
 // ==================== RESOLUCIÓN DE PARTIDO ====================
 function resolverPartido(partidoRaw, nombreCandidato) {
     if (nombreCandidato && typeof CANDIDATOS_PARTIDO !== 'undefined') {
-        const cu = String(nombreCandidato).toUpperCase().replace(/\s+/g, ' ').trim();
+        const norm = s => String(s).toUpperCase()
+            .normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .replace(/\s+/g, ' ').trim();
+        const cu = norm(nombreCandidato);
         for (const k of Object.keys(CANDIDATOS_PARTIDO)) {
-            if (k.toUpperCase().replace(/\s+/g, ' ') === cu) return CANDIDATOS_PARTIDO[k];
+            if (norm(k) === cu) return CANDIDATOS_PARTIDO[k];
         }
     }
     return normalizePartido(String(partidoRaw || ''));
