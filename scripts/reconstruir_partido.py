@@ -90,6 +90,11 @@ CANDIDATOS_MAP = {
     ('2015', 'ALFONSO MIGUEL SILVA PESCA'):        'Partido Conservador Colombiano',
     ('2019', 'CONSTANZA ISABEL RAMIREZ ACEVEDO'): 'Cambio Radical',
     # ALCALDÍAS 2015 — verificado por Santiago Hernández, politólogo boyacense
+    ('2015', 'PABLO EMILIO CEPEDA NOVOA'):          'Cambio Radical',
+    ('2015', 'GILBERTO RONDON GONZALEZ'):           'Partido Liberal Colombiano',
+    ('2015', 'LUIS EDUARDO RODRIGUEZ PEREZ'):       'Partido de la U',
+    # ALCALDÍAS 2011
+    ('2011', 'VIRGILIO FARFAN ROJAS'):              'Movimiento Ciudadano',
     ('2015', 'OSCAR FERNANDO BOTERO ALZATE'):       'Partido Conservador Colombiano',
     ('2015', 'YAMIT NOE HURTADO NEIRA'):            'Alianza Verde',
     ('2015', 'WILSON CASTIBLANCO GIL'):             'Partido de la U',
@@ -280,6 +285,7 @@ NORMALIZACION = {
     'G.S.C. COALICION POR EL PROGRESO Y DESARROLLO':         'Movimiento Ciudadano',
     'G.S.C. AHORA DI TODOS POR EL CAMBIO':                   'Movimiento Ciudadano',
     'G.S.C. NUEVAS IDEAS PARA UN MEJOR FUTURO':              'Movimiento Ciudadano',
+    'G.S.C RENOVACION Y CAMBIO PARA CONSTRUIR FUTURO':       'Movimiento Ciudadano',
     # ── Administrativos ────────────────────────────────────────────────────────
     'SIN PARTIDO':                      None,
     'SIN NOMBRE':                       None,

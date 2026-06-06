@@ -9,7 +9,7 @@ ALMEIDA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;44
 ALMEIDA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;37
 ALMEIDA;Partido Cambio Radical Colombiano;Cambio Radical;28
 ALMEIDA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;28
-ALMEIDA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;23
+ALMEIDA;Luis Eduardo Rodriguez Perez;Partido de la U;23
 ALMEIDA;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;20
 ALMEIDA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;20
 ALMEIDA;Mayda Cecilia Velasquez Rueda;Alianza Verde;19
@@ -112,7 +112,7 @@ AQUITANIA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;55
 AQUITANIA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;55
 AQUITANIA;Mario Ernesto Ochoa Plazas;Cambio Radical;50
 AQUITANIA;Partido Liberal Colombiano;Partido Liberal Colombiano;50
-AQUITANIA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;46
+AQUITANIA;Luis Eduardo Rodriguez Perez;Partido de la U;46
 AQUITANIA;Pedro Villate Briceno;Alianza Verde;46
 AQUITANIA;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;45
 AQUITANIA;Uriel Barrera Correa;Partido Conservador Colombiano;43
@@ -235,7 +235,7 @@ ARCABUCO;Partido Cambio Radical Colombiano;Cambio Radical;8
 ARCABUCO;Derly Rocio Cucanchon Rodriguez;Partido Liberal Colombiano;7
 ARCABUCO;Luis Alberto Vega Rodriguez;Cambio Radical;7
 ARCABUCO;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;6
-ARCABUCO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;6
+ARCABUCO;Luis Eduardo Rodriguez Perez;Partido de la U;6
 ARCABUCO;Yeimy Paola Galindo Nino;Cambio Radical;6
 ARCABUCO;Claudia Idaly Avila Tibacuy;Alianza Verde;5
 ARCABUCO;Gladys Carrillo Mora;Alianza Verde;5
@@ -291,7 +291,7 @@ BELEN;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;51
 BELEN;Antonio Jose Caro Castillo;Partido Conservador Colombiano;48
 BELEN;Abilio Hurtado Cetina;Partido Liberal Colombiano;47
 BELEN;Jorge Eliecer Cortes Martinez;Cambio Radical;46
-BELEN;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;43
+BELEN;Luis Eduardo Rodriguez Perez;Partido de la U;43
 BELEN;Enrique Monroy Pachon;Partido Liberal Colombiano;41
 BELEN;Wilson Castillo Suarez;Partido Liberal Colombiano;41
 BELEN;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;40
@@ -387,7 +387,7 @@ BERBEO;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE L
 BERBEO;Edgar Ricardo Morantes Higuera;Alianza Verde;8
 BERBEO;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;8
 BERBEO;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
-BERBEO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
+BERBEO;Luis Eduardo Rodriguez Perez;Partido de la U;8
 BERBEO;Uriel Barrera Correa;Partido Conservador Colombiano;8
 BERBEO;Mayda Cecilia Velasquez Rueda;Alianza Verde;7
 BERBEO;Olga Natalie Manrique Abril;Partido Liberal Colombiano;7
@@ -463,7 +463,7 @@ BETEITIVA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO D
 BETEITIVA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;127
 BETEITIVA;Luis Alberto Vega Rodriguez;Cambio Radical;112
 BETEITIVA;Jaime Raul Salamanca Torres;Alianza Verde;64
-BETEITIVA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;55
+BETEITIVA;Luis Eduardo Rodriguez Perez;Partido de la U;55
 BETEITIVA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;39
 BETEITIVA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;31
 BETEITIVA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;29
@@ -575,7 +575,7 @@ BOAVITA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;20
 BOAVITA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;20
 BOAVITA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
 BOAVITA;Mayda Cecilia Velasquez Rueda;Alianza Verde;18
-BOAVITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;17
+BOAVITA;Luis Eduardo Rodriguez Perez;Partido de la U;17
 BOAVITA;Luis Alejandro Jimenez Castellanos;Alianza Verde;16
 BOAVITA;Jose Armando Quinones Garzon;Alianza Verde;15
 BOAVITA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;14
@@ -653,7 +653,7 @@ BOYACA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;92
 BOYACA;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;71
 BOYACA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;48
 BOYACA;Luis Alejandro Jimenez Castellanos;Alianza Verde;46
-BOYACA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;33
+BOYACA;Luis Eduardo Rodriguez Perez;Partido de la U;33
 BOYACA;John Alejandro Roa Gomez;Partido Liberal Colombiano;29
 BOYACA;Partido Verde;Alianza Verde;26
 BOYACA;Partido Cambio Radical Colombiano;Cambio Radical;25
@@ -811,7 +811,7 @@ BRICENO;Javier Hernando Cuesta Godoy;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 BRICENO;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
 BRICENO;Juan Jose Uscategui Montanez;Cambio Radical;0
 BRICENO;Libia Yenifer Gordillo Moreno;Alianza Verde;0
-BRICENO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
+BRICENO;Luis Eduardo Rodriguez Perez;Partido de la U;0
 BRICENO;Luis Jose Nunez Nunez;Alianza Verde;0
 BRICENO;Luz Marina Romero Avila;Cambio Radical;0
 BRICENO;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
@@ -861,7 +861,7 @@ BUENAVISTA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO D
 BUENAVISTA;Cesar Augusto Poveda Rojas;Partido Liberal Colombiano;6
 BUENAVISTA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;6
 BUENAVISTA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;6
-BUENAVISTA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;6
+BUENAVISTA;Luis Eduardo Rodriguez Perez;Partido de la U;6
 BUENAVISTA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;6
 BUENAVISTA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;5
 BUENAVISTA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;5
@@ -950,7 +950,7 @@ BUSBANZA;Jaime Raul Salamanca Torres;Alianza Verde;2
 BUSBANZA;Jorge Eliecer Cortes Martinez;Cambio Radical;2
 BUSBANZA;Juan Jose Uscategui Montanez;Cambio Radical;2
 BUSBANZA;Luis Alejandro Jimenez Castellanos;Alianza Verde;2
-BUSBANZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+BUSBANZA;Luis Eduardo Rodriguez Perez;Partido de la U;2
 BUSBANZA;Luis Jose Nunez Nunez;Alianza Verde;2
 BUSBANZA;Partido Cambio Radical Colombiano;Cambio Radical;2
 BUSBANZA;Pedro Villate Briceno;Alianza Verde;2
@@ -1059,7 +1059,7 @@ CALDAS;Gilberto Olarte Villamil;Cambio Radical;2
 CALDAS;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 CALDAS;Jesus Hernando Davila Salazar;Alianza Verde;2
 CALDAS;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;2
-CALDAS;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+CALDAS;Luis Eduardo Rodriguez Perez;Partido de la U;2
 CALDAS;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 CALDAS;Partido De Integracion Nacional  Pin;Partido De Integracion Nacional  Pin;2
 CALDAS;Pedro Villate Briceno;Alianza Verde;2
@@ -1118,7 +1118,7 @@ CAMPOHERMOSO;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTID
 CAMPOHERMOSO;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;17
 CAMPOHERMOSO;Jose Armando Quinones Garzon;Alianza Verde;17
 CAMPOHERMOSO;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;16
-CAMPOHERMOSO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;16
+CAMPOHERMOSO;Luis Eduardo Rodriguez Perez;Partido de la U;16
 CAMPOHERMOSO;Luis Jose Nunez Nunez;Alianza Verde;16
 CAMPOHERMOSO;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;15
 CAMPOHERMOSO;Ingrid Bonelo Cadena;Partido Conservador Colombiano;14
@@ -1190,7 +1190,7 @@ CAMPOHERMOSO;Richard Van Duarte Reyes;Alianza Verde;0
 CAMPOHERMOSO;Sandra Nubiola Lopez Silva;Alianza Verde;0
 CAMPOHERMOSO;Sandra Yaneth Lopez Duenas;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 CAMPOHERMOSO;Viviana Constanza Martinez Lopez;Cambio Radical;0
-CERINZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;338
+CERINZA;Luis Eduardo Rodriguez Perez;Partido de la U;338
 CERINZA;Uriel Barrera Correa;Partido Conservador Colombiano;233
 CERINZA;Zamir Hernan Silva Zabala;Alianza Verde;140
 CERINZA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;131
@@ -1344,7 +1344,7 @@ CHINAVITA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;2
 CHINAVITA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 CHINAVITA;Libia Yenifer Gordillo Moreno;Alianza Verde;2
 CHINAVITA;Luis Alejandro Jimenez Castellanos;Alianza Verde;2
-CHINAVITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+CHINAVITA;Luis Eduardo Rodriguez Perez;Partido de la U;2
 CHINAVITA;Luz Marina Romero Avila;Cambio Radical;2
 CHINAVITA;Maria Del Cristal Salamanca Malagon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 CHINAVITA;Richard Van Duarte Reyes;Alianza Verde;2
@@ -1410,7 +1410,7 @@ CHIQUINQUIRA;Uriel Barrera Correa;Partido Conservador Colombiano;112
 CHIQUINQUIRA;Jorge Eliecer Cortes Martinez;Cambio Radical;106
 CHIQUINQUIRA;Luis Jose Nunez Nunez;Alianza Verde;102
 CHIQUINQUIRA;Carlos Enrique Vargas Angarita;Cambio Radical;100
-CHIQUINQUIRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;100
+CHIQUINQUIRA;Luis Eduardo Rodriguez Perez;Partido de la U;100
 CHIQUINQUIRA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;94
 CHIQUINQUIRA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;94
 CHIQUINQUIRA;Gilberto Olarte Villamil;Cambio Radical;92
@@ -1485,7 +1485,7 @@ CHIQUIZA;Mayda Cecilia Velasquez Rueda;Alianza Verde;26
 CHIQUIZA;Luis Alejandro Jimenez Castellanos;Alianza Verde;22
 CHIQUIZA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;21
 CHIQUIZA;Juan Antonio Garay Torres;Cambio Radical;20
-CHIQUIZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
+CHIQUIZA;Luis Eduardo Rodriguez Perez;Partido de la U;18
 CHIQUIZA;Olga Natalie Manrique Abril;Partido Liberal Colombiano;15
 CHIQUIZA;Carlos Enrique Vargas Angarita;Cambio Radical;14
 CHIQUIZA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;14
@@ -1574,7 +1574,7 @@ CHISCAS;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Uni
 CHISCAS;Uriel Barrera Correa;Partido Conservador Colombiano;26
 CHISCAS;Partido Cambio Radical Colombiano;Cambio Radical;21
 CHISCAS;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;19
-CHISCAS;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
+CHISCAS;Luis Eduardo Rodriguez Perez;Partido de la U;18
 CHISCAS;Luis Jose Nunez Nunez;Alianza Verde;17
 CHISCAS;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;17
 CHISCAS;Gilberto Olarte Villamil;Cambio Radical;15
@@ -1654,7 +1654,7 @@ CHITA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;465
 CHITA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;351
 CHITA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;207
 CHITA;John Alejandro Roa Gomez;Partido Liberal Colombiano;196
-CHITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;134
+CHITA;Luis Eduardo Rodriguez Perez;Partido de la U;134
 CHITA;Uriel Barrera Correa;Partido Conservador Colombiano;123
 CHITA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;100
 CHITA;Partido Conservador Colombiano;Partido Conservador Colombiano;98
@@ -1758,7 +1758,7 @@ CHITARAQUE;Mayda Cecilia Velasquez Rueda;Alianza Verde;27
 CHITARAQUE;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;26
 CHITARAQUE;Ingrid Bonelo Cadena;Partido Conservador Colombiano;23
 CHITARAQUE;Jose Rogelio Garcia Ortegon;Cambio Radical;23
-CHITARAQUE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;23
+CHITARAQUE;Luis Eduardo Rodriguez Perez;Partido de la U;23
 CHITARAQUE;Partido Cambio Radical Colombiano;Cambio Radical;23
 CHITARAQUE;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;21
 CHITARAQUE;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;19
@@ -1890,7 +1890,7 @@ CHIVATA;Richard Van Duarte Reyes;Alianza Verde;6
 CHIVATA;John Alejandro Roa Gomez;Partido Liberal Colombiano;5
 CHIVATA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5
 CHIVATA;Jose Rogelio Garcia Ortegon;Cambio Radical;5
-CHIVATA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5
+CHIVATA;Luis Eduardo Rodriguez Perez;Partido de la U;5
 CHIVATA;Sandra Patricia Figueredo Ramirez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5
 CHIVATA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;4
 CHIVATA;Jesus Hernando Davila Salazar;Alianza Verde;4
@@ -1989,7 +1989,7 @@ CHIVOR;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;1
 CHIVOR;Jose Alberto Perez Echeverry;Cambio Radical;1
 CHIVOR;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
 CHIVOR;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;1
-CHIVOR;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
+CHIVOR;Luis Eduardo Rodriguez Perez;Partido de la U;1
 CHIVOR;Maria Del Cristal Salamanca Malagon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
 CHIVOR;Martha Cecilia Ruiz Cabieles;PARTIDO DE INTEGRACION NACIONAL  PIN;1
 CHIVOR;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;1
@@ -2047,7 +2047,7 @@ CIENEGA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA 
 CIENEGA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;14
 CIENEGA;Derly Yohana Ruiz Garcia;Partido Liberal Colombiano;13
 CIENEGA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;13
-CIENEGA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
+CIENEGA;Luis Eduardo Rodriguez Perez;Partido de la U;12
 CIENEGA;Carlos Enrique Vargas Angarita;Cambio Radical;11
 CIENEGA;Mayda Cecilia Velasquez Rueda;Alianza Verde;10
 CIENEGA;Edgar Ricardo Morantes Higuera;Alianza Verde;9
@@ -2126,7 +2126,7 @@ COMBITA;Jose Armando Quinones Garzon;Alianza Verde;91
 COMBITA;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;89
 COMBITA;Juan Antonio Garay Torres;Cambio Radical;87
 COMBITA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;77
-COMBITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;77
+COMBITA;Luis Eduardo Rodriguez Perez;Partido de la U;77
 COMBITA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;75
 COMBITA;Mario Ernesto Ochoa Plazas;Cambio Radical;74
 COMBITA;Gladys Carrillo Mora;Alianza Verde;73
@@ -2213,7 +2213,7 @@ COPER;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;76
 COPER;Partido Conservador Colombiano;Partido Conservador Colombiano;68
 COPER;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;55
 COPER;Partido Liberal Colombiano;Partido Liberal Colombiano;41
-COPER;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;28
+COPER;Luis Eduardo Rodriguez Perez;Partido de la U;28
 COPER;Juan Antonio Garay Torres;Cambio Radical;25
 COPER;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;24
 COPER;Yeimy Paola Galindo Nino;Cambio Radical;22
@@ -2337,7 +2337,7 @@ CORRALES;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;3
 CORRALES;Jairo Alexander Piza Carreno;Cambio Radical;3
 CORRALES;Luis Alberto Vega Rodriguez;Cambio Radical;3
 CORRALES;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;3
-CORRALES;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;3
+CORRALES;Luis Eduardo Rodriguez Perez;Partido de la U;3
 CORRALES;Pedro Villate Briceno;Alianza Verde;3
 CORRALES;Yeimy Paola Galindo Nino;Cambio Radical;3
 CORRALES;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;2
@@ -2386,7 +2386,7 @@ CORRALES;Orlando Castellanos Sotelo;Partido Liberal Colombiano;0
 CORRALES;Sandra Patricia Figueredo Ramirez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
 CORRALES;Sandra Yaneth Lopez Duenas;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 COVARACHIA;Gladys Carrillo Mora;Alianza Verde;133
-COVARACHIA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;110
+COVARACHIA;Luis Eduardo Rodriguez Perez;Partido de la U;110
 COVARACHIA;Uriel Barrera Correa;Partido Conservador Colombiano;95
 COVARACHIA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;59
 COVARACHIA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;53
@@ -2485,7 +2485,7 @@ CUBARA;Gilberto Olarte Villamil;Cambio Radical;100
 CUBARA;Luis Alejandro Jimenez Castellanos;Alianza Verde;97
 CUBARA;Luis Jose Nunez Nunez;Alianza Verde;85
 CUBARA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;53
-CUBARA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;46
+CUBARA;Luis Eduardo Rodriguez Perez;Partido de la U;46
 CUBARA;Partido Verde;Alianza Verde;45
 CUBARA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;40
 CUBARA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;33
@@ -2574,7 +2574,7 @@ CUCAITA;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;117
 CUCAITA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;110
 CUCAITA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;108
 CUCAITA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;105
-CUCAITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;94
+CUCAITA;Luis Eduardo Rodriguez Perez;Partido de la U;94
 CUCAITA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;86
 CUCAITA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;81
 CUCAITA;Partido Verde;Alianza Verde;75
@@ -2668,7 +2668,7 @@ CUITIVA;Henry Mauricio Mesa Avella;Alianza Verde;73
 CUITIVA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;72
 CUITIVA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;47
 CUITIVA;Partido Verde;Alianza Verde;29
-CUITIVA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;26
+CUITIVA;Luis Eduardo Rodriguez Perez;Partido de la U;26
 CUITIVA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;24
 CUITIVA;Luis Alberto Vega Rodriguez;Cambio Radical;20
 CUITIVA;Partido Cambio Radical Colombiano;Cambio Radical;20
@@ -2753,7 +2753,7 @@ CUITIVA;Nataly Castro Martinez;Partido Conservador Colombiano;0
 CUITIVA;Orlando Castellanos Sotelo;Partido Liberal Colombiano;0
 CUITIVA;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;0
 CUITIVA;Wilson Castillo Suarez;Partido Liberal Colombiano;0
-DUITAMA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5057
+DUITAMA;Luis Eduardo Rodriguez Perez;Partido de la U;5057
 DUITAMA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4531
 DUITAMA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;2044
 DUITAMA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;2037
@@ -2853,7 +2853,7 @@ EL COCUY;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;64
 EL COCUY;Partido Conservador Colombiano;Partido Conservador Colombiano;58
 EL COCUY;Antonio Jose Caro Castillo;Partido Conservador Colombiano;38
 EL COCUY;Mayda Cecilia Velasquez Rueda;Alianza Verde;37
-EL COCUY;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;28
+EL COCUY;Luis Eduardo Rodriguez Perez;Partido de la U;28
 EL COCUY;Carlos Enrique Vargas Angarita;Cambio Radical;27
 EL COCUY;Jorge Eliecer Cortes Martinez;Cambio Radical;21
 EL COCUY;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;18
@@ -2941,7 +2941,7 @@ EL ESPINO;Uriel Barrera Correa;Partido Conservador Colombiano;180
 EL ESPINO;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;158
 EL ESPINO;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;63
 EL ESPINO;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;57
-EL ESPINO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;50
+EL ESPINO;Luis Eduardo Rodriguez Perez;Partido de la U;50
 EL ESPINO;Partido Cambio Radical Colombiano;Cambio Radical;49
 EL ESPINO;Luis Jose Nunez Nunez;Alianza Verde;47
 EL ESPINO;Luis Alberto Vega Rodriguez;Cambio Radical;38
@@ -3039,7 +3039,7 @@ FIRAVITOBA;Partido Conservador Colombiano;Partido Conservador Colombiano;93
 FIRAVITOBA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;88
 FIRAVITOBA;Partido Liberal Colombiano;Partido Liberal Colombiano;78
 FIRAVITOBA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;73
-FIRAVITOBA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;69
+FIRAVITOBA;Luis Eduardo Rodriguez Perez;Partido de la U;69
 FIRAVITOBA;Edgar Ricardo Morantes Higuera;Alianza Verde;67
 FIRAVITOBA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;54
 FIRAVITOBA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;52
@@ -3152,7 +3152,7 @@ FLORESTA;Yeimy Paola Galindo Nino;Cambio Radical;8
 FLORESTA;Edgar Ricardo Morantes Higuera;Alianza Verde;7
 FLORESTA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
 FLORESTA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
-FLORESTA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
+FLORESTA;Luis Eduardo Rodriguez Perez;Partido de la U;7
 FLORESTA;Partido Cambio Radical Colombiano;Cambio Radical;7
 FLORESTA;Partido Liberal Colombiano;Partido Liberal Colombiano;7
 FLORESTA;Abilio Hurtado Cetina;Partido Liberal Colombiano;6
@@ -3243,7 +3243,7 @@ GACHANTIVA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;13
 GACHANTIVA;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
 GACHANTIVA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
 GACHANTIVA;Olga Natalie Manrique Abril;Partido Liberal Colombiano;12
-GACHANTIVA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;11
+GACHANTIVA;Luis Eduardo Rodriguez Perez;Partido de la U;11
 GACHANTIVA;Orlando Castellanos Sotelo;Partido Liberal Colombiano;11
 GACHANTIVA;Uriel Barrera Correa;Partido Conservador Colombiano;11
 GACHANTIVA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;10
@@ -3349,7 +3349,7 @@ GAMEZA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE L
 GAMEZA;Alfredo Arias Campos;Cambio Radical;7
 GAMEZA;Dalia Dayerli Fonseca Torres;Partido Conservador Colombiano;7
 GAMEZA;Luis Alberto Vega Rodriguez;Cambio Radical;7
-GAMEZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
+GAMEZA;Luis Eduardo Rodriguez Perez;Partido de la U;7
 GAMEZA;Mayra Alejandra Viancha Sanabria;Partido Conservador Colombiano;7
 GAMEZA;Partido De Integracion Nacional  Pin;Partido De Integracion Nacional  Pin;7
 GAMEZA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;6
@@ -3436,7 +3436,7 @@ GARAGOA;Gilberto Olarte Villamil;Cambio Radical;29
 GARAGOA;Carlos Humberto Alfonso;Partido Liberal Colombiano;27
 GARAGOA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;26
 GARAGOA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;25
-GARAGOA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;24
+GARAGOA;Luis Eduardo Rodriguez Perez;Partido de la U;24
 GARAGOA;Sandra Nubiola Lopez Silva;Alianza Verde;23
 GARAGOA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;21
 GARAGOA;Jaime Raul Salamanca Torres;Alianza Verde;20
@@ -3490,7 +3490,7 @@ GARAGOA;Viviana Constanza Martinez Lopez;Cambio Radical;1
 GARAGOA;Orlando Castellanos Sotelo;Partido Liberal Colombiano;0
 GUACAMAYAS;Uriel Barrera Correa;Partido Conservador Colombiano;497
 GUACAMAYAS;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;55
-GUACAMAYAS;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;51
+GUACAMAYAS;Luis Eduardo Rodriguez Perez;Partido de la U;51
 GUACAMAYAS;Mayda Cecilia Velasquez Rueda;Alianza Verde;43
 GUACAMAYAS;Antonio Jose Caro Castillo;Partido Conservador Colombiano;41
 GUACAMAYAS;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;39
@@ -3590,7 +3590,7 @@ GUATEQUE;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Indepe
 GUATEQUE;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;77
 GUATEQUE;Alfredo Arias Campos;Cambio Radical;71
 GUATEQUE;Partido Verde;Alianza Verde;66
-GUATEQUE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;60
+GUATEQUE;Luis Eduardo Rodriguez Perez;Partido de la U;60
 GUATEQUE;Jose Rogelio Garcia Ortegon;Cambio Radical;56
 GUATEQUE;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;54
 GUATEQUE;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;52
@@ -3701,7 +3701,7 @@ GUAYATA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE L
 GUAYATA;Uriel Barrera Correa;Partido Conservador Colombiano;11
 GUAYATA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;11
 GUAYATA;Carlos Humberto Alfonso;Partido Liberal Colombiano;10
-GUAYATA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
+GUAYATA;Luis Eduardo Rodriguez Perez;Partido de la U;10
 GUAYATA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;8
 GUAYATA;Jose Armando Quinones Garzon;Alianza Verde;8
 GUAYATA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;8
@@ -3794,7 +3794,7 @@ GUICAN DE LA SIERRA;Jorge Eliecer Cortes Martinez;Cambio Radical;9
 GUICAN DE LA SIERRA;Jose Armando Quinones Garzon;Alianza Verde;9
 GUICAN DE LA SIERRA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;9
 GUICAN DE LA SIERRA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;8
-GUICAN DE LA SIERRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
+GUICAN DE LA SIERRA;Luis Eduardo Rodriguez Perez;Partido de la U;8
 GUICAN DE LA SIERRA;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
 GUICAN DE LA SIERRA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
 GUICAN DE LA SIERRA;Gladys Carrillo Mora;Alianza Verde;6
@@ -3866,7 +3866,7 @@ IZA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad 
 IZA;Edgar Ricardo Morantes Higuera;Alianza Verde;30
 IZA;Jorge Eliecer Cortes Martinez;Cambio Radical;29
 IZA;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;29
-IZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;29
+IZA;Luis Eduardo Rodriguez Perez;Partido de la U;29
 IZA;Partido Verde;Alianza Verde;29
 IZA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;18
 IZA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
@@ -3964,7 +3964,7 @@ JENESANO;Olga Natalie Manrique Abril;Partido Liberal Colombiano;55
 JENESANO;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;41
 JENESANO;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;40
 JENESANO;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;40
-JENESANO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;36
+JENESANO;Luis Eduardo Rodriguez Perez;Partido de la U;36
 JENESANO;Partido Verde;Alianza Verde;36
 JENESANO;Jose Armando Quinones Garzon;Alianza Verde;31
 JENESANO;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;31
@@ -4106,7 +4106,7 @@ JERICO;Javier Hernando Cuesta Godoy;PARTIDO DE INTEGRACION NACIONAL  PIN;2
 JERICO;Jorge Eliecer Cortes Martinez;Cambio Radical;2
 JERICO;Jose Alberto Perez Echeverry;Cambio Radical;2
 JERICO;Libia Yenifer Gordillo Moreno;Alianza Verde;2
-JERICO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+JERICO;Luis Eduardo Rodriguez Perez;Partido de la U;2
 JERICO;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 JERICO;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;2
 JERICO;Yeimy Paola Galindo Nino;Cambio Radical;2
@@ -4144,7 +4144,7 @@ LA CAPILLA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Inde
 LA CAPILLA;Mayda Cecilia Velasquez Rueda;Alianza Verde;34
 LA CAPILLA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;33
 LA CAPILLA;Partido Verde;Alianza Verde;32
-LA CAPILLA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;23
+LA CAPILLA;Luis Eduardo Rodriguez Perez;Partido de la U;23
 LA CAPILLA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;20
 LA CAPILLA;Mario Ernesto Ochoa Plazas;Cambio Radical;19
 LA CAPILLA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;16
@@ -4275,7 +4275,7 @@ LA UVITA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;4
 LA UVITA;Jairo Alexander Piza Carreno;Cambio Radical;4
 LA UVITA;Jose Alberto Perez Echeverry;Cambio Radical;4
 LA UVITA;Libia Yenifer Gordillo Moreno;Alianza Verde;4
-LA UVITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
+LA UVITA;Luis Eduardo Rodriguez Perez;Partido de la U;4
 LA UVITA;Partido Cambio Radical Colombiano;Cambio Radical;4
 LA UVITA;Sandra Nubiola Lopez Silva;Alianza Verde;4
 LA UVITA;Fabio Alberto Serrano Gonzalez;PARTIDO DE INTEGRACION NACIONAL  PIN;3
@@ -4339,7 +4339,7 @@ LA VICTORIA;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTID
 LA VICTORIA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;5
 LA VICTORIA;Jose Rogelio Garcia Ortegon;Cambio Radical;5
 LA VICTORIA;Luis Alejandro Jimenez Castellanos;Alianza Verde;5
-LA VICTORIA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5
+LA VICTORIA;Luis Eduardo Rodriguez Perez;Partido de la U;5
 LA VICTORIA;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
 LA VICTORIA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
 LA VICTORIA;Uriel Barrera Correa;Partido Conservador Colombiano;4
@@ -4490,7 +4490,7 @@ LABRANZAGRANDE;Richard Van Duarte Reyes;Alianza Verde;1
 LABRANZAGRANDE;Viviana Constanza Martinez Lopez;Cambio Radical;1
 LABRANZAGRANDE;Cesar Augusto Poveda Rojas;Partido Liberal Colombiano;0
 LABRANZAGRANDE;Henry Solano Arcos;PARTIDO DE INTEGRACION NACIONAL  PIN;0
-LABRANZAGRANDE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
+LABRANZAGRANDE;Luis Eduardo Rodriguez Perez;Partido de la U;0
 LABRANZAGRANDE;Mariela Sanchez De Buitrago;Cambio Radical;0
 LABRANZAGRANDE;Martha Cecilia Ruiz Cabieles;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 LABRANZAGRANDE;Nataly Castro Martinez;Partido Conservador Colombiano;0
@@ -4501,7 +4501,7 @@ MACANAL;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE L
 MACANAL;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;230
 MACANAL;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;186
 MACANAL;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;136
-MACANAL;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;124
+MACANAL;Luis Eduardo Rodriguez Perez;Partido de la U;124
 MACANAL;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;106
 MACANAL;Partido Conservador Colombiano;Partido Conservador Colombiano;97
 MACANAL;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;73
@@ -4642,7 +4642,7 @@ MARIPI;Hernando Arias Ochoa;Cambio Radical;2
 MARIPI;Jairo Alexander Piza Carreno;Cambio Radical;2
 MARIPI;Jesus Hernando Davila Salazar;Alianza Verde;2
 MARIPI;Libia Yenifer Gordillo Moreno;Alianza Verde;2
-MARIPI;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+MARIPI;Luis Eduardo Rodriguez Perez;Partido de la U;2
 MARIPI;Nataly Castro Martinez;Partido Conservador Colombiano;2
 MARIPI;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;2
 MARIPI;Uriel Barrera Correa;Partido Conservador Colombiano;2
@@ -4684,7 +4684,7 @@ MARIPI;Sandra Yaneth Lopez Duenas;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 MIRAFLORES;Carlos Humberto Alfonso;Partido Liberal Colombiano;1706
 MIRAFLORES;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;490
 MIRAFLORES;Partido Liberal Colombiano;Partido Liberal Colombiano;180
-MIRAFLORES;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;169
+MIRAFLORES;Luis Eduardo Rodriguez Perez;Partido de la U;169
 MIRAFLORES;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;159
 MIRAFLORES;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;110
 MIRAFLORES;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;82
@@ -4824,7 +4824,7 @@ MONGUA;Luz Marina Romero Avila;Cambio Radical;10
 MONGUA;Mayda Cecilia Velasquez Rueda;Alianza Verde;10
 MONGUA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;9
 MONGUA;Javier Hernando Cuesta Godoy;PARTIDO DE INTEGRACION NACIONAL  PIN;9
-MONGUA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;9
+MONGUA;Luis Eduardo Rodriguez Perez;Partido de la U;9
 MONGUA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 MONGUA;Mayra Alejandra Viancha Sanabria;Partido Conservador Colombiano;8
 MONGUA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;8
@@ -4870,7 +4870,7 @@ MONGUI;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;186
 MONGUI;Edgar Ricardo Morantes Higuera;Alianza Verde;125
 MONGUI;Jaime Raul Salamanca Torres;Alianza Verde;93
 MONGUI;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;90
-MONGUI;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;83
+MONGUI;Luis Eduardo Rodriguez Perez;Partido de la U;83
 MONGUI;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;79
 MONGUI;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;76
 MONGUI;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;75
@@ -4978,7 +4978,7 @@ MONIQUIRA;Enrique Monroy Pachon;Partido Liberal Colombiano;84
 MONIQUIRA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;84
 MONIQUIRA;Partido Verde;Alianza Verde;81
 MONIQUIRA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;79
-MONIQUIRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;71
+MONIQUIRA;Luis Eduardo Rodriguez Perez;Partido de la U;71
 MONIQUIRA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;70
 MONIQUIRA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;70
 MONIQUIRA;Partido De Integracion Nacional  Pin;Partido De Integracion Nacional  Pin;66
@@ -5061,7 +5061,7 @@ MOTAVITA;Luis Alejandro Jimenez Castellanos;Alianza Verde;55
 MOTAVITA;Carlos Enrique Vargas Angarita;Cambio Radical;54
 MOTAVITA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;53
 MOTAVITA;Jorge Eliecer Cortes Martinez;Cambio Radical;53
-MOTAVITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;50
+MOTAVITA;Luis Eduardo Rodriguez Perez;Partido de la U;50
 MOTAVITA;Partido De Integracion Nacional  Pin;Partido De Integracion Nacional  Pin;44
 MOTAVITA;Juan Antonio Garay Torres;Cambio Radical;41
 MOTAVITA;Mayda Cecilia Velasquez Rueda;Alianza Verde;40
@@ -5201,7 +5201,7 @@ MUZO;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
 MUZO;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;4
 MUZO;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
 MUZO;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
-MUZO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
+MUZO;Luis Eduardo Rodriguez Perez;Partido de la U;4
 MUZO;Mariela Sanchez De Buitrago;Cambio Radical;4
 MUZO;Nancy Johanna Mesa Amezquita;Cambio Radical;4
 MUZO;Claudia Idaly Avila Tibacuy;Alianza Verde;3
@@ -5239,7 +5239,7 @@ NOBSA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;357
 NOBSA;Gladys Carrillo Mora;Alianza Verde;294
 NOBSA;Partido Verde;Alianza Verde;245
 NOBSA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;226
-NOBSA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;220
+NOBSA;Luis Eduardo Rodriguez Perez;Partido de la U;220
 NOBSA;Jaime Raul Salamanca Torres;Alianza Verde;199
 NOBSA;Jorge Eliecer Cortes Martinez;Cambio Radical;186
 NOBSA;Edgar Ricardo Morantes Higuera;Alianza Verde;170
@@ -5333,7 +5333,7 @@ NUEVO COLON;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO
 NUEVO COLON;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;140
 NUEVO COLON;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;132
 NUEVO COLON;Partido Liberal Colombiano;Partido Liberal Colombiano;117
-NUEVO COLON;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;96
+NUEVO COLON;Luis Eduardo Rodriguez Perez;Partido de la U;96
 NUEVO COLON;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;90
 NUEVO COLON;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;86
 NUEVO COLON;Partido Verde;Alianza Verde;78
@@ -5424,7 +5424,7 @@ OICATA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA
 OICATA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;56
 OICATA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;54
 OICATA;Mayda Cecilia Velasquez Rueda;Alianza Verde;54
-OICATA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;52
+OICATA;Luis Eduardo Rodriguez Perez;Partido de la U;52
 OICATA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;41
 OICATA;Enrique Monroy Pachon;Partido Liberal Colombiano;40
 OICATA;Juan Antonio Garay Torres;Cambio Radical;39
@@ -5517,7 +5517,7 @@ OTANCHE;Jose Armando Quinones Garzon;Alianza Verde;94
 OTANCHE;Uriel Barrera Correa;Partido Conservador Colombiano;84
 OTANCHE;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;71
 OTANCHE;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;63
-OTANCHE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;59
+OTANCHE;Luis Eduardo Rodriguez Perez;Partido de la U;59
 OTANCHE;Partido Verde;Alianza Verde;54
 OTANCHE;Juan Antonio Garay Torres;Cambio Radical;40
 OTANCHE;Antonio Jose Caro Castillo;Partido Conservador Colombiano;39
@@ -5616,7 +5616,7 @@ PACHAVITA;Zamir Hernan Silva Zabala;Alianza Verde;28
 PACHAVITA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
 PACHAVITA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;17
 PACHAVITA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;14
-PACHAVITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;14
+PACHAVITA;Luis Eduardo Rodriguez Perez;Partido de la U;14
 PACHAVITA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;14
 PACHAVITA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;13
 PACHAVITA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;13
@@ -5755,7 +5755,7 @@ PAEZ;Yeimy Paola Galindo Nino;Cambio Radical;2
 PAEZ;Claudia Idaly Avila Tibacuy;Alianza Verde;1
 PAEZ;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;1
 PAEZ;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
-PAEZ;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
+PAEZ;Luis Eduardo Rodriguez Perez;Partido de la U;1
 PAEZ;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
 PAEZ;Nancy Johanna Mesa Amezquita;Cambio Radical;1
 PAEZ;Partido Conservador Colombiano;Partido Conservador Colombiano;1
@@ -5792,7 +5792,7 @@ PAIPA;Jaime Raul Salamanca Torres;Alianza Verde;426
 PAIPA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;391
 PAIPA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;353
 PAIPA;Partido Verde;Alianza Verde;329
-PAIPA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;277
+PAIPA;Luis Eduardo Rodriguez Perez;Partido de la U;277
 PAIPA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;266
 PAIPA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;236
 PAIPA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;226
@@ -5878,7 +5878,7 @@ PAIPA;Orlando Castellanos Sotelo;Partido Liberal Colombiano;2
 PAIPA;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;2
 PAIPA;Viviana Constanza Martinez Lopez;Cambio Radical;2
 PAJARITO;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;272
-PAJARITO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;96
+PAJARITO;Luis Eduardo Rodriguez Perez;Partido de la U;96
 PAJARITO;Luis Alberto Vega Rodriguez;Cambio Radical;52
 PAJARITO;Jorge Eliecer Cortes Martinez;Cambio Radical;46
 PAJARITO;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;31
@@ -5995,7 +5995,7 @@ PANQUEBA;Henry Solano Arcos;PARTIDO DE INTEGRACION NACIONAL  PIN;6
 PANQUEBA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;5
 PANQUEBA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;4
 PANQUEBA;Edgar Ricardo Morantes Higuera;Alianza Verde;4
-PANQUEBA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;4
+PANQUEBA;Luis Eduardo Rodriguez Perez;Partido de la U;4
 PANQUEBA;Partido Cambio Radical Colombiano;Cambio Radical;4
 PANQUEBA;Abilio Hurtado Cetina;Partido Liberal Colombiano;3
 PANQUEBA;Enrique Monroy Pachon;Partido Liberal Colombiano;3
@@ -6076,7 +6076,7 @@ PAUNA;Partido Cambio Radical Colombiano;Cambio Radical;58
 PAUNA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;53
 PAUNA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;43
 PAUNA;Partido Verde;Alianza Verde;36
-PAUNA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;34
+PAUNA;Luis Eduardo Rodriguez Perez;Partido de la U;34
 PAUNA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;33
 PAUNA;Partido Liberal Colombiano;Partido Liberal Colombiano;31
 PAUNA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;27
@@ -6232,7 +6232,7 @@ PAYA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U
 PAYA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
 PAYA;Juan Jose Uscategui Montanez;Cambio Radical;0
 PAYA;Libia Yenifer Gordillo Moreno;Alianza Verde;0
-PAYA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
+PAYA;Luis Eduardo Rodriguez Perez;Partido de la U;0
 PAYA;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
 PAYA;Maria Del Cristal Salamanca Malagon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
 PAYA;Martha Cecilia Ruiz Cabieles;PARTIDO DE INTEGRACION NACIONAL  PIN;0
@@ -6268,7 +6268,7 @@ PAZ DE RIO;Gilberto Olarte Villamil;Cambio Radical;29
 PAZ DE RIO;Olga Natalie Manrique Abril;Partido Liberal Colombiano;29
 PAZ DE RIO;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;28
 PAZ DE RIO;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;26
-PAZ DE RIO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;25
+PAZ DE RIO;Luis Eduardo Rodriguez Perez;Partido de la U;25
 PAZ DE RIO;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;23
 PAZ DE RIO;Zamir Hernan Silva Zabala;Alianza Verde;23
 PAZ DE RIO;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;22
@@ -6341,7 +6341,7 @@ PESCA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;370
 PESCA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;291
 PESCA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;280
 PESCA;Henry Mauricio Mesa Avella;Alianza Verde;256
-PESCA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;149
+PESCA;Luis Eduardo Rodriguez Perez;Partido de la U;149
 PESCA;Partido Conservador Colombiano;Partido Conservador Colombiano;105
 PESCA;Jorge Eliecer Cortes Martinez;Cambio Radical;85
 PESCA;Partido Verde;Alianza Verde;85
@@ -6502,7 +6502,7 @@ PISBA;Juan Antonio Garay Torres;Cambio Radical;0
 PISBA;Juan Jose Uscategui Montanez;Cambio Radical;0
 PISBA;Libia Yenifer Gordillo Moreno;Alianza Verde;0
 PISBA;Luis Alejandro Jimenez Castellanos;Alianza Verde;0
-PISBA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
+PISBA;Luis Eduardo Rodriguez Perez;Partido de la U;0
 PISBA;Luis Jose Nunez Nunez;Alianza Verde;0
 PISBA;Luz Marina Romero Avila;Cambio Radical;0
 PISBA;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;0
@@ -6551,7 +6551,7 @@ PUERTO BOYACA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;94
 PUERTO BOYACA;John Alejandro Roa Gomez;Partido Liberal Colombiano;94
 PUERTO BOYACA;Carlos Enrique Vargas Angarita;Cambio Radical;92
 PUERTO BOYACA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;86
-PUERTO BOYACA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;83
+PUERTO BOYACA;Luis Eduardo Rodriguez Perez;Partido de la U;83
 PUERTO BOYACA;Gladys Carrillo Mora;Alianza Verde;81
 PUERTO BOYACA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;80
 PUERTO BOYACA;Gilberto Olarte Villamil;Cambio Radical;80
@@ -6638,7 +6638,7 @@ QUIPAMA;Partido Conservador Colombiano;Partido Conservador Colombiano;12
 QUIPAMA;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;11
 QUIPAMA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;11
 QUIPAMA;Alfredo Arias Campos;Cambio Radical;10
-QUIPAMA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
+QUIPAMA;Luis Eduardo Rodriguez Perez;Partido de la U;10
 QUIPAMA;Gladys Carrillo Mora;Alianza Verde;9
 QUIPAMA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 QUIPAMA;Sandra Patricia Figueredo Ramirez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
@@ -6711,7 +6711,7 @@ RAMIRIQUI;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE
 RAMIRIQUI;Partido Liberal Colombiano;Partido Liberal Colombiano;180
 RAMIRIQUI;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;167
 RAMIRIQUI;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;136
-RAMIRIQUI;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;129
+RAMIRIQUI;Luis Eduardo Rodriguez Perez;Partido de la U;129
 RAMIRIQUI;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;122
 RAMIRIQUI;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;100
 RAMIRIQUI;Jose Armando Quinones Garzon;Alianza Verde;100
@@ -6806,7 +6806,7 @@ RAQUIRA;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE
 RAQUIRA;Partido Verde;Alianza Verde;119
 RAQUIRA;Jose Armando Quinones Garzon;Alianza Verde;117
 RAQUIRA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;113
-RAQUIRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;106
+RAQUIRA;Luis Eduardo Rodriguez Perez;Partido de la U;106
 RAQUIRA;Hernando Arias Ochoa;Cambio Radical;80
 RAQUIRA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;66
 RAQUIRA;Gilberto Olarte Villamil;Cambio Radical;59
@@ -6908,7 +6908,7 @@ RONDON;Uriel Barrera Correa;Partido Conservador Colombiano;20
 RONDON;Carlos Enrique Vargas Angarita;Cambio Radical;17
 RONDON;Hernando Arias Ochoa;Cambio Radical;17
 RONDON;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;17
-RONDON;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;15
+RONDON;Luis Eduardo Rodriguez Perez;Partido de la U;15
 RONDON;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;14
 RONDON;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;13
 RONDON;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;13
@@ -7014,7 +7014,7 @@ SABOYA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;29
 SABOYA;Uriel Barrera Correa;Partido Conservador Colombiano;29
 SABOYA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;28
 SABOYA;Jesus Hernando Davila Salazar;Alianza Verde;28
-SABOYA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;27
+SABOYA;Luis Eduardo Rodriguez Perez;Partido de la U;27
 SABOYA;Zamir Hernan Silva Zabala;Alianza Verde;27
 SABOYA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;25
 SABOYA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;23
@@ -7074,7 +7074,7 @@ SABOYA;Viviana Constanza Martinez Lopez;Cambio Radical;1
 SABOYA;Martha Cecilia Ruiz Cabieles;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 SABOYA;Nancy Johanna Mesa Amezquita;Cambio Radical;0
 SACHICA;Jose Armando Quinones Garzon;Alianza Verde;284
-SACHICA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;180
+SACHICA;Luis Eduardo Rodriguez Perez;Partido de la U;180
 SACHICA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;138
 SACHICA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;126
 SACHICA;Partido Verde;Alianza Verde;88
@@ -7209,7 +7209,7 @@ SAMACA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;9
 SAMACA;Edgar Ricardo Morantes Higuera;Alianza Verde;9
 SAMACA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;9
 SAMACA;Jose Alberto Perez Echeverry;Cambio Radical;9
-SAMACA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;9
+SAMACA;Luis Eduardo Rodriguez Perez;Partido de la U;9
 SAMACA;Dalia Dayerli Fonseca Torres;Partido Conservador Colombiano;8
 SAMACA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 SAMACA;Fabio Alberto Serrano Gonzalez;PARTIDO DE INTEGRACION NACIONAL  PIN;7
@@ -7260,7 +7260,7 @@ SAMACA;Viviana Constanza Martinez Lopez;Cambio Radical;0
 SAN EDUARDO;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;120
 SAN EDUARDO;Juan Antonio Garay Torres;Cambio Radical;69
 SAN EDUARDO;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;66
-SAN EDUARDO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;58
+SAN EDUARDO;Luis Eduardo Rodriguez Perez;Partido de la U;58
 SAN EDUARDO;Gilberto Olarte Villamil;Cambio Radical;47
 SAN EDUARDO;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;46
 SAN EDUARDO;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;43
@@ -7351,7 +7351,7 @@ SAN EDUARDO;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;0
 SAN EDUARDO;Sandra Yaneth Lopez Duenas;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 SAN JOSE DE PARE;Gilberto Olarte Villamil;Cambio Radical;695
 SAN JOSE DE PARE;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;382
-SAN JOSE DE PARE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;128
+SAN JOSE DE PARE;Luis Eduardo Rodriguez Perez;Partido de la U;128
 SAN JOSE DE PARE;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;101
 SAN JOSE DE PARE;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;100
 SAN JOSE DE PARE;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;97
@@ -7480,7 +7480,7 @@ SAN LUIS DE GACENO;Luis Jose Nunez Nunez;Alianza Verde;10
 SAN LUIS DE GACENO;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 SAN LUIS DE GACENO;Sandra Patricia Figueredo Ramirez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 SAN LUIS DE GACENO;Jorge Eliecer Cortes Martinez;Cambio Radical;7
-SAN LUIS DE GACENO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
+SAN LUIS DE GACENO;Luis Eduardo Rodriguez Perez;Partido de la U;7
 SAN LUIS DE GACENO;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;7
 SAN LUIS DE GACENO;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;6
 SAN LUIS DE GACENO;Jairo Alexander Piza Carreno;Cambio Radical;6
@@ -7563,7 +7563,7 @@ SAN MATEO;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;8
 SAN MATEO;Ingrid Bonelo Cadena;Partido Conservador Colombiano;8
 SAN MATEO;Antonio Jose Caro Castillo;Partido Conservador Colombiano;7
 SAN MATEO;Jose Rogelio Garcia Ortegon;Cambio Radical;7
-SAN MATEO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
+SAN MATEO;Luis Eduardo Rodriguez Perez;Partido de la U;7
 SAN MATEO;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;7
 SAN MATEO;Sandra Nubiola Lopez Silva;Alianza Verde;7
 SAN MATEO;Fabio Alberto Serrano Gonzalez;PARTIDO DE INTEGRACION NACIONAL  PIN;6
@@ -7645,7 +7645,7 @@ SAN MIGUEL DE SEMA;Jose Armando Quinones Garzon;Alianza Verde;15
 SAN MIGUEL DE SEMA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;14
 SAN MIGUEL DE SEMA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;14
 SAN MIGUEL DE SEMA;Carlos Enrique Vargas Angarita;Cambio Radical;13
-SAN MIGUEL DE SEMA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
+SAN MIGUEL DE SEMA;Luis Eduardo Rodriguez Perez;Partido de la U;12
 SAN MIGUEL DE SEMA;Sandra Patricia Figueredo Ramirez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
 SAN MIGUEL DE SEMA;Jose Rogelio Garcia Ortegon;Cambio Radical;11
 SAN MIGUEL DE SEMA;Olga Natalie Manrique Abril;Partido Liberal Colombiano;10
@@ -7746,7 +7746,7 @@ SAN PABLO DE BORBUR;Gilberto Olarte Villamil;Cambio Radical;13
 SAN PABLO DE BORBUR;Ingrid Bonelo Cadena;Partido Conservador Colombiano;13
 SAN PABLO DE BORBUR;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;12
 SAN PABLO DE BORBUR;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;12
-SAN PABLO DE BORBUR;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;11
+SAN PABLO DE BORBUR;Luis Eduardo Rodriguez Perez;Partido de la U;11
 SAN PABLO DE BORBUR;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;10
 SAN PABLO DE BORBUR;Jaime Raul Salamanca Torres;Alianza Verde;10
 SAN PABLO DE BORBUR;Jorge Eliecer Cortes Martinez;Cambio Radical;9
@@ -7879,7 +7879,7 @@ SANTA MARIA;Floralba Piragauta Perez;Partido Liberal Colombiano;1
 SANTA MARIA;Hernando Arias Ochoa;Cambio Radical;1
 SANTA MARIA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;1
 SANTA MARIA;Javier Hernando Cuesta Godoy;PARTIDO DE INTEGRACION NACIONAL  PIN;1
-SANTA MARIA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
+SANTA MARIA;Luis Eduardo Rodriguez Perez;Partido de la U;1
 SANTA MARIA;Luis Jose Nunez Nunez;Alianza Verde;1
 SANTA MARIA;Luz Marina Romero Avila;Cambio Radical;1
 SANTA MARIA;Mariela Sanchez De Buitrago;Cambio Radical;1
@@ -7907,7 +7907,7 @@ SANTA ROSA DE VITERBO;Carlos Enrique Vargas Angarita;Cambio Radical;212
 SANTA ROSA DE VITERBO;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;186
 SANTA ROSA DE VITERBO;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;161
 SANTA ROSA DE VITERBO;Partido Verde;Alianza Verde;153
-SANTA ROSA DE VITERBO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;152
+SANTA ROSA DE VITERBO;Luis Eduardo Rodriguez Perez;Partido de la U;152
 SANTA ROSA DE VITERBO;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;140
 SANTA ROSA DE VITERBO;Partido Conservador Colombiano;Partido Conservador Colombiano;130
 SANTA ROSA DE VITERBO;Jorge Eliecer Cortes Martinez;Cambio Radical;129
@@ -8017,7 +8017,7 @@ SANTA SOFIA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;18
 SANTA SOFIA;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;16
 SANTA SOFIA;Luis Alberto Vega Rodriguez;Cambio Radical;16
 SANTA SOFIA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;16
-SANTA SOFIA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;15
+SANTA SOFIA;Luis Eduardo Rodriguez Perez;Partido de la U;15
 SANTA SOFIA;Gladys Carrillo Mora;Alianza Verde;14
 SANTA SOFIA;Henry Solano Arcos;PARTIDO DE INTEGRACION NACIONAL  PIN;13
 SANTA SOFIA;Partido Liberal Colombiano;Partido Liberal Colombiano;13
@@ -8095,7 +8095,7 @@ SANTANA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;98
 SANTANA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;84
 SANTANA;Orlando Castellanos Sotelo;Partido Liberal Colombiano;83
 SANTANA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;80
-SANTANA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;77
+SANTANA;Luis Eduardo Rodriguez Perez;Partido de la U;77
 SANTANA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;52
 SANTANA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;52
 SANTANA;Jose Armando Quinones Garzon;Alianza Verde;51
@@ -8189,7 +8189,7 @@ SATIVANORTE;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;38
 SATIVANORTE;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;37
 SATIVANORTE;Uriel Barrera Correa;Partido Conservador Colombiano;28
 SATIVANORTE;Alfredo Arias Campos;Cambio Radical;25
-SATIVANORTE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;24
+SATIVANORTE;Luis Eduardo Rodriguez Perez;Partido de la U;24
 SATIVANORTE;Juan Antonio Garay Torres;Cambio Radical;21
 SATIVANORTE;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;18
 SATIVANORTE;Henry Mauricio Mesa Avella;Alianza Verde;17
@@ -8307,7 +8307,7 @@ SATIVASUR;Javier Hernando Cuesta Godoy;PARTIDO DE INTEGRACION NACIONAL  PIN;2
 SATIVASUR;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 SATIVASUR;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 SATIVASUR;Luis Alberto Vega Rodriguez;Cambio Radical;2
-SATIVASUR;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+SATIVASUR;Luis Eduardo Rodriguez Perez;Partido de la U;2
 SATIVASUR;Luis Jose Nunez Nunez;Alianza Verde;2
 SATIVASUR;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 SATIVASUR;Zamir Hernan Silva Zabala;Alianza Verde;2
@@ -8366,7 +8366,7 @@ SIACHOQUE;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;249
 SIACHOQUE;Partido Verde;Alianza Verde;165
 SIACHOQUE;Mario Ernesto Ochoa Plazas;Cambio Radical;152
 SIACHOQUE;Zamir Hernan Silva Zabala;Alianza Verde;117
-SIACHOQUE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;104
+SIACHOQUE;Luis Eduardo Rodriguez Perez;Partido de la U;104
 SIACHOQUE;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;87
 SIACHOQUE;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;83
 SIACHOQUE;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;77
@@ -8461,7 +8461,7 @@ SOATA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;160
 SOATA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;158
 SOATA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;154
 SOATA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;115
-SOATA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;108
+SOATA;Luis Eduardo Rodriguez Perez;Partido de la U;108
 SOATA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;96
 SOATA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;92
 SOATA;Luis Jose Nunez Nunez;Alianza Verde;88
@@ -8559,7 +8559,7 @@ SOCHA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO D
 SOCHA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;89
 SOCHA;Jaime Raul Salamanca Torres;Alianza Verde;82
 SOCHA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;79
-SOCHA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;79
+SOCHA;Luis Eduardo Rodriguez Perez;Partido de la U;79
 SOCHA;Oliva Isabel Nino Estupinan;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;78
 SOCHA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;53
 SOCHA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;50
@@ -8648,7 +8648,7 @@ SOCOTA;Partido Verde;Alianza Verde;95
 SOCOTA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;91
 SOCOTA;Partido Cambio Radical Colombiano;Cambio Radical;86
 SOCOTA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;75
-SOCOTA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;66
+SOCOTA;Luis Eduardo Rodriguez Perez;Partido de la U;66
 SOCOTA;Mario Ernesto Ochoa Plazas;Cambio Radical;64
 SOCOTA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;61
 SOCOTA;Hernando Arias Ochoa;Cambio Radical;60
@@ -8751,7 +8751,7 @@ SOGAMOSO;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PART
 SOGAMOSO;Hernando Arias Ochoa;Cambio Radical;518
 SOGAMOSO;Henry Mauricio Mesa Avella;Alianza Verde;506
 SOGAMOSO;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;443
-SOGAMOSO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;437
+SOGAMOSO;Luis Eduardo Rodriguez Perez;Partido de la U;437
 SOGAMOSO;Juan Jose Uscategui Montanez;Cambio Radical;403
 SOGAMOSO;Jorge Eliecer Cortes Martinez;Cambio Radical;358
 SOGAMOSO;Enrique Monroy Pachon;Partido Liberal Colombiano;350
@@ -8849,7 +8849,7 @@ SOMONDOCO;Sandra Nubiola Lopez Silva;Alianza Verde;10
 SOMONDOCO;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
 SOMONDOCO;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;8
 SOMONDOCO;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;8
-SOMONDOCO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;8
+SOMONDOCO;Luis Eduardo Rodriguez Perez;Partido de la U;8
 SOMONDOCO;Uriel Barrera Correa;Partido Conservador Colombiano;8
 SOMONDOCO;Gladys Carrillo Mora;Alianza Verde;7
 SOMONDOCO;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;7
@@ -8913,7 +8913,7 @@ SOMONDOCO;Orlando Castellanos Sotelo;Partido Liberal Colombiano;0
 SOMONDOCO;Richard Van Duarte Reyes;Alianza Verde;0
 SOMONDOCO;Sandra Yaneth Lopez Duenas;PARTIDO DE INTEGRACION NACIONAL  PIN;0
 SOMONDOCO;Wilson Castillo Suarez;Partido Liberal Colombiano;0
-SORA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;198
+SORA;Luis Eduardo Rodriguez Perez;Partido de la U;198
 SORA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;175
 SORA;Jaime Raul Salamanca Torres;Alianza Verde;146
 SORA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;83
@@ -9040,7 +9040,7 @@ SORACA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA
 SORACA;Jaime Raul Salamanca Torres;Alianza Verde;18
 SORACA;Luis Jose Nunez Nunez;Alianza Verde;18
 SORACA;Luis Alberto Vega Rodriguez;Cambio Radical;17
-SORACA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;17
+SORACA;Luis Eduardo Rodriguez Perez;Partido de la U;17
 SORACA;Partido Conservador Colombiano;Partido Conservador Colombiano;16
 SORACA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;14
 SORACA;John Alejandro Roa Gomez;Partido Liberal Colombiano;14
@@ -9101,7 +9101,7 @@ SOTAQUIRA;Jaime Raul Salamanca Torres;Alianza Verde;1487
 SOTAQUIRA;Mario Ernesto Ochoa Plazas;Cambio Radical;123
 SOTAQUIRA;Partido Verde;Alianza Verde;117
 SOTAQUIRA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;95
-SOTAQUIRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;85
+SOTAQUIRA;Luis Eduardo Rodriguez Perez;Partido de la U;85
 SOTAQUIRA;Mariela Sanchez De Buitrago;Cambio Radical;79
 SOTAQUIRA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;76
 SOTAQUIRA;Alfredo Arias Campos;Cambio Radical;66
@@ -9191,7 +9191,7 @@ SOTAQUIRA;Richard Van Duarte Reyes;Alianza Verde;0
 SOTAQUIRA;Rosa Elvira Casas De Ayala;Partido Conservador Colombiano;0
 SUSACON;Uriel Barrera Correa;Partido Conservador Colombiano;248
 SUSACON;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;121
-SUSACON;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;97
+SUSACON;Luis Eduardo Rodriguez Perez;Partido de la U;97
 SUSACON;Luis Alejandro Camargo Martinez;Partido Conservador Colombiano;96
 SUSACON;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;81
 SUSACON;Zamir Hernan Silva Zabala;Alianza Verde;79
@@ -9296,7 +9296,7 @@ SUTAMARCHAN;Mario Ernesto Ochoa Plazas;Cambio Radical;49
 SUTAMARCHAN;Juan Antonio Garay Torres;Cambio Radical;44
 SUTAMARCHAN;Partido Conservador Colombiano;Partido Conservador Colombiano;44
 SUTAMARCHAN;Partido Cambio Radical Colombiano;Cambio Radical;39
-SUTAMARCHAN;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;37
+SUTAMARCHAN;Luis Eduardo Rodriguez Perez;Partido de la U;37
 SUTAMARCHAN;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;35
 SUTAMARCHAN;Jorge Eliecer Cortes Martinez;Cambio Radical;33
 SUTAMARCHAN;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;33
@@ -9399,7 +9399,7 @@ SUTATENZA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO D
 SUTATENZA;Jose Armando Quinones Garzon;Alianza Verde;12
 SUTATENZA;Gladys Stella Paez Chavez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;11
 SUTATENZA;Olga Natalie Manrique Abril;Partido Liberal Colombiano;11
-SUTATENZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
+SUTATENZA;Luis Eduardo Rodriguez Perez;Partido de la U;10
 SUTATENZA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
 SUTATENZA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;9
 SUTATENZA;Ingrid Bonelo Cadena;Partido Conservador Colombiano;9
@@ -9475,7 +9475,7 @@ TASCO;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unida
 TASCO;Gilberto Olarte Villamil;Cambio Radical;62
 TASCO;Partido Liberal Colombiano;Partido Liberal Colombiano;62
 TASCO;Jorge Eliecer Cortes Martinez;Cambio Radical;59
-TASCO;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;56
+TASCO;Luis Eduardo Rodriguez Perez;Partido de la U;56
 TASCO;Mario Ernesto Ochoa Plazas;Cambio Radical;56
 TASCO;Enrique Monroy Pachon;Partido Liberal Colombiano;51
 TASCO;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;48
@@ -9613,7 +9613,7 @@ TENZA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;
 TENZA;Fabio Alberto Serrano Gonzalez;PARTIDO DE INTEGRACION NACIONAL  PIN;2
 TENZA;Henry Solano Arcos;PARTIDO DE INTEGRACION NACIONAL  PIN;2
 TENZA;Jorge Eliecer Cortes Martinez;Cambio Radical;2
-TENZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
+TENZA;Luis Eduardo Rodriguez Perez;Partido de la U;2
 TENZA;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;2
 TENZA;Martha Cecilia Ruiz Cabieles;PARTIDO DE INTEGRACION NACIONAL  PIN;2
 TENZA;Nataly Castro Martinez;Partido Conservador Colombiano;2
@@ -9653,7 +9653,7 @@ TIBANA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;1043
 TIBANA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;680
 TIBANA;Carlos Julio Velandia Sepulveda;Partido Liberal Colombiano;346
 TIBANA;Partido Liberal Colombiano;Partido Liberal Colombiano;317
-TIBANA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;128
+TIBANA;Luis Eduardo Rodriguez Perez;Partido de la U;128
 TIBANA;William Jose Gonzalez Lizarazo;Partido Conservador Colombiano;79
 TIBANA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;76
 TIBANA;Juan Antonio Garay Torres;Cambio Radical;70
@@ -9744,7 +9744,7 @@ TIBANA;Richard Van Duarte Reyes;Alianza Verde;0
 TIBASOSA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;833
 TIBASOSA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;558
 TIBASOSA;Edgar Ricardo Morantes Higuera;Alianza Verde;187
-TIBASOSA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;168
+TIBASOSA;Luis Eduardo Rodriguez Perez;Partido de la U;168
 TIBASOSA;Partido Conservador Colombiano;Partido Conservador Colombiano;132
 TIBASOSA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;118
 TIBASOSA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;104
@@ -9843,7 +9843,7 @@ TINJACA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE L
 TINJACA;Luis Alejandro Jimenez Castellanos;Alianza Verde;42
 TINJACA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;41
 TINJACA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;38
-TINJACA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;30
+TINJACA;Luis Eduardo Rodriguez Perez;Partido de la U;30
 TINJACA;Jorge Eliecer Cortes Martinez;Cambio Radical;29
 TINJACA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;29
 TINJACA;Carlos Enrique Vargas Angarita;Cambio Radical;28
@@ -9929,7 +9929,7 @@ TIPACOQUE;Mayda Cecilia Velasquez Rueda;Alianza Verde;193
 TIPACOQUE;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;115
 TIPACOQUE;Partido Liberal Colombiano;Partido Liberal Colombiano;94
 TIPACOQUE;Partido Verde;Alianza Verde;87
-TIPACOQUE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;81
+TIPACOQUE;Luis Eduardo Rodriguez Perez;Partido de la U;81
 TIPACOQUE;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;80
 TIPACOQUE;Cesar Augusto Poveda Rojas;Partido Liberal Colombiano;69
 TIPACOQUE;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;55
@@ -10021,7 +10021,7 @@ TOCA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO 
 TOCA;Mayda Cecilia Velasquez Rueda;Alianza Verde;386
 TOCA;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;340
 TOCA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;262
-TOCA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;149
+TOCA;Luis Eduardo Rodriguez Perez;Partido de la U;149
 TOCA;Edgar Vidal Ulloa Hurtado;Partido Conservador Colombiano;137
 TOCA;Gilberto Olarte Villamil;Cambio Radical;118
 TOCA;Enrique Monroy Pachon;Partido Liberal Colombiano;110
@@ -10114,7 +10114,7 @@ TOGUI;John Alejandro Roa Gomez;Partido Liberal Colombiano;266
 TOGUI;Partido Liberal Colombiano;Partido Liberal Colombiano;221
 TOGUI;Partido Conservador Colombiano;Partido Conservador Colombiano;151
 TOGUI;Gilberto Olarte Villamil;Cambio Radical;123
-TOGUI;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;62
+TOGUI;Luis Eduardo Rodriguez Perez;Partido de la U;62
 TOGUI;Enrique Monroy Pachon;Partido Liberal Colombiano;48
 TOGUI;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;34
 TOGUI;Partido Social De Unidad Nacional  Partido De La U;Partido Social De Unidad Nacional  Partido De La U;33
@@ -10205,7 +10205,7 @@ TOPAGA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;255
 TOPAGA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;151
 TOPAGA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;143
 TOPAGA;Wilson Rodrigo Bernal Barrera;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;104
-TOPAGA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;73
+TOPAGA;Luis Eduardo Rodriguez Perez;Partido de la U;73
 TOPAGA;Jorge Eliecer Cortes Martinez;Cambio Radical;71
 TOPAGA;Edgar Ricardo Morantes Higuera;Alianza Verde;66
 TOPAGA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;49
@@ -10309,7 +10309,7 @@ TOTA;Carlos Arturo Caro Ballesteros;Partido Conservador Colombiano;50
 TOTA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;43
 TOTA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;34
 TOTA;Fredy Alexander Adame Erazo;Partido Liberal Colombiano;33
-TOTA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;32
+TOTA;Luis Eduardo Rodriguez Perez;Partido de la U;32
 TOTA;Henry Mauricio Mesa Avella;Alianza Verde;25
 TOTA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;25
 TOTA;Jairo Hernan Chillan Reyes;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;24
@@ -10416,7 +10416,7 @@ TUNJA;John Alejandro Roa Gomez;Partido Liberal Colombiano;651
 TUNJA;Dalia Dayerli Fonseca Torres;Partido Conservador Colombiano;620
 TUNJA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;617
 TUNJA;Zamir Hernan Silva Zabala;Alianza Verde;586
-TUNJA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;581
+TUNJA;Luis Eduardo Rodriguez Perez;Partido de la U;581
 TUNJA;Gladys Carrillo Mora;Alianza Verde;578
 TUNJA;Antonio Jose Caro Castillo;Partido Conservador Colombiano;541
 TUNJA;Partido Conservador Colombiano;Partido Conservador Colombiano;533
@@ -10529,7 +10529,7 @@ TUNUNGUA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;1
 TUNUNGUA;Jairo Enrique Castiblanco Parra;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
 TUNUNGUA;Libia Yenifer Gordillo Moreno;Alianza Verde;1
 TUNUNGUA;Luis Alfredo Amaya Chacon;Partido Conservador Colombiano;1
-TUNUNGUA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
+TUNUNGUA;Luis Eduardo Rodriguez Perez;Partido de la U;1
 TUNUNGUA;Luis Jose Nunez Nunez;Alianza Verde;1
 TUNUNGUA;Marco Antonio Sogamoso Rubiano;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;1
 TUNUNGUA;Mayra Alejandra Viancha Sanabria;Partido Conservador Colombiano;1
@@ -10574,7 +10574,7 @@ TURMEQUE;Partido Liberal Colombiano;Partido Liberal Colombiano;172
 TURMEQUE;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;168
 TURMEQUE;Jorge Eliecer Cortes Martinez;Cambio Radical;128
 TURMEQUE;Zamir Hernan Silva Zabala;Alianza Verde;123
-TURMEQUE;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;108
+TURMEQUE;Luis Eduardo Rodriguez Perez;Partido de la U;108
 TURMEQUE;Jose Armando Quinones Garzon;Alianza Verde;104
 TURMEQUE;John Alejandro Roa Gomez;Partido Liberal Colombiano;99
 TURMEQUE;Joaquin Prieto Garcia;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;72
@@ -10669,7 +10669,7 @@ TUTA;Jaime Raul Salamanca Torres;Alianza Verde;143
 TUTA;Carlos Enrique Vargas Angarita;Cambio Radical;120
 TUTA;Partido Conservador Colombiano;Partido Conservador Colombiano;106
 TUTA;Partido Liberal Colombiano;Partido Liberal Colombiano;102
-TUTA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;98
+TUTA;Luis Eduardo Rodriguez Perez;Partido de la U;98
 TUTA;Jose Alberto Moreno Villamil;Partido Conservador Colombiano;95
 TUTA;Osman Fernando Roa Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;88
 TUTA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;85
@@ -10755,7 +10755,7 @@ TUTA;Viviana Constanza Martinez Lopez;Cambio Radical;0
 TUTAZA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;116
 TUTAZA;Rodrigo Arturo Rojas Lara;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;99
 TUTAZA;Mario Ernesto Ochoa Plazas;Cambio Radical;74
-TUTAZA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;71
+TUTAZA;Luis Eduardo Rodriguez Perez;Partido de la U;71
 TUTAZA;Reyneiro Hernando Flechas Diaz;Partido Conservador Colombiano;58
 TUTAZA;Jairo Alexander Piza Carreno;Cambio Radical;53
 TUTAZA;Jorge Eliecer Cortes Martinez;Cambio Radical;52
@@ -10878,7 +10878,7 @@ UMBITA;Jonatan Sanchez Garavito;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA
 UMBITA;Luis Jose Nunez Nunez;Alianza Verde;11
 UMBITA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Independiente De Renovacion Absoluta  Mira;11
 UMBITA;Jose Jacinto Lopez Lopez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
-UMBITA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;10
+UMBITA;Luis Eduardo Rodriguez Perez;Partido de la U;10
 UMBITA;Nataly Castro Martinez;Partido Conservador Colombiano;10
 UMBITA;Sandra Nubiola Lopez Silva;Alianza Verde;10
 UMBITA;Jesus Hernando Davila Salazar;Alianza Verde;9
@@ -10955,7 +10955,7 @@ VENTAQUEMADA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;94
 VENTAQUEMADA;Orlando Hernandez Camargo;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;85
 VENTAQUEMADA;Jose Armando Quinones Garzon;Alianza Verde;73
 VENTAQUEMADA;Mario Ernesto Ochoa Plazas;Cambio Radical;72
-VENTAQUEMADA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;71
+VENTAQUEMADA;Luis Eduardo Rodriguez Perez;Partido de la U;71
 VENTAQUEMADA;Carlos Enrique Vargas Angarita;Cambio Radical;67
 VENTAQUEMADA;Pedro Villate Briceno;Alianza Verde;62
 VENTAQUEMADA;Gonzalo Gutierrez Tarazona;Partido Conservador Colombiano;59
@@ -11043,7 +11043,7 @@ VILLA DE LEYVA;Mario Ernesto Ochoa Plazas;Cambio Radical;103
 VILLA DE LEYVA;Partido Verde;Alianza Verde;103
 VILLA DE LEYVA;Mayda Cecilia Velasquez Rueda;Alianza Verde;101
 VILLA DE LEYVA;Jose Armando Quinones Garzon;Alianza Verde;88
-VILLA DE LEYVA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;83
+VILLA DE LEYVA;Luis Eduardo Rodriguez Perez;Partido de la U;83
 VILLA DE LEYVA;Luis Alejandro Jimenez Castellanos;Alianza Verde;77
 VILLA DE LEYVA;Gilberto Olarte Villamil;Cambio Radical;76
 VILLA DE LEYVA;Anderson Joaquin Sanchez Ruiz;Partido Liberal Colombiano;73
@@ -11135,7 +11135,7 @@ VIRACACHA;Partido Social De Unidad Nacional  Partido De La U;Partido Social De U
 VIRACACHA;Juan Antonio Garay Torres;Cambio Radical;29
 VIRACACHA;Partido Liberal Colombiano;Partido Liberal Colombiano;27
 VIRACACHA;Partido Verde;Alianza Verde;26
-VIRACACHA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;25
+VIRACACHA;Luis Eduardo Rodriguez Perez;Partido de la U;25
 VIRACACHA;Partido Cambio Radical Colombiano;Cambio Radical;22
 VIRACACHA;Mario Ernesto Ochoa Plazas;Cambio Radical;21
 VIRACACHA;Donald Ferney Gonzalez Rincon;Partido Conservador Colombiano;18
@@ -11221,7 +11221,7 @@ ZETAQUIRA;Movimiento Independiente De Renovacion Absoluta  Mira;Movimiento Indep
 ZETAQUIRA;Partido Liberal Colombiano;Partido Liberal Colombiano;78
 ZETAQUIRA;Cesar Augusto Lopez Morales;Partido Liberal Colombiano;77
 ZETAQUIRA;Juan Antonio Garay Torres;Cambio Radical;48
-ZETAQUIRA;Luis Eduardo Rodriguez Perez;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;43
+ZETAQUIRA;Luis Eduardo Rodriguez Perez;Partido de la U;43
 ZETAQUIRA;Carlos Enrique Vargas Angarita;Cambio Radical;35
 ZETAQUIRA;Erika Lizeth Cely Leon;PARTIDO SOCIAL DE UNIDAD NACIONAL  PARTIDO DE LA U;34
 ZETAQUIRA;Hernando Arias Ochoa;Cambio Radical;34

@@ -91,7 +91,9 @@ NOMBRES_PARTIDO = {
     '19910001': 'Partido ASI',
     '19910006': 'Partido ASI',
     '19850001': 'Partido Liberal Colombiano',
-    '19970004': 'Partido Conservador Colombiano',  # Mendieta Poveda, trayectoria conservadora
+    '19970004': 'Partido Conservador Colombiano',  # Mendieta Poveda 2011
+    '20000036': 'Movimiento MIRA',                # MIRA código 2000
+    '20100007': 'Movimiento Ciudadano',            # Aval local Boyacá 2011
     '20170002': 'Cambio Radical',
     # Códigos 2015 gobernación Boyacá
     '20150606': 'Alianza Verde',
