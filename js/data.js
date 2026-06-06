@@ -332,6 +332,7 @@ async function cargarDatos(anio, corporacion) {
         const csvCandidato = await respCandidato.text();
         currentCandidatoData = parseCandidatosCSV(csvCandidato)
             .filter(row => !excluir.includes(row['CANNOMBRE']))
+            .filter(row => String(row['CANNOMBRE'] || '').trim() !== String(row['PARNOMBRE'] || '').trim())
             .map(row => {
                 const partidoNorm = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE']);
                 return { ...row, PARNOMBRE: partidoNorm, _partidoNorm: partidoNorm };

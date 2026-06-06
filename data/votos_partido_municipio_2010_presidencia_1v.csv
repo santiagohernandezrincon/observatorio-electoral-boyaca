@@ -1,831 +1,954 @@
 MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
 ALMEIDA;Alianza Verde;54;926;5.83
+ALMEIDA;Pacto Histórico;22;926;2.38
 ALMEIDA;Partido Conservador Colombiano;11;926;1.19
 ALMEIDA;Partido Liberal Colombiano;62;926;6.7
 ALMEIDA;Partido PIN;2;926;0.22
-ALMEIDA;Partido de la U;797;926;86.07
+ALMEIDA;Partido de la U;775;926;83.69
 AQUITANIA;Alianza Verde;459;7319;6.27
 AQUITANIA;Movimiento MIRA;7;7319;0.1
+AQUITANIA;Pacto Histórico;93;7319;1.27
 AQUITANIA;Partido Conservador Colombiano;61;7319;0.83
 AQUITANIA;Partido Liberal Colombiano;344;7319;4.7
 AQUITANIA;Partido PIN;4;7319;0.05
-AQUITANIA;Partido de la U;6435;7319;87.92
+AQUITANIA;Partido de la U;6342;7319;86.65
 AQUITANIA;Polo Democrático Alternativo;9;7319;0.12
 ARCABUCO;Alianza Verde;515;2117;24.33
 ARCABUCO;Movimiento MIRA;5;2117;0.24
+ARCABUCO;Pacto Histórico;91;2117;4.3
 ARCABUCO;Partido Conservador Colombiano;165;2117;7.79
 ARCABUCO;Partido Liberal Colombiano;266;2117;12.56
 ARCABUCO;Partido PIN;9;2117;0.43
-ARCABUCO;Partido de la U;1149;2117;54.27
+ARCABUCO;Partido de la U;1058;2117;49.98
 ARCABUCO;Polo Democrático Alternativo;8;2117;0.38
 BELEN;Alianza Verde;482;3452;13.96
 BELEN;Movimiento MIRA;4;3452;0.12
+BELEN;Pacto Histórico;173;3452;5.01
 BELEN;Partido Conservador Colombiano;455;3452;13.18
 BELEN;Partido Liberal Colombiano;622;3452;18.02
 BELEN;Partido PIN;6;3452;0.17
-BELEN;Partido de la U;1880;3452;54.46
+BELEN;Partido de la U;1707;3452;49.45
 BELEN;Polo Democrático Alternativo;3;3452;0.09
 BERBEO;Alianza Verde;225;773;29.11
 BERBEO;Movimiento MIRA;1;773;0.13
+BERBEO;Pacto Histórico;32;773;4.14
 BERBEO;Partido Conservador Colombiano;30;773;3.88
 BERBEO;Partido Liberal Colombiano;59;773;7.63
-BERBEO;Partido de la U;458;773;59.25
+BERBEO;Partido de la U;426;773;55.11
 BETEITIVA;Alianza Verde;160;874;18.31
 BETEITIVA;Movimiento MIRA;1;874;0.11
+BETEITIVA;Pacto Histórico;39;874;4.46
 BETEITIVA;Partido Conservador Colombiano;119;874;13.62
 BETEITIVA;Partido Liberal Colombiano;119;874;13.62
 BETEITIVA;Partido PIN;3;874;0.34
-BETEITIVA;Partido de la U;471;874;53.89
+BETEITIVA;Partido de la U;432;874;49.43
 BETEITIVA;Polo Democrático Alternativo;1;874;0.11
 BOAVITA;Alianza Verde;408;2515;16.22
 BOAVITA;Movimiento MIRA;6;2515;0.24
+BOAVITA;Pacto Histórico;86;2515;3.42
 BOAVITA;Partido Conservador Colombiano;8;2515;0.32
 BOAVITA;Partido Liberal Colombiano;276;2515;10.97
 BOAVITA;Partido PIN;9;2515;0.36
-BOAVITA;Partido de la U;1806;2515;71.81
+BOAVITA;Partido de la U;1720;2515;68.39
 BOAVITA;Polo Democrático Alternativo;2;2515;0.08
 BOYACA;Alianza Verde;345;1767;19.52
 BOYACA;Movimiento MIRA;11;1767;0.62
+BOYACA;Pacto Histórico;57;1767;3.23
 BOYACA;Partido Conservador Colombiano;224;1767;12.68
 BOYACA;Partido Liberal Colombiano;199;1767;11.26
 BOYACA;Partido PIN;3;1767;0.17
-BOYACA;Partido de la U;979;1767;55.4
+BOYACA;Partido de la U;922;1767;52.18
 BOYACA;Polo Democrático Alternativo;6;1767;0.34
 BRICENO;Alianza Verde;85;988;8.6
+BRICENO;Pacto Histórico;13;988;1.32
 BRICENO;Partido Conservador Colombiano;3;988;0.3
 BRICENO;Partido Liberal Colombiano;127;988;12.85
 BRICENO;Partido PIN;2;988;0.2
-BRICENO;Partido de la U;769;988;77.83
+BRICENO;Partido de la U;756;988;76.52
 BRICENO;Polo Democrático Alternativo;2;988;0.2
 BUENAVISTA;Alianza Verde;241;2339;10.3
 BUENAVISTA;Movimiento MIRA;8;2339;0.34
+BUENAVISTA;Pacto Histórico;54;2339;2.31
 BUENAVISTA;Partido Conservador Colombiano;182;2339;7.78
 BUENAVISTA;Partido Liberal Colombiano;236;2339;10.09
 BUENAVISTA;Partido PIN;10;2339;0.43
-BUENAVISTA;Partido de la U;1654;2339;70.71
+BUENAVISTA;Partido de la U;1600;2339;68.41
 BUENAVISTA;Polo Democrático Alternativo;8;2339;0.34
 BUSBANZA;Alianza Verde;53;388;13.66
 BUSBANZA;Movimiento MIRA;1;388;0.26
+BUSBANZA;Pacto Histórico;28;388;7.22
 BUSBANZA;Partido Conservador Colombiano;20;388;5.15
 BUSBANZA;Partido Liberal Colombiano;55;388;14.18
 BUSBANZA;Partido PIN;1;388;0.26
-BUSBANZA;Partido de la U;257;388;66.24
+BUSBANZA;Partido de la U;229;388;59.02
 BUSBANZA;Polo Democrático Alternativo;1;388;0.26
 CALDAS;Alianza Verde;248;1664;14.9
 CALDAS;Movimiento MIRA;8;1664;0.48
+CALDAS;Pacto Histórico;106;1664;6.37
 CALDAS;Partido Conservador Colombiano;226;1664;13.58
 CALDAS;Partido Liberal Colombiano;256;1664;15.38
 CALDAS;Partido PIN;4;1664;0.24
-CALDAS;Partido de la U;921;1664;55.35
+CALDAS;Partido de la U;815;1664;48.98
 CALDAS;Polo Democrático Alternativo;1;1664;0.06
 CAMPOHERMOSO;Alianza Verde;98;1382;7.09
+CAMPOHERMOSO;Pacto Histórico;23;1382;1.66
 CAMPOHERMOSO;Partido Conservador Colombiano;30;1382;2.17
 CAMPOHERMOSO;Partido Liberal Colombiano;116;1382;8.39
 CAMPOHERMOSO;Partido PIN;2;1382;0.14
-CAMPOHERMOSO;Partido de la U;1133;1382;81.98
+CAMPOHERMOSO;Partido de la U;1110;1382;80.32
 CAMPOHERMOSO;Polo Democrático Alternativo;3;1382;0.22
 CERINZA;Alianza Verde;317;1847;17.16
 CERINZA;Movimiento MIRA;4;1847;0.22
+CERINZA;Pacto Histórico;189;1847;10.23
 CERINZA;Partido Conservador Colombiano;24;1847;1.3
 CERINZA;Partido Liberal Colombiano;389;1847;21.06
 CERINZA;Partido PIN;9;1847;0.49
-CERINZA;Partido de la U;1101;1847;59.61
+CERINZA;Partido de la U;912;1847;49.38
 CERINZA;Polo Democrático Alternativo;3;1847;0.16
 CHINAVITA;Alianza Verde;122;1547;7.89
 CHINAVITA;Movimiento MIRA;2;1547;0.13
+CHINAVITA;Pacto Histórico;42;1547;2.71
 CHINAVITA;Partido Conservador Colombiano;19;1547;1.23
 CHINAVITA;Partido Liberal Colombiano;258;1547;16.68
 CHINAVITA;Partido PIN;3;1547;0.19
-CHINAVITA;Partido de la U;1143;1547;73.88
+CHINAVITA;Partido de la U;1101;1547;71.17
 CHIQUINQUIRA;Alianza Verde;4772;20299;23.51
 CHIQUINQUIRA;Movimiento MIRA;36;20299;0.18
+CHIQUINQUIRA;Pacto Histórico;1126;20299;5.55
 CHIQUINQUIRA;Partido Conservador Colombiano;476;20299;2.34
 CHIQUINQUIRA;Partido Liberal Colombiano;3498;20299;17.23
 CHIQUINQUIRA;Partido PIN;14;20299;0.07
-CHIQUINQUIRA;Partido de la U;11489;20299;56.6
+CHIQUINQUIRA;Partido de la U;10363;20299;51.05
 CHIQUINQUIRA;Polo Democrático Alternativo;14;20299;0.07
 CHIQUIZA;Alianza Verde;540;2246;24.04
 CHIQUIZA;Movimiento MIRA;7;2246;0.31
+CHIQUIZA;Pacto Histórico;34;2246;1.51
 CHIQUIZA;Partido Conservador Colombiano;937;2246;41.72
 CHIQUIZA;Partido Liberal Colombiano;146;2246;6.5
 CHIQUIZA;Partido PIN;5;2246;0.22
-CHIQUIZA;Partido de la U;606;2246;26.98
+CHIQUIZA;Partido de la U;572;2246;25.47
 CHIQUIZA;Polo Democrático Alternativo;5;2246;0.22
 CHISCAS;Alianza Verde;73;1940;3.76
 CHISCAS;Movimiento MIRA;1;1940;0.05
+CHISCAS;Pacto Histórico;30;1940;1.55
 CHISCAS;Partido Conservador Colombiano;56;1940;2.89
 CHISCAS;Partido Liberal Colombiano;58;1940;2.99
 CHISCAS;Partido PIN;1;1940;0.05
-CHISCAS;Partido de la U;1751;1940;90.26
+CHISCAS;Partido de la U;1721;1940;88.71
 CHITA;Alianza Verde;126;3396;3.71
 CHITA;Movimiento MIRA;3;3396;0.09
+CHITA;Pacto Histórico;37;3396;1.09
 CHITA;Partido Conservador Colombiano;39;3396;1.15
 CHITA;Partido Liberal Colombiano;72;3396;2.12
 CHITA;Partido PIN;3;3396;0.09
-CHITA;Partido de la U;3147;3396;92.67
+CHITA;Partido de la U;3110;3396;91.58
 CHITA;Polo Democrático Alternativo;6;3396;0.18
 CHITARAQUE;Alianza Verde;235;1932;12.16
 CHITARAQUE;Movimiento MIRA;4;1932;0.21
+CHITARAQUE;Pacto Histórico;63;1932;3.26
 CHITARAQUE;Partido Conservador Colombiano;44;1932;2.28
 CHITARAQUE;Partido Liberal Colombiano;244;1932;12.63
 CHITARAQUE;Partido PIN;5;1932;0.26
-CHITARAQUE;Partido de la U;1397;1932;72.31
+CHITARAQUE;Partido de la U;1334;1932;69.05
 CHITARAQUE;Polo Democrático Alternativo;3;1932;0.16
 CHIVATA;Alianza Verde;348;1369;25.42
 CHIVATA;Movimiento MIRA;3;1369;0.22
+CHIVATA;Pacto Histórico;63;1369;4.6
 CHIVATA;Partido Conservador Colombiano;107;1369;7.82
 CHIVATA;Partido Liberal Colombiano;311;1369;22.72
 CHIVATA;Partido PIN;3;1369;0.22
-CHIVATA;Partido de la U;595;1369;43.46
+CHIVATA;Partido de la U;532;1369;38.86
 CHIVATA;Polo Democrático Alternativo;2;1369;0.15
 CHIVOR;Alianza Verde;61;808;7.55
 CHIVOR;Movimiento MIRA;2;808;0.25
+CHIVOR;Pacto Histórico;7;808;0.87
 CHIVOR;Partido Conservador Colombiano;2;808;0.25
 CHIVOR;Partido Liberal Colombiano;54;808;6.68
-CHIVOR;Partido de la U;688;808;85.15
+CHIVOR;Partido de la U;681;808;84.28
 CHIVOR;Polo Democrático Alternativo;1;808;0.12
 CIENEGA;Alianza Verde;154;2114;7.28
 CIENEGA;Movimiento MIRA;5;2114;0.24
+CIENEGA;Pacto Histórico;31;2114;1.47
 CIENEGA;Partido Conservador Colombiano;52;2114;2.46
 CIENEGA;Partido Liberal Colombiano;294;2114;13.91
 CIENEGA;Partido PIN;4;2114;0.19
-CIENEGA;Partido de la U;1603;2114;75.83
+CIENEGA;Partido de la U;1572;2114;74.36
 CIENEGA;Polo Democrático Alternativo;2;2114;0.09
 COMBITA;Alianza Verde;897;3637;24.66
 COMBITA;Movimiento MIRA;29;3637;0.8
+COMBITA;Pacto Histórico;173;3637;4.76
 COMBITA;Partido Conservador Colombiano;508;3637;13.97
 COMBITA;Partido Liberal Colombiano;716;3637;19.69
 COMBITA;Partido PIN;4;3637;0.11
-COMBITA;Partido de la U;1479;3637;40.67
+COMBITA;Partido de la U;1306;3637;35.91
 COMBITA;Polo Democrático Alternativo;4;3637;0.11
 COPER;Alianza Verde;85;1639;5.19
+COPER;Pacto Histórico;17;1639;1.04
 COPER;Partido Conservador Colombiano;172;1639;10.49
 COPER;Partido Liberal Colombiano;418;1639;25.5
 COPER;Partido PIN;4;1639;0.24
-COPER;Partido de la U;959;1639;58.51
+COPER;Partido de la U;942;1639;57.47
 COPER;Polo Democrático Alternativo;1;1639;0.06
 CORRALES;Alianza Verde;203;1221;16.63
 CORRALES;Movimiento MIRA;5;1221;0.41
+CORRALES;Pacto Histórico;67;1221;5.49
 CORRALES;Partido Conservador Colombiano;54;1221;4.42
 CORRALES;Partido Liberal Colombiano;292;1221;23.91
 CORRALES;Partido PIN;3;1221;0.25
-CORRALES;Partido de la U;663;1221;54.3
+CORRALES;Partido de la U;596;1221;48.81
 CORRALES;Polo Democrático Alternativo;1;1221;0.08
 COVARACHIA;Alianza Verde;63;1339;4.71
 COVARACHIA;Movimiento MIRA;8;1339;0.6
+COVARACHIA;Pacto Histórico;26;1339;1.94
 COVARACHIA;Partido Conservador Colombiano;42;1339;3.14
 COVARACHIA;Partido Liberal Colombiano;57;1339;4.26
 COVARACHIA;Partido PIN;1;1339;0.07
-COVARACHIA;Partido de la U;1164;1339;86.93
+COVARACHIA;Partido de la U;1138;1339;84.99
 COVARACHIA;Polo Democrático Alternativo;4;1339;0.3
 CUBARA;Alianza Verde;272;1298;20.96
 CUBARA;Movimiento MIRA;9;1298;0.69
+CUBARA;Pacto Histórico;101;1298;7.78
 CUBARA;Partido Conservador Colombiano;92;1298;7.09
 CUBARA;Partido Liberal Colombiano;254;1298;19.57
 CUBARA;Partido PIN;9;1298;0.69
-CUBARA;Partido de la U;662;1298;51.0
+CUBARA;Partido de la U;561;1298;43.22
 CUCAITA;Alianza Verde;529;1613;32.8
 CUCAITA;Movimiento MIRA;2;1613;0.12
+CUCAITA;Pacto Histórico;37;1613;2.29
 CUCAITA;Partido Conservador Colombiano;54;1613;3.35
 CUCAITA;Partido Liberal Colombiano;194;1613;12.03
 CUCAITA;Partido PIN;2;1613;0.12
-CUCAITA;Partido de la U;830;1613;51.46
+CUCAITA;Partido de la U;793;1613;49.16
 CUCAITA;Polo Democrático Alternativo;2;1613;0.12
 CUITIVA;Alianza Verde;153;1031;14.84
 CUITIVA;Movimiento MIRA;2;1031;0.19
+CUITIVA;Pacto Histórico;48;1031;4.66
 CUITIVA;Partido Conservador Colombiano;47;1031;4.56
 CUITIVA;Partido Liberal Colombiano;128;1031;12.42
 CUITIVA;Partido PIN;3;1031;0.29
-CUITIVA;Partido de la U;698;1031;67.7
+CUITIVA;Partido de la U;650;1031;63.05
 DUITAMA;Alianza Verde;14976;46328;32.33
 DUITAMA;Movimiento MIRA;130;46328;0.28
+DUITAMA;Pacto Histórico;3315;46328;7.16
 DUITAMA;Partido Conservador Colombiano;1097;46328;2.37
 DUITAMA;Partido Liberal Colombiano;8703;46328;18.79
 DUITAMA;Partido PIN;42;46328;0.09
-DUITAMA;Partido de la U;21363;46328;46.11
+DUITAMA;Partido de la U;18048;46328;38.96
 DUITAMA;Polo Democrático Alternativo;17;46328;0.04
 EL COCUY;Alianza Verde;86;2110;4.08
 EL COCUY;Movimiento MIRA;3;2110;0.14
+EL COCUY;Pacto Histórico;14;2110;0.66
 EL COCUY;Partido Conservador Colombiano;50;2110;2.37
 EL COCUY;Partido Liberal Colombiano;184;2110;8.72
 EL COCUY;Partido PIN;4;2110;0.19
-EL COCUY;Partido de la U;1782;2110;84.45
+EL COCUY;Partido de la U;1768;2110;83.79
 EL COCUY;Polo Democrático Alternativo;1;2110;0.05
 EL ESPINO;Alianza Verde;40;1328;3.01
 EL ESPINO;Movimiento MIRA;2;1328;0.15
+EL ESPINO;Pacto Histórico;15;1328;1.13
 EL ESPINO;Partido Conservador Colombiano;6;1328;0.45
 EL ESPINO;Partido Liberal Colombiano;68;1328;5.12
 EL ESPINO;Partido PIN;1;1328;0.08
-EL ESPINO;Partido de la U;1210;1328;91.11
+EL ESPINO;Partido de la U;1195;1328;89.98
 EL ESPINO;Polo Democrático Alternativo;1;1328;0.08
 FIRAVITOBA;Alianza Verde;615;2400;25.62
 FIRAVITOBA;Movimiento MIRA;2;2400;0.08
+FIRAVITOBA;Pacto Histórico;148;2400;6.17
 FIRAVITOBA;Partido Conservador Colombiano;194;2400;8.08
 FIRAVITOBA;Partido Liberal Colombiano;503;2400;20.96
 FIRAVITOBA;Partido PIN;5;2400;0.21
-FIRAVITOBA;Partido de la U;1080;2400;45.0
+FIRAVITOBA;Partido de la U;932;2400;38.83
 FIRAVITOBA;Polo Democrático Alternativo;1;2400;0.04
 FLORESTA;Alianza Verde;177;1641;10.79
 FLORESTA;Movimiento MIRA;2;1641;0.12
+FLORESTA;Pacto Histórico;57;1641;3.47
 FLORESTA;Partido Conservador Colombiano;46;1641;2.8
 FLORESTA;Partido Liberal Colombiano;354;1641;21.57
 FLORESTA;Partido PIN;2;1641;0.12
-FLORESTA;Partido de la U;1059;1641;64.53
+FLORESTA;Partido de la U;1002;1641;61.06
 FLORESTA;Polo Democrático Alternativo;1;1641;0.06
 GACHANTIVA;Alianza Verde;266;1456;18.27
 GACHANTIVA;Movimiento MIRA;5;1456;0.34
+GACHANTIVA;Pacto Histórico;35;1456;2.4
 GACHANTIVA;Partido Conservador Colombiano;40;1456;2.75
 GACHANTIVA;Partido Liberal Colombiano;142;1456;9.75
 GACHANTIVA;Partido PIN;3;1456;0.21
-GACHANTIVA;Partido de la U;999;1456;68.61
+GACHANTIVA;Partido de la U;964;1456;66.21
 GACHANTIVA;Polo Democrático Alternativo;1;1456;0.07
 GAMEZA;Alianza Verde;151;2176;6.94
 GAMEZA;Movimiento MIRA;8;2176;0.37
+GAMEZA;Pacto Histórico;61;2176;2.8
 GAMEZA;Partido Conservador Colombiano;66;2176;3.03
 GAMEZA;Partido Liberal Colombiano;223;2176;10.25
 GAMEZA;Partido PIN;1;2176;0.05
-GAMEZA;Partido de la U;1725;2176;79.27
+GAMEZA;Partido de la U;1664;2176;76.47
 GAMEZA;Polo Democrático Alternativo;2;2176;0.09
 GARAGOA;Alianza Verde;1073;5971;17.97
 GARAGOA;Movimiento MIRA;14;5971;0.23
+GARAGOA;Pacto Histórico;227;5971;3.8
 GARAGOA;Partido Conservador Colombiano;216;5971;3.62
 GARAGOA;Partido Liberal Colombiano;681;5971;11.41
 GARAGOA;Partido PIN;3;5971;0.05
-GARAGOA;Partido de la U;3979;5971;66.64
+GARAGOA;Partido de la U;3752;5971;62.84
 GARAGOA;Polo Democrático Alternativo;5;5971;0.08
 GUACAMAYAS;Alianza Verde;51;878;5.81
 GUACAMAYAS;Movimiento MIRA;1;878;0.11
+GUACAMAYAS;Pacto Histórico;18;878;2.05
 GUACAMAYAS;Partido Conservador Colombiano;2;878;0.23
 GUACAMAYAS;Partido Liberal Colombiano;312;878;35.54
-GUACAMAYAS;Partido de la U;512;878;58.31
+GUACAMAYAS;Partido de la U;494;878;56.26
 GUATEQUE;Alianza Verde;738;4744;15.56
 GUATEQUE;Movimiento MIRA;6;4744;0.13
+GUATEQUE;Pacto Histórico;187;4744;3.94
 GUATEQUE;Partido Conservador Colombiano;309;4744;6.51
 GUATEQUE;Partido Liberal Colombiano;520;4744;10.96
 GUATEQUE;Partido PIN;5;4744;0.11
-GUATEQUE;Partido de la U;3164;4744;66.69
+GUATEQUE;Partido de la U;2977;4744;62.75
 GUATEQUE;Polo Democrático Alternativo;2;4744;0.04
 GUAYATA;Alianza Verde;203;2146;9.46
 GUAYATA;Movimiento MIRA;2;2146;0.09
+GUAYATA;Pacto Histórico;63;2146;2.94
 GUAYATA;Partido Conservador Colombiano;9;2146;0.42
 GUAYATA;Partido Liberal Colombiano;155;2146;7.22
 GUAYATA;Partido PIN;3;2146;0.14
-GUAYATA;Partido de la U;1771;2146;82.53
+GUAYATA;Partido de la U;1708;2146;79.59
 GUAYATA;Polo Democrático Alternativo;3;2146;0.14
 GUICAN DE LA SIERRA;Alianza Verde;171;1735;9.86
 GUICAN DE LA SIERRA;Movimiento MIRA;6;1735;0.35
+GUICAN DE LA SIERRA;Pacto Histórico;62;1735;3.57
 GUICAN DE LA SIERRA;Partido Conservador Colombiano;5;1735;0.29
 GUICAN DE LA SIERRA;Partido Liberal Colombiano;74;1735;4.27
 GUICAN DE LA SIERRA;Partido PIN;1;1735;0.06
-GUICAN DE LA SIERRA;Partido de la U;1475;1735;85.01
+GUICAN DE LA SIERRA;Partido de la U;1413;1735;81.44
 GUICAN DE LA SIERRA;Polo Democrático Alternativo;3;1735;0.17
 IZA;Alianza Verde;201;977;20.57
+IZA;Pacto Histórico;35;977;3.58
 IZA;Partido Conservador Colombiano;29;977;2.97
 IZA;Partido Liberal Colombiano;123;977;12.59
 IZA;Partido PIN;2;977;0.2
-IZA;Partido de la U;621;977;63.56
+IZA;Partido de la U;586;977;59.98
 IZA;Polo Democrático Alternativo;1;977;0.1
 JENESANO;Alianza Verde;364;2229;16.33
 JENESANO;Movimiento MIRA;8;2229;0.36
+JENESANO;Pacto Histórico;87;2229;3.9
 JENESANO;Partido Conservador Colombiano;195;2229;8.75
 JENESANO;Partido Liberal Colombiano;145;2229;6.51
 JENESANO;Partido PIN;7;2229;0.31
-JENESANO;Partido de la U;1504;2229;67.47
+JENESANO;Partido de la U;1417;2229;63.57
 JENESANO;Polo Democrático Alternativo;6;2229;0.27
 JERICO;Alianza Verde;51;1760;2.9
 JERICO;Movimiento MIRA;8;1760;0.45
+JERICO;Pacto Histórico;26;1760;1.48
 JERICO;Partido Conservador Colombiano;11;1760;0.62
 JERICO;Partido Liberal Colombiano;42;1760;2.39
 JERICO;Partido PIN;4;1760;0.23
-JERICO;Partido de la U;1640;1760;93.18
+JERICO;Partido de la U;1614;1760;91.7
 JERICO;Polo Democrático Alternativo;4;1760;0.23
 LA CAPILLA;Alianza Verde;200;1306;15.31
 LA CAPILLA;Movimiento MIRA;7;1306;0.54
+LA CAPILLA;Pacto Histórico;20;1306;1.53
 LA CAPILLA;Partido Conservador Colombiano;13;1306;1.0
 LA CAPILLA;Partido Liberal Colombiano;156;1306;11.94
 LA CAPILLA;Partido PIN;4;1306;0.31
-LA CAPILLA;Partido de la U;924;1306;70.75
+LA CAPILLA;Partido de la U;904;1306;69.22
 LA CAPILLA;Polo Democrático Alternativo;2;1306;0.15
 LA UVITA;Alianza Verde;104;1417;7.34
 LA UVITA;Movimiento MIRA;5;1417;0.35
+LA UVITA;Pacto Histórico;12;1417;0.85
 LA UVITA;Partido Conservador Colombiano;3;1417;0.21
 LA UVITA;Partido Liberal Colombiano;74;1417;5.22
 LA UVITA;Partido PIN;4;1417;0.28
-LA UVITA;Partido de la U;1225;1417;86.45
+LA UVITA;Partido de la U;1213;1417;85.6
 LA UVITA;Polo Democrático Alternativo;2;1417;0.14
 LA VICTORIA;Alianza Verde;42;699;6.01
 LA VICTORIA;Movimiento MIRA;3;699;0.43
+LA VICTORIA;Pacto Histórico;20;699;2.86
 LA VICTORIA;Partido Conservador Colombiano;86;699;12.3
 LA VICTORIA;Partido Liberal Colombiano;47;699;6.72
 LA VICTORIA;Partido PIN;4;699;0.57
-LA VICTORIA;Partido de la U;514;699;73.53
+LA VICTORIA;Partido de la U;494;699;70.67
 LA VICTORIA;Polo Democrático Alternativo;3;699;0.43
 LABRANZAGRANDE;Alianza Verde;49;1367;3.58
 LABRANZAGRANDE;Movimiento MIRA;5;1367;0.37
+LABRANZAGRANDE;Pacto Histórico;30;1367;2.19
 LABRANZAGRANDE;Partido Conservador Colombiano;22;1367;1.61
 LABRANZAGRANDE;Partido Liberal Colombiano;70;1367;5.12
 LABRANZAGRANDE;Partido PIN;4;1367;0.29
-LABRANZAGRANDE;Partido de la U;1210;1367;88.51
+LABRANZAGRANDE;Partido de la U;1180;1367;86.32
 LABRANZAGRANDE;Polo Democrático Alternativo;7;1367;0.51
 MACANAL;Alianza Verde;221;1947;11.35
 MACANAL;Movimiento MIRA;4;1947;0.21
+MACANAL;Pacto Histórico;39;1947;2.0
 MACANAL;Partido Conservador Colombiano;14;1947;0.72
 MACANAL;Partido Liberal Colombiano;194;1947;9.96
 MACANAL;Partido PIN;2;1947;0.1
-MACANAL;Partido de la U;1508;1947;77.45
+MACANAL;Partido de la U;1469;1947;75.45
 MACANAL;Polo Democrático Alternativo;4;1947;0.21
 MARIPI;Alianza Verde;324;2807;11.54
 MARIPI;Movimiento MIRA;3;2807;0.11
+MARIPI;Pacto Histórico;44;2807;1.57
 MARIPI;Partido Conservador Colombiano;154;2807;5.49
 MARIPI;Partido Liberal Colombiano;369;2807;13.15
 MARIPI;Partido PIN;2;2807;0.07
-MARIPI;Partido de la U;1954;2807;69.61
+MARIPI;Partido de la U;1910;2807;68.04
 MARIPI;Polo Democrático Alternativo;1;2807;0.04
 MIRAFLORES;Alianza Verde;1217;4055;30.01
 MIRAFLORES;Movimiento MIRA;6;4055;0.15
+MIRAFLORES;Pacto Histórico;207;4055;5.1
 MIRAFLORES;Partido Conservador Colombiano;168;4055;4.14
 MIRAFLORES;Partido Liberal Colombiano;275;4055;6.78
 MIRAFLORES;Partido PIN;3;4055;0.07
-MIRAFLORES;Partido de la U;2383;4055;58.77
+MIRAFLORES;Partido de la U;2176;4055;53.66
 MIRAFLORES;Polo Democrático Alternativo;3;4055;0.07
 MONGUA;Alianza Verde;139;2376;5.85
 MONGUA;Movimiento MIRA;1;2376;0.04
+MONGUA;Pacto Histórico;40;2376;1.68
 MONGUA;Partido Conservador Colombiano;17;2376;0.72
 MONGUA;Partido Liberal Colombiano;134;2376;5.64
 MONGUA;Partido PIN;1;2376;0.04
-MONGUA;Partido de la U;2082;2376;87.63
+MONGUA;Partido de la U;2042;2376;85.94
 MONGUA;Polo Democrático Alternativo;2;2376;0.08
 MONGUI;Alianza Verde;301;1931;15.59
 MONGUI;Movimiento MIRA;7;1931;0.36
+MONGUI;Pacto Histórico;87;1931;4.51
 MONGUI;Partido Conservador Colombiano;25;1931;1.29
 MONGUI;Partido Liberal Colombiano;225;1931;11.65
 MONGUI;Partido PIN;4;1931;0.21
-MONGUI;Partido de la U;1366;1931;70.74
+MONGUI;Partido de la U;1279;1931;66.24
 MONGUI;Polo Democrático Alternativo;3;1931;0.16
 MONIQUIRA;Alianza Verde;1552;7634;20.33
 MONIQUIRA;Movimiento MIRA;10;7634;0.13
+MONIQUIRA;Pacto Histórico;645;7634;8.45
 MONIQUIRA;Partido Conservador Colombiano;478;7634;6.26
 MONIQUIRA;Partido Liberal Colombiano;1192;7634;15.61
 MONIQUIRA;Partido PIN;10;7634;0.13
-MONIQUIRA;Partido de la U;4378;7634;57.35
+MONIQUIRA;Partido de la U;3733;7634;48.9
 MONIQUIRA;Polo Democrático Alternativo;14;7634;0.18
 MOTAVITA;Alianza Verde;785;2448;32.07
 MOTAVITA;Movimiento MIRA;6;2448;0.25
+MOTAVITA;Pacto Histórico;118;2448;4.82
 MOTAVITA;Partido Conservador Colombiano;633;2448;25.86
 MOTAVITA;Partido Liberal Colombiano;181;2448;7.39
 MOTAVITA;Partido PIN;5;2448;0.2
-MOTAVITA;Partido de la U;835;2448;34.11
+MOTAVITA;Partido de la U;717;2448;29.29
 MOTAVITA;Polo Democrático Alternativo;3;2448;0.12
 MUZO;Alianza Verde;420;3479;12.07
 MUZO;Movimiento MIRA;5;3479;0.14
+MUZO;Pacto Histórico;105;3479;3.02
 MUZO;Partido Conservador Colombiano;90;3479;2.59
 MUZO;Partido Liberal Colombiano;297;3479;8.54
 MUZO;Partido PIN;6;3479;0.17
-MUZO;Partido de la U;2658;3479;76.4
+MUZO;Partido de la U;2553;3479;73.38
 MUZO;Polo Democrático Alternativo;3;3479;0.09
 NOBSA;Alianza Verde;2236;6336;35.29
 NOBSA;Movimiento MIRA;8;6336;0.13
+NOBSA;Pacto Histórico;543;6336;8.57
 NOBSA;Partido Conservador Colombiano;190;6336;3.0
 NOBSA;Partido Liberal Colombiano;1481;6336;23.37
 NOBSA;Partido PIN;8;6336;0.13
-NOBSA;Partido de la U;2413;6336;38.08
+NOBSA;Partido de la U;1870;6336;29.51
 NUEVO COLON;Alianza Verde;387;2080;18.61
 NUEVO COLON;Movimiento MIRA;4;2080;0.19
+NUEVO COLON;Pacto Histórico;54;2080;2.6
 NUEVO COLON;Partido Conservador Colombiano;322;2080;15.48
 NUEVO COLON;Partido Liberal Colombiano;287;2080;13.8
 NUEVO COLON;Partido PIN;1;2080;0.05
-NUEVO COLON;Partido de la U;1078;2080;51.83
+NUEVO COLON;Partido de la U;1024;2080;49.23
 NUEVO COLON;Polo Democrático Alternativo;1;2080;0.05
 OICATA;Alianza Verde;337;1172;28.75
 OICATA;Movimiento MIRA;1;1172;0.09
+OICATA;Pacto Histórico;44;1172;3.75
 OICATA;Partido Conservador Colombiano;85;1172;7.25
 OICATA;Partido Liberal Colombiano;210;1172;17.92
-OICATA;Partido de la U;537;1172;45.82
+OICATA;Partido de la U;493;1172;42.06
 OICATA;Polo Democrático Alternativo;2;1172;0.17
 OTANCHE;Alianza Verde;413;3328;12.41
 OTANCHE;Movimiento MIRA;3;3328;0.09
+OTANCHE;Pacto Histórico;50;3328;1.5
 OTANCHE;Partido Conservador Colombiano;18;3328;0.54
 OTANCHE;Partido Liberal Colombiano;215;3328;6.46
 OTANCHE;Partido PIN;3;3328;0.09
-OTANCHE;Partido de la U;2674;3328;80.35
+OTANCHE;Partido de la U;2624;3328;78.85
 OTANCHE;Polo Democrático Alternativo;2;3328;0.06
 PACHAVITA;Alianza Verde;132;1118;11.81
 PACHAVITA;Movimiento MIRA;1;1118;0.09
+PACHAVITA;Pacto Histórico;33;1118;2.95
 PACHAVITA;Partido Conservador Colombiano;10;1118;0.89
 PACHAVITA;Partido Liberal Colombiano;145;1118;12.97
 PACHAVITA;Partido PIN;1;1118;0.09
-PACHAVITA;Partido de la U;825;1118;73.79
+PACHAVITA;Partido de la U;792;1118;70.84
 PACHAVITA;Polo Democrático Alternativo;4;1118;0.36
 PAEZ;Alianza Verde;138;1322;10.44
+PAEZ;Pacto Histórico;24;1322;1.82
 PAEZ;Partido Conservador Colombiano;15;1322;1.13
 PAEZ;Partido Liberal Colombiano;84;1322;6.35
-PAEZ;Partido de la U;1082;1322;81.85
+PAEZ;Partido de la U;1058;1322;80.03
 PAEZ;Polo Democrático Alternativo;3;1322;0.23
 PAIPA;Alianza Verde;3686;12779;28.84
 PAIPA;Movimiento MIRA;15;12779;0.12
+PAIPA;Pacto Histórico;841;12779;6.58
 PAIPA;Partido Conservador Colombiano;863;12779;6.75
 PAIPA;Partido Liberal Colombiano;2823;12779;22.09
 PAIPA;Partido PIN;20;12779;0.16
-PAIPA;Partido de la U;5364;12779;41.98
+PAIPA;Partido de la U;4523;12779;35.39
 PAIPA;Polo Democrático Alternativo;8;12779;0.06
 PAJARITO;Alianza Verde;59;851;6.93
+PAJARITO;Pacto Histórico;15;851;1.76
 PAJARITO;Partido Conservador Colombiano;6;851;0.71
 PAJARITO;Partido Liberal Colombiano;29;851;3.41
 PAJARITO;Partido PIN;1;851;0.12
-PAJARITO;Partido de la U;756;851;88.84
+PAJARITO;Partido de la U;741;851;87.07
 PANQUEBA;Alianza Verde;36;792;4.55
 PANQUEBA;Movimiento MIRA;2;792;0.25
+PANQUEBA;Pacto Histórico;26;792;3.28
 PANQUEBA;Partido Conservador Colombiano;12;792;1.52
 PANQUEBA;Partido Liberal Colombiano;53;792;6.69
 PANQUEBA;Partido PIN;1;792;0.13
-PANQUEBA;Partido de la U;687;792;86.74
+PANQUEBA;Partido de la U;661;792;83.46
 PANQUEBA;Polo Democrático Alternativo;1;792;0.13
 PAUNA;Alianza Verde;787;3545;22.2
 PAUNA;Movimiento MIRA;2;3545;0.06
+PAUNA;Pacto Histórico;79;3545;2.23
 PAUNA;Partido Conservador Colombiano;53;3545;1.5
 PAUNA;Partido Liberal Colombiano;390;3545;11.0
 PAUNA;Partido PIN;4;3545;0.11
-PAUNA;Partido de la U;2304;3545;64.99
+PAUNA;Partido de la U;2225;3545;62.76
 PAUNA;Polo Democrático Alternativo;5;3545;0.14
 PAYA;Alianza Verde;37;605;6.12
 PAYA;Movimiento MIRA;2;605;0.33
+PAYA;Pacto Histórico;20;605;3.31
 PAYA;Partido Conservador Colombiano;7;605;1.16
 PAYA;Partido Liberal Colombiano;41;605;6.78
 PAYA;Partido PIN;1;605;0.17
-PAYA;Partido de la U;511;605;84.46
+PAYA;Partido de la U;491;605;81.16
 PAYA;Polo Democrático Alternativo;6;605;0.99
 PAZ DE RIO;Alianza Verde;622;2316;26.86
 PAZ DE RIO;Movimiento MIRA;8;2316;0.35
+PAZ DE RIO;Pacto Histórico;174;2316;7.51
 PAZ DE RIO;Partido Conservador Colombiano;296;2316;12.78
 PAZ DE RIO;Partido Liberal Colombiano;329;2316;14.21
 PAZ DE RIO;Partido PIN;5;2316;0.22
-PAZ DE RIO;Partido de la U;1054;2316;45.51
+PAZ DE RIO;Partido de la U;880;2316;38.0
 PAZ DE RIO;Polo Democrático Alternativo;2;2316;0.09
 PESCA;Alianza Verde;366;2677;13.67
 PESCA;Movimiento MIRA;9;2677;0.34
+PESCA;Pacto Histórico;68;2677;2.54
 PESCA;Partido Conservador Colombiano;67;2677;2.5
 PESCA;Partido Liberal Colombiano;382;2677;14.27
 PESCA;Partido PIN;7;2677;0.26
-PESCA;Partido de la U;1839;2677;68.7
+PESCA;Partido de la U;1771;2677;66.16
 PESCA;Polo Democrático Alternativo;7;2677;0.26
 PISBA;Alianza Verde;54;486;11.11
 PISBA;Movimiento MIRA;1;486;0.21
+PISBA;Pacto Histórico;14;486;2.88
 PISBA;Partido Conservador Colombiano;1;486;0.21
 PISBA;Partido Liberal Colombiano;11;486;2.26
-PISBA;Partido de la U;419;486;86.21
+PISBA;Partido de la U;405;486;83.33
 PUERTO BOYACA;Alianza Verde;3278;13477;24.32
 PUERTO BOYACA;Movimiento MIRA;36;13477;0.27
+PUERTO BOYACA;Pacto Histórico;1080;13477;8.01
 PUERTO BOYACA;Partido Conservador Colombiano;441;13477;3.27
 PUERTO BOYACA;Partido Liberal Colombiano;1515;13477;11.24
 PUERTO BOYACA;Partido PIN;18;13477;0.13
-PUERTO BOYACA;Partido de la U;8168;13477;60.61
+PUERTO BOYACA;Partido de la U;7088;13477;52.59
 PUERTO BOYACA;Polo Democrático Alternativo;21;13477;0.16
 QUIPAMA;Alianza Verde;173;2307;7.5
 QUIPAMA;Movimiento MIRA;6;2307;0.26
+QUIPAMA;Pacto Histórico;48;2307;2.08
 QUIPAMA;Partido Conservador Colombiano;37;2307;1.6
 QUIPAMA;Partido Liberal Colombiano;242;2307;10.49
 QUIPAMA;Partido PIN;6;2307;0.26
-QUIPAMA;Partido de la U;1842;2307;79.84
+QUIPAMA;Partido de la U;1794;2307;77.76
 QUIPAMA;Polo Democrático Alternativo;1;2307;0.04
 RAMIRIQUI;Alianza Verde;665;4167;15.96
 RAMIRIQUI;Movimiento MIRA;5;4167;0.12
+RAMIRIQUI;Pacto Histórico;79;4167;1.9
 RAMIRIQUI;Partido Conservador Colombiano;156;4167;3.74
 RAMIRIQUI;Partido Liberal Colombiano;353;4167;8.47
 RAMIRIQUI;Partido PIN;7;4167;0.17
-RAMIRIQUI;Partido de la U;2974;4167;71.37
+RAMIRIQUI;Partido de la U;2895;4167;69.47
 RAMIRIQUI;Polo Democrático Alternativo;7;4167;0.17
 RAQUIRA;Alianza Verde;432;2381;18.14
 RAQUIRA;Movimiento MIRA;16;2381;0.67
+RAQUIRA;Pacto Histórico;90;2381;3.78
 RAQUIRA;Partido Conservador Colombiano;136;2381;5.71
 RAQUIRA;Partido Liberal Colombiano;527;2381;22.13
 RAQUIRA;Partido PIN;16;2381;0.67
-RAQUIRA;Partido de la U;1248;2381;52.41
+RAQUIRA;Partido de la U;1158;2381;48.64
 RAQUIRA;Polo Democrático Alternativo;6;2381;0.25
 RONDON;Alianza Verde;109;1106;9.86
 RONDON;Movimiento MIRA;8;1106;0.72
+RONDON;Pacto Histórico;22;1106;1.99
 RONDON;Partido Conservador Colombiano;64;1106;5.79
 RONDON;Partido Liberal Colombiano;75;1106;6.78
 RONDON;Partido PIN;3;1106;0.27
-RONDON;Partido de la U;843;1106;76.22
+RONDON;Partido de la U;821;1106;74.23
 RONDON;Polo Democrático Alternativo;4;1106;0.36
 SABOYA;Alianza Verde;762;4827;15.79
 SABOYA;Movimiento MIRA;11;4827;0.23
+SABOYA;Pacto Histórico;236;4827;4.89
 SABOYA;Partido Conservador Colombiano;560;4827;11.6
 SABOYA;Partido Liberal Colombiano;975;4827;20.2
 SABOYA;Partido PIN;25;4827;0.52
-SABOYA;Partido de la U;2486;4827;51.5
+SABOYA;Partido de la U;2250;4827;46.61
 SABOYA;Polo Democrático Alternativo;8;4827;0.17
 SACHICA;Alianza Verde;666;1753;37.99
 SACHICA;Movimiento MIRA;4;1753;0.23
+SACHICA;Pacto Histórico;30;1753;1.71
 SACHICA;Partido Conservador Colombiano;175;1753;9.98
 SACHICA;Partido Liberal Colombiano;135;1753;7.7
 SACHICA;Partido PIN;2;1753;0.11
-SACHICA;Partido de la U;770;1753;43.92
+SACHICA;Partido de la U;740;1753;42.21
 SACHICA;Polo Democrático Alternativo;1;1753;0.06
 SAMACA;Alianza Verde;1922;7003;27.45
 SAMACA;Movimiento MIRA;14;7003;0.2
+SAMACA;Pacto Histórico;215;7003;3.07
 SAMACA;Partido Conservador Colombiano;285;7003;4.07
 SAMACA;Partido Liberal Colombiano;672;7003;9.6
 SAMACA;Partido PIN;9;7003;0.13
-SAMACA;Partido de la U;4093;7003;58.45
+SAMACA;Partido de la U;3878;7003;55.38
 SAMACA;Polo Democrático Alternativo;8;7003;0.11
 SAN EDUARDO;Alianza Verde;104;759;13.7
 SAN EDUARDO;Movimiento MIRA;2;759;0.26
+SAN EDUARDO;Pacto Histórico;28;759;3.69
 SAN EDUARDO;Partido Conservador Colombiano;42;759;5.53
 SAN EDUARDO;Partido Liberal Colombiano;95;759;12.52
 SAN EDUARDO;Partido PIN;1;759;0.13
-SAN EDUARDO;Partido de la U;515;759;67.85
+SAN EDUARDO;Partido de la U;487;759;64.16
 SAN JOSE DE PARE;Alianza Verde;609;2156;28.25
 SAN JOSE DE PARE;Movimiento MIRA;8;2156;0.37
+SAN JOSE DE PARE;Pacto Histórico;69;2156;3.2
 SAN JOSE DE PARE;Partido Conservador Colombiano;147;2156;6.82
 SAN JOSE DE PARE;Partido Liberal Colombiano;197;2156;9.14
 SAN JOSE DE PARE;Partido PIN;1;2156;0.05
-SAN JOSE DE PARE;Partido de la U;1192;2156;55.29
+SAN JOSE DE PARE;Partido de la U;1123;2156;52.09
 SAN JOSE DE PARE;Polo Democrático Alternativo;2;2156;0.09
 SAN LUIS DE GACENO;Alianza Verde;155;2526;6.14
 SAN LUIS DE GACENO;Movimiento MIRA;2;2526;0.08
+SAN LUIS DE GACENO;Pacto Histórico;55;2526;2.18
 SAN LUIS DE GACENO;Partido Conservador Colombiano;18;2526;0.71
 SAN LUIS DE GACENO;Partido Liberal Colombiano;161;2526;6.37
 SAN LUIS DE GACENO;Partido PIN;1;2526;0.04
-SAN LUIS DE GACENO;Partido de la U;2189;2526;86.66
+SAN LUIS DE GACENO;Partido de la U;2134;2526;84.48
 SAN MATEO;Alianza Verde;69;1973;3.5
 SAN MATEO;Movimiento MIRA;3;1973;0.15
+SAN MATEO;Pacto Histórico;19;1973;0.96
 SAN MATEO;Partido Conservador Colombiano;3;1973;0.15
 SAN MATEO;Partido Liberal Colombiano;120;1973;6.08
-SAN MATEO;Partido de la U;1771;1973;89.76
+SAN MATEO;Partido de la U;1752;1973;88.8
 SAN MATEO;Polo Democrático Alternativo;7;1973;0.35
 SAN MIGUEL DE SEMA;Alianza Verde;188;1496;12.57
 SAN MIGUEL DE SEMA;Movimiento MIRA;3;1496;0.2
+SAN MIGUEL DE SEMA;Pacto Histórico;46;1496;3.07
 SAN MIGUEL DE SEMA;Partido Conservador Colombiano;135;1496;9.02
 SAN MIGUEL DE SEMA;Partido Liberal Colombiano;339;1496;22.66
 SAN MIGUEL DE SEMA;Partido PIN;2;1496;0.13
-SAN MIGUEL DE SEMA;Partido de la U;829;1496;55.41
+SAN MIGUEL DE SEMA;Partido de la U;783;1496;52.34
 SAN PABLO DE BORBUR;Alianza Verde;175;2964;5.9
 SAN PABLO DE BORBUR;Movimiento MIRA;5;2964;0.17
+SAN PABLO DE BORBUR;Pacto Histórico;63;2964;2.13
 SAN PABLO DE BORBUR;Partido Conservador Colombiano;20;2964;0.67
 SAN PABLO DE BORBUR;Partido Liberal Colombiano;146;2964;4.93
 SAN PABLO DE BORBUR;Partido PIN;8;2964;0.27
-SAN PABLO DE BORBUR;Partido de la U;2605;2964;87.89
+SAN PABLO DE BORBUR;Partido de la U;2542;2964;85.76
 SAN PABLO DE BORBUR;Polo Democrático Alternativo;5;2964;0.17
 SANTA MARIA;Alianza Verde;371;1799;20.62
 SANTA MARIA;Movimiento MIRA;9;1799;0.5
+SANTA MARIA;Pacto Histórico;43;1799;2.39
 SANTA MARIA;Partido Conservador Colombiano;28;1799;1.56
 SANTA MARIA;Partido Liberal Colombiano;176;1799;9.78
 SANTA MARIA;Partido PIN;5;1799;0.28
-SANTA MARIA;Partido de la U;1205;1799;66.98
+SANTA MARIA;Partido de la U;1162;1799;64.59
 SANTA MARIA;Polo Democrático Alternativo;5;1799;0.28
 SANTA ROSA DE VITERBO;Alianza Verde;839;4530;18.52
 SANTA ROSA DE VITERBO;Movimiento MIRA;7;4530;0.15
+SANTA ROSA DE VITERBO;Pacto Histórico;223;4530;4.92
 SANTA ROSA DE VITERBO;Partido Conservador Colombiano;107;4530;2.36
 SANTA ROSA DE VITERBO;Partido Liberal Colombiano;743;4530;16.4
 SANTA ROSA DE VITERBO;Partido PIN;6;4530;0.13
-SANTA ROSA DE VITERBO;Partido de la U;2826;4530;62.38
+SANTA ROSA DE VITERBO;Partido de la U;2603;4530;57.46
 SANTA ROSA DE VITERBO;Polo Democrático Alternativo;2;4530;0.04
 SANTA SOFIA;Alianza Verde;214;1544;13.86
 SANTA SOFIA;Movimiento MIRA;1;1544;0.06
+SANTA SOFIA;Pacto Histórico;26;1544;1.68
 SANTA SOFIA;Partido Conservador Colombiano;18;1544;1.17
 SANTA SOFIA;Partido Liberal Colombiano;222;1544;14.38
 SANTA SOFIA;Partido PIN;3;1544;0.19
-SANTA SOFIA;Partido de la U;1082;1544;70.08
+SANTA SOFIA;Partido de la U;1056;1544;68.39
 SANTA SOFIA;Polo Democrático Alternativo;4;1544;0.26
 SANTANA;Alianza Verde;716;2698;26.54
 SANTANA;Movimiento MIRA;5;2698;0.19
+SANTANA;Pacto Histórico;67;2698;2.48
 SANTANA;Partido Conservador Colombiano;383;2698;14.2
 SANTANA;Partido Liberal Colombiano;372;2698;13.79
 SANTANA;Partido PIN;5;2698;0.19
-SANTANA;Partido de la U;1217;2698;45.11
+SANTANA;Partido de la U;1150;2698;42.62
 SATIVANORTE;Alianza Verde;160;1115;14.35
+SATIVANORTE;Pacto Histórico;20;1115;1.79
 SATIVANORTE;Partido Conservador Colombiano;5;1115;0.45
 SATIVANORTE;Partido Liberal Colombiano;92;1115;8.25
 SATIVANORTE;Partido PIN;4;1115;0.36
-SATIVANORTE;Partido de la U;849;1115;76.14
+SATIVANORTE;Partido de la U;829;1115;74.35
 SATIVANORTE;Polo Democrático Alternativo;5;1115;0.45
 SATIVASUR;Alianza Verde;52;576;9.03
 SATIVASUR;Movimiento MIRA;1;576;0.17
+SATIVASUR;Pacto Histórico;16;576;2.78
 SATIVASUR;Partido Conservador Colombiano;185;576;32.12
 SATIVASUR;Partido Liberal Colombiano;71;576;12.33
 SATIVASUR;Partido PIN;5;576;0.87
-SATIVASUR;Partido de la U;262;576;45.49
+SATIVASUR;Partido de la U;246;576;42.71
 SIACHOQUE;Alianza Verde;628;3161;19.87
 SIACHOQUE;Movimiento MIRA;11;3161;0.35
+SIACHOQUE;Pacto Histórico;116;3161;3.67
 SIACHOQUE;Partido Conservador Colombiano;119;3161;3.76
 SIACHOQUE;Partido Liberal Colombiano;332;3161;10.5
 SIACHOQUE;Partido PIN;9;3161;0.28
-SIACHOQUE;Partido de la U;2052;3161;64.92
+SIACHOQUE;Partido de la U;1936;3161;61.25
 SIACHOQUE;Polo Democrático Alternativo;10;3161;0.32
 SOATA;Alianza Verde;534;4159;12.84
 SOATA;Movimiento MIRA;6;4159;0.14
+SOATA;Pacto Histórico;125;4159;3.01
 SOATA;Partido Conservador Colombiano;91;4159;2.19
 SOATA;Partido Liberal Colombiano;425;4159;10.22
 SOATA;Partido PIN;7;4159;0.17
-SOATA;Partido de la U;3094;4159;74.39
+SOATA;Partido de la U;2969;4159;71.39
 SOATA;Polo Democrático Alternativo;2;4159;0.05
 SOCHA;Alianza Verde;375;2855;13.13
 SOCHA;Movimiento MIRA;4;2855;0.14
+SOCHA;Pacto Histórico;110;2855;3.85
 SOCHA;Partido Conservador Colombiano;301;2855;10.54
 SOCHA;Partido Liberal Colombiano;267;2855;9.35
 SOCHA;Partido PIN;5;2855;0.18
-SOCHA;Partido de la U;1901;2855;66.58
+SOCHA;Partido de la U;1791;2855;62.73
 SOCHA;Polo Democrático Alternativo;2;2855;0.07
 SOCOTA;Alianza Verde;154;3093;4.98
 SOCOTA;Movimiento MIRA;6;3093;0.19
+SOCOTA;Pacto Histórico;42;3093;1.36
 SOCOTA;Partido Conservador Colombiano;146;3093;4.72
 SOCOTA;Partido Liberal Colombiano;121;3093;3.91
 SOCOTA;Partido PIN;7;3093;0.23
-SOCOTA;Partido de la U;2651;3093;85.71
+SOCOTA;Partido de la U;2609;3093;84.35
 SOCOTA;Polo Democrático Alternativo;8;3093;0.26
 SOGAMOSO;Alianza Verde;12013;47177;25.46
 SOGAMOSO;Movimiento MIRA;82;47177;0.17
+SOGAMOSO;Pacto Histórico;3210;47177;6.8
 SOGAMOSO;Partido Conservador Colombiano;1754;47177;3.72
 SOGAMOSO;Partido Liberal Colombiano;8338;47177;17.67
 SOGAMOSO;Partido PIN;49;47177;0.1
-SOGAMOSO;Partido de la U;24924;47177;52.83
+SOGAMOSO;Partido de la U;21714;47177;46.03
 SOGAMOSO;Polo Democrático Alternativo;17;47177;0.04
 SOMONDOCO;Alianza Verde;336;1558;21.57
 SOMONDOCO;Movimiento MIRA;1;1558;0.06
+SOMONDOCO;Pacto Histórico;29;1558;1.86
 SOMONDOCO;Partido Conservador Colombiano;10;1558;0.64
 SOMONDOCO;Partido Liberal Colombiano;99;1558;6.35
 SOMONDOCO;Partido PIN;1;1558;0.06
-SOMONDOCO;Partido de la U;1109;1558;71.18
+SOMONDOCO;Partido de la U;1080;1558;69.32
 SOMONDOCO;Polo Democrático Alternativo;2;1558;0.13
 SORA;Alianza Verde;490;1319;37.15
 SORA;Movimiento MIRA;7;1319;0.53
+SORA;Pacto Histórico;42;1319;3.18
 SORA;Partido Conservador Colombiano;122;1319;9.25
 SORA;Partido Liberal Colombiano;175;1319;13.27
 SORA;Partido PIN;8;1319;0.61
-SORA;Partido de la U;513;1319;38.89
+SORA;Partido de la U;471;1319;35.71
 SORA;Polo Democrático Alternativo;4;1319;0.3
 SORACA;Alianza Verde;635;2860;22.2
 SORACA;Movimiento MIRA;1;2860;0.03
+SORACA;Pacto Histórico;70;2860;2.45
 SORACA;Partido Conservador Colombiano;160;2860;5.59
 SORACA;Partido Liberal Colombiano;352;2860;12.31
 SORACA;Partido PIN;3;2860;0.1
-SORACA;Partido de la U;1707;2860;59.69
+SORACA;Partido de la U;1637;2860;57.24
 SORACA;Polo Democrático Alternativo;2;2860;0.07
 SOTAQUIRA;Alianza Verde;396;2728;14.52
+SOTAQUIRA;Pacto Histórico;75;2728;2.75
 SOTAQUIRA;Partido Conservador Colombiano;151;2728;5.54
 SOTAQUIRA;Partido Liberal Colombiano;399;2728;14.63
 SOTAQUIRA;Partido PIN;3;2728;0.11
-SOTAQUIRA;Partido de la U;1773;2728;64.99
+SOTAQUIRA;Partido de la U;1698;2728;62.24
 SOTAQUIRA;Polo Democrático Alternativo;6;2728;0.22
 SUSACON;Alianza Verde;74;1293;5.72
 SUSACON;Movimiento MIRA;2;1293;0.15
+SUSACON;Pacto Histórico;29;1293;2.24
 SUSACON;Partido Conservador Colombiano;15;1293;1.16
 SUSACON;Partido Liberal Colombiano;241;1293;18.64
 SUSACON;Partido PIN;3;1293;0.23
-SUSACON;Partido de la U;956;1293;73.94
+SUSACON;Partido de la U;927;1293;71.69
 SUSACON;Polo Democrático Alternativo;2;1293;0.15
 SUTAMARCHAN;Alianza Verde;377;2555;14.76
 SUTAMARCHAN;Movimiento MIRA;1;2555;0.04
+SUTAMARCHAN;Pacto Histórico;44;2555;1.72
 SUTAMARCHAN;Partido Conservador Colombiano;127;2555;4.97
 SUTAMARCHAN;Partido Liberal Colombiano;739;2555;28.92
 SUTAMARCHAN;Partido PIN;5;2555;0.2
-SUTAMARCHAN;Partido de la U;1303;2555;51.0
+SUTAMARCHAN;Partido de la U;1259;2555;49.28
 SUTAMARCHAN;Polo Democrático Alternativo;3;2555;0.12
 SUTATENZA;Alianza Verde;198;1929;10.26
 SUTATENZA;Movimiento MIRA;8;1929;0.41
+SUTATENZA;Pacto Histórico;57;1929;2.95
 SUTATENZA;Partido Conservador Colombiano;74;1929;3.84
 SUTATENZA;Partido Liberal Colombiano;182;1929;9.43
 SUTATENZA;Partido PIN;8;1929;0.41
-SUTATENZA;Partido de la U;1454;1929;75.38
+SUTATENZA;Partido de la U;1397;1929;72.42
 SUTATENZA;Polo Democrático Alternativo;5;1929;0.26
 TASCO;Alianza Verde;317;2181;14.53
 TASCO;Movimiento MIRA;2;2181;0.09
+TASCO;Pacto Histórico;82;2181;3.76
 TASCO;Partido Conservador Colombiano;190;2181;8.71
 TASCO;Partido Liberal Colombiano;207;2181;9.49
 TASCO;Partido PIN;6;2181;0.28
-TASCO;Partido de la U;1451;2181;66.53
+TASCO;Partido de la U;1369;2181;62.77
 TASCO;Polo Democrático Alternativo;8;2181;0.37
 TENZA;Alianza Verde;192;1942;9.89
 TENZA;Movimiento MIRA;3;1942;0.15
+TENZA;Pacto Histórico;49;1942;2.52
 TENZA;Partido Conservador Colombiano;18;1942;0.93
 TENZA;Partido Liberal Colombiano;208;1942;10.71
 TENZA;Partido PIN;5;1942;0.26
-TENZA;Partido de la U;1514;1942;77.96
+TENZA;Partido de la U;1465;1942;75.44
 TENZA;Polo Democrático Alternativo;2;1942;0.1
 TIBANA;Alianza Verde;407;3171;12.84
 TIBANA;Movimiento MIRA;9;3171;0.28
+TIBANA;Pacto Histórico;90;3171;2.84
 TIBANA;Partido Conservador Colombiano;644;3171;20.31
 TIBANA;Partido Liberal Colombiano;224;3171;7.06
 TIBANA;Partido PIN;6;3171;0.19
-TIBANA;Partido de la U;1874;3171;59.1
+TIBANA;Partido de la U;1784;3171;56.26
 TIBANA;Polo Democrático Alternativo;7;3171;0.22
 TIBASOSA;Alianza Verde;1023;4033;25.37
 TIBASOSA;Movimiento MIRA;11;4033;0.27
+TIBASOSA;Pacto Histórico;246;4033;6.1
 TIBASOSA;Partido Conservador Colombiano;119;4033;2.95
 TIBASOSA;Partido Liberal Colombiano;707;4033;17.53
 TIBASOSA;Partido PIN;11;4033;0.27
-TIBASOSA;Partido de la U;2160;4033;53.56
+TIBASOSA;Partido de la U;1914;4033;47.46
 TIBASOSA;Polo Democrático Alternativo;2;4033;0.05
 TINJACA;Alianza Verde;248;1333;18.6
 TINJACA;Movimiento MIRA;2;1333;0.15
+TINJACA;Pacto Histórico;86;1333;6.45
 TINJACA;Partido Conservador Colombiano;68;1333;5.1
 TINJACA;Partido Liberal Colombiano;382;1333;28.66
 TINJACA;Partido PIN;8;1333;0.6
-TINJACA;Partido de la U;622;1333;46.66
+TINJACA;Partido de la U;536;1333;40.21
 TINJACA;Polo Democrático Alternativo;3;1333;0.23
 TIPACOQUE;Alianza Verde;140;1573;8.9
 TIPACOQUE;Movimiento MIRA;8;1573;0.51
+TIPACOQUE;Pacto Histórico;37;1573;2.35
 TIPACOQUE;Partido Conservador Colombiano;299;1573;19.01
 TIPACOQUE;Partido Liberal Colombiano;65;1573;4.13
 TIPACOQUE;Partido PIN;7;1573;0.45
-TIPACOQUE;Partido de la U;1051;1573;66.82
+TIPACOQUE;Partido de la U;1014;1573;64.46
 TIPACOQUE;Polo Democrático Alternativo;3;1573;0.19
 TOCA;Alianza Verde;1033;3623;28.51
 TOCA;Movimiento MIRA;9;3623;0.25
+TOCA;Pacto Histórico;177;3623;4.89
 TOCA;Partido Conservador Colombiano;293;3623;8.09
 TOCA;Partido Liberal Colombiano;400;3623;11.04
 TOCA;Partido PIN;3;3623;0.08
-TOCA;Partido de la U;1883;3623;51.97
+TOCA;Partido de la U;1706;3623;47.09
 TOCA;Polo Democrático Alternativo;2;3623;0.06
 TOGUI;Alianza Verde;136;1762;7.72
 TOGUI;Movimiento MIRA;6;1762;0.34
+TOGUI;Pacto Histórico;50;1762;2.84
 TOGUI;Partido Conservador Colombiano;367;1762;20.83
 TOGUI;Partido Liberal Colombiano;416;1762;23.61
 TOGUI;Partido PIN;10;1762;0.57
-TOGUI;Partido de la U;822;1762;46.65
+TOGUI;Partido de la U;772;1762;43.81
 TOGUI;Polo Democrático Alternativo;5;1762;0.28
 TOPAGA;Alianza Verde;241;1721;14.0
 TOPAGA;Movimiento MIRA;4;1721;0.23
+TOPAGA;Pacto Histórico;84;1721;4.88
 TOPAGA;Partido Conservador Colombiano;40;1721;2.32
 TOPAGA;Partido Liberal Colombiano;274;1721;15.92
 TOPAGA;Partido PIN;3;1721;0.17
-TOPAGA;Partido de la U;1155;1721;67.11
+TOPAGA;Partido de la U;1071;1721;62.23
 TOPAGA;Polo Democrático Alternativo;4;1721;0.23
 TOTA;Alianza Verde;163;1607;10.14
 TOTA;Movimiento MIRA;5;1607;0.31
+TOTA;Pacto Histórico;42;1607;2.61
 TOTA;Partido Conservador Colombiano;64;1607;3.98
 TOTA;Partido Liberal Colombiano;79;1607;4.92
 TOTA;Partido PIN;7;1607;0.44
-TOTA;Partido de la U;1285;1607;79.96
+TOTA;Partido de la U;1243;1607;77.35
 TOTA;Polo Democrático Alternativo;4;1607;0.25
 TUNJA;Alianza Verde;23396;60705;38.54
 TUNJA;Movimiento MIRA;70;60705;0.12
+TUNJA;Pacto Histórico;4335;60705;7.14
 TUNJA;Partido Conservador Colombiano;1866;60705;3.07
 TUNJA;Partido Liberal Colombiano;11792;60705;19.43
 TUNJA;Partido PIN;42;60705;0.07
-TUNJA;Partido de la U;23513;60705;38.73
+TUNJA;Partido de la U;19178;60705;31.59
 TUNJA;Polo Democrático Alternativo;26;60705;0.04
 TUNUNGUA;Alianza Verde;135;625;21.6
 TUNUNGUA;Movimiento MIRA;5;625;0.8
+TUNUNGUA;Pacto Histórico;25;625;4.0
 TUNUNGUA;Partido Conservador Colombiano;87;625;13.92
 TUNUNGUA;Partido Liberal Colombiano;50;625;8.0
 TUNUNGUA;Partido PIN;1;625;0.16
-TUNUNGUA;Partido de la U;344;625;55.04
+TUNUNGUA;Partido de la U;319;625;51.04
 TUNUNGUA;Polo Democrático Alternativo;3;625;0.48
 TURMEQUE;Alianza Verde;380;2637;14.41
 TURMEQUE;Movimiento MIRA;7;2637;0.27
+TURMEQUE;Pacto Histórico;114;2637;4.32
 TURMEQUE;Partido Conservador Colombiano;687;2637;26.05
 TURMEQUE;Partido Liberal Colombiano;327;2637;12.4
 TURMEQUE;Partido PIN;5;2637;0.19
-TURMEQUE;Partido de la U;1230;2637;46.64
+TURMEQUE;Partido de la U;1116;2637;42.32
 TURMEQUE;Polo Democrático Alternativo;1;2637;0.04
 TUTA;Alianza Verde;856;3592;23.83
 TUTA;Movimiento MIRA;9;3592;0.25
+TUTA;Pacto Histórico;189;3592;5.26
 TUTA;Partido Conservador Colombiano;483;3592;13.45
 TUTA;Partido Liberal Colombiano;784;3592;21.83
 TUTA;Partido PIN;10;3592;0.28
-TUTA;Partido de la U;1443;3592;40.17
+TUTA;Partido de la U;1254;3592;34.91
 TUTA;Polo Democrático Alternativo;7;3592;0.19
 TUTAZA;Alianza Verde;103;1085;9.49
 TUTAZA;Movimiento MIRA;2;1085;0.18
+TUTAZA;Pacto Histórico;54;1085;4.98
 TUTAZA;Partido Conservador Colombiano;71;1085;6.54
 TUTAZA;Partido Liberal Colombiano;107;1085;9.86
 TUTAZA;Partido PIN;5;1085;0.46
-TUTAZA;Partido de la U;792;1085;73.0
+TUTAZA;Partido de la U;738;1085;68.02
 TUTAZA;Polo Democrático Alternativo;5;1085;0.46
 UMBITA;Alianza Verde;242;3378;7.16
 UMBITA;Movimiento MIRA;8;3378;0.24
+UMBITA;Pacto Histórico;70;3378;2.07
 UMBITA;Partido Conservador Colombiano;26;3378;0.77
 UMBITA;Partido Liberal Colombiano;411;3378;12.17
 UMBITA;Partido PIN;11;3378;0.33
-UMBITA;Partido de la U;2676;3378;79.22
+UMBITA;Partido de la U;2606;3378;77.15
 UMBITA;Polo Democrático Alternativo;4;3378;0.12
 VENTAQUEMADA;Alianza Verde;766;4865;15.75
 VENTAQUEMADA;Movimiento MIRA;16;4865;0.33
+VENTAQUEMADA;Pacto Histórico;148;4865;3.04
 VENTAQUEMADA;Partido Conservador Colombiano;317;4865;6.52
 VENTAQUEMADA;Partido Liberal Colombiano;828;4865;17.02
 VENTAQUEMADA;Partido PIN;10;4865;0.21
-VENTAQUEMADA;Partido de la U;2917;4865;59.96
+VENTAQUEMADA;Partido de la U;2769;4865;56.92
 VENTAQUEMADA;Polo Democrático Alternativo;11;4865;0.23
 VILLA DE LEYVA;Alianza Verde;1685;5160;32.66
 VILLA DE LEYVA;Movimiento MIRA;5;5160;0.1
+VILLA DE LEYVA;Pacto Histórico;150;5160;2.91
 VILLA DE LEYVA;Partido Conservador Colombiano;379;5160;7.34
 VILLA DE LEYVA;Partido Liberal Colombiano;441;5160;8.55
 VILLA DE LEYVA;Partido PIN;19;5160;0.37
-VILLA DE LEYVA;Partido de la U;2625;5160;50.87
+VILLA DE LEYVA;Partido de la U;2475;5160;47.97
 VILLA DE LEYVA;Polo Democrático Alternativo;6;5160;0.12
 VIRACACHA;Alianza Verde;170;1319;12.89
 VIRACACHA;Movimiento MIRA;5;1319;0.38
+VIRACACHA;Pacto Histórico;22;1319;1.67
 VIRACACHA;Partido Conservador Colombiano;76;1319;5.76
 VIRACACHA;Partido Liberal Colombiano;219;1319;16.6
 VIRACACHA;Partido PIN;10;1319;0.76
-VIRACACHA;Partido de la U;834;1319;63.23
+VIRACACHA;Partido de la U;812;1319;61.56
 VIRACACHA;Polo Democrático Alternativo;5;1319;0.38
 ZETAQUIRA;Alianza Verde;261;1872;13.94
 ZETAQUIRA;Movimiento MIRA;2;1872;0.11
+ZETAQUIRA;Pacto Histórico;47;1872;2.51
 ZETAQUIRA;Partido Conservador Colombiano;90;1872;4.81
 ZETAQUIRA;Partido Liberal Colombiano;108;1872;5.77
 ZETAQUIRA;Partido PIN;2;1872;0.11
-ZETAQUIRA;Partido de la U;1408;1872;75.21
+ZETAQUIRA;Partido de la U;1361;1872;72.7
 ZETAQUIRA;Polo Democrático Alternativo;1;1872;0.05

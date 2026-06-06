@@ -150,6 +150,7 @@ CANDIDATOS_MAP = {
     'RODRIGO ARTURO ROJAS':                 'Partido Liberal Colombiano',
     'GIOVANNY PINZON':                      'Pacto Histórico',
     'ALFONSO MIGUEL SILVA PESCA':           'Partido Conservador Colombiano',
+    'GUSTAVO FRANCISCO PETRO URREGO':       'Pacto Histórico',
 }
 
 MUN_FIX = {

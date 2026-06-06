@@ -1,609 +1,732 @@
 MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
 ALMEIDA;Centro Democrático;710;961;73.88
 ALMEIDA;Centro Esperanza;114;961;11.86
-ALMEIDA;Partido Liberal Colombiano;132;961;13.74
+ALMEIDA;Pacto Histórico;122;961;12.7
+ALMEIDA;Partido Liberal Colombiano;10;961;1.04
 ALMEIDA;Partido Somos;4;961;0.42
 ALMEIDA;Todos Somos Colombia;1;961;0.1
 AQUITANIA;Centro Democrático;5270;6921;76.15
 AQUITANIA;Centro Esperanza;912;6921;13.18
-AQUITANIA;Partido Liberal Colombiano;706;6921;10.2
+AQUITANIA;Pacto Histórico;661;6921;9.55
+AQUITANIA;Partido Liberal Colombiano;45;6921;0.65
 AQUITANIA;Partido Somos;17;6921;0.25
 AQUITANIA;Todos Somos Colombia;16;6921;0.23
 ARCABUCO;Centro Democrático;1203;2541;47.34
 ARCABUCO;Centro Esperanza;739;2541;29.08
-ARCABUCO;Partido Liberal Colombiano;588;2541;23.14
+ARCABUCO;Pacto Histórico;557;2541;21.92
+ARCABUCO;Partido Liberal Colombiano;31;2541;1.22
 ARCABUCO;Partido Somos;4;2541;0.16
 ARCABUCO;Todos Somos Colombia;7;2541;0.28
 BELEN;Centro Democrático;1623;3604;45.03
 BELEN;Centro Esperanza;877;3604;24.33
-BELEN;Partido Liberal Colombiano;1084;3604;30.08
+BELEN;Pacto Histórico;957;3604;26.55
+BELEN;Partido Liberal Colombiano;127;3604;3.52
 BELEN;Partido Somos;8;3604;0.22
 BELEN;Todos Somos Colombia;12;3604;0.33
 BERBEO;Centro Democrático;334;710;47.04
 BERBEO;Centro Esperanza;77;710;10.85
-BERBEO;Partido Liberal Colombiano;294;710;41.41
+BERBEO;Pacto Histórico;281;710;39.58
+BERBEO;Partido Liberal Colombiano;13;710;1.83
 BERBEO;Partido Somos;3;710;0.42
 BERBEO;Todos Somos Colombia;2;710;0.28
 BETEITIVA;Centro Democrático;411;880;46.7
 BETEITIVA;Centro Esperanza;198;880;22.5
-BETEITIVA;Partido Liberal Colombiano;266;880;30.23
+BETEITIVA;Pacto Histórico;228;880;25.91
+BETEITIVA;Partido Liberal Colombiano;38;880;4.32
 BETEITIVA;Partido Somos;5;880;0.57
 BOAVITA;Centro Democrático;1731;2415;71.68
 BOAVITA;Centro Esperanza;376;2415;15.57
-BOAVITA;Partido Liberal Colombiano;297;2415;12.3
+BOAVITA;Pacto Histórico;279;2415;11.55
+BOAVITA;Partido Liberal Colombiano;18;2415;0.75
 BOAVITA;Partido Somos;6;2415;0.25
 BOAVITA;Todos Somos Colombia;5;2415;0.21
 BOYACA;Centro Democrático;933;1683;55.44
 BOYACA;Centro Esperanza;264;1683;15.69
-BOYACA;Partido Liberal Colombiano;477;1683;28.34
+BOYACA;Pacto Histórico;404;1683;24.0
+BOYACA;Partido Liberal Colombiano;73;1683;4.34
 BOYACA;Partido Somos;5;1683;0.3
 BOYACA;Todos Somos Colombia;4;1683;0.24
 BRICENO;Centro Democrático;900;1124;80.07
 BRICENO;Centro Esperanza;99;1124;8.81
-BRICENO;Partido Liberal Colombiano;123;1124;10.94
+BRICENO;Pacto Histórico;116;1124;10.32
+BRICENO;Partido Liberal Colombiano;7;1124;0.62
 BRICENO;Partido Somos;1;1124;0.09
 BRICENO;Todos Somos Colombia;1;1124;0.09
 BUENAVISTA;Centro Democrático;1966;2483;79.18
 BUENAVISTA;Centro Esperanza;190;2483;7.65
-BUENAVISTA;Partido Liberal Colombiano;306;2483;12.32
+BUENAVISTA;Pacto Histórico;281;2483;11.32
+BUENAVISTA;Partido Liberal Colombiano;25;2483;1.01
 BUENAVISTA;Partido Somos;13;2483;0.52
 BUENAVISTA;Todos Somos Colombia;8;2483;0.32
 BUSBANZA;Centro Democrático;251;504;49.8
 BUSBANZA;Centro Esperanza;161;504;31.94
-BUSBANZA;Partido Liberal Colombiano;90;504;17.86
+BUSBANZA;Pacto Histórico;82;504;16.27
+BUSBANZA;Partido Liberal Colombiano;8;504;1.59
 BUSBANZA;Partido Somos;1;504;0.2
 BUSBANZA;Todos Somos Colombia;1;504;0.2
 CALDAS;Centro Democrático;948;1543;61.44
 CALDAS;Centro Esperanza;320;1543;20.74
-CALDAS;Partido Liberal Colombiano;267;1543;17.3
+CALDAS;Pacto Histórico;234;1543;15.17
+CALDAS;Partido Liberal Colombiano;33;1543;2.14
 CALDAS;Partido Somos;4;1543;0.26
 CALDAS;Todos Somos Colombia;4;1543;0.26
 CAMPOHERMOSO;Centro Democrático;1074;1338;80.27
 CAMPOHERMOSO;Centro Esperanza;130;1338;9.72
-CAMPOHERMOSO;Partido Liberal Colombiano;128;1338;9.57
+CAMPOHERMOSO;Pacto Histórico;119;1338;8.89
+CAMPOHERMOSO;Partido Liberal Colombiano;9;1338;0.67
 CAMPOHERMOSO;Partido Somos;3;1338;0.22
 CAMPOHERMOSO;Todos Somos Colombia;3;1338;0.22
 CERINZA;Centro Democrático;913;2082;43.85
 CERINZA;Centro Esperanza;416;2082;19.98
-CERINZA;Partido Liberal Colombiano;740;2082;35.54
+CERINZA;Pacto Histórico;710;2082;34.1
+CERINZA;Partido Liberal Colombiano;30;2082;1.44
 CERINZA;Partido Somos;4;2082;0.19
 CERINZA;Todos Somos Colombia;9;2082;0.43
 CHINAVITA;Centro Democrático;1112;1532;72.58
 CHINAVITA;Centro Esperanza;238;1532;15.54
-CHINAVITA;Partido Liberal Colombiano;180;1532;11.75
+CHINAVITA;Pacto Histórico;171;1532;11.16
+CHINAVITA;Partido Liberal Colombiano;9;1532;0.59
 CHINAVITA;Todos Somos Colombia;2;1532;0.13
 CHIQUINQUIRA;Centro Democrático;11122;23869;46.6
 CHIQUINQUIRA;Centro Esperanza;7528;23869;31.54
-CHIQUINQUIRA;Partido Liberal Colombiano;5122;23869;21.46
+CHIQUINQUIRA;Pacto Histórico;4805;23869;20.13
+CHIQUINQUIRA;Partido Liberal Colombiano;317;23869;1.33
 CHIQUINQUIRA;Partido Somos;36;23869;0.15
 CHIQUINQUIRA;Todos Somos Colombia;61;23869;0.26
 CHIQUIZA;Centro Democrático;446;1394;31.99
 CHIQUIZA;Centro Esperanza;167;1394;11.98
-CHIQUIZA;Partido Liberal Colombiano;771;1394;55.31
+CHIQUIZA;Pacto Histórico;705;1394;50.57
+CHIQUIZA;Partido Liberal Colombiano;66;1394;4.73
 CHIQUIZA;Partido Somos;5;1394;0.36
 CHIQUIZA;Todos Somos Colombia;5;1394;0.36
 CHISCAS;Centro Democrático;1395;1649;84.6
 CHISCAS;Centro Esperanza;88;1649;5.34
-CHISCAS;Partido Liberal Colombiano;156;1649;9.46
+CHISCAS;Pacto Histórico;126;1649;7.64
+CHISCAS;Partido Liberal Colombiano;30;1649;1.82
 CHISCAS;Partido Somos;8;1649;0.49
 CHISCAS;Todos Somos Colombia;2;1649;0.12
 CHITA;Centro Democrático;2356;2883;81.72
 CHITA;Centro Esperanza;158;2883;5.48
-CHITA;Partido Liberal Colombiano;351;2883;12.17
+CHITA;Pacto Histórico;320;2883;11.1
+CHITA;Partido Liberal Colombiano;31;2883;1.08
 CHITA;Partido Somos;8;2883;0.28
 CHITA;Todos Somos Colombia;10;2883;0.35
 CHITARAQUE;Centro Democrático;2210;2633;83.93
 CHITARAQUE;Centro Esperanza;147;2633;5.58
-CHITARAQUE;Partido Liberal Colombiano;259;2633;9.84
+CHITARAQUE;Pacto Histórico;244;2633;9.27
+CHITARAQUE;Partido Liberal Colombiano;15;2633;0.57
 CHITARAQUE;Partido Somos;9;2633;0.34
 CHITARAQUE;Todos Somos Colombia;8;2633;0.3
 CHIVATA;Centro Democrático;603;1469;41.05
 CHIVATA;Centro Esperanza;528;1469;35.94
-CHIVATA;Partido Liberal Colombiano;327;1469;22.26
+CHIVATA;Pacto Histórico;304;1469;20.69
+CHIVATA;Partido Liberal Colombiano;23;1469;1.57
 CHIVATA;Partido Somos;5;1469;0.34
 CHIVATA;Todos Somos Colombia;6;1469;0.41
 CHIVOR;Centro Democrático;859;1023;83.97
 CHIVOR;Centro Esperanza;109;1023;10.65
-CHIVOR;Partido Liberal Colombiano;53;1023;5.18
+CHIVOR;Pacto Histórico;50;1023;4.89
+CHIVOR;Partido Liberal Colombiano;3;1023;0.29
 CHIVOR;Partido Somos;2;1023;0.2
 CIENEGA;Centro Democrático;1440;1942;74.15
 CIENEGA;Centro Esperanza;284;1942;14.62
-CIENEGA;Partido Liberal Colombiano;209;1942;10.76
+CIENEGA;Pacto Histórico;195;1942;10.04
+CIENEGA;Partido Liberal Colombiano;14;1942;0.72
 CIENEGA;Partido Somos;6;1942;0.31
 CIENEGA;Todos Somos Colombia;3;1942;0.15
 COMBITA;Centro Democrático;1567;4488;34.92
 COMBITA;Centro Esperanza;1541;4488;34.34
-COMBITA;Partido Liberal Colombiano;1361;4488;30.33
+COMBITA;Pacto Histórico;1235;4488;27.52
+COMBITA;Partido Liberal Colombiano;126;4488;2.81
 COMBITA;Partido Somos;10;4488;0.22
 COMBITA;Todos Somos Colombia;9;4488;0.2
 COPER;Centro Democrático;1378;1577;87.38
 COPER;Centro Esperanza;74;1577;4.69
-COPER;Partido Liberal Colombiano;121;1577;7.67
+COPER;Pacto Histórico;108;1577;6.85
+COPER;Partido Liberal Colombiano;13;1577;0.82
 COPER;Partido Somos;1;1577;0.06
 COPER;Todos Somos Colombia;3;1577;0.19
 CORRALES;Centro Democrático;561;1370;40.95
 CORRALES;Centro Esperanza;414;1370;30.22
-CORRALES;Partido Liberal Colombiano;390;1370;28.47
+CORRALES;Pacto Histórico;368;1370;26.86
+CORRALES;Partido Liberal Colombiano;22;1370;1.61
 CORRALES;Partido Somos;3;1370;0.22
 CORRALES;Todos Somos Colombia;2;1370;0.15
 COVARACHIA;Centro Democrático;1291;1481;87.17
 COVARACHIA;Centro Esperanza;111;1481;7.49
-COVARACHIA;Partido Liberal Colombiano;71;1481;4.79
+COVARACHIA;Pacto Histórico;63;1481;4.25
+COVARACHIA;Partido Liberal Colombiano;8;1481;0.54
 COVARACHIA;Partido Somos;3;1481;0.2
 COVARACHIA;Todos Somos Colombia;5;1481;0.34
 CUBARA;Centro Democrático;791;1972;40.11
 CUBARA;Centro Esperanza;289;1972;14.66
-CUBARA;Partido Liberal Colombiano;876;1972;44.42
+CUBARA;Pacto Histórico;819;1972;41.53
+CUBARA;Partido Liberal Colombiano;57;1972;2.89
 CUBARA;Partido Somos;5;1972;0.25
 CUBARA;Todos Somos Colombia;11;1972;0.56
 CUCAITA;Centro Democrático;557;1651;33.74
 CUCAITA;Centro Esperanza;385;1651;23.32
-CUCAITA;Partido Liberal Colombiano;705;1651;42.7
+CUCAITA;Pacto Histórico;682;1651;41.31
+CUCAITA;Partido Liberal Colombiano;23;1651;1.39
 CUCAITA;Partido Somos;2;1651;0.12
 CUCAITA;Todos Somos Colombia;2;1651;0.12
 CUITIVA;Centro Democrático;599;981;61.06
 CUITIVA;Centro Esperanza;179;981;18.25
-CUITIVA;Partido Liberal Colombiano;197;981;20.08
+CUITIVA;Pacto Histórico;184;981;18.76
+CUITIVA;Partido Liberal Colombiano;13;981;1.33
 CUITIVA;Partido Somos;4;981;0.41
 CUITIVA;Todos Somos Colombia;2;981;0.2
 DUITAMA;Centro Democrático;18226;57542;31.67
 DUITAMA;Centro Esperanza;21777;57542;37.85
-DUITAMA;Partido Liberal Colombiano;17320;57542;30.1
+DUITAMA;Pacto Histórico;16179;57542;28.12
+DUITAMA;Partido Liberal Colombiano;1141;57542;1.98
 DUITAMA;Partido Somos;68;57542;0.12
 DUITAMA;Todos Somos Colombia;151;57542;0.26
 EL COCUY;Centro Democrático;1555;1871;83.11
 EL COCUY;Centro Esperanza;129;1871;6.89
-EL COCUY;Partido Liberal Colombiano;182;1871;9.73
+EL COCUY;Pacto Histórico;139;1871;7.43
+EL COCUY;Partido Liberal Colombiano;43;1871;2.3
 EL COCUY;Partido Somos;3;1871;0.16
 EL COCUY;Todos Somos Colombia;2;1871;0.11
 EL ESPINO;Centro Democrático;1132;1302;86.94
 EL ESPINO;Centro Esperanza;83;1302;6.37
-EL ESPINO;Partido Liberal Colombiano;80;1302;6.14
+EL ESPINO;Pacto Histórico;70;1302;5.38
+EL ESPINO;Partido Liberal Colombiano;10;1302;0.77
 EL ESPINO;Partido Somos;5;1302;0.38
 EL ESPINO;Todos Somos Colombia;2;1302;0.15
 FIRAVITOBA;Centro Democrático;1159;2838;40.84
 FIRAVITOBA;Centro Esperanza;865;2838;30.48
-FIRAVITOBA;Partido Liberal Colombiano;802;2838;28.26
+FIRAVITOBA;Pacto Histórico;749;2838;26.39
+FIRAVITOBA;Partido Liberal Colombiano;53;2838;1.87
 FIRAVITOBA;Partido Somos;4;2838;0.14
 FIRAVITOBA;Todos Somos Colombia;8;2838;0.28
 FLORESTA;Centro Democrático;1079;1765;61.13
 FLORESTA;Centro Esperanza;336;1765;19.04
-FLORESTA;Partido Liberal Colombiano;339;1765;19.21
+FLORESTA;Pacto Histórico;317;1765;17.96
+FLORESTA;Partido Liberal Colombiano;22;1765;1.25
 FLORESTA;Partido Somos;4;1765;0.23
 FLORESTA;Todos Somos Colombia;7;1765;0.4
 GACHANTIVA;Centro Democrático;965;1642;58.77
 GACHANTIVA;Centro Esperanza;323;1642;19.67
-GACHANTIVA;Partido Liberal Colombiano;342;1642;20.83
+GACHANTIVA;Pacto Histórico;318;1642;19.37
+GACHANTIVA;Partido Liberal Colombiano;24;1642;1.46
 GACHANTIVA;Partido Somos;8;1642;0.49
 GACHANTIVA;Todos Somos Colombia;4;1642;0.24
 GAMEZA;Centro Democrático;1279;2005;63.79
 GAMEZA;Centro Esperanza;407;2005;20.3
-GAMEZA;Partido Liberal Colombiano;306;2005;15.26
+GAMEZA;Pacto Histórico;279;2005;13.92
+GAMEZA;Partido Liberal Colombiano;27;2005;1.35
 GAMEZA;Partido Somos;5;2005;0.25
 GAMEZA;Todos Somos Colombia;8;2005;0.4
 GARAGOA;Centro Democrático;3266;6700;48.75
 GARAGOA;Centro Esperanza;2049;6700;30.58
-GARAGOA;Partido Liberal Colombiano;1341;6700;20.01
+GARAGOA;Pacto Histórico;1242;6700;18.54
+GARAGOA;Partido Liberal Colombiano;99;6700;1.48
 GARAGOA;Partido Somos;11;6700;0.16
 GARAGOA;Todos Somos Colombia;33;6700;0.49
 GUACAMAYAS;Centro Democrático;785;905;86.74
 GUACAMAYAS;Centro Esperanza;55;905;6.08
-GUACAMAYAS;Partido Liberal Colombiano;63;905;6.96
+GUACAMAYAS;Pacto Histórico;57;905;6.3
+GUACAMAYAS;Partido Liberal Colombiano;6;905;0.66
 GUACAMAYAS;Todos Somos Colombia;2;905;0.22
 GUATEQUE;Centro Democrático;2593;4881;53.12
 GUATEQUE;Centro Esperanza;1303;4881;26.7
-GUATEQUE;Partido Liberal Colombiano;944;4881;19.34
+GUATEQUE;Pacto Histórico;830;4881;17.0
+GUATEQUE;Partido Liberal Colombiano;114;4881;2.34
 GUATEQUE;Partido Somos;8;4881;0.16
 GUATEQUE;Todos Somos Colombia;33;4881;0.68
 GUAYATA;Centro Democrático;1526;2096;72.81
 GUAYATA;Centro Esperanza;351;2096;16.75
-GUAYATA;Partido Liberal Colombiano;206;2096;9.83
+GUAYATA;Pacto Histórico;189;2096;9.02
+GUAYATA;Partido Liberal Colombiano;17;2096;0.81
 GUAYATA;Partido Somos;7;2096;0.33
 GUAYATA;Todos Somos Colombia;6;2096;0.29
 GUICAN DE LA SIERRA;Centro Democrático;1038;1611;64.43
 GUICAN DE LA SIERRA;Centro Esperanza;133;1611;8.26
-GUICAN DE LA SIERRA;Partido Liberal Colombiano;436;1611;27.06
+GUICAN DE LA SIERRA;Pacto Histórico;427;1611;26.51
+GUICAN DE LA SIERRA;Partido Liberal Colombiano;9;1611;0.56
 GUICAN DE LA SIERRA;Partido Somos;1;1611;0.06
 GUICAN DE LA SIERRA;Todos Somos Colombia;3;1611;0.19
 IZA;Centro Democrático;684;1246;54.9
 IZA;Centro Esperanza;342;1246;27.45
-IZA;Partido Liberal Colombiano;218;1246;17.5
+IZA;Pacto Histórico;197;1246;15.81
+IZA;Partido Liberal Colombiano;21;1246;1.69
 IZA;Partido Somos;2;1246;0.16
 JENESANO;Centro Democrático;1389;2570;54.05
 JENESANO;Centro Esperanza;511;2570;19.88
-JENESANO;Partido Liberal Colombiano;645;2570;25.1
+JENESANO;Pacto Histórico;544;2570;21.17
+JENESANO;Partido Liberal Colombiano;101;2570;3.93
 JENESANO;Partido Somos;13;2570;0.51
 JENESANO;Todos Somos Colombia;12;2570;0.47
 JERICO;Centro Democrático;1257;1512;83.13
 JERICO;Centro Esperanza;90;1512;5.95
-JERICO;Partido Liberal Colombiano;153;1512;10.12
+JERICO;Pacto Histórico;143;1512;9.46
+JERICO;Partido Liberal Colombiano;10;1512;0.66
 JERICO;Partido Somos;6;1512;0.4
 JERICO;Todos Somos Colombia;6;1512;0.4
 LA CAPILLA;Centro Democrático;893;1367;65.33
 LA CAPILLA;Centro Esperanza;187;1367;13.68
-LA CAPILLA;Partido Liberal Colombiano;274;1367;20.04
+LA CAPILLA;Pacto Histórico;264;1367;19.31
+LA CAPILLA;Partido Liberal Colombiano;10;1367;0.73
 LA CAPILLA;Partido Somos;7;1367;0.51
 LA CAPILLA;Todos Somos Colombia;6;1367;0.44
 LA UVITA;Centro Democrático;1107;1335;82.92
 LA UVITA;Centro Esperanza;145;1335;10.86
-LA UVITA;Partido Liberal Colombiano;79;1335;5.92
+LA UVITA;Pacto Histórico;67;1335;5.02
+LA UVITA;Partido Liberal Colombiano;12;1335;0.9
 LA UVITA;Partido Somos;2;1335;0.15
 LA UVITA;Todos Somos Colombia;2;1335;0.15
 LA VICTORIA;Centro Democrático;685;823;83.23
 LA VICTORIA;Centro Esperanza;46;823;5.59
-LA VICTORIA;Partido Liberal Colombiano;84;823;10.21
+LA VICTORIA;Pacto Histórico;76;823;9.23
+LA VICTORIA;Partido Liberal Colombiano;8;823;0.97
 LA VICTORIA;Partido Somos;5;823;0.61
 LA VICTORIA;Todos Somos Colombia;3;823;0.36
 LABRANZAGRANDE;Centro Democrático;1087;1486;73.15
 LABRANZAGRANDE;Centro Esperanza;209;1486;14.06
-LABRANZAGRANDE;Partido Liberal Colombiano;176;1486;11.84
+LABRANZAGRANDE;Pacto Histórico;164;1486;11.04
+LABRANZAGRANDE;Partido Liberal Colombiano;12;1486;0.81
 LABRANZAGRANDE;Partido Somos;8;1486;0.54
 LABRANZAGRANDE;Todos Somos Colombia;6;1486;0.4
 MACANAL;Centro Democrático;1382;1898;72.81
 MACANAL;Centro Esperanza;290;1898;15.28
-MACANAL;Partido Liberal Colombiano;212;1898;11.17
+MACANAL;Pacto Histórico;198;1898;10.43
+MACANAL;Partido Liberal Colombiano;14;1898;0.74
 MACANAL;Partido Somos;10;1898;0.53
 MACANAL;Todos Somos Colombia;4;1898;0.21
 MARIPI;Centro Democrático;2493;2848;87.54
 MARIPI;Centro Esperanza;145;2848;5.09
-MARIPI;Partido Liberal Colombiano;198;2848;6.95
+MARIPI;Pacto Histórico;185;2848;6.5
+MARIPI;Partido Liberal Colombiano;13;2848;0.46
 MARIPI;Partido Somos;8;2848;0.28
 MARIPI;Todos Somos Colombia;4;2848;0.14
 MIRAFLORES;Centro Democrático;1649;4239;38.9
 MIRAFLORES;Centro Esperanza;898;4239;21.18
-MIRAFLORES;Partido Liberal Colombiano;1663;4239;39.23
+MIRAFLORES;Pacto Histórico;1577;4239;37.2
+MIRAFLORES;Partido Liberal Colombiano;86;4239;2.03
 MIRAFLORES;Partido Somos;12;4239;0.28
 MIRAFLORES;Todos Somos Colombia;17;4239;0.4
 MONGUA;Centro Democrático;2092;2569;81.43
 MONGUA;Centro Esperanza;232;2569;9.03
-MONGUA;Partido Liberal Colombiano;238;2569;9.26
+MONGUA;Pacto Histórico;225;2569;8.76
+MONGUA;Partido Liberal Colombiano;13;2569;0.51
 MONGUA;Partido Somos;3;2569;0.12
 MONGUA;Todos Somos Colombia;4;2569;0.16
 MONGUI;Centro Democrático;1085;2084;52.06
 MONGUI;Centro Esperanza;527;2084;25.29
-MONGUI;Partido Liberal Colombiano;465;2084;22.31
+MONGUI;Pacto Histórico;440;2084;21.11
+MONGUI;Partido Liberal Colombiano;25;2084;1.2
 MONGUI;Partido Somos;3;2084;0.14
 MONGUI;Todos Somos Colombia;4;2084;0.19
 MONIQUIRA;Centro Democrático;4950;9360;52.88
 MONIQUIRA;Centro Esperanza;2004;9360;21.41
-MONIQUIRA;Partido Liberal Colombiano;2351;9360;25.12
+MONIQUIRA;Pacto Histórico;2194;9360;23.44
+MONIQUIRA;Partido Liberal Colombiano;157;9360;1.68
 MONIQUIRA;Partido Somos;15;9360;0.16
 MONIQUIRA;Todos Somos Colombia;40;9360;0.43
 MOTAVITA;Centro Democrático;754;2629;28.68
 MOTAVITA;Centro Esperanza;648;2629;24.65
-MOTAVITA;Partido Liberal Colombiano;1220;2629;46.41
+MOTAVITA;Pacto Histórico;1153;2629;43.86
+MOTAVITA;Partido Liberal Colombiano;67;2629;2.55
 MOTAVITA;Partido Somos;4;2629;0.15
 MOTAVITA;Todos Somos Colombia;3;2629;0.11
 MUZO;Centro Democrático;3120;4075;76.56
 MUZO;Centro Esperanza;336;4075;8.25
-MUZO;Partido Liberal Colombiano;570;4075;13.99
+MUZO;Pacto Histórico;540;4075;13.25
+MUZO;Partido Liberal Colombiano;30;4075;0.74
 MUZO;Partido Somos;20;4075;0.49
 MUZO;Todos Somos Colombia;29;4075;0.71
 NOBSA;Centro Democrático;2115;8392;25.2
 NOBSA;Centro Esperanza;2399;8392;28.59
-NOBSA;Partido Liberal Colombiano;3845;8392;45.82
+NOBSA;Pacto Histórico;3668;8392;43.71
+NOBSA;Partido Liberal Colombiano;177;8392;2.11
 NOBSA;Partido Somos;6;8392;0.07
 NOBSA;Todos Somos Colombia;27;8392;0.32
 NUEVO COLON;Centro Democrático;904;2059;43.9
 NUEVO COLON;Centro Esperanza;453;2059;22.0
-NUEVO COLON;Partido Liberal Colombiano;685;2059;33.27
+NUEVO COLON;Pacto Histórico;593;2059;28.8
+NUEVO COLON;Partido Liberal Colombiano;92;2059;4.47
 NUEVO COLON;Partido Somos;10;2059;0.49
 NUEVO COLON;Todos Somos Colombia;7;2059;0.34
 OICATA;Centro Democrático;700;1585;44.16
 OICATA;Centro Esperanza;424;1585;26.75
-OICATA;Partido Liberal Colombiano;452;1585;28.52
+OICATA;Pacto Histórico;420;1585;26.5
+OICATA;Partido Liberal Colombiano;32;1585;2.02
 OICATA;Partido Somos;3;1585;0.19
 OICATA;Todos Somos Colombia;6;1585;0.38
 OTANCHE;Centro Democrático;2793;3337;83.7
 OTANCHE;Centro Esperanza;276;3337;8.27
-OTANCHE;Partido Liberal Colombiano;250;3337;7.49
+OTANCHE;Pacto Histórico;228;3337;6.83
+OTANCHE;Partido Liberal Colombiano;22;3337;0.66
 OTANCHE;Partido Somos;6;3337;0.18
 OTANCHE;Todos Somos Colombia;12;3337;0.36
 PACHAVITA;Centro Democrático;685;1023;66.96
 PACHAVITA;Centro Esperanza;210;1023;20.53
-PACHAVITA;Partido Liberal Colombiano;125;1023;12.22
+PACHAVITA;Pacto Histórico;119;1023;11.63
+PACHAVITA;Partido Liberal Colombiano;6;1023;0.59
 PACHAVITA;Partido Somos;1;1023;0.1
 PACHAVITA;Todos Somos Colombia;2;1023;0.2
 PAEZ;Centro Democrático;1047;1490;70.27
 PAEZ;Centro Esperanza;228;1490;15.3
-PAEZ;Partido Liberal Colombiano;200;1490;13.42
+PAEZ;Pacto Histórico;173;1490;11.61
+PAEZ;Partido Liberal Colombiano;27;1490;1.81
 PAEZ;Partido Somos;4;1490;0.27
 PAEZ;Todos Somos Colombia;11;1490;0.74
 PAIPA;Centro Democrático;5473;16059;34.08
 PAIPA;Centro Esperanza;6290;16059;39.17
-PAIPA;Partido Liberal Colombiano;4235;16059;26.37
+PAIPA;Pacto Histórico;3918;16059;24.4
+PAIPA;Partido Liberal Colombiano;317;16059;1.97
 PAIPA;Partido Somos;26;16059;0.16
 PAIPA;Todos Somos Colombia;35;16059;0.22
 PAJARITO;Centro Democrático;647;883;73.27
 PAJARITO;Centro Esperanza;138;883;15.63
-PAJARITO;Partido Liberal Colombiano;90;883;10.19
+PAJARITO;Pacto Histórico;80;883;9.06
+PAJARITO;Partido Liberal Colombiano;10;883;1.13
 PAJARITO;Partido Somos;3;883;0.34
 PAJARITO;Todos Somos Colombia;5;883;0.57
 PANQUEBA;Centro Democrático;637;858;74.24
 PANQUEBA;Centro Esperanza;147;858;17.13
-PANQUEBA;Partido Liberal Colombiano;71;858;8.28
+PANQUEBA;Pacto Histórico;56;858;6.53
+PANQUEBA;Partido Liberal Colombiano;15;858;1.75
 PANQUEBA;Partido Somos;2;858;0.23
 PANQUEBA;Todos Somos Colombia;1;858;0.12
 PAUNA;Centro Democrático;2280;3281;69.49
 PAUNA;Centro Esperanza;300;3281;9.14
-PAUNA;Partido Liberal Colombiano;685;3281;20.88
+PAUNA;Pacto Histórico;662;3281;20.18
+PAUNA;Partido Liberal Colombiano;23;3281;0.7
 PAUNA;Partido Somos;10;3281;0.3
 PAUNA;Todos Somos Colombia;6;3281;0.18
 PAYA;Centro Democrático;584;856;68.22
 PAYA;Centro Esperanza;113;856;13.2
-PAYA;Partido Liberal Colombiano;140;856;16.36
+PAYA;Pacto Histórico;127;856;14.84
+PAYA;Partido Liberal Colombiano;13;856;1.52
 PAYA;Partido Somos;11;856;1.29
 PAYA;Todos Somos Colombia;8;856;0.93
 PAZ DE RIO;Centro Democrático;715;2204;32.44
 PAZ DE RIO;Centro Esperanza;522;2204;23.68
-PAZ DE RIO;Partido Liberal Colombiano;955;2204;43.33
+PAZ DE RIO;Pacto Histórico;859;2204;38.97
+PAZ DE RIO;Partido Liberal Colombiano;96;2204;4.36
 PAZ DE RIO;Partido Somos;1;2204;0.05
 PAZ DE RIO;Todos Somos Colombia;11;2204;0.5
 PESCA;Centro Democrático;1923;2896;66.4
 PESCA;Centro Esperanza;495;2896;17.09
-PESCA;Partido Liberal Colombiano;466;2896;16.09
+PESCA;Pacto Histórico;436;2896;15.06
+PESCA;Partido Liberal Colombiano;30;2896;1.04
 PESCA;Partido Somos;5;2896;0.17
 PESCA;Todos Somos Colombia;7;2896;0.24
 PISBA;Centro Democrático;348;548;63.5
 PISBA;Centro Esperanza;106;548;19.34
-PISBA;Partido Liberal Colombiano;92;548;16.79
+PISBA;Pacto Histórico;89;548;16.24
+PISBA;Partido Liberal Colombiano;3;548;0.55
 PISBA;Partido Somos;1;548;0.18
 PISBA;Todos Somos Colombia;1;548;0.18
 PUERTO BOYACA;Centro Democrático;11819;19711;59.96
 PUERTO BOYACA;Centro Esperanza;4294;19711;21.78
-PUERTO BOYACA;Partido Liberal Colombiano;3445;19711;17.48
+PUERTO BOYACA;Pacto Histórico;3155;19711;16.01
+PUERTO BOYACA;Partido Liberal Colombiano;290;19711;1.47
 PUERTO BOYACA;Partido Somos;69;19711;0.35
 PUERTO BOYACA;Todos Somos Colombia;84;19711;0.43
 QUIPAMA;Centro Democrático;2159;2639;81.81
 QUIPAMA;Centro Esperanza;198;2639;7.5
-QUIPAMA;Partido Liberal Colombiano;266;2639;10.08
+QUIPAMA;Pacto Histórico;256;2639;9.7
+QUIPAMA;Partido Liberal Colombiano;10;2639;0.38
 QUIPAMA;Partido Somos;10;2639;0.38
 QUIPAMA;Todos Somos Colombia;6;2639;0.23
 RAMIRIQUI;Centro Democrático;2167;4056;53.43
 RAMIRIQUI;Centro Esperanza;858;4056;21.15
-RAMIRIQUI;Partido Liberal Colombiano;1013;4056;24.98
+RAMIRIQUI;Pacto Histórico;917;4056;22.61
+RAMIRIQUI;Partido Liberal Colombiano;96;4056;2.37
 RAMIRIQUI;Partido Somos;10;4056;0.25
 RAMIRIQUI;Todos Somos Colombia;8;4056;0.2
 RAQUIRA;Centro Democrático;1525;2673;57.05
 RAQUIRA;Centro Esperanza;612;2673;22.9
-RAQUIRA;Partido Liberal Colombiano;518;2673;19.38
+RAQUIRA;Pacto Histórico;449;2673;16.8
+RAQUIRA;Partido Liberal Colombiano;69;2673;2.58
 RAQUIRA;Partido Somos;9;2673;0.34
 RAQUIRA;Todos Somos Colombia;9;2673;0.34
 RONDON;Centro Democrático;827;1203;68.74
 RONDON;Centro Esperanza;127;1203;10.56
-RONDON;Partido Liberal Colombiano;242;1203;20.12
+RONDON;Pacto Histórico;223;1203;18.54
+RONDON;Partido Liberal Colombiano;19;1203;1.58
 RONDON;Partido Somos;5;1203;0.42
 RONDON;Todos Somos Colombia;2;1203;0.17
 SABOYA;Centro Democrático;2893;5028;57.54
 SABOYA;Centro Esperanza;712;5028;14.16
-SABOYA;Partido Liberal Colombiano;1400;5028;27.84
+SABOYA;Pacto Histórico;1277;5028;25.4
+SABOYA;Partido Liberal Colombiano;123;5028;2.45
 SABOYA;Partido Somos;9;5028;0.18
 SABOYA;Todos Somos Colombia;14;5028;0.28
 SACHICA;Centro Democrático;1014;2117;47.9
 SACHICA;Centro Esperanza;563;2117;26.59
-SACHICA;Partido Liberal Colombiano;533;2117;25.18
+SACHICA;Pacto Histórico;480;2117;22.67
+SACHICA;Partido Liberal Colombiano;53;2117;2.5
 SACHICA;Partido Somos;6;2117;0.28
 SACHICA;Todos Somos Colombia;1;2117;0.05
 SAMACA;Centro Democrático;3287;7320;44.9
 SAMACA;Centro Esperanza;2248;7320;30.71
-SAMACA;Partido Liberal Colombiano;1732;7320;23.66
+SAMACA;Pacto Histórico;1644;7320;22.46
+SAMACA;Partido Liberal Colombiano;88;7320;1.2
 SAMACA;Partido Somos;19;7320;0.26
 SAMACA;Todos Somos Colombia;34;7320;0.46
 SAN EDUARDO;Centro Democrático;441;795;55.47
 SAN EDUARDO;Centro Esperanza;137;795;17.23
-SAN EDUARDO;Partido Liberal Colombiano;211;795;26.54
+SAN EDUARDO;Pacto Histórico;179;795;22.52
+SAN EDUARDO;Partido Liberal Colombiano;32;795;4.03
 SAN EDUARDO;Partido Somos;3;795;0.38
 SAN EDUARDO;Todos Somos Colombia;3;795;0.38
 SAN JOSE DE PARE;Centro Democrático;1874;2502;74.9
 SAN JOSE DE PARE;Centro Esperanza;267;2502;10.67
-SAN JOSE DE PARE;Partido Liberal Colombiano;344;2502;13.75
+SAN JOSE DE PARE;Pacto Histórico;302;2502;12.07
+SAN JOSE DE PARE;Partido Liberal Colombiano;42;2502;1.68
 SAN JOSE DE PARE;Partido Somos;12;2502;0.48
 SAN JOSE DE PARE;Todos Somos Colombia;5;2502;0.2
 SAN LUIS DE GACENO;Centro Democrático;1927;2467;78.11
 SAN LUIS DE GACENO;Centro Esperanza;358;2467;14.51
-SAN LUIS DE GACENO;Partido Liberal Colombiano;176;2467;7.13
+SAN LUIS DE GACENO;Pacto Histórico;160;2467;6.49
+SAN LUIS DE GACENO;Partido Liberal Colombiano;16;2467;0.65
 SAN LUIS DE GACENO;Partido Somos;1;2467;0.04
 SAN LUIS DE GACENO;Todos Somos Colombia;5;2467;0.2
 SAN MATEO;Centro Democrático;1719;1963;87.57
 SAN MATEO;Centro Esperanza;142;1963;7.23
-SAN MATEO;Partido Liberal Colombiano;94;1963;4.79
+SAN MATEO;Pacto Histórico;86;1963;4.38
+SAN MATEO;Partido Liberal Colombiano;8;1963;0.41
 SAN MATEO;Partido Somos;5;1963;0.25
 SAN MATEO;Todos Somos Colombia;3;1963;0.15
 SAN MIGUEL DE SEMA;Centro Democrático;968;1437;67.36
 SAN MIGUEL DE SEMA;Centro Esperanza;261;1437;18.16
-SAN MIGUEL DE SEMA;Partido Liberal Colombiano;199;1437;13.85
+SAN MIGUEL DE SEMA;Pacto Histórico;153;1437;10.65
+SAN MIGUEL DE SEMA;Partido Liberal Colombiano;46;1437;3.2
 SAN MIGUEL DE SEMA;Partido Somos;3;1437;0.21
 SAN MIGUEL DE SEMA;Todos Somos Colombia;6;1437;0.42
 SAN PABLO DE BORBUR;Centro Democrático;2604;3119;83.49
 SAN PABLO DE BORBUR;Centro Esperanza;222;3119;7.12
-SAN PABLO DE BORBUR;Partido Liberal Colombiano;275;3119;8.82
+SAN PABLO DE BORBUR;Pacto Histórico;269;3119;8.62
+SAN PABLO DE BORBUR;Partido Liberal Colombiano;6;3119;0.19
 SAN PABLO DE BORBUR;Partido Somos;5;3119;0.16
 SAN PABLO DE BORBUR;Todos Somos Colombia;13;3119;0.42
 SANTA MARIA;Centro Democrático;886;1530;57.91
 SANTA MARIA;Centro Esperanza;338;1530;22.09
-SANTA MARIA;Partido Liberal Colombiano;297;1530;19.41
+SANTA MARIA;Pacto Histórico;276;1530;18.04
+SANTA MARIA;Partido Liberal Colombiano;21;1530;1.37
 SANTA MARIA;Partido Somos;3;1530;0.2
 SANTA MARIA;Todos Somos Colombia;6;1530;0.39
 SANTA ROSA DE VITERBO;Centro Democrático;2536;5264;48.18
 SANTA ROSA DE VITERBO;Centro Esperanza;1723;5264;32.73
-SANTA ROSA DE VITERBO;Partido Liberal Colombiano;988;5264;18.77
+SANTA ROSA DE VITERBO;Pacto Histórico;890;5264;16.91
+SANTA ROSA DE VITERBO;Partido Liberal Colombiano;98;5264;1.86
 SANTA ROSA DE VITERBO;Partido Somos;2;5264;0.04
 SANTA ROSA DE VITERBO;Todos Somos Colombia;15;5264;0.28
 SANTA SOFIA;Centro Democrático;1166;1679;69.45
 SANTA SOFIA;Centro Esperanza;352;1679;20.96
-SANTA SOFIA;Partido Liberal Colombiano;153;1679;9.11
+SANTA SOFIA;Pacto Histórico;148;1679;8.81
+SANTA SOFIA;Partido Liberal Colombiano;5;1679;0.3
 SANTA SOFIA;Partido Somos;3;1679;0.18
 SANTA SOFIA;Todos Somos Colombia;5;1679;0.3
 SANTANA;Centro Democrático;2100;3307;63.5
 SANTANA;Centro Esperanza;447;3307;13.52
-SANTANA;Partido Liberal Colombiano;741;3307;22.41
+SANTANA;Pacto Histórico;662;3307;20.02
+SANTANA;Partido Liberal Colombiano;79;3307;2.39
 SANTANA;Partido Somos;10;3307;0.3
 SANTANA;Todos Somos Colombia;9;3307;0.27
 SATIVANORTE;Centro Democrático;1040;1243;83.67
 SATIVANORTE;Centro Esperanza;104;1243;8.37
-SATIVANORTE;Partido Liberal Colombiano;94;1243;7.56
+SATIVANORTE;Pacto Histórico;88;1243;7.08
+SATIVANORTE;Partido Liberal Colombiano;6;1243;0.48
 SATIVANORTE;Partido Somos;1;1243;0.08
 SATIVANORTE;Todos Somos Colombia;4;1243;0.32
 SATIVASUR;Centro Democrático;299;493;60.65
 SATIVASUR;Centro Esperanza;62;493;12.58
-SATIVASUR;Partido Liberal Colombiano;131;493;26.57
+SATIVASUR;Pacto Histórico;84;493;17.04
+SATIVASUR;Partido Liberal Colombiano;47;493;9.53
 SATIVASUR;Todos Somos Colombia;1;493;0.2
 SIACHOQUE;Centro Democrático;1757;3190;55.08
 SIACHOQUE;Centro Esperanza;819;3190;25.67
-SIACHOQUE;Partido Liberal Colombiano;597;3190;18.71
+SIACHOQUE;Pacto Histórico;553;3190;17.34
+SIACHOQUE;Partido Liberal Colombiano;44;3190;1.38
 SIACHOQUE;Partido Somos;8;3190;0.25
 SIACHOQUE;Todos Somos Colombia;9;3190;0.28
 SOATA;Centro Democrático;3147;4481;70.23
 SOATA;Centro Esperanza;655;4481;14.62
-SOATA;Partido Liberal Colombiano;670;4481;14.95
+SOATA;Pacto Histórico;614;4481;13.7
+SOATA;Partido Liberal Colombiano;56;4481;1.25
 SOATA;Partido Somos;4;4481;0.09
 SOATA;Todos Somos Colombia;5;4481;0.11
 SOCHA;Centro Democrático;1413;2836;49.82
 SOCHA;Centro Esperanza;544;2836;19.18
-SOCHA;Partido Liberal Colombiano;858;2836;30.25
+SOCHA;Pacto Histórico;718;2836;25.32
+SOCHA;Partido Liberal Colombiano;140;2836;4.94
 SOCHA;Partido Somos;13;2836;0.46
 SOCHA;Todos Somos Colombia;8;2836;0.28
 SOCOTA;Centro Democrático;2007;2852;70.37
 SOCOTA;Centro Esperanza;125;2852;4.38
-SOCOTA;Partido Liberal Colombiano;692;2852;24.26
+SOCOTA;Pacto Histórico;505;2852;17.71
+SOCOTA;Partido Liberal Colombiano;187;2852;6.56
 SOCOTA;Partido Somos;14;2852;0.49
 SOCOTA;Todos Somos Colombia;14;2852;0.49
 SOGAMOSO;Centro Democrático;20401;58419;34.92
 SOGAMOSO;Centro Esperanza;20896;58419;35.77
-SOGAMOSO;Partido Liberal Colombiano;16866;58419;28.87
+SOGAMOSO;Pacto Histórico;15640;58419;26.77
+SOGAMOSO;Partido Liberal Colombiano;1226;58419;2.1
 SOGAMOSO;Partido Somos;100;58419;0.17
 SOGAMOSO;Todos Somos Colombia;156;58419;0.27
 SOMONDOCO;Centro Democrático;803;1308;61.39
 SOMONDOCO;Centro Esperanza;257;1308;19.65
-SOMONDOCO;Partido Liberal Colombiano;242;1308;18.5
+SOMONDOCO;Pacto Histórico;227;1308;17.35
+SOMONDOCO;Partido Liberal Colombiano;15;1308;1.15
 SOMONDOCO;Partido Somos;2;1308;0.15
 SOMONDOCO;Todos Somos Colombia;4;1308;0.31
 SORA;Centro Democrático;525;1264;41.53
 SORA;Centro Esperanza;313;1264;24.76
-SORA;Partido Liberal Colombiano;419;1264;33.15
+SORA;Pacto Histórico;401;1264;31.72
+SORA;Partido Liberal Colombiano;18;1264;1.42
 SORA;Partido Somos;3;1264;0.24
 SORA;Todos Somos Colombia;4;1264;0.32
 SORACA;Centro Democrático;1566;3016;51.92
 SORACA;Centro Esperanza;747;3016;24.77
-SORACA;Partido Liberal Colombiano;684;3016;22.68
+SORACA;Pacto Histórico;642;3016;21.29
+SORACA;Partido Liberal Colombiano;42;3016;1.39
 SORACA;Partido Somos;14;3016;0.46
 SORACA;Todos Somos Colombia;5;3016;0.17
 SOTAQUIRA;Centro Democrático;2135;3505;60.91
 SOTAQUIRA;Centro Esperanza;754;3505;21.51
-SOTAQUIRA;Partido Liberal Colombiano;590;3505;16.83
+SOTAQUIRA;Pacto Histórico;535;3505;15.26
+SOTAQUIRA;Partido Liberal Colombiano;55;3505;1.57
 SOTAQUIRA;Partido Somos;16;3505;0.46
 SOTAQUIRA;Todos Somos Colombia;10;3505;0.29
 SUSACON;Centro Democrático;1111;1414;78.57
 SUSACON;Centro Esperanza;140;1414;9.9
-SUSACON;Partido Liberal Colombiano;154;1414;10.89
+SUSACON;Pacto Histórico;145;1414;10.25
+SUSACON;Partido Liberal Colombiano;9;1414;0.64
 SUSACON;Partido Somos;4;1414;0.28
 SUSACON;Todos Somos Colombia;5;1414;0.35
 SUTAMARCHAN;Centro Democrático;2403;3492;68.81
 SUTAMARCHAN;Centro Esperanza;496;3492;14.2
-SUTAMARCHAN;Partido Liberal Colombiano;585;3492;16.75
+SUTAMARCHAN;Pacto Histórico;543;3492;15.55
+SUTAMARCHAN;Partido Liberal Colombiano;42;3492;1.2
 SUTAMARCHAN;Partido Somos;5;3492;0.14
 SUTAMARCHAN;Todos Somos Colombia;3;3492;0.09
 SUTATENZA;Centro Democrático;1379;2016;68.4
 SUTATENZA;Centro Esperanza;308;2016;15.28
-SUTATENZA;Partido Liberal Colombiano;318;2016;15.77
+SUTATENZA;Pacto Histórico;297;2016;14.73
+SUTATENZA;Partido Liberal Colombiano;21;2016;1.04
 SUTATENZA;Partido Somos;8;2016;0.4
 SUTATENZA;Todos Somos Colombia;3;2016;0.15
 TASCO;Centro Democrático;888;2012;44.14
 TASCO;Centro Esperanza;480;2012;23.86
-TASCO;Partido Liberal Colombiano;631;2012;31.36
+TASCO;Pacto Histórico;576;2012;28.63
+TASCO;Partido Liberal Colombiano;55;2012;2.73
 TASCO;Partido Somos;5;2012;0.25
 TASCO;Todos Somos Colombia;8;2012;0.4
 TENZA;Centro Democrático;1148;1713;67.02
 TENZA;Centro Esperanza;324;1713;18.91
-TENZA;Partido Liberal Colombiano;226;1713;13.19
+TENZA;Pacto Histórico;211;1713;12.32
+TENZA;Partido Liberal Colombiano;15;1713;0.88
 TENZA;Partido Somos;10;1713;0.58
 TENZA;Todos Somos Colombia;5;1713;0.29
 TIBANA;Centro Democrático;1518;2985;50.85
 TIBANA;Centro Esperanza;565;2985;18.93
-TIBANA;Partido Liberal Colombiano;879;2985;29.45
+TIBANA;Pacto Histórico;734;2985;24.59
+TIBANA;Partido Liberal Colombiano;145;2985;4.86
 TIBANA;Partido Somos;9;2985;0.3
 TIBANA;Todos Somos Colombia;14;2985;0.47
 TIBASOSA;Centro Democrático;2071;5393;38.4
 TIBASOSA;Centro Esperanza;1640;5393;30.41
-TIBASOSA;Partido Liberal Colombiano;1646;5393;30.52
+TIBASOSA;Pacto Histórico;1549;5393;28.72
+TIBASOSA;Partido Liberal Colombiano;97;5393;1.8
 TIBASOSA;Partido Somos;6;5393;0.11
 TIBASOSA;Todos Somos Colombia;30;5393;0.56
 TINJACA;Centro Democrático;896;1747;51.29
 TINJACA;Centro Esperanza;355;1747;20.32
-TINJACA;Partido Liberal Colombiano;487;1747;27.88
+TINJACA;Pacto Histórico;459;1747;26.27
+TINJACA;Partido Liberal Colombiano;28;1747;1.6
 TINJACA;Partido Somos;5;1747;0.29
 TINJACA;Todos Somos Colombia;4;1747;0.23
 TIPACOQUE;Centro Democrático;1192;1616;73.76
 TIPACOQUE;Centro Esperanza;175;1616;10.83
-TIPACOQUE;Partido Liberal Colombiano;236;1616;14.6
+TIPACOQUE;Pacto Histórico;182;1616;11.26
+TIPACOQUE;Partido Liberal Colombiano;54;1616;3.34
 TIPACOQUE;Partido Somos;4;1616;0.25
 TIPACOQUE;Todos Somos Colombia;9;1616;0.56
 TOCA;Centro Democrático;1731;3615;47.88
 TOCA;Centro Esperanza;902;3615;24.95
-TOCA;Partido Liberal Colombiano;965;3615;26.69
+TOCA;Pacto Histórico;891;3615;24.65
+TOCA;Partido Liberal Colombiano;74;3615;2.05
 TOCA;Partido Somos;6;3615;0.17
 TOCA;Todos Somos Colombia;11;3615;0.3
 TOGUI;Centro Democrático;1432;1952;73.36
 TOGUI;Centro Esperanza;221;1952;11.32
-TOGUI;Partido Liberal Colombiano;288;1952;14.75
+TOGUI;Pacto Histórico;226;1952;11.58
+TOGUI;Partido Liberal Colombiano;62;1952;3.18
 TOGUI;Partido Somos;6;1952;0.31
 TOGUI;Todos Somos Colombia;5;1952;0.26
 TOPAGA;Centro Democrático;1031;1916;53.81
 TOPAGA;Centro Esperanza;438;1916;22.86
-TOPAGA;Partido Liberal Colombiano;441;1916;23.02
+TOPAGA;Pacto Histórico;417;1916;21.76
+TOPAGA;Partido Liberal Colombiano;24;1916;1.25
 TOPAGA;Todos Somos Colombia;6;1916;0.31
 TOTA;Centro Democrático;1277;1667;76.6
 TOTA;Centro Esperanza;166;1667;9.96
-TOTA;Partido Liberal Colombiano;208;1667;12.48
+TOTA;Pacto Histórico;194;1667;11.64
+TOTA;Partido Liberal Colombiano;14;1667;0.84
 TOTA;Partido Somos;8;1667;0.48
 TOTA;Todos Somos Colombia;8;1667;0.48
 TUNJA;Centro Democrático;22388;80150;27.93
 TUNJA;Centro Esperanza;32035;80150;39.97
-TUNJA;Partido Liberal Colombiano;25328;80150;31.6
+TUNJA;Pacto Histórico;23151;80150;28.88
+TUNJA;Partido Liberal Colombiano;2177;80150;2.72
 TUNJA;Partido Somos;130;80150;0.16
 TUNJA;Todos Somos Colombia;269;80150;0.34
 TUNUNGUA;Centro Democrático;407;689;59.07
 TUNUNGUA;Centro Esperanza;68;689;9.87
-TUNUNGUA;Partido Liberal Colombiano;204;689;29.61
+TUNUNGUA;Pacto Histórico;184;689;26.71
+TUNUNGUA;Partido Liberal Colombiano;20;689;2.9
 TUNUNGUA;Partido Somos;6;689;0.87
 TUNUNGUA;Todos Somos Colombia;4;689;0.58
 TURMEQUE;Centro Democrático;947;2445;38.73
 TURMEQUE;Centro Esperanza;854;2445;34.93
-TURMEQUE;Partido Liberal Colombiano;632;2445;25.85
+TURMEQUE;Pacto Histórico;531;2445;21.72
+TURMEQUE;Partido Liberal Colombiano;101;2445;4.13
 TURMEQUE;Partido Somos;7;2445;0.29
 TURMEQUE;Todos Somos Colombia;5;2445;0.2
 TUTA;Centro Democrático;1734;4329;40.06
 TUTA;Centro Esperanza;1477;4329;34.12
-TUTA;Partido Liberal Colombiano;1106;4329;25.55
+TUTA;Pacto Histórico;989;4329;22.85
+TUTA;Partido Liberal Colombiano;117;4329;2.7
 TUTA;Partido Somos;6;4329;0.14
 TUTA;Todos Somos Colombia;6;4329;0.14
 TUTAZA;Centro Democrático;478;1008;47.42
 TUTAZA;Centro Esperanza;175;1008;17.36
-TUTAZA;Partido Liberal Colombiano;342;1008;33.93
+TUTAZA;Pacto Histórico;314;1008;31.15
+TUTAZA;Partido Liberal Colombiano;28;1008;2.78
 TUTAZA;Partido Somos;9;1008;0.89
 TUTAZA;Todos Somos Colombia;4;1008;0.4
 UMBITA;Centro Democrático;2218;3190;69.53
 UMBITA;Centro Esperanza;427;3190;13.39
-UMBITA;Partido Liberal Colombiano;534;3190;16.74
+UMBITA;Pacto Histórico;503;3190;15.77
+UMBITA;Partido Liberal Colombiano;31;3190;0.97
 UMBITA;Partido Somos;4;3190;0.13
 UMBITA;Todos Somos Colombia;7;3190;0.22
 VENTAQUEMADA;Centro Democrático;2201;5309;41.46
 VENTAQUEMADA;Centro Esperanza;1302;5309;24.52
-VENTAQUEMADA;Partido Liberal Colombiano;1775;5309;33.43
+VENTAQUEMADA;Pacto Histórico;1673;5309;31.51
+VENTAQUEMADA;Partido Liberal Colombiano;102;5309;1.92
 VENTAQUEMADA;Partido Somos;12;5309;0.23
 VENTAQUEMADA;Todos Somos Colombia;19;5309;0.36
 VILLA DE LEYVA;Centro Democrático;3421;7437;46.0
 VILLA DE LEYVA;Centro Esperanza;2585;7437;34.76
-VILLA DE LEYVA;Partido Liberal Colombiano;1400;7437;18.82
+VILLA DE LEYVA;Pacto Histórico;1280;7437;17.21
+VILLA DE LEYVA;Partido Liberal Colombiano;120;7437;1.61
 VILLA DE LEYVA;Partido Somos;15;7437;0.2
 VILLA DE LEYVA;Todos Somos Colombia;16;7437;0.22
 VIRACACHA;Centro Democrático;934;1311;71.24
 VIRACACHA;Centro Esperanza;189;1311;14.42
-VIRACACHA;Partido Liberal Colombiano;176;1311;13.42
+VIRACACHA;Pacto Histórico;159;1311;12.13
+VIRACACHA;Partido Liberal Colombiano;17;1311;1.3
 VIRACACHA;Partido Somos;3;1311;0.23
 VIRACACHA;Todos Somos Colombia;9;1311;0.69
 ZETAQUIRA;Centro Democrático;1261;1990;63.37
 ZETAQUIRA;Centro Esperanza;265;1990;13.32
-ZETAQUIRA;Partido Liberal Colombiano;452;1990;22.71
+ZETAQUIRA;Pacto Histórico;425;1990;21.36
+ZETAQUIRA;Partido Liberal Colombiano;27;1990;1.36
 ZETAQUIRA;Partido Somos;6;1990;0.3
 ZETAQUIRA;Todos Somos Colombia;6;1990;0.3
