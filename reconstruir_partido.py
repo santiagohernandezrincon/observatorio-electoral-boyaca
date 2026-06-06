@@ -47,6 +47,13 @@ NORMALIZAR = {
     'PARTIDO FUERZA ALTERNATIVA REVOLUCIONARIA DEL COMUN': 'Comunes',
     'COLOMBIA JUSTA LIBRES':                'Colombia Justa Libres',
     'GSC COLOMBIA JUSTA LIBRES':            'Colombia Justa Libres',
+    'PARTIDO COLOMBIA JUSTA LIBRES':        'Colombia Justa Libres',
+    'PARTIDO ASI':                          'Alianza Social Independiente',
+    'PARTIDO A.S.I.':                       'Alianza Social Independiente',
+    'JUNTOS #ESMOMENTO':                    'Centro Democrático',
+    'JUNTOS ES EL MOMENTO':                 'Centro Democrático',
+    'GRAN ALIANZA POR BOYACA':              'Alianza Verde',
+    'GRAN ALIANZA POR BOYACÁ':              'Alianza Verde',
     'LIGA DE GOBERNANTES':                  'Liga de Gobernantes',
     'LIGA DE GOBERNANTES ANTICORRUPCION':   'Liga de Gobernantes',
     'LIGA DE GOBERNANTES ANTICORRUPCIÓN':   'Liga de Gobernantes',
@@ -97,6 +104,8 @@ NORMALIZAR = {
     'VOTOS EN BLANCO INDIGENAS':'__SKIP__',
     'PROMOTORES VOTO EN BLANCO':'__SKIP__',
 }
+# Fix 2: colapsar doble espacio en claves para que norm_str() las encuentre
+NORMALIZAR = {re.sub(r'\s+', ' ', k).strip(): v for k, v in NORMALIZAR.items()}
 
 CANDIDATOS_MAP = {
     'JUAN MANUEL SANTOS CALDERON':          'Partido de la U',
@@ -140,6 +149,7 @@ CANDIDATOS_MAP = {
     'JOSE GIOVANY PINZON BAEZ':             'MAIS',
     'RODRIGO ARTURO ROJAS':                 'Partido Liberal Colombiano',
     'GIOVANNY PINZON':                      'Pacto Histórico',
+    'ALFONSO MIGUEL SILVA PESCA':           'Partido Conservador Colombiano',
 }
 
 MUN_FIX = {
@@ -156,6 +166,14 @@ def norm_str(s):
     return re.sub(r'\s+', ' ', strip_accents(str(s)).upper().strip())
 
 def normalizar_partido(par_raw, cand_raw=''):
+    # Fix 1: guard NaN / vacío
+    try:
+        if pd.isna(par_raw):
+            return None
+    except (TypeError, ValueError):
+        pass
+    if str(par_raw).strip() in ('', 'nan', 'NaN', 'none', 'None'):
+        return None
     if cand_raw:
         cu = norm_str(cand_raw)
         for k, v in CANDIDATOS_MAP.items():
@@ -198,6 +216,7 @@ for f_cand in candidato_files:
                          or c.upper() == 'PARTIDO'), None)
         col_cand = next((c for c in dc.columns
                          if 'CANTNOMBRE' in c.upper()
+                         or 'CANNOMBRE' in c.upper()
                          or ('CAND' in c.upper()
                              and 'NOMBRE' in c.upper())), None)
         col_mun  = next((c for c in dc.columns

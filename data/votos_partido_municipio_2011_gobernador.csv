@@ -1,247 +1,370 @@
 MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
-ALMEIDA;Alianza Verde;43;186;23.12
-ALMEIDA;Partido Liberal Colombiano;143;186;76.88
-AQUITANIA;Alianza Verde;4178;5257;79.47
-AQUITANIA;Partido Liberal Colombiano;1079;5257;20.53
-ARCABUCO;Alianza Verde;352;959;36.7
-ARCABUCO;Partido Liberal Colombiano;607;959;63.3
-BELEN;Alianza Verde;675;2008;33.62
-BELEN;Partido Liberal Colombiano;1333;2008;66.38
-BERBEO;Alianza Verde;565;587;96.25
-BERBEO;Partido Liberal Colombiano;22;587;3.75
-BETEITIVA;Alianza Verde;282;348;81.03
-BETEITIVA;Partido Liberal Colombiano;66;348;18.97
-BOAVITA;Alianza Verde;1262;2247;56.16
-BOAVITA;Partido Liberal Colombiano;985;2247;43.84
-BOYACA;Alianza Verde;211;299;70.57
-BOYACA;Partido Liberal Colombiano;88;299;29.43
-BRICENO;Alianza Verde;120;623;19.26
-BRICENO;Partido Liberal Colombiano;503;623;80.74
-BUENAVISTA;Alianza Verde;167;545;30.64
-BUENAVISTA;Partido Liberal Colombiano;378;545;69.36
-BUSBANZA;Alianza Verde;72;265;27.17
-BUSBANZA;Partido Liberal Colombiano;193;265;72.83
-CALDAS;Alianza Verde;212;694;30.55
-CALDAS;Partido Liberal Colombiano;482;694;69.45
-CAMPOHERMOSO;Alianza Verde;86;277;31.05
-CAMPOHERMOSO;Partido Liberal Colombiano;191;277;68.95
-CERINZA;Alianza Verde;592;1244;47.59
-CERINZA;Partido Liberal Colombiano;652;1244;52.41
-CHINAVITA;Alianza Verde;962;1152;83.51
-CHINAVITA;Partido Liberal Colombiano;190;1152;16.49
-CHIQUINQUIRA;Alianza Verde;2798;9745;28.71
-CHIQUINQUIRA;Partido Liberal Colombiano;6947;9745;71.29
-CHIQUIZA;Alianza Verde;812;918;88.45
-CHIQUIZA;Partido Liberal Colombiano;106;918;11.55
-CHISCAS;Alianza Verde;678;798;84.96
-CHISCAS;Partido Liberal Colombiano;120;798;15.04
-CHITA;Alianza Verde;413;1148;35.98
-CHITA;Partido Liberal Colombiano;735;1148;64.02
-CHITARAQUE;Alianza Verde;39;340;11.47
-CHITARAQUE;Partido Liberal Colombiano;301;340;88.53
-CHIVATA;Alianza Verde;731;911;80.24
-CHIVATA;Partido Liberal Colombiano;180;911;19.76
-CHIVOR;Alianza Verde;432;877;49.26
-CHIVOR;Partido Liberal Colombiano;445;877;50.74
-CIENEGA;Alianza Verde;499;1259;39.63
-CIENEGA;Partido Liberal Colombiano;760;1259;60.37
-COMBITA;Alianza Verde;1444;2516;57.39
-COMBITA;Partido Liberal Colombiano;1072;2516;42.61
-COPER;Alianza Verde;331;846;39.13
-COPER;Partido Liberal Colombiano;515;846;60.87
-CORRALES;Alianza Verde;176;255;69.02
-CORRALES;Partido Liberal Colombiano;79;255;30.98
-COVARACHIA;Alianza Verde;473;633;74.72
-COVARACHIA;Partido Liberal Colombiano;160;633;25.28
-CUBARA;Alianza Verde;967;1380;70.07
-CUBARA;Partido Liberal Colombiano;413;1380;29.93
-CUCAITA;Alianza Verde;675;1010;66.83
-CUCAITA;Partido Liberal Colombiano;335;1010;33.17
-CUITIVA;Alianza Verde;261;498;52.41
-CUITIVA;Partido Liberal Colombiano;237;498;47.59
-DUITAMA;Alianza Verde;21231;25939;81.85
-DUITAMA;Partido Liberal Colombiano;4708;25939;18.15
-EL COCUY;Alianza Verde;64;1085;5.9
-EL COCUY;Partido Liberal Colombiano;1021;1085;94.1
-EL ESPINO;Alianza Verde;142;691;20.55
-EL ESPINO;Partido Liberal Colombiano;549;691;79.45
-FIRAVITOBA;Alianza Verde;460;1406;32.72
-FIRAVITOBA;Partido Liberal Colombiano;946;1406;67.28
-FLORESTA;Alianza Verde;695;1397;49.75
-FLORESTA;Partido Liberal Colombiano;702;1397;50.25
-GACHANTIVA;Alianza Verde;340;666;51.05
-GACHANTIVA;Partido Liberal Colombiano;326;666;48.95
-GAMEZA;Alianza Verde;359;870;41.26
-GAMEZA;Partido Liberal Colombiano;511;870;58.74
-GARAGOA;Alianza Verde;1483;3101;47.82
-GARAGOA;Partido Liberal Colombiano;1618;3101;52.18
-GUACAMAYAS;Alianza Verde;16;938;1.71
-GUACAMAYAS;Partido Liberal Colombiano;922;938;98.29
-GUATEQUE;Alianza Verde;447;961;46.51
-GUATEQUE;Partido Liberal Colombiano;514;961;53.49
-GUAYATA;Alianza Verde;32;1131;2.83
-GUAYATA;Partido Liberal Colombiano;1099;1131;97.17
-GUICAN DE LA SIERRA;Alianza Verde;399;1295;30.81
-GUICAN DE LA SIERRA;Partido Liberal Colombiano;896;1295;69.19
-IZA;Alianza Verde;373;497;75.05
-IZA;Partido Liberal Colombiano;124;497;24.95
-JENESANO;Alianza Verde;355;446;79.6
-JENESANO;Partido Liberal Colombiano;91;446;20.4
-JERICO;Alianza Verde;628;1525;41.18
-JERICO;Partido Liberal Colombiano;897;1525;58.82
-LA CAPILLA;Alianza Verde;185;886;20.88
-LA CAPILLA;Partido Liberal Colombiano;701;886;79.12
-LA UVITA;Alianza Verde;487;949;51.32
-LA UVITA;Partido Liberal Colombiano;462;949;48.68
-LA VICTORIA;Alianza Verde;196;219;89.5
-LA VICTORIA;Partido Liberal Colombiano;23;219;10.5
-LABRANZAGRANDE;Alianza Verde;685;1230;55.69
-LABRANZAGRANDE;Partido Liberal Colombiano;545;1230;44.31
-MACANAL;Alianza Verde;171;901;18.98
-MACANAL;Partido Liberal Colombiano;730;901;81.02
-MARIPI;Alianza Verde;1223;1974;61.96
-MARIPI;Partido Liberal Colombiano;751;1974;38.04
-MIRAFLORES;Alianza Verde;1244;1441;86.33
-MIRAFLORES;Partido Liberal Colombiano;197;1441;13.67
-MONGUA;Alianza Verde;646;1163;55.55
-MONGUA;Partido Liberal Colombiano;517;1163;44.45
-MONGUI;Alianza Verde;481;812;59.24
-MONGUI;Partido Liberal Colombiano;331;812;40.76
-MONIQUIRA;Alianza Verde;1005;3686;27.27
-MONIQUIRA;Partido Liberal Colombiano;2681;3686;72.73
-MOTAVITA;Alianza Verde;443;683;64.86
-MOTAVITA;Partido Liberal Colombiano;240;683;35.14
-MUZO;Alianza Verde;689;1607;42.87
-MUZO;Partido Liberal Colombiano;918;1607;57.13
-NOBSA;Alianza Verde;2073;2759;75.14
-NOBSA;Partido Liberal Colombiano;686;2759;24.86
-NUEVO COLON;Alianza Verde;805;1002;80.34
-NUEVO COLON;Partido Liberal Colombiano;197;1002;19.66
-OICATA;Alianza Verde;265;517;51.26
-OICATA;Partido Liberal Colombiano;252;517;48.74
-OTANCHE;Alianza Verde;539;1056;51.04
-OTANCHE;Partido Liberal Colombiano;517;1056;48.96
-PACHAVITA;Alianza Verde;252;583;43.22
-PACHAVITA;Partido Liberal Colombiano;331;583;56.78
-PAEZ;Alianza Verde;153;169;90.53
-PAEZ;Partido Liberal Colombiano;16;169;9.47
-PAIPA;Alianza Verde;5366;7826;68.57
-PAIPA;Partido Liberal Colombiano;2460;7826;31.43
-PAJARITO;Alianza Verde;45;88;51.14
-PAJARITO;Partido Liberal Colombiano;43;88;48.86
-PANQUEBA;Alianza Verde;23;673;3.42
-PANQUEBA;Partido Liberal Colombiano;650;673;96.58
-PAUNA;Alianza Verde;211;1572;13.42
-PAUNA;Partido Liberal Colombiano;1361;1572;86.58
-PAYA;Alianza Verde;547;795;68.81
-PAYA;Partido Liberal Colombiano;248;795;31.19
-PAZ DE RIO;Alianza Verde;958;1290;74.26
-PAZ DE RIO;Partido Liberal Colombiano;332;1290;25.74
-PESCA;Alianza Verde;1314;1879;69.93
-PESCA;Partido Liberal Colombiano;565;1879;30.07
-PISBA;Alianza Verde;449;651;68.97
-PISBA;Partido Liberal Colombiano;202;651;31.03
-PUERTO BOYACA;Alianza Verde;3005;4246;70.77
-PUERTO BOYACA;Partido Liberal Colombiano;1241;4246;29.23
-QUIPAMA;Alianza Verde;1308;1471;88.92
-QUIPAMA;Partido Liberal Colombiano;163;1471;11.08
-RAMIRIQUI;Alianza Verde;306;1189;25.74
-RAMIRIQUI;Partido Liberal Colombiano;883;1189;74.26
-RAQUIRA;Alianza Verde;924;1159;79.72
-RAQUIRA;Partido Liberal Colombiano;235;1159;20.28
-RONDON;Alianza Verde;109;604;18.05
-RONDON;Partido Liberal Colombiano;495;604;81.95
-SABOYA;Alianza Verde;850;3478;24.44
-SABOYA;Partido Liberal Colombiano;2628;3478;75.56
-SACHICA;Alianza Verde;688;886;77.65
-SACHICA;Partido Liberal Colombiano;198;886;22.35
-SAMACA;Alianza Verde;4028;4210;95.68
-SAMACA;Partido Liberal Colombiano;182;4210;4.32
-SAN EDUARDO;Alianza Verde;94;178;52.81
-SAN EDUARDO;Partido Liberal Colombiano;84;178;47.19
-SAN JOSE DE PARE;Alianza Verde;454;1043;43.53
-SAN JOSE DE PARE;Partido Liberal Colombiano;589;1043;56.47
-SAN LUIS DE GACENO;Alianza Verde;482;1297;37.16
-SAN LUIS DE GACENO;Partido Liberal Colombiano;815;1297;62.84
-SAN MATEO;Alianza Verde;413;1426;28.96
-SAN MATEO;Partido Liberal Colombiano;1013;1426;71.04
-SAN MIGUEL DE SEMA;Alianza Verde;38;600;6.33
-SAN MIGUEL DE SEMA;Partido Liberal Colombiano;562;600;93.67
-SAN PABLO DE BORBUR;Alianza Verde;420;1306;32.16
-SAN PABLO DE BORBUR;Partido Liberal Colombiano;886;1306;67.84
-SANTA MARIA;Alianza Verde;194;560;34.64
-SANTA MARIA;Partido Liberal Colombiano;366;560;65.36
-SANTA ROSA DE VITERBO;Alianza Verde;1632;2404;67.89
-SANTA ROSA DE VITERBO;Partido Liberal Colombiano;772;2404;32.11
-SANTA SOFIA;Alianza Verde;212;1017;20.85
-SANTA SOFIA;Partido Liberal Colombiano;805;1017;79.15
-SANTANA;Alianza Verde;254;730;34.79
-SANTANA;Partido Liberal Colombiano;476;730;65.21
-SATIVANORTE;Alianza Verde;390;1054;37.0
-SATIVANORTE;Partido Liberal Colombiano;664;1054;63.0
-SATIVASUR;Alianza Verde;48;428;11.21
-SATIVASUR;Partido Liberal Colombiano;380;428;88.79
-SIACHOQUE;Alianza Verde;1878;2607;72.04
-SIACHOQUE;Partido Liberal Colombiano;729;2607;27.96
-SOATA;Alianza Verde;640;2328;27.49
-SOATA;Partido Liberal Colombiano;1688;2328;72.51
-SOCHA;Alianza Verde;715;1812;39.46
-SOCHA;Partido Liberal Colombiano;1097;1812;60.54
-SOCOTA;Alianza Verde;722;1081;66.79
-SOCOTA;Partido Liberal Colombiano;359;1081;33.21
-SOGAMOSO;Alianza Verde;9779;13848;70.62
-SOGAMOSO;Partido Liberal Colombiano;4069;13848;29.38
-SOMONDOCO;Alianza Verde;151;875;17.26
-SOMONDOCO;Partido Liberal Colombiano;724;875;82.74
-SORA;Alianza Verde;611;746;81.9
-SORA;Partido Liberal Colombiano;135;746;18.1
-SORACA;Alianza Verde;1509;1751;86.18
-SORACA;Partido Liberal Colombiano;242;1751;13.82
-SOTAQUIRA;Alianza Verde;1281;1968;65.09
-SOTAQUIRA;Partido Liberal Colombiano;687;1968;34.91
-SUSACON;Alianza Verde;195;1115;17.49
-SUSACON;Partido Liberal Colombiano;920;1115;82.51
-SUTAMARCHAN;Alianza Verde;806;1795;44.9
-SUTAMARCHAN;Partido Liberal Colombiano;989;1795;55.1
-SUTATENZA;Alianza Verde;259;745;34.77
-SUTATENZA;Partido Liberal Colombiano;486;745;65.23
-TASCO;Alianza Verde;487;635;76.69
-TASCO;Partido Liberal Colombiano;148;635;23.31
-TENZA;Alianza Verde;173;1387;12.47
-TENZA;Partido Liberal Colombiano;1214;1387;87.53
-TIBANA;Alianza Verde;236;425;55.53
-TIBANA;Partido Liberal Colombiano;189;425;44.47
-TIBASOSA;Alianza Verde;1716;2648;64.8
-TIBASOSA;Partido Liberal Colombiano;932;2648;35.2
-TINJACA;Alianza Verde;234;926;25.27
-TINJACA;Partido Liberal Colombiano;692;926;74.73
-TIPACOQUE;Alianza Verde;660;756;87.3
-TIPACOQUE;Partido Liberal Colombiano;96;756;12.7
-TOCA;Alianza Verde;743;1928;38.54
-TOCA;Partido Liberal Colombiano;1185;1928;61.46
-TOGUI;Alianza Verde;44;1054;4.17
-TOGUI;Partido Liberal Colombiano;1010;1054;95.83
-TOPAGA;Alianza Verde;277;660;41.97
-TOPAGA;Partido Liberal Colombiano;383;660;58.03
-TOTA;Alianza Verde;355;862;41.18
-TOTA;Partido Liberal Colombiano;507;862;58.82
-TUNJA;Alianza Verde;16071;30451;52.78
-TUNJA;Partido Liberal Colombiano;14380;30451;47.22
-TUNUNGUA;Alianza Verde;92;104;88.46
-TUNUNGUA;Partido Liberal Colombiano;12;104;11.54
-TURMEQUE;Alianza Verde;553;659;83.92
-TURMEQUE;Partido Liberal Colombiano;106;659;16.08
-TUTA;Alianza Verde;771;2418;31.89
-TUTA;Partido Liberal Colombiano;1647;2418;68.11
-TUTAZA;Alianza Verde;395;570;69.3
-TUTAZA;Partido Liberal Colombiano;175;570;30.7
-UMBITA;Alianza Verde;1104;2694;40.98
-UMBITA;Partido Liberal Colombiano;1590;2694;59.02
-VENTAQUEMADA;Alianza Verde;1746;3324;52.53
-VENTAQUEMADA;Partido Liberal Colombiano;1578;3324;47.47
-VILLA DE LEYVA;Alianza Verde;1185;1591;74.48
-VILLA DE LEYVA;Partido Liberal Colombiano;406;1591;25.52
-VIRACACHA;Alianza Verde;141;931;15.15
-VIRACACHA;Partido Liberal Colombiano;790;931;84.85
-ZETAQUIRA;Alianza Verde;444;622;71.38
-ZETAQUIRA;Partido Liberal Colombiano;178;622;28.62
+ALMEIDA;Centro Democrático;43;1174;3.66
+ALMEIDA;Partido Liberal Colombiano;143;1174;12.18
+ALMEIDA;Partido de la U;988;1174;84.16
+AQUITANIA;Centro Democrático;4178;7538;55.43
+AQUITANIA;Partido Liberal Colombiano;1079;7538;14.31
+AQUITANIA;Partido de la U;2281;7538;30.26
+ARCABUCO;Centro Democrático;352;2709;12.99
+ARCABUCO;Partido Liberal Colombiano;607;2709;22.41
+ARCABUCO;Partido de la U;1750;2709;64.6
+BELEN;Centro Democrático;675;4174;16.17
+BELEN;Partido Liberal Colombiano;1333;4174;31.94
+BELEN;Partido de la U;2166;4174;51.89
+BERBEO;Centro Democrático;565;1047;53.96
+BERBEO;Partido Liberal Colombiano;22;1047;2.1
+BERBEO;Partido de la U;460;1047;43.94
+BETEITIVA;Centro Democrático;282;1260;22.38
+BETEITIVA;Partido Liberal Colombiano;66;1260;5.24
+BETEITIVA;Partido de la U;912;1260;72.38
+BOAVITA;Centro Democrático;1262;2967;42.53
+BOAVITA;Partido Liberal Colombiano;985;2967;33.2
+BOAVITA;Partido de la U;720;2967;24.27
+BOYACA;Centro Democrático;211;2447;8.62
+BOYACA;Partido Liberal Colombiano;88;2447;3.6
+BOYACA;Partido de la U;2148;2447;87.78
+BRICENO;Centro Democrático;120;1243;9.65
+BRICENO;Partido Liberal Colombiano;503;1243;40.47
+BRICENO;Partido de la U;620;1243;49.88
+BUENAVISTA;Centro Democrático;167;2469;6.76
+BUENAVISTA;Partido Liberal Colombiano;378;2469;15.31
+BUENAVISTA;Partido de la U;1924;2469;77.93
+BUSBANZA;Centro Democrático;72;546;13.19
+BUSBANZA;Partido Liberal Colombiano;193;546;35.35
+BUSBANZA;Partido de la U;281;546;51.47
+CALDAS;Centro Democrático;212;1623;13.06
+CALDAS;Partido Liberal Colombiano;482;1623;29.7
+CALDAS;Partido de la U;929;1623;57.24
+CAMPOHERMOSO;Centro Democrático;86;1621;5.31
+CAMPOHERMOSO;Partido Liberal Colombiano;191;1621;11.78
+CAMPOHERMOSO;Partido de la U;1344;1621;82.91
+CERINZA;Centro Democrático;592;2166;27.33
+CERINZA;Partido Liberal Colombiano;652;2166;30.1
+CERINZA;Partido de la U;922;2166;42.57
+CHINAVITA;Centro Democrático;962;1836;52.4
+CHINAVITA;Partido Liberal Colombiano;190;1836;10.35
+CHINAVITA;Partido de la U;684;1836;37.25
+CHIQUINQUIRA;Centro Democrático;2798;18954;14.76
+CHIQUINQUIRA;Partido Liberal Colombiano;6947;18954;36.65
+CHIQUINQUIRA;Partido de la U;9209;18954;48.59
+CHIQUIZA;Centro Democrático;812;3190;25.45
+CHIQUIZA;Partido Liberal Colombiano;106;3190;3.32
+CHIQUIZA;Partido de la U;2272;3190;71.22
+CHISCAS;Centro Democrático;678;2078;32.63
+CHISCAS;Partido Liberal Colombiano;120;2078;5.77
+CHISCAS;Partido de la U;1280;2078;61.6
+CHITA;Centro Democrático;413;3545;11.65
+CHITA;Partido Liberal Colombiano;735;3545;20.73
+CHITA;Partido de la U;2397;3545;67.62
+CHITARAQUE;Centro Democrático;39;3081;1.27
+CHITARAQUE;Partido Liberal Colombiano;301;3081;9.77
+CHITARAQUE;Partido de la U;2741;3081;88.96
+CHIVATA;Centro Democrático;731;1684;43.41
+CHIVATA;Partido Liberal Colombiano;180;1684;10.69
+CHIVATA;Partido de la U;773;1684;45.9
+CHIVOR;Centro Democrático;432;1074;40.22
+CHIVOR;Partido Liberal Colombiano;445;1074;41.43
+CHIVOR;Partido de la U;197;1074;18.34
+CIENEGA;Centro Democrático;499;2549;19.58
+CIENEGA;Partido Liberal Colombiano;760;2549;29.82
+CIENEGA;Partido de la U;1290;2549;50.61
+COMBITA;Centro Democrático;1444;5143;28.08
+COMBITA;Partido Liberal Colombiano;1072;5143;20.84
+COMBITA;Partido de la U;2627;5143;51.08
+COPER;Centro Democrático;331;1890;17.51
+COPER;Partido Liberal Colombiano;515;1890;27.25
+COPER;Partido de la U;1044;1890;55.24
+CORRALES;Centro Democrático;176;1568;11.22
+CORRALES;Partido Liberal Colombiano;79;1568;5.04
+CORRALES;Partido de la U;1313;1568;83.74
+COVARACHIA;Centro Democrático;473;1336;35.4
+COVARACHIA;Partido Liberal Colombiano;160;1336;11.98
+COVARACHIA;Partido de la U;703;1336;52.62
+CUBARA;Centro Democrático;967;1998;48.4
+CUBARA;Partido Liberal Colombiano;413;1998;20.67
+CUBARA;Partido de la U;618;1998;30.93
+CUCAITA;Centro Democrático;675;2119;31.85
+CUCAITA;Partido Liberal Colombiano;335;2119;15.81
+CUCAITA;Partido de la U;1109;2119;52.34
+CUITIVA;Centro Democrático;261;1191;21.91
+CUITIVA;Partido Liberal Colombiano;237;1191;19.9
+CUITIVA;Partido de la U;693;1191;58.19
+DUITAMA;Centro Democrático;21231;44910;47.27
+DUITAMA;Partido Liberal Colombiano;4708;44910;10.48
+DUITAMA;Partido de la U;18971;44910;42.24
+EL COCUY;Centro Democrático;64;2335;2.74
+EL COCUY;Partido Liberal Colombiano;1021;2335;43.73
+EL COCUY;Partido de la U;1250;2335;53.53
+EL ESPINO;Centro Democrático;142;1430;9.93
+EL ESPINO;Partido Liberal Colombiano;549;1430;38.39
+EL ESPINO;Partido de la U;739;1430;51.68
+FIRAVITOBA;Centro Democrático;460;3114;14.77
+FIRAVITOBA;Partido Liberal Colombiano;946;3114;30.38
+FIRAVITOBA;Partido de la U;1708;3114;54.85
+FLORESTA;Centro Democrático;695;2001;34.73
+FLORESTA;Partido Liberal Colombiano;702;2001;35.08
+FLORESTA;Partido de la U;604;2001;30.18
+GACHANTIVA;Centro Democrático;340;1744;19.5
+GACHANTIVA;Partido Liberal Colombiano;326;1744;18.69
+GACHANTIVA;Partido de la U;1078;1744;61.81
+GAMEZA;Centro Democrático;359;2444;14.69
+GAMEZA;Partido Liberal Colombiano;511;2444;20.91
+GAMEZA;Partido de la U;1574;2444;64.4
+GARAGOA;Centro Democrático;1483;6025;24.61
+GARAGOA;Partido Liberal Colombiano;1618;6025;26.85
+GARAGOA;Partido de la U;2924;6025;48.53
+GUACAMAYAS;Centro Democrático;16;1210;1.32
+GUACAMAYAS;Partido Liberal Colombiano;922;1210;76.2
+GUACAMAYAS;Partido de la U;272;1210;22.48
+GUATEQUE;Centro Democrático;447;4734;9.44
+GUATEQUE;Partido Liberal Colombiano;514;4734;10.86
+GUATEQUE;Partido de la U;3773;4734;79.7
+GUAYATA;Centro Democrático;32;2467;1.3
+GUAYATA;Partido Liberal Colombiano;1099;2467;44.55
+GUAYATA;Partido de la U;1336;2467;54.15
+GUICAN DE LA SIERRA;Centro Democrático;399;1861;21.44
+GUICAN DE LA SIERRA;Partido Liberal Colombiano;896;1861;48.15
+GUICAN DE LA SIERRA;Partido de la U;566;1861;30.41
+IZA;Centro Democrático;373;1277;29.21
+IZA;Partido Liberal Colombiano;124;1277;9.71
+IZA;Partido de la U;780;1277;61.08
+JENESANO;Centro Democrático;355;3116;11.39
+JENESANO;Partido Liberal Colombiano;91;3116;2.92
+JENESANO;Partido de la U;2670;3116;85.69
+JERICO;Centro Democrático;628;1868;33.62
+JERICO;Partido Liberal Colombiano;897;1868;48.02
+JERICO;Partido de la U;343;1868;18.36
+LA CAPILLA;Centro Democrático;185;1715;10.79
+LA CAPILLA;Partido Liberal Colombiano;701;1715;40.87
+LA CAPILLA;Partido de la U;829;1715;48.34
+LA UVITA;Centro Democrático;487;1635;29.79
+LA UVITA;Partido Liberal Colombiano;462;1635;28.26
+LA UVITA;Partido de la U;686;1635;41.96
+LA VICTORIA;Centro Democrático;196;754;25.99
+LA VICTORIA;Partido Liberal Colombiano;23;754;3.05
+LA VICTORIA;Partido de la U;535;754;70.95
+LABRANZAGRANDE;Centro Democrático;685;1661;41.24
+LABRANZAGRANDE;Partido Liberal Colombiano;545;1661;32.81
+LABRANZAGRANDE;Partido de la U;431;1661;25.95
+MACANAL;Centro Democrático;171;2151;7.95
+MACANAL;Partido Liberal Colombiano;730;2151;33.94
+MACANAL;Partido de la U;1250;2151;58.11
+MARIPI;Centro Democrático;1223;3884;31.49
+MARIPI;Partido Liberal Colombiano;751;3884;19.34
+MARIPI;Partido de la U;1910;3884;49.18
+MIRAFLORES;Centro Democrático;1244;4530;27.46
+MIRAFLORES;Partido Liberal Colombiano;197;4530;4.35
+MIRAFLORES;Partido de la U;3089;4530;68.19
+MONGUA;Centro Democrático;646;2643;24.44
+MONGUA;Partido Liberal Colombiano;517;2643;19.56
+MONGUA;Partido de la U;1480;2643;56.0
+MONGUI;Centro Democrático;481;2305;20.87
+MONGUI;Partido Liberal Colombiano;331;2305;14.36
+MONGUI;Partido de la U;1493;2305;64.77
+MONIQUIRA;Centro Democrático;1005;8168;12.3
+MONIQUIRA;Partido Liberal Colombiano;2681;8168;32.82
+MONIQUIRA;Partido de la U;4482;8168;54.87
+MOTAVITA;Centro Democrático;443;3071;14.43
+MOTAVITA;Partido Liberal Colombiano;240;3071;7.82
+MOTAVITA;Partido de la U;2388;3071;77.76
+MUZO;Centro Democrático;689;3547;19.42
+MUZO;Partido Liberal Colombiano;918;3547;25.88
+MUZO;Partido de la U;1940;3547;54.69
+NOBSA;Centro Democrático;2073;7932;26.13
+NOBSA;Partido Liberal Colombiano;686;7932;8.65
+NOBSA;Partido de la U;5173;7932;65.22
+NUEVO COLON;Centro Democrático;805;2872;28.03
+NUEVO COLON;Partido Liberal Colombiano;197;2872;6.86
+NUEVO COLON;Partido de la U;1870;2872;65.11
+OICATA;Centro Democrático;265;1592;16.65
+OICATA;Partido Liberal Colombiano;252;1592;15.83
+OICATA;Partido de la U;1075;1592;67.53
+OTANCHE;Centro Democrático;539;3396;15.87
+OTANCHE;Partido Liberal Colombiano;517;3396;15.22
+OTANCHE;Partido de la U;2340;3396;68.9
+PACHAVITA;Centro Democrático;252;1261;19.98
+PACHAVITA;Partido Liberal Colombiano;331;1261;26.25
+PACHAVITA;Partido de la U;678;1261;53.77
+PAEZ;Centro Democrático;153;1435;10.66
+PAEZ;Partido Liberal Colombiano;16;1435;1.11
+PAEZ;Partido de la U;1266;1435;88.22
+PAIPA;Centro Democrático;5366;14532;36.93
+PAIPA;Partido Liberal Colombiano;2460;14532;16.93
+PAIPA;Partido de la U;6706;14532;46.15
+PAJARITO;Centro Democrático;45;955;4.71
+PAJARITO;Partido Liberal Colombiano;43;955;4.5
+PAJARITO;Partido de la U;867;955;90.79
+PANQUEBA;Centro Democrático;23;941;2.44
+PANQUEBA;Partido Liberal Colombiano;650;941;69.08
+PANQUEBA;Partido de la U;268;941;28.48
+PAUNA;Centro Democrático;211;3678;5.74
+PAUNA;Partido Liberal Colombiano;1361;3678;37.0
+PAUNA;Partido de la U;2106;3678;57.26
+PAYA;Centro Democrático;547;916;59.72
+PAYA;Partido Liberal Colombiano;248;916;27.07
+PAYA;Partido de la U;121;916;13.21
+PAZ DE RIO;Centro Democrático;958;2591;36.97
+PAZ DE RIO;Partido Liberal Colombiano;332;2591;12.81
+PAZ DE RIO;Partido de la U;1301;2591;50.21
+PESCA;Centro Democrático;1314;3486;37.69
+PESCA;Partido Liberal Colombiano;565;3486;16.21
+PESCA;Partido de la U;1607;3486;46.1
+PISBA;Centro Democrático;449;696;64.51
+PISBA;Partido Liberal Colombiano;202;696;29.02
+PISBA;Partido de la U;45;696;6.47
+PUERTO BOYACA;Centro Democrático;3005;13884;21.64
+PUERTO BOYACA;Partido Liberal Colombiano;1241;13884;8.94
+PUERTO BOYACA;Partido de la U;9638;13884;69.42
+QUIPAMA;Centro Democrático;1308;2526;51.78
+QUIPAMA;Partido Liberal Colombiano;163;2526;6.45
+QUIPAMA;Partido de la U;1055;2526;41.77
+RAMIRIQUI;Centro Democrático;306;5035;6.08
+RAMIRIQUI;Partido Liberal Colombiano;883;5035;17.54
+RAMIRIQUI;Partido de la U;3846;5035;76.39
+RAQUIRA;Centro Democrático;924;2728;33.87
+RAQUIRA;Partido Liberal Colombiano;235;2728;8.61
+RAQUIRA;Partido de la U;1569;2728;57.51
+RONDON;Centro Democrático;109;1483;7.35
+RONDON;Partido Liberal Colombiano;495;1483;33.38
+RONDON;Partido de la U;879;1483;59.27
+SABOYA;Centro Democrático;850;5785;14.69
+SABOYA;Partido Liberal Colombiano;2628;5785;45.43
+SABOYA;Partido de la U;2307;5785;39.88
+SACHICA;Centro Democrático;688;2061;33.38
+SACHICA;Partido Liberal Colombiano;198;2061;9.61
+SACHICA;Partido de la U;1175;2061;57.01
+SAMACA;Centro Democrático;4028;7898;51.0
+SAMACA;Partido Liberal Colombiano;182;7898;2.3
+SAMACA;Partido de la U;3688;7898;46.7
+SAN EDUARDO;Centro Democrático;94;989;9.5
+SAN EDUARDO;Partido Liberal Colombiano;84;989;8.49
+SAN EDUARDO;Partido de la U;811;989;82.0
+SAN JOSE DE PARE;Centro Democrático;454;2916;15.57
+SAN JOSE DE PARE;Partido Liberal Colombiano;589;2916;20.2
+SAN JOSE DE PARE;Partido de la U;1873;2916;64.23
+SAN LUIS DE GACENO;Centro Democrático;482;2781;17.33
+SAN LUIS DE GACENO;Partido Liberal Colombiano;815;2781;29.31
+SAN LUIS DE GACENO;Partido de la U;1484;2781;53.36
+SAN MATEO;Centro Democrático;413;2286;18.07
+SAN MATEO;Partido Liberal Colombiano;1013;2286;44.31
+SAN MATEO;Partido de la U;860;2286;37.62
+SAN MIGUEL DE SEMA;Centro Democrático;38;1590;2.39
+SAN MIGUEL DE SEMA;Partido Liberal Colombiano;562;1590;35.35
+SAN MIGUEL DE SEMA;Partido de la U;990;1590;62.26
+SAN PABLO DE BORBUR;Centro Democrático;420;2835;14.81
+SAN PABLO DE BORBUR;Partido Liberal Colombiano;886;2835;31.25
+SAN PABLO DE BORBUR;Partido de la U;1529;2835;53.93
+SANTA MARIA;Centro Democrático;194;1904;10.19
+SANTA MARIA;Partido Liberal Colombiano;366;1904;19.22
+SANTA MARIA;Partido de la U;1344;1904;70.59
+SANTA ROSA DE VITERBO;Centro Democrático;1632;4847;33.67
+SANTA ROSA DE VITERBO;Partido Liberal Colombiano;772;4847;15.93
+SANTA ROSA DE VITERBO;Partido de la U;2443;4847;50.4
+SANTA SOFIA;Centro Democrático;212;1816;11.67
+SANTA SOFIA;Partido Liberal Colombiano;805;1816;44.33
+SANTA SOFIA;Partido de la U;799;1816;44.0
+SANTANA;Centro Democrático;254;3264;7.78
+SANTANA;Partido Liberal Colombiano;476;3264;14.58
+SANTANA;Partido de la U;2534;3264;77.63
+SATIVANORTE;Centro Democrático;390;1646;23.69
+SATIVANORTE;Partido Liberal Colombiano;664;1646;40.34
+SATIVANORTE;Partido de la U;592;1646;35.97
+SATIVASUR;Centro Democrático;48;856;5.61
+SATIVASUR;Partido Liberal Colombiano;380;856;44.39
+SATIVASUR;Partido de la U;428;856;50.0
+SIACHOQUE;Centro Democrático;1878;3813;49.25
+SIACHOQUE;Partido Liberal Colombiano;729;3813;19.12
+SIACHOQUE;Partido de la U;1206;3813;31.63
+SOATA;Centro Democrático;640;4576;13.99
+SOATA;Partido Liberal Colombiano;1688;4576;36.89
+SOATA;Partido de la U;2248;4576;49.13
+SOCHA;Centro Democrático;715;3439;20.79
+SOCHA;Partido Liberal Colombiano;1097;3439;31.9
+SOCHA;Partido de la U;1627;3439;47.31
+SOCOTA;Centro Democrático;722;3181;22.7
+SOCOTA;Partido Liberal Colombiano;359;3181;11.29
+SOCOTA;Partido de la U;2100;3181;66.02
+SOGAMOSO;Centro Democrático;9779;45168;21.65
+SOGAMOSO;Partido Liberal Colombiano;4069;45168;9.01
+SOGAMOSO;Partido de la U;31320;45168;69.34
+SOMONDOCO;Centro Democrático;151;1732;8.72
+SOMONDOCO;Partido Liberal Colombiano;724;1732;41.8
+SOMONDOCO;Partido de la U;857;1732;49.48
+SORA;Centro Democrático;611;1773;34.46
+SORA;Partido Liberal Colombiano;135;1773;7.61
+SORA;Partido de la U;1027;1773;57.92
+SORACA;Centro Democrático;1509;3462;43.59
+SORACA;Partido Liberal Colombiano;242;3462;6.99
+SORACA;Partido de la U;1711;3462;49.42
+SOTAQUIRA;Centro Democrático;1281;3252;39.39
+SOTAQUIRA;Partido Liberal Colombiano;687;3252;21.13
+SOTAQUIRA;Partido de la U;1284;3252;39.48
+SUSACON;Centro Democrático;195;1666;11.7
+SUSACON;Partido Liberal Colombiano;920;1666;55.22
+SUSACON;Partido de la U;551;1666;33.07
+SUTAMARCHAN;Centro Democrático;806;3187;25.29
+SUTAMARCHAN;Partido Liberal Colombiano;989;3187;31.03
+SUTAMARCHAN;Partido de la U;1392;3187;43.68
+SUTATENZA;Centro Democrático;259;1907;13.58
+SUTATENZA;Partido Liberal Colombiano;486;1907;25.49
+SUTATENZA;Partido de la U;1162;1907;60.93
+TASCO;Centro Democrático;487;3119;15.61
+TASCO;Partido Liberal Colombiano;148;3119;4.75
+TASCO;Partido de la U;2484;3119;79.64
+TENZA;Centro Democrático;173;2053;8.43
+TENZA;Partido Liberal Colombiano;1214;2053;59.13
+TENZA;Partido de la U;666;2053;32.44
+TIBANA;Centro Democrático;236;3988;5.92
+TIBANA;Partido Liberal Colombiano;189;3988;4.74
+TIBANA;Partido de la U;3563;3988;89.34
+TIBASOSA;Centro Democrático;1716;4837;35.48
+TIBASOSA;Partido Liberal Colombiano;932;4837;19.27
+TIBASOSA;Partido de la U;2189;4837;45.26
+TINJACA;Centro Democrático;234;1583;14.78
+TINJACA;Partido Liberal Colombiano;692;1583;43.71
+TINJACA;Partido de la U;657;1583;41.5
+TIPACOQUE;Centro Democrático;660;1835;35.97
+TIPACOQUE;Partido Liberal Colombiano;96;1835;5.23
+TIPACOQUE;Partido de la U;1079;1835;58.8
+TOCA;Centro Democrático;743;4606;16.13
+TOCA;Partido Liberal Colombiano;1185;4606;25.73
+TOCA;Partido de la U;2678;4606;58.14
+TOGUI;Centro Democrático;44;2275;1.93
+TOGUI;Partido Liberal Colombiano;1010;2275;44.4
+TOGUI;Partido de la U;1221;2275;53.67
+TOPAGA;Centro Democrático;277;1989;13.93
+TOPAGA;Partido Liberal Colombiano;383;1989;19.26
+TOPAGA;Partido de la U;1329;1989;66.82
+TOTA;Centro Democrático;355;2354;15.08
+TOTA;Partido Liberal Colombiano;507;2354;21.54
+TOTA;Partido de la U;1492;2354;63.38
+TUNJA;Centro Democrático;16071;58644;27.4
+TUNJA;Partido Liberal Colombiano;14380;58644;24.52
+TUNJA;Partido de la U;28193;58644;48.07
+TUNUNGUA;Centro Democrático;92;783;11.75
+TUNUNGUA;Partido Liberal Colombiano;12;783;1.53
+TUNUNGUA;Partido de la U;679;783;86.72
+TURMEQUE;Centro Democrático;553;3408;16.23
+TURMEQUE;Partido Liberal Colombiano;106;3408;3.11
+TURMEQUE;Partido de la U;2749;3408;80.66
+TUTA;Centro Democrático;771;4713;16.36
+TUTA;Partido Liberal Colombiano;1647;4713;34.95
+TUTA;Partido de la U;2295;4713;48.7
+TUTAZA;Centro Democrático;395;1246;31.7
+TUTAZA;Partido Liberal Colombiano;175;1246;14.04
+TUTAZA;Partido de la U;676;1246;54.25
+UMBITA;Centro Democrático;1104;3751;29.43
+UMBITA;Partido Liberal Colombiano;1590;3751;42.39
+UMBITA;Partido de la U;1057;3751;28.18
+VENTAQUEMADA;Centro Democrático;1746;6498;26.87
+VENTAQUEMADA;Partido Liberal Colombiano;1578;6498;24.28
+VENTAQUEMADA;Partido de la U;3174;6498;48.85
+VILLA DE LEYVA;Centro Democrático;1185;5758;20.58
+VILLA DE LEYVA;Partido Liberal Colombiano;406;5758;7.05
+VILLA DE LEYVA;Partido de la U;4167;5758;72.37
+VIRACACHA;Centro Democrático;141;1773;7.95
+VIRACACHA;Partido Liberal Colombiano;790;1773;44.56
+VIRACACHA;Partido de la U;842;1773;47.49
+ZETAQUIRA;Centro Democrático;444;2462;18.03
+ZETAQUIRA;Partido Liberal Colombiano;178;2462;7.23
+ZETAQUIRA;Partido de la U;1840;2462;74.74
