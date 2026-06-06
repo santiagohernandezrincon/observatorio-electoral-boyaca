@@ -43,6 +43,12 @@ const ABREV_PARTIDO = {
   'Partido PIN':                   'PIN',
   'Sí':                            'Sí',
   'No':                            'No',
+  'Salvación Nacional':            'Salvación Nac.',
+  'Con Toda por Colombia':         'Con Toda',
+  'Valientes':                     'Valientes',
+  'Colombia Renaciente':           'Col. Renaciente',
+  'Todos Somos Colombia':          'Todos Somos',
+  'Partido Somos':                 'P. Somos',
   'Partido sin identificar':       'Sin identificar',
 };
 

@@ -231,42 +231,135 @@ const NORMALIZAR_PARTIDO = {
   '20150608':'Partido Conservador Colombiano',
   // Corrección: 20130002 es MAIS, no CD (error en procesar_raw.py)
   '20130002':'MAIS',
+  // TODOS SOMOS COLOMBIA
+  'Todos Somos Colombia':'Todos Somos Colombia',
+  'TODOS SOMOS COLOMBIA':'Todos Somos Colombia',
+  // PARTIDO SOMOS
+  'Partido Somos':'Partido Somos',
+  'PARTIDO SOMOS':'Partido Somos',
+  'Somos Region Colombia':'Partido Somos',
+  'SOMOS REGION COLOMBIA':'Partido Somos',
+  'Somos Región Colombia':'Partido Somos',
+  // SALVACIÓN NACIONAL
+  'Salvación Nacional':'Salvación Nacional',
+  'Salvacion Nacional':'Salvación Nacional',
+  'SALVACIÓN NACIONAL':'Salvación Nacional',
+  'SALVACION NACIONAL':'Salvación Nacional',
+  'PARTIDO MOVIMIENTO DE SALVACION NACIONAL':'Salvación Nacional',
+  'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL':'Salvación Nacional',
+  'Movimiento De Salvacion Nacional':'Salvación Nacional',
+  // CON TODA POR COLOMBIA
+  'Con Toda por Colombia':'Con Toda por Colombia',
+  'CON TODA POR COLOMBIA':'Con Toda por Colombia',
+  'LA LISTA DE OVIEDO - CON TODA POR COLOMBIA':'Con Toda por Colombia',
+  // VALIENTES
+  'Valientes':'Valientes',
+  'VALIENTES':'Valientes',
+  // COLOMBIA RENACIENTE
+  'Colombia Renaciente':'Colombia Renaciente',
+  'COLOMBIA RENACIENTE':'Colombia Renaciente',
+  'PARTIDO COLOMBIA RENACIENTE':'Colombia Renaciente',
+  'Partido Colombia Renaciente':'Colombia Renaciente',
   // FALLBACK
   'Partido sin identificar':'Partido sin identificar',
   'Sin identificar':'Partido sin identificar',
 };
 
-// Lookup candidato → partido para cargos uninominales
-// Fuente: Registraduría Nacional. Formato: 'NOMBRE COMPLETO EN MAYUSCULAS'
+// Lookup candidato → partido para cargos uninominales.
+// Úsalo cuando el PARNOMBRE en el CSV sea un código numérico o esté mal asignado.
+// Fuente: Registraduría Nacional. Formato: CANNOMBRE exacto del CSV.
 const CANDIDATOS_PARTIDO = {
-  // GOBERNACIÓN BOYACÁ 2015
-  'CARLOS ANDRES AMAYA RODRIGUEZ':   'Alianza Verde',
-  'CARLOS ANDRÉS AMAYA RODRÍGUEZ':   'Alianza Verde',
-  'OSMAN HIPOLITO ROA SARMIENTO':    'Cambio Radical',
-  'OSMAN HIPÓLITO ROA SARMIENTO':    'Cambio Radical',
-  'CESAR AUGUSTO PACHON ACHURY':     'MAIS',
-  'CÉSAR AUGUSTO PACHÓN ACHURY':     'MAIS',
-  'GONZALO GUARIN VIVAS':            'Centro Democrático',
-  'GONZALO GUARÍN VIVAS':            'Centro Democrático',
-  'JUAN DE JESUS CORDOBA SUAREZ':    'Partido Conservador Colombiano',
-  'JUAN DE JESÚS CÓRDOBA SUÁREZ':    'Partido Conservador Colombiano',
-  // PRESIDENCIA 2018
-  'GUSTAVO FRANCISCO PETRO URREGO':  'Pacto Histórico',
-  'IVAN DUQUE MARQUEZ':              'Centro Democrático',
-  'IVÁN DUQUE MÁRQUEZ':              'Centro Democrático',
-  'SERGIO FAJARDO VALDERRAMA':       'Centro Esperanza',
-  'GERMAN VARGAS LLERAS':            'Cambio Radical',
-  'GERMÁN VARGAS LLERAS':            'Cambio Radical',
-  'JORGE ANTONIO TRUJILLO SALGADO':  'Partido Liberal Colombiano',
-  'VIVIANE MORALES HOYOS':           'Partido Liberal Colombiano',
-  'HUMBERTO DE LA CALLE LOMBANA':    'Partido Liberal Colombiano',
-  // PRESIDENCIA 2022
-  'GUSTAVO PETRO':                   'Pacto Histórico',
-  'FEDERICO GUTIERREZ ZULUAGA':      'Equipo por Colombia',
-  'FEDERICO GUTIÉRREZ ZULUAGA':      'Equipo por Colombia',
-  'RODOLFO HERNANDEZ SUAREZ':        'Liga de Gobernantes',
-  'RODOLFO HERNÁNDEZ SUÁREZ':        'Liga de Gobernantes',
-  // PRESIDENCIA 2026 (añadir cuando confirmes candidatos finales)
+  // ══ PRESIDENCIA 2010 — PARNOMBRE del CSV incorrecto para Petro y Vargas ══
+  'JUAN MANUEL SANTOS CALDERON':          'Partido de la U',
+  'JUAN MANUEL SANTOS CALDERÓN':          'Partido de la U',
+  'Juan Manuel Santos Calderon':          'Partido de la U',
+  'AURELIJUS RUTENIS ANTANAS MOCKUS SIVICKAS': 'Alianza Verde',
+  'Aurelijus Rutenis Antanas Mockus Sivickas': 'Alianza Verde',
+  'ANTANAS MOCKUS SIVICKAS':              'Alianza Verde',
+  'GERMAN VARGAS LLERAS':                 'Cambio Radical',
+  'GERMÁN VARGAS LLERAS':                 'Cambio Radical',
+  'German Vargas Lleras':                 'Cambio Radical',
+  'NOEMI SANIN POSADA':                   'Partido Conservador Colombiano',
+  'NOEMÍ SANÍN POSADA':                   'Partido Conservador Colombiano',
+  'MARTA NOEMI DEL ESPIRITU SANTO SANIN POSADA DE RUB': 'Partido Conservador Colombiano',
+  'Marta Noemi Del Espiritu Santo Sanin Posada De Rub': 'Partido Conservador Colombiano',
+  'RAFAEL PARDO RUEDA':                   'Partido Liberal Colombiano',
+  'Rafael Pardo Rueda':                   'Partido Liberal Colombiano',
+  'GUSTAVO FRANCISCO PETRO URREGO':       'Pacto Histórico',
+  'Gustavo Francisco Petro Urrego':       'Pacto Histórico',
+
+  // ══ PRESIDENCIA 2014 — PARNOMBRE incorrecto para Clara López y Martha Ramírez ══
+  'OSCAR IVAN ZULUAGA ESCOBAR':           'Centro Democrático',
+  'ÓSCAR IVÁN ZULUAGA ESCOBAR':           'Centro Democrático',
+  'Oscar Ivan Zuluaga Escobar':           'Centro Democrático',
+  'MARTHA LUCIA RAMIREZ BLANCO':          'Partido Conservador Colombiano',
+  'MARTHA LUCÍA RAMÍREZ BLANCO':          'Partido Conservador Colombiano',
+  'Martha Lucia Ramirez Blanco':          'Partido Conservador Colombiano',
+  'CLARA EUGENIA LOPEZ OBREGON':          'Polo Democrático Alternativo',
+  'CLARA EUGENIA LÓPEZ OBREGÓN':          'Polo Democrático Alternativo',
+  'Clara Eugenia Lopez Obregon':          'Polo Democrático Alternativo',
+  'ENRIQUE PENALOSA CAMARGO':             'Alianza Verde',
+  'ENRIQUE PEÑALOSA CAMARGO':             'Alianza Verde',
+  'Enrique Penalosa Camargo':             'Alianza Verde',
+  'ENRIQUE PENALOSA LONDONO':             'Alianza Verde',
+  'ENRIQUE PEÑALOSA LONDOÑO':             'Alianza Verde',
+
+  // ══ PRESIDENCIA 2018 — PARNOMBRE del CSV incorrecto para 5 candidatos ══
+  'IVAN DUQUE MARQUEZ':                   'Centro Democrático',
+  'IVÁN DUQUE MÁRQUEZ':                   'Centro Democrático',
+  'Ivan Duque Marquez':                   'Centro Democrático',
+  'SERGIO FAJARDO VALDERRAMA':            'Centro Esperanza',
+  'Sergio Fajardo Valderrama':            'Centro Esperanza',
+  'HUMBERTO DE LA CALLE LOMBANA':         'Partido Liberal Colombiano',
+  'Humberto De La Calle Lombana':         'Partido Liberal Colombiano',
+  'JORGE ANTONIO TRUJILLO SARMIENTO':     'Todos Somos Colombia',
+  'Jorge Antonio Trujillo Sarmiento':     'Todos Somos Colombia',
+  'VIVIANE ALEIDA MORALES HOYOS':         'Partido Somos',
+  'Viviane Aleida Morales Hoyos':         'Partido Somos',
+  'VIVIANE MORALES HOYOS':                'Partido Somos',
+
+  // ══ PRESIDENCIA 2022 ══
+  'RODOLFO HERNANDEZ SUAREZ':             'Liga de Gobernantes',
+  'RODOLFO HERNÁNDEZ SUÁREZ':             'Liga de Gobernantes',
+  'FEDERICO GUTIERREZ ZULUAGA':           'Equipo por Colombia',
+  'FEDERICO GUTIÉRREZ ZULUAGA':           'Equipo por Colombia',
+  'GUSTAVO PETRO':                        'Pacto Histórico',
+  'ENRIQUE GOMEZ MARTINEZ':              'Salvación Nacional',
+  'ENRIQUE GÓMEZ MARTÍNEZ':              'Salvación Nacional',
+
+  // ══ PRESIDENCIA 2026 ══
+  'ABELARDO DE LA ESPRIELLA OSORIO':      'Salvación Nacional',
+  'ABELARDO DE LA ESPRIELLA':             'Salvación Nacional',
+  'JUAN DANIEL OVIEDO ARANGO':            'Con Toda por Colombia',
+  'JUAN DANIEL OVIEDO':                   'Con Toda por Colombia',
+  'VICKY DAVILA HOYOS':                   'Valientes',
+  'VICKY DÁVILA HOYOS':                   'Valientes',
+  'VICTORIA EUGENIA DAVILA HOYOS':        'Valientes',
+  'JAIRO CRISTO CORREA':                  'Partido de la U',
+  'JAIRO CRISTO':                         'Partido de la U',
+  'PALOMA ANDREA VALENCIA LASERNA':       'Partido de la U',
+  'PALOMA VALENCIA LASERNA':              'Partido de la U',
+
+  // ══ GOBERNACIÓN BOYACÁ 2011 — código numérico 20110258 = Partido de la U ══
+  'JUAN CARLOS GRANADOS BECERRA':         'Partido de la U',
+  'Juan Carlos Granados Becerra':         'Partido de la U',
+
+  // ══ GOBERNACIÓN BOYACÁ 2015 — códigos 20150606/07/08; Pachón mal clasificado como CD ══
+  'CARLOS ANDRES AMAYA RODRIGUEZ':        'Alianza Verde',
+  'CARLOS ANDRÉS AMAYA RODRÍGUEZ':        'Alianza Verde',
+  'Carlos Andres Amaya Rodriguez':        'Alianza Verde',
+  'OSMAN HIPOLITO ROA SARMIENTO':         'Cambio Radical',
+  'OSMAN HIPÓLITO ROA SARMIENTO':         'Cambio Radical',
+  'Osman Hipolito Roa Sarmiento':         'Cambio Radical',
+  'CESAR AUGUSTO PACHON ACHURY':          'MAIS',
+  'CÉSAR AUGUSTO PACHÓN ACHURY':          'MAIS',
+  'Cesar Augusto Pachon Achury':          'MAIS',
+  'GONZALO GUARIN VIVAS':                 'Centro Democrático',
+  'GONZALO GUARÍN VIVAS':                 'Centro Democrático',
+  'Gonzalo Guarin Vivas':                 'Centro Democrático',
+  'JUAN DE JESUS CORDOBA SUAREZ':         'Partido Conservador Colombiano',
+  'JUAN DE JESÚS CÓRDOBA SUÁREZ':         'Partido Conservador Colombiano',
+  'Juan De Jesus Cordoba Suarez':         'Partido Conservador Colombiano',
 };
 
 const COLORES_PARTIDO = {
@@ -300,6 +393,12 @@ const COLORES_PARTIDO = {
   'Partido PIN':                   '#78909C',
   'Sí':                            '#43A047',
   'No':                            '#E53935',
+  'Todos Somos Colombia':          '#A1887F',
+  'Partido Somos':                 '#BCAAA4',
+  'Salvación Nacional':            '#1A237E',
+  'Con Toda por Colombia':         '#00838F',
+  'Valientes':                     '#0277BD',
+  'Colombia Renaciente':           '#26A69A',
   'Partido sin identificar':       '#9CA3AF',
 };
 

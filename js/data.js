@@ -295,6 +295,17 @@ function parseCandidatosCSV(text) {
     return result;
 }
 
+// ==================== RESOLUCIÓN DE PARTIDO ====================
+function resolverPartido(partidoRaw, nombreCandidato) {
+    if (nombreCandidato && typeof CANDIDATOS_PARTIDO !== 'undefined') {
+        const cu = String(nombreCandidato).toUpperCase().replace(/\s+/g, ' ').trim();
+        for (const k of Object.keys(CANDIDATOS_PARTIDO)) {
+            if (k.toUpperCase().replace(/\s+/g, ' ') === cu) return CANDIDATOS_PARTIDO[k];
+        }
+    }
+    return normalizePartido(String(partidoRaw || ''));
+}
+
 // ==================== CARGA PRINCIPAL ====================
 async function cargarDatos(anio, corporacion) {
     const archivos = archivosPorAnio[anio]?.[corporacion];
@@ -306,11 +317,11 @@ async function cargarDatos(anio, corporacion) {
                          'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));
         currentPartidoData = partidosFiltrados.map(row => {
-            const parNorm = normalizePartido(row['PARNOMBRE']);
+            const parNorm = resolverPartido(row['PARNOMBRE'], null);
             const colorBase = (row['PARTIDO_BASE'] && coloresBase[row['PARTIDO_BASE']])
                 ? coloresBase[row['PARTIDO_BASE']]
                 : colorPartido(parNorm);
-            return { ...row, PARNOMBRE: parNorm, COLOR_BASE: colorBase };
+            return { ...row, PARNOMBRE: parNorm, _partidoNorm: parNorm, COLOR_BASE: colorBase };
         });
         console.log(`Partidos cargados: ${currentPartidoData.length} filas`);
 
@@ -318,18 +329,21 @@ async function cargarDatos(anio, corporacion) {
         const csvCandidato = await respCandidato.text();
         currentCandidatoData = parseCandidatosCSV(csvCandidato)
             .filter(row => !excluir.includes(row['CANNOMBRE']))
-            .map(row => ({ ...row, PARNOMBRE: normalizePartido(row['PARNOMBRE']) }));
+            .map(row => {
+                const partidoNorm = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE']);
+                return { ...row, PARNOMBRE: partidoNorm, _partidoNorm: partidoNorm };
+            });
         console.log(`Candidatos cargados: ${currentCandidatoData.length} filas`);
 
         candidatoPartidoMap.clear();
         currentCandidatoData.forEach(row => {
             const n = row['CANNOMBRE'].toUpperCase().trim();
-            if (!candidatoPartidoMap.has(n)) candidatoPartidoMap.set(n, row['PARNOMBRE']);
+            if (!candidatoPartidoMap.has(n)) candidatoPartidoMap.set(n, row['_partidoNorm']);
         });
 
         ganadorPorPartidoPorMunicipio = {};
         currentCandidatoData.forEach(row => {
-            const partido = row['PARNOMBRE'];
+            const partido = row['_partidoNorm'];
             if (!partido) return;
             const mun = normalizarNombre(row['MUNNOMBRE']);
             if (!ganadorPorPartidoPorMunicipio[partido]) ganadorPorPartidoPorMunicipio[partido] = {};
