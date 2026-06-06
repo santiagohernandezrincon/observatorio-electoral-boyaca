@@ -1,7 +1,6 @@
 import pandas as pd, glob, os, re, unicodedata, sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# ── Normalización de partido ─────────────────────────────────────
 NORMALIZAR = {
     'PARTIDO LIBERAL COLOMBIANO':           'Partido Liberal Colombiano',
     'PARTIDO LIBERAL':                      'Partido Liberal Colombiano',
@@ -42,7 +41,7 @@ NORMALIZAR = {
     'PARTIDO OPCION CIUDADANA':             'Opción Ciudadana',
     'ALIANZA SOCIAL INDEPENDIENTE':         'Alianza Social Independiente',
     'PARTIDO ALIANZA SOCIAL INDEPENDIENTE': 'Alianza Social Independiente',
-    'ASI': 'Alianza Social Independiente',
+    'ASI':                                  'Alianza Social Independiente',
     'COMUNES':                              'Comunes',
     'PARTIDO COMUNES':                      'Comunes',
     'PARTIDO FUERZA ALTERNATIVA REVOLUCIONARIA DEL COMUN': 'Comunes',
@@ -63,13 +62,13 @@ NORMALIZAR = {
     'COALICION EQUIPO POR COLOMBIA':        'Equipo por Colombia',
     'GRAN CONSULTA POR COLOMBIA':           'Gran Consulta por Colombia',
     'LA GRAN CONSULTA POR COLOMBIA':        'Gran Consulta por Colombia',
-    'MAIS': 'MAIS',
+    'MAIS':                                 'MAIS',
     'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL  MAIS': 'MAIS',
-    'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL MAIS': 'MAIS',
-    'MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL MAIS': 'MAIS',
-    'CREEMOS': 'Creemos',
-    'PARTIDO POLITICO CREEMOS': 'Creemos',
-    'MIO': 'MIO',
+    'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL MAIS':  'MAIS',
+    'MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL MAIS':  'MAIS',
+    'CREEMOS':                              'Creemos',
+    'PARTIDO POLITICO CREEMOS':             'Creemos',
+    'MIO':                                  'MIO',
     'MOVIMIENTO DE INCLUSION Y OPORTUNIDADES': 'MIO',
     'NUEVO LIBERALISMO':                    'Nuevo Liberalismo',
     'PARTIDO NUEVO LIBERALISMO':            'Nuevo Liberalismo',
@@ -84,21 +83,19 @@ NORMALIZAR = {
     'SALVACION NACIONAL':                   'Salvación Nacional',
     'SALVACIÓN NACIONAL':                   'Salvación Nacional',
     'CON TODA POR COLOMBIA':                'Con Toda por Colombia',
-    'VALIENTES': 'Valientes',
+    'VALIENTES':                            'Valientes',
     'COLOMBIA RENACIENTE':                  'Colombia Renaciente',
     'TODOS SOMOS COLOMBIA':                 'Todos Somos Colombia',
     'PARTIDO SOMOS':                        'Partido Somos',
     'SOMOS REGION COLOMBIA':                'Partido Somos',
-    'AICO': 'AICO',
-    'SI': 'Sí', 'SÍ': 'Sí',
-    'NO': 'No',
-    # Junk → skip
-    'VOTOS NULOS': '__SKIP__',
-    'VOTOS EN BLANCO': '__SKIP__',
-    'CANDIDATOS TOTALES': '__SKIP__',
-    'TARJETAS NO MARCADAS': '__SKIP__',
-    'VOTOS EN BLANCO INDIGENAS': '__SKIP__',
-    'PROMOTORES VOTO EN BLANCO': '__SKIP__',
+    'AICO':                                 'AICO',
+    'SI': 'Sí', 'SÍ': 'Sí', 'NO': 'No',
+    'VOTOS NULOS':              '__SKIP__',
+    'VOTOS EN BLANCO':          '__SKIP__',
+    'CANDIDATOS TOTALES':       '__SKIP__',
+    'TARJETAS NO MARCADAS':     '__SKIP__',
+    'VOTOS EN BLANCO INDIGENAS':'__SKIP__',
+    'PROMOTORES VOTO EN BLANCO':'__SKIP__',
 }
 
 CANDIDATOS_MAP = {
@@ -131,7 +128,6 @@ CANDIDATOS_MAP = {
     'JAIRO CRISTO':                         'Partido de la U',
     'PALOMA ANDREA VALENCIA LASERNA':       'Centro Democrático',
     'PALOMA VALENCIA LASERNA':              'Centro Democrático',
-    # Gobernación Boyacá
     'JUAN CARLOS GRANADOS BECERRA':         'Partido de la U',
     'CARLOS ANDRES AMAYA RODRIGUEZ':        'Alianza Verde',
     'OSMAN HIPOLITO ROA SARMIENTO':         'Cambio Radical',
@@ -139,18 +135,13 @@ CANDIDATOS_MAP = {
     'GONZALO GUARIN VIVAS':                 'Centro Democrático',
     'JUAN DE JESUS CORDOBA SUAREZ':         'Partido Conservador Colombiano',
     'RAMIRO BARRAGAN ADAME':                'Alianza Verde',
-    'RAMIRO BARRAGÁN ADAME':                'Alianza Verde',
-    'JONATAN SANCHEZ':                      'Centro Democrático',
-    'JONATÁN SÁNCHEZ':                      'Centro Democrático',
     'JONATAN ANDRES SANCHEZ CUBIDES':       'Centro Democrático',
+    'JONATAN SANCHEZ':                      'Centro Democrático',
     'JOSE GIOVANY PINZON BAEZ':             'MAIS',
-    'JOSÉ GIOVANY PINZÓN BÁEZ':             'MAIS',
     'RODRIGO ARTURO ROJAS':                 'Partido Liberal Colombiano',
     'GIOVANNY PINZON':                      'Pacto Histórico',
-    'GIOVANNY PINZÓN':                      'Pacto Histórico',
 }
 
-# Normalización de municipios (fix Paz de Rio)
 MUN_FIX = {
     'PAZ DEL RIO':  'PAZ DE RIO',
     'PAZ DEL RÍO':  'PAZ DE RIO',
@@ -165,37 +156,24 @@ def norm_str(s):
     return re.sub(r'\s+', ' ', strip_accents(str(s)).upper().strip())
 
 def normalizar_partido(par_raw, cand_raw=''):
-    # 1. Por nombre de candidato
     if cand_raw:
         cu = norm_str(cand_raw)
         for k, v in CANDIDATOS_MAP.items():
             if norm_str(k) == cu:
                 return v
-
-    # 2. Por nombre/código de partido
     pu = norm_str(par_raw)
-
-    # Lookup directo
     if pu in NORMALIZAR:
         r = NORMALIZAR[pu]
         return None if r == '__SKIP__' else r
-
-    # Separador de coalición → primer partido reconocido
     if re.search(r'[-;]', pu):
         partes = re.split(r'\s*[-;]\s+|\s+-\s*', pu)
         pfx = r'^(COALICION|COALICIÓN|PARTIDO|PARTIDOS|MOVIMIENTO|GSC)\s+'
         for parte in partes:
             p = re.sub(pfx, '', parte.strip())
-            p2 = re.sub(pfx, '', pu)
-            for clave in [p, p2]:
-                if clave in NORMALIZAR and NORMALIZAR[clave] != '__SKIP__':
-                    return NORMALIZAR[clave]
-
-    # Código numérico → None (omitir)
+            if p in NORMALIZAR and NORMALIZAR[p] != '__SKIP__':
+                return NORMALIZAR[p]
     if re.match(r'^\d+$', pu):
         return None
-
-    # Desconocido → preservar capitalizado limpio
     return str(par_raw).strip() if str(par_raw).strip() else None
 
 def norm_mun(s):
@@ -204,16 +182,16 @@ def norm_mun(s):
 
 # ── Reconstrucción ───────────────────────────────────────────────
 candidato_files = sorted(glob.glob(
-    'data/**/votos_candidato_*.csv', recursive=True))
+    'data/votos_candidato_*.csv', recursive=False))
 
 reconstruidos, errores = 0, []
 
 for f_cand in candidato_files:
     f_part = f_cand.replace('votos_candidato_', 'votos_partido_')
-    if not os.path.exists(f_part):
-        continue
     try:
-        dc = pd.read_csv(f_cand, encoding='utf-8', low_memory=False, on_bad_lines='skip')
+        # FIX CRÍTICO: sep=';'
+        dc = pd.read_csv(f_cand, sep=';', encoding='utf-8',
+                         low_memory=False)
 
         col_par  = next((c for c in dc.columns
                          if 'PARNOMBRE' in c.upper()
@@ -238,7 +216,6 @@ for f_cand in candidato_files:
             errores.append(f"Columnas faltantes: {os.path.basename(f_cand)}")
             continue
 
-        # Normalizar partido y municipio
         dc['_partido'] = dc.apply(
             lambda r: normalizar_partido(
                 r[col_par]  if col_par  else '',
@@ -246,32 +223,28 @@ for f_cand in candidato_files:
             ), axis=1
         )
         dc['_mun'] = dc[col_mun].apply(norm_mun)
-        dc[col_vot] = pd.to_numeric(dc[col_vot], errors='coerce').fillna(0)
-
-        # Eliminar junk
+        dc[col_vot] = pd.to_numeric(dc[col_vot],
+                                    errors='coerce').fillna(0)
         dc = dc[dc['_partido'].notna()]
 
-        # Agregar por municipio + partido (elimina duplicados de casing)
         agg = (dc.groupby(['_mun', '_partido'])[col_vot]
-                 .sum()
-                 .reset_index())
-        agg.columns = ['MUNNOMBRE', 'PARNOMBRE', 'TOTALVOTOSVALIDOS']
+                 .sum().reset_index())
 
-        # Calcular PORCENTAJE por municipio
-        total_mun = agg.groupby('MUNNOMBRE')['TOTALVOTOSVALIDOS'].transform('sum')
-        agg['PORCENTAJE'] = (
-            agg['TOTALVOTOSVALIDOS'] / total_mun * 100
-        ).round(2)
-        agg['PORCENTAJE'] = agg['PORCENTAJE'].fillna(0)
+        # FIX: nombres de columna que espera JS
+        agg.columns = ['MUNNOMBRE', 'PARNOMBRE', 'VOTOS']
 
-        agg.to_csv(f_part, index=False, encoding='utf-8')
+        total_mun = agg.groupby('MUNNOMBRE')['VOTOS'].transform('sum')
+        agg['TOTAL_VOTOS'] = total_mun
+        agg['PORCENTAJE']  = (agg['VOTOS'] / total_mun * 100).round(2)
+        agg['PORCENTAJE']  = agg['PORCENTAJE'].fillna(0)
+
+        # FIX: sep=';' al escribir
+        agg.to_csv(f_part, index=False, sep=';', encoding='utf-8')
         reconstruidos += 1
 
-        # Verificación rápida
         n_sin_id = (agg['PARNOMBRE'] == 'Partido sin identificar').sum()
         print(f"✓ {os.path.basename(f_part)} "
-              f"| {len(agg)} filas "
-              f"| sin_identificar: {n_sin_id}")
+              f"| {len(agg)} filas | sin_id: {n_sin_id}")
 
     except Exception as e:
         errores.append(f"{os.path.basename(f_cand)}: {e}")
@@ -280,23 +253,15 @@ for f_cand in candidato_files:
 print(f"\n{'='*55}")
 print(f"Reconstruidos: {reconstruidos}")
 if errores:
-    print(f"Errores ({len(errores)}):")
+    print(f"Errores:")
     for e in errores: print(f"  {e}")
 
-# Verificación de casos críticos
+# Verificación final
 print("\n── Verificación Duitama ──")
-casos = [
-    ('data/2015/votos_partido_municipio_2015_alcalde.csv',   'DUITAMA'),
-    ('data/2018/votos_partido_municipio_2018_senado.csv',    'DUITAMA'),
-    ('data/2019/votos_partido_municipio_2019_gobernador.csv','DUITAMA'),
-]
-for f, mun in casos:
-    try:
-        df = pd.read_csv(f, encoding='utf-8')
-        sub = df[df['MUNNOMBRE']==mun].sort_values(
-              'TOTALVOTOSVALIDOS', ascending=False)
-        print(f"\n{os.path.basename(f)} — {mun}:")
-        print(sub[['PARNOMBRE','TOTALVOTOSVALIDOS','PORCENTAJE']]
-              .head(6).to_string(index=False))
-    except Exception as e:
-        print(f"  ERROR {f}: {e}")
+for f in sorted(glob.glob('data/votos_partido_*2026*camara*.csv')):
+    df = pd.read_csv(f, sep=';')
+    sub = df[df['MUNNOMBRE']=='DUITAMA'].sort_values('VOTOS',
+          ascending=False)
+    print(f"\n{os.path.basename(f)}:")
+    print(sub[['PARNOMBRE','VOTOS','PORCENTAJE']].head(6)
+          .to_string(index=False))
