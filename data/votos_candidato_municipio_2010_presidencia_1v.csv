@@ -2,15 +2,15 @@ MUNNOMBRE;CANNOMBRE;PARNOMBRE;VOTOS
 ALMEIDA;Juan Manuel Santos Calderon;Partido de la U;775
 ALMEIDA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;54
 ALMEIDA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;43
-ALMEIDA;Gustavo Francisco Petro Urrego;Partido de la U;22
-ALMEIDA;German Vargas Lleras;Partido Liberal Colombiano;19
+ALMEIDA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;22
+ALMEIDA;German Vargas Lleras;Cambio Radical;19
 ALMEIDA;Rafael Pardo Rueda;Partido Liberal Colombiano;11
 ALMEIDA;Robinson Devia Gonzalez;Partido PIN;2
 AQUITANIA;Juan Manuel Santos Calderon;Partido de la U;6342
 AQUITANIA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;459
-AQUITANIA;German Vargas Lleras;Partido Liberal Colombiano;234
+AQUITANIA;German Vargas Lleras;Cambio Radical;234
 AQUITANIA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;110
-AQUITANIA;Gustavo Francisco Petro Urrego;Partido de la U;93
+AQUITANIA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;93
 AQUITANIA;Rafael Pardo Rueda;Partido Liberal Colombiano;61
 AQUITANIA;Jaime Araujo Renteria;Polo Democrático Alternativo;9
 AQUITANIA;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
@@ -19,24 +19,24 @@ ARCABUCO;Juan Manuel Santos Calderon;Partido de la U;1058
 ARCABUCO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;515
 ARCABUCO;Rafael Pardo Rueda;Partido Liberal Colombiano;165
 ARCABUCO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;136
-ARCABUCO;German Vargas Lleras;Partido Liberal Colombiano;130
-ARCABUCO;Gustavo Francisco Petro Urrego;Partido de la U;91
+ARCABUCO;German Vargas Lleras;Cambio Radical;130
+ARCABUCO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;91
 ARCABUCO;Robinson Devia Gonzalez;Partido PIN;9
 ARCABUCO;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 ARCABUCO;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 BELEN;Juan Manuel Santos Calderon;Partido de la U;1707
 BELEN;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;482
 BELEN;Rafael Pardo Rueda;Partido Liberal Colombiano;455
-BELEN;German Vargas Lleras;Partido Liberal Colombiano;313
+BELEN;German Vargas Lleras;Cambio Radical;313
 BELEN;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;309
-BELEN;Gustavo Francisco Petro Urrego;Partido de la U;173
+BELEN;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;173
 BELEN;Robinson Devia Gonzalez;Partido PIN;6
 BELEN;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
 BELEN;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 BERBEO;Juan Manuel Santos Calderon;Partido de la U;426
 BERBEO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;225
-BERBEO;Gustavo Francisco Petro Urrego;Partido de la U;32
-BERBEO;German Vargas Lleras;Partido Liberal Colombiano;31
+BERBEO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;32
+BERBEO;German Vargas Lleras;Cambio Radical;31
 BERBEO;Rafael Pardo Rueda;Partido Liberal Colombiano;30
 BERBEO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;28
 BERBEO;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
@@ -44,16 +44,16 @@ BETEITIVA;Juan Manuel Santos Calderon;Partido de la U;432
 BETEITIVA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;160
 BETEITIVA;Rafael Pardo Rueda;Partido Liberal Colombiano;119
 BETEITIVA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;96
-BETEITIVA;Gustavo Francisco Petro Urrego;Partido de la U;39
-BETEITIVA;German Vargas Lleras;Partido Liberal Colombiano;23
+BETEITIVA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;39
+BETEITIVA;German Vargas Lleras;Cambio Radical;23
 BETEITIVA;Robinson Devia Gonzalez;Partido PIN;3
 BETEITIVA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 BETEITIVA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 BOAVITA;Juan Manuel Santos Calderon;Partido de la U;1720
 BOAVITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;408
 BOAVITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;190
-BOAVITA;German Vargas Lleras;Partido Liberal Colombiano;86
-BOAVITA;Gustavo Francisco Petro Urrego;Partido de la U;86
+BOAVITA;German Vargas Lleras;Cambio Radical;86
+BOAVITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;86
 BOAVITA;Robinson Devia Gonzalez;Partido PIN;9
 BOAVITA;Rafael Pardo Rueda;Partido Liberal Colombiano;8
 BOAVITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
@@ -61,34 +61,34 @@ BOAVITA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 BOYACA;Juan Manuel Santos Calderon;Partido de la U;922
 BOYACA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;345
 BOYACA;Rafael Pardo Rueda;Partido Liberal Colombiano;224
-BOYACA;German Vargas Lleras;Partido Liberal Colombiano;134
+BOYACA;German Vargas Lleras;Cambio Radical;134
 BOYACA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;65
-BOYACA;Gustavo Francisco Petro Urrego;Partido de la U;57
+BOYACA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;57
 BOYACA;Jairo Enrique Calderon Carrero;Movimiento MIRA;11
 BOYACA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
 BOYACA;Robinson Devia Gonzalez;Partido PIN;3
 BRICENO;Juan Manuel Santos Calderon;Partido de la U;756
 BRICENO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;96
 BRICENO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;85
-BRICENO;German Vargas Lleras;Partido Liberal Colombiano;31
-BRICENO;Gustavo Francisco Petro Urrego;Partido de la U;13
+BRICENO;German Vargas Lleras;Cambio Radical;31
+BRICENO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;13
 BRICENO;Rafael Pardo Rueda;Partido Liberal Colombiano;3
 BRICENO;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 BRICENO;Robinson Devia Gonzalez;Partido PIN;2
 BUENAVISTA;Juan Manuel Santos Calderon;Partido de la U;1600
 BUENAVISTA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;241
 BUENAVISTA;Rafael Pardo Rueda;Partido Liberal Colombiano;182
-BUENAVISTA;German Vargas Lleras;Partido Liberal Colombiano;131
+BUENAVISTA;German Vargas Lleras;Cambio Radical;131
 BUENAVISTA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;105
-BUENAVISTA;Gustavo Francisco Petro Urrego;Partido de la U;54
+BUENAVISTA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;54
 BUENAVISTA;Robinson Devia Gonzalez;Partido PIN;10
 BUENAVISTA;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 BUENAVISTA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 BUSBANZA;Juan Manuel Santos Calderon;Partido de la U;229
 BUSBANZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;53
 BUSBANZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;35
-BUSBANZA;Gustavo Francisco Petro Urrego;Partido de la U;28
-BUSBANZA;German Vargas Lleras;Partido Liberal Colombiano;20
+BUSBANZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;28
+BUSBANZA;German Vargas Lleras;Cambio Radical;20
 BUSBANZA;Rafael Pardo Rueda;Partido Liberal Colombiano;20
 BUSBANZA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 BUSBANZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
@@ -97,24 +97,24 @@ CALDAS;Juan Manuel Santos Calderon;Partido de la U;815
 CALDAS;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;248
 CALDAS;Rafael Pardo Rueda;Partido Liberal Colombiano;226
 CALDAS;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;138
-CALDAS;German Vargas Lleras;Partido Liberal Colombiano;118
-CALDAS;Gustavo Francisco Petro Urrego;Partido de la U;106
+CALDAS;German Vargas Lleras;Cambio Radical;118
+CALDAS;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;106
 CALDAS;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 CALDAS;Robinson Devia Gonzalez;Partido PIN;4
 CALDAS;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 CAMPOHERMOSO;Juan Manuel Santos Calderon;Partido de la U;1110
 CAMPOHERMOSO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;98
 CAMPOHERMOSO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;82
-CAMPOHERMOSO;German Vargas Lleras;Partido Liberal Colombiano;34
+CAMPOHERMOSO;German Vargas Lleras;Cambio Radical;34
 CAMPOHERMOSO;Rafael Pardo Rueda;Partido Liberal Colombiano;30
-CAMPOHERMOSO;Gustavo Francisco Petro Urrego;Partido de la U;23
+CAMPOHERMOSO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;23
 CAMPOHERMOSO;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 CAMPOHERMOSO;Robinson Devia Gonzalez;Partido PIN;2
 CERINZA;Juan Manuel Santos Calderon;Partido de la U;912
 CERINZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;317
 CERINZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;263
-CERINZA;Gustavo Francisco Petro Urrego;Partido de la U;189
-CERINZA;German Vargas Lleras;Partido Liberal Colombiano;126
+CERINZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;189
+CERINZA;German Vargas Lleras;Cambio Radical;126
 CERINZA;Rafael Pardo Rueda;Partido Liberal Colombiano;24
 CERINZA;Robinson Devia Gonzalez;Partido PIN;9
 CERINZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
@@ -122,16 +122,16 @@ CERINZA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 CHINAVITA;Juan Manuel Santos Calderon;Partido de la U;1101
 CHINAVITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;187
 CHINAVITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;122
-CHINAVITA;German Vargas Lleras;Partido Liberal Colombiano;71
-CHINAVITA;Gustavo Francisco Petro Urrego;Partido de la U;42
+CHINAVITA;German Vargas Lleras;Cambio Radical;71
+CHINAVITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;42
 CHINAVITA;Rafael Pardo Rueda;Partido Liberal Colombiano;19
 CHINAVITA;Robinson Devia Gonzalez;Partido PIN;3
 CHINAVITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 CHIQUINQUIRA;Juan Manuel Santos Calderon;Partido de la U;10363
 CHIQUINQUIRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;4772
-CHIQUINQUIRA;German Vargas Lleras;Partido Liberal Colombiano;2233
+CHIQUINQUIRA;German Vargas Lleras;Cambio Radical;2233
 CHIQUINQUIRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;1265
-CHIQUINQUIRA;Gustavo Francisco Petro Urrego;Partido de la U;1126
+CHIQUINQUIRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;1126
 CHIQUINQUIRA;Rafael Pardo Rueda;Partido Liberal Colombiano;476
 CHIQUINQUIRA;Jairo Enrique Calderon Carrero;Movimiento MIRA;36
 CHIQUINQUIRA;Jaime Araujo Renteria;Polo Democrático Alternativo;14
@@ -140,33 +140,33 @@ CHIQUIZA;Rafael Pardo Rueda;Partido Liberal Colombiano;937
 CHIQUIZA;Juan Manuel Santos Calderon;Partido de la U;572
 CHIQUIZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;540
 CHIQUIZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;81
-CHIQUIZA;German Vargas Lleras;Partido Liberal Colombiano;65
-CHIQUIZA;Gustavo Francisco Petro Urrego;Partido de la U;34
+CHIQUIZA;German Vargas Lleras;Cambio Radical;65
+CHIQUIZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;34
 CHIQUIZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 CHIQUIZA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 CHIQUIZA;Robinson Devia Gonzalez;Partido PIN;5
 CHISCAS;Juan Manuel Santos Calderon;Partido de la U;1721
 CHISCAS;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;73
 CHISCAS;Rafael Pardo Rueda;Partido Liberal Colombiano;56
-CHISCAS;German Vargas Lleras;Partido Liberal Colombiano;55
-CHISCAS;Gustavo Francisco Petro Urrego;Partido de la U;30
+CHISCAS;German Vargas Lleras;Cambio Radical;55
+CHISCAS;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;30
 CHISCAS;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;3
 CHISCAS;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 CHISCAS;Robinson Devia Gonzalez;Partido PIN;1
 CHITA;Juan Manuel Santos Calderon;Partido de la U;3110
 CHITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;126
 CHITA;Rafael Pardo Rueda;Partido Liberal Colombiano;39
-CHITA;Gustavo Francisco Petro Urrego;Partido de la U;37
-CHITA;German Vargas Lleras;Partido Liberal Colombiano;36
+CHITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;37
+CHITA;German Vargas Lleras;Cambio Radical;36
 CHITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;36
 CHITA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
 CHITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 CHITA;Robinson Devia Gonzalez;Partido PIN;3
 CHITARAQUE;Juan Manuel Santos Calderon;Partido de la U;1334
 CHITARAQUE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;235
-CHITARAQUE;German Vargas Lleras;Partido Liberal Colombiano;137
+CHITARAQUE;German Vargas Lleras;Cambio Radical;137
 CHITARAQUE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;107
-CHITARAQUE;Gustavo Francisco Petro Urrego;Partido de la U;63
+CHITARAQUE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;63
 CHITARAQUE;Rafael Pardo Rueda;Partido Liberal Colombiano;44
 CHITARAQUE;Robinson Devia Gonzalez;Partido PIN;5
 CHITARAQUE;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
@@ -175,25 +175,25 @@ CHIVATA;Juan Manuel Santos Calderon;Partido de la U;532
 CHIVATA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;348
 CHIVATA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;207
 CHIVATA;Rafael Pardo Rueda;Partido Liberal Colombiano;107
-CHIVATA;German Vargas Lleras;Partido Liberal Colombiano;104
-CHIVATA;Gustavo Francisco Petro Urrego;Partido de la U;63
+CHIVATA;German Vargas Lleras;Cambio Radical;104
+CHIVATA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;63
 CHIVATA;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 CHIVATA;Robinson Devia Gonzalez;Partido PIN;3
 CHIVATA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 CHIVOR;Juan Manuel Santos Calderon;Partido de la U;681
 CHIVOR;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;61
 CHIVOR;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;44
-CHIVOR;German Vargas Lleras;Partido Liberal Colombiano;10
-CHIVOR;Gustavo Francisco Petro Urrego;Partido de la U;7
+CHIVOR;German Vargas Lleras;Cambio Radical;10
+CHIVOR;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;7
 CHIVOR;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 CHIVOR;Rafael Pardo Rueda;Partido Liberal Colombiano;2
 CHIVOR;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 CIENEGA;Juan Manuel Santos Calderon;Partido de la U;1572
 CIENEGA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;182
 CIENEGA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;154
-CIENEGA;German Vargas Lleras;Partido Liberal Colombiano;112
+CIENEGA;German Vargas Lleras;Cambio Radical;112
 CIENEGA;Rafael Pardo Rueda;Partido Liberal Colombiano;52
-CIENEGA;Gustavo Francisco Petro Urrego;Partido de la U;31
+CIENEGA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;31
 CIENEGA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 CIENEGA;Robinson Devia Gonzalez;Partido PIN;4
 CIENEGA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
@@ -201,8 +201,8 @@ COMBITA;Juan Manuel Santos Calderon;Partido de la U;1306
 COMBITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;897
 COMBITA;Rafael Pardo Rueda;Partido Liberal Colombiano;508
 COMBITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;416
-COMBITA;German Vargas Lleras;Partido Liberal Colombiano;300
-COMBITA;Gustavo Francisco Petro Urrego;Partido de la U;173
+COMBITA;German Vargas Lleras;Cambio Radical;300
+COMBITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;173
 COMBITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;29
 COMBITA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 COMBITA;Robinson Devia Gonzalez;Partido PIN;4
@@ -210,15 +210,15 @@ COPER;Juan Manuel Santos Calderon;Partido de la U;942
 COPER;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;366
 COPER;Rafael Pardo Rueda;Partido Liberal Colombiano;172
 COPER;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;85
-COPER;German Vargas Lleras;Partido Liberal Colombiano;52
-COPER;Gustavo Francisco Petro Urrego;Partido de la U;17
+COPER;German Vargas Lleras;Cambio Radical;52
+COPER;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;17
 COPER;Robinson Devia Gonzalez;Partido PIN;4
 COPER;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 CORRALES;Juan Manuel Santos Calderon;Partido de la U;596
 CORRALES;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;203
-CORRALES;German Vargas Lleras;Partido Liberal Colombiano;148
+CORRALES;German Vargas Lleras;Cambio Radical;148
 CORRALES;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;144
-CORRALES;Gustavo Francisco Petro Urrego;Partido de la U;67
+CORRALES;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;67
 CORRALES;Rafael Pardo Rueda;Partido Liberal Colombiano;54
 CORRALES;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 CORRALES;Robinson Devia Gonzalez;Partido PIN;3
@@ -227,40 +227,40 @@ COVARACHIA;Juan Manuel Santos Calderon;Partido de la U;1138
 COVARACHIA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;63
 COVARACHIA;Rafael Pardo Rueda;Partido Liberal Colombiano;42
 COVARACHIA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;36
-COVARACHIA;Gustavo Francisco Petro Urrego;Partido de la U;26
-COVARACHIA;German Vargas Lleras;Partido Liberal Colombiano;21
+COVARACHIA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;26
+COVARACHIA;German Vargas Lleras;Cambio Radical;21
 COVARACHIA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 COVARACHIA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 COVARACHIA;Robinson Devia Gonzalez;Partido PIN;1
 CUBARA;Juan Manuel Santos Calderon;Partido de la U;561
 CUBARA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;272
 CUBARA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;214
-CUBARA;Gustavo Francisco Petro Urrego;Partido de la U;101
+CUBARA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;101
 CUBARA;Rafael Pardo Rueda;Partido Liberal Colombiano;92
-CUBARA;German Vargas Lleras;Partido Liberal Colombiano;40
+CUBARA;German Vargas Lleras;Cambio Radical;40
 CUBARA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 CUBARA;Robinson Devia Gonzalez;Partido PIN;9
 CUCAITA;Juan Manuel Santos Calderon;Partido de la U;793
 CUCAITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;529
 CUCAITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;119
-CUCAITA;German Vargas Lleras;Partido Liberal Colombiano;75
+CUCAITA;German Vargas Lleras;Cambio Radical;75
 CUCAITA;Rafael Pardo Rueda;Partido Liberal Colombiano;54
-CUCAITA;Gustavo Francisco Petro Urrego;Partido de la U;37
+CUCAITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;37
 CUCAITA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 CUCAITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 CUCAITA;Robinson Devia Gonzalez;Partido PIN;2
 CUITIVA;Juan Manuel Santos Calderon;Partido de la U;650
 CUITIVA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;153
-CUITIVA;German Vargas Lleras;Partido Liberal Colombiano;78
+CUITIVA;German Vargas Lleras;Cambio Radical;78
 CUITIVA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;50
-CUITIVA;Gustavo Francisco Petro Urrego;Partido de la U;48
+CUITIVA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;48
 CUITIVA;Rafael Pardo Rueda;Partido Liberal Colombiano;47
 CUITIVA;Robinson Devia Gonzalez;Partido PIN;3
 CUITIVA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 DUITAMA;Juan Manuel Santos Calderon;Partido de la U;18048
 DUITAMA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;14976
-DUITAMA;German Vargas Lleras;Partido Liberal Colombiano;6057
-DUITAMA;Gustavo Francisco Petro Urrego;Partido de la U;3315
+DUITAMA;German Vargas Lleras;Cambio Radical;6057
+DUITAMA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;3315
 DUITAMA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;2646
 DUITAMA;Rafael Pardo Rueda;Partido Liberal Colombiano;1097
 DUITAMA;Jairo Enrique Calderon Carrero;Movimiento MIRA;130
@@ -269,17 +269,17 @@ DUITAMA;Jaime Araujo Renteria;Polo Democrático Alternativo;17
 EL COCUY;Juan Manuel Santos Calderon;Partido de la U;1768
 EL COCUY;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;114
 EL COCUY;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;86
-EL COCUY;German Vargas Lleras;Partido Liberal Colombiano;70
+EL COCUY;German Vargas Lleras;Cambio Radical;70
 EL COCUY;Rafael Pardo Rueda;Partido Liberal Colombiano;50
-EL COCUY;Gustavo Francisco Petro Urrego;Partido de la U;14
+EL COCUY;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;14
 EL COCUY;Robinson Devia Gonzalez;Partido PIN;4
 EL COCUY;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 EL COCUY;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 EL ESPINO;Juan Manuel Santos Calderon;Partido de la U;1195
 EL ESPINO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;40
-EL ESPINO;German Vargas Lleras;Partido Liberal Colombiano;36
+EL ESPINO;German Vargas Lleras;Cambio Radical;36
 EL ESPINO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;32
-EL ESPINO;Gustavo Francisco Petro Urrego;Partido de la U;15
+EL ESPINO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;15
 EL ESPINO;Rafael Pardo Rueda;Partido Liberal Colombiano;6
 EL ESPINO;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 EL ESPINO;Jaime Araujo Renteria;Polo Democrático Alternativo;1
@@ -288,16 +288,16 @@ FIRAVITOBA;Juan Manuel Santos Calderon;Partido de la U;932
 FIRAVITOBA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;615
 FIRAVITOBA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;327
 FIRAVITOBA;Rafael Pardo Rueda;Partido Liberal Colombiano;194
-FIRAVITOBA;German Vargas Lleras;Partido Liberal Colombiano;176
-FIRAVITOBA;Gustavo Francisco Petro Urrego;Partido de la U;148
+FIRAVITOBA;German Vargas Lleras;Cambio Radical;176
+FIRAVITOBA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;148
 FIRAVITOBA;Robinson Devia Gonzalez;Partido PIN;5
 FIRAVITOBA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 FIRAVITOBA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 FLORESTA;Juan Manuel Santos Calderon;Partido de la U;1002
 FLORESTA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;223
 FLORESTA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;177
-FLORESTA;German Vargas Lleras;Partido Liberal Colombiano;131
-FLORESTA;Gustavo Francisco Petro Urrego;Partido de la U;57
+FLORESTA;German Vargas Lleras;Cambio Radical;131
+FLORESTA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;57
 FLORESTA;Rafael Pardo Rueda;Partido Liberal Colombiano;46
 FLORESTA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 FLORESTA;Robinson Devia Gonzalez;Partido PIN;2
@@ -305,26 +305,26 @@ FLORESTA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 GACHANTIVA;Juan Manuel Santos Calderon;Partido de la U;964
 GACHANTIVA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;266
 GACHANTIVA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;76
-GACHANTIVA;German Vargas Lleras;Partido Liberal Colombiano;66
+GACHANTIVA;German Vargas Lleras;Cambio Radical;66
 GACHANTIVA;Rafael Pardo Rueda;Partido Liberal Colombiano;40
-GACHANTIVA;Gustavo Francisco Petro Urrego;Partido de la U;35
+GACHANTIVA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;35
 GACHANTIVA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 GACHANTIVA;Robinson Devia Gonzalez;Partido PIN;3
 GACHANTIVA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 GAMEZA;Juan Manuel Santos Calderon;Partido de la U;1664
-GAMEZA;German Vargas Lleras;Partido Liberal Colombiano;157
+GAMEZA;German Vargas Lleras;Cambio Radical;157
 GAMEZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;151
 GAMEZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;66
 GAMEZA;Rafael Pardo Rueda;Partido Liberal Colombiano;66
-GAMEZA;Gustavo Francisco Petro Urrego;Partido de la U;61
+GAMEZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;61
 GAMEZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 GAMEZA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 GAMEZA;Robinson Devia Gonzalez;Partido PIN;1
 GARAGOA;Juan Manuel Santos Calderon;Partido de la U;3752
 GARAGOA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1073
-GARAGOA;German Vargas Lleras;Partido Liberal Colombiano;442
+GARAGOA;German Vargas Lleras;Cambio Radical;442
 GARAGOA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;239
-GARAGOA;Gustavo Francisco Petro Urrego;Partido de la U;227
+GARAGOA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;227
 GARAGOA;Rafael Pardo Rueda;Partido Liberal Colombiano;216
 GARAGOA;Jairo Enrique Calderon Carrero;Movimiento MIRA;14
 GARAGOA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
@@ -332,41 +332,41 @@ GARAGOA;Robinson Devia Gonzalez;Partido PIN;3
 GUACAMAYAS;Juan Manuel Santos Calderon;Partido de la U;494
 GUACAMAYAS;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;289
 GUACAMAYAS;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;51
-GUACAMAYAS;German Vargas Lleras;Partido Liberal Colombiano;23
-GUACAMAYAS;Gustavo Francisco Petro Urrego;Partido de la U;18
+GUACAMAYAS;German Vargas Lleras;Cambio Radical;23
+GUACAMAYAS;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;18
 GUACAMAYAS;Rafael Pardo Rueda;Partido Liberal Colombiano;2
 GUACAMAYAS;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 GUATEQUE;Juan Manuel Santos Calderon;Partido de la U;2977
 GUATEQUE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;738
-GUATEQUE;German Vargas Lleras;Partido Liberal Colombiano;422
+GUATEQUE;German Vargas Lleras;Cambio Radical;422
 GUATEQUE;Rafael Pardo Rueda;Partido Liberal Colombiano;309
-GUATEQUE;Gustavo Francisco Petro Urrego;Partido de la U;187
+GUATEQUE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;187
 GUATEQUE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;98
 GUATEQUE;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 GUATEQUE;Robinson Devia Gonzalez;Partido PIN;5
 GUATEQUE;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 GUAYATA;Juan Manuel Santos Calderon;Partido de la U;1708
 GUAYATA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;203
-GUAYATA;German Vargas Lleras;Partido Liberal Colombiano;78
+GUAYATA;German Vargas Lleras;Cambio Radical;78
 GUAYATA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;77
-GUAYATA;Gustavo Francisco Petro Urrego;Partido de la U;63
+GUAYATA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;63
 GUAYATA;Rafael Pardo Rueda;Partido Liberal Colombiano;9
 GUAYATA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 GUAYATA;Robinson Devia Gonzalez;Partido PIN;3
 GUAYATA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 GUICAN DE LA SIERRA;Juan Manuel Santos Calderon;Partido de la U;1413
 GUICAN DE LA SIERRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;171
-GUICAN DE LA SIERRA;Gustavo Francisco Petro Urrego;Partido de la U;62
+GUICAN DE LA SIERRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;62
 GUICAN DE LA SIERRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;48
-GUICAN DE LA SIERRA;German Vargas Lleras;Partido Liberal Colombiano;26
+GUICAN DE LA SIERRA;German Vargas Lleras;Cambio Radical;26
 GUICAN DE LA SIERRA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 GUICAN DE LA SIERRA;Rafael Pardo Rueda;Partido Liberal Colombiano;5
 GUICAN DE LA SIERRA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 GUICAN DE LA SIERRA;Robinson Devia Gonzalez;Partido PIN;1
 IZA;Juan Manuel Santos Calderon;Partido de la U;586
 IZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;201
-IZA;German Vargas Lleras;Partido Liberal Colombiano;93
-IZA;Gustavo Francisco Petro Urrego;Partido de la U;35
+IZA;German Vargas Lleras;Cambio Radical;93
+IZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;35
 IZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;30
 IZA;Rafael Pardo Rueda;Partido Liberal Colombiano;29
 IZA;Robinson Devia Gonzalez;Partido PIN;2
@@ -374,16 +374,16 @@ IZA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 JENESANO;Juan Manuel Santos Calderon;Partido de la U;1417
 JENESANO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;364
 JENESANO;Rafael Pardo Rueda;Partido Liberal Colombiano;195
-JENESANO;German Vargas Lleras;Partido Liberal Colombiano;107
-JENESANO;Gustavo Francisco Petro Urrego;Partido de la U;87
+JENESANO;German Vargas Lleras;Cambio Radical;107
+JENESANO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;87
 JENESANO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;38
 JENESANO;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 JENESANO;Robinson Devia Gonzalez;Partido PIN;7
 JENESANO;Jaime Araujo Renteria;Polo Democrático Alternativo;6
 JERICO;Juan Manuel Santos Calderon;Partido de la U;1614
 JERICO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;51
-JERICO;Gustavo Francisco Petro Urrego;Partido de la U;26
-JERICO;German Vargas Lleras;Partido Liberal Colombiano;25
+JERICO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;26
+JERICO;German Vargas Lleras;Cambio Radical;25
 JERICO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;17
 JERICO;Rafael Pardo Rueda;Partido Liberal Colombiano;11
 JERICO;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
@@ -391,9 +391,9 @@ JERICO;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 JERICO;Robinson Devia Gonzalez;Partido PIN;4
 LA CAPILLA;Juan Manuel Santos Calderon;Partido de la U;904
 LA CAPILLA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;200
-LA CAPILLA;German Vargas Lleras;Partido Liberal Colombiano;80
+LA CAPILLA;German Vargas Lleras;Cambio Radical;80
 LA CAPILLA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;76
-LA CAPILLA;Gustavo Francisco Petro Urrego;Partido de la U;20
+LA CAPILLA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;20
 LA CAPILLA;Rafael Pardo Rueda;Partido Liberal Colombiano;13
 LA CAPILLA;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 LA CAPILLA;Robinson Devia Gonzalez;Partido PIN;4
@@ -401,8 +401,8 @@ LA CAPILLA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 LA UVITA;Juan Manuel Santos Calderon;Partido de la U;1213
 LA UVITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;104
 LA UVITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;42
-LA UVITA;German Vargas Lleras;Partido Liberal Colombiano;32
-LA UVITA;Gustavo Francisco Petro Urrego;Partido de la U;12
+LA UVITA;German Vargas Lleras;Cambio Radical;32
+LA UVITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;12
 LA UVITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 LA UVITA;Robinson Devia Gonzalez;Partido PIN;4
 LA UVITA;Rafael Pardo Rueda;Partido Liberal Colombiano;3
@@ -410,16 +410,16 @@ LA UVITA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 LA VICTORIA;Juan Manuel Santos Calderon;Partido de la U;494
 LA VICTORIA;Rafael Pardo Rueda;Partido Liberal Colombiano;86
 LA VICTORIA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;42
-LA VICTORIA;German Vargas Lleras;Partido Liberal Colombiano;29
-LA VICTORIA;Gustavo Francisco Petro Urrego;Partido de la U;20
+LA VICTORIA;German Vargas Lleras;Cambio Radical;29
+LA VICTORIA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;20
 LA VICTORIA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;18
 LA VICTORIA;Robinson Devia Gonzalez;Partido PIN;4
 LA VICTORIA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 LA VICTORIA;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 LABRANZAGRANDE;Juan Manuel Santos Calderon;Partido de la U;1180
-LABRANZAGRANDE;German Vargas Lleras;Partido Liberal Colombiano;56
+LABRANZAGRANDE;German Vargas Lleras;Cambio Radical;56
 LABRANZAGRANDE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;49
-LABRANZAGRANDE;Gustavo Francisco Petro Urrego;Partido de la U;30
+LABRANZAGRANDE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;30
 LABRANZAGRANDE;Rafael Pardo Rueda;Partido Liberal Colombiano;22
 LABRANZAGRANDE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;14
 LABRANZAGRANDE;Jaime Araujo Renteria;Polo Democrático Alternativo;7
@@ -428,8 +428,8 @@ LABRANZAGRANDE;Robinson Devia Gonzalez;Partido PIN;4
 MACANAL;Juan Manuel Santos Calderon;Partido de la U;1469
 MACANAL;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;221
 MACANAL;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;101
-MACANAL;German Vargas Lleras;Partido Liberal Colombiano;93
-MACANAL;Gustavo Francisco Petro Urrego;Partido de la U;39
+MACANAL;German Vargas Lleras;Cambio Radical;93
+MACANAL;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;39
 MACANAL;Rafael Pardo Rueda;Partido Liberal Colombiano;14
 MACANAL;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 MACANAL;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
@@ -438,15 +438,15 @@ MARIPI;Juan Manuel Santos Calderon;Partido de la U;1910
 MARIPI;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;324
 MARIPI;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;283
 MARIPI;Rafael Pardo Rueda;Partido Liberal Colombiano;154
-MARIPI;German Vargas Lleras;Partido Liberal Colombiano;86
-MARIPI;Gustavo Francisco Petro Urrego;Partido de la U;44
+MARIPI;German Vargas Lleras;Cambio Radical;86
+MARIPI;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;44
 MARIPI;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 MARIPI;Robinson Devia Gonzalez;Partido PIN;2
 MARIPI;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 MIRAFLORES;Juan Manuel Santos Calderon;Partido de la U;2176
 MIRAFLORES;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1217
-MIRAFLORES;Gustavo Francisco Petro Urrego;Partido de la U;207
-MIRAFLORES;German Vargas Lleras;Partido Liberal Colombiano;195
+MIRAFLORES;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;207
+MIRAFLORES;German Vargas Lleras;Cambio Radical;195
 MIRAFLORES;Rafael Pardo Rueda;Partido Liberal Colombiano;168
 MIRAFLORES;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;80
 MIRAFLORES;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
@@ -454,9 +454,9 @@ MIRAFLORES;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 MIRAFLORES;Robinson Devia Gonzalez;Partido PIN;3
 MONGUA;Juan Manuel Santos Calderon;Partido de la U;2042
 MONGUA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;139
-MONGUA;German Vargas Lleras;Partido Liberal Colombiano;69
+MONGUA;German Vargas Lleras;Cambio Radical;69
 MONGUA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;65
-MONGUA;Gustavo Francisco Petro Urrego;Partido de la U;40
+MONGUA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;40
 MONGUA;Rafael Pardo Rueda;Partido Liberal Colombiano;17
 MONGUA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 MONGUA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
@@ -464,16 +464,16 @@ MONGUA;Robinson Devia Gonzalez;Partido PIN;1
 MONGUI;Juan Manuel Santos Calderon;Partido de la U;1279
 MONGUI;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;301
 MONGUI;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;122
-MONGUI;German Vargas Lleras;Partido Liberal Colombiano;103
-MONGUI;Gustavo Francisco Petro Urrego;Partido de la U;87
+MONGUI;German Vargas Lleras;Cambio Radical;103
+MONGUI;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;87
 MONGUI;Rafael Pardo Rueda;Partido Liberal Colombiano;25
 MONGUI;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 MONGUI;Robinson Devia Gonzalez;Partido PIN;4
 MONGUI;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 MONIQUIRA;Juan Manuel Santos Calderon;Partido de la U;3733
 MONIQUIRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1552
-MONIQUIRA;Gustavo Francisco Petro Urrego;Partido de la U;645
-MONIQUIRA;German Vargas Lleras;Partido Liberal Colombiano;625
+MONIQUIRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;645
+MONIQUIRA;German Vargas Lleras;Cambio Radical;625
 MONIQUIRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;567
 MONIQUIRA;Rafael Pardo Rueda;Partido Liberal Colombiano;478
 MONIQUIRA;Jaime Araujo Renteria;Polo Democrático Alternativo;14
@@ -482,8 +482,8 @@ MONIQUIRA;Robinson Devia Gonzalez;Partido PIN;10
 MOTAVITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;785
 MOTAVITA;Juan Manuel Santos Calderon;Partido de la U;717
 MOTAVITA;Rafael Pardo Rueda;Partido Liberal Colombiano;633
-MOTAVITA;Gustavo Francisco Petro Urrego;Partido de la U;118
-MOTAVITA;German Vargas Lleras;Partido Liberal Colombiano;106
+MOTAVITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;118
+MOTAVITA;German Vargas Lleras;Cambio Radical;106
 MOTAVITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;75
 MOTAVITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 MOTAVITA;Robinson Devia Gonzalez;Partido PIN;5
@@ -491,16 +491,16 @@ MOTAVITA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 MUZO;Juan Manuel Santos Calderon;Partido de la U;2553
 MUZO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;420
 MUZO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;169
-MUZO;German Vargas Lleras;Partido Liberal Colombiano;128
-MUZO;Gustavo Francisco Petro Urrego;Partido de la U;105
+MUZO;German Vargas Lleras;Cambio Radical;128
+MUZO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;105
 MUZO;Rafael Pardo Rueda;Partido Liberal Colombiano;90
 MUZO;Robinson Devia Gonzalez;Partido PIN;6
 MUZO;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 MUZO;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 NOBSA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;2236
 NOBSA;Juan Manuel Santos Calderon;Partido de la U;1870
-NOBSA;German Vargas Lleras;Partido Liberal Colombiano;1067
-NOBSA;Gustavo Francisco Petro Urrego;Partido de la U;543
+NOBSA;German Vargas Lleras;Cambio Radical;1067
+NOBSA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;543
 NOBSA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;414
 NOBSA;Rafael Pardo Rueda;Partido Liberal Colombiano;190
 NOBSA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
@@ -508,25 +508,25 @@ NOBSA;Robinson Devia Gonzalez;Partido PIN;8
 NUEVO COLON;Juan Manuel Santos Calderon;Partido de la U;1024
 NUEVO COLON;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;387
 NUEVO COLON;Rafael Pardo Rueda;Partido Liberal Colombiano;322
-NUEVO COLON;German Vargas Lleras;Partido Liberal Colombiano;200
+NUEVO COLON;German Vargas Lleras;Cambio Radical;200
 NUEVO COLON;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;87
-NUEVO COLON;Gustavo Francisco Petro Urrego;Partido de la U;54
+NUEVO COLON;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;54
 NUEVO COLON;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
 NUEVO COLON;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 NUEVO COLON;Robinson Devia Gonzalez;Partido PIN;1
 OICATA;Juan Manuel Santos Calderon;Partido de la U;493
 OICATA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;337
-OICATA;German Vargas Lleras;Partido Liberal Colombiano;120
+OICATA;German Vargas Lleras;Cambio Radical;120
 OICATA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;90
 OICATA;Rafael Pardo Rueda;Partido Liberal Colombiano;85
-OICATA;Gustavo Francisco Petro Urrego;Partido de la U;44
+OICATA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;44
 OICATA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 OICATA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 OTANCHE;Juan Manuel Santos Calderon;Partido de la U;2624
 OTANCHE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;413
 OTANCHE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;165
-OTANCHE;German Vargas Lleras;Partido Liberal Colombiano;50
-OTANCHE;Gustavo Francisco Petro Urrego;Partido de la U;50
+OTANCHE;German Vargas Lleras;Cambio Radical;50
+OTANCHE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;50
 OTANCHE;Rafael Pardo Rueda;Partido Liberal Colombiano;18
 OTANCHE;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 OTANCHE;Robinson Devia Gonzalez;Partido PIN;3
@@ -534,40 +534,40 @@ OTANCHE;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 PACHAVITA;Juan Manuel Santos Calderon;Partido de la U;792
 PACHAVITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;132
 PACHAVITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;96
-PACHAVITA;German Vargas Lleras;Partido Liberal Colombiano;49
-PACHAVITA;Gustavo Francisco Petro Urrego;Partido de la U;33
+PACHAVITA;German Vargas Lleras;Cambio Radical;49
+PACHAVITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;33
 PACHAVITA;Rafael Pardo Rueda;Partido Liberal Colombiano;10
 PACHAVITA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 PACHAVITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 PACHAVITA;Robinson Devia Gonzalez;Partido PIN;1
 PAEZ;Juan Manuel Santos Calderon;Partido de la U;1058
 PAEZ;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;138
-PAEZ;German Vargas Lleras;Partido Liberal Colombiano;80
-PAEZ;Gustavo Francisco Petro Urrego;Partido de la U;24
+PAEZ;German Vargas Lleras;Cambio Radical;80
+PAEZ;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;24
 PAEZ;Rafael Pardo Rueda;Partido Liberal Colombiano;15
 PAEZ;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;4
 PAEZ;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 PAIPA;Juan Manuel Santos Calderon;Partido de la U;4523
 PAIPA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;3686
-PAIPA;German Vargas Lleras;Partido Liberal Colombiano;1729
+PAIPA;German Vargas Lleras;Cambio Radical;1729
 PAIPA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;1094
 PAIPA;Rafael Pardo Rueda;Partido Liberal Colombiano;863
-PAIPA;Gustavo Francisco Petro Urrego;Partido de la U;841
+PAIPA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;841
 PAIPA;Robinson Devia Gonzalez;Partido PIN;20
 PAIPA;Jairo Enrique Calderon Carrero;Movimiento MIRA;15
 PAIPA;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 PAJARITO;Juan Manuel Santos Calderon;Partido de la U;741
 PAJARITO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;59
-PAJARITO;German Vargas Lleras;Partido Liberal Colombiano;25
-PAJARITO;Gustavo Francisco Petro Urrego;Partido de la U;15
+PAJARITO;German Vargas Lleras;Cambio Radical;25
+PAJARITO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;15
 PAJARITO;Rafael Pardo Rueda;Partido Liberal Colombiano;6
 PAJARITO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;4
 PAJARITO;Robinson Devia Gonzalez;Partido PIN;1
 PANQUEBA;Juan Manuel Santos Calderon;Partido de la U;661
 PANQUEBA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;36
 PANQUEBA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;34
-PANQUEBA;Gustavo Francisco Petro Urrego;Partido de la U;26
-PANQUEBA;German Vargas Lleras;Partido Liberal Colombiano;19
+PANQUEBA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;26
+PANQUEBA;German Vargas Lleras;Cambio Radical;19
 PANQUEBA;Rafael Pardo Rueda;Partido Liberal Colombiano;12
 PANQUEBA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 PANQUEBA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
@@ -575,8 +575,8 @@ PANQUEBA;Robinson Devia Gonzalez;Partido PIN;1
 PAUNA;Juan Manuel Santos Calderon;Partido de la U;2225
 PAUNA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;787
 PAUNA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;326
-PAUNA;Gustavo Francisco Petro Urrego;Partido de la U;79
-PAUNA;German Vargas Lleras;Partido Liberal Colombiano;64
+PAUNA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;79
+PAUNA;German Vargas Lleras;Cambio Radical;64
 PAUNA;Rafael Pardo Rueda;Partido Liberal Colombiano;53
 PAUNA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 PAUNA;Robinson Devia Gonzalez;Partido PIN;4
@@ -584,8 +584,8 @@ PAUNA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 PAYA;Juan Manuel Santos Calderon;Partido de la U;491
 PAYA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;37
 PAYA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;22
-PAYA;Gustavo Francisco Petro Urrego;Partido de la U;20
-PAYA;German Vargas Lleras;Partido Liberal Colombiano;19
+PAYA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;20
+PAYA;German Vargas Lleras;Cambio Radical;19
 PAYA;Rafael Pardo Rueda;Partido Liberal Colombiano;7
 PAYA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
 PAYA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
@@ -593,8 +593,8 @@ PAYA;Robinson Devia Gonzalez;Partido PIN;1
 PAZ DE RIO;Juan Manuel Santos Calderon;Partido de la U;880
 PAZ DE RIO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;622
 PAZ DE RIO;Rafael Pardo Rueda;Partido Liberal Colombiano;296
-PAZ DE RIO;German Vargas Lleras;Partido Liberal Colombiano;208
-PAZ DE RIO;Gustavo Francisco Petro Urrego;Partido de la U;174
+PAZ DE RIO;German Vargas Lleras;Cambio Radical;208
+PAZ DE RIO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;174
 PAZ DE RIO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;121
 PAZ DE RIO;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 PAZ DE RIO;Robinson Devia Gonzalez;Partido PIN;5
@@ -602,24 +602,24 @@ PAZ DE RIO;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 PESCA;Juan Manuel Santos Calderon;Partido de la U;1771
 PESCA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;366
 PESCA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;212
-PESCA;German Vargas Lleras;Partido Liberal Colombiano;170
-PESCA;Gustavo Francisco Petro Urrego;Partido de la U;68
+PESCA;German Vargas Lleras;Cambio Radical;170
+PESCA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;68
 PESCA;Rafael Pardo Rueda;Partido Liberal Colombiano;67
 PESCA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 PESCA;Jaime Araujo Renteria;Polo Democrático Alternativo;7
 PESCA;Robinson Devia Gonzalez;Partido PIN;7
 PISBA;Juan Manuel Santos Calderon;Partido de la U;405
 PISBA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;54
-PISBA;Gustavo Francisco Petro Urrego;Partido de la U;14
+PISBA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;14
 PISBA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;9
-PISBA;German Vargas Lleras;Partido Liberal Colombiano;2
+PISBA;German Vargas Lleras;Cambio Radical;2
 PISBA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 PISBA;Rafael Pardo Rueda;Partido Liberal Colombiano;1
 PUERTO BOYACA;Juan Manuel Santos Calderon;Partido de la U;7088
 PUERTO BOYACA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;3278
-PUERTO BOYACA;Gustavo Francisco Petro Urrego;Partido de la U;1080
+PUERTO BOYACA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;1080
 PUERTO BOYACA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;936
-PUERTO BOYACA;German Vargas Lleras;Partido Liberal Colombiano;579
+PUERTO BOYACA;German Vargas Lleras;Cambio Radical;579
 PUERTO BOYACA;Rafael Pardo Rueda;Partido Liberal Colombiano;441
 PUERTO BOYACA;Jairo Enrique Calderon Carrero;Movimiento MIRA;36
 PUERTO BOYACA;Jaime Araujo Renteria;Polo Democrático Alternativo;21
@@ -627,8 +627,8 @@ PUERTO BOYACA;Robinson Devia Gonzalez;Partido PIN;18
 QUIPAMA;Juan Manuel Santos Calderon;Partido de la U;1794
 QUIPAMA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;173
 QUIPAMA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;171
-QUIPAMA;German Vargas Lleras;Partido Liberal Colombiano;71
-QUIPAMA;Gustavo Francisco Petro Urrego;Partido de la U;48
+QUIPAMA;German Vargas Lleras;Cambio Radical;71
+QUIPAMA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;48
 QUIPAMA;Rafael Pardo Rueda;Partido Liberal Colombiano;37
 QUIPAMA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 QUIPAMA;Robinson Devia Gonzalez;Partido PIN;6
@@ -636,9 +636,9 @@ QUIPAMA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 RAMIRIQUI;Juan Manuel Santos Calderon;Partido de la U;2895
 RAMIRIQUI;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;665
 RAMIRIQUI;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;190
-RAMIRIQUI;German Vargas Lleras;Partido Liberal Colombiano;163
+RAMIRIQUI;German Vargas Lleras;Cambio Radical;163
 RAMIRIQUI;Rafael Pardo Rueda;Partido Liberal Colombiano;156
-RAMIRIQUI;Gustavo Francisco Petro Urrego;Partido de la U;79
+RAMIRIQUI;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;79
 RAMIRIQUI;Jaime Araujo Renteria;Polo Democrático Alternativo;7
 RAMIRIQUI;Robinson Devia Gonzalez;Partido PIN;7
 RAMIRIQUI;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
@@ -646,8 +646,8 @@ RAQUIRA;Juan Manuel Santos Calderon;Partido de la U;1158
 RAQUIRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;432
 RAQUIRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;393
 RAQUIRA;Rafael Pardo Rueda;Partido Liberal Colombiano;136
-RAQUIRA;German Vargas Lleras;Partido Liberal Colombiano;134
-RAQUIRA;Gustavo Francisco Petro Urrego;Partido de la U;90
+RAQUIRA;German Vargas Lleras;Cambio Radical;134
+RAQUIRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;90
 RAQUIRA;Jairo Enrique Calderon Carrero;Movimiento MIRA;16
 RAQUIRA;Robinson Devia Gonzalez;Partido PIN;16
 RAQUIRA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
@@ -655,8 +655,8 @@ RONDON;Juan Manuel Santos Calderon;Partido de la U;821
 RONDON;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;109
 RONDON;Rafael Pardo Rueda;Partido Liberal Colombiano;64
 RONDON;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;54
-RONDON;Gustavo Francisco Petro Urrego;Partido de la U;22
-RONDON;German Vargas Lleras;Partido Liberal Colombiano;21
+RONDON;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;22
+RONDON;German Vargas Lleras;Cambio Radical;21
 RONDON;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 RONDON;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 RONDON;Robinson Devia Gonzalez;Partido PIN;3
@@ -664,8 +664,8 @@ SABOYA;Juan Manuel Santos Calderon;Partido de la U;2250
 SABOYA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;762
 SABOYA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;720
 SABOYA;Rafael Pardo Rueda;Partido Liberal Colombiano;560
-SABOYA;German Vargas Lleras;Partido Liberal Colombiano;255
-SABOYA;Gustavo Francisco Petro Urrego;Partido de la U;236
+SABOYA;German Vargas Lleras;Cambio Radical;255
+SABOYA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;236
 SABOYA;Robinson Devia Gonzalez;Partido PIN;25
 SABOYA;Jairo Enrique Calderon Carrero;Movimiento MIRA;11
 SABOYA;Jaime Araujo Renteria;Polo Democrático Alternativo;8
@@ -673,84 +673,84 @@ SACHICA;Juan Manuel Santos Calderon;Partido de la U;740
 SACHICA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;666
 SACHICA;Rafael Pardo Rueda;Partido Liberal Colombiano;175
 SACHICA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;80
-SACHICA;German Vargas Lleras;Partido Liberal Colombiano;55
-SACHICA;Gustavo Francisco Petro Urrego;Partido de la U;30
+SACHICA;German Vargas Lleras;Cambio Radical;55
+SACHICA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;30
 SACHICA;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
 SACHICA;Robinson Devia Gonzalez;Partido PIN;2
 SACHICA;Jaime Araujo Renteria;Polo Democrático Alternativo;1
 SAMACA;Juan Manuel Santos Calderon;Partido de la U;3878
 SAMACA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1922
-SAMACA;German Vargas Lleras;Partido Liberal Colombiano;382
+SAMACA;German Vargas Lleras;Cambio Radical;382
 SAMACA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;290
 SAMACA;Rafael Pardo Rueda;Partido Liberal Colombiano;285
-SAMACA;Gustavo Francisco Petro Urrego;Partido de la U;215
+SAMACA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;215
 SAMACA;Jairo Enrique Calderon Carrero;Movimiento MIRA;14
 SAMACA;Robinson Devia Gonzalez;Partido PIN;9
 SAMACA;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 SAN EDUARDO;Juan Manuel Santos Calderon;Partido de la U;487
 SAN EDUARDO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;104
 SAN EDUARDO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;49
-SAN EDUARDO;German Vargas Lleras;Partido Liberal Colombiano;46
+SAN EDUARDO;German Vargas Lleras;Cambio Radical;46
 SAN EDUARDO;Rafael Pardo Rueda;Partido Liberal Colombiano;42
-SAN EDUARDO;Gustavo Francisco Petro Urrego;Partido de la U;28
+SAN EDUARDO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;28
 SAN EDUARDO;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 SAN EDUARDO;Robinson Devia Gonzalez;Partido PIN;1
 SAN JOSE DE PARE;Juan Manuel Santos Calderon;Partido de la U;1123
 SAN JOSE DE PARE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;609
 SAN JOSE DE PARE;Rafael Pardo Rueda;Partido Liberal Colombiano;147
 SAN JOSE DE PARE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;118
-SAN JOSE DE PARE;German Vargas Lleras;Partido Liberal Colombiano;79
-SAN JOSE DE PARE;Gustavo Francisco Petro Urrego;Partido de la U;69
+SAN JOSE DE PARE;German Vargas Lleras;Cambio Radical;79
+SAN JOSE DE PARE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;69
 SAN JOSE DE PARE;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 SAN JOSE DE PARE;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 SAN JOSE DE PARE;Robinson Devia Gonzalez;Partido PIN;1
 SAN LUIS DE GACENO;Juan Manuel Santos Calderon;Partido de la U;2134
 SAN LUIS DE GACENO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;155
-SAN LUIS DE GACENO;German Vargas Lleras;Partido Liberal Colombiano;101
+SAN LUIS DE GACENO;German Vargas Lleras;Cambio Radical;101
 SAN LUIS DE GACENO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;60
-SAN LUIS DE GACENO;Gustavo Francisco Petro Urrego;Partido de la U;55
+SAN LUIS DE GACENO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;55
 SAN LUIS DE GACENO;Rafael Pardo Rueda;Partido Liberal Colombiano;18
 SAN LUIS DE GACENO;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 SAN LUIS DE GACENO;Robinson Devia Gonzalez;Partido PIN;1
 SAN MATEO;Juan Manuel Santos Calderon;Partido de la U;1752
 SAN MATEO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;69
-SAN MATEO;German Vargas Lleras;Partido Liberal Colombiano;60
+SAN MATEO;German Vargas Lleras;Cambio Radical;60
 SAN MATEO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;60
-SAN MATEO;Gustavo Francisco Petro Urrego;Partido de la U;19
+SAN MATEO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;19
 SAN MATEO;Jaime Araujo Renteria;Polo Democrático Alternativo;7
 SAN MATEO;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 SAN MATEO;Rafael Pardo Rueda;Partido Liberal Colombiano;3
 SAN MIGUEL DE SEMA;Juan Manuel Santos Calderon;Partido de la U;783
 SAN MIGUEL DE SEMA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;203
 SAN MIGUEL DE SEMA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;188
-SAN MIGUEL DE SEMA;German Vargas Lleras;Partido Liberal Colombiano;136
+SAN MIGUEL DE SEMA;German Vargas Lleras;Cambio Radical;136
 SAN MIGUEL DE SEMA;Rafael Pardo Rueda;Partido Liberal Colombiano;135
-SAN MIGUEL DE SEMA;Gustavo Francisco Petro Urrego;Partido de la U;46
+SAN MIGUEL DE SEMA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;46
 SAN MIGUEL DE SEMA;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
 SAN MIGUEL DE SEMA;Robinson Devia Gonzalez;Partido PIN;2
 SAN PABLO DE BORBUR;Juan Manuel Santos Calderon;Partido de la U;2542
 SAN PABLO DE BORBUR;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;175
 SAN PABLO DE BORBUR;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;75
-SAN PABLO DE BORBUR;German Vargas Lleras;Partido Liberal Colombiano;71
-SAN PABLO DE BORBUR;Gustavo Francisco Petro Urrego;Partido de la U;63
+SAN PABLO DE BORBUR;German Vargas Lleras;Cambio Radical;71
+SAN PABLO DE BORBUR;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;63
 SAN PABLO DE BORBUR;Rafael Pardo Rueda;Partido Liberal Colombiano;20
 SAN PABLO DE BORBUR;Robinson Devia Gonzalez;Partido PIN;8
 SAN PABLO DE BORBUR;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 SAN PABLO DE BORBUR;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 SANTA MARIA;Juan Manuel Santos Calderon;Partido de la U;1162
 SANTA MARIA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;371
-SANTA MARIA;German Vargas Lleras;Partido Liberal Colombiano;95
+SANTA MARIA;German Vargas Lleras;Cambio Radical;95
 SANTA MARIA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;81
-SANTA MARIA;Gustavo Francisco Petro Urrego;Partido de la U;43
+SANTA MARIA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;43
 SANTA MARIA;Rafael Pardo Rueda;Partido Liberal Colombiano;28
 SANTA MARIA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 SANTA MARIA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 SANTA MARIA;Robinson Devia Gonzalez;Partido PIN;5
 SANTA ROSA DE VITERBO;Juan Manuel Santos Calderon;Partido de la U;2603
 SANTA ROSA DE VITERBO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;839
-SANTA ROSA DE VITERBO;German Vargas Lleras;Partido Liberal Colombiano;421
+SANTA ROSA DE VITERBO;German Vargas Lleras;Cambio Radical;421
 SANTA ROSA DE VITERBO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;322
-SANTA ROSA DE VITERBO;Gustavo Francisco Petro Urrego;Partido de la U;223
+SANTA ROSA DE VITERBO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;223
 SANTA ROSA DE VITERBO;Rafael Pardo Rueda;Partido Liberal Colombiano;107
 SANTA ROSA DE VITERBO;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 SANTA ROSA DE VITERBO;Robinson Devia Gonzalez;Partido PIN;6
@@ -758,8 +758,8 @@ SANTA ROSA DE VITERBO;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 SANTA SOFIA;Juan Manuel Santos Calderon;Partido de la U;1056
 SANTA SOFIA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;214
 SANTA SOFIA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;160
-SANTA SOFIA;German Vargas Lleras;Partido Liberal Colombiano;62
-SANTA SOFIA;Gustavo Francisco Petro Urrego;Partido de la U;26
+SANTA SOFIA;German Vargas Lleras;Cambio Radical;62
+SANTA SOFIA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;26
 SANTA SOFIA;Rafael Pardo Rueda;Partido Liberal Colombiano;18
 SANTA SOFIA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 SANTA SOFIA;Robinson Devia Gonzalez;Partido PIN;3
@@ -767,16 +767,16 @@ SANTA SOFIA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 SANTANA;Juan Manuel Santos Calderon;Partido de la U;1150
 SANTANA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;716
 SANTANA;Rafael Pardo Rueda;Partido Liberal Colombiano;383
-SANTANA;German Vargas Lleras;Partido Liberal Colombiano;244
+SANTANA;German Vargas Lleras;Cambio Radical;244
 SANTANA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;128
-SANTANA;Gustavo Francisco Petro Urrego;Partido de la U;67
+SANTANA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;67
 SANTANA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 SANTANA;Robinson Devia Gonzalez;Partido PIN;5
 SATIVANORTE;Juan Manuel Santos Calderon;Partido de la U;829
 SATIVANORTE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;160
 SATIVANORTE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;53
-SATIVANORTE;German Vargas Lleras;Partido Liberal Colombiano;39
-SATIVANORTE;Gustavo Francisco Petro Urrego;Partido de la U;20
+SATIVANORTE;German Vargas Lleras;Cambio Radical;39
+SATIVANORTE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;20
 SATIVANORTE;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 SATIVANORTE;Rafael Pardo Rueda;Partido Liberal Colombiano;5
 SATIVANORTE;Robinson Devia Gonzalez;Partido PIN;4
@@ -784,24 +784,24 @@ SATIVASUR;Juan Manuel Santos Calderon;Partido de la U;246
 SATIVASUR;Rafael Pardo Rueda;Partido Liberal Colombiano;185
 SATIVASUR;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;52
 SATIVASUR;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;52
-SATIVASUR;German Vargas Lleras;Partido Liberal Colombiano;19
-SATIVASUR;Gustavo Francisco Petro Urrego;Partido de la U;16
+SATIVASUR;German Vargas Lleras;Cambio Radical;19
+SATIVASUR;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;16
 SATIVASUR;Robinson Devia Gonzalez;Partido PIN;5
 SATIVASUR;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 SIACHOQUE;Juan Manuel Santos Calderon;Partido de la U;1936
 SIACHOQUE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;628
 SIACHOQUE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;203
-SIACHOQUE;German Vargas Lleras;Partido Liberal Colombiano;129
+SIACHOQUE;German Vargas Lleras;Cambio Radical;129
 SIACHOQUE;Rafael Pardo Rueda;Partido Liberal Colombiano;119
-SIACHOQUE;Gustavo Francisco Petro Urrego;Partido de la U;116
+SIACHOQUE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;116
 SIACHOQUE;Jairo Enrique Calderon Carrero;Movimiento MIRA;11
 SIACHOQUE;Jaime Araujo Renteria;Polo Democrático Alternativo;10
 SIACHOQUE;Robinson Devia Gonzalez;Partido PIN;9
 SOATA;Juan Manuel Santos Calderon;Partido de la U;2969
 SOATA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;534
-SOATA;German Vargas Lleras;Partido Liberal Colombiano;228
+SOATA;German Vargas Lleras;Cambio Radical;228
 SOATA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;197
-SOATA;Gustavo Francisco Petro Urrego;Partido de la U;125
+SOATA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;125
 SOATA;Rafael Pardo Rueda;Partido Liberal Colombiano;91
 SOATA;Robinson Devia Gonzalez;Partido PIN;7
 SOATA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
@@ -810,24 +810,24 @@ SOCHA;Juan Manuel Santos Calderon;Partido de la U;1791
 SOCHA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;375
 SOCHA;Rafael Pardo Rueda;Partido Liberal Colombiano;301
 SOCHA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;141
-SOCHA;German Vargas Lleras;Partido Liberal Colombiano;126
-SOCHA;Gustavo Francisco Petro Urrego;Partido de la U;110
+SOCHA;German Vargas Lleras;Cambio Radical;126
+SOCHA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;110
 SOCHA;Robinson Devia Gonzalez;Partido PIN;5
 SOCHA;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
 SOCHA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 SOCOTA;Juan Manuel Santos Calderon;Partido de la U;2609
 SOCOTA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;154
 SOCOTA;Rafael Pardo Rueda;Partido Liberal Colombiano;146
-SOCOTA;German Vargas Lleras;Partido Liberal Colombiano;61
+SOCOTA;German Vargas Lleras;Cambio Radical;61
 SOCOTA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;60
-SOCOTA;Gustavo Francisco Petro Urrego;Partido de la U;42
+SOCOTA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;42
 SOCOTA;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 SOCOTA;Robinson Devia Gonzalez;Partido PIN;7
 SOCOTA;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 SOGAMOSO;Juan Manuel Santos Calderon;Partido de la U;21714
 SOGAMOSO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;12013
-SOGAMOSO;German Vargas Lleras;Partido Liberal Colombiano;6859
-SOGAMOSO;Gustavo Francisco Petro Urrego;Partido de la U;3210
+SOGAMOSO;German Vargas Lleras;Cambio Radical;6859
+SOGAMOSO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;3210
 SOGAMOSO;Rafael Pardo Rueda;Partido Liberal Colombiano;1754
 SOGAMOSO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;1479
 SOGAMOSO;Jairo Enrique Calderon Carrero;Movimiento MIRA;82
@@ -836,8 +836,8 @@ SOGAMOSO;Jaime Araujo Renteria;Polo Democrático Alternativo;17
 SOMONDOCO;Juan Manuel Santos Calderon;Partido de la U;1080
 SOMONDOCO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;336
 SOMONDOCO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;51
-SOMONDOCO;German Vargas Lleras;Partido Liberal Colombiano;48
-SOMONDOCO;Gustavo Francisco Petro Urrego;Partido de la U;29
+SOMONDOCO;German Vargas Lleras;Cambio Radical;48
+SOMONDOCO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;29
 SOMONDOCO;Rafael Pardo Rueda;Partido Liberal Colombiano;10
 SOMONDOCO;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 SOMONDOCO;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
@@ -846,8 +846,8 @@ SORA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;490
 SORA;Juan Manuel Santos Calderon;Partido de la U;471
 SORA;Rafael Pardo Rueda;Partido Liberal Colombiano;122
 SORA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;111
-SORA;German Vargas Lleras;Partido Liberal Colombiano;64
-SORA;Gustavo Francisco Petro Urrego;Partido de la U;42
+SORA;German Vargas Lleras;Cambio Radical;64
+SORA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;42
 SORA;Robinson Devia Gonzalez;Partido PIN;8
 SORA;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 SORA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
@@ -855,24 +855,24 @@ SORACA;Juan Manuel Santos Calderon;Partido de la U;1637
 SORACA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;635
 SORACA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;201
 SORACA;Rafael Pardo Rueda;Partido Liberal Colombiano;160
-SORACA;German Vargas Lleras;Partido Liberal Colombiano;151
-SORACA;Gustavo Francisco Petro Urrego;Partido de la U;70
+SORACA;German Vargas Lleras;Cambio Radical;151
+SORACA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;70
 SORACA;Robinson Devia Gonzalez;Partido PIN;3
 SORACA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 SORACA;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 SOTAQUIRA;Juan Manuel Santos Calderon;Partido de la U;1698
 SOTAQUIRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;396
-SOTAQUIRA;German Vargas Lleras;Partido Liberal Colombiano;233
+SOTAQUIRA;German Vargas Lleras;Cambio Radical;233
 SOTAQUIRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;166
 SOTAQUIRA;Rafael Pardo Rueda;Partido Liberal Colombiano;151
-SOTAQUIRA;Gustavo Francisco Petro Urrego;Partido de la U;75
+SOTAQUIRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;75
 SOTAQUIRA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
 SOTAQUIRA;Robinson Devia Gonzalez;Partido PIN;3
 SUSACON;Juan Manuel Santos Calderon;Partido de la U;927
 SUSACON;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;203
 SUSACON;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;74
-SUSACON;German Vargas Lleras;Partido Liberal Colombiano;38
-SUSACON;Gustavo Francisco Petro Urrego;Partido de la U;29
+SUSACON;German Vargas Lleras;Cambio Radical;38
+SUSACON;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;29
 SUSACON;Rafael Pardo Rueda;Partido Liberal Colombiano;15
 SUSACON;Robinson Devia Gonzalez;Partido PIN;3
 SUSACON;Jaime Araujo Renteria;Polo Democrático Alternativo;2
@@ -880,26 +880,26 @@ SUSACON;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 SUTAMARCHAN;Juan Manuel Santos Calderon;Partido de la U;1259
 SUTAMARCHAN;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;411
 SUTAMARCHAN;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;377
-SUTAMARCHAN;German Vargas Lleras;Partido Liberal Colombiano;328
+SUTAMARCHAN;German Vargas Lleras;Cambio Radical;328
 SUTAMARCHAN;Rafael Pardo Rueda;Partido Liberal Colombiano;127
-SUTAMARCHAN;Gustavo Francisco Petro Urrego;Partido de la U;44
+SUTAMARCHAN;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;44
 SUTAMARCHAN;Robinson Devia Gonzalez;Partido PIN;5
 SUTAMARCHAN;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 SUTAMARCHAN;Jairo Enrique Calderon Carrero;Movimiento MIRA;1
 SUTATENZA;Juan Manuel Santos Calderon;Partido de la U;1397
 SUTATENZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;198
 SUTATENZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;92
-SUTATENZA;German Vargas Lleras;Partido Liberal Colombiano;90
+SUTATENZA;German Vargas Lleras;Cambio Radical;90
 SUTATENZA;Rafael Pardo Rueda;Partido Liberal Colombiano;74
-SUTATENZA;Gustavo Francisco Petro Urrego;Partido de la U;57
+SUTATENZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;57
 SUTATENZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 SUTATENZA;Robinson Devia Gonzalez;Partido PIN;8
 SUTATENZA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 TASCO;Juan Manuel Santos Calderon;Partido de la U;1369
 TASCO;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;317
 TASCO;Rafael Pardo Rueda;Partido Liberal Colombiano;190
-TASCO;German Vargas Lleras;Partido Liberal Colombiano;152
-TASCO;Gustavo Francisco Petro Urrego;Partido de la U;82
+TASCO;German Vargas Lleras;Cambio Radical;152
+TASCO;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;82
 TASCO;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;55
 TASCO;Jaime Araujo Renteria;Polo Democrático Alternativo;8
 TASCO;Robinson Devia Gonzalez;Partido PIN;6
@@ -907,8 +907,8 @@ TASCO;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 TENZA;Juan Manuel Santos Calderon;Partido de la U;1465
 TENZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;192
 TENZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;115
-TENZA;German Vargas Lleras;Partido Liberal Colombiano;93
-TENZA;Gustavo Francisco Petro Urrego;Partido de la U;49
+TENZA;German Vargas Lleras;Cambio Radical;93
+TENZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;49
 TENZA;Rafael Pardo Rueda;Partido Liberal Colombiano;18
 TENZA;Robinson Devia Gonzalez;Partido PIN;5
 TENZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;3
@@ -917,16 +917,16 @@ TIBANA;Juan Manuel Santos Calderon;Partido de la U;1784
 TIBANA;Rafael Pardo Rueda;Partido Liberal Colombiano;644
 TIBANA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;407
 TIBANA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;120
-TIBANA;German Vargas Lleras;Partido Liberal Colombiano;104
-TIBANA;Gustavo Francisco Petro Urrego;Partido de la U;90
+TIBANA;German Vargas Lleras;Cambio Radical;104
+TIBANA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;90
 TIBANA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 TIBANA;Jaime Araujo Renteria;Polo Democrático Alternativo;7
 TIBANA;Robinson Devia Gonzalez;Partido PIN;6
 TIBASOSA;Juan Manuel Santos Calderon;Partido de la U;1914
 TIBASOSA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1023
-TIBASOSA;German Vargas Lleras;Partido Liberal Colombiano;365
+TIBASOSA;German Vargas Lleras;Cambio Radical;365
 TIBASOSA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;342
-TIBASOSA;Gustavo Francisco Petro Urrego;Partido de la U;246
+TIBASOSA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;246
 TIBASOSA;Rafael Pardo Rueda;Partido Liberal Colombiano;119
 TIBASOSA;Jairo Enrique Calderon Carrero;Movimiento MIRA;11
 TIBASOSA;Robinson Devia Gonzalez;Partido PIN;11
@@ -934,8 +934,8 @@ TIBASOSA;Jaime Araujo Renteria;Polo Democrático Alternativo;2
 TINJACA;Juan Manuel Santos Calderon;Partido de la U;536
 TINJACA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;280
 TINJACA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;248
-TINJACA;German Vargas Lleras;Partido Liberal Colombiano;102
-TINJACA;Gustavo Francisco Petro Urrego;Partido de la U;86
+TINJACA;German Vargas Lleras;Cambio Radical;102
+TINJACA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;86
 TINJACA;Rafael Pardo Rueda;Partido Liberal Colombiano;68
 TINJACA;Robinson Devia Gonzalez;Partido PIN;8
 TINJACA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
@@ -943,8 +943,8 @@ TINJACA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 TIPACOQUE;Juan Manuel Santos Calderon;Partido de la U;1014
 TIPACOQUE;Rafael Pardo Rueda;Partido Liberal Colombiano;299
 TIPACOQUE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;140
-TIPACOQUE;German Vargas Lleras;Partido Liberal Colombiano;48
-TIPACOQUE;Gustavo Francisco Petro Urrego;Partido de la U;37
+TIPACOQUE;German Vargas Lleras;Cambio Radical;48
+TIPACOQUE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;37
 TIPACOQUE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;17
 TIPACOQUE;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
 TIPACOQUE;Robinson Devia Gonzalez;Partido PIN;7
@@ -952,8 +952,8 @@ TIPACOQUE;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 TOCA;Juan Manuel Santos Calderon;Partido de la U;1706
 TOCA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1033
 TOCA;Rafael Pardo Rueda;Partido Liberal Colombiano;293
-TOCA;German Vargas Lleras;Partido Liberal Colombiano;234
-TOCA;Gustavo Francisco Petro Urrego;Partido de la U;177
+TOCA;German Vargas Lleras;Cambio Radical;234
+TOCA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;177
 TOCA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;166
 TOCA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 TOCA;Robinson Devia Gonzalez;Partido PIN;3
@@ -962,16 +962,16 @@ TOGUI;Juan Manuel Santos Calderon;Partido de la U;772
 TOGUI;Rafael Pardo Rueda;Partido Liberal Colombiano;367
 TOGUI;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;309
 TOGUI;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;136
-TOGUI;German Vargas Lleras;Partido Liberal Colombiano;107
-TOGUI;Gustavo Francisco Petro Urrego;Partido de la U;50
+TOGUI;German Vargas Lleras;Cambio Radical;107
+TOGUI;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;50
 TOGUI;Robinson Devia Gonzalez;Partido PIN;10
 TOGUI;Jairo Enrique Calderon Carrero;Movimiento MIRA;6
 TOGUI;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 TOPAGA;Juan Manuel Santos Calderon;Partido de la U;1071
 TOPAGA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;241
 TOPAGA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;156
-TOPAGA;German Vargas Lleras;Partido Liberal Colombiano;118
-TOPAGA;Gustavo Francisco Petro Urrego;Partido de la U;84
+TOPAGA;German Vargas Lleras;Cambio Radical;118
+TOPAGA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;84
 TOPAGA;Rafael Pardo Rueda;Partido Liberal Colombiano;40
 TOPAGA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 TOPAGA;Jairo Enrique Calderon Carrero;Movimiento MIRA;4
@@ -979,16 +979,16 @@ TOPAGA;Robinson Devia Gonzalez;Partido PIN;3
 TOTA;Juan Manuel Santos Calderon;Partido de la U;1243
 TOTA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;163
 TOTA;Rafael Pardo Rueda;Partido Liberal Colombiano;64
-TOTA;Gustavo Francisco Petro Urrego;Partido de la U;42
-TOTA;German Vargas Lleras;Partido Liberal Colombiano;41
+TOTA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;42
+TOTA;German Vargas Lleras;Cambio Radical;41
 TOTA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;38
 TOTA;Robinson Devia Gonzalez;Partido PIN;7
 TOTA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 TOTA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 TUNJA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;23396
 TUNJA;Juan Manuel Santos Calderon;Partido de la U;19178
-TUNJA;German Vargas Lleras;Partido Liberal Colombiano;8079
-TUNJA;Gustavo Francisco Petro Urrego;Partido de la U;4335
+TUNJA;German Vargas Lleras;Cambio Radical;8079
+TUNJA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;4335
 TUNJA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;3713
 TUNJA;Rafael Pardo Rueda;Partido Liberal Colombiano;1866
 TUNJA;Jairo Enrique Calderon Carrero;Movimiento MIRA;70
@@ -998,16 +998,16 @@ TUNUNGUA;Juan Manuel Santos Calderon;Partido de la U;319
 TUNUNGUA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;135
 TUNUNGUA;Rafael Pardo Rueda;Partido Liberal Colombiano;87
 TUNUNGUA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;32
-TUNUNGUA;Gustavo Francisco Petro Urrego;Partido de la U;25
-TUNUNGUA;German Vargas Lleras;Partido Liberal Colombiano;18
+TUNUNGUA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;25
+TUNUNGUA;German Vargas Lleras;Cambio Radical;18
 TUNUNGUA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 TUNUNGUA;Jaime Araujo Renteria;Polo Democrático Alternativo;3
 TUNUNGUA;Robinson Devia Gonzalez;Partido PIN;1
 TURMEQUE;Juan Manuel Santos Calderon;Partido de la U;1116
 TURMEQUE;Rafael Pardo Rueda;Partido Liberal Colombiano;687
 TURMEQUE;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;380
-TURMEQUE;German Vargas Lleras;Partido Liberal Colombiano;227
-TURMEQUE;Gustavo Francisco Petro Urrego;Partido de la U;114
+TURMEQUE;German Vargas Lleras;Cambio Radical;227
+TURMEQUE;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;114
 TURMEQUE;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;100
 TURMEQUE;Jairo Enrique Calderon Carrero;Movimiento MIRA;7
 TURMEQUE;Robinson Devia Gonzalez;Partido PIN;5
@@ -1016,8 +1016,8 @@ TUTA;Juan Manuel Santos Calderon;Partido de la U;1254
 TUTA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;856
 TUTA;Rafael Pardo Rueda;Partido Liberal Colombiano;483
 TUTA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;397
-TUTA;German Vargas Lleras;Partido Liberal Colombiano;387
-TUTA;Gustavo Francisco Petro Urrego;Partido de la U;189
+TUTA;German Vargas Lleras;Cambio Radical;387
+TUTA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;189
 TUTA;Robinson Devia Gonzalez;Partido PIN;10
 TUTA;Jairo Enrique Calderon Carrero;Movimiento MIRA;9
 TUTA;Jaime Araujo Renteria;Polo Democrático Alternativo;7
@@ -1025,16 +1025,16 @@ TUTAZA;Juan Manuel Santos Calderon;Partido de la U;738
 TUTAZA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;103
 TUTAZA;Rafael Pardo Rueda;Partido Liberal Colombiano;71
 TUTAZA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;56
-TUTAZA;Gustavo Francisco Petro Urrego;Partido de la U;54
-TUTAZA;German Vargas Lleras;Partido Liberal Colombiano;51
+TUTAZA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;54
+TUTAZA;German Vargas Lleras;Cambio Radical;51
 TUTAZA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 TUTAZA;Robinson Devia Gonzalez;Partido PIN;5
 TUTAZA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 UMBITA;Juan Manuel Santos Calderon;Partido de la U;2606
 UMBITA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;292
 UMBITA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;242
-UMBITA;German Vargas Lleras;Partido Liberal Colombiano;119
-UMBITA;Gustavo Francisco Petro Urrego;Partido de la U;70
+UMBITA;German Vargas Lleras;Cambio Radical;119
+UMBITA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;70
 UMBITA;Rafael Pardo Rueda;Partido Liberal Colombiano;26
 UMBITA;Robinson Devia Gonzalez;Partido PIN;11
 UMBITA;Jairo Enrique Calderon Carrero;Movimiento MIRA;8
@@ -1042,17 +1042,17 @@ UMBITA;Jaime Araujo Renteria;Polo Democrático Alternativo;4
 VENTAQUEMADA;Juan Manuel Santos Calderon;Partido de la U;2769
 VENTAQUEMADA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;766
 VENTAQUEMADA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;433
-VENTAQUEMADA;German Vargas Lleras;Partido Liberal Colombiano;395
+VENTAQUEMADA;German Vargas Lleras;Cambio Radical;395
 VENTAQUEMADA;Rafael Pardo Rueda;Partido Liberal Colombiano;317
-VENTAQUEMADA;Gustavo Francisco Petro Urrego;Partido de la U;148
+VENTAQUEMADA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;148
 VENTAQUEMADA;Jairo Enrique Calderon Carrero;Movimiento MIRA;16
 VENTAQUEMADA;Jaime Araujo Renteria;Polo Democrático Alternativo;11
 VENTAQUEMADA;Robinson Devia Gonzalez;Partido PIN;10
 VILLA DE LEYVA;Juan Manuel Santos Calderon;Partido de la U;2475
 VILLA DE LEYVA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;1685
 VILLA DE LEYVA;Rafael Pardo Rueda;Partido Liberal Colombiano;379
-VILLA DE LEYVA;German Vargas Lleras;Partido Liberal Colombiano;314
-VILLA DE LEYVA;Gustavo Francisco Petro Urrego;Partido de la U;150
+VILLA DE LEYVA;German Vargas Lleras;Cambio Radical;314
+VILLA DE LEYVA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;150
 VILLA DE LEYVA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;127
 VILLA DE LEYVA;Robinson Devia Gonzalez;Partido PIN;19
 VILLA DE LEYVA;Jaime Araujo Renteria;Polo Democrático Alternativo;6
@@ -1060,18 +1060,18 @@ VILLA DE LEYVA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 VIRACACHA;Juan Manuel Santos Calderon;Partido de la U;812
 VIRACACHA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;170
 VIRACACHA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;131
-VIRACACHA;German Vargas Lleras;Partido Liberal Colombiano;88
+VIRACACHA;German Vargas Lleras;Cambio Radical;88
 VIRACACHA;Rafael Pardo Rueda;Partido Liberal Colombiano;76
-VIRACACHA;Gustavo Francisco Petro Urrego;Partido de la U;22
+VIRACACHA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;22
 VIRACACHA;Robinson Devia Gonzalez;Partido PIN;10
 VIRACACHA;Jaime Araujo Renteria;Polo Democrático Alternativo;5
 VIRACACHA;Jairo Enrique Calderon Carrero;Movimiento MIRA;5
 ZETAQUIRA;Juan Manuel Santos Calderon;Partido de la U;1361
 ZETAQUIRA;Aurelijus Rutenis Antanas Mockus Sivickas;Alianza Verde;261
 ZETAQUIRA;Rafael Pardo Rueda;Partido Liberal Colombiano;90
-ZETAQUIRA;German Vargas Lleras;Partido Liberal Colombiano;58
+ZETAQUIRA;German Vargas Lleras;Cambio Radical;58
 ZETAQUIRA;Marta Noemi Del Espiritu Santo Sanin Posada De Rubio;Partido Conservador Colombiano;50
-ZETAQUIRA;Gustavo Francisco Petro Urrego;Partido de la U;47
+ZETAQUIRA;Gustavo Francisco Petro Urrego;Polo Democrático Alternativo;47
 ZETAQUIRA;Jairo Enrique Calderon Carrero;Movimiento MIRA;2
 ZETAQUIRA;Robinson Devia Gonzalez;Partido PIN;2
 ZETAQUIRA;Jaime Araujo Renteria;Polo Democrático Alternativo;1

@@ -1,734 +1,695 @@
 MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
-ALMEIDA;Alianza Social Independiente;40;1237;3.23
-ALMEIDA;Cambio Radical;288;1237;23.28
+ALMEIDA;Partido de la U;785;1237;63.459984
+ALMEIDA;Cambio Radical;288;1237;23.282134
+ALMEIDA;Partido Conservador Colombiano;124;1237;10.024252
+ALMEIDA;Alianza Social Independiente;40;1237;3.23363
 ALMEIDA;Partido Alianza Social Independiente  Asi;0;1237;0.0
-ALMEIDA;Partido Conservador Colombiano;124;1237;10.02
-ALMEIDA;Partido de la U;785;1237;63.46
-AQUITANIA;Alianza Social Independiente;318;7878;4.04
-AQUITANIA;Alianza Verde;1608;7878;20.41
-AQUITANIA;Cambio Radical;549;7878;6.97
-AQUITANIA;Candidata Retirada;100;7878;1.27
-AQUITANIA;MIO;976;7878;12.39
-AQUITANIA;MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA;953;7878;12.1
-AQUITANIA;Movimiento Autoridades Indigenas De Colombia;25;7878;0.32
-AQUITANIA;PARTIDO DE INTEGRACION NACIONAL;1052;7878;13.35
-AQUITANIA;Partido Conservador Colombiano;1218;7878;15.46
-AQUITANIA;Partido De Integracion Nacional;48;7878;0.61
-AQUITANIA;Partido Liberal Colombiano;199;7878;2.53
-AQUITANIA;Partido de la U;832;7878;10.56
-ARCABUCO;Alianza Verde;631;2933;21.51
-ARCABUCO;Cambio Radical;283;2933;9.65
-ARCABUCO;Partido Conservador Colombiano;700;2933;23.87
-ARCABUCO;Partido Liberal Colombiano;399;2933;13.6
-ARCABUCO;Partido de la U;920;2933;31.37
-BELEN;Partido Conservador Colombiano;1890;4508;41.93
-BELEN;Partido Liberal Colombiano;1782;4508;39.53
-BELEN;Partido de la U;836;4508;18.54
-BERBEO;Alianza Social Independiente;189;1098;17.21
-BERBEO;Alianza Verde;210;1098;19.13
-BERBEO;Cambio Radical;187;1098;17.03
-BERBEO;PARTIDO DE INTEGRACION NACIONAL;142;1098;12.93
-BERBEO;Partido De Integracion Nacional;1;1098;0.09
-BERBEO;Partido Liberal Colombiano;153;1098;13.93
-BERBEO;Partido de la U;216;1098;19.67
-BETEITIVA;Alianza Verde;259;1408;18.39
+AQUITANIA;Alianza Verde;1608;7878;20.411272
+AQUITANIA;Partido Conservador Colombiano;1218;7878;15.460777
+AQUITANIA;Opción Ciudadana;1100;7878;13.962935
+AQUITANIA;AICO;978;7878;12.414318
+AQUITANIA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;944;7878;11.982737
+AQUITANIA;Partido de la U;832;7878;10.561056
+AQUITANIA;Cambio Radical;549;7878;6.968774
+AQUITANIA;Alianza Social Independiente;318;7878;4.036558
+AQUITANIA;Partido Liberal Colombiano;199;7878;2.526022
+AQUITANIA;Candidata Retirada;100;7878;1.269358
+AQUITANIA;Movimiento De Inclusion Y Oportunidades;32;7878;0.406194
+ARCABUCO;Partido de la U;920;2933;31.367201
+ARCABUCO;Partido Conservador Colombiano;700;2933;23.866348
+ARCABUCO;Alianza Verde;631;2933;21.513808
+ARCABUCO;Partido Liberal Colombiano;399;2933;13.603819
+ARCABUCO;Cambio Radical;283;2933;9.648824
+BELEN;Partido Conservador Colombiano;1890;4508;41.925466
+BELEN;Partido Liberal Colombiano;1782;4508;39.529725
+BELEN;Partido de la U;836;4508;18.544809
+BERBEO;Partido de la U;216;1098;19.672131
+BERBEO;Alianza Verde;210;1098;19.125683
+BERBEO;Alianza Social Independiente;189;1098;17.213115
+BERBEO;Cambio Radical;187;1098;17.030965
+BERBEO;Partido Liberal Colombiano;153;1098;13.934426
+BERBEO;Opción Ciudadana;143;1098;13.023679
+BETEITIVA;Partido de la U;427;1408;30.326705
 BETEITIVA;Cambio Radical;352;1408;25.0
-BETEITIVA;PARTIDO DE INTEGRACION NACIONAL;74;1408;5.26
-BETEITIVA;Partido De Integracion Nacional;1;1408;0.07
-BETEITIVA;Partido Liberal Colombiano;295;1408;20.95
-BETEITIVA;Partido de la U;427;1408;30.33
-BOAVITA;Alianza Social Independiente;511;3074;16.62
-BOAVITA;Alianza Verde;918;3074;29.86
-BOAVITA;Cambio Radical;38;3074;1.24
-BOAVITA;Partido Conservador Colombiano;975;3074;31.72
-BOAVITA;Partido de la U;632;3074;20.56
-BOYACA;Alianza Verde;197;2758;7.14
-BOYACA;Cambio Radical;204;2758;7.4
-BOYACA;PARTIDO DE INTEGRACION NACIONAL;520;2758;18.85
-BOYACA;Partido De Integracion Nacional;20;2758;0.73
-BOYACA;Partido Liberal Colombiano;1040;2758;37.71
-BOYACA;Partido de la U;777;2758;28.17
-BRICENO;Alianza Social Independiente;290;1361;21.31
-BRICENO;Alianza Verde;240;1361;17.63
-BRICENO;Cambio Radical;254;1361;18.66
-BRICENO;PARTIDO DE INTEGRACION NACIONAL;155;1361;11.39
-BRICENO;Partido Conservador Colombiano;311;1361;22.85
-BRICENO;Partido De Integracion Nacional;7;1361;0.51
-BRICENO;Partido de la U;104;1361;7.64
-BUENAVISTA;Alianza Social Independiente;356;2797;12.73
-BUENAVISTA;Alianza Verde;237;2797;8.47
-BUENAVISTA;Cambio Radical;1091;2797;39.01
-BUENAVISTA;Partido Conservador Colombiano;539;2797;19.27
-BUENAVISTA;Partido de la U;574;2797;20.52
-BUSBANZA;Alianza Social Independiente;248;569;43.59
-BUSBANZA;Alianza Verde;112;569;19.68
-BUSBANZA;Partido Conservador Colombiano;209;569;36.73
-CALDAS;Cambio Radical;488;1959;24.91
-CALDAS;Partido Conservador Colombiano;564;1959;28.79
-CALDAS;Partido Liberal Colombiano;630;1959;32.16
-CALDAS;Partido de la U;277;1959;14.14
-CAMPOHERMOSO;Alianza Verde;126;1636;7.7
-CAMPOHERMOSO;Cambio Radical;109;1636;6.66
-CAMPOHERMOSO;Partido Conservador Colombiano;510;1636;31.17
-CAMPOHERMOSO;Partido Liberal Colombiano;283;1636;17.3
-CAMPOHERMOSO;Partido de la U;608;1636;37.16
-CERINZA;Alianza Verde;636;2193;29.0
-CERINZA;Partido Conservador Colombiano;840;2193;38.3
-CERINZA;Partido de la U;717;2193;32.69
-CHINAVITA;Alianza Social Independiente;783;2097;37.34
-CHINAVITA;Cambio Radical;595;2097;28.37
-CHINAVITA;Partido Conservador Colombiano;433;2097;20.65
-CHINAVITA;Partido de la U;286;2097;13.64
-CHIQUINQUIRA;Alianza Verde;2598;20750;12.52
-CHIQUINQUIRA;Cambio Radical;4543;20750;21.89
-CHIQUINQUIRA;MIO;647;20750;3.12
-CHIQUINQUIRA;Movimiento MIRA;454;20750;2.19
-CHIQUINQUIRA;PARTIDO DE INTEGRACION NACIONAL;544;20750;2.62
-CHIQUINQUIRA;Partido Conservador Colombiano;5264;20750;25.37
-CHIQUINQUIRA;Partido De Integracion Nacional;27;20750;0.13
-CHIQUINQUIRA;Partido Liberal Colombiano;1745;20750;8.41
-CHIQUINQUIRA;Partido de la U;4117;20750;19.84
-CHIQUINQUIRA;Polo Democrático Alternativo;811;20750;3.91
-CHIQUIZA;Alianza Verde;892;3485;25.6
-CHIQUIZA;Cambio Radical;289;3485;8.29
-CHIQUIZA;Partido Conservador Colombiano;716;3485;20.55
-CHIQUIZA;Partido Liberal Colombiano;1127;3485;32.34
-CHIQUIZA;Partido de la U;461;3485;13.23
-CHISCAS;Alianza Social Independiente;335;2172;15.42
-CHISCAS;Alianza Verde;571;2172;26.29
-CHISCAS;Cambio Radical;308;2172;14.18
-CHISCAS;Partido Liberal Colombiano;694;2172;31.95
-CHISCAS;Partido de la U;264;2172;12.15
-CHITA;Alianza Verde;459;3810;12.05
-CHITA;Cambio Radical;887;3810;23.28
-CHITA;Partido Conservador Colombiano;1046;3810;27.45
-CHITA;Partido Liberal Colombiano;563;3810;14.78
-CHITA;Partido de la U;855;3810;22.44
-CHITARAQUE;Cambio Radical;358;3255;11.0
-CHITARAQUE;Partido Conservador Colombiano;786;3255;24.15
-CHITARAQUE;Partido Liberal Colombiano;805;3255;24.73
-CHITARAQUE;Partido de la U;1306;3255;40.12
-CHIVATA;Alianza Verde;776;1767;43.92
-CHIVATA;Partido Conservador Colombiano;719;1767;40.69
-CHIVATA;Partido de la U;272;1767;15.39
-CHIVOR;Alianza Verde;524;1095;47.85
-CHIVOR;Partido Conservador Colombiano;521;1095;47.58
-CHIVOR;Partido de la U;50;1095;4.57
-CIENEGA;Alianza Verde;442;2565;17.23
-CIENEGA;Partido Conservador Colombiano;1094;2565;42.65
-CIENEGA;Partido Liberal Colombiano;354;2565;13.8
-CIENEGA;Partido de la U;675;2565;26.32
-COMBITA;Alianza Social Independiente;405;5516;7.34
-COMBITA;Alianza Verde;1187;5516;21.52
-COMBITA;Cambio Radical;579;5516;10.5
-COMBITA;Partido Conservador Colombiano;935;5516;16.95
-COMBITA;Partido Liberal Colombiano;1182;5516;21.43
-COMBITA;Partido de la U;1204;5516;21.83
-COMBITA;Polo Democrático Alternativo;24;5516;0.44
-COPER;Cambio Radical;557;2240;24.87
-COPER;Partido Conservador Colombiano;584;2240;26.07
-COPER;Partido Liberal Colombiano;665;2240;29.69
-COPER;Partido de la U;434;2240;19.38
-CORRALES;Alianza Social Independiente;138;1638;8.42
-CORRALES;Alianza Verde;286;1638;17.46
-CORRALES;Cambio Radical;369;1638;22.53
-CORRALES;Partido Conservador Colombiano;645;1638;39.38
-CORRALES;Partido Liberal Colombiano;200;1638;12.21
-COVARACHIA;Alianza Social Independiente;58;1827;3.17
-COVARACHIA;Alianza Verde;219;1827;11.99
-COVARACHIA;Cambio Radical;440;1827;24.08
-COVARACHIA;MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA;76;1827;4.16
+BETEITIVA;Partido Liberal Colombiano;295;1408;20.951705
+BETEITIVA;Alianza Verde;259;1408;18.394886
+BETEITIVA;Opción Ciudadana;75;1408;5.326705
+BOAVITA;Partido Conservador Colombiano;975;3074;31.717632
+BOAVITA;Alianza Verde;918;3074;29.86337
+BOAVITA;Partido de la U;632;3074;20.559532
+BOAVITA;Alianza Social Independiente;511;3074;16.623292
+BOAVITA;Cambio Radical;38;3074;1.236174
+BOYACA;Partido Liberal Colombiano;1040;2758;37.708484
+BOYACA;Partido de la U;777;2758;28.172589
+BOYACA;Opción Ciudadana;540;2758;19.579405
+BOYACA;Cambio Radical;204;2758;7.396664
+BOYACA;Alianza Verde;197;2758;7.142857
+BRICENO;Partido Conservador Colombiano;311;1361;22.850845
+BRICENO;Alianza Social Independiente;290;1361;21.307862
+BRICENO;Cambio Radical;254;1361;18.662748
+BRICENO;Alianza Verde;240;1361;17.634093
+BRICENO;Opción Ciudadana;162;1361;11.903012
+BRICENO;Partido de la U;104;1361;7.64144
+BUENAVISTA;Cambio Radical;1091;2797;39.006078
+BUENAVISTA;Partido de la U;574;2797;20.521988
+BUENAVISTA;Partido Conservador Colombiano;539;2797;19.270647
+BUENAVISTA;Alianza Social Independiente;356;2797;12.727923
+BUENAVISTA;Alianza Verde;237;2797;8.473364
+BUSBANZA;Alianza Social Independiente;248;569;43.585237
+BUSBANZA;Partido Conservador Colombiano;209;569;36.731107
+BUSBANZA;Alianza Verde;112;569;19.683656
+CALDAS;Partido Liberal Colombiano;630;1959;32.159265
+CALDAS;Partido Conservador Colombiano;564;1959;28.790199
+CALDAS;Cambio Radical;488;1959;24.910669
+CALDAS;Partido de la U;277;1959;14.139867
+CAMPOHERMOSO;Partido de la U;608;1636;37.163814
+CAMPOHERMOSO;Partido Conservador Colombiano;510;1636;31.173594
+CAMPOHERMOSO;Partido Liberal Colombiano;283;1636;17.298289
+CAMPOHERMOSO;Alianza Verde;126;1636;7.701711
+CAMPOHERMOSO;Cambio Radical;109;1636;6.662592
+CERINZA;Partido Conservador Colombiano;840;2193;38.303694
+CERINZA;Partido de la U;717;2193;32.694938
+CERINZA;Alianza Verde;636;2193;29.001368
+CHINAVITA;Alianza Social Independiente;783;2097;37.339056
+CHINAVITA;Cambio Radical;595;2097;28.373867
+CHINAVITA;Partido Conservador Colombiano;433;2097;20.648546
+CHINAVITA;Partido de la U;286;2097;13.638531
+CHIQUINQUIRA;Partido Conservador Colombiano;5264;20750;25.368675
+CHIQUINQUIRA;Cambio Radical;4543;20750;21.893976
+CHIQUINQUIRA;Partido de la U;4117;20750;19.840964
+CHIQUINQUIRA;Alianza Verde;2598;20750;12.520482
+CHIQUINQUIRA;Partido Liberal Colombiano;1745;20750;8.409639
+CHIQUINQUIRA;Polo Democrático Alternativo;811;20750;3.908434
+CHIQUINQUIRA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;632;20750;3.045783
+CHIQUINQUIRA;Opción Ciudadana;571;20750;2.751807
+CHIQUINQUIRA;Movimiento MIRA;454;20750;2.187952
+CHIQUINQUIRA;Movimiento De Inclusion Y Oportunidades;15;20750;0.072289
+CHIQUIZA;Partido Liberal Colombiano;1127;3485;32.338594
+CHIQUIZA;Alianza Verde;892;3485;25.595409
+CHIQUIZA;Partido Conservador Colombiano;716;3485;20.545194
+CHIQUIZA;Partido de la U;461;3485;13.228121
+CHIQUIZA;Cambio Radical;289;3485;8.292683
+CHISCAS;Partido Liberal Colombiano;694;2172;31.952118
+CHISCAS;Alianza Verde;571;2172;26.289134
+CHISCAS;Alianza Social Independiente;335;2172;15.423573
+CHISCAS;Cambio Radical;308;2172;14.180479
+CHISCAS;Partido de la U;264;2172;12.154696
+CHITA;Partido Conservador Colombiano;1046;3810;27.454068
+CHITA;Cambio Radical;887;3810;23.28084
+CHITA;Partido de la U;855;3810;22.440945
+CHITA;Partido Liberal Colombiano;563;3810;14.776903
+CHITA;Alianza Verde;459;3810;12.047244
+CHITARAQUE;Partido de la U;1306;3255;40.122888
+CHITARAQUE;Partido Liberal Colombiano;805;3255;24.731183
+CHITARAQUE;Partido Conservador Colombiano;786;3255;24.147465
+CHITARAQUE;Cambio Radical;358;3255;10.998464
+CHIVATA;Alianza Verde;776;1767;43.916242
+CHIVATA;Partido Conservador Colombiano;719;1767;40.690436
+CHIVATA;Partido de la U;272;1767;15.393322
+CHIVOR;Alianza Verde;524;1095;47.853881
+CHIVOR;Partido Conservador Colombiano;521;1095;47.579909
+CHIVOR;Partido de la U;50;1095;4.56621
+CIENEGA;Partido Conservador Colombiano;1094;2565;42.651072
+CIENEGA;Partido de la U;675;2565;26.315789
+CIENEGA;Alianza Verde;442;2565;17.231969
+CIENEGA;Partido Liberal Colombiano;354;2565;13.80117
+COMBITA;Partido de la U;1204;5516;21.827411
+COMBITA;Alianza Verde;1187;5516;21.519217
+COMBITA;Partido Liberal Colombiano;1182;5516;21.428571
+COMBITA;Partido Conservador Colombiano;935;5516;16.950689
+COMBITA;Cambio Radical;579;5516;10.496737
+COMBITA;Alianza Social Independiente;405;5516;7.342277
+COMBITA;Polo Democrático Alternativo;24;5516;0.435098
+COPER;Partido Liberal Colombiano;665;2240;29.6875
+COPER;Partido Conservador Colombiano;584;2240;26.071429
+COPER;Cambio Radical;557;2240;24.866071
+COPER;Partido de la U;434;2240;19.375
+CORRALES;Partido Conservador Colombiano;645;1638;39.377289
+CORRALES;Cambio Radical;369;1638;22.527473
+CORRALES;Alianza Verde;286;1638;17.460317
+CORRALES;Partido Liberal Colombiano;200;1638;12.210012
+CORRALES;Alianza Social Independiente;138;1638;8.424908
+COVARACHIA;Cambio Radical;440;1827;24.083196
+COVARACHIA;Partido Conservador Colombiano;303;1827;16.584565
+COVARACHIA;Opción Ciudadana;292;1827;15.982485
+COVARACHIA;Partido de la U;236;1827;12.917351
+COVARACHIA;Alianza Verde;219;1827;11.986864
+COVARACHIA;Partido Liberal Colombiano;203;1827;11.111111
+COVARACHIA;AICO;76;1827;4.159825
+COVARACHIA;Alianza Social Independiente;58;1827;3.174603
 COVARACHIA;Movimiento Autoridades Indigenas De Colombia  Aico;0;1827;0.0
-COVARACHIA;PARTIDO DE INTEGRACION NACIONAL;285;1827;15.6
-COVARACHIA;Partido Conservador Colombiano;303;1827;16.58
-COVARACHIA;Partido De Integracion Nacional;7;1827;0.38
-COVARACHIA;Partido Liberal Colombiano;203;1827;11.11
-COVARACHIA;Partido de la U;236;1827;12.92
-CUBARA;Alianza Social Independiente;537;2216;24.23
-CUBARA;Alianza Verde;315;2216;14.21
-CUBARA;Partido Conservador Colombiano;595;2216;26.85
-CUBARA;Partido Liberal Colombiano;769;2216;34.7
-CUCAITA;Alianza Social Independiente;305;2264;13.47
-CUCAITA;Alianza Verde;719;2264;31.76
-CUCAITA;Cambio Radical;342;2264;15.11
-CUCAITA;PARTIDO DE INTEGRACION NACIONAL;318;2264;14.05
-CUCAITA;Partido Conservador Colombiano;212;2264;9.36
-CUCAITA;Partido De Integracion Nacional;10;2264;0.44
-CUCAITA;Partido de la U;358;2264;15.81
-CUITIVA;Cambio Radical;361;1253;28.81
-CUITIVA;Partido Conservador Colombiano;212;1253;16.92
-CUITIVA;Partido Liberal Colombiano;280;1253;22.35
-CUITIVA;Partido de la U;400;1253;31.92
-DUITAMA;Alianza Social Independiente;2584;43127;5.99
-DUITAMA;Alianza Verde;5724;43127;13.27
-DUITAMA;Cambio Radical;4807;43127;11.15
-DUITAMA;MIO;2074;43127;4.81
-DUITAMA;Movimiento MIRA;2134;43127;4.95
-DUITAMA;PARTIDO DE INTEGRACION NACIONAL;3748;43127;8.69
-DUITAMA;Partido Conservador Colombiano;9238;43127;21.42
-DUITAMA;Partido De Integracion Nacional;69;43127;0.16
-DUITAMA;Partido Liberal Colombiano;2806;43127;6.51
-DUITAMA;Partido de la U;8984;43127;20.83
-DUITAMA;Polo Democrático Alternativo;959;43127;2.22
-EL COCUY;Alianza Social Independiente;104;2321;4.48
-EL COCUY;Partido Conservador Colombiano;883;2321;38.04
-EL COCUY;Partido Liberal Colombiano;1164;2321;50.15
-EL COCUY;Partido de la U;170;2321;7.32
-EL ESPINO;Alianza Verde;251;1485;16.9
-EL ESPINO;Cambio Radical;515;1485;34.68
-EL ESPINO;Partido Conservador Colombiano;237;1485;15.96
-EL ESPINO;Partido de la U;482;1485;32.46
-FIRAVITOBA;Alianza Verde;653;3204;20.38
-FIRAVITOBA;Partido Conservador Colombiano;1178;3204;36.77
-FIRAVITOBA;Partido Liberal Colombiano;1176;3204;36.7
-FIRAVITOBA;Polo Democrático Alternativo;197;3204;6.15
-FLORESTA;Alianza Verde;343;2074;16.54
-FLORESTA;Cambio Radical;316;2074;15.24
-FLORESTA;MIO;293;2074;14.13
-FLORESTA;Partido Conservador Colombiano;588;2074;28.35
-FLORESTA;Partido de la U;534;2074;25.75
-GACHANTIVA;Alianza Social Independiente;177;1883;9.4
-GACHANTIVA;Alianza Verde;392;1883;20.82
-GACHANTIVA;Cambio Radical;135;1883;7.17
-GACHANTIVA;PARTIDO DE INTEGRACION NACIONAL;156;1883;8.28
-GACHANTIVA;Partido Conservador Colombiano;402;1883;21.35
-GACHANTIVA;Partido De Integracion Nacional;6;1883;0.32
-GACHANTIVA;Partido Liberal Colombiano;334;1883;17.74
-GACHANTIVA;Partido de la U;281;1883;14.92
-GAMEZA;Alianza Verde;307;2715;11.31
-GAMEZA;Cambio Radical;621;2715;22.87
-GAMEZA;PARTIDO DE INTEGRACION NACIONAL;19;2715;0.7
-GAMEZA;Partido Conservador Colombiano;781;2715;28.77
-GAMEZA;Partido De Integracion Nacional;4;2715;0.15
-GAMEZA;Partido Liberal Colombiano;704;2715;25.93
-GAMEZA;Partido de la U;279;2715;10.28
-GARAGOA;Alianza Social Independiente;645;6478;9.96
-GARAGOA;Alianza Verde;833;6478;12.86
-GARAGOA;Cambio Radical;889;6478;13.72
-GARAGOA;Movimiento MIRA;275;6478;4.25
-GARAGOA;PARTIDO DE INTEGRACION NACIONAL;632;6478;9.76
-GARAGOA;Partido Conservador Colombiano;1422;6478;21.95
-GARAGOA;Partido De Integracion Nacional;31;6478;0.48
-GARAGOA;Partido Liberal Colombiano;936;6478;14.45
-GARAGOA;Partido de la U;815;6478;12.58
-GUACAMAYAS;Cambio Radical;123;1204;10.22
-GUACAMAYAS;PARTIDO DE INTEGRACION NACIONAL;357;1204;29.65
-GUACAMAYAS;Partido Conservador Colombiano;463;1204;38.46
-GUACAMAYAS;Partido De Integracion Nacional;6;1204;0.5
-GUACAMAYAS;Partido de la U;255;1204;21.18
-GUATEQUE;Alianza Verde;1209;4994;24.21
-GUATEQUE;Cambio Radical;1585;4994;31.74
-GUATEQUE;Movimiento MIRA;112;4994;2.24
-GUATEQUE;Partido Conservador Colombiano;284;4994;5.69
-GUATEQUE;Partido Liberal Colombiano;864;4994;17.3
-GUATEQUE;Partido de la U;940;4994;18.82
-GUAYATA;Cambio Radical;419;2544;16.47
-GUAYATA;Partido Conservador Colombiano;841;2544;33.06
-GUAYATA;Partido Liberal Colombiano;583;2544;22.92
-GUAYATA;Partido de la U;701;2544;27.56
-GUICAN DE LA SIERRA;Alianza Social Independiente;130;1932;6.73
-GUICAN DE LA SIERRA;Alianza Verde;545;1932;28.21
-GUICAN DE LA SIERRA;Cambio Radical;430;1932;22.26
-GUICAN DE LA SIERRA;Partido Conservador Colombiano;315;1932;16.3
-GUICAN DE LA SIERRA;Partido de la U;512;1932;26.5
-IZA;Alianza Verde;346;1426;24.26
-IZA;Cambio Radical;238;1426;16.69
-IZA;Partido Conservador Colombiano;376;1426;26.37
-IZA;Partido Liberal Colombiano;85;1426;5.96
-IZA;Partido de la U;381;1426;26.72
-JENESANO;Alianza Social Independiente;415;3436;12.08
-JENESANO;Alianza Verde;396;3436;11.53
-JENESANO;Cambio Radical;693;3436;20.17
-JENESANO;MIO;889;3436;25.87
-JENESANO;Partido Liberal Colombiano;1043;3436;30.36
-JERICO;Alianza Social Independiente;216;2094;10.32
-JERICO;Alianza Verde;333;2094;15.9
-JERICO;Cambio Radical;310;2094;14.8
-JERICO;MIO;198;2094;9.46
-JERICO;PARTIDO DE INTEGRACION NACIONAL;98;2094;4.68
-JERICO;Partido Conservador Colombiano;717;2094;34.24
-JERICO;Partido De Integracion Nacional;5;2094;0.24
-JERICO;Partido de la U;217;2094;10.36
-LA CAPILLA;Alianza Verde;196;1769;11.08
-LA CAPILLA;Cambio Radical;61;1769;3.45
-LA CAPILLA;Movimiento MIRA;38;1769;2.15
-LA CAPILLA;Partido Conservador Colombiano;635;1769;35.9
-LA CAPILLA;Partido de la U;839;1769;47.43
-LA UVITA;Alianza Social Independiente;131;1537;8.52
-LA UVITA;Alianza Verde;310;1537;20.17
-LA UVITA;Cambio Radical;175;1537;11.39
-LA UVITA;PARTIDO DE INTEGRACION NACIONAL;145;1537;9.43
-LA UVITA;Partido Conservador Colombiano;268;1537;17.44
-LA UVITA;Partido De Integracion Nacional;7;1537;0.46
-LA UVITA;Partido Liberal Colombiano;136;1537;8.85
-LA UVITA;Partido de la U;255;1537;16.59
-LA UVITA;Polo Democrático Alternativo;110;1537;7.16
-LA VICTORIA;Cambio Radical;150;1110;13.51
-LA VICTORIA;Partido Liberal Colombiano;443;1110;39.91
-LA VICTORIA;Partido de la U;517;1110;46.58
-LABRANZAGRANDE;Alianza Verde;203;1884;10.77
-LABRANZAGRANDE;Cambio Radical;650;1884;34.5
-LABRANZAGRANDE;PARTIDO DE INTEGRACION NACIONAL;62;1884;3.29
-LABRANZAGRANDE;Partido De Integracion Nacional;3;1884;0.16
-LABRANZAGRANDE;Partido Liberal Colombiano;335;1884;17.78
-LABRANZAGRANDE;Partido de la U;631;1884;33.49
-MACANAL;Alianza Social Independiente;233;2365;9.85
-MACANAL;Alianza Verde;265;2365;11.21
-MACANAL;Cambio Radical;287;2365;12.14
-MACANAL;Partido Conservador Colombiano;596;2365;25.2
-MACANAL;Partido de la U;984;2365;41.61
-MARIPI;Alianza Verde;1224;3986;30.71
-MARIPI;Partido Conservador Colombiano;694;3986;17.41
-MARIPI;Partido Liberal Colombiano;1465;3986;36.75
-MARIPI;Partido de la U;603;3986;15.13
-MIRAFLORES;Cambio Radical;740;4774;15.5
-MIRAFLORES;Movimiento MIRA;69;4774;1.45
-MIRAFLORES;PARTIDO DE INTEGRACION NACIONAL;802;4774;16.8
-MIRAFLORES;Partido De Integracion Nacional;13;4774;0.27
-MIRAFLORES;Partido Liberal Colombiano;1253;4774;26.25
-MIRAFLORES;Partido de la U;1897;4774;39.74
-MONGUA;Alianza Social Independiente;490;2811;17.43
-MONGUA;Cambio Radical;445;2811;15.83
-MONGUA;MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA;468;2811;16.65
-MONGUA;Movimiento Autoridades Indigenas De Colombia;6;2811;0.21
-MONGUA;PARTIDO DE INTEGRACION NACIONAL;541;2811;19.25
-MONGUA;Partido Conservador Colombiano;349;2811;12.42
-MONGUA;Partido De Integracion Nacional;12;2811;0.43
-MONGUA;Partido de la U;500;2811;17.79
-MONGUI;Alianza Verde;497;2411;20.61
-MONGUI;Cambio Radical;650;2411;26.96
-MONGUI;Partido Conservador Colombiano;707;2411;29.32
-MONGUI;Partido de la U;557;2411;23.1
-MONIQUIRA;Alianza Verde;791;8726;9.06
-MONIQUIRA;Cambio Radical;533;8726;6.11
-MONIQUIRA;Movimiento MIRA;201;8726;2.3
-MONIQUIRA;PARTIDO DE INTEGRACION NACIONAL;1015;8726;11.63
-MONIQUIRA;Partido Conservador Colombiano;2745;8726;31.46
-MONIQUIRA;Partido De Integracion Nacional;52;8726;0.6
-MONIQUIRA;Partido Liberal Colombiano;1140;8726;13.06
-MONIQUIRA;Partido de la U;1935;8726;22.18
-MONIQUIRA;Polo Democrático Alternativo;314;8726;3.6
-MOTAVITA;Alianza Verde;338;3286;10.29
-MOTAVITA;Cambio Radical;436;3286;13.27
-MOTAVITA;PARTIDO DE INTEGRACION NACIONAL;1310;3286;39.87
-MOTAVITA;Partido Conservador Colombiano;449;3286;13.66
-MOTAVITA;Partido De Integracion Nacional;16;3286;0.49
-MOTAVITA;Partido Liberal Colombiano;737;3286;22.43
-MUZO;Alianza Verde;789;3835;20.57
-MUZO;Cambio Radical;719;3835;18.75
-MUZO;Partido Conservador Colombiano;1758;3835;45.84
-MUZO;Partido Liberal Colombiano;119;3835;3.1
-MUZO;Partido de la U;450;3835;11.73
-NOBSA;Alianza Social Independiente;871;7842;11.11
-NOBSA;Alianza Verde;1401;7842;17.87
-NOBSA;Cambio Radical;796;7842;10.15
-NOBSA;MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA;860;7842;10.97
-NOBSA;MOVIMIENTO POLITICO AFROVIDES;389;7842;4.96
-NOBSA;Movimiento Autoridades Indigenas De Colombia;20;7842;0.26
-NOBSA;Movimiento Politico Afrovides;10;7842;0.13
-NOBSA;PARTIDO DE INTEGRACION NACIONAL;1025;7842;13.07
-NOBSA;Partido Conservador Colombiano;36;7842;0.46
-NOBSA;Partido De Integracion Nacional;8;7842;0.1
-NOBSA;Partido Liberal Colombiano;983;7842;12.54
-NOBSA;Partido de la U;1018;7842;12.98
-NOBSA;Polo Democrático Alternativo;425;7842;5.42
-NUEVO COLON;Alianza Verde;556;3144;17.68
-NUEVO COLON;Cambio Radical;562;3144;17.88
-NUEVO COLON;PARTIDO DE INTEGRACION NACIONAL;82;3144;2.61
-NUEVO COLON;Partido Conservador Colombiano;435;3144;13.84
-NUEVO COLON;Partido De Integracion Nacional;4;3144;0.13
-NUEVO COLON;Partido Liberal Colombiano;993;3144;31.58
-NUEVO COLON;Partido de la U;512;3144;16.28
-OICATA;Alianza Verde;254;1678;15.14
-OICATA;Cambio Radical;346;1678;20.62
-OICATA;PARTIDO DE INTEGRACION NACIONAL;24;1678;1.43
-OICATA;Partido Conservador Colombiano;330;1678;19.67
-OICATA;Partido De Integracion Nacional;2;1678;0.12
-OICATA;Partido Liberal Colombiano;313;1678;18.65
-OICATA;Partido de la U;409;1678;24.37
-OTANCHE;Alianza Social Independiente;677;3852;17.58
-OTANCHE;Alianza Verde;370;3852;9.61
-OTANCHE;Cambio Radical;421;3852;10.93
-OTANCHE;MOVIMIENTO POLITICO AFROVIDES;595;3852;15.45
-OTANCHE;Movimiento Politico Afrovides;23;3852;0.6
-OTANCHE;PARTIDO DE INTEGRACION NACIONAL;144;3852;3.74
-OTANCHE;Partido Conservador Colombiano;846;3852;21.96
-OTANCHE;Partido De Integracion Nacional;13;3852;0.34
-OTANCHE;Partido de la U;763;3852;19.81
-PACHAVITA;Alianza Verde;330;1336;24.7
-PACHAVITA;PARTIDO DE INTEGRACION NACIONAL;190;1336;14.22
-PACHAVITA;Partido Conservador Colombiano;542;1336;40.57
-PACHAVITA;Partido De Integracion Nacional;5;1336;0.37
-PACHAVITA;Partido de la U;269;1336;20.13
-PAEZ;Alianza Verde;509;1417;35.92
-PAEZ;Cambio Radical;343;1417;24.21
-PAEZ;Partido de la U;565;1417;39.87
-PAIPA;Alianza Social Independiente;2322;14541;15.97
-PAIPA;Alianza Verde;3298;14541;22.68
-PAIPA;Cambio Radical;604;14541;4.15
-PAIPA;Movimiento MIRA;278;14541;1.91
-PAIPA;Partido Conservador Colombiano;2682;14541;18.44
-PAIPA;Partido Liberal Colombiano;2174;14541;14.95
-PAIPA;Partido de la U;2410;14541;16.57
-PAIPA;Polo Democrático Alternativo;773;14541;5.32
-PAJARITO;Alianza Verde;228;1152;19.79
-PAJARITO;Cambio Radical;272;1152;23.61
-PAJARITO;Partido Liberal Colombiano;148;1152;12.85
+CUBARA;Partido Liberal Colombiano;769;2216;34.702166
+CUBARA;Partido Conservador Colombiano;595;2216;26.850181
+CUBARA;Alianza Social Independiente;537;2216;24.232852
+CUBARA;Alianza Verde;315;2216;14.214801
+CUCAITA;Alianza Verde;719;2264;31.757951
+CUCAITA;Partido de la U;358;2264;15.812721
+CUCAITA;Cambio Radical;342;2264;15.106007
+CUCAITA;Opción Ciudadana;328;2264;14.487633
+CUCAITA;Alianza Social Independiente;305;2264;13.471731
+CUCAITA;Partido Conservador Colombiano;212;2264;9.363958
+CUITIVA;Partido de la U;400;1253;31.923384
+CUITIVA;Cambio Radical;361;1253;28.810854
+CUITIVA;Partido Liberal Colombiano;280;1253;22.346369
+CUITIVA;Partido Conservador Colombiano;212;1253;16.919393
+DUITAMA;Partido Conservador Colombiano;9238;43127;21.420456
+DUITAMA;Partido de la U;8984;43127;20.831498
+DUITAMA;Alianza Verde;5724;43127;13.272428
+DUITAMA;Cambio Radical;4807;43127;11.14615
+DUITAMA;Opción Ciudadana;3817;43127;8.850604
+DUITAMA;Partido Liberal Colombiano;2806;43127;6.506365
+DUITAMA;Alianza Social Independiente;2584;43127;5.991606
+DUITAMA;Movimiento MIRA;2134;43127;4.948176
+DUITAMA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;1995;43127;4.625872
+DUITAMA;Polo Democrático Alternativo;959;43127;2.223665
+DUITAMA;Movimiento De Inclusion Y Oportunidades;79;43127;0.18318
+EL COCUY;Partido Liberal Colombiano;1164;2321;50.150797
+EL COCUY;Partido Conservador Colombiano;883;2321;38.043947
+EL COCUY;Partido de la U;170;2321;7.324429
+EL COCUY;Alianza Social Independiente;104;2321;4.480827
+EL ESPINO;Cambio Radical;515;1485;34.680135
+EL ESPINO;Partido de la U;482;1485;32.457912
+EL ESPINO;Alianza Verde;251;1485;16.902357
+EL ESPINO;Partido Conservador Colombiano;237;1485;15.959596
+FIRAVITOBA;Partido Conservador Colombiano;1178;3204;36.766542
+FIRAVITOBA;Partido Liberal Colombiano;1176;3204;36.70412
+FIRAVITOBA;Alianza Verde;653;3204;20.380774
+FIRAVITOBA;Polo Democrático Alternativo;197;3204;6.148564
+FLORESTA;Partido Conservador Colombiano;588;2074;28.351013
+FLORESTA;Partido de la U;534;2074;25.747348
+FLORESTA;Alianza Verde;343;2074;16.538091
+FLORESTA;Cambio Radical;316;2074;15.236258
+FLORESTA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;290;2074;13.982642
+FLORESTA;Movimiento De Inclusion Y Oportunidades;3;2074;0.144648
+GACHANTIVA;Partido Conservador Colombiano;402;1883;21.348911
+GACHANTIVA;Alianza Verde;392;1883;20.817844
+GACHANTIVA;Partido Liberal Colombiano;334;1883;17.737653
+GACHANTIVA;Partido de la U;281;1883;14.922995
+GACHANTIVA;Alianza Social Independiente;177;1883;9.399894
+GACHANTIVA;Opción Ciudadana;162;1883;8.603293
+GACHANTIVA;Cambio Radical;135;1883;7.169411
+GAMEZA;Partido Conservador Colombiano;781;2715;28.766114
+GAMEZA;Partido Liberal Colombiano;704;2715;25.930018
+GAMEZA;Cambio Radical;621;2715;22.872928
+GAMEZA;Alianza Verde;307;2715;11.307551
+GAMEZA;Partido de la U;279;2715;10.276243
+GAMEZA;Opción Ciudadana;23;2715;0.847145
+GARAGOA;Partido Conservador Colombiano;1422;6478;21.95122
+GARAGOA;Partido Liberal Colombiano;936;6478;14.448904
+GARAGOA;Cambio Radical;889;6478;13.723371
+GARAGOA;Alianza Verde;833;6478;12.858907
+GARAGOA;Partido de la U;815;6478;12.581044
+GARAGOA;Opción Ciudadana;663;6478;10.23464
+GARAGOA;Alianza Social Independiente;645;6478;9.956777
+GARAGOA;Movimiento MIRA;275;6478;4.245137
+GUACAMAYAS;Partido Conservador Colombiano;463;1204;38.45515
+GUACAMAYAS;Opción Ciudadana;363;1204;30.149502
+GUACAMAYAS;Partido de la U;255;1204;21.179402
+GUACAMAYAS;Cambio Radical;123;1204;10.215947
+GUATEQUE;Cambio Radical;1585;4994;31.738086
+GUATEQUE;Alianza Verde;1209;4994;24.209051
+GUATEQUE;Partido de la U;940;4994;18.822587
+GUATEQUE;Partido Liberal Colombiano;864;4994;17.300761
+GUATEQUE;Partido Conservador Colombiano;284;4994;5.686824
+GUATEQUE;Movimiento MIRA;112;4994;2.242691
+GUAYATA;Partido Conservador Colombiano;841;2544;33.058176
+GUAYATA;Partido de la U;701;2544;27.555031
+GUAYATA;Partido Liberal Colombiano;583;2544;22.916667
+GUAYATA;Cambio Radical;419;2544;16.470126
+GUICAN DE LA SIERRA;Alianza Verde;545;1932;28.20911
+GUICAN DE LA SIERRA;Partido de la U;512;1932;26.501035
+GUICAN DE LA SIERRA;Cambio Radical;430;1932;22.256729
+GUICAN DE LA SIERRA;Partido Conservador Colombiano;315;1932;16.304348
+GUICAN DE LA SIERRA;Alianza Social Independiente;130;1932;6.728778
+IZA;Partido de la U;381;1426;26.718093
+IZA;Partido Conservador Colombiano;376;1426;26.367461
+IZA;Alianza Verde;346;1426;24.263675
+IZA;Cambio Radical;238;1426;16.690042
+IZA;Partido Liberal Colombiano;85;1426;5.960729
+JENESANO;Partido Liberal Colombiano;1043;3436;30.355064
+JENESANO;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;852;3436;24.796275
+JENESANO;Cambio Radical;693;3436;20.168801
+JENESANO;Alianza Social Independiente;415;3436;12.077998
+JENESANO;Alianza Verde;396;3436;11.525029
+JENESANO;Movimiento De Inclusion Y Oportunidades;37;3436;1.076834
+JERICO;Partido Conservador Colombiano;717;2094;34.240688
+JERICO;Alianza Verde;333;2094;15.902579
+JERICO;Cambio Radical;310;2094;14.804202
+JERICO;Partido de la U;217;2094;10.362942
+JERICO;Alianza Social Independiente;216;2094;10.315186
+JERICO;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;189;2094;9.025788
+JERICO;Opción Ciudadana;103;2094;4.918816
+JERICO;Movimiento De Inclusion Y Oportunidades;9;2094;0.429799
+LA CAPILLA;Partido de la U;839;1769;47.427925
+LA CAPILLA;Partido Conservador Colombiano;635;1769;35.895986
+LA CAPILLA;Alianza Verde;196;1769;11.079706
+LA CAPILLA;Cambio Radical;61;1769;3.448276
+LA CAPILLA;Movimiento MIRA;38;1769;2.148106
+LA UVITA;Alianza Verde;310;1537;20.169161
+LA UVITA;Partido Conservador Colombiano;268;1537;17.436565
+LA UVITA;Partido de la U;255;1537;16.590761
+LA UVITA;Cambio Radical;175;1537;11.385817
+LA UVITA;Opción Ciudadana;152;1537;9.889395
+LA UVITA;Partido Liberal Colombiano;136;1537;8.848406
+LA UVITA;Alianza Social Independiente;131;1537;8.523097
+LA UVITA;Polo Democrático Alternativo;110;1537;7.156799
+LA VICTORIA;Partido de la U;517;1110;46.576577
+LA VICTORIA;Partido Liberal Colombiano;443;1110;39.90991
+LA VICTORIA;Cambio Radical;150;1110;13.513514
+LABRANZAGRANDE;Cambio Radical;650;1884;34.501062
+LABRANZAGRANDE;Partido de la U;631;1884;33.492569
+LABRANZAGRANDE;Partido Liberal Colombiano;335;1884;17.781316
+LABRANZAGRANDE;Alianza Verde;203;1884;10.774947
+LABRANZAGRANDE;Opción Ciudadana;65;1884;3.450106
+MACANAL;Partido de la U;984;2365;41.606765
+MACANAL;Partido Conservador Colombiano;596;2365;25.200846
+MACANAL;Cambio Radical;287;2365;12.135307
+MACANAL;Alianza Verde;265;2365;11.205074
+MACANAL;Alianza Social Independiente;233;2365;9.852008
+MARIPI;Partido Liberal Colombiano;1465;3986;36.753638
+MARIPI;Alianza Verde;1224;3986;30.707476
+MARIPI;Partido Conservador Colombiano;694;3986;17.410938
+MARIPI;Partido de la U;603;3986;15.127948
+MIRAFLORES;Partido de la U;1897;4774;39.73607
+MIRAFLORES;Partido Liberal Colombiano;1253;4774;26.246334
+MIRAFLORES;Opción Ciudadana;815;4774;17.071638
+MIRAFLORES;Cambio Radical;740;4774;15.500628
+MIRAFLORES;Movimiento MIRA;69;4774;1.445329
+MONGUA;Opción Ciudadana;553;2811;19.672714
+MONGUA;Partido de la U;500;2811;17.787264
+MONGUA;Alianza Social Independiente;490;2811;17.431519
+MONGUA;AICO;474;2811;16.862327
+MONGUA;Cambio Radical;445;2811;15.830665
+MONGUA;Partido Conservador Colombiano;349;2811;12.41551
+MONGUI;Partido Conservador Colombiano;707;2411;29.323932
+MONGUI;Cambio Radical;650;2411;26.959768
+MONGUI;Partido de la U;557;2411;23.102447
+MONGUI;Alianza Verde;497;2411;20.613853
+MONIQUIRA;Partido Conservador Colombiano;2745;8726;31.457713
+MONIQUIRA;Partido de la U;1935;8726;22.175109
+MONIQUIRA;Partido Liberal Colombiano;1140;8726;13.064405
+MONIQUIRA;Opción Ciudadana;1067;8726;12.227825
+MONIQUIRA;Alianza Verde;791;8726;9.064864
+MONIQUIRA;Cambio Radical;533;8726;6.108182
+MONIQUIRA;Polo Democrático Alternativo;314;8726;3.598441
+MONIQUIRA;Movimiento MIRA;201;8726;2.303461
+MOTAVITA;Opción Ciudadana;1326;3286;40.353013
+MOTAVITA;Partido Liberal Colombiano;737;3286;22.428484
+MOTAVITA;Partido Conservador Colombiano;449;3286;13.664029
+MOTAVITA;Cambio Radical;436;3286;13.268411
+MOTAVITA;Alianza Verde;338;3286;10.286062
+MUZO;Partido Conservador Colombiano;1758;3835;45.840939
+MUZO;Alianza Verde;789;3835;20.573664
+MUZO;Cambio Radical;719;3835;18.74837
+MUZO;Partido de la U;450;3835;11.734029
+MUZO;Partido Liberal Colombiano;119;3835;3.102999
+NOBSA;Alianza Verde;1401;7842;17.86534
+NOBSA;Opción Ciudadana;1033;7842;13.17266
+NOBSA;Partido de la U;1018;7842;12.981382
+NOBSA;Partido Liberal Colombiano;983;7842;12.535068
+NOBSA;AICO;880;7842;11.221627
+NOBSA;Alianza Social Independiente;871;7842;11.10686
+NOBSA;Cambio Radical;796;7842;10.150472
+NOBSA;Polo Democrático Alternativo;425;7842;5.419536
+NOBSA;MOVIMIENTO POLITICO AFROVIDES;389;7842;4.960469
+NOBSA;Partido Conservador Colombiano;36;7842;0.459067
+NOBSA;Movimiento Politico Afrovides;10;7842;0.127518
+NUEVO COLON;Partido Liberal Colombiano;993;3144;31.583969
+NUEVO COLON;Cambio Radical;562;3144;17.875318
+NUEVO COLON;Alianza Verde;556;3144;17.684478
+NUEVO COLON;Partido de la U;512;3144;16.284987
+NUEVO COLON;Partido Conservador Colombiano;435;3144;13.835878
+NUEVO COLON;Opción Ciudadana;86;3144;2.735369
+OICATA;Partido de la U;409;1678;24.374255
+OICATA;Cambio Radical;346;1678;20.619785
+OICATA;Partido Conservador Colombiano;330;1678;19.666269
+OICATA;Partido Liberal Colombiano;313;1678;18.653159
+OICATA;Alianza Verde;254;1678;15.137068
+OICATA;Opción Ciudadana;26;1678;1.549464
+OTANCHE;Partido Conservador Colombiano;846;3852;21.962617
+OTANCHE;Partido de la U;763;3852;19.807892
+OTANCHE;Alianza Social Independiente;677;3852;17.575286
+OTANCHE;MOVIMIENTO POLITICO AFROVIDES;595;3852;15.446521
+OTANCHE;Cambio Radical;421;3852;10.929387
+OTANCHE;Alianza Verde;370;3852;9.6054
+OTANCHE;Opción Ciudadana;157;3852;4.075805
+OTANCHE;Movimiento Politico Afrovides;23;3852;0.597092
+PACHAVITA;Partido Conservador Colombiano;542;1336;40.568862
+PACHAVITA;Alianza Verde;330;1336;24.700599
+PACHAVITA;Partido de la U;269;1336;20.134731
+PACHAVITA;Opción Ciudadana;195;1336;14.595808
+PAEZ;Partido de la U;565;1417;39.872971
+PAEZ;Alianza Verde;509;1417;35.92096
+PAEZ;Cambio Radical;343;1417;24.206069
+PAIPA;Alianza Verde;3298;14541;22.680696
+PAIPA;Partido Conservador Colombiano;2682;14541;18.444399
+PAIPA;Partido de la U;2410;14541;16.573826
+PAIPA;Alianza Social Independiente;2322;14541;15.96864
+PAIPA;Partido Liberal Colombiano;2174;14541;14.950829
+PAIPA;Polo Democrático Alternativo;773;14541;5.316003
+PAIPA;Cambio Radical;604;14541;4.153772
+PAIPA;Movimiento MIRA;278;14541;1.911835
 PAJARITO;Partido de la U;504;1152;43.75
-PANQUEBA;Partido Conservador Colombiano;278;992;28.02
+PAJARITO;Cambio Radical;272;1152;23.611111
+PAJARITO;Alianza Verde;228;1152;19.791667
+PAJARITO;Partido Liberal Colombiano;148;1152;12.847222
+PANQUEBA;Partido de la U;528;992;53.225806
+PANQUEBA;Partido Conservador Colombiano;278;992;28.024194
 PANQUEBA;Partido Liberal Colombiano;186;992;18.75
-PANQUEBA;Partido de la U;528;992;53.23
-PAUNA;Alianza Social Independiente;215;4043;5.32
-PAUNA;Alianza Verde;376;4043;9.3
-PAUNA;Cambio Radical;747;4043;18.48
-PAUNA;PARTIDO DE INTEGRACION NACIONAL;196;4043;4.85
-PAUNA;Partido Conservador Colombiano;1396;4043;34.53
-PAUNA;Partido De Integracion Nacional;8;4043;0.2
-PAUNA;Partido Liberal Colombiano;225;4043;5.57
-PAUNA;Partido de la U;880;4043;21.77
-PAYA;Alianza Social Independiente;219;932;23.5
-PAYA;Alianza Verde;299;932;32.08
-PAYA;Cambio Radical;98;932;10.52
-PAYA;MIO;158;932;16.95
-PAYA;Partido Conservador Colombiano;158;932;16.95
-PAZ DE RIO;Alianza Verde;860;2677;32.13
-PAZ DE RIO;Cambio Radical;624;2677;23.31
-PAZ DE RIO;Partido Conservador Colombiano;488;2677;18.23
-PAZ DE RIO;Partido Liberal Colombiano;705;2677;26.34
-PESCA;Alianza Social Independiente;572;3806;15.03
-PESCA;Alianza Verde;412;3806;10.83
-PESCA;Cambio Radical;465;3806;12.22
-PESCA;PARTIDO DE INTEGRACION NACIONAL;727;3806;19.1
-PESCA;Partido Conservador Colombiano;650;3806;17.08
-PESCA;Partido De Integracion Nacional;28;3806;0.74
-PESCA;Partido Liberal Colombiano;297;3806;7.8
-PESCA;Partido de la U;655;3806;17.21
-PISBA;Alianza Social Independiente;190;695;27.34
-PISBA;Alianza Verde;299;695;43.02
-PISBA;Partido Conservador Colombiano;168;695;24.17
-PISBA;Polo Democrático Alternativo;38;695;5.47
-PUERTO BOYACA;Alianza Social Independiente;1717;17023;10.09
-PUERTO BOYACA;Alianza Verde;1733;17023;10.18
-PUERTO BOYACA;Cambio Radical;945;17023;5.55
-PUERTO BOYACA;Candidata Retirada;72;17023;0.42
-PUERTO BOYACA;MIO;1144;17023;6.72
-PUERTO BOYACA;MOVIMIENTO POLITICO AFROVIDES;1701;17023;9.99
-PUERTO BOYACA;Movimiento MIRA;296;17023;1.74
-PUERTO BOYACA;Movimiento Politico Afrovides;237;17023;1.39
-PUERTO BOYACA;PARTIDO DE INTEGRACION NACIONAL;1380;17023;8.11
-PUERTO BOYACA;Partido Conservador Colombiano;1175;17023;6.9
-PUERTO BOYACA;Partido De Integracion Nacional;30;17023;0.18
-PUERTO BOYACA;Partido Liberal Colombiano;2907;17023;17.08
-PUERTO BOYACA;Partido de la U;3528;17023;20.72
-PUERTO BOYACA;Polo Democrático Alternativo;158;17023;0.93
-QUIPAMA;Alianza Verde;915;2760;33.15
-QUIPAMA;Cambio Radical;351;2760;12.72
-QUIPAMA;Partido Conservador Colombiano;308;2760;11.16
-QUIPAMA;Partido Liberal Colombiano;520;2760;18.84
-QUIPAMA;Partido de la U;666;2760;24.13
-RAMIRIQUI;Cambio Radical;1085;5131;21.15
-RAMIRIQUI;Movimiento MIRA;109;5131;2.12
-RAMIRIQUI;Partido Conservador Colombiano;1075;5131;20.95
-RAMIRIQUI;Partido Liberal Colombiano;1522;5131;29.66
-RAMIRIQUI;Partido de la U;1340;5131;26.12
-RAQUIRA;Alianza Verde;577;3097;18.63
-RAQUIRA;Cambio Radical;938;3097;30.29
-RAQUIRA;Partido Conservador Colombiano;526;3097;16.98
-RAQUIRA;Partido Liberal Colombiano;594;3097;19.18
-RAQUIRA;Partido de la U;462;3097;14.92
-RONDON;Cambio Radical;434;1651;26.29
-RONDON;Partido Conservador Colombiano;433;1651;26.23
-RONDON;Partido de la U;784;1651;47.49
-SABOYA;Alianza Verde;1748;6271;27.87
-SABOYA;Movimiento MIRA;140;6271;2.23
-SABOYA;Partido Conservador Colombiano;2391;6271;38.13
-SABOYA;Partido Liberal Colombiano;1154;6271;18.4
-SABOYA;Partido de la U;838;6271;13.36
-SACHICA;Alianza Social Independiente;171;2235;7.65
-SACHICA;Alianza Verde;462;2235;20.67
-SACHICA;Cambio Radical;328;2235;14.68
-SACHICA;Movimiento MIRA;52;2235;2.33
-SACHICA;PARTIDO DE INTEGRACION NACIONAL;112;2235;5.01
-SACHICA;Partido De Integracion Nacional;2;2235;0.09
-SACHICA;Partido Liberal Colombiano;523;2235;23.4
-SACHICA;Partido de la U;333;2235;14.9
-SACHICA;Polo Democrático Alternativo;252;2235;11.28
-SAMACA;Alianza Social Independiente;491;8040;6.11
-SAMACA;Alianza Verde;2031;8040;25.26
-SAMACA;Cambio Radical;1393;8040;17.33
-SAMACA;PARTIDO DE INTEGRACION NACIONAL;459;8040;5.71
-SAMACA;Partido Conservador Colombiano;80;8040;1.0
-SAMACA;Partido De Integracion Nacional;13;8040;0.16
-SAMACA;Partido Liberal Colombiano;1130;8040;14.05
-SAMACA;Partido de la U;1941;8040;24.14
-SAMACA;Polo Democrático Alternativo;502;8040;6.24
-SAN EDUARDO;Alianza Verde;332;1049;31.65
-SAN EDUARDO;Cambio Radical;180;1049;17.16
-SAN EDUARDO;Partido Conservador Colombiano;93;1049;8.87
-SAN EDUARDO;Partido Liberal Colombiano;324;1049;30.89
-SAN EDUARDO;Partido de la U;120;1049;11.44
-SAN JOSE DE PARE;Alianza Verde;618;3424;18.05
-SAN JOSE DE PARE;Cambio Radical;406;3424;11.86
-SAN JOSE DE PARE;PARTIDO DE INTEGRACION NACIONAL;551;3424;16.09
-SAN JOSE DE PARE;Partido Conservador Colombiano;253;3424;7.39
-SAN JOSE DE PARE;Partido De Integracion Nacional;9;3424;0.26
-SAN JOSE DE PARE;Partido Liberal Colombiano;711;3424;20.77
-SAN JOSE DE PARE;Partido de la U;876;3424;25.58
-SAN LUIS DE GACENO;Alianza Verde;449;2807;16.0
-SAN LUIS DE GACENO;Cambio Radical;324;2807;11.54
-SAN LUIS DE GACENO;Partido Conservador Colombiano;878;2807;31.28
-SAN LUIS DE GACENO;Partido Liberal Colombiano;176;2807;6.27
-SAN LUIS DE GACENO;Partido de la U;980;2807;34.91
-SAN MATEO;Alianza Social Independiente;136;2320;5.86
-SAN MATEO;Alianza Verde;478;2320;20.6
-SAN MATEO;Cambio Radical;355;2320;15.3
-SAN MATEO;MIO;18;2320;0.78
-SAN MATEO;MOVIMIENTO POLITICO AFROVIDES;196;2320;8.45
+PAUNA;Partido Conservador Colombiano;1396;4043;34.528815
+PAUNA;Partido de la U;880;4043;21.766015
+PAUNA;Cambio Radical;747;4043;18.476379
+PAUNA;Alianza Verde;376;4043;9.300025
+PAUNA;Partido Liberal Colombiano;225;4043;5.565174
+PAUNA;Alianza Social Independiente;215;4043;5.317833
+PAUNA;Opción Ciudadana;204;4043;5.045758
+PAYA;Alianza Verde;299;932;32.081545
+PAYA;Alianza Social Independiente;219;932;23.497854
+PAYA;Partido Conservador Colombiano;158;932;16.95279
+PAYA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;154;932;16.523605
+PAYA;Cambio Radical;98;932;10.515021
+PAYA;Movimiento De Inclusion Y Oportunidades;4;932;0.429185
+PAZ DE RIO;Alianza Verde;860;2677;32.125514
+PAZ DE RIO;Partido Liberal Colombiano;705;2677;26.33545
+PAZ DE RIO;Cambio Radical;624;2677;23.309675
+PAZ DE RIO;Partido Conservador Colombiano;488;2677;18.229361
+PESCA;Opción Ciudadana;755;3806;19.837099
+PESCA;Partido de la U;655;3806;17.209669
+PESCA;Partido Conservador Colombiano;650;3806;17.078297
+PESCA;Alianza Social Independiente;572;3806;15.028902
+PESCA;Cambio Radical;465;3806;12.217551
+PESCA;Alianza Verde;412;3806;10.825013
+PESCA;Partido Liberal Colombiano;297;3806;7.803468
+PISBA;Alianza Verde;299;695;43.021583
+PISBA;Alianza Social Independiente;190;695;27.338129
+PISBA;Partido Conservador Colombiano;168;695;24.172662
+PISBA;Polo Democrático Alternativo;38;695;5.467626
+PUERTO BOYACA;Partido de la U;3528;17023;20.724902
+PUERTO BOYACA;Partido Liberal Colombiano;2907;17023;17.076896
+PUERTO BOYACA;Alianza Verde;1733;17023;10.180344
+PUERTO BOYACA;Alianza Social Independiente;1717;17023;10.086354
+PUERTO BOYACA;MOVIMIENTO POLITICO AFROVIDES;1701;17023;9.992363
+PUERTO BOYACA;Opción Ciudadana;1410;17023;8.282911
+PUERTO BOYACA;Partido Conservador Colombiano;1175;17023;6.902426
+PUERTO BOYACA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;1116;17023;6.555836
+PUERTO BOYACA;Cambio Radical;945;17023;5.551313
+PUERTO BOYACA;Movimiento MIRA;296;17023;1.738824
+PUERTO BOYACA;Movimiento Politico Afrovides;237;17023;1.392234
+PUERTO BOYACA;Polo Democrático Alternativo;158;17023;0.928156
+PUERTO BOYACA;Candidata Retirada;72;17023;0.422957
+PUERTO BOYACA;Movimiento De Inclusion Y Oportunidades;28;17023;0.164483
+QUIPAMA;Alianza Verde;915;2760;33.152174
+QUIPAMA;Partido de la U;666;2760;24.130435
+QUIPAMA;Partido Liberal Colombiano;520;2760;18.84058
+QUIPAMA;Cambio Radical;351;2760;12.717391
+QUIPAMA;Partido Conservador Colombiano;308;2760;11.15942
+RAMIRIQUI;Partido Liberal Colombiano;1522;5131;29.662834
+RAMIRIQUI;Partido de la U;1340;5131;26.115767
+RAMIRIQUI;Cambio Radical;1085;5131;21.145975
+RAMIRIQUI;Partido Conservador Colombiano;1075;5131;20.951082
+RAMIRIQUI;Movimiento MIRA;109;5131;2.124342
+RAQUIRA;Cambio Radical;938;3097;30.287375
+RAQUIRA;Partido Liberal Colombiano;594;3097;19.179851
+RAQUIRA;Alianza Verde;577;3097;18.630933
+RAQUIRA;Partido Conservador Colombiano;526;3097;16.984178
+RAQUIRA;Partido de la U;462;3097;14.917662
+RONDON;Partido de la U;784;1651;47.486372
+RONDON;Cambio Radical;434;1651;26.287099
+RONDON;Partido Conservador Colombiano;433;1651;26.226529
+SABOYA;Partido Conservador Colombiano;2391;6271;38.12789
+SABOYA;Alianza Verde;1748;6271;27.874342
+SABOYA;Partido Liberal Colombiano;1154;6271;18.402169
+SABOYA;Partido de la U;838;6271;13.3631
+SABOYA;Movimiento MIRA;140;6271;2.232499
+SACHICA;Partido Liberal Colombiano;523;2235;23.400447
+SACHICA;Alianza Verde;462;2235;20.671141
+SACHICA;Partido de la U;333;2235;14.899329
+SACHICA;Cambio Radical;328;2235;14.675615
+SACHICA;Polo Democrático Alternativo;252;2235;11.275168
+SACHICA;Alianza Social Independiente;171;2235;7.651007
+SACHICA;Opción Ciudadana;114;2235;5.100671
+SACHICA;Movimiento MIRA;52;2235;2.326622
+SAMACA;Alianza Verde;2031;8040;25.261194
+SAMACA;Partido de la U;1941;8040;24.141791
+SAMACA;Cambio Radical;1393;8040;17.325871
+SAMACA;Partido Liberal Colombiano;1130;8040;14.054726
+SAMACA;Polo Democrático Alternativo;502;8040;6.243781
+SAMACA;Alianza Social Independiente;491;8040;6.106965
+SAMACA;Opción Ciudadana;472;8040;5.870647
+SAMACA;Partido Conservador Colombiano;80;8040;0.995025
+SAN EDUARDO;Alianza Verde;332;1049;31.64919
+SAN EDUARDO;Partido Liberal Colombiano;324;1049;30.886559
+SAN EDUARDO;Cambio Radical;180;1049;17.159199
+SAN EDUARDO;Partido de la U;120;1049;11.439466
+SAN EDUARDO;Partido Conservador Colombiano;93;1049;8.865586
+SAN JOSE DE PARE;Partido de la U;876;3424;25.584112
+SAN JOSE DE PARE;Partido Liberal Colombiano;711;3424;20.765187
+SAN JOSE DE PARE;Alianza Verde;618;3424;18.049065
+SAN JOSE DE PARE;Opción Ciudadana;560;3424;16.35514
+SAN JOSE DE PARE;Cambio Radical;406;3424;11.857477
+SAN JOSE DE PARE;Partido Conservador Colombiano;253;3424;7.389019
+SAN LUIS DE GACENO;Partido de la U;980;2807;34.912718
+SAN LUIS DE GACENO;Partido Conservador Colombiano;878;2807;31.278945
+SAN LUIS DE GACENO;Alianza Verde;449;2807;15.995725
+SAN LUIS DE GACENO;Cambio Radical;324;2807;11.542572
+SAN LUIS DE GACENO;Partido Liberal Colombiano;176;2807;6.270039
+SAN MATEO;Alianza Verde;478;2320;20.603448
+SAN MATEO;Partido de la U;421;2320;18.146552
+SAN MATEO;Partido Conservador Colombiano;358;2320;15.431034
+SAN MATEO;Cambio Radical;355;2320;15.301724
+SAN MATEO;Opción Ciudadana;349;2320;15.043103
+SAN MATEO;MOVIMIENTO POLITICO AFROVIDES;196;2320;8.448276
+SAN MATEO;Alianza Social Independiente;136;2320;5.862069
+SAN MATEO;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;18;2320;0.775862
+SAN MATEO;Movimiento Politico Afrovides;9;2320;0.387931
 SAN MATEO;Movimiento De Inclusion Y Oportunidades  Mio;0;2320;0.0
-SAN MATEO;Movimiento Politico Afrovides;9;2320;0.39
-SAN MATEO;PARTIDO DE INTEGRACION NACIONAL;343;2320;14.78
-SAN MATEO;Partido Conservador Colombiano;358;2320;15.43
-SAN MATEO;Partido De Integracion Nacional;6;2320;0.26
-SAN MATEO;Partido de la U;421;2320;18.15
-SAN MIGUEL DE SEMA;Partido Conservador Colombiano;655;1715;38.19
-SAN MIGUEL DE SEMA;Partido Liberal Colombiano;573;1715;33.41
-SAN MIGUEL DE SEMA;Partido de la U;487;1715;28.4
-SAN PABLO DE BORBUR;Alianza Verde;370;3224;11.48
-SAN PABLO DE BORBUR;Cambio Radical;671;3224;20.81
-SAN PABLO DE BORBUR;Partido Conservador Colombiano;1178;3224;36.54
-SAN PABLO DE BORBUR;Partido de la U;1005;3224;31.17
-SANTA MARIA;Alianza Verde;366;2025;18.07
-SANTA MARIA;Cambio Radical;369;2025;18.22
-SANTA MARIA;Partido Conservador Colombiano;283;2025;13.98
-SANTA MARIA;Partido Liberal Colombiano;241;2025;11.9
-SANTA MARIA;Partido de la U;766;2025;37.83
-SANTA ROSA DE VITERBO;Alianza Social Independiente;347;4912;7.06
-SANTA ROSA DE VITERBO;Alianza Verde;873;4912;17.77
-SANTA ROSA DE VITERBO;Cambio Radical;679;4912;13.82
-SANTA ROSA DE VITERBO;Partido Conservador Colombiano;1754;4912;35.71
-SANTA ROSA DE VITERBO;Partido Liberal Colombiano;664;4912;13.52
-SANTA ROSA DE VITERBO;Partido de la U;595;4912;12.11
-SANTA SOFIA;Alianza Verde;106;2033;5.21
-SANTA SOFIA;Cambio Radical;283;2033;13.92
-SANTA SOFIA;PARTIDO DE INTEGRACION NACIONAL;412;2033;20.27
-SANTA SOFIA;Partido Conservador Colombiano;631;2033;31.04
-SANTA SOFIA;Partido De Integracion Nacional;13;2033;0.64
-SANTA SOFIA;Partido de la U;588;2033;28.92
-SANTANA;Alianza Social Independiente;1480;3814;38.8
-SANTANA;Alianza Verde;399;3814;10.46
-SANTANA;Partido Liberal Colombiano;591;3814;15.5
-SANTANA;Partido de la U;1344;3814;35.24
-SATIVANORTE;Alianza Verde;260;1761;14.76
-SATIVANORTE;Cambio Radical;213;1761;12.1
-SATIVANORTE;PARTIDO DE INTEGRACION NACIONAL;174;1761;9.88
-SATIVANORTE;Partido Conservador Colombiano;602;1761;34.19
-SATIVANORTE;Partido De Integracion Nacional;4;1761;0.23
-SATIVANORTE;Partido de la U;508;1761;28.85
-SATIVASUR;Partido Conservador Colombiano;442;898;49.22
-SATIVASUR;Partido Liberal Colombiano;311;898;34.63
-SATIVASUR;Partido de la U;145;898;16.15
-SIACHOQUE;Alianza Social Independiente;690;4100;16.83
-SIACHOQUE;Alianza Verde;694;4100;16.93
-SIACHOQUE;Cambio Radical;282;4100;6.88
-SIACHOQUE;PARTIDO DE INTEGRACION NACIONAL;820;4100;20.0
-SIACHOQUE;Partido Conservador Colombiano;552;4100;13.46
-SIACHOQUE;Partido De Integracion Nacional;46;4100;1.12
-SIACHOQUE;Partido Liberal Colombiano;376;4100;9.17
-SIACHOQUE;Partido de la U;439;4100;10.71
-SIACHOQUE;Polo Democrático Alternativo;201;4100;4.9
-SOATA;Alianza Verde;251;4694;5.35
-SOATA;Cambio Radical;773;4694;16.47
-SOATA;Partido Conservador Colombiano;1382;4694;29.44
-SOATA;Partido Liberal Colombiano;518;4694;11.04
-SOATA;Partido de la U;1770;4694;37.71
-SOCHA;Alianza Verde;288;3831;7.52
-SOCHA;Cambio Radical;418;3831;10.91
-SOCHA;Partido Conservador Colombiano;1300;3831;33.93
-SOCHA;Partido Liberal Colombiano;1165;3831;30.41
-SOCHA;Partido de la U;660;3831;17.23
-SOCOTA;Alianza Social Independiente;416;3597;11.57
-SOCOTA;Alianza Verde;550;3597;15.29
-SOCOTA;Cambio Radical;637;3597;17.71
-SOCOTA;MOVIMIENTO POLITICO AFROVIDES;370;3597;10.29
-SOCOTA;Movimiento Politico Afrovides;34;3597;0.95
-SOCOTA;PARTIDO DE INTEGRACION NACIONAL;90;3597;2.5
-SOCOTA;Partido Conservador Colombiano;118;3597;3.28
-SOCOTA;Partido De Integracion Nacional;7;3597;0.19
-SOCOTA;Partido Liberal Colombiano;951;3597;26.44
-SOCOTA;Partido de la U;424;3597;11.79
-SOGAMOSO;Alianza Social Independiente;2763;43710;6.32
-SOGAMOSO;Alianza Verde;5507;43710;12.6
-SOGAMOSO;Cambio Radical;4803;43710;10.99
-SOGAMOSO;MIO;3463;43710;7.92
-SOGAMOSO;MOVIMIENTO AUTORIDADES INDIGENAS DE COLOMBIA;2487;43710;5.69
-SOGAMOSO;Movimiento Autoridades Indigenas De Colombia;59;43710;0.13
-SOGAMOSO;Movimiento MIRA;1105;43710;2.53
-SOGAMOSO;PARTIDO DE INTEGRACION NACIONAL;4456;43710;10.19
-SOGAMOSO;Partido De Integracion Nacional;77;43710;0.18
-SOGAMOSO;Partido Liberal Colombiano;9854;43710;22.54
-SOGAMOSO;Partido de la U;8487;43710;19.42
-SOGAMOSO;Polo Democrático Alternativo;649;43710;1.48
-SOMONDOCO;Alianza Verde;549;1949;28.17
-SOMONDOCO;Cambio Radical;418;1949;21.45
-SOMONDOCO;MOVIMIENTO POLITICO AFROVIDES;244;1949;12.52
-SOMONDOCO;Movimiento Politico Afrovides;24;1949;1.23
-SOMONDOCO;Partido Conservador Colombiano;548;1949;28.12
-SOMONDOCO;Partido de la U;166;1949;8.52
-SORA;Alianza Social Independiente;248;1901;13.05
-SORA;Alianza Verde;498;1901;26.2
-SORA;Cambio Radical;217;1901;11.42
-SORA;PARTIDO DE INTEGRACION NACIONAL;422;1901;22.2
-SORA;Partido De Integracion Nacional;11;1901;0.58
-SORA;Partido de la U;505;1901;26.56
-SORACA;Alianza Social Independiente;236;3585;6.58
-SORACA;Alianza Verde;957;3585;26.69
-SORACA;Cambio Radical;635;3585;17.71
-SORACA;PARTIDO DE INTEGRACION NACIONAL;46;3585;1.28
-SORACA;Partido Conservador Colombiano;566;3585;15.79
-SORACA;Partido De Integracion Nacional;3;3585;0.08
-SORACA;Partido Liberal Colombiano;535;3585;14.92
-SORACA;Partido de la U;607;3585;16.93
-SOTAQUIRA;Alianza Social Independiente;36;3359;1.07
-SOTAQUIRA;Alianza Verde;669;3359;19.92
-SOTAQUIRA;Cambio Radical;810;3359;24.11
-SOTAQUIRA;PARTIDO DE INTEGRACION NACIONAL;477;3359;14.2
-SOTAQUIRA;Partido Conservador Colombiano;703;3359;20.93
-SOTAQUIRA;Partido De Integracion Nacional;18;3359;0.54
-SOTAQUIRA;Partido Liberal Colombiano;339;3359;10.09
-SOTAQUIRA;Partido de la U;281;3359;8.37
-SOTAQUIRA;Polo Democrático Alternativo;26;3359;0.77
-SUSACON;Alianza Verde;137;1725;7.94
-SUSACON;Cambio Radical;391;1725;22.67
-SUSACON;PARTIDO DE INTEGRACION NACIONAL;87;1725;5.04
-SUSACON;Partido Conservador Colombiano;610;1725;35.36
-SUSACON;Partido De Integracion Nacional;3;1725;0.17
-SUSACON;Partido de la U;497;1725;28.81
-SUTAMARCHAN;Alianza Social Independiente;578;3516;16.44
-SUTAMARCHAN;Alianza Verde;751;3516;21.36
-SUTAMARCHAN;Cambio Radical;509;3516;14.48
-SUTAMARCHAN;MIO;609;3516;17.32
-SUTAMARCHAN;Partido Conservador Colombiano;150;3516;4.27
-SUTAMARCHAN;Partido Liberal Colombiano;385;3516;10.95
-SUTAMARCHAN;Partido de la U;534;3516;15.19
-SUTATENZA;Alianza Verde;155;2189;7.08
-SUTATENZA;Cambio Radical;550;2189;25.13
-SUTATENZA;PARTIDO DE INTEGRACION NACIONAL;228;2189;10.42
-SUTATENZA;Partido Conservador Colombiano;870;2189;39.74
-SUTATENZA;Partido De Integracion Nacional;30;2189;1.37
-SUTATENZA;Partido Liberal Colombiano;78;2189;3.56
-SUTATENZA;Partido de la U;278;2189;12.7
-TASCO;Alianza Verde;472;3386;13.94
-TASCO;Cambio Radical;355;3386;10.48
-TASCO;MIO;412;3386;12.17
-TASCO;Movimiento MIRA;127;3386;3.75
-TASCO;PARTIDO DE INTEGRACION NACIONAL;474;3386;14.0
-TASCO;Partido De Integracion Nacional;6;3386;0.18
-TASCO;Partido Liberal Colombiano;779;3386;23.01
-TASCO;Partido de la U;761;3386;22.47
-TENZA;Alianza Verde;400;2190;18.26
-TENZA;Partido Conservador Colombiano;999;2190;45.62
-TENZA;Partido de la U;791;2190;36.12
-TIBANA;Cambio Radical;1029;4338;23.72
-TIBANA;Movimiento MIRA;106;4338;2.44
-TIBANA;PARTIDO DE INTEGRACION NACIONAL;587;4338;13.53
-TIBANA;Partido De Integracion Nacional;26;4338;0.6
-TIBANA;Partido Liberal Colombiano;1430;4338;32.96
-TIBANA;Partido de la U;1086;4338;25.03
-TIBANA;Polo Democrático Alternativo;74;4338;1.71
-TIBASOSA;Cambio Radical;1112;4864;22.86
-TIBASOSA;Partido Conservador Colombiano;1971;4864;40.52
-TIBASOSA;Partido de la U;1781;4864;36.62
-TINJACA;Cambio Radical;587;1707;34.39
-TINJACA;Partido Conservador Colombiano;669;1707;39.19
-TINJACA;Partido de la U;451;1707;26.42
-TIPACOQUE;Alianza Social Independiente;155;2012;7.7
-TIPACOQUE;Alianza Verde;371;2012;18.44
-TIPACOQUE;Cambio Radical;185;2012;9.19
-TIPACOQUE;MIO;178;2012;8.85
-TIPACOQUE;PARTIDO DE INTEGRACION NACIONAL;308;2012;15.31
-TIPACOQUE;Partido De Integracion Nacional;8;2012;0.4
-TIPACOQUE;Partido Liberal Colombiano;431;2012;21.42
-TIPACOQUE;Partido de la U;187;2012;9.29
-TIPACOQUE;Polo Democrático Alternativo;189;2012;9.39
-TOCA;Alianza Social Independiente;32;4413;0.73
-TOCA;Alianza Verde;1088;4413;24.65
-TOCA;Cambio Radical;1166;4413;26.42
-TOCA;Partido Liberal Colombiano;959;4413;21.73
-TOCA;Partido de la U;1145;4413;25.95
-TOCA;Polo Democrático Alternativo;23;4413;0.52
-TOGUI;Cambio Radical;224;2416;9.27
-TOGUI;Partido Conservador Colombiano;921;2416;38.12
-TOGUI;Partido Liberal Colombiano;718;2416;29.72
-TOGUI;Partido de la U;553;2416;22.89
-TOPAGA;Alianza Verde;294;2039;14.42
-TOPAGA;Cambio Radical;388;2039;19.03
-TOPAGA;MIO;249;2039;12.21
-TOPAGA;Partido Conservador Colombiano;587;2039;28.79
-TOPAGA;Partido de la U;521;2039;25.55
-TOTA;Alianza Verde;563;2610;21.57
-TOTA;Cambio Radical;421;2610;16.13
-TOTA;Partido Conservador Colombiano;587;2610;22.49
-TOTA;Partido Liberal Colombiano;612;2610;23.45
-TOTA;Partido de la U;427;2610;16.36
-TUNJA;Alianza Social Independiente;3018;59311;5.09
-TUNJA;Alianza Verde;8771;59311;14.79
-TUNJA;Cambio Radical;7192;59311;12.13
-TUNJA;Movimiento MIRA;1599;59311;2.7
-TUNJA;PARTIDO DE INTEGRACION NACIONAL;1757;59311;2.96
-TUNJA;Partido Conservador Colombiano;17515;59311;29.53
-TUNJA;Partido De Integracion Nacional;33;59311;0.06
-TUNJA;Partido Liberal Colombiano;8521;59311;14.37
-TUNJA;Partido de la U;7934;59311;13.38
-TUNJA;Polo Democrático Alternativo;2971;59311;5.01
-TUNUNGUA;Alianza Verde;131;828;15.82
-TUNUNGUA;Cambio Radical;110;828;13.29
-TUNUNGUA;Partido Liberal Colombiano;310;828;37.44
-TUNUNGUA;Partido de la U;277;828;33.45
-TURMEQUE;Alianza Social Independiente;143;3613;3.96
-TURMEQUE;Alianza Verde;557;3613;15.42
-TURMEQUE;Cambio Radical;410;3613;11.35
-TURMEQUE;Movimiento MIRA;210;3613;5.81
-TURMEQUE;PARTIDO DE INTEGRACION NACIONAL;528;3613;14.61
-TURMEQUE;Partido De Integracion Nacional;8;3613;0.22
-TURMEQUE;Partido Liberal Colombiano;966;3613;26.74
-TURMEQUE;Partido de la U;654;3613;18.1
-TURMEQUE;Polo Democrático Alternativo;137;3613;3.79
-TUTA;Alianza Social Independiente;539;4924;10.95
-TUTA;Alianza Verde;684;4924;13.89
-TUTA;Cambio Radical;618;4924;12.55
-TUTA;Partido Conservador Colombiano;1314;4924;26.69
-TUTA;Partido Liberal Colombiano;1261;4924;25.61
-TUTA;Partido de la U;345;4924;7.01
-TUTA;Polo Democrático Alternativo;163;4924;3.31
-TUTAZA;Alianza Social Independiente;107;1363;7.85
-TUTAZA;Alianza Verde;183;1363;13.43
-TUTAZA;Cambio Radical;205;1363;15.04
-TUTAZA;PARTIDO DE INTEGRACION NACIONAL;194;1363;14.23
-TUTAZA;Partido Conservador Colombiano;207;1363;15.19
-TUTAZA;Partido De Integracion Nacional;4;1363;0.29
-TUTAZA;Partido Liberal Colombiano;240;1363;17.61
-TUTAZA;Partido de la U;223;1363;16.36
-UMBITA;Alianza Verde;489;3926;12.46
-UMBITA;Cambio Radical;517;3926;13.17
-UMBITA;Partido Conservador Colombiano;1565;3926;39.86
-UMBITA;Partido de la U;968;3926;24.66
-UMBITA;Polo Democrático Alternativo;387;3926;9.86
-VENTAQUEMADA;Alianza Verde;686;7007;9.79
-VENTAQUEMADA;Cambio Radical;264;7007;3.77
-VENTAQUEMADA;Partido Conservador Colombiano;2364;7007;33.74
-VENTAQUEMADA;Partido Liberal Colombiano;1663;7007;23.73
-VENTAQUEMADA;Partido de la U;2030;7007;28.97
-VILLA DE LEYVA;Alianza Verde;1196;6186;19.33
-VILLA DE LEYVA;Cambio Radical;1428;6186;23.08
-VILLA DE LEYVA;Partido Conservador Colombiano;66;6186;1.07
-VILLA DE LEYVA;Partido Liberal Colombiano;1525;6186;24.65
-VILLA DE LEYVA;Partido de la U;1971;6186;31.86
-VIRACACHA;Alianza Verde;476;1869;25.47
-VIRACACHA;Cambio Radical;87;1869;4.65
-VIRACACHA;Partido Conservador Colombiano;532;1869;28.46
-VIRACACHA;Partido Liberal Colombiano;436;1869;23.33
-VIRACACHA;Partido de la U;338;1869;18.08
-ZETAQUIRA;Alianza Verde;338;2738;12.34
-ZETAQUIRA;Cambio Radical;599;2738;21.88
-ZETAQUIRA;Partido Liberal Colombiano;680;2738;24.84
-ZETAQUIRA;Partido de la U;1121;2738;40.94
+SAN MIGUEL DE SEMA;Partido Conservador Colombiano;655;1715;38.19242
+SAN MIGUEL DE SEMA;Partido Liberal Colombiano;573;1715;33.411079
+SAN MIGUEL DE SEMA;Partido de la U;487;1715;28.396501
+SAN PABLO DE BORBUR;Partido Conservador Colombiano;1178;3224;36.538462
+SAN PABLO DE BORBUR;Partido de la U;1005;3224;31.172457
+SAN PABLO DE BORBUR;Cambio Radical;671;3224;20.812655
+SAN PABLO DE BORBUR;Alianza Verde;370;3224;11.476427
+SANTA MARIA;Partido de la U;766;2025;37.82716
+SANTA MARIA;Cambio Radical;369;2025;18.222222
+SANTA MARIA;Alianza Verde;366;2025;18.074074
+SANTA MARIA;Partido Conservador Colombiano;283;2025;13.975309
+SANTA MARIA;Partido Liberal Colombiano;241;2025;11.901235
+SANTA ROSA DE VITERBO;Partido Conservador Colombiano;1754;4912;35.708469
+SANTA ROSA DE VITERBO;Alianza Verde;873;4912;17.772801
+SANTA ROSA DE VITERBO;Cambio Radical;679;4912;13.82329
+SANTA ROSA DE VITERBO;Partido Liberal Colombiano;664;4912;13.517915
+SANTA ROSA DE VITERBO;Partido de la U;595;4912;12.113192
+SANTA ROSA DE VITERBO;Alianza Social Independiente;347;4912;7.064332
+SANTA SOFIA;Partido Conservador Colombiano;631;2033;31.037875
+SANTA SOFIA;Partido de la U;588;2033;28.922774
+SANTA SOFIA;Opción Ciudadana;425;2033;20.905066
+SANTA SOFIA;Cambio Radical;283;2033;13.920315
+SANTA SOFIA;Alianza Verde;106;2033;5.21397
+SANTANA;Alianza Social Independiente;1480;3814;38.804405
+SANTANA;Partido de la U;1344;3814;35.238595
+SANTANA;Partido Liberal Colombiano;591;3814;15.495543
+SANTANA;Alianza Verde;399;3814;10.461458
+SATIVANORTE;Partido Conservador Colombiano;602;1761;34.185122
+SATIVANORTE;Partido de la U;508;1761;28.847246
+SATIVANORTE;Alianza Verde;260;1761;14.764338
+SATIVANORTE;Cambio Radical;213;1761;12.0954
+SATIVANORTE;Opción Ciudadana;178;1761;10.107893
+SATIVASUR;Partido Conservador Colombiano;442;898;49.22049
+SATIVASUR;Partido Liberal Colombiano;311;898;34.632517
+SATIVASUR;Partido de la U;145;898;16.146993
+SIACHOQUE;Opción Ciudadana;866;4100;21.121951
+SIACHOQUE;Alianza Verde;694;4100;16.926829
+SIACHOQUE;Alianza Social Independiente;690;4100;16.829268
+SIACHOQUE;Partido Conservador Colombiano;552;4100;13.463415
+SIACHOQUE;Partido de la U;439;4100;10.707317
+SIACHOQUE;Partido Liberal Colombiano;376;4100;9.170732
+SIACHOQUE;Cambio Radical;282;4100;6.878049
+SIACHOQUE;Polo Democrático Alternativo;201;4100;4.902439
+SOATA;Partido de la U;1770;4694;37.707712
+SOATA;Partido Conservador Colombiano;1382;4694;29.441841
+SOATA;Cambio Radical;773;4694;16.467831
+SOATA;Partido Liberal Colombiano;518;4694;11.035364
+SOATA;Alianza Verde;251;4694;5.347252
+SOCHA;Partido Conservador Colombiano;1300;3831;33.933699
+SOCHA;Partido Liberal Colombiano;1165;3831;30.409815
+SOCHA;Partido de la U;660;3831;17.227878
+SOCHA;Cambio Radical;418;3831;10.910989
+SOCHA;Alianza Verde;288;3831;7.517619
+SOCOTA;Partido Liberal Colombiano;951;3597;26.438699
+SOCOTA;Cambio Radical;637;3597;17.709202
+SOCOTA;Alianza Verde;550;3597;15.29052
+SOCOTA;Partido de la U;424;3597;11.787601
+SOCOTA;Alianza Social Independiente;416;3597;11.565193
+SOCOTA;MOVIMIENTO POLITICO AFROVIDES;370;3597;10.28635
+SOCOTA;Partido Conservador Colombiano;118;3597;3.280512
+SOCOTA;Opción Ciudadana;97;3597;2.696692
+SOCOTA;Movimiento Politico Afrovides;34;3597;0.945232
+SOGAMOSO;Partido Liberal Colombiano;9854;43710;22.54404
+SOGAMOSO;Partido de la U;8487;43710;19.416609
+SOGAMOSO;Alianza Verde;5507;43710;12.598948
+SOGAMOSO;Cambio Radical;4803;43710;10.988332
+SOGAMOSO;Opción Ciudadana;4533;43710;10.370625
+SOGAMOSO;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;3391;43710;7.75795
+SOGAMOSO;Alianza Social Independiente;2763;43710;6.321208
+SOGAMOSO;AICO;2546;43710;5.824754
+SOGAMOSO;Movimiento MIRA;1105;43710;2.528026
+SOGAMOSO;Polo Democrático Alternativo;649;43710;1.484786
+SOGAMOSO;Movimiento De Inclusion Y Oportunidades;72;43710;0.164722
+SOMONDOCO;Alianza Verde;549;1949;28.168291
+SOMONDOCO;Partido Conservador Colombiano;548;1949;28.116983
+SOMONDOCO;Cambio Radical;418;1949;21.446896
+SOMONDOCO;MOVIMIENTO POLITICO AFROVIDES;244;1949;12.519241
+SOMONDOCO;Partido de la U;166;1949;8.517188
+SOMONDOCO;Movimiento Politico Afrovides;24;1949;1.231401
+SORA;Partido de la U;505;1901;26.564966
+SORA;Alianza Verde;498;1901;26.196739
+SORA;Opción Ciudadana;433;1901;22.777486
+SORA;Alianza Social Independiente;248;1901;13.045765
+SORA;Cambio Radical;217;1901;11.415045
+SORACA;Alianza Verde;957;3585;26.694561
+SORACA;Cambio Radical;635;3585;17.712692
+SORACA;Partido de la U;607;3585;16.93166
+SORACA;Partido Conservador Colombiano;566;3585;15.788006
+SORACA;Partido Liberal Colombiano;535;3585;14.923291
+SORACA;Alianza Social Independiente;236;3585;6.582985
+SORACA;Opción Ciudadana;49;3585;1.366806
+SOTAQUIRA;Cambio Radical;810;3359;24.11432
+SOTAQUIRA;Partido Conservador Colombiano;703;3359;20.928848
+SOTAQUIRA;Alianza Verde;669;3359;19.916642
+SOTAQUIRA;Opción Ciudadana;495;3359;14.736529
+SOTAQUIRA;Partido Liberal Colombiano;339;3359;10.092289
+SOTAQUIRA;Partido de la U;281;3359;8.365585
+SOTAQUIRA;Alianza Social Independiente;36;3359;1.071748
+SOTAQUIRA;Polo Democrático Alternativo;26;3359;0.77404
+SUSACON;Partido Conservador Colombiano;610;1725;35.362319
+SUSACON;Partido de la U;497;1725;28.811594
+SUSACON;Cambio Radical;391;1725;22.666667
+SUSACON;Alianza Verde;137;1725;7.942029
+SUSACON;Opción Ciudadana;90;1725;5.217391
+SUTAMARCHAN;Alianza Verde;751;3516;21.359499
+SUTAMARCHAN;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;595;3516;16.922639
+SUTAMARCHAN;Alianza Social Independiente;578;3516;16.439135
+SUTAMARCHAN;Partido de la U;534;3516;15.187713
+SUTAMARCHAN;Cambio Radical;509;3516;14.476678
+SUTAMARCHAN;Partido Liberal Colombiano;385;3516;10.949943
+SUTAMARCHAN;Partido Conservador Colombiano;150;3516;4.266212
+SUTAMARCHAN;Movimiento De Inclusion Y Oportunidades;14;3516;0.39818
+SUTATENZA;Partido Conservador Colombiano;870;2189;39.744175
+SUTATENZA;Cambio Radical;550;2189;25.125628
+SUTATENZA;Partido de la U;278;2189;12.699863
+SUTATENZA;Opción Ciudadana;258;2189;11.786204
+SUTATENZA;Alianza Verde;155;2189;7.080859
+SUTATENZA;Partido Liberal Colombiano;78;2189;3.563271
+TASCO;Partido Liberal Colombiano;779;3386;23.006497
+TASCO;Partido de la U;761;3386;22.474897
+TASCO;Opción Ciudadana;480;3386;14.176019
+TASCO;Alianza Verde;472;3386;13.939752
+TASCO;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;407;3386;12.020083
+TASCO;Cambio Radical;355;3386;10.484347
+TASCO;Movimiento MIRA;127;3386;3.750738
+TASCO;Movimiento De Inclusion Y Oportunidades;5;3386;0.147667
+TENZA;Partido Conservador Colombiano;999;2190;45.616438
+TENZA;Partido de la U;791;2190;36.118721
+TENZA;Alianza Verde;400;2190;18.26484
+TIBANA;Partido Liberal Colombiano;1430;4338;32.9645
+TIBANA;Partido de la U;1086;4338;25.034578
+TIBANA;Cambio Radical;1029;4338;23.720609
+TIBANA;Opción Ciudadana;613;4338;14.130936
+TIBANA;Movimiento MIRA;106;4338;2.443522
+TIBANA;Polo Democrático Alternativo;74;4338;1.705855
+TIBASOSA;Partido Conservador Colombiano;1971;4864;40.522204
+TIBASOSA;Partido de la U;1781;4864;36.615954
+TIBASOSA;Cambio Radical;1112;4864;22.861842
+TINJACA;Partido Conservador Colombiano;669;1707;39.191564
+TINJACA;Cambio Radical;587;1707;34.387815
+TINJACA;Partido de la U;451;1707;26.420621
+TIPACOQUE;Partido Liberal Colombiano;431;2012;21.421471
+TIPACOQUE;Alianza Verde;371;2012;18.439364
+TIPACOQUE;Opción Ciudadana;316;2012;15.705765
+TIPACOQUE;Polo Democrático Alternativo;189;2012;9.393638
+TIPACOQUE;Partido de la U;187;2012;9.294235
+TIPACOQUE;Cambio Radical;185;2012;9.194831
+TIPACOQUE;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;173;2012;8.59841
+TIPACOQUE;Alianza Social Independiente;155;2012;7.703777
+TIPACOQUE;Movimiento De Inclusion Y Oportunidades;5;2012;0.248509
+TOCA;Cambio Radical;1166;4413;26.421935
+TOCA;Partido de la U;1145;4413;25.946068
+TOCA;Alianza Verde;1088;4413;24.65443
+TOCA;Partido Liberal Colombiano;959;4413;21.731249
+TOCA;Alianza Social Independiente;32;4413;0.72513
+TOCA;Polo Democrático Alternativo;23;4413;0.521187
+TOGUI;Partido Conservador Colombiano;921;2416;38.120861
+TOGUI;Partido Liberal Colombiano;718;2416;29.718543
+TOGUI;Partido de la U;553;2416;22.889073
+TOGUI;Cambio Radical;224;2416;9.271523
+TOPAGA;Partido Conservador Colombiano;587;2039;28.788622
+TOPAGA;Partido de la U;521;2039;25.551741
+TOPAGA;Cambio Radical;388;2039;19.028936
+TOPAGA;Alianza Verde;294;2039;14.418833
+TOPAGA;MOVIMIENTO DE INCLUSION Y OPORTUNIDADES;247;2039;12.113781
+TOPAGA;Movimiento De Inclusion Y Oportunidades;2;2039;0.098087
+TOTA;Partido Liberal Colombiano;612;2610;23.448276
+TOTA;Partido Conservador Colombiano;587;2610;22.490421
+TOTA;Alianza Verde;563;2610;21.570881
+TOTA;Partido de la U;427;2610;16.360153
+TOTA;Cambio Radical;421;2610;16.130268
+TUNJA;Partido Conservador Colombiano;17515;59311;29.530778
+TUNJA;Alianza Verde;8771;59311;14.788151
+TUNJA;Partido Liberal Colombiano;8521;59311;14.366644
+TUNJA;Partido de la U;7934;59311;13.376945
+TUNJA;Cambio Radical;7192;59311;12.125913
+TUNJA;Alianza Social Independiente;3018;59311;5.088432
+TUNJA;Polo Democrático Alternativo;2971;59311;5.009189
+TUNJA;Opción Ciudadana;1790;59311;3.01799
+TUNJA;Movimiento MIRA;1599;59311;2.695959
+TUNUNGUA;Partido Liberal Colombiano;310;828;37.439614
+TUNUNGUA;Partido de la U;277;828;33.454106
+TUNUNGUA;Alianza Verde;131;828;15.821256
+TUNUNGUA;Cambio Radical;110;828;13.285024
+TURMEQUE;Partido Liberal Colombiano;966;3613;26.736784
+TURMEQUE;Partido de la U;654;3613;18.101301
+TURMEQUE;Alianza Verde;557;3613;15.416551
+TURMEQUE;Opción Ciudadana;536;3613;14.835317
+TURMEQUE;Cambio Radical;410;3613;11.34791
+TURMEQUE;Movimiento MIRA;210;3613;5.812344
+TURMEQUE;Alianza Social Independiente;143;3613;3.95793
+TURMEQUE;Polo Democrático Alternativo;137;3613;3.791863
+TUTA;Partido Conservador Colombiano;1314;4924;26.685621
+TUTA;Partido Liberal Colombiano;1261;4924;25.609261
+TUTA;Alianza Verde;684;4924;13.891145
+TUTA;Cambio Radical;618;4924;12.550772
+TUTA;Alianza Social Independiente;539;4924;10.946385
+TUTA;Partido de la U;345;4924;7.006499
+TUTA;Polo Democrático Alternativo;163;4924;3.310317
+TUTAZA;Partido Liberal Colombiano;240;1363;17.608217
+TUTAZA;Partido de la U;223;1363;16.360968
+TUTAZA;Partido Conservador Colombiano;207;1363;15.187087
+TUTAZA;Cambio Radical;205;1363;15.040352
+TUTAZA;Opción Ciudadana;198;1363;14.526779
+TUTAZA;Alianza Verde;183;1363;13.426266
+TUTAZA;Alianza Social Independiente;107;1363;7.85033
+UMBITA;Partido Conservador Colombiano;1565;3926;39.862455
+UMBITA;Partido de la U;968;3926;24.656139
+UMBITA;Cambio Radical;517;3926;13.168619
+UMBITA;Alianza Verde;489;3926;12.455425
+UMBITA;Polo Democrático Alternativo;387;3926;9.857361
+VENTAQUEMADA;Partido Conservador Colombiano;2364;7007;33.737691
+VENTAQUEMADA;Partido de la U;2030;7007;28.971029
+VENTAQUEMADA;Partido Liberal Colombiano;1663;7007;23.733409
+VENTAQUEMADA;Alianza Verde;686;7007;9.79021
+VENTAQUEMADA;Cambio Radical;264;7007;3.767661
+VILLA DE LEYVA;Partido de la U;1971;6186;31.86227
+VILLA DE LEYVA;Partido Liberal Colombiano;1525;6186;24.652441
+VILLA DE LEYVA;Cambio Radical;1428;6186;23.084384
+VILLA DE LEYVA;Alianza Verde;1196;6186;19.33398
+VILLA DE LEYVA;Partido Conservador Colombiano;66;6186;1.066925
+VIRACACHA;Partido Conservador Colombiano;532;1869;28.464419
+VIRACACHA;Alianza Verde;476;1869;25.468165
+VIRACACHA;Partido Liberal Colombiano;436;1869;23.327983
+VIRACACHA;Partido de la U;338;1869;18.084537
+VIRACACHA;Cambio Radical;87;1869;4.654896
+ZETAQUIRA;Partido de la U;1121;2738;40.942294
+ZETAQUIRA;Partido Liberal Colombiano;680;2738;24.835646
+ZETAQUIRA;Cambio Radical;599;2738;21.877283
+ZETAQUIRA;Alianza Verde;338;2738;12.344777

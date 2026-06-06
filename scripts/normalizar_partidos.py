@@ -244,6 +244,13 @@ NORMALIZACION = {
   # ── Pacto Histórico (variantes con tilde en COALICIÓN) ──
   'COALICIÓN PACTO HISTÓRICO':                             'Pacto Histórico',
 
+  # ── Coaliciones 2023 Asamblea Boyacá ──
+  'COALICION U - EN MARCHA - MIRA':                        'Partido de la U',
+  'COALICION U - EN MARCHA':                               'Partido de la U',
+  'U - EN MARCHA - MIRA':                                  'Partido de la U',
+  'RESULTADOS PARA BOYACA':                                'Partido Liberal Colombiano',
+  'RESULTADOS PARA BOYACÁ':                                'Partido Liberal Colombiano',
+
   # ── MAIS — Movimiento Alternativo Indígena y Social ──
   'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL  MAIS':        'MAIS',
   'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL MAIS':         'MAIS',
