@@ -82,6 +82,8 @@ const NORMALIZAR_PARTIDO = {
   'Alianza Social Independiente':'Alianza Social Independiente',
   'Partido Alianza Social Independiente':'Alianza Social Independiente',
   'PARTIDO ALIANZA SOCIAL INDEPENDIENTE':'Alianza Social Independiente',
+  'PARTIDO ASI':'Alianza Social Independiente',
+  'ASI':'Alianza Social Independiente',
   // COMUNES
   'Comunes':'Comunes',
   'PARTIDO COMUNES':'Comunes',

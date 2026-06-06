@@ -1,1263 +1,1017 @@
-MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
-ALMEIDA;Liga de Gobernantes;602;1010;59.60396
-ALMEIDA;Pacto Histórico;204;1010;20.19802
-ALMEIDA;Equipo por Colombia;111;1010;10.990099
-ALMEIDA;Centro Esperanza;56;1010;5.544554
-ALMEIDA;Votos nulos;17;1010;1.683168
-ALMEIDA;Votos en blanco;10;1010;0.990099
-ALMEIDA;Votos no marcados;6;1010;0.594059
-ALMEIDA;Colombia Justa Libres;2;1010;0.19802
-ALMEIDA;Colombia Piensa en Grande;1;1010;0.09901
-ALMEIDA;Mov. Salvación Nacional;1;1010;0.09901
-AQUITANIA (PUEBLOVIEJO);Liga de Gobernantes;5583;7652;72.961317
-AQUITANIA (PUEBLOVIEJO);Pacto Histórico;1122;7652;14.662833
-AQUITANIA (PUEBLOVIEJO);Equipo por Colombia;536;7652;7.004705
-AQUITANIA (PUEBLOVIEJO);Centro Esperanza;176;7652;2.300052
-AQUITANIA (PUEBLOVIEJO);Votos en blanco;81;7652;1.058547
-AQUITANIA (PUEBLOVIEJO);Votos nulos;77;7652;1.006273
-AQUITANIA (PUEBLOVIEJO);Mov. Salvación Nacional;43;7652;0.561945
-AQUITANIA (PUEBLOVIEJO);Colombia Justa Libres;14;7652;0.182959
-AQUITANIA (PUEBLOVIEJO);Votos no marcados;11;7652;0.143753
-AQUITANIA (PUEBLOVIEJO);Partido Verde Oxígeno;5;7652;0.065342
-AQUITANIA (PUEBLOVIEJO);Colombia Piensa en Grande;4;7652;0.052274
-ARCABUCO;Liga de Gobernantes;2191;3329;65.81556
-ARCABUCO;Pacto Histórico;811;3329;24.36167
-ARCABUCO;Equipo por Colombia;168;3329;5.046561
-ARCABUCO;Centro Esperanza;47;3329;1.411835
-ARCABUCO;Votos en blanco;37;3329;1.111445
-ARCABUCO;Votos nulos;36;3329;1.081406
-ARCABUCO;Mov. Salvación Nacional;19;3329;0.570742
-ARCABUCO;Colombia Justa Libres;11;3329;0.33043
-ARCABUCO;Votos no marcados;6;3329;0.180234
-ARCABUCO;Partido Verde Oxígeno;2;3329;0.060078
-ARCABUCO;Colombia Piensa en Grande;1;3329;0.030039
-BELEN;Liga de Gobernantes;2495;4342;57.461999
-BELEN;Pacto Histórico;1122;4342;25.840626
-BELEN;Equipo por Colombia;437;4342;10.064486
-BELEN;Centro Esperanza;135;4342;3.109166
-BELEN;Votos en blanco;63;4342;1.450944
-BELEN;Votos nulos;37;4342;0.852142
-BELEN;Colombia Justa Libres;32;4342;0.736988
-BELEN;Mov. Salvación Nacional;10;4342;0.230309
-BELEN;Votos no marcados;7;4342;0.161216
-BELEN;Colombia Piensa en Grande;2;4342;0.046062
-BELEN;Partido Verde Oxígeno;2;4342;0.046062
-BERBEO;Liga de Gobernantes;415;847;48.996458
-BERBEO;Pacto Histórico;299;847;35.301063
-BERBEO;Equipo por Colombia;66;847;7.792208
-BERBEO;Centro Esperanza;29;847;3.423849
-BERBEO;Votos en blanco;23;847;2.715466
-BERBEO;Votos nulos;8;847;0.94451
-BERBEO;Votos no marcados;3;847;0.354191
-BERBEO;Colombia Justa Libres;2;847;0.236128
-BERBEO;Mov. Salvación Nacional;1;847;0.118064
-BERBEO;Partido Verde Oxígeno;1;847;0.118064
-BETEITIVA;Liga de Gobernantes;460;1036;44.401544
-BETEITIVA;Pacto Histórico;344;1036;33.204633
-BETEITIVA;Equipo por Colombia;168;1036;16.216216
-BETEITIVA;Centro Esperanza;38;1036;3.667954
-BETEITIVA;Votos en blanco;13;1036;1.254826
-BETEITIVA;Votos nulos;8;1036;0.772201
-BETEITIVA;Mov. Salvación Nacional;2;1036;0.19305
-BETEITIVA;Votos no marcados;2;1036;0.19305
-BETEITIVA;Colombia Justa Libres;1;1036;0.096525
-BOAVITA;Liga de Gobernantes;1623;2700;60.111111
-BOAVITA;Pacto Histórico;479;2700;17.740741
-BOAVITA;Equipo por Colombia;447;2700;16.555556
-BOAVITA;Centro Esperanza;104;2700;3.851852
-BOAVITA;Votos nulos;18;2700;0.666667
-BOAVITA;Votos en blanco;14;2700;0.518519
-BOAVITA;Mov. Salvación Nacional;7;2700;0.259259
-BOAVITA;Colombia Justa Libres;3;2700;0.111111
-BOAVITA;Colombia Piensa en Grande;2;2700;0.074074
-BOAVITA;Votos no marcados;2;2700;0.074074
-BOAVITA;Partido Verde Oxígeno;1;2700;0.037037
-BOYACA;Liga de Gobernantes;1536;2366;64.919696
-BOYACA;Pacto Histórico;560;2366;23.668639
-BOYACA;Equipo por Colombia;156;2366;6.593407
-BOYACA;Centro Esperanza;46;2366;1.94421
-BOYACA;Votos en blanco;27;2366;1.141167
-BOYACA;Votos nulos;17;2366;0.718512
-BOYACA;Colombia Justa Libres;12;2366;0.507185
-BOYACA;Mov. Salvación Nacional;6;2366;0.253593
-BOYACA;Votos no marcados;5;2366;0.211327
-BOYACA;Partido Verde Oxígeno;1;2366;0.042265
-BRICEÑO;Liga de Gobernantes;1117;1463;76.349966
-BRICEÑO;Pacto Histórico;162;1463;11.073137
-BRICEÑO;Equipo por Colombia;138;1463;9.432673
-BRICEÑO;Centro Esperanza;22;1463;1.503759
-BRICEÑO;Colombia Justa Libres;7;1463;0.478469
-BRICEÑO;Votos en blanco;6;1463;0.410116
-BRICEÑO;Votos no marcados;5;1463;0.341763
-BRICEÑO;Mov. Salvación Nacional;3;1463;0.205058
-BRICEÑO;Votos nulos;3;1463;0.205058
-BUENAVISTA;Liga de Gobernantes;2107;2851;73.903893
-BUENAVISTA;Pacto Histórico;416;2851;14.591371
-BUENAVISTA;Equipo por Colombia;214;2851;7.506138
-BUENAVISTA;Centro Esperanza;29;2851;1.017187
-BUENAVISTA;Colombia Justa Libres;24;2851;0.84181
-BUENAVISTA;Votos nulos;24;2851;0.84181
-BUENAVISTA;Votos en blanco;19;2851;0.666433
-BUENAVISTA;Votos no marcados;9;2851;0.315679
-BUENAVISTA;Mov. Salvación Nacional;5;2851;0.175377
-BUENAVISTA;Partido Verde Oxígeno;4;2851;0.140302
-BUSBANZA;Liga de Gobernantes;370;658;56.231003
-BUSBANZA;Pacto Histórico;158;658;24.012158
-BUSBANZA;Equipo por Colombia;82;658;12.462006
-BUSBANZA;Centro Esperanza;30;658;4.559271
-BUSBANZA;Votos en blanco;6;658;0.911854
-BUSBANZA;Votos nulos;6;658;0.911854
-BUSBANZA;Colombia Justa Libres;4;658;0.607903
-BUSBANZA;Mov. Salvación Nacional;1;658;0.151976
-BUSBANZA;Partido Verde Oxígeno;1;658;0.151976
-CALDAS;Liga de Gobernantes;1121;1764;63.548753
-CALDAS;Pacto Histórico;362;1764;20.521542
-CALDAS;Equipo por Colombia;194;1764;10.997732
-CALDAS;Centro Esperanza;45;1764;2.55102
-CALDAS;Votos nulos;16;1764;0.907029
-CALDAS;Votos en blanco;13;1764;0.736961
-CALDAS;Colombia Justa Libres;5;1764;0.283447
-CALDAS;Mov. Salvación Nacional;4;1764;0.226757
-CALDAS;Votos no marcados;4;1764;0.226757
-CAMPOHERMOSO;Liga de Gobernantes;1012;1383;73.174259
-CAMPOHERMOSO;Pacto Histórico;170;1383;12.292119
-CAMPOHERMOSO;Equipo por Colombia;148;1383;10.701374
-CAMPOHERMOSO;Centro Esperanza;26;1383;1.879971
-CAMPOHERMOSO;Votos en blanco;13;1383;0.939986
-CAMPOHERMOSO;Votos nulos;8;1383;0.578453
-CAMPOHERMOSO;Colombia Justa Libres;2;1383;0.144613
-CAMPOHERMOSO;Colombia Piensa en Grande;2;1383;0.144613
-CAMPOHERMOSO;Mov. Salvación Nacional;1;1383;0.072307
-CAMPOHERMOSO;Votos no marcados;1;1383;0.072307
-CERINZA;Liga de Gobernantes;1197;2274;52.638522
-CERINZA;Pacto Histórico;740;2274;32.541777
-CERINZA;Equipo por Colombia;181;2274;7.959543
-CERINZA;Centro Esperanza;82;2274;3.605981
-CERINZA;Votos en blanco;34;2274;1.495163
-CERINZA;Votos nulos;22;2274;0.967458
-CERINZA;Mov. Salvación Nacional;9;2274;0.395778
-CERINZA;Colombia Justa Libres;4;2274;0.175901
-CERINZA;Partido Verde Oxígeno;4;2274;0.175901
-CERINZA;Votos no marcados;1;2274;0.043975
-CHINAVITA;Liga de Gobernantes;954;1677;56.887299
-CHINAVITA;Pacto Histórico;311;1677;18.545021
-CHINAVITA;Equipo por Colombia;292;1677;17.412045
-CHINAVITA;Centro Esperanza;72;1677;4.293381
-CHINAVITA;Votos en blanco;19;1677;1.132976
-CHINAVITA;Votos nulos;15;1677;0.894454
-CHINAVITA;Colombia Justa Libres;6;1677;0.357782
-CHINAVITA;Mov. Salvación Nacional;4;1677;0.238521
-CHINAVITA;Votos no marcados;3;1677;0.178891
-CHINAVITA;Colombia Piensa en Grande;1;1677;0.05963
-CHIQUINQUIRA;Liga de Gobernantes;14669;27449;53.440927
-CHIQUINQUIRA;Pacto Histórico;8016;27449;29.20325
-CHIQUINQUIRA;Equipo por Colombia;2928;27449;10.667055
-CHIQUINQUIRA;Centro Esperanza;835;27449;3.042005
-CHIQUINQUIRA;Votos en blanco;370;27449;1.347954
-CHIQUINQUIRA;Colombia Justa Libres;289;27449;1.052862
-CHIQUINQUIRA;Votos nulos;266;27449;0.96907
-CHIQUINQUIRA;Mov. Salvación Nacional;45;27449;0.16394
-CHIQUINQUIRA;Votos no marcados;19;27449;0.069219
-CHIQUINQUIRA;Partido Verde Oxígeno;8;27449;0.029145
-CHIQUINQUIRA;Colombia Piensa en Grande;4;27449;0.014572
-CHIQUIZA;Liga de Gobernantes;1913;2778;68.862491
-CHIQUIZA;Pacto Histórico;731;2778;26.313895
-CHIQUIZA;Votos nulos;37;2778;1.331893
-CHIQUIZA;Equipo por Colombia;29;2778;1.043916
-CHIQUIZA;Votos en blanco;22;2778;0.791937
-CHIQUIZA;Centro Esperanza;21;2778;0.75594
-CHIQUIZA;Votos no marcados;13;2778;0.467963
-CHIQUIZA;Colombia Justa Libres;4;2778;0.143988
-CHIQUIZA;Mov. Salvación Nacional;4;2778;0.143988
-CHIQUIZA;Partido Verde Oxígeno;3;2778;0.107991
-CHIQUIZA;Colombia Piensa en Grande;1;2778;0.035997
-CHISCAS;Liga de Gobernantes;1287;1701;75.661376
-CHISCAS;Pacto Histórico;173;1701;10.170488
-CHISCAS;Equipo por Colombia;141;1701;8.289242
-CHISCAS;Centro Esperanza;36;1701;2.116402
-CHISCAS;Votos en blanco;20;1701;1.175779
-CHISCAS;Colombia Justa Libres;18;1701;1.058201
-CHISCAS;Votos nulos;15;1701;0.881834
-CHISCAS;Votos no marcados;6;1701;0.352734
-CHISCAS;Mov. Salvación Nacional;3;1701;0.176367
-CHISCAS;Colombia Piensa en Grande;2;1701;0.117578
-CHITA;Liga de Gobernantes;2383;3203;74.399001
-CHITA;Pacto Histórico;425;3203;13.26881
-CHITA;Equipo por Colombia;282;3203;8.804246
-CHITA;Centro Esperanza;31;3203;0.967843
-CHITA;Votos en blanco;23;3203;0.718077
-CHITA;Votos nulos;18;3203;0.561973
-CHITA;Mov. Salvación Nacional;14;3203;0.43709
-CHITA;Votos no marcados;11;3203;0.343428
-CHITA;Colombia Justa Libres;7;3203;0.218545
-CHITA;Partido Verde Oxígeno;7;3203;0.218545
-CHITA;Colombia Piensa en Grande;2;3203;0.062441
-CHITARAQUE;Liga de Gobernantes;2026;2861;70.814401
-CHITARAQUE;Equipo por Colombia;445;2861;15.554002
-CHITARAQUE;Pacto Histórico;310;2861;10.835372
-CHITARAQUE;Centro Esperanza;28;2861;0.978679
-CHITARAQUE;Votos nulos;17;2861;0.594198
-CHITARAQUE;Colombia Justa Libres;13;2861;0.454387
-CHITARAQUE;Votos en blanco;12;2861;0.419434
-CHITARAQUE;Mov. Salvación Nacional;4;2861;0.139811
-CHITARAQUE;Votos no marcados;4;2861;0.139811
-CHITARAQUE;Partido Verde Oxígeno;2;2861;0.069906
-CHIVATA;Liga de Gobernantes;1181;2004;58.932136
-CHIVATA;Pacto Histórico;551;2004;27.49501
-CHIVATA;Equipo por Colombia;144;2004;7.185629
-CHIVATA;Centro Esperanza;86;2004;4.291417
-CHIVATA;Votos en blanco;18;2004;0.898204
-CHIVATA;Votos nulos;11;2004;0.548902
-CHIVATA;Mov. Salvación Nacional;6;2004;0.299401
-CHIVATA;Colombia Justa Libres;4;2004;0.199601
-CHIVATA;Votos no marcados;2;2004;0.0998
-CHIVATA;Partido Verde Oxígeno;1;2004;0.0499
-CHIVOR;Liga de Gobernantes;670;996;67.269076
-CHIVOR;Equipo por Colombia;199;996;19.97992
-CHIVOR;Pacto Histórico;83;996;8.333333
-CHIVOR;Centro Esperanza;19;996;1.907631
-CHIVOR;Colombia Justa Libres;10;996;1.004016
-CHIVOR;Votos nulos;8;996;0.803213
-CHIVOR;Votos en blanco;5;996;0.502008
-CHIVOR;Mov. Salvación Nacional;1;996;0.100402
-CHIVOR;Votos no marcados;1;996;0.100402
-CIENEGA;Liga de Gobernantes;1731;2328;74.35567
-CIENEGA;Pacto Histórico;297;2328;12.757732
-CIENEGA;Equipo por Colombia;168;2328;7.216495
-CIENEGA;Centro Esperanza;66;2328;2.835052
-CIENEGA;Votos en blanco;25;2328;1.073883
-CIENEGA;Votos nulos;12;2328;0.515464
-CIENEGA;Mov. Salvación Nacional;9;2328;0.386598
-CIENEGA;Partido Verde Oxígeno;7;2328;0.300687
-CIENEGA;Colombia Justa Libres;6;2328;0.257732
-CIENEGA;Votos no marcados;6;2328;0.257732
-CIENEGA;Colombia Piensa en Grande;1;2328;0.042955
-COMBITA;Liga de Gobernantes;3222;5857;55.011098
-COMBITA;Pacto Histórico;1844;5857;31.483695
-COMBITA;Equipo por Colombia;401;5857;6.846508
-COMBITA;Centro Esperanza;194;5857;3.312276
-COMBITA;Votos en blanco;76;5857;1.297593
-COMBITA;Votos nulos;56;5857;0.956121
-COMBITA;Colombia Justa Libres;34;5857;0.580502
-COMBITA;Mov. Salvación Nacional;19;5857;0.324398
-COMBITA;Votos no marcados;6;5857;0.102442
-COMBITA;Partido Verde Oxígeno;4;5857;0.068294
-COMBITA;Colombia Piensa en Grande;1;5857;0.017074
-COPER;Liga de Gobernantes;1351;1770;76.327684
-COPER;Equipo por Colombia;178;1770;10.056497
-COPER;Pacto Histórico;173;1770;9.774011
-COPER;Colombia Justa Libres;29;1770;1.638418
-COPER;Votos en blanco;13;1770;0.734463
-COPER;Centro Esperanza;10;1770;0.564972
-COPER;Votos nulos;9;1770;0.508475
-COPER;Votos no marcados;4;1770;0.225989
-COPER;Colombia Piensa en Grande;1;1770;0.056497
-COPER;Mov. Salvación Nacional;1;1770;0.056497
-COPER;Partido Verde Oxígeno;1;1770;0.056497
-CORRALES;Liga de Gobernantes;837;1571;53.278167
-CORRALES;Pacto Histórico;482;1571;30.681095
-CORRALES;Equipo por Colombia;155;1571;9.866327
-CORRALES;Centro Esperanza;44;1571;2.800764
-CORRALES;Votos nulos;17;1571;1.082113
-CORRALES;Votos en blanco;14;1571;0.891152
-CORRALES;Colombia Justa Libres;11;1571;0.700191
-CORRALES;Mov. Salvación Nacional;6;1571;0.381922
-CORRALES;Partido Verde Oxígeno;3;1571;0.190961
-CORRALES;Colombia Piensa en Grande;1;1571;0.063654
-CORRALES;Votos no marcados;1;1571;0.063654
-COVARACHIA;Liga de Gobernantes;1264;1611;78.460583
-COVARACHIA;Equipo por Colombia;184;1611;11.421477
-COVARACHIA;Pacto Histórico;110;1611;6.828057
-COVARACHIA;Centro Esperanza;29;1611;1.800124
-COVARACHIA;Votos en blanco;7;1611;0.434513
-COVARACHIA;Mov. Salvación Nacional;5;1611;0.310366
-COVARACHIA;Votos no marcados;5;1611;0.310366
-COVARACHIA;Votos nulos;5;1611;0.310366
-COVARACHIA;Colombia Justa Libres;1;1611;0.062073
-COVARACHIA;Partido Verde Oxígeno;1;1611;0.062073
-CUBARA;Liga de Gobernantes;1237;2749;44.998181
-CUBARA;Pacto Histórico;1172;2749;42.633685
-CUBARA;Equipo por Colombia;138;2749;5.020007
-CUBARA;Colombia Justa Libres;55;2749;2.000728
-CUBARA;Votos nulos;44;2749;1.600582
-CUBARA;Votos en blanco;38;2749;1.382321
-CUBARA;Centro Esperanza;37;2749;1.345944
-CUBARA;Votos no marcados;13;2749;0.472899
-CUBARA;Mov. Salvación Nacional;8;2749;0.291015
-CUBARA;Partido Verde Oxígeno;5;2749;0.181884
-CUBARA;Colombia Piensa en Grande;2;2749;0.072754
-CUCAITA;Liga de Gobernantes;1191;2171;54.859512
-CUCAITA;Pacto Histórico;811;2171;37.356057
-CUCAITA;Equipo por Colombia;74;2171;3.408567
-CUCAITA;Centro Esperanza;48;2171;2.210963
-CUCAITA;Votos en blanco;20;2171;0.921234
-CUCAITA;Votos nulos;11;2171;0.506679
-CUCAITA;Mov. Salvación Nacional;9;2171;0.414556
-CUCAITA;Colombia Justa Libres;4;2171;0.184247
-CUCAITA;Colombia Piensa en Grande;1;2171;0.046062
-CUCAITA;Partido Verde Oxígeno;1;2171;0.046062
-CUCAITA;Votos no marcados;1;2171;0.046062
-CUITIVA;Liga de Gobernantes;642;1108;57.942238
-CUITIVA;Pacto Histórico;254;1108;22.924188
-CUITIVA;Equipo por Colombia;163;1108;14.711191
-CUITIVA;Centro Esperanza;33;1108;2.978339
-CUITIVA;Votos nulos;6;1108;0.541516
-CUITIVA;Votos en blanco;3;1108;0.270758
-CUITIVA;Votos no marcados;3;1108;0.270758
-CUITIVA;Colombia Justa Libres;2;1108;0.180505
-CUITIVA;Mov. Salvación Nacional;2;1108;0.180505
-DUITAMA;Liga de Gobernantes;26111;64848;40.264927
-DUITAMA;Pacto Histórico;25972;64848;40.05058
-DUITAMA;Equipo por Colombia;7251;64848;11.181532
-DUITAMA;Centro Esperanza;3187;64848;4.914569
-DUITAMA;Votos en blanco;935;64848;1.441833
-DUITAMA;Votos nulos;551;64848;0.849679
-DUITAMA;Colombia Justa Libres;488;64848;0.752529
-DUITAMA;Mov. Salvación Nacional;244;64848;0.376264
-DUITAMA;Partido Verde Oxígeno;48;64848;0.074019
-DUITAMA;Votos no marcados;37;64848;0.057057
-DUITAMA;Colombia Piensa en Grande;24;64848;0.03701
-EL COCUY;Liga de Gobernantes;928;1713;54.173964
-EL COCUY;Equipo por Colombia;462;1713;26.970228
-EL COCUY;Pacto Histórico;204;1713;11.908932
-EL COCUY;Centro Esperanza;54;1713;3.152364
-EL COCUY;Votos en blanco;34;1713;1.984822
-EL COCUY;Votos nulos;18;1713;1.050788
-EL COCUY;Mov. Salvación Nacional;6;1713;0.350263
-EL COCUY;Votos no marcados;4;1713;0.233508
-EL COCUY;Colombia Justa Libres;3;1713;0.175131
-EL ESPINO;Liga de Gobernantes;758;1274;59.497645
-EL ESPINO;Equipo por Colombia;339;1274;26.609105
-EL ESPINO;Pacto Histórico;125;1274;9.811617
-EL ESPINO;Centro Esperanza;19;1274;1.491366
-EL ESPINO;Votos en blanco;16;1274;1.255887
-EL ESPINO;Votos nulos;5;1274;0.392465
-EL ESPINO;Colombia Justa Libres;4;1274;0.313972
-EL ESPINO;Votos no marcados;4;1274;0.313972
-EL ESPINO;Mov. Salvación Nacional;3;1274;0.235479
-EL ESPINO;Partido Verde Oxígeno;1;1274;0.078493
-FIRAVITOBA;Liga de Gobernantes;1588;3416;46.487119
-FIRAVITOBA;Pacto Histórico;1253;3416;36.680328
-FIRAVITOBA;Equipo por Colombia;323;3416;9.455504
-FIRAVITOBA;Centro Esperanza;137;3416;4.010539
-FIRAVITOBA;Votos en blanco;61;3416;1.785714
-FIRAVITOBA;Votos nulos;32;3416;0.936768
-FIRAVITOBA;Mov. Salvación Nacional;9;3416;0.263466
-FIRAVITOBA;Colombia Justa Libres;8;3416;0.234192
-FIRAVITOBA;Partido Verde Oxígeno;3;3416;0.087822
-FIRAVITOBA;Votos no marcados;2;3416;0.058548
-FLORESTA;Liga de Gobernantes;1179;2049;57.540264
-FLORESTA;Pacto Histórico;446;2049;21.766715
-FLORESTA;Equipo por Colombia;302;2049;14.738897
-FLORESTA;Centro Esperanza;78;2049;3.806735
-FLORESTA;Votos nulos;17;2049;0.829673
-FLORESTA;Votos en blanco;13;2049;0.634456
-FLORESTA;Colombia Justa Libres;6;2049;0.292826
-FLORESTA;Votos no marcados;5;2049;0.244021
-FLORESTA;Mov. Salvación Nacional;3;2049;0.146413
-GACHANTIVA;Liga de Gobernantes;1229;1829;67.195189
-GACHANTIVA;Pacto Histórico;373;1829;20.393658
-GACHANTIVA;Equipo por Colombia;138;1829;7.545107
-GACHANTIVA;Centro Esperanza;29;1829;1.585566
-GACHANTIVA;Votos en blanco;24;1829;1.312192
-GACHANTIVA;Votos nulos;13;1829;0.710771
-GACHANTIVA;Colombia Justa Libres;7;1829;0.382723
-GACHANTIVA;Mov. Salvación Nacional;7;1829;0.382723
-GACHANTIVA;Votos no marcados;5;1829;0.273373
-GACHANTIVA;Colombia Piensa en Grande;2;1829;0.109349
-GACHANTIVA;Partido Verde Oxígeno;2;1829;0.109349
-GAMEZA;Liga de Gobernantes;1756;2418;72.622002
-GAMEZA;Pacto Histórico;384;2418;15.880893
-GAMEZA;Equipo por Colombia;181;2418;7.485525
-GAMEZA;Centro Esperanza;49;2418;2.026468
-GAMEZA;Votos en blanco;18;2418;0.744417
-GAMEZA;Votos nulos;18;2418;0.744417
-GAMEZA;Mov. Salvación Nacional;7;2418;0.289495
-GAMEZA;Votos no marcados;3;2418;0.124069
-GAMEZA;Colombia Justa Libres;1;2418;0.041356
-GAMEZA;Partido Verde Oxígeno;1;2418;0.041356
-GARAGOA;Liga de Gobernantes;3696;7489;49.352383
-GARAGOA;Pacto Histórico;2350;7489;31.379356
-GARAGOA;Equipo por Colombia;874;7489;11.67045
-GARAGOA;Centro Esperanza;257;7489;3.4317
-GARAGOA;Votos en blanco;132;7489;1.762585
-GARAGOA;Votos nulos;84;7489;1.121645
-GARAGOA;Colombia Justa Libres;46;7489;0.614234
-GARAGOA;Mov. Salvación Nacional;31;7489;0.41394
-GARAGOA;Partido Verde Oxígeno;8;7489;0.106823
-GARAGOA;Votos no marcados;8;7489;0.106823
-GARAGOA;Colombia Piensa en Grande;3;7489;0.040059
-GUACAMAYAS;Liga de Gobernantes;449;868;51.728111
-GUACAMAYAS;Equipo por Colombia;273;868;31.451613
-GUACAMAYAS;Pacto Histórico;102;868;11.751152
-GUACAMAYAS;Centro Esperanza;23;868;2.64977
-GUACAMAYAS;Votos nulos;8;868;0.921659
-GUACAMAYAS;Votos en blanco;7;868;0.806452
-GUACAMAYAS;Votos no marcados;3;868;0.345622
-GUACAMAYAS;Mov. Salvación Nacional;2;868;0.230415
-GUACAMAYAS;Colombia Justa Libres;1;868;0.115207
-GUATEQUE;Liga de Gobernantes;3020;5484;55.069292
-GUATEQUE;Pacto Histórico;1419;5484;25.875274
-GUATEQUE;Equipo por Colombia;646;5484;11.779723
-GUATEQUE;Centro Esperanza;195;5484;3.555799
-GUATEQUE;Votos en blanco;78;5484;1.422319
-GUATEQUE;Votos nulos;70;5484;1.276441
-GUATEQUE;Colombia Justa Libres;37;5484;0.67469
-GUATEQUE;Mov. Salvación Nacional;11;5484;0.200584
-GUATEQUE;Votos no marcados;5;5484;0.091174
-GUATEQUE;Partido Verde Oxígeno;2;5484;0.03647
-GUATEQUE;Colombia Piensa en Grande;1;5484;0.018235
-GUAYATA;Liga de Gobernantes;1522;2319;65.631738
-GUAYATA;Equipo por Colombia;357;2319;15.394567
-GUAYATA;Pacto Histórico;321;2319;13.842173
-GUAYATA;Centro Esperanza;58;2319;2.501078
-GUAYATA;Votos en blanco;32;2319;1.379905
-GUAYATA;Mov. Salvación Nacional;9;2319;0.388098
-GUAYATA;Votos nulos;7;2319;0.301854
-GUAYATA;Votos no marcados;6;2319;0.258732
-GUAYATA;Colombia Justa Libres;3;2319;0.129366
-GUAYATA;Colombia Piensa en Grande;3;2319;0.129366
-GUAYATA;Partido Verde Oxígeno;1;2319;0.043122
-GUICAN;Liga de Gobernantes;661;1651;40.036342
-GUICAN;Pacto Histórico;522;1651;31.617202
-GUICAN;Equipo por Colombia;332;1651;20.109025
-GUICAN;Votos en blanco;39;1651;2.362205
-GUICAN;Centro Esperanza;38;1651;2.301635
-GUICAN;Votos nulos;34;1651;2.059358
-GUICAN;Mov. Salvación Nacional;9;1651;0.545124
-GUICAN;Partido Verde Oxígeno;6;1651;0.363416
-GUICAN;Colombia Justa Libres;5;1651;0.302847
-GUICAN;Votos no marcados;3;1651;0.181708
-GUICAN;Colombia Piensa en Grande;2;1651;0.121139
-IZA;Liga de Gobernantes;615;1355;45.387454
-IZA;Pacto Histórico;387;1355;28.560886
-IZA;Equipo por Colombia;261;1355;19.261993
-IZA;Centro Esperanza;62;1355;4.575646
-IZA;Votos en blanco;12;1355;0.885609
-IZA;Votos nulos;11;1355;0.811808
-IZA;Colombia Justa Libres;4;1355;0.295203
-IZA;Mov. Salvación Nacional;2;1355;0.147601
-IZA;Votos no marcados;1;1355;0.073801
-JENESANO;Liga de Gobernantes;2347;3652;64.266156
-JENESANO;Pacto Histórico;862;3652;23.603505
-JENESANO;Equipo por Colombia;259;3652;7.092004
-JENESANO;Centro Esperanza;77;3652;2.108434
-JENESANO;Votos en blanco;39;3652;1.067908
-JENESANO;Votos nulos;24;3652;0.657174
-JENESANO;Colombia Justa Libres;19;3652;0.520263
-JENESANO;Votos no marcados;11;3652;0.301205
-JENESANO;Mov. Salvación Nacional;7;3652;0.191676
-JENESANO;Partido Verde Oxígeno;6;3652;0.164294
-JENESANO;Colombia Piensa en Grande;1;3652;0.027382
-JERICO;Liga de Gobernantes;1230;1680;73.214286
-JERICO;Equipo por Colombia;186;1680;11.071429
-JERICO;Pacto Histórico;182;1680;10.833333
-JERICO;Centro Esperanza;32;1680;1.904762
-JERICO;Mov. Salvación Nacional;13;1680;0.77381
-JERICO;Votos en blanco;13;1680;0.77381
-JERICO;Votos nulos;11;1680;0.654762
-JERICO;Votos no marcados;6;1680;0.357143
-JERICO;Colombia Justa Libres;4;1680;0.238095
-JERICO;Partido Verde Oxígeno;2;1680;0.119048
-JERICO;Colombia Piensa en Grande;1;1680;0.059524
-LA CAPILLA;Liga de Gobernantes;996;1501;66.355763
-LA CAPILLA;Pacto Histórico;299;1501;19.920053
-LA CAPILLA;Equipo por Colombia;136;1501;9.060626
-LA CAPILLA;Centro Esperanza;31;1501;2.06529
-LA CAPILLA;Votos en blanco;22;1501;1.46569
-LA CAPILLA;Votos nulos;6;1501;0.399734
-LA CAPILLA;Mov. Salvación Nacional;5;1501;0.333111
-LA CAPILLA;Colombia Justa Libres;4;1501;0.266489
-LA CAPILLA;Colombia Piensa en Grande;1;1501;0.066622
-LA CAPILLA;Partido Verde Oxígeno;1;1501;0.066622
-LA UVITA;Liga de Gobernantes;775;1400;55.357143
-LA UVITA;Equipo por Colombia;375;1400;26.785714
-LA UVITA;Pacto Histórico;140;1400;10.0
-LA UVITA;Centro Esperanza;76;1400;5.428571
-LA UVITA;Votos en blanco;16;1400;1.142857
-LA UVITA;Votos nulos;12;1400;0.857143
-LA UVITA;Mov. Salvación Nacional;2;1400;0.142857
-LA UVITA;Partido Verde Oxígeno;2;1400;0.142857
-LA UVITA;Colombia Piensa en Grande;1;1400;0.071429
-LA UVITA;Votos no marcados;1;1400;0.071429
-LA VICTORIA;Liga de Gobernantes;498;723;68.879668
-LA VICTORIA;Equipo por Colombia;95;723;13.139696
-LA VICTORIA;Pacto Histórico;95;723;13.139696
-LA VICTORIA;Centro Esperanza;16;723;2.213001
-LA VICTORIA;Colombia Justa Libres;13;723;1.798064
-LA VICTORIA;Votos nulos;2;723;0.276625
-LA VICTORIA;Colombia Piensa en Grande;1;723;0.138313
-LA VICTORIA;Mov. Salvación Nacional;1;723;0.138313
-LA VICTORIA;Votos en blanco;1;723;0.138313
-LA VICTORIA;Votos no marcados;1;723;0.138313
-LABRANZAGRANDE;Liga de Gobernantes;1261;1737;72.596431
-LABRANZAGRANDE;Pacto Histórico;287;1737;16.52274
-LABRANZAGRANDE;Equipo por Colombia;113;1737;6.505469
-LABRANZAGRANDE;Centro Esperanza;30;1737;1.727116
-LABRANZAGRANDE;Votos en blanco;20;1737;1.15141
-LABRANZAGRANDE;Mov. Salvación Nacional;8;1737;0.460564
-LABRANZAGRANDE;Colombia Justa Libres;7;1737;0.402994
-LABRANZAGRANDE;Votos nulos;6;1737;0.345423
-LABRANZAGRANDE;Votos no marcados;3;1737;0.172712
-LABRANZAGRANDE;Partido Verde Oxígeno;2;1737;0.115141
-MACANAL;Liga de Gobernantes;1377;2019;68.20208
-MACANAL;Pacto Histórico;350;2019;17.335315
-MACANAL;Equipo por Colombia;195;2019;9.658247
-MACANAL;Centro Esperanza;44;2019;2.179297
-MACANAL;Votos en blanco;17;2019;0.842001
-MACANAL;Votos nulos;14;2019;0.693413
-MACANAL;Mov. Salvación Nacional;7;2019;0.346706
-MACANAL;Votos no marcados;6;2019;0.297177
-MACANAL;Colombia Justa Libres;5;2019;0.247647
-MACANAL;Partido Verde Oxígeno;4;2019;0.198118
-MARIPI;Liga de Gobernantes;2233;2864;77.967877
-MARIPI;Pacto Histórico;286;2864;9.986034
-MARIPI;Equipo por Colombia;262;2864;9.148045
-MARIPI;Colombia Justa Libres;36;2864;1.256983
-MARIPI;Centro Esperanza;27;2864;0.942737
-MARIPI;Votos nulos;11;2864;0.384078
-MARIPI;Votos no marcados;3;2864;0.104749
-MARIPI;Mov. Salvación Nacional;2;2864;0.069832
-MARIPI;Votos en blanco;2;2864;0.069832
-MARIPI;Colombia Piensa en Grande;1;2864;0.034916
-MARIPI;Partido Verde Oxígeno;1;2864;0.034916
-MIRAFLORES;Liga de Gobernantes;2410;4905;49.133537
-MIRAFLORES;Pacto Histórico;1793;4905;36.554536
-MIRAFLORES;Equipo por Colombia;352;4905;7.176351
-MIRAFLORES;Centro Esperanza;135;4905;2.752294
-MIRAFLORES;Votos en blanco;88;4905;1.794088
-MIRAFLORES;Colombia Justa Libres;56;4905;1.141692
-MIRAFLORES;Votos nulos;40;4905;0.815494
-MIRAFLORES;Mov. Salvación Nacional;14;4905;0.285423
-MIRAFLORES;Votos no marcados;10;4905;0.203874
-MIRAFLORES;Partido Verde Oxígeno;5;4905;0.101937
-MIRAFLORES;Colombia Piensa en Grande;2;4905;0.040775
-MONGUA;Liga de Gobernantes;1961;2757;71.128038
-MONGUA;Equipo por Colombia;366;2757;13.275299
-MONGUA;Pacto Histórico;341;2757;12.368517
-MONGUA;Centro Esperanza;55;2757;1.994922
-MONGUA;Votos nulos;14;2757;0.507798
-MONGUA;Votos en blanco;11;2757;0.398984
-MONGUA;Mov. Salvación Nacional;5;2757;0.181357
-MONGUA;Votos no marcados;2;2757;0.072543
-MONGUA;Colombia Justa Libres;1;2757;0.036271
-MONGUA;Partido Verde Oxígeno;1;2757;0.036271
-MONGUI;Liga de Gobernantes;1441;2521;57.159857
-MONGUI;Pacto Histórico;658;2521;26.100754
-MONGUI;Equipo por Colombia;259;2521;10.273701
-MONGUI;Centro Esperanza;81;2521;3.213011
-MONGUI;Votos en blanco;36;2521;1.428005
-MONGUI;Votos nulos;30;2521;1.190004
-MONGUI;Colombia Justa Libres;8;2521;0.317334
-MONGUI;Mov. Salvación Nacional;6;2521;0.238001
-MONGUI;Partido Verde Oxígeno;1;2521;0.039667
-MONGUI;Votos no marcados;1;2521;0.039667
-MONIQUIRA;Liga de Gobernantes;6438;11536;55.807906
-MONIQUIRA;Pacto Histórico;3010;11536;26.092233
-MONIQUIRA;Equipo por Colombia;1305;11536;11.312413
-MONIQUIRA;Centro Esperanza;269;11536;2.331831
-MONIQUIRA;Colombia Justa Libres;181;11536;1.569001
-MONIQUIRA;Votos en blanco;150;11536;1.300277
-MONIQUIRA;Votos nulos;130;11536;1.126907
-MONIQUIRA;Mov. Salvación Nacional;25;11536;0.216713
-MONIQUIRA;Votos no marcados;19;11536;0.164702
-MONIQUIRA;Partido Verde Oxígeno;5;11536;0.043343
-MONIQUIRA;Colombia Piensa en Grande;4;11536;0.034674
-MOTAVITA;Liga de Gobernantes;1893;3614;52.379635
-MOTAVITA;Pacto Histórico;1416;3614;39.180963
-MOTAVITA;Equipo por Colombia;138;3614;3.818484
-MOTAVITA;Centro Esperanza;70;3614;1.936912
-MOTAVITA;Votos en blanco;37;3614;1.023796
-MOTAVITA;Votos nulos;33;3614;0.913116
-MOTAVITA;Colombia Justa Libres;18;3614;0.498063
-MOTAVITA;Mov. Salvación Nacional;5;3614;0.138351
-MOTAVITA;Votos no marcados;3;3614;0.083011
-MOTAVITA;Partido Verde Oxígeno;1;3614;0.02767
-MUZO;Liga de Gobernantes;2802;4061;68.997784
-MUZO;Pacto Histórico;754;4061;18.566855
-MUZO;Equipo por Colombia;277;4061;6.82098
-MUZO;Colombia Justa Libres;73;4061;1.797587
-MUZO;Centro Esperanza;52;4061;1.280473
-MUZO;Votos nulos;42;4061;1.034228
-MUZO;Votos en blanco;40;4061;0.984979
-MUZO;Votos no marcados;13;4061;0.320118
-MUZO;Mov. Salvación Nacional;6;4061;0.147747
-MUZO;Colombia Piensa en Grande;1;4061;0.024624
-MUZO;Partido Verde Oxígeno;1;4061;0.024624
-NOBSA;Pacto Histórico;4869;9403;51.781346
-NOBSA;Liga de Gobernantes;3172;9403;33.733915
-NOBSA;Equipo por Colombia;608;9403;6.466021
-NOBSA;Centro Esperanza;439;9403;4.668723
-NOBSA;Votos en blanco;127;9403;1.350633
-NOBSA;Votos nulos;97;9403;1.031586
-NOBSA;Colombia Justa Libres;60;9403;0.638094
-NOBSA;Mov. Salvación Nacional;16;9403;0.170158
-NOBSA;Votos no marcados;7;9403;0.074444
-NOBSA;Partido Verde Oxígeno;6;9403;0.063809
-NOBSA;Colombia Piensa en Grande;2;9403;0.02127
-NUEVO COLON;Liga de Gobernantes;1575;2713;58.053815
-NUEVO COLON;Pacto Histórico;775;2713;28.566163
-NUEVO COLON;Equipo por Colombia;217;2713;7.998526
-NUEVO COLON;Centro Esperanza;67;2713;2.469591
-NUEVO COLON;Votos en blanco;30;2713;1.105787
-NUEVO COLON;Votos nulos;26;2713;0.958349
-NUEVO COLON;Colombia Justa Libres;15;2713;0.552893
-NUEVO COLON;Mov. Salvación Nacional;6;2713;0.221157
-NUEVO COLON;Partido Verde Oxígeno;1;2713;0.03686
-NUEVO COLON;Votos no marcados;1;2713;0.03686
-OICATA;Liga de Gobernantes;951;1833;51.88216
-OICATA;Pacto Histórico;596;1833;32.515003
-OICATA;Equipo por Colombia;169;1833;9.219858
-OICATA;Centro Esperanza;68;1833;3.709765
-OICATA;Votos nulos;18;1833;0.981997
-OICATA;Votos en blanco;16;1833;0.872886
-OICATA;Colombia Justa Libres;6;1833;0.327332
-OICATA;Mov. Salvación Nacional;6;1833;0.327332
-OICATA;Colombia Piensa en Grande;1;1833;0.054555
-OICATA;Partido Verde Oxígeno;1;1833;0.054555
-OICATA;Votos no marcados;1;1833;0.054555
-OTANCHE;Liga de Gobernantes;2554;3731;68.453498
-OTANCHE;Equipo por Colombia;519;3731;13.91048
-OTANCHE;Pacto Histórico;517;3731;13.856875
-OTANCHE;Centro Esperanza;45;3731;1.206111
-OTANCHE;Votos en blanco;38;3731;1.018494
-OTANCHE;Colombia Justa Libres;25;3731;0.670062
-OTANCHE;Votos nulos;19;3731;0.509247
-OTANCHE;Mov. Salvación Nacional;9;3731;0.241222
-OTANCHE;Partido Verde Oxígeno;3;3731;0.080407
-OTANCHE;Votos no marcados;2;3731;0.053605
-PACHAVITA;Liga de Gobernantes;678;1174;57.751278
-PACHAVITA;Pacto Histórico;227;1174;19.335605
-PACHAVITA;Equipo por Colombia;204;1174;17.376491
-PACHAVITA;Centro Esperanza;32;1174;2.725724
-PACHAVITA;Votos en blanco;16;1174;1.362862
-PACHAVITA;Colombia Justa Libres;4;1174;0.340716
-PACHAVITA;Mov. Salvación Nacional;4;1174;0.340716
-PACHAVITA;Votos nulos;4;1174;0.340716
-PACHAVITA;Colombia Piensa en Grande;2;1174;0.170358
-PACHAVITA;Partido Verde Oxígeno;2;1174;0.170358
-PACHAVITA;Votos no marcados;1;1174;0.085179
-PAEZ;Liga de Gobernantes;1096;1559;70.301475
-PAEZ;Pacto Histórico;241;1559;15.458627
-PAEZ;Equipo por Colombia;111;1559;7.119949
-PAEZ;Colombia Justa Libres;55;1559;3.527903
-PAEZ;Centro Esperanza;29;1559;1.860167
-PAEZ;Votos en blanco;19;1559;1.21873
-PAEZ;Votos nulos;6;1559;0.384862
-PAEZ;Mov. Salvación Nacional;1;1559;0.064144
-PAEZ;Votos no marcados;1;1559;0.064144
-PAIPA;Liga de Gobernantes;9213;19443;47.384663
-PAIPA;Pacto Histórico;6887;19443;35.421488
-PAIPA;Equipo por Colombia;1908;19443;9.8133
-PAIPA;Centro Esperanza;841;19443;4.325464
-PAIPA;Votos en blanco;279;19443;1.434964
-PAIPA;Votos nulos;154;19443;0.792059
-PAIPA;Colombia Justa Libres;90;19443;0.462892
-PAIPA;Mov. Salvación Nacional;51;19443;0.262305
-PAIPA;Votos no marcados;11;19443;0.056576
-PAIPA;Partido Verde Oxígeno;6;19443;0.030859
-PAIPA;Colombia Piensa en Grande;3;19443;0.01543
-PAJARITO;Liga de Gobernantes;802;1051;76.308278
-PAJARITO;Pacto Histórico;162;1051;15.413892
-PAJARITO;Equipo por Colombia;44;1051;4.186489
-PAJARITO;Centro Esperanza;17;1051;1.617507
-PAJARITO;Votos en blanco;12;1051;1.14177
-PAJARITO;Colombia Justa Libres;10;1051;0.951475
-PAJARITO;Mov. Salvación Nacional;3;1051;0.285442
-PAJARITO;Votos nulos;1;1051;0.095147
-PANQUEBA;Liga de Gobernantes;576;824;69.902913
-PANQUEBA;Equipo por Colombia;107;824;12.985437
-PANQUEBA;Pacto Histórico;107;824;12.985437
-PANQUEBA;Centro Esperanza;13;824;1.57767
-PANQUEBA;Votos en blanco;7;824;0.849515
-PANQUEBA;Votos nulos;6;824;0.728155
-PANQUEBA;Colombia Justa Libres;3;824;0.364078
-PANQUEBA;Colombia Piensa en Grande;2;824;0.242718
-PANQUEBA;Mov. Salvación Nacional;2;824;0.242718
-PANQUEBA;Votos no marcados;1;824;0.121359
-PAUNA;Liga de Gobernantes;2580;3815;67.627785
-PAUNA;Pacto Histórico;732;3815;19.187418
-PAUNA;Equipo por Colombia;344;3815;9.017038
-PAUNA;Centro Esperanza;50;3815;1.310616
-PAUNA;Votos en blanco;34;3815;0.891219
-PAUNA;Colombia Justa Libres;28;3815;0.733945
-PAUNA;Votos nulos;25;3815;0.655308
-PAUNA;Mov. Salvación Nacional;9;3815;0.235911
-PAUNA;Votos no marcados;8;3815;0.209699
-PAUNA;Partido Verde Oxígeno;5;3815;0.131062
-PAYA;Liga de Gobernantes;682;937;72.785486
-PAYA;Pacto Histórico;108;937;11.526147
-PAYA;Equipo por Colombia;78;937;8.32444
-PAYA;Centro Esperanza;23;937;2.454642
-PAYA;Votos en blanco;18;937;1.921025
-PAYA;Partido Verde Oxígeno;7;937;0.747065
-PAYA;Votos nulos;7;937;0.747065
-PAYA;Mov. Salvación Nacional;6;937;0.640342
-PAYA;Colombia Justa Libres;4;937;0.426894
-PAYA;Votos no marcados;3;937;0.320171
-PAYA;Colombia Piensa en Grande;1;937;0.106724
-PAZ DE RIO;Pacto Histórico;1045;2336;44.734589
-PAZ DE RIO;Liga de Gobernantes;779;2336;33.347603
-PAZ DE RIO;Equipo por Colombia;310;2336;13.270548
-PAZ DE RIO;Centro Esperanza;115;2336;4.922945
-PAZ DE RIO;Votos en blanco;31;2336;1.327055
-PAZ DE RIO;Votos nulos;27;2336;1.155822
-PAZ DE RIO;Colombia Justa Libres;15;2336;0.642123
-PAZ DE RIO;Mov. Salvación Nacional;8;2336;0.342466
-PAZ DE RIO;Votos no marcados;3;2336;0.128425
-PAZ DE RIO;Colombia Piensa en Grande;2;2336;0.085616
-PAZ DE RIO;Partido Verde Oxígeno;1;2336;0.042808
-PESCA;Liga de Gobernantes;2306;3443;66.976474
-PESCA;Pacto Histórico;669;3443;19.430729
-PESCA;Equipo por Colombia;309;3443;8.974731
-PESCA;Centro Esperanza;77;3443;2.236422
-PESCA;Votos en blanco;31;3443;0.900378
-PESCA;Votos nulos;26;3443;0.755155
-PESCA;Mov. Salvación Nacional;11;3443;0.319489
-PESCA;Votos no marcados;7;3443;0.203311
-PESCA;Colombia Justa Libres;6;3443;0.174267
-PESCA;Partido Verde Oxígeno;1;3443;0.029044
-PISBA;Liga de Gobernantes;354;660;53.636364
-PISBA;Pacto Histórico;140;660;21.212121
-PISBA;Equipo por Colombia;124;660;18.787879
-PISBA;Centro Esperanza;13;660;1.969697
-PISBA;Votos nulos;7;660;1.060606
-PISBA;Mov. Salvación Nacional;6;660;0.909091
-PISBA;Votos en blanco;6;660;0.909091
-PISBA;Colombia Justa Libres;4;660;0.606061
-PISBA;Partido Verde Oxígeno;3;660;0.454545
-PISBA;Colombia Piensa en Grande;2;660;0.30303
-PISBA;Votos no marcados;1;660;0.151515
-PUERTO BOYACA;Liga de Gobernantes;12606;22906;55.033616
-PUERTO BOYACA;Pacto Histórico;5054;22906;22.064088
-PUERTO BOYACA;Equipo por Colombia;3389;22906;14.79525
-PUERTO BOYACA;Votos nulos;541;22906;2.361827
-PUERTO BOYACA;Colombia Justa Libres;503;22906;2.195931
-PUERTO BOYACA;Centro Esperanza;426;22906;1.859775
-PUERTO BOYACA;Votos en blanco;277;22906;1.20929
-PUERTO BOYACA;Votos no marcados;62;22906;0.270671
-PUERTO BOYACA;Mov. Salvación Nacional;32;22906;0.139701
-PUERTO BOYACA;Partido Verde Oxígeno;11;22906;0.048022
-PUERTO BOYACA;Colombia Piensa en Grande;5;22906;0.021828
-QUIPAMA;Liga de Gobernantes;1778;2481;71.664651
-QUIPAMA;Pacto Histórico;313;2481;12.615881
-QUIPAMA;Equipo por Colombia;283;2481;11.406691
-QUIPAMA;Centro Esperanza;35;2481;1.410721
-QUIPAMA;Votos nulos;23;2481;0.927046
-QUIPAMA;Colombia Justa Libres;18;2481;0.725514
-QUIPAMA;Votos en blanco;13;2481;0.523982
-QUIPAMA;Votos no marcados;8;2481;0.322451
-QUIPAMA;Mov. Salvación Nacional;5;2481;0.201532
-QUIPAMA;Partido Verde Oxígeno;3;2481;0.120919
-QUIPAMA;Colombia Piensa en Grande;2;2481;0.080613
-RAMIRIQUI;Liga de Gobernantes;3350;5381;62.256086
-RAMIRIQUI;Pacto Histórico;1366;5381;25.385616
-RAMIRIQUI;Equipo por Colombia;410;5381;7.619402
-RAMIRIQUI;Centro Esperanza;117;5381;2.174317
-RAMIRIQUI;Votos en blanco;54;5381;1.003531
-RAMIRIQUI;Votos nulos;41;5381;0.76194
-RAMIRIQUI;Mov. Salvación Nacional;19;5381;0.353094
-RAMIRIQUI;Colombia Justa Libres;14;5381;0.260175
-RAMIRIQUI;Votos no marcados;6;5381;0.111503
-RAMIRIQUI;Partido Verde Oxígeno;3;5381;0.055752
-RAMIRIQUI;Colombia Piensa en Grande;1;5381;0.018584
-RAQUIRA;Liga de Gobernantes;2188;3333;65.646565
-RAQUIRA;Pacto Histórico;724;3333;21.722172
-RAQUIRA;Equipo por Colombia;230;3333;6.90069
-RAQUIRA;Centro Esperanza;93;3333;2.790279
-RAQUIRA;Votos en blanco;51;3333;1.530153
-RAQUIRA;Votos nulos;18;3333;0.540054
-RAQUIRA;Mov. Salvación Nacional;13;3333;0.390039
-RAQUIRA;Colombia Justa Libres;9;3333;0.270027
-RAQUIRA;Votos no marcados;6;3333;0.180018
-RAQUIRA;Partido Verde Oxígeno;1;3333;0.030003
-RONDON;Liga de Gobernantes;836;1368;61.111111
-RONDON;Pacto Histórico;285;1368;20.833333
-RONDON;Equipo por Colombia;189;1368;13.815789
-RONDON;Centro Esperanza;35;1368;2.55848
-RONDON;Votos en blanco;11;1368;0.804094
-RONDON;Mov. Salvación Nacional;5;1368;0.365497
-RONDON;Votos nulos;5;1368;0.365497
-RONDON;Partido Verde Oxígeno;1;1368;0.073099
-RONDON;Votos no marcados;1;1368;0.073099
-SABOYA;Liga de Gobernantes;3395;5947;57.087607
-SABOYA;Pacto Histórico;1623;5947;27.291071
-SABOYA;Equipo por Colombia;581;5947;9.769632
-SABOYA;Centro Esperanza;113;5947;1.900118
-SABOYA;Votos nulos;98;5947;1.64789
-SABOYA;Votos en blanco;67;5947;1.126618
-SABOYA;Colombia Justa Libres;31;5947;0.521271
-SABOYA;Votos no marcados;16;5947;0.269043
-SABOYA;Mov. Salvación Nacional;12;5947;0.201782
-SABOYA;Partido Verde Oxígeno;6;5947;0.100891
-SABOYA;Colombia Piensa en Grande;5;5947;0.084076
-SACHICA;Liga de Gobernantes;1704;2761;61.716769
-SACHICA;Pacto Histórico;695;2761;25.172039
-SACHICA;Centro Esperanza;144;2761;5.215502
-SACHICA;Equipo por Colombia;144;2761;5.215502
-SACHICA;Votos en blanco;27;2761;0.977907
-SACHICA;Votos nulos;21;2761;0.760594
-SACHICA;Colombia Justa Libres;17;2761;0.615719
-SACHICA;Mov. Salvación Nacional;5;2761;0.181094
-SACHICA;Votos no marcados;2;2761;0.072438
-SACHICA;Colombia Piensa en Grande;1;2761;0.036219
-SACHICA;Partido Verde Oxígeno;1;2761;0.036219
-SAMACA;Liga de Gobernantes;5873;9367;62.698836
-SAMACA;Pacto Histórico;2452;9367;26.177004
-SAMACA;Equipo por Colombia;412;9367;4.39842
-SAMACA;Centro Esperanza;274;9367;2.925163
-SAMACA;Votos en blanco;126;9367;1.345148
-SAMACA;Votos nulos;95;9367;1.014199
-SAMACA;Mov. Salvación Nacional;61;9367;0.651222
-SAMACA;Colombia Justa Libres;52;9367;0.55514
-SAMACA;Votos no marcados;16;9367;0.170812
-SAMACA;Partido Verde Oxígeno;5;9367;0.053379
-SAMACA;Colombia Piensa en Grande;1;9367;0.010676
-SAN EDUARDO;Liga de Gobernantes;552;875;63.085714
-SAN EDUARDO;Pacto Histórico;212;875;24.228571
-SAN EDUARDO;Equipo por Colombia;61;875;6.971429
-SAN EDUARDO;Centro Esperanza;21;875;2.4
-SAN EDUARDO;Votos en blanco;20;875;2.285714
-SAN EDUARDO;Colombia Justa Libres;3;875;0.342857
-SAN EDUARDO;Partido Verde Oxígeno;2;875;0.228571
-SAN EDUARDO;Votos no marcados;2;875;0.228571
-SAN EDUARDO;Votos nulos;2;875;0.228571
-SAN JOSE DE PARE;Liga de Gobernantes;2093;2943;71.117907
-SAN JOSE DE PARE;Pacto Histórico;386;2943;13.115868
-SAN JOSE DE PARE;Equipo por Colombia;353;2943;11.994563
-SAN JOSE DE PARE;Centro Esperanza;59;2943;2.004757
-SAN JOSE DE PARE;Colombia Justa Libres;21;2943;0.713558
-SAN JOSE DE PARE;Votos en blanco;14;2943;0.475705
-SAN JOSE DE PARE;Votos nulos;11;2943;0.373768
-SAN JOSE DE PARE;Mov. Salvación Nacional;4;2943;0.135916
-SAN JOSE DE PARE;Votos no marcados;2;2943;0.067958
-SAN LUIS DE GACENO;Liga de Gobernantes;1812;2413;75.093245
-SAN LUIS DE GACENO;Pacto Histórico;265;2413;10.98218
-SAN LUIS DE GACENO;Equipo por Colombia;240;2413;9.946125
-SAN LUIS DE GACENO;Centro Esperanza;41;2413;1.69913
-SAN LUIS DE GACENO;Votos en blanco;22;2413;0.911728
-SAN LUIS DE GACENO;Votos nulos;17;2413;0.704517
-SAN LUIS DE GACENO;Colombia Justa Libres;10;2413;0.414422
-SAN LUIS DE GACENO;Mov. Salvación Nacional;2;2413;0.082884
-SAN LUIS DE GACENO;Votos no marcados;2;2413;0.082884
-SAN LUIS DE GACENO;Colombia Piensa en Grande;1;2413;0.041442
-SAN LUIS DE GACENO;Partido Verde Oxígeno;1;2413;0.041442
-SAN MATEO;Liga de Gobernantes;1141;1899;60.084255
-SAN MATEO;Equipo por Colombia;524;1899;27.59347
-SAN MATEO;Pacto Histórico;157;1899;8.267509
-SAN MATEO;Centro Esperanza;38;1899;2.001053
-SAN MATEO;Votos en blanco;17;1899;0.895208
-SAN MATEO;Votos nulos;9;1899;0.473934
-SAN MATEO;Colombia Justa Libres;5;1899;0.263296
-SAN MATEO;Votos no marcados;3;1899;0.157978
-SAN MATEO;Mov. Salvación Nacional;2;1899;0.105319
-SAN MATEO;Partido Verde Oxígeno;2;1899;0.105319
-SAN MATEO;Colombia Piensa en Grande;1;1899;0.052659
-SAN MIGUEL DE SEMA;Liga de Gobernantes;1091;1644;66.36253
-SAN MIGUEL DE SEMA;Pacto Histórico;268;1644;16.301703
-SAN MIGUEL DE SEMA;Equipo por Colombia;190;1644;11.557178
-SAN MIGUEL DE SEMA;Centro Esperanza;47;1644;2.858881
-SAN MIGUEL DE SEMA;Votos en blanco;22;1644;1.3382
-SAN MIGUEL DE SEMA;Votos nulos;15;1644;0.912409
-SAN MIGUEL DE SEMA;Votos no marcados;5;1644;0.304136
-SAN MIGUEL DE SEMA;Mov. Salvación Nacional;3;1644;0.182482
-SAN MIGUEL DE SEMA;Partido Verde Oxígeno;3;1644;0.182482
-SAN PABLO DE BORBUR;Liga de Gobernantes;2222;3018;73.624917
-SAN PABLO DE BORBUR;Equipo por Colombia;331;3018;10.967528
-SAN PABLO DE BORBUR;Pacto Histórico;322;3018;10.669317
-SAN PABLO DE BORBUR;Centro Esperanza;36;3018;1.192843
-SAN PABLO DE BORBUR;Colombia Justa Libres;35;3018;1.159708
-SAN PABLO DE BORBUR;Votos nulos;31;3018;1.02717
-SAN PABLO DE BORBUR;Votos en blanco;22;3018;0.72896
-SAN PABLO DE BORBUR;Mov. Salvación Nacional;9;3018;0.298211
-SAN PABLO DE BORBUR;Votos no marcados;8;3018;0.265076
-SAN PABLO DE BORBUR;Colombia Piensa en Grande;1;3018;0.033135
-SAN PABLO DE BORBUR;Partido Verde Oxígeno;1;3018;0.033135
-SANTA MARIA;Liga de Gobernantes;1097;1865;58.820375
-SANTA MARIA;Pacto Histórico;475;1865;25.469169
-SANTA MARIA;Equipo por Colombia;141;1865;7.560322
-SANTA MARIA;Centro Esperanza;54;1865;2.895442
-SANTA MARIA;Votos en blanco;42;1865;2.252011
-SANTA MARIA;Votos nulos;28;1865;1.50134
-SANTA MARIA;Mov. Salvación Nacional;12;1865;0.643432
-SANTA MARIA;Votos no marcados;7;1865;0.375335
-SANTA MARIA;Colombia Justa Libres;4;1865;0.214477
-SANTA MARIA;Partido Verde Oxígeno;3;1865;0.160858
-SANTA MARIA;Colombia Piensa en Grande;2;1865;0.107239
-SANTA ROSA DE VITERBO;Liga de Gobernantes;3230;5968;54.121984
-SANTA ROSA DE VITERBO;Pacto Histórico;1553;5968;26.022118
-SANTA ROSA DE VITERBO;Equipo por Colombia;787;5968;13.186997
-SANTA ROSA DE VITERBO;Centro Esperanza;208;5968;3.485255
-SANTA ROSA DE VITERBO;Votos en blanco;64;5968;1.072386
-SANTA ROSA DE VITERBO;Votos nulos;54;5968;0.904826
-SANTA ROSA DE VITERBO;Colombia Justa Libres;31;5968;0.519437
-SANTA ROSA DE VITERBO;Mov. Salvación Nacional;24;5968;0.402145
-SANTA ROSA DE VITERBO;Votos no marcados;9;5968;0.150804
-SANTA ROSA DE VITERBO;Partido Verde Oxígeno;8;5968;0.134048
-SANTA SOFIA;Liga de Gobernantes;1306;1874;69.690502
-SANTA SOFIA;Equipo por Colombia;235;1874;12.540021
-SANTA SOFIA;Pacto Histórico;230;1874;12.273212
-SANTA SOFIA;Centro Esperanza;57;1874;3.041622
-SANTA SOFIA;Votos en blanco;16;1874;0.853789
-SANTA SOFIA;Votos nulos;15;1874;0.800427
-SANTA SOFIA;Colombia Justa Libres;11;1874;0.58698
-SANTA SOFIA;Mov. Salvación Nacional;2;1874;0.106724
-SANTA SOFIA;Votos no marcados;2;1874;0.106724
-SANTANA;Liga de Gobernantes;2672;4044;66.073195
-SANTANA;Pacto Histórico;751;4044;18.570722
-SANTANA;Equipo por Colombia;448;4044;11.07814
-SANTANA;Colombia Justa Libres;71;4044;1.755687
-SANTANA;Centro Esperanza;42;4044;1.038576
-SANTANA;Votos en blanco;23;4044;0.568744
-SANTANA;Votos nulos;18;4044;0.445104
-SANTANA;Mov. Salvación Nacional;9;4044;0.222552
-SANTANA;Votos no marcados;7;4044;0.173096
-SANTANA;Partido Verde Oxígeno;2;4044;0.049456
-SANTANA;Colombia Piensa en Grande;1;4044;0.024728
-SATIVANORTE;Liga de Gobernantes;927;1326;69.909502
-SATIVANORTE;Equipo por Colombia;183;1326;13.800905
-SATIVANORTE;Pacto Histórico;177;1326;13.348416
-SATIVANORTE;Centro Esperanza;26;1326;1.960784
-SATIVANORTE;Votos nulos;7;1326;0.527903
-SATIVANORTE;Votos en blanco;5;1326;0.377074
-SATIVANORTE;Votos no marcados;1;1326;0.075415
-SATIVASUR;Liga de Gobernantes;317;605;52.396694
-SATIVASUR;Pacto Histórico;134;605;22.14876
-SATIVASUR;Equipo por Colombia;108;605;17.85124
-SATIVASUR;Centro Esperanza;18;605;2.975207
-SATIVASUR;Votos nulos;14;605;2.31405
-SATIVASUR;Votos en blanco;12;605;1.983471
-SATIVASUR;Partido Verde Oxígeno;1;605;0.165289
-SATIVASUR;Votos no marcados;1;605;0.165289
-SIACHOQUE;Liga de Gobernantes;2646;3921;67.482785
-SIACHOQUE;Pacto Histórico;811;3921;20.683499
-SIACHOQUE;Equipo por Colombia;219;3921;5.58531
-SIACHOQUE;Centro Esperanza;120;3921;3.060444
-SIACHOQUE;Votos nulos;44;3921;1.122163
-SIACHOQUE;Votos en blanco;37;3921;0.943637
-SIACHOQUE;Colombia Justa Libres;14;3921;0.357052
-SIACHOQUE;Mov. Salvación Nacional;14;3921;0.357052
-SIACHOQUE;Votos no marcados;13;3921;0.331548
-SIACHOQUE;Colombia Piensa en Grande;3;3921;0.076511
-SOATA;Liga de Gobernantes;2420;4685;51.654216
-SOATA;Pacto Histórico;1034;4685;22.070438
-SOATA;Equipo por Colombia;934;4685;19.935966
-SOATA;Centro Esperanza;148;4685;3.159018
-SOATA;Votos en blanco;58;4685;1.237994
-SOATA;Votos nulos;39;4685;0.832444
-SOATA;Colombia Justa Libres;27;4685;0.576307
-SOATA;Mov. Salvación Nacional;15;4685;0.320171
-SOATA;Votos no marcados;5;4685;0.106724
-SOATA;Partido Verde Oxígeno;4;4685;0.085379
-SOATA;Colombia Piensa en Grande;1;4685;0.021345
-SOCHA;Liga de Gobernantes;1775;3349;53.000896
-SOCHA;Pacto Histórico;987;3349;29.471484
-SOCHA;Equipo por Colombia;282;3349;8.420424
-SOCHA;Centro Esperanza;141;3349;4.210212
-SOCHA;Votos nulos;65;3349;1.940878
-SOCHA;Votos en blanco;60;3349;1.79158
-SOCHA;Colombia Justa Libres;13;3349;0.388176
-SOCHA;Mov. Salvación Nacional;13;3349;0.388176
-SOCHA;Votos no marcados;9;3349;0.268737
-SOCHA;Partido Verde Oxígeno;3;3349;0.089579
-SOCHA;Colombia Piensa en Grande;1;3349;0.02986
-SOCOTA;Liga de Gobernantes;1992;3082;64.633355
-SOCOTA;Pacto Histórico;667;3082;21.641791
-SOCOTA;Equipo por Colombia;257;3082;8.338741
-SOCOTA;Centro Esperanza;49;3082;1.589877
-SOCOTA;Votos nulos;45;3082;1.460091
-SOCOTA;Votos en blanco;35;3082;1.135626
-SOCOTA;Colombia Justa Libres;14;3082;0.45425
-SOCOTA;Mov. Salvación Nacional;11;3082;0.356911
-SOCOTA;Votos no marcados;8;3082;0.259572
-SOCOTA;Colombia Piensa en Grande;2;3082;0.064893
-SOCOTA;Partido Verde Oxígeno;2;3082;0.064893
-SOGAMOSO;Pacto Histórico;27019;66422;40.677787
-SOGAMOSO;Liga de Gobernantes;26315;66422;39.617898
-SOGAMOSO;Equipo por Colombia;7251;66422;10.916564
-SOGAMOSO;Centro Esperanza;3229;66422;4.861341
-SOGAMOSO;Votos en blanco;962;66422;1.448315
-SOGAMOSO;Colombia Justa Libres;720;66422;1.083978
-SOGAMOSO;Votos nulos;682;66422;1.026768
-SOGAMOSO;Mov. Salvación Nacional;139;66422;0.209268
-SOGAMOSO;Votos no marcados;45;66422;0.067749
-SOGAMOSO;Partido Verde Oxígeno;31;66422;0.046671
-SOGAMOSO;Colombia Piensa en Grande;29;66422;0.04366
-SOMONDOCO;Liga de Gobernantes;945;1533;61.643836
-SOMONDOCO;Pacto Histórico;321;1533;20.939335
-SOMONDOCO;Equipo por Colombia;168;1533;10.958904
-SOMONDOCO;Centro Esperanza;55;1533;3.587736
-SOMONDOCO;Votos en blanco;14;1533;0.913242
-SOMONDOCO;Votos nulos;13;1533;0.84801
-SOMONDOCO;Colombia Justa Libres;9;1533;0.587084
-SOMONDOCO;Mov. Salvación Nacional;4;1533;0.260926
-SOMONDOCO;Colombia Piensa en Grande;2;1533;0.130463
-SOMONDOCO;Votos no marcados;2;1533;0.130463
-SORA;Liga de Gobernantes;1095;1823;60.065826
-SORA;Pacto Histórico;570;1823;31.267142
-SORA;Equipo por Colombia;82;1823;4.49808
-SORA;Centro Esperanza;44;1823;2.413604
-SORA;Votos nulos;12;1823;0.658256
-SORA;Votos en blanco;11;1823;0.603401
-SORA;Mov. Salvación Nacional;4;1823;0.219419
-SORA;Votos no marcados;3;1823;0.164564
-SORA;Colombia Justa Libres;1;1823;0.054855
-SORA;Partido Verde Oxígeno;1;1823;0.054855
-SORACA;Liga de Gobernantes;2443;3755;65.05992
-SORACA;Pacto Histórico;944;3755;25.139814
-SORACA;Equipo por Colombia;197;3755;5.246338
-SORACA;Centro Esperanza;82;3755;2.183755
-SORACA;Votos en blanco;32;3755;0.852197
-SORACA;Votos nulos;25;3755;0.665779
-SORACA;Mov. Salvación Nacional;16;3755;0.426099
-SORACA;Votos no marcados;10;3755;0.266312
-SORACA;Colombia Justa Libres;4;3755;0.106525
-SORACA;Partido Verde Oxígeno;2;3755;0.053262
-SOTAQUIRA;Liga de Gobernantes;2640;4052;65.153011
-SOTAQUIRA;Pacto Histórico;780;4052;19.249753
-SOTAQUIRA;Equipo por Colombia;346;4052;8.538993
-SOTAQUIRA;Centro Esperanza;133;4052;3.28233
-SOTAQUIRA;Votos nulos;57;4052;1.406713
-SOTAQUIRA;Votos en blanco;43;4052;1.061204
-SOTAQUIRA;Colombia Justa Libres;33;4052;0.814413
-SOTAQUIRA;Mov. Salvación Nacional;8;4052;0.197433
-SOTAQUIRA;Votos no marcados;8;4052;0.197433
-SOTAQUIRA;Partido Verde Oxígeno;3;4052;0.074038
-SOTAQUIRA;Colombia Piensa en Grande;1;4052;0.024679
-SUSACON;Liga de Gobernantes;954;1492;63.941019
-SUSACON;Equipo por Colombia;266;1492;17.828418
-SUSACON;Pacto Histórico;209;1492;14.008043
-SUSACON;Centro Esperanza;34;1492;2.27882
-SUSACON;Votos nulos;11;1492;0.737265
-SUSACON;Votos en blanco;10;1492;0.670241
-SUSACON;Votos no marcados;5;1492;0.335121
-SUSACON;Mov. Salvación Nacional;3;1492;0.201072
-SUTAMARCHAN;Liga de Gobernantes;2398;3828;62.643678
-SUTAMARCHAN;Pacto Histórico;921;3828;24.059561
-SUTAMARCHAN;Equipo por Colombia;342;3828;8.934169
-SUTAMARCHAN;Centro Esperanza;108;3828;2.821317
-SUTAMARCHAN;Votos en blanco;32;3828;0.835946
-SUTAMARCHAN;Colombia Justa Libres;13;3828;0.339603
-SUTAMARCHAN;Votos nulos;8;3828;0.208986
-SUTAMARCHAN;Votos no marcados;5;3828;0.130617
-SUTAMARCHAN;Colombia Piensa en Grande;1;3828;0.026123
-SUTATENZA;Liga de Gobernantes;1317;2241;58.768407
-SUTATENZA;Pacto Histórico;472;2241;21.062026
-SUTATENZA;Equipo por Colombia;323;2241;14.413208
-SUTATENZA;Centro Esperanza;55;2241;2.454261
-SUTATENZA;Votos nulos;29;2241;1.294065
-SUTATENZA;Votos en blanco;23;2241;1.026328
-SUTATENZA;Colombia Justa Libres;10;2241;0.446229
-SUTATENZA;Mov. Salvación Nacional;6;2241;0.267738
-SUTATENZA;Votos no marcados;6;2241;0.267738
-TASCO;Liga de Gobernantes;1468;2640;55.606061
-TASCO;Pacto Histórico;814;2640;30.833333
-TASCO;Equipo por Colombia;197;2640;7.462121
-TASCO;Centro Esperanza;82;2640;3.106061
-TASCO;Votos en blanco;32;2640;1.212121
-TASCO;Votos nulos;22;2640;0.833333
-TASCO;Colombia Justa Libres;14;2640;0.530303
-TASCO;Mov. Salvación Nacional;5;2640;0.189394
-TASCO;Votos no marcados;4;2640;0.151515
-TASCO;Partido Verde Oxígeno;2;2640;0.075758
-TENZA;Liga de Gobernantes;1299;2020;64.306931
-TENZA;Pacto Histórico;346;2020;17.128713
-TENZA;Equipo por Colombia;228;2020;11.287129
-TENZA;Centro Esperanza;93;2020;4.60396
-TENZA;Votos en blanco;19;2020;0.940594
-TENZA;Votos nulos;15;2020;0.742574
-TENZA;Colombia Justa Libres;9;2020;0.445545
-TENZA;Mov. Salvación Nacional;6;2020;0.29703
-TENZA;Votos no marcados;5;2020;0.247525
-TIBANA;Liga de Gobernantes;2623;4066;64.510576
-TIBANA;Pacto Histórico;948;4066;23.315298
-TIBANA;Equipo por Colombia;234;4066;5.755042
-TIBANA;Centro Esperanza;115;4066;2.828333
-TIBANA;Votos en blanco;56;4066;1.377275
-TIBANA;Votos nulos;44;4066;1.082145
-TIBANA;Colombia Justa Libres;23;4066;0.565667
-TIBANA;Mov. Salvación Nacional;13;4066;0.319725
-TIBANA;Votos no marcados;5;4066;0.122971
-TIBANA;Colombia Piensa en Grande;3;4066;0.073783
-TIBANA;Partido Verde Oxígeno;2;4066;0.049188
-TIBASOSA;Liga de Gobernantes;2685;6305;42.58525
-TIBASOSA;Pacto Histórico;2405;6305;38.14433
-TIBASOSA;Equipo por Colombia;700;6305;11.1023
-TIBASOSA;Centro Esperanza;305;6305;4.837431
-TIBASOSA;Votos en blanco;84;6305;1.332276
-TIBASOSA;Votos nulos;55;6305;0.872324
-TIBASOSA;Colombia Justa Libres;48;6305;0.761301
-TIBASOSA;Mov. Salvación Nacional;16;6305;0.253767
-TIBASOSA;Votos no marcados;4;6305;0.063442
-TIBASOSA;Colombia Piensa en Grande;2;6305;0.031721
-TIBASOSA;Partido Verde Oxígeno;1;6305;0.01586
-TINJACA;Liga de Gobernantes;1152;2096;54.961832
-TINJACA;Pacto Histórico;665;2096;31.727099
-TINJACA;Equipo por Colombia;190;2096;9.064885
-TINJACA;Centro Esperanza;58;2096;2.767176
-TINJACA;Votos nulos;11;2096;0.524809
-TINJACA;Mov. Salvación Nacional;6;2096;0.28626
-TINJACA;Votos en blanco;6;2096;0.28626
-TINJACA;Colombia Justa Libres;4;2096;0.19084
-TINJACA;Colombia Piensa en Grande;2;2096;0.09542
-TINJACA;Partido Verde Oxígeno;1;2096;0.04771
-TINJACA;Votos no marcados;1;2096;0.04771
-TIPACOQUE;Liga de Gobernantes;1285;1840;69.836957
-TIPACOQUE;Pacto Histórico;316;1840;17.173913
-TIPACOQUE;Equipo por Colombia;175;1840;9.51087
-TIPACOQUE;Centro Esperanza;29;1840;1.576087
-TIPACOQUE;Votos en blanco;11;1840;0.597826
-TIPACOQUE;Votos nulos;9;1840;0.48913
-TIPACOQUE;Votos no marcados;8;1840;0.434783
-TIPACOQUE;Colombia Justa Libres;4;1840;0.217391
-TIPACOQUE;Colombia Piensa en Grande;1;1840;0.054348
-TIPACOQUE;Mov. Salvación Nacional;1;1840;0.054348
-TIPACOQUE;Partido Verde Oxígeno;1;1840;0.054348
-TOCA;Liga de Gobernantes;3201;4925;64.994924
-TOCA;Pacto Histórico;1230;4925;24.974619
-TOCA;Equipo por Colombia;238;4925;4.832487
-TOCA;Centro Esperanza;104;4925;2.111675
-TOCA;Votos en blanco;66;4925;1.340102
-TOCA;Votos nulos;42;4925;0.852792
-TOCA;Colombia Justa Libres;18;4925;0.365482
-TOCA;Mov. Salvación Nacional;13;4925;0.263959
-TOCA;Votos no marcados;7;4925;0.142132
-TOCA;Colombia Piensa en Grande;3;4925;0.060914
-TOCA;Partido Verde Oxígeno;3;4925;0.060914
-TOGUI;Liga de Gobernantes;1484;2255;65.809313
-TOGUI;Pacto Histórico;320;2255;14.190687
-TOGUI;Equipo por Colombia;313;2255;13.880266
-TOGUI;Centro Esperanza;48;2255;2.128603
-TOGUI;Colombia Justa Libres;28;2255;1.241685
-TOGUI;Votos nulos;26;2255;1.152993
-TOGUI;Votos en blanco;20;2255;0.886918
-TOGUI;Votos no marcados;10;2255;0.443459
-TOGUI;Mov. Salvación Nacional;3;2255;0.133038
-TOGUI;Colombia Piensa en Grande;2;2255;0.088692
-TOGUI;Partido Verde Oxígeno;1;2255;0.044346
-TOPAGA;Liga de Gobernantes;1284;2279;56.3405
-TOPAGA;Pacto Histórico;505;2279;22.158842
-TOPAGA;Equipo por Colombia;326;2279;14.30452
-TOPAGA;Centro Esperanza;58;2279;2.544976
-TOPAGA;Votos nulos;37;2279;1.623519
-TOPAGA;Votos en blanco;36;2279;1.57964
-TOPAGA;Colombia Justa Libres;15;2279;0.658183
-TOPAGA;Mov. Salvación Nacional;12;2279;0.526547
-TOPAGA;Votos no marcados;3;2279;0.131637
-TOPAGA;Partido Verde Oxígeno;2;2279;0.087758
-TOPAGA;Colombia Piensa en Grande;1;2279;0.043879
-TOTA;Liga de Gobernantes;1477;2059;71.733851
-TOTA;Pacto Histórico;335;2059;16.270034
-TOTA;Equipo por Colombia;109;2059;5.293832
-TOTA;Centro Esperanza;62;2059;3.01117
-TOTA;Votos nulos;20;2059;0.971345
-TOTA;Colombia Justa Libres;16;2059;0.777076
-TOTA;Mov. Salvación Nacional;15;2059;0.728509
-TOTA;Votos en blanco;14;2059;0.679942
-TOTA;Votos no marcados;8;2059;0.388538
-TOTA;Partido Verde Oxígeno;3;2059;0.145702
-TUNJA;Pacto Histórico;41993;93032;45.138232
-TUNJA;Liga de Gobernantes;30667;93032;32.963926
-TUNJA;Equipo por Colombia;10915;93032;11.732522
-TUNJA;Centro Esperanza;5495;93032;5.90657
-TUNJA;Votos en blanco;1488;93032;1.59945
-TUNJA;Colombia Justa Libres;1024;93032;1.100697
-TUNJA;Votos nulos;917;93032;0.985682
-TUNJA;Mov. Salvación Nacional;394;93032;0.42351
-TUNJA;Partido Verde Oxígeno;61;93032;0.065569
-TUNJA;Votos no marcados;44;93032;0.047296
-TUNJA;Colombia Piensa en Grande;34;93032;0.036547
-TUNUNGUA;Liga de Gobernantes;578;931;62.083781
-TUNUNGUA;Pacto Histórico;220;931;23.630505
-TUNUNGUA;Equipo por Colombia;93;931;9.989259
-TUNUNGUA;Colombia Justa Libres;19;931;2.040816
-TUNUNGUA;Centro Esperanza;11;931;1.181525
-TUNUNGUA;Votos en blanco;4;931;0.429646
-TUNUNGUA;Votos nulos;3;931;0.322234
-TUNUNGUA;Colombia Piensa en Grande;1;931;0.107411
-TUNUNGUA;Mov. Salvación Nacional;1;931;0.107411
-TUNUNGUA;Votos no marcados;1;931;0.107411
-TURMEQUE;Liga de Gobernantes;1891;3251;58.166718
-TURMEQUE;Pacto Histórico;781;3251;24.023377
-TURMEQUE;Equipo por Colombia;292;3251;8.981852
-TURMEQUE;Centro Esperanza;161;3251;4.952322
-TURMEQUE;Votos en blanco;61;3251;1.876346
-TURMEQUE;Votos nulos;27;3251;0.830514
-TURMEQUE;Colombia Justa Libres;19;3251;0.584436
-TURMEQUE;Mov. Salvación Nacional;14;3251;0.430637
-TURMEQUE;Votos no marcados;3;3251;0.092279
-TURMEQUE;Partido Verde Oxígeno;2;3251;0.06152
-TUTA;Liga de Gobernantes;3091;5345;57.829747
-TUTA;Pacto Histórico;1589;5345;29.728718
-TUTA;Equipo por Colombia;351;5345;6.566885
-TUTA;Centro Esperanza;168;5345;3.143124
-TUTA;Votos en blanco;55;5345;1.028999
-TUTA;Votos nulos;37;5345;0.692236
-TUTA;Colombia Justa Libres;34;5345;0.636109
-TUTA;Mov. Salvación Nacional;14;5345;0.261927
-TUTA;Partido Verde Oxígeno;4;5345;0.074836
-TUTA;Votos no marcados;2;5345;0.037418
-TUTAZA;Liga de Gobernantes;835;1338;62.406577
-TUTAZA;Pacto Histórico;320;1338;23.916293
-TUTAZA;Equipo por Colombia;118;1338;8.819133
-TUTAZA;Centro Esperanza;23;1338;1.718984
-TUTAZA;Votos nulos;18;1338;1.345291
-TUTAZA;Mov. Salvación Nacional;10;1338;0.747384
-TUTAZA;Votos en blanco;8;1338;0.597907
-TUTAZA;Colombia Justa Libres;3;1338;0.224215
-TUTAZA;Colombia Piensa en Grande;2;1338;0.149477
-TUTAZA;Partido Verde Oxígeno;1;1338;0.074738
-UMBITA;Liga de Gobernantes;2462;3607;68.256169
-UMBITA;Pacto Histórico;654;3607;18.131411
-UMBITA;Equipo por Colombia;310;3607;8.5944
-UMBITA;Centro Esperanza;100;3607;2.772387
-UMBITA;Votos en blanco;34;3607;0.942612
-UMBITA;Votos nulos;22;3607;0.609925
-UMBITA;Mov. Salvación Nacional;10;3607;0.277239
-UMBITA;Votos no marcados;6;3607;0.166343
-UMBITA;Colombia Justa Libres;5;3607;0.138619
-UMBITA;Colombia Piensa en Grande;4;3607;0.110895
-VENTAQUEMADA;Liga de Gobernantes;4241;6951;61.012804
-VENTAQUEMADA;Pacto Histórico;1893;6951;27.233492
-VENTAQUEMADA;Equipo por Colombia;404;6951;5.812113
-VENTAQUEMADA;Centro Esperanza;191;6951;2.747806
-VENTAQUEMADA;Votos en blanco;75;6951;1.078981
-VENTAQUEMADA;Colombia Justa Libres;60;6951;0.863185
-VENTAQUEMADA;Votos nulos;55;6951;0.791253
-VENTAQUEMADA;Votos no marcados;14;6951;0.20141
-VENTAQUEMADA;Mov. Salvación Nacional;8;6951;0.115091
-VENTAQUEMADA;Partido Verde Oxígeno;6;6951;0.086319
-VENTAQUEMADA;Colombia Piensa en Grande;4;6951;0.057546
-VILLA DE LEIVA;Liga de Gobernantes;4643;9322;49.806908
-VILLA DE LEIVA;Pacto Histórico;2697;9322;28.93156
-VILLA DE LEIVA;Equipo por Colombia;1257;9322;13.484231
-VILLA DE LEIVA;Centro Esperanza;459;9322;4.923836
-VILLA DE LEIVA;Votos en blanco;112;9322;1.201459
-VILLA DE LEIVA;Votos nulos;67;9322;0.71873
-VILLA DE LEIVA;Colombia Justa Libres;44;9322;0.472002
-VILLA DE LEIVA;Mov. Salvación Nacional;30;9322;0.321819
-VILLA DE LEIVA;Votos no marcados;8;9322;0.085818
-VILLA DE LEIVA;Colombia Piensa en Grande;3;9322;0.032182
-VILLA DE LEIVA;Partido Verde Oxígeno;2;9322;0.021455
-VIRACACHA;Liga de Gobernantes;1018;1472;69.157609
-VIRACACHA;Pacto Histórico;216;1472;14.673913
-VIRACACHA;Equipo por Colombia;139;1472;9.442935
-VIRACACHA;Centro Esperanza;49;1472;3.328804
-VIRACACHA;Votos nulos;18;1472;1.222826
-VIRACACHA;Votos en blanco;12;1472;0.815217
-VIRACACHA;Mov. Salvación Nacional;8;1472;0.543478
-VIRACACHA;Colombia Justa Libres;7;1472;0.475543
-VIRACACHA;Votos no marcados;3;1472;0.203804
-VIRACACHA;Colombia Piensa en Grande;1;1472;0.067935
-VIRACACHA;Partido Verde Oxígeno;1;1472;0.067935
-ZETAQUIRA;Liga de Gobernantes;1547;2521;61.364538
-ZETAQUIRA;Pacto Histórico;662;2521;26.259421
-ZETAQUIRA;Equipo por Colombia;201;2521;7.973027
-ZETAQUIRA;Centro Esperanza;50;2521;1.98334
-ZETAQUIRA;Votos en blanco;27;2521;1.071004
-ZETAQUIRA;Votos nulos;15;2521;0.595002
-ZETAQUIRA;Colombia Justa Libres;9;2521;0.357001
-ZETAQUIRA;Colombia Piensa en Grande;3;2521;0.119
-ZETAQUIRA;Mov. Salvación Nacional;3;2521;0.119
-ZETAQUIRA;Votos no marcados;3;2521;0.119
-ZETAQUIRA;Partido Verde Oxígeno;1;2521;0.039667
+MUNNOMBRE;PARNOMBRE;VOTOS
+ALMEIDA;Centro Esperanza;56
+ALMEIDA;Colombia Justa Libres;2
+ALMEIDA;Colombia Piensa en Grande;1
+ALMEIDA;Equipo por Colombia;111
+ALMEIDA;Liga de Gobernantes;602
+ALMEIDA;Pacto Histórico;204
+ALMEIDA;Salvación Nacional;1
+ALMEIDA;VOTOS NO MARCADOS;6
+AQUITANIA (PUEBLOVIEJO);Centro Esperanza;176
+AQUITANIA (PUEBLOVIEJO);Colombia Justa Libres;14
+AQUITANIA (PUEBLOVIEJO);Colombia Piensa en Grande;4
+AQUITANIA (PUEBLOVIEJO);Equipo por Colombia;536
+AQUITANIA (PUEBLOVIEJO);Liga de Gobernantes;5583
+AQUITANIA (PUEBLOVIEJO);Pacto Histórico;1122
+AQUITANIA (PUEBLOVIEJO);Partido Verde Oxígeno;5
+AQUITANIA (PUEBLOVIEJO);Salvación Nacional;43
+AQUITANIA (PUEBLOVIEJO);VOTOS NO MARCADOS;11
+ARCABUCO;Centro Esperanza;47
+ARCABUCO;Colombia Justa Libres;11
+ARCABUCO;Colombia Piensa en Grande;1
+ARCABUCO;Equipo por Colombia;168
+ARCABUCO;Liga de Gobernantes;2191
+ARCABUCO;Pacto Histórico;811
+ARCABUCO;Partido Verde Oxígeno;2
+ARCABUCO;Salvación Nacional;19
+ARCABUCO;VOTOS NO MARCADOS;6
+BELEN;Centro Esperanza;135
+BELEN;Colombia Justa Libres;32
+BELEN;Colombia Piensa en Grande;2
+BELEN;Equipo por Colombia;437
+BELEN;Liga de Gobernantes;2495
+BELEN;Pacto Histórico;1122
+BELEN;Partido Verde Oxígeno;2
+BELEN;Salvación Nacional;10
+BELEN;VOTOS NO MARCADOS;7
+BERBEO;Centro Esperanza;29
+BERBEO;Colombia Justa Libres;2
+BERBEO;Equipo por Colombia;66
+BERBEO;Liga de Gobernantes;415
+BERBEO;Pacto Histórico;299
+BERBEO;Partido Verde Oxígeno;1
+BERBEO;Salvación Nacional;1
+BERBEO;VOTOS NO MARCADOS;3
+BETEITIVA;Centro Esperanza;38
+BETEITIVA;Colombia Justa Libres;1
+BETEITIVA;Equipo por Colombia;168
+BETEITIVA;Liga de Gobernantes;460
+BETEITIVA;Pacto Histórico;344
+BETEITIVA;Salvación Nacional;2
+BETEITIVA;VOTOS NO MARCADOS;2
+BOAVITA;Centro Esperanza;104
+BOAVITA;Colombia Justa Libres;3
+BOAVITA;Colombia Piensa en Grande;2
+BOAVITA;Equipo por Colombia;447
+BOAVITA;Liga de Gobernantes;1623
+BOAVITA;Pacto Histórico;479
+BOAVITA;Partido Verde Oxígeno;1
+BOAVITA;Salvación Nacional;7
+BOAVITA;VOTOS NO MARCADOS;2
+BOYACA;Centro Esperanza;46
+BOYACA;Colombia Justa Libres;12
+BOYACA;Equipo por Colombia;156
+BOYACA;Liga de Gobernantes;1536
+BOYACA;Pacto Histórico;560
+BOYACA;Partido Verde Oxígeno;1
+BOYACA;Salvación Nacional;6
+BOYACA;VOTOS NO MARCADOS;5
+BRICEÑO;Centro Esperanza;22
+BRICEÑO;Colombia Justa Libres;7
+BRICEÑO;Equipo por Colombia;138
+BRICEÑO;Liga de Gobernantes;1117
+BRICEÑO;Pacto Histórico;162
+BRICEÑO;Salvación Nacional;3
+BRICEÑO;VOTOS NO MARCADOS;5
+BUENAVISTA;Centro Esperanza;29
+BUENAVISTA;Colombia Justa Libres;24
+BUENAVISTA;Equipo por Colombia;214
+BUENAVISTA;Liga de Gobernantes;2107
+BUENAVISTA;Pacto Histórico;416
+BUENAVISTA;Partido Verde Oxígeno;4
+BUENAVISTA;Salvación Nacional;5
+BUENAVISTA;VOTOS NO MARCADOS;9
+BUSBANZA;Centro Esperanza;30
+BUSBANZA;Colombia Justa Libres;4
+BUSBANZA;Equipo por Colombia;82
+BUSBANZA;Liga de Gobernantes;370
+BUSBANZA;Pacto Histórico;158
+BUSBANZA;Partido Verde Oxígeno;1
+BUSBANZA;Salvación Nacional;1
+CALDAS;Centro Esperanza;45
+CALDAS;Colombia Justa Libres;5
+CALDAS;Equipo por Colombia;194
+CALDAS;Liga de Gobernantes;1121
+CALDAS;Pacto Histórico;362
+CALDAS;Salvación Nacional;4
+CALDAS;VOTOS NO MARCADOS;4
+CAMPOHERMOSO;Centro Esperanza;26
+CAMPOHERMOSO;Colombia Justa Libres;2
+CAMPOHERMOSO;Colombia Piensa en Grande;2
+CAMPOHERMOSO;Equipo por Colombia;148
+CAMPOHERMOSO;Liga de Gobernantes;1012
+CAMPOHERMOSO;Pacto Histórico;170
+CAMPOHERMOSO;Salvación Nacional;1
+CAMPOHERMOSO;VOTOS NO MARCADOS;1
+CERINZA;Centro Esperanza;82
+CERINZA;Colombia Justa Libres;4
+CERINZA;Equipo por Colombia;181
+CERINZA;Liga de Gobernantes;1197
+CERINZA;Pacto Histórico;740
+CERINZA;Partido Verde Oxígeno;4
+CERINZA;Salvación Nacional;9
+CERINZA;VOTOS NO MARCADOS;1
+CHINAVITA;Centro Esperanza;72
+CHINAVITA;Colombia Justa Libres;6
+CHINAVITA;Colombia Piensa en Grande;1
+CHINAVITA;Equipo por Colombia;292
+CHINAVITA;Liga de Gobernantes;954
+CHINAVITA;Pacto Histórico;311
+CHINAVITA;Salvación Nacional;4
+CHINAVITA;VOTOS NO MARCADOS;3
+CHIQUINQUIRA;Centro Esperanza;835
+CHIQUINQUIRA;Colombia Justa Libres;289
+CHIQUINQUIRA;Colombia Piensa en Grande;4
+CHIQUINQUIRA;Equipo por Colombia;2928
+CHIQUINQUIRA;Liga de Gobernantes;14669
+CHIQUINQUIRA;Pacto Histórico;8016
+CHIQUINQUIRA;Partido Verde Oxígeno;8
+CHIQUINQUIRA;Salvación Nacional;45
+CHIQUINQUIRA;VOTOS NO MARCADOS;19
+CHIQUIZA;Centro Esperanza;21
+CHIQUIZA;Colombia Justa Libres;4
+CHIQUIZA;Colombia Piensa en Grande;1
+CHIQUIZA;Equipo por Colombia;29
+CHIQUIZA;Liga de Gobernantes;1913
+CHIQUIZA;Pacto Histórico;731
+CHIQUIZA;Partido Verde Oxígeno;3
+CHIQUIZA;Salvación Nacional;4
+CHIQUIZA;VOTOS NO MARCADOS;13
+CHISCAS;Centro Esperanza;36
+CHISCAS;Colombia Justa Libres;18
+CHISCAS;Colombia Piensa en Grande;2
+CHISCAS;Equipo por Colombia;141
+CHISCAS;Liga de Gobernantes;1287
+CHISCAS;Pacto Histórico;173
+CHISCAS;Salvación Nacional;3
+CHISCAS;VOTOS NO MARCADOS;6
+CHITA;Centro Esperanza;31
+CHITA;Colombia Justa Libres;7
+CHITA;Colombia Piensa en Grande;2
+CHITA;Equipo por Colombia;282
+CHITA;Liga de Gobernantes;2383
+CHITA;Pacto Histórico;425
+CHITA;Partido Verde Oxígeno;7
+CHITA;Salvación Nacional;14
+CHITA;VOTOS NO MARCADOS;11
+CHITARAQUE;Centro Esperanza;28
+CHITARAQUE;Colombia Justa Libres;13
+CHITARAQUE;Equipo por Colombia;445
+CHITARAQUE;Liga de Gobernantes;2026
+CHITARAQUE;Pacto Histórico;310
+CHITARAQUE;Partido Verde Oxígeno;2
+CHITARAQUE;Salvación Nacional;4
+CHITARAQUE;VOTOS NO MARCADOS;4
+CHIVATA;Centro Esperanza;86
+CHIVATA;Colombia Justa Libres;4
+CHIVATA;Equipo por Colombia;144
+CHIVATA;Liga de Gobernantes;1181
+CHIVATA;Pacto Histórico;551
+CHIVATA;Partido Verde Oxígeno;1
+CHIVATA;Salvación Nacional;6
+CHIVATA;VOTOS NO MARCADOS;2
+CHIVOR;Centro Esperanza;19
+CHIVOR;Colombia Justa Libres;10
+CHIVOR;Equipo por Colombia;199
+CHIVOR;Liga de Gobernantes;670
+CHIVOR;Pacto Histórico;83
+CHIVOR;Salvación Nacional;1
+CHIVOR;VOTOS NO MARCADOS;1
+CIENEGA;Centro Esperanza;66
+CIENEGA;Colombia Justa Libres;6
+CIENEGA;Colombia Piensa en Grande;1
+CIENEGA;Equipo por Colombia;168
+CIENEGA;Liga de Gobernantes;1731
+CIENEGA;Pacto Histórico;297
+CIENEGA;Partido Verde Oxígeno;7
+CIENEGA;Salvación Nacional;9
+CIENEGA;VOTOS NO MARCADOS;6
+COMBITA;Centro Esperanza;194
+COMBITA;Colombia Justa Libres;34
+COMBITA;Colombia Piensa en Grande;1
+COMBITA;Equipo por Colombia;401
+COMBITA;Liga de Gobernantes;3222
+COMBITA;Pacto Histórico;1844
+COMBITA;Partido Verde Oxígeno;4
+COMBITA;Salvación Nacional;19
+COMBITA;VOTOS NO MARCADOS;6
+COPER;Centro Esperanza;10
+COPER;Colombia Justa Libres;29
+COPER;Colombia Piensa en Grande;1
+COPER;Equipo por Colombia;178
+COPER;Liga de Gobernantes;1351
+COPER;Pacto Histórico;173
+COPER;Partido Verde Oxígeno;1
+COPER;Salvación Nacional;1
+COPER;VOTOS NO MARCADOS;4
+CORRALES;Centro Esperanza;44
+CORRALES;Colombia Justa Libres;11
+CORRALES;Colombia Piensa en Grande;1
+CORRALES;Equipo por Colombia;155
+CORRALES;Liga de Gobernantes;837
+CORRALES;Pacto Histórico;482
+CORRALES;Partido Verde Oxígeno;3
+CORRALES;Salvación Nacional;6
+CORRALES;VOTOS NO MARCADOS;1
+COVARACHIA;Centro Esperanza;29
+COVARACHIA;Colombia Justa Libres;1
+COVARACHIA;Equipo por Colombia;184
+COVARACHIA;Liga de Gobernantes;1264
+COVARACHIA;Pacto Histórico;110
+COVARACHIA;Partido Verde Oxígeno;1
+COVARACHIA;Salvación Nacional;5
+COVARACHIA;VOTOS NO MARCADOS;5
+CUBARA;Centro Esperanza;37
+CUBARA;Colombia Justa Libres;55
+CUBARA;Colombia Piensa en Grande;2
+CUBARA;Equipo por Colombia;138
+CUBARA;Liga de Gobernantes;1237
+CUBARA;Pacto Histórico;1172
+CUBARA;Partido Verde Oxígeno;5
+CUBARA;Salvación Nacional;8
+CUBARA;VOTOS NO MARCADOS;13
+CUCAITA;Centro Esperanza;48
+CUCAITA;Colombia Justa Libres;4
+CUCAITA;Colombia Piensa en Grande;1
+CUCAITA;Equipo por Colombia;74
+CUCAITA;Liga de Gobernantes;1191
+CUCAITA;Pacto Histórico;811
+CUCAITA;Partido Verde Oxígeno;1
+CUCAITA;Salvación Nacional;9
+CUCAITA;VOTOS NO MARCADOS;1
+CUITIVA;Centro Esperanza;33
+CUITIVA;Colombia Justa Libres;2
+CUITIVA;Equipo por Colombia;163
+CUITIVA;Liga de Gobernantes;642
+CUITIVA;Pacto Histórico;254
+CUITIVA;Salvación Nacional;2
+CUITIVA;VOTOS NO MARCADOS;3
+DUITAMA;Centro Esperanza;3187
+DUITAMA;Colombia Justa Libres;488
+DUITAMA;Colombia Piensa en Grande;24
+DUITAMA;Equipo por Colombia;7251
+DUITAMA;Liga de Gobernantes;26111
+DUITAMA;Pacto Histórico;25972
+DUITAMA;Partido Verde Oxígeno;48
+DUITAMA;Salvación Nacional;244
+DUITAMA;VOTOS NO MARCADOS;37
+EL COCUY;Centro Esperanza;54
+EL COCUY;Colombia Justa Libres;3
+EL COCUY;Equipo por Colombia;462
+EL COCUY;Liga de Gobernantes;928
+EL COCUY;Pacto Histórico;204
+EL COCUY;Salvación Nacional;6
+EL COCUY;VOTOS NO MARCADOS;4
+EL ESPINO;Centro Esperanza;19
+EL ESPINO;Colombia Justa Libres;4
+EL ESPINO;Equipo por Colombia;339
+EL ESPINO;Liga de Gobernantes;758
+EL ESPINO;Pacto Histórico;125
+EL ESPINO;Partido Verde Oxígeno;1
+EL ESPINO;Salvación Nacional;3
+EL ESPINO;VOTOS NO MARCADOS;4
+FIRAVITOBA;Centro Esperanza;137
+FIRAVITOBA;Colombia Justa Libres;8
+FIRAVITOBA;Equipo por Colombia;323
+FIRAVITOBA;Liga de Gobernantes;1588
+FIRAVITOBA;Pacto Histórico;1253
+FIRAVITOBA;Partido Verde Oxígeno;3
+FIRAVITOBA;Salvación Nacional;9
+FIRAVITOBA;VOTOS NO MARCADOS;2
+FLORESTA;Centro Esperanza;78
+FLORESTA;Colombia Justa Libres;6
+FLORESTA;Equipo por Colombia;302
+FLORESTA;Liga de Gobernantes;1179
+FLORESTA;Pacto Histórico;446
+FLORESTA;Salvación Nacional;3
+FLORESTA;VOTOS NO MARCADOS;5
+GACHANTIVA;Centro Esperanza;29
+GACHANTIVA;Colombia Justa Libres;7
+GACHANTIVA;Colombia Piensa en Grande;2
+GACHANTIVA;Equipo por Colombia;138
+GACHANTIVA;Liga de Gobernantes;1229
+GACHANTIVA;Pacto Histórico;373
+GACHANTIVA;Partido Verde Oxígeno;2
+GACHANTIVA;Salvación Nacional;7
+GACHANTIVA;VOTOS NO MARCADOS;5
+GAMEZA;Centro Esperanza;49
+GAMEZA;Colombia Justa Libres;1
+GAMEZA;Equipo por Colombia;181
+GAMEZA;Liga de Gobernantes;1756
+GAMEZA;Pacto Histórico;384
+GAMEZA;Partido Verde Oxígeno;1
+GAMEZA;Salvación Nacional;7
+GAMEZA;VOTOS NO MARCADOS;3
+GARAGOA;Centro Esperanza;257
+GARAGOA;Colombia Justa Libres;46
+GARAGOA;Colombia Piensa en Grande;3
+GARAGOA;Equipo por Colombia;874
+GARAGOA;Liga de Gobernantes;3696
+GARAGOA;Pacto Histórico;2350
+GARAGOA;Partido Verde Oxígeno;8
+GARAGOA;Salvación Nacional;31
+GARAGOA;VOTOS NO MARCADOS;8
+GUACAMAYAS;Centro Esperanza;23
+GUACAMAYAS;Colombia Justa Libres;1
+GUACAMAYAS;Equipo por Colombia;273
+GUACAMAYAS;Liga de Gobernantes;449
+GUACAMAYAS;Pacto Histórico;102
+GUACAMAYAS;Salvación Nacional;2
+GUACAMAYAS;VOTOS NO MARCADOS;3
+GUATEQUE;Centro Esperanza;195
+GUATEQUE;Colombia Justa Libres;37
+GUATEQUE;Colombia Piensa en Grande;1
+GUATEQUE;Equipo por Colombia;646
+GUATEQUE;Liga de Gobernantes;3020
+GUATEQUE;Pacto Histórico;1419
+GUATEQUE;Partido Verde Oxígeno;2
+GUATEQUE;Salvación Nacional;11
+GUATEQUE;VOTOS NO MARCADOS;5
+GUAYATA;Centro Esperanza;58
+GUAYATA;Colombia Justa Libres;3
+GUAYATA;Colombia Piensa en Grande;3
+GUAYATA;Equipo por Colombia;357
+GUAYATA;Liga de Gobernantes;1522
+GUAYATA;Pacto Histórico;321
+GUAYATA;Partido Verde Oxígeno;1
+GUAYATA;Salvación Nacional;9
+GUAYATA;VOTOS NO MARCADOS;6
+GUICAN;Centro Esperanza;38
+GUICAN;Colombia Justa Libres;5
+GUICAN;Colombia Piensa en Grande;2
+GUICAN;Equipo por Colombia;332
+GUICAN;Liga de Gobernantes;661
+GUICAN;Pacto Histórico;522
+GUICAN;Partido Verde Oxígeno;6
+GUICAN;Salvación Nacional;9
+GUICAN;VOTOS NO MARCADOS;3
+IZA;Centro Esperanza;62
+IZA;Colombia Justa Libres;4
+IZA;Equipo por Colombia;261
+IZA;Liga de Gobernantes;615
+IZA;Pacto Histórico;387
+IZA;Salvación Nacional;2
+IZA;VOTOS NO MARCADOS;1
+JENESANO;Centro Esperanza;77
+JENESANO;Colombia Justa Libres;19
+JENESANO;Colombia Piensa en Grande;1
+JENESANO;Equipo por Colombia;259
+JENESANO;Liga de Gobernantes;2347
+JENESANO;Pacto Histórico;862
+JENESANO;Partido Verde Oxígeno;6
+JENESANO;Salvación Nacional;7
+JENESANO;VOTOS NO MARCADOS;11
+JERICO;Centro Esperanza;32
+JERICO;Colombia Justa Libres;4
+JERICO;Colombia Piensa en Grande;1
+JERICO;Equipo por Colombia;186
+JERICO;Liga de Gobernantes;1230
+JERICO;Pacto Histórico;182
+JERICO;Partido Verde Oxígeno;2
+JERICO;Salvación Nacional;13
+JERICO;VOTOS NO MARCADOS;6
+LA CAPILLA;Centro Esperanza;31
+LA CAPILLA;Colombia Justa Libres;4
+LA CAPILLA;Colombia Piensa en Grande;1
+LA CAPILLA;Equipo por Colombia;136
+LA CAPILLA;Liga de Gobernantes;996
+LA CAPILLA;Pacto Histórico;299
+LA CAPILLA;Partido Verde Oxígeno;1
+LA CAPILLA;Salvación Nacional;5
+LA UVITA;Centro Esperanza;76
+LA UVITA;Colombia Piensa en Grande;1
+LA UVITA;Equipo por Colombia;375
+LA UVITA;Liga de Gobernantes;775
+LA UVITA;Pacto Histórico;140
+LA UVITA;Partido Verde Oxígeno;2
+LA UVITA;Salvación Nacional;2
+LA UVITA;VOTOS NO MARCADOS;1
+LA VICTORIA;Centro Esperanza;16
+LA VICTORIA;Colombia Justa Libres;13
+LA VICTORIA;Colombia Piensa en Grande;1
+LA VICTORIA;Equipo por Colombia;95
+LA VICTORIA;Liga de Gobernantes;498
+LA VICTORIA;Pacto Histórico;95
+LA VICTORIA;Salvación Nacional;1
+LA VICTORIA;VOTOS NO MARCADOS;1
+LABRANZAGRANDE;Centro Esperanza;30
+LABRANZAGRANDE;Colombia Justa Libres;7
+LABRANZAGRANDE;Equipo por Colombia;113
+LABRANZAGRANDE;Liga de Gobernantes;1261
+LABRANZAGRANDE;Pacto Histórico;287
+LABRANZAGRANDE;Partido Verde Oxígeno;2
+LABRANZAGRANDE;Salvación Nacional;8
+LABRANZAGRANDE;VOTOS NO MARCADOS;3
+MACANAL;Centro Esperanza;44
+MACANAL;Colombia Justa Libres;5
+MACANAL;Equipo por Colombia;195
+MACANAL;Liga de Gobernantes;1377
+MACANAL;Pacto Histórico;350
+MACANAL;Partido Verde Oxígeno;4
+MACANAL;Salvación Nacional;7
+MACANAL;VOTOS NO MARCADOS;6
+MARIPI;Centro Esperanza;27
+MARIPI;Colombia Justa Libres;36
+MARIPI;Colombia Piensa en Grande;1
+MARIPI;Equipo por Colombia;262
+MARIPI;Liga de Gobernantes;2233
+MARIPI;Pacto Histórico;286
+MARIPI;Partido Verde Oxígeno;1
+MARIPI;Salvación Nacional;2
+MARIPI;VOTOS NO MARCADOS;3
+MIRAFLORES;Centro Esperanza;135
+MIRAFLORES;Colombia Justa Libres;56
+MIRAFLORES;Colombia Piensa en Grande;2
+MIRAFLORES;Equipo por Colombia;352
+MIRAFLORES;Liga de Gobernantes;2410
+MIRAFLORES;Pacto Histórico;1793
+MIRAFLORES;Partido Verde Oxígeno;5
+MIRAFLORES;Salvación Nacional;14
+MIRAFLORES;VOTOS NO MARCADOS;10
+MONGUA;Centro Esperanza;55
+MONGUA;Colombia Justa Libres;1
+MONGUA;Equipo por Colombia;366
+MONGUA;Liga de Gobernantes;1961
+MONGUA;Pacto Histórico;341
+MONGUA;Partido Verde Oxígeno;1
+MONGUA;Salvación Nacional;5
+MONGUA;VOTOS NO MARCADOS;2
+MONGUI;Centro Esperanza;81
+MONGUI;Colombia Justa Libres;8
+MONGUI;Equipo por Colombia;259
+MONGUI;Liga de Gobernantes;1441
+MONGUI;Pacto Histórico;658
+MONGUI;Partido Verde Oxígeno;1
+MONGUI;Salvación Nacional;6
+MONGUI;VOTOS NO MARCADOS;1
+MONIQUIRA;Centro Esperanza;269
+MONIQUIRA;Colombia Justa Libres;181
+MONIQUIRA;Colombia Piensa en Grande;4
+MONIQUIRA;Equipo por Colombia;1305
+MONIQUIRA;Liga de Gobernantes;6438
+MONIQUIRA;Pacto Histórico;3010
+MONIQUIRA;Partido Verde Oxígeno;5
+MONIQUIRA;Salvación Nacional;25
+MONIQUIRA;VOTOS NO MARCADOS;19
+MOTAVITA;Centro Esperanza;70
+MOTAVITA;Colombia Justa Libres;18
+MOTAVITA;Equipo por Colombia;138
+MOTAVITA;Liga de Gobernantes;1893
+MOTAVITA;Pacto Histórico;1416
+MOTAVITA;Partido Verde Oxígeno;1
+MOTAVITA;Salvación Nacional;5
+MOTAVITA;VOTOS NO MARCADOS;3
+MUZO;Centro Esperanza;52
+MUZO;Colombia Justa Libres;73
+MUZO;Colombia Piensa en Grande;1
+MUZO;Equipo por Colombia;277
+MUZO;Liga de Gobernantes;2802
+MUZO;Pacto Histórico;754
+MUZO;Partido Verde Oxígeno;1
+MUZO;Salvación Nacional;6
+MUZO;VOTOS NO MARCADOS;13
+NOBSA;Centro Esperanza;439
+NOBSA;Colombia Justa Libres;60
+NOBSA;Colombia Piensa en Grande;2
+NOBSA;Equipo por Colombia;608
+NOBSA;Liga de Gobernantes;3172
+NOBSA;Pacto Histórico;4869
+NOBSA;Partido Verde Oxígeno;6
+NOBSA;Salvación Nacional;16
+NOBSA;VOTOS NO MARCADOS;7
+NUEVO COLON;Centro Esperanza;67
+NUEVO COLON;Colombia Justa Libres;15
+NUEVO COLON;Equipo por Colombia;217
+NUEVO COLON;Liga de Gobernantes;1575
+NUEVO COLON;Pacto Histórico;775
+NUEVO COLON;Partido Verde Oxígeno;1
+NUEVO COLON;Salvación Nacional;6
+NUEVO COLON;VOTOS NO MARCADOS;1
+OICATA;Centro Esperanza;68
+OICATA;Colombia Justa Libres;6
+OICATA;Colombia Piensa en Grande;1
+OICATA;Equipo por Colombia;169
+OICATA;Liga de Gobernantes;951
+OICATA;Pacto Histórico;596
+OICATA;Partido Verde Oxígeno;1
+OICATA;Salvación Nacional;6
+OICATA;VOTOS NO MARCADOS;1
+OTANCHE;Centro Esperanza;45
+OTANCHE;Colombia Justa Libres;25
+OTANCHE;Equipo por Colombia;519
+OTANCHE;Liga de Gobernantes;2554
+OTANCHE;Pacto Histórico;517
+OTANCHE;Partido Verde Oxígeno;3
+OTANCHE;Salvación Nacional;9
+OTANCHE;VOTOS NO MARCADOS;2
+PACHAVITA;Centro Esperanza;32
+PACHAVITA;Colombia Justa Libres;4
+PACHAVITA;Colombia Piensa en Grande;2
+PACHAVITA;Equipo por Colombia;204
+PACHAVITA;Liga de Gobernantes;678
+PACHAVITA;Pacto Histórico;227
+PACHAVITA;Partido Verde Oxígeno;2
+PACHAVITA;Salvación Nacional;4
+PACHAVITA;VOTOS NO MARCADOS;1
+PAEZ;Centro Esperanza;29
+PAEZ;Colombia Justa Libres;55
+PAEZ;Equipo por Colombia;111
+PAEZ;Liga de Gobernantes;1096
+PAEZ;Pacto Histórico;241
+PAEZ;Salvación Nacional;1
+PAEZ;VOTOS NO MARCADOS;1
+PAIPA;Centro Esperanza;841
+PAIPA;Colombia Justa Libres;90
+PAIPA;Colombia Piensa en Grande;3
+PAIPA;Equipo por Colombia;1908
+PAIPA;Liga de Gobernantes;9213
+PAIPA;Pacto Histórico;6887
+PAIPA;Partido Verde Oxígeno;6
+PAIPA;Salvación Nacional;51
+PAIPA;VOTOS NO MARCADOS;11
+PAJARITO;Centro Esperanza;17
+PAJARITO;Colombia Justa Libres;10
+PAJARITO;Equipo por Colombia;44
+PAJARITO;Liga de Gobernantes;802
+PAJARITO;Pacto Histórico;162
+PAJARITO;Salvación Nacional;3
+PANQUEBA;Centro Esperanza;13
+PANQUEBA;Colombia Justa Libres;3
+PANQUEBA;Colombia Piensa en Grande;2
+PANQUEBA;Equipo por Colombia;107
+PANQUEBA;Liga de Gobernantes;576
+PANQUEBA;Pacto Histórico;107
+PANQUEBA;Salvación Nacional;2
+PANQUEBA;VOTOS NO MARCADOS;1
+PAUNA;Centro Esperanza;50
+PAUNA;Colombia Justa Libres;28
+PAUNA;Equipo por Colombia;344
+PAUNA;Liga de Gobernantes;2580
+PAUNA;Pacto Histórico;732
+PAUNA;Partido Verde Oxígeno;5
+PAUNA;Salvación Nacional;9
+PAUNA;VOTOS NO MARCADOS;8
+PAYA;Centro Esperanza;23
+PAYA;Colombia Justa Libres;4
+PAYA;Colombia Piensa en Grande;1
+PAYA;Equipo por Colombia;78
+PAYA;Liga de Gobernantes;682
+PAYA;Pacto Histórico;108
+PAYA;Partido Verde Oxígeno;7
+PAYA;Salvación Nacional;6
+PAYA;VOTOS NO MARCADOS;3
+PAZ DE RIO;Centro Esperanza;115
+PAZ DE RIO;Colombia Justa Libres;15
+PAZ DE RIO;Colombia Piensa en Grande;2
+PAZ DE RIO;Equipo por Colombia;310
+PAZ DE RIO;Liga de Gobernantes;779
+PAZ DE RIO;Pacto Histórico;1045
+PAZ DE RIO;Partido Verde Oxígeno;1
+PAZ DE RIO;Salvación Nacional;8
+PAZ DE RIO;VOTOS NO MARCADOS;3
+PESCA;Centro Esperanza;77
+PESCA;Colombia Justa Libres;6
+PESCA;Equipo por Colombia;309
+PESCA;Liga de Gobernantes;2306
+PESCA;Pacto Histórico;669
+PESCA;Partido Verde Oxígeno;1
+PESCA;Salvación Nacional;11
+PESCA;VOTOS NO MARCADOS;7
+PISBA;Centro Esperanza;13
+PISBA;Colombia Justa Libres;4
+PISBA;Colombia Piensa en Grande;2
+PISBA;Equipo por Colombia;124
+PISBA;Liga de Gobernantes;354
+PISBA;Pacto Histórico;140
+PISBA;Partido Verde Oxígeno;3
+PISBA;Salvación Nacional;6
+PISBA;VOTOS NO MARCADOS;1
+PUERTO BOYACA;Centro Esperanza;426
+PUERTO BOYACA;Colombia Justa Libres;503
+PUERTO BOYACA;Colombia Piensa en Grande;5
+PUERTO BOYACA;Equipo por Colombia;3389
+PUERTO BOYACA;Liga de Gobernantes;12606
+PUERTO BOYACA;Pacto Histórico;5054
+PUERTO BOYACA;Partido Verde Oxígeno;11
+PUERTO BOYACA;Salvación Nacional;32
+PUERTO BOYACA;VOTOS NO MARCADOS;62
+QUIPAMA;Centro Esperanza;35
+QUIPAMA;Colombia Justa Libres;18
+QUIPAMA;Colombia Piensa en Grande;2
+QUIPAMA;Equipo por Colombia;283
+QUIPAMA;Liga de Gobernantes;1778
+QUIPAMA;Pacto Histórico;313
+QUIPAMA;Partido Verde Oxígeno;3
+QUIPAMA;Salvación Nacional;5
+QUIPAMA;VOTOS NO MARCADOS;8
+RAMIRIQUI;Centro Esperanza;117
+RAMIRIQUI;Colombia Justa Libres;14
+RAMIRIQUI;Colombia Piensa en Grande;1
+RAMIRIQUI;Equipo por Colombia;410
+RAMIRIQUI;Liga de Gobernantes;3350
+RAMIRIQUI;Pacto Histórico;1366
+RAMIRIQUI;Partido Verde Oxígeno;3
+RAMIRIQUI;Salvación Nacional;19
+RAMIRIQUI;VOTOS NO MARCADOS;6
+RAQUIRA;Centro Esperanza;93
+RAQUIRA;Colombia Justa Libres;9
+RAQUIRA;Equipo por Colombia;230
+RAQUIRA;Liga de Gobernantes;2188
+RAQUIRA;Pacto Histórico;724
+RAQUIRA;Partido Verde Oxígeno;1
+RAQUIRA;Salvación Nacional;13
+RAQUIRA;VOTOS NO MARCADOS;6
+RONDON;Centro Esperanza;35
+RONDON;Equipo por Colombia;189
+RONDON;Liga de Gobernantes;836
+RONDON;Pacto Histórico;285
+RONDON;Partido Verde Oxígeno;1
+RONDON;Salvación Nacional;5
+RONDON;VOTOS NO MARCADOS;1
+SABOYA;Centro Esperanza;113
+SABOYA;Colombia Justa Libres;31
+SABOYA;Colombia Piensa en Grande;5
+SABOYA;Equipo por Colombia;581
+SABOYA;Liga de Gobernantes;3395
+SABOYA;Pacto Histórico;1623
+SABOYA;Partido Verde Oxígeno;6
+SABOYA;Salvación Nacional;12
+SABOYA;VOTOS NO MARCADOS;16
+SACHICA;Centro Esperanza;144
+SACHICA;Colombia Justa Libres;17
+SACHICA;Colombia Piensa en Grande;1
+SACHICA;Equipo por Colombia;144
+SACHICA;Liga de Gobernantes;1704
+SACHICA;Pacto Histórico;695
+SACHICA;Partido Verde Oxígeno;1
+SACHICA;Salvación Nacional;5
+SACHICA;VOTOS NO MARCADOS;2
+SAMACA;Centro Esperanza;274
+SAMACA;Colombia Justa Libres;52
+SAMACA;Colombia Piensa en Grande;1
+SAMACA;Equipo por Colombia;412
+SAMACA;Liga de Gobernantes;5873
+SAMACA;Pacto Histórico;2452
+SAMACA;Partido Verde Oxígeno;5
+SAMACA;Salvación Nacional;61
+SAMACA;VOTOS NO MARCADOS;16
+SAN EDUARDO;Centro Esperanza;21
+SAN EDUARDO;Colombia Justa Libres;3
+SAN EDUARDO;Equipo por Colombia;61
+SAN EDUARDO;Liga de Gobernantes;552
+SAN EDUARDO;Pacto Histórico;212
+SAN EDUARDO;Partido Verde Oxígeno;2
+SAN EDUARDO;VOTOS NO MARCADOS;2
+SAN JOSE DE PARE;Centro Esperanza;59
+SAN JOSE DE PARE;Colombia Justa Libres;21
+SAN JOSE DE PARE;Equipo por Colombia;353
+SAN JOSE DE PARE;Liga de Gobernantes;2093
+SAN JOSE DE PARE;Pacto Histórico;386
+SAN JOSE DE PARE;Salvación Nacional;4
+SAN JOSE DE PARE;VOTOS NO MARCADOS;2
+SAN LUIS DE GACENO;Centro Esperanza;41
+SAN LUIS DE GACENO;Colombia Justa Libres;10
+SAN LUIS DE GACENO;Colombia Piensa en Grande;1
+SAN LUIS DE GACENO;Equipo por Colombia;240
+SAN LUIS DE GACENO;Liga de Gobernantes;1812
+SAN LUIS DE GACENO;Pacto Histórico;265
+SAN LUIS DE GACENO;Partido Verde Oxígeno;1
+SAN LUIS DE GACENO;Salvación Nacional;2
+SAN LUIS DE GACENO;VOTOS NO MARCADOS;2
+SAN MATEO;Centro Esperanza;38
+SAN MATEO;Colombia Justa Libres;5
+SAN MATEO;Colombia Piensa en Grande;1
+SAN MATEO;Equipo por Colombia;524
+SAN MATEO;Liga de Gobernantes;1141
+SAN MATEO;Pacto Histórico;157
+SAN MATEO;Partido Verde Oxígeno;2
+SAN MATEO;Salvación Nacional;2
+SAN MATEO;VOTOS NO MARCADOS;3
+SAN MIGUEL DE SEMA;Centro Esperanza;47
+SAN MIGUEL DE SEMA;Equipo por Colombia;190
+SAN MIGUEL DE SEMA;Liga de Gobernantes;1091
+SAN MIGUEL DE SEMA;Pacto Histórico;268
+SAN MIGUEL DE SEMA;Partido Verde Oxígeno;3
+SAN MIGUEL DE SEMA;Salvación Nacional;3
+SAN MIGUEL DE SEMA;VOTOS NO MARCADOS;5
+SAN PABLO DE BORBUR;Centro Esperanza;36
+SAN PABLO DE BORBUR;Colombia Justa Libres;35
+SAN PABLO DE BORBUR;Colombia Piensa en Grande;1
+SAN PABLO DE BORBUR;Equipo por Colombia;331
+SAN PABLO DE BORBUR;Liga de Gobernantes;2222
+SAN PABLO DE BORBUR;Pacto Histórico;322
+SAN PABLO DE BORBUR;Partido Verde Oxígeno;1
+SAN PABLO DE BORBUR;Salvación Nacional;9
+SAN PABLO DE BORBUR;VOTOS NO MARCADOS;8
+SANTA MARIA;Centro Esperanza;54
+SANTA MARIA;Colombia Justa Libres;4
+SANTA MARIA;Colombia Piensa en Grande;2
+SANTA MARIA;Equipo por Colombia;141
+SANTA MARIA;Liga de Gobernantes;1097
+SANTA MARIA;Pacto Histórico;475
+SANTA MARIA;Partido Verde Oxígeno;3
+SANTA MARIA;Salvación Nacional;12
+SANTA MARIA;VOTOS NO MARCADOS;7
+SANTA ROSA DE VITERBO;Centro Esperanza;208
+SANTA ROSA DE VITERBO;Colombia Justa Libres;31
+SANTA ROSA DE VITERBO;Equipo por Colombia;787
+SANTA ROSA DE VITERBO;Liga de Gobernantes;3230
+SANTA ROSA DE VITERBO;Pacto Histórico;1553
+SANTA ROSA DE VITERBO;Partido Verde Oxígeno;8
+SANTA ROSA DE VITERBO;Salvación Nacional;24
+SANTA ROSA DE VITERBO;VOTOS NO MARCADOS;9
+SANTA SOFIA;Centro Esperanza;57
+SANTA SOFIA;Colombia Justa Libres;11
+SANTA SOFIA;Equipo por Colombia;235
+SANTA SOFIA;Liga de Gobernantes;1306
+SANTA SOFIA;Pacto Histórico;230
+SANTA SOFIA;Salvación Nacional;2
+SANTA SOFIA;VOTOS NO MARCADOS;2
+SANTANA;Centro Esperanza;42
+SANTANA;Colombia Justa Libres;71
+SANTANA;Colombia Piensa en Grande;1
+SANTANA;Equipo por Colombia;448
+SANTANA;Liga de Gobernantes;2672
+SANTANA;Pacto Histórico;751
+SANTANA;Partido Verde Oxígeno;2
+SANTANA;Salvación Nacional;9
+SANTANA;VOTOS NO MARCADOS;7
+SATIVANORTE;Centro Esperanza;26
+SATIVANORTE;Equipo por Colombia;183
+SATIVANORTE;Liga de Gobernantes;927
+SATIVANORTE;Pacto Histórico;177
+SATIVANORTE;VOTOS NO MARCADOS;1
+SATIVASUR;Centro Esperanza;18
+SATIVASUR;Equipo por Colombia;108
+SATIVASUR;Liga de Gobernantes;317
+SATIVASUR;Pacto Histórico;134
+SATIVASUR;Partido Verde Oxígeno;1
+SATIVASUR;VOTOS NO MARCADOS;1
+SIACHOQUE;Centro Esperanza;120
+SIACHOQUE;Colombia Justa Libres;14
+SIACHOQUE;Colombia Piensa en Grande;3
+SIACHOQUE;Equipo por Colombia;219
+SIACHOQUE;Liga de Gobernantes;2646
+SIACHOQUE;Pacto Histórico;811
+SIACHOQUE;Salvación Nacional;14
+SIACHOQUE;VOTOS NO MARCADOS;13
+SOATA;Centro Esperanza;148
+SOATA;Colombia Justa Libres;27
+SOATA;Colombia Piensa en Grande;1
+SOATA;Equipo por Colombia;934
+SOATA;Liga de Gobernantes;2420
+SOATA;Pacto Histórico;1034
+SOATA;Partido Verde Oxígeno;4
+SOATA;Salvación Nacional;15
+SOATA;VOTOS NO MARCADOS;5
+SOCHA;Centro Esperanza;141
+SOCHA;Colombia Justa Libres;13
+SOCHA;Colombia Piensa en Grande;1
+SOCHA;Equipo por Colombia;282
+SOCHA;Liga de Gobernantes;1775
+SOCHA;Pacto Histórico;987
+SOCHA;Partido Verde Oxígeno;3
+SOCHA;Salvación Nacional;13
+SOCHA;VOTOS NO MARCADOS;9
+SOCOTA;Centro Esperanza;49
+SOCOTA;Colombia Justa Libres;14
+SOCOTA;Colombia Piensa en Grande;2
+SOCOTA;Equipo por Colombia;257
+SOCOTA;Liga de Gobernantes;1992
+SOCOTA;Pacto Histórico;667
+SOCOTA;Partido Verde Oxígeno;2
+SOCOTA;Salvación Nacional;11
+SOCOTA;VOTOS NO MARCADOS;8
+SOGAMOSO;Centro Esperanza;3229
+SOGAMOSO;Colombia Justa Libres;720
+SOGAMOSO;Colombia Piensa en Grande;29
+SOGAMOSO;Equipo por Colombia;7251
+SOGAMOSO;Liga de Gobernantes;26315
+SOGAMOSO;Pacto Histórico;27019
+SOGAMOSO;Partido Verde Oxígeno;31
+SOGAMOSO;Salvación Nacional;139
+SOGAMOSO;VOTOS NO MARCADOS;45
+SOMONDOCO;Centro Esperanza;55
+SOMONDOCO;Colombia Justa Libres;9
+SOMONDOCO;Colombia Piensa en Grande;2
+SOMONDOCO;Equipo por Colombia;168
+SOMONDOCO;Liga de Gobernantes;945
+SOMONDOCO;Pacto Histórico;321
+SOMONDOCO;Salvación Nacional;4
+SOMONDOCO;VOTOS NO MARCADOS;2
+SORA;Centro Esperanza;44
+SORA;Colombia Justa Libres;1
+SORA;Equipo por Colombia;82
+SORA;Liga de Gobernantes;1095
+SORA;Pacto Histórico;570
+SORA;Partido Verde Oxígeno;1
+SORA;Salvación Nacional;4
+SORA;VOTOS NO MARCADOS;3
+SORACA;Centro Esperanza;82
+SORACA;Colombia Justa Libres;4
+SORACA;Equipo por Colombia;197
+SORACA;Liga de Gobernantes;2443
+SORACA;Pacto Histórico;944
+SORACA;Partido Verde Oxígeno;2
+SORACA;Salvación Nacional;16
+SORACA;VOTOS NO MARCADOS;10
+SOTAQUIRA;Centro Esperanza;133
+SOTAQUIRA;Colombia Justa Libres;33
+SOTAQUIRA;Colombia Piensa en Grande;1
+SOTAQUIRA;Equipo por Colombia;346
+SOTAQUIRA;Liga de Gobernantes;2640
+SOTAQUIRA;Pacto Histórico;780
+SOTAQUIRA;Partido Verde Oxígeno;3
+SOTAQUIRA;Salvación Nacional;8
+SOTAQUIRA;VOTOS NO MARCADOS;8
+SUSACON;Centro Esperanza;34
+SUSACON;Equipo por Colombia;266
+SUSACON;Liga de Gobernantes;954
+SUSACON;Pacto Histórico;209
+SUSACON;Salvación Nacional;3
+SUSACON;VOTOS NO MARCADOS;5
+SUTAMARCHAN;Centro Esperanza;108
+SUTAMARCHAN;Colombia Justa Libres;13
+SUTAMARCHAN;Colombia Piensa en Grande;1
+SUTAMARCHAN;Equipo por Colombia;342
+SUTAMARCHAN;Liga de Gobernantes;2398
+SUTAMARCHAN;Pacto Histórico;921
+SUTAMARCHAN;VOTOS NO MARCADOS;5
+SUTATENZA;Centro Esperanza;55
+SUTATENZA;Colombia Justa Libres;10
+SUTATENZA;Equipo por Colombia;323
+SUTATENZA;Liga de Gobernantes;1317
+SUTATENZA;Pacto Histórico;472
+SUTATENZA;Salvación Nacional;6
+SUTATENZA;VOTOS NO MARCADOS;6
+TASCO;Centro Esperanza;82
+TASCO;Colombia Justa Libres;14
+TASCO;Equipo por Colombia;197
+TASCO;Liga de Gobernantes;1468
+TASCO;Pacto Histórico;814
+TASCO;Partido Verde Oxígeno;2
+TASCO;Salvación Nacional;5
+TASCO;VOTOS NO MARCADOS;4
+TENZA;Centro Esperanza;93
+TENZA;Colombia Justa Libres;9
+TENZA;Equipo por Colombia;228
+TENZA;Liga de Gobernantes;1299
+TENZA;Pacto Histórico;346
+TENZA;Salvación Nacional;6
+TENZA;VOTOS NO MARCADOS;5
+TIBANA;Centro Esperanza;115
+TIBANA;Colombia Justa Libres;23
+TIBANA;Colombia Piensa en Grande;3
+TIBANA;Equipo por Colombia;234
+TIBANA;Liga de Gobernantes;2623
+TIBANA;Pacto Histórico;948
+TIBANA;Partido Verde Oxígeno;2
+TIBANA;Salvación Nacional;13
+TIBANA;VOTOS NO MARCADOS;5
+TIBASOSA;Centro Esperanza;305
+TIBASOSA;Colombia Justa Libres;48
+TIBASOSA;Colombia Piensa en Grande;2
+TIBASOSA;Equipo por Colombia;700
+TIBASOSA;Liga de Gobernantes;2685
+TIBASOSA;Pacto Histórico;2405
+TIBASOSA;Partido Verde Oxígeno;1
+TIBASOSA;Salvación Nacional;16
+TIBASOSA;VOTOS NO MARCADOS;4
+TINJACA;Centro Esperanza;58
+TINJACA;Colombia Justa Libres;4
+TINJACA;Colombia Piensa en Grande;2
+TINJACA;Equipo por Colombia;190
+TINJACA;Liga de Gobernantes;1152
+TINJACA;Pacto Histórico;665
+TINJACA;Partido Verde Oxígeno;1
+TINJACA;Salvación Nacional;6
+TINJACA;VOTOS NO MARCADOS;1
+TIPACOQUE;Centro Esperanza;29
+TIPACOQUE;Colombia Justa Libres;4
+TIPACOQUE;Colombia Piensa en Grande;1
+TIPACOQUE;Equipo por Colombia;175
+TIPACOQUE;Liga de Gobernantes;1285
+TIPACOQUE;Pacto Histórico;316
+TIPACOQUE;Partido Verde Oxígeno;1
+TIPACOQUE;Salvación Nacional;1
+TIPACOQUE;VOTOS NO MARCADOS;8
+TOCA;Centro Esperanza;104
+TOCA;Colombia Justa Libres;18
+TOCA;Colombia Piensa en Grande;3
+TOCA;Equipo por Colombia;238
+TOCA;Liga de Gobernantes;3201
+TOCA;Pacto Histórico;1230
+TOCA;Partido Verde Oxígeno;3
+TOCA;Salvación Nacional;13
+TOCA;VOTOS NO MARCADOS;7
+TOGUI;Centro Esperanza;48
+TOGUI;Colombia Justa Libres;28
+TOGUI;Colombia Piensa en Grande;2
+TOGUI;Equipo por Colombia;313
+TOGUI;Liga de Gobernantes;1484
+TOGUI;Pacto Histórico;320
+TOGUI;Partido Verde Oxígeno;1
+TOGUI;Salvación Nacional;3
+TOGUI;VOTOS NO MARCADOS;10
+TOPAGA;Centro Esperanza;58
+TOPAGA;Colombia Justa Libres;15
+TOPAGA;Colombia Piensa en Grande;1
+TOPAGA;Equipo por Colombia;326
+TOPAGA;Liga de Gobernantes;1284
+TOPAGA;Pacto Histórico;505
+TOPAGA;Partido Verde Oxígeno;2
+TOPAGA;Salvación Nacional;12
+TOPAGA;VOTOS NO MARCADOS;3
+TOTA;Centro Esperanza;62
+TOTA;Colombia Justa Libres;16
+TOTA;Equipo por Colombia;109
+TOTA;Liga de Gobernantes;1477
+TOTA;Pacto Histórico;335
+TOTA;Partido Verde Oxígeno;3
+TOTA;Salvación Nacional;15
+TOTA;VOTOS NO MARCADOS;8
+TUNJA;Centro Esperanza;5495
+TUNJA;Colombia Justa Libres;1024
+TUNJA;Colombia Piensa en Grande;34
+TUNJA;Equipo por Colombia;10915
+TUNJA;Liga de Gobernantes;30667
+TUNJA;Pacto Histórico;41993
+TUNJA;Partido Verde Oxígeno;61
+TUNJA;Salvación Nacional;394
+TUNJA;VOTOS NO MARCADOS;44
+TUNUNGUA;Centro Esperanza;11
+TUNUNGUA;Colombia Justa Libres;19
+TUNUNGUA;Colombia Piensa en Grande;1
+TUNUNGUA;Equipo por Colombia;93
+TUNUNGUA;Liga de Gobernantes;578
+TUNUNGUA;Pacto Histórico;220
+TUNUNGUA;Salvación Nacional;1
+TUNUNGUA;VOTOS NO MARCADOS;1
+TURMEQUE;Centro Esperanza;161
+TURMEQUE;Colombia Justa Libres;19
+TURMEQUE;Equipo por Colombia;292
+TURMEQUE;Liga de Gobernantes;1891
+TURMEQUE;Pacto Histórico;781
+TURMEQUE;Partido Verde Oxígeno;2
+TURMEQUE;Salvación Nacional;14
+TURMEQUE;VOTOS NO MARCADOS;3
+TUTA;Centro Esperanza;168
+TUTA;Colombia Justa Libres;34
+TUTA;Equipo por Colombia;351
+TUTA;Liga de Gobernantes;3091
+TUTA;Pacto Histórico;1589
+TUTA;Partido Verde Oxígeno;4
+TUTA;Salvación Nacional;14
+TUTA;VOTOS NO MARCADOS;2
+TUTAZA;Centro Esperanza;23
+TUTAZA;Colombia Justa Libres;3
+TUTAZA;Colombia Piensa en Grande;2
+TUTAZA;Equipo por Colombia;118
+TUTAZA;Liga de Gobernantes;835
+TUTAZA;Pacto Histórico;320
+TUTAZA;Partido Verde Oxígeno;1
+TUTAZA;Salvación Nacional;10
+UMBITA;Centro Esperanza;100
+UMBITA;Colombia Justa Libres;5
+UMBITA;Colombia Piensa en Grande;4
+UMBITA;Equipo por Colombia;310
+UMBITA;Liga de Gobernantes;2462
+UMBITA;Pacto Histórico;654
+UMBITA;Salvación Nacional;10
+UMBITA;VOTOS NO MARCADOS;6
+VENTAQUEMADA;Centro Esperanza;191
+VENTAQUEMADA;Colombia Justa Libres;60
+VENTAQUEMADA;Colombia Piensa en Grande;4
+VENTAQUEMADA;Equipo por Colombia;404
+VENTAQUEMADA;Liga de Gobernantes;4241
+VENTAQUEMADA;Pacto Histórico;1893
+VENTAQUEMADA;Partido Verde Oxígeno;6
+VENTAQUEMADA;Salvación Nacional;8
+VENTAQUEMADA;VOTOS NO MARCADOS;14
+VILLA DE LEIVA;Centro Esperanza;459
+VILLA DE LEIVA;Colombia Justa Libres;44
+VILLA DE LEIVA;Colombia Piensa en Grande;3
+VILLA DE LEIVA;Equipo por Colombia;1257
+VILLA DE LEIVA;Liga de Gobernantes;4643
+VILLA DE LEIVA;Pacto Histórico;2697
+VILLA DE LEIVA;Partido Verde Oxígeno;2
+VILLA DE LEIVA;Salvación Nacional;30
+VILLA DE LEIVA;VOTOS NO MARCADOS;8
+VIRACACHA;Centro Esperanza;49
+VIRACACHA;Colombia Justa Libres;7
+VIRACACHA;Colombia Piensa en Grande;1
+VIRACACHA;Equipo por Colombia;139
+VIRACACHA;Liga de Gobernantes;1018
+VIRACACHA;Pacto Histórico;216
+VIRACACHA;Partido Verde Oxígeno;1
+VIRACACHA;Salvación Nacional;8
+VIRACACHA;VOTOS NO MARCADOS;3
+ZETAQUIRA;Centro Esperanza;50
+ZETAQUIRA;Colombia Justa Libres;9
+ZETAQUIRA;Colombia Piensa en Grande;3
+ZETAQUIRA;Equipo por Colombia;201
+ZETAQUIRA;Liga de Gobernantes;1547
+ZETAQUIRA;Pacto Histórico;662
+ZETAQUIRA;Partido Verde Oxígeno;1
+ZETAQUIRA;Salvación Nacional;3
+ZETAQUIRA;VOTOS NO MARCADOS;3

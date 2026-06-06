@@ -1,729 +1,968 @@
-MUNNOMBRE;PARNOMBRE;VOTOS;TOTAL_VOTOS;PORCENTAJE
-ALMEIDA;Centro Democrático;710;962;73.804574
-ALMEIDA;Partido Liberal Colombiano;122;962;12.681913
-ALMEIDA;Pacto Histórico;114;962;11.850312
-ALMEIDA;Partido de la U;10;962;1.039501
-ALMEIDA;Cambio Radical;5;962;0.519751
-ALMEIDA;Votos en blanco;1;962;0.10395
-AQUITANIA;Centro Democrático;5270;6931;76.035204
-AQUITANIA;Pacto Histórico;912;6931;13.158274
-AQUITANIA;Partido Liberal Colombiano;661;6931;9.536863
-AQUITANIA;Partido de la U;45;6931;0.649257
-AQUITANIA;Cambio Radical;33;6931;0.476122
-AQUITANIA;Votos en blanco;10;6931;0.144279
-ARCABUCO;Centro Democrático;1203;2547;47.232038
-ARCABUCO;Pacto Histórico;739;2547;29.014527
-ARCABUCO;Partido Liberal Colombiano;557;2547;21.868865
-ARCABUCO;Partido de la U;31;2547;1.217118
-ARCABUCO;Cambio Radical;11;2547;0.431881
-ARCABUCO;Votos en blanco;6;2547;0.235571
-BELEN;Centro Democrático;1623;3609;44.970906
-BELEN;Partido Liberal Colombiano;957;3609;26.517041
-BELEN;Pacto Histórico;877;3609;24.30036
-BELEN;Partido de la U;127;3609;3.51898
-BELEN;Cambio Radical;20;3609;0.55417
-BELEN;Votos en blanco;5;3609;0.138543
-BERBEO;Centro Democrático;334;710;47.042254
-BERBEO;Partido Liberal Colombiano;281;710;39.577465
-BERBEO;Pacto Histórico;77;710;10.84507
-BERBEO;Partido de la U;13;710;1.830986
-BERBEO;Cambio Radical;5;710;0.704225
-BETEITIVA;Centro Democrático;411;883;46.545866
-BETEITIVA;Partido Liberal Colombiano;228;883;25.821065
-BETEITIVA;Pacto Histórico;198;883;22.423556
-BETEITIVA;Partido de la U;38;883;4.303511
-BETEITIVA;Cambio Radical;5;883;0.566251
-BETEITIVA;Votos en blanco;3;883;0.339751
-BOAVITA;Centro Democrático;1731;2417;71.617708
-BOAVITA;Pacto Histórico;376;2417;15.556475
-BOAVITA;Partido Liberal Colombiano;279;2417;11.543235
-BOAVITA;Partido de la U;18;2417;0.744725
-BOAVITA;Cambio Radical;11;2417;0.45511
-BOAVITA;Votos en blanco;2;2417;0.082747
-BOYACA;Centro Democrático;933;1685;55.37092
-BOYACA;Partido Liberal Colombiano;404;1685;23.976261
-BOYACA;Pacto Histórico;264;1685;15.667656
-BOYACA;Partido de la U;73;1685;4.332344
-BOYACA;Cambio Radical;9;1685;0.534125
-BOYACA;Votos en blanco;2;1685;0.118694
-BRICENO;Centro Democrático;900;1126;79.928952
-BRICENO;Partido Liberal Colombiano;116;1126;10.301954
-BRICENO;Pacto Histórico;99;1126;8.792185
-BRICENO;Partido de la U;7;1126;0.62167
-BRICENO;Cambio Radical;2;1126;0.17762
-BRICENO;Votos en blanco;2;1126;0.17762
-BUENAVISTA;Centro Democrático;1966;2486;79.082864
-BUENAVISTA;Partido Liberal Colombiano;281;2486;11.303298
-BUENAVISTA;Pacto Histórico;190;2486;7.6428
-BUENAVISTA;Partido de la U;25;2486;1.005632
-BUENAVISTA;Cambio Radical;21;2486;0.84473
-BUENAVISTA;Votos en blanco;3;2486;0.120676
-BUSBANZA;Centro Democrático;251;508;49.409449
-BUSBANZA;Pacto Histórico;161;508;31.692913
-BUSBANZA;Partido Liberal Colombiano;82;508;16.141732
-BUSBANZA;Partido de la U;8;508;1.574803
-BUSBANZA;Votos en blanco;4;508;0.787402
-BUSBANZA;Cambio Radical;2;508;0.393701
-CALDAS;Centro Democrático;948;1545;61.359223
-CALDAS;Pacto Histórico;320;1545;20.711974
-CALDAS;Partido Liberal Colombiano;234;1545;15.145631
-CALDAS;Partido de la U;33;1545;2.135922
-CALDAS;Cambio Radical;8;1545;0.517799
-CALDAS;Votos en blanco;2;1545;0.12945
-CAMPOHERMOSO;Centro Democrático;1074;1341;80.089485
-CAMPOHERMOSO;Pacto Histórico;130;1341;9.694258
-CAMPOHERMOSO;Partido Liberal Colombiano;119;1341;8.873975
-CAMPOHERMOSO;Partido de la U;9;1341;0.671141
-CAMPOHERMOSO;Cambio Radical;6;1341;0.447427
-CAMPOHERMOSO;Votos en blanco;3;1341;0.223714
-CERINZA;Centro Democrático;913;2085;43.788969
-CERINZA;Partido Liberal Colombiano;710;2085;34.052758
-CERINZA;Pacto Histórico;416;2085;19.952038
-CERINZA;Partido de la U;30;2085;1.438849
-CERINZA;Cambio Radical;13;2085;0.623501
-CERINZA;Votos en blanco;3;2085;0.143885
-CHINAVITA;Centro Democrático;1112;1533;72.537508
-CHINAVITA;Pacto Histórico;238;1533;15.525114
-CHINAVITA;Partido Liberal Colombiano;171;1533;11.154599
-CHINAVITA;Partido de la U;9;1533;0.587084
-CHINAVITA;Cambio Radical;2;1533;0.130463
-CHINAVITA;Votos en blanco;1;1533;0.065232
-CHIQUINQUIRA;Centro Democrático;11122;23898;46.539459
-CHIQUINQUIRA;Pacto Histórico;7528;23898;31.500544
-CHIQUINQUIRA;Partido Liberal Colombiano;4805;23898;20.106285
-CHIQUINQUIRA;Partido de la U;317;23898;1.326471
-CHIQUINQUIRA;Cambio Radical;97;23898;0.405892
-CHIQUINQUIRA;Votos en blanco;29;23898;0.121349
-CHIQUIZA;Partido Liberal Colombiano;705;1402;50.285307
-CHIQUIZA;Centro Democrático;446;1402;31.811698
-CHIQUIZA;Pacto Histórico;167;1402;11.911555
-CHIQUIZA;Partido de la U;66;1402;4.707561
-CHIQUIZA;Cambio Radical;10;1402;0.713267
-CHIQUIZA;Votos en blanco;8;1402;0.570613
-CHISCAS;Centro Democrático;1395;1651;84.494246
-CHISCAS;Partido Liberal Colombiano;126;1651;7.631738
-CHISCAS;Pacto Histórico;88;1651;5.330103
-CHISCAS;Partido de la U;30;1651;1.817081
-CHISCAS;Cambio Radical;10;1651;0.605694
-CHISCAS;Votos en blanco;2;1651;0.121139
-CHITA;Centro Democrático;2356;2948;79.918589
-CHITA;Partido Liberal Colombiano;320;2948;10.854817
-CHITA;Pacto Histórico;158;2948;5.359566
-CHITA;Votos en blanco;65;2948;2.204885
-CHITA;Partido de la U;31;2948;1.05156
-CHITA;Cambio Radical;18;2948;0.610583
-CHITARAQUE;Centro Democrático;2210;2634;83.902809
-CHITARAQUE;Partido Liberal Colombiano;244;2634;9.263478
-CHITARAQUE;Pacto Histórico;147;2634;5.580866
-CHITARAQUE;Cambio Radical;17;2634;0.645406
-CHITARAQUE;Partido de la U;15;2634;0.569476
-CHITARAQUE;Votos en blanco;1;2634;0.037965
-CHIVATA;Centro Democrático;603;1472;40.964674
-CHIVATA;Pacto Histórico;528;1472;35.869565
-CHIVATA;Partido Liberal Colombiano;304;1472;20.652174
-CHIVATA;Partido de la U;23;1472;1.5625
-CHIVATA;Cambio Radical;11;1472;0.747283
-CHIVATA;Votos en blanco;3;1472;0.203804
-CHIVOR;Centro Democrático;859;1023;83.968719
-CHIVOR;Pacto Histórico;109;1023;10.654936
-CHIVOR;Partido Liberal Colombiano;50;1023;4.887586
-CHIVOR;Partido de la U;3;1023;0.293255
-CHIVOR;Cambio Radical;2;1023;0.195503
-CIENEGA;Centro Democrático;1440;1946;73.997945
-CIENEGA;Pacto Histórico;284;1946;14.594039
-CIENEGA;Partido Liberal Colombiano;195;1946;10.020555
-CIENEGA;Partido de la U;14;1946;0.719424
-CIENEGA;Cambio Radical;9;1946;0.462487
-CIENEGA;Votos en blanco;4;1946;0.20555
-COMBITA;Centro Democrático;1567;4496;34.853203
-COMBITA;Pacto Histórico;1541;4496;34.274911
-COMBITA;Partido Liberal Colombiano;1235;4496;27.468861
-COMBITA;Partido de la U;126;4496;2.802491
-COMBITA;Cambio Radical;19;4496;0.422598
-COMBITA;Votos en blanco;8;4496;0.177936
-COPER;Centro Democrático;1378;1582;87.10493
-COPER;Partido Liberal Colombiano;108;1582;6.826802
-COPER;Pacto Histórico;74;1582;4.677623
-COPER;Partido de la U;13;1582;0.821745
-COPER;Votos en blanco;5;1582;0.316056
-COPER;Cambio Radical;4;1582;0.252845
-CORRALES;Centro Democrático;561;1371;40.919037
-CORRALES;Pacto Histórico;414;1371;30.196937
-CORRALES;Partido Liberal Colombiano;368;1371;26.841721
-CORRALES;Partido de la U;22;1371;1.604668
-CORRALES;Cambio Radical;5;1371;0.364697
-CORRALES;Votos en blanco;1;1371;0.072939
-COVARACHIA;Centro Democrático;1291;1485;86.936027
-COVARACHIA;Pacto Histórico;111;1485;7.474747
-COVARACHIA;Partido Liberal Colombiano;63;1485;4.242424
-COVARACHIA;Cambio Radical;8;1485;0.538721
-COVARACHIA;Partido de la U;8;1485;0.538721
-COVARACHIA;Votos en blanco;4;1485;0.26936
-CUBARA;Partido Liberal Colombiano;819;1980;41.363636
-CUBARA;Centro Democrático;791;1980;39.949495
-CUBARA;Pacto Histórico;289;1980;14.59596
-CUBARA;Partido de la U;57;1980;2.878788
-CUBARA;Cambio Radical;16;1980;0.808081
-CUBARA;Votos en blanco;8;1980;0.40404
-CUCAITA;Partido Liberal Colombiano;682;1655;41.208459
-CUCAITA;Centro Democrático;557;1655;33.655589
-CUCAITA;Pacto Histórico;385;1655;23.26284
-CUCAITA;Partido de la U;23;1655;1.389728
-CUCAITA;Cambio Radical;4;1655;0.241692
-CUCAITA;Votos en blanco;4;1655;0.241692
-CUITIVA;Centro Democrático;599;981;61.060143
-CUITIVA;Partido Liberal Colombiano;184;981;18.756371
-CUITIVA;Pacto Histórico;179;981;18.246687
-CUITIVA;Partido de la U;13;981;1.325178
-CUITIVA;Cambio Radical;6;981;0.611621
-DUITAMA;Pacto Histórico;21777;57598;37.808604
-DUITAMA;Centro Democrático;18226;57598;31.64346
-DUITAMA;Partido Liberal Colombiano;16179;57598;28.089517
-DUITAMA;Partido de la U;1141;57598;1.980972
-DUITAMA;Cambio Radical;219;57598;0.380222
-DUITAMA;Votos en blanco;56;57598;0.097226
-EL COCUY;Centro Democrático;1555;1873;83.02189
-EL COCUY;Partido Liberal Colombiano;139;1873;7.421249
-EL COCUY;Pacto Histórico;129;1873;6.887347
-EL COCUY;Partido de la U;43;1873;2.295782
-EL COCUY;Cambio Radical;5;1873;0.266951
-EL COCUY;Votos en blanco;2;1873;0.106781
-EL ESPINO;Centro Democrático;1132;1303;86.876439
-EL ESPINO;Pacto Histórico;83;1303;6.369916
-EL ESPINO;Partido Liberal Colombiano;70;1303;5.372218
-EL ESPINO;Partido de la U;10;1303;0.76746
-EL ESPINO;Cambio Radical;7;1303;0.537222
-EL ESPINO;Votos en blanco;1;1303;0.076746
-FIRAVITOBA;Centro Democrático;1159;2842;40.78114
-FIRAVITOBA;Pacto Histórico;865;2842;30.436312
-FIRAVITOBA;Partido Liberal Colombiano;749;2842;26.35468
-FIRAVITOBA;Partido de la U;53;2842;1.864884
-FIRAVITOBA;Cambio Radical;12;2842;0.422238
-FIRAVITOBA;Votos en blanco;4;2842;0.140746
-FLORESTA;Centro Democrático;1079;1772;60.891648
-FLORESTA;Pacto Histórico;336;1772;18.961625
-FLORESTA;Partido Liberal Colombiano;317;1772;17.889391
-FLORESTA;Partido de la U;22;1772;1.241535
-FLORESTA;Cambio Radical;11;1772;0.620767
-FLORESTA;Votos en blanco;7;1772;0.395034
-GACHANTIVA;Centro Democrático;965;1648;58.555825
-GACHANTIVA;Pacto Histórico;323;1648;19.599515
-GACHANTIVA;Partido Liberal Colombiano;318;1648;19.296117
-GACHANTIVA;Partido de la U;24;1648;1.456311
-GACHANTIVA;Cambio Radical;12;1648;0.728155
-GACHANTIVA;Votos en blanco;6;1648;0.364078
-GAMEZA;Centro Democrático;1279;2007;63.726956
-GAMEZA;Pacto Histórico;407;2007;20.279023
-GAMEZA;Partido Liberal Colombiano;279;2007;13.901345
-GAMEZA;Partido de la U;27;2007;1.345291
-GAMEZA;Cambio Radical;13;2007;0.647733
-GAMEZA;Votos en blanco;2;2007;0.099651
-GARAGOA;Centro Democrático;3266;6712;48.659118
-GARAGOA;Pacto Histórico;2049;6712;30.527414
-GARAGOA;Partido Liberal Colombiano;1242;6712;18.504172
-GARAGOA;Partido de la U;99;6712;1.47497
-GARAGOA;Cambio Radical;44;6712;0.655542
-GARAGOA;Votos en blanco;12;6712;0.178784
-GUACAMAYAS;Centro Democrático;785;907;86.549063
-GUACAMAYAS;Partido Liberal Colombiano;57;907;6.284454
-GUACAMAYAS;Pacto Histórico;55;907;6.063947
-GUACAMAYAS;Partido de la U;6;907;0.661521
-GUACAMAYAS;Cambio Radical;2;907;0.220507
-GUACAMAYAS;Votos en blanco;2;907;0.220507
-GUATEQUE;Centro Democrático;2593;4886;53.069996
-GUATEQUE;Pacto Histórico;1303;4886;26.668031
-GUATEQUE;Partido Liberal Colombiano;830;4886;16.987311
-GUATEQUE;Partido de la U;114;4886;2.333197
-GUATEQUE;Cambio Radical;41;4886;0.839132
-GUATEQUE;Votos en blanco;5;4886;0.102333
-GUAYATA;Centro Democrático;1526;2100;72.666667
-GUAYATA;Pacto Histórico;351;2100;16.714286
-GUAYATA;Partido Liberal Colombiano;189;2100;9.0
-GUAYATA;Partido de la U;17;2100;0.809524
-GUAYATA;Cambio Radical;13;2100;0.619048
-GUAYATA;Votos en blanco;4;2100;0.190476
-GUICAN DE LA SIERRA;Centro Democrático;1038;1615;64.272446
-GUICAN DE LA SIERRA;Partido Liberal Colombiano;427;1615;26.439628
-GUICAN DE LA SIERRA;Pacto Histórico;133;1615;8.235294
-GUICAN DE LA SIERRA;Partido de la U;9;1615;0.557276
-GUICAN DE LA SIERRA;Cambio Radical;4;1615;0.247678
-GUICAN DE LA SIERRA;Votos en blanco;4;1615;0.247678
-IZA;Centro Democrático;684;1248;54.807692
-IZA;Pacto Histórico;342;1248;27.403846
-IZA;Partido Liberal Colombiano;197;1248;15.785256
-IZA;Partido de la U;21;1248;1.682692
-IZA;Cambio Radical;2;1248;0.160256
-IZA;Votos en blanco;2;1248;0.160256
-JENESANO;Centro Democrático;1389;2577;53.899884
-JENESANO;Partido Liberal Colombiano;544;2577;21.109818
-JENESANO;Pacto Histórico;511;2577;19.829259
-JENESANO;Partido de la U;101;2577;3.919286
-JENESANO;Cambio Radical;25;2577;0.97012
-JENESANO;Votos en blanco;7;2577;0.271634
-JERICO;Centro Democrático;1257;1513;83.079974
-JERICO;Partido Liberal Colombiano;143;1513;9.451421
-JERICO;Pacto Histórico;90;1513;5.948447
-JERICO;Cambio Radical;12;1513;0.793126
-JERICO;Partido de la U;10;1513;0.660939
-JERICO;Votos en blanco;1;1513;0.066094
-LA CAPILLA;Centro Democrático;893;1369;65.230095
-LA CAPILLA;Partido Liberal Colombiano;264;1369;19.284149
-LA CAPILLA;Pacto Histórico;187;1369;13.659606
-LA CAPILLA;Cambio Radical;13;1369;0.949598
-LA CAPILLA;Partido de la U;10;1369;0.73046
-LA CAPILLA;Votos en blanco;2;1369;0.146092
-LA UVITA;Centro Democrático;1107;1339;82.673637
-LA UVITA;Pacto Histórico;145;1339;10.828977
-LA UVITA;Partido Liberal Colombiano;67;1339;5.003734
-LA UVITA;Partido de la U;12;1339;0.896191
-LA UVITA;Cambio Radical;4;1339;0.29873
-LA UVITA;Votos en blanco;4;1339;0.29873
-LA VICTORIA;Centro Democrático;685;825;83.030303
-LA VICTORIA;Partido Liberal Colombiano;76;825;9.212121
-LA VICTORIA;Pacto Histórico;46;825;5.575758
-LA VICTORIA;Cambio Radical;8;825;0.969697
-LA VICTORIA;Partido de la U;8;825;0.969697
-LA VICTORIA;Votos en blanco;2;825;0.242424
-LABRANZAGRANDE;Centro Democrático;1087;1488;73.051075
-LABRANZAGRANDE;Pacto Histórico;209;1488;14.045699
-LABRANZAGRANDE;Partido Liberal Colombiano;164;1488;11.021505
-LABRANZAGRANDE;Cambio Radical;14;1488;0.94086
-LABRANZAGRANDE;Partido de la U;12;1488;0.806452
-LABRANZAGRANDE;Votos en blanco;2;1488;0.134409
-MACANAL;Centro Democrático;1382;1901;72.69858
-MACANAL;Pacto Histórico;290;1901;15.255129
-MACANAL;Partido Liberal Colombiano;198;1901;10.415571
-MACANAL;Cambio Radical;14;1901;0.736454
-MACANAL;Partido de la U;14;1901;0.736454
-MACANAL;Votos en blanco;3;1901;0.157812
-MARIPI;Centro Democrático;2493;2849;87.504388
-MARIPI;Partido Liberal Colombiano;185;2849;6.493506
-MARIPI;Pacto Histórico;145;2849;5.089505
-MARIPI;Partido de la U;13;2849;0.4563
-MARIPI;Cambio Radical;12;2849;0.4212
-MARIPI;Votos en blanco;1;2849;0.0351
-MIRAFLORES;Centro Democrático;1649;4248;38.818267
-MIRAFLORES;Partido Liberal Colombiano;1577;4248;37.123352
-MIRAFLORES;Pacto Histórico;898;4248;21.13936
-MIRAFLORES;Partido de la U;86;4248;2.024482
-MIRAFLORES;Cambio Radical;29;4248;0.682674
-MIRAFLORES;Votos en blanco;9;4248;0.211864
-MONGUA;Centro Democrático;2092;2571;81.369117
-MONGUA;Pacto Histórico;232;2571;9.023726
-MONGUA;Partido Liberal Colombiano;225;2571;8.751459
-MONGUA;Partido de la U;13;2571;0.50564
-MONGUA;Cambio Radical;7;2571;0.272268
-MONGUA;Votos en blanco;2;2571;0.077791
-MONGUI;Centro Democrático;1085;2085;52.038369
-MONGUI;Pacto Histórico;527;2085;25.275779
-MONGUI;Partido Liberal Colombiano;440;2085;21.103118
-MONGUI;Partido de la U;25;2085;1.199041
-MONGUI;Cambio Radical;7;2085;0.335731
-MONGUI;Votos en blanco;1;2085;0.047962
-MONIQUIRA;Centro Democrático;4950;9373;52.811266
-MONIQUIRA;Partido Liberal Colombiano;2194;9373;23.40766
-MONIQUIRA;Pacto Histórico;2004;9373;21.380561
-MONIQUIRA;Partido de la U;157;9373;1.675024
-MONIQUIRA;Cambio Radical;55;9373;0.586792
-MONIQUIRA;Votos en blanco;13;9373;0.138696
-MOTAVITA;Partido Liberal Colombiano;1153;2634;43.773728
-MOTAVITA;Centro Democrático;754;2634;28.625664
-MOTAVITA;Pacto Histórico;648;2634;24.601367
-MOTAVITA;Partido de la U;67;2634;2.54366
-MOTAVITA;Cambio Radical;7;2634;0.265756
-MOTAVITA;Votos en blanco;5;2634;0.189825
-MUZO;Centro Democrático;3120;4082;76.433121
-MUZO;Partido Liberal Colombiano;540;4082;13.228809
-MUZO;Pacto Histórico;336;4082;8.231259
-MUZO;Cambio Radical;49;4082;1.200392
-MUZO;Partido de la U;30;4082;0.734934
-MUZO;Votos en blanco;7;4082;0.171485
-NOBSA;Partido Liberal Colombiano;3668;8400;43.666667
-NOBSA;Pacto Histórico;2399;8400;28.559524
-NOBSA;Centro Democrático;2115;8400;25.178571
-NOBSA;Partido de la U;177;8400;2.107143
-NOBSA;Cambio Radical;33;8400;0.392857
-NOBSA;Votos en blanco;8;8400;0.095238
-NUEVO COLON;Centro Democrático;904;2063;43.81968
-NUEVO COLON;Partido Liberal Colombiano;593;2063;28.744547
-NUEVO COLON;Pacto Histórico;453;2063;21.958313
-NUEVO COLON;Partido de la U;92;2063;4.459525
-NUEVO COLON;Cambio Radical;17;2063;0.824043
-NUEVO COLON;Votos en blanco;4;2063;0.193892
-OICATA;Centro Democrático;700;1588;44.080605
-OICATA;Pacto Histórico;424;1588;26.700252
-OICATA;Partido Liberal Colombiano;420;1588;26.448363
-OICATA;Partido de la U;32;1588;2.015113
-OICATA;Cambio Radical;9;1588;0.566751
-OICATA;Votos en blanco;3;1588;0.188917
-OTANCHE;Centro Democrático;2793;3340;83.622754
-OTANCHE;Pacto Histórico;276;3340;8.263473
-OTANCHE;Partido Liberal Colombiano;228;3340;6.826347
-OTANCHE;Partido de la U;22;3340;0.658683
-OTANCHE;Cambio Radical;18;3340;0.538922
-OTANCHE;Votos en blanco;3;3340;0.08982
-PACHAVITA;Centro Democrático;685;1025;66.829268
-PACHAVITA;Pacto Histórico;210;1025;20.487805
-PACHAVITA;Partido Liberal Colombiano;119;1025;11.609756
-PACHAVITA;Partido de la U;6;1025;0.585366
-PACHAVITA;Cambio Radical;3;1025;0.292683
-PACHAVITA;Votos en blanco;2;1025;0.195122
-PAEZ;Centro Democrático;1047;1494;70.080321
-PAEZ;Pacto Histórico;228;1494;15.261044
-PAEZ;Partido Liberal Colombiano;173;1494;11.579652
-PAEZ;Partido de la U;27;1494;1.807229
-PAEZ;Cambio Radical;15;1494;1.004016
-PAEZ;Votos en blanco;4;1494;0.267738
-PAIPA;Pacto Histórico;6290;16075;39.129082
-PAIPA;Centro Democrático;5473;16075;34.046656
-PAIPA;Partido Liberal Colombiano;3918;16075;24.37325
-PAIPA;Partido de la U;317;16075;1.972006
-PAIPA;Cambio Radical;61;16075;0.379471
-PAIPA;Votos en blanco;16;16075;0.099533
-PAJARITO;Centro Democrático;647;886;73.024831
-PAJARITO;Pacto Histórico;138;886;15.575621
-PAJARITO;Partido Liberal Colombiano;80;886;9.029345
-PAJARITO;Partido de la U;10;886;1.128668
-PAJARITO;Cambio Radical;8;886;0.902935
-PAJARITO;Votos en blanco;3;886;0.3386
-PANQUEBA;Centro Democrático;637;858;74.242424
-PANQUEBA;Pacto Histórico;147;858;17.132867
-PANQUEBA;Partido Liberal Colombiano;56;858;6.526807
-PANQUEBA;Partido de la U;15;858;1.748252
-PANQUEBA;Cambio Radical;3;858;0.34965
-PAUNA;Centro Democrático;2280;3288;69.343066
-PAUNA;Partido Liberal Colombiano;662;3288;20.13382
-PAUNA;Pacto Histórico;300;3288;9.124088
-PAUNA;Partido de la U;23;3288;0.699513
-PAUNA;Cambio Radical;16;3288;0.486618
-PAUNA;Votos en blanco;7;3288;0.212895
-PAYA;Centro Democrático;584;861;67.828107
-PAYA;Partido Liberal Colombiano;127;861;14.75029
-PAYA;Pacto Histórico;113;861;13.124274
-PAYA;Cambio Radical;19;861;2.206736
-PAYA;Partido de la U;13;861;1.509872
-PAYA;Votos en blanco;5;861;0.58072
-PAZ DE RIO;Partido Liberal Colombiano;859;2209;38.886374
-PAZ DE RIO;Centro Democrático;715;2209;32.367587
-PAZ DE RIO;Pacto Histórico;522;2209;23.630602
-PAZ DE RIO;Partido de la U;96;2209;4.345858
-PAZ DE RIO;Cambio Radical;12;2209;0.543232
-PAZ DE RIO;Votos en blanco;5;2209;0.226347
-PESCA;Centro Democrático;1923;2901;66.287487
-PESCA;Pacto Histórico;495;2901;17.063082
-PESCA;Partido Liberal Colombiano;436;2901;15.0293
-PESCA;Partido de la U;30;2901;1.034126
-PESCA;Cambio Radical;12;2901;0.41365
-PESCA;Votos en blanco;5;2901;0.172354
-PISBA;Centro Democrático;348;548;63.50365
-PISBA;Pacto Histórico;106;548;19.343066
-PISBA;Partido Liberal Colombiano;89;548;16.240876
-PISBA;Partido de la U;3;548;0.547445
-PISBA;Cambio Radical;2;548;0.364964
-PUERTO BOYACA;Centro Democrático;11819;19751;59.840008
-PUERTO BOYACA;Pacto Histórico;4294;19751;21.740671
-PUERTO BOYACA;Partido Liberal Colombiano;3155;19751;15.973875
-PUERTO BOYACA;Partido de la U;290;19751;1.46828
-PUERTO BOYACA;Cambio Radical;153;19751;0.774644
-PUERTO BOYACA;Votos en blanco;40;19751;0.202521
-QUIPAMA;Centro Democrático;2159;2641;81.749337
-QUIPAMA;Partido Liberal Colombiano;256;2641;9.693298
-QUIPAMA;Pacto Histórico;198;2641;7.49716
-QUIPAMA;Cambio Radical;16;2641;0.605831
-QUIPAMA;Partido de la U;10;2641;0.378644
-QUIPAMA;Votos en blanco;2;2641;0.075729
-RAMIRIQUI;Centro Democrático;2167;4065;53.308733
-RAMIRIQUI;Partido Liberal Colombiano;917;4065;22.558426
-RAMIRIQUI;Pacto Histórico;858;4065;21.107011
-RAMIRIQUI;Partido de la U;96;4065;2.361624
-RAMIRIQUI;Cambio Radical;18;4065;0.442804
-RAMIRIQUI;Votos en blanco;9;4065;0.221402
-RAQUIRA;Centro Democrático;1525;2684;56.818182
-RAQUIRA;Pacto Histórico;612;2684;22.801788
-RAQUIRA;Partido Liberal Colombiano;449;2684;16.728763
-RAQUIRA;Partido de la U;69;2684;2.57079
-RAQUIRA;Cambio Radical;18;2684;0.670641
-RAQUIRA;Votos en blanco;11;2684;0.409836
-RONDON;Centro Democrático;827;1204;68.687708
-RONDON;Partido Liberal Colombiano;223;1204;18.521595
-RONDON;Pacto Histórico;127;1204;10.548173
-RONDON;Partido de la U;19;1204;1.578073
-RONDON;Cambio Radical;7;1204;0.581395
-RONDON;Votos en blanco;1;1204;0.083056
-SABOYA;Centro Democrático;2893;5033;57.480628
-SABOYA;Partido Liberal Colombiano;1277;5033;25.372541
-SABOYA;Pacto Histórico;712;5033;14.146632
-SABOYA;Partido de la U;123;5033;2.44387
-SABOYA;Cambio Radical;23;5033;0.456984
-SABOYA;Votos en blanco;5;5033;0.099344
-SACHICA;Centro Democrático;1014;2121;47.807638
-SACHICA;Pacto Histórico;563;2121;26.544083
-SACHICA;Partido Liberal Colombiano;480;2121;22.630835
-SACHICA;Partido de la U;53;2121;2.498821
-SACHICA;Cambio Radical;7;2121;0.330033
-SACHICA;Votos en blanco;4;2121;0.18859
-SAMACA;Centro Democrático;3287;7330;44.843111
-SAMACA;Pacto Histórico;2248;7330;30.668486
-SAMACA;Partido Liberal Colombiano;1644;7330;22.428377
-SAMACA;Partido de la U;88;7330;1.200546
-SAMACA;Cambio Radical;53;7330;0.723056
-SAMACA;Votos en blanco;10;7330;0.136426
-SAN EDUARDO;Centro Democrático;441;795;55.471698
-SAN EDUARDO;Partido Liberal Colombiano;179;795;22.515723
-SAN EDUARDO;Pacto Histórico;137;795;17.232704
-SAN EDUARDO;Partido de la U;32;795;4.025157
-SAN EDUARDO;Cambio Radical;6;795;0.754717
-SAN JOSE DE PARE;Centro Democrático;1874;2505;74.810379
-SAN JOSE DE PARE;Partido Liberal Colombiano;302;2505;12.055888
-SAN JOSE DE PARE;Pacto Histórico;267;2505;10.658683
-SAN JOSE DE PARE;Partido de la U;42;2505;1.676647
-SAN JOSE DE PARE;Cambio Radical;17;2505;0.678643
-SAN JOSE DE PARE;Votos en blanco;3;2505;0.11976
-SAN LUIS DE GACENO;Centro Democrático;1927;2467;78.111066
-SAN LUIS DE GACENO;Pacto Histórico;358;2467;14.511552
-SAN LUIS DE GACENO;Partido Liberal Colombiano;160;2467;6.48561
-SAN LUIS DE GACENO;Partido de la U;16;2467;0.648561
-SAN LUIS DE GACENO;Cambio Radical;6;2467;0.24321
-SAN MATEO;Centro Democrático;1719;1963;87.570046
-SAN MATEO;Pacto Histórico;142;1963;7.233826
-SAN MATEO;Partido Liberal Colombiano;86;1963;4.381049
-SAN MATEO;Cambio Radical;8;1963;0.407539
-SAN MATEO;Partido de la U;8;1963;0.407539
-SAN MIGUEL DE SEMA;Centro Democrático;968;1439;67.268937
-SAN MIGUEL DE SEMA;Pacto Histórico;261;1439;18.137596
-SAN MIGUEL DE SEMA;Partido Liberal Colombiano;153;1439;10.632384
-SAN MIGUEL DE SEMA;Partido de la U;46;1439;3.196664
-SAN MIGUEL DE SEMA;Cambio Radical;9;1439;0.625434
-SAN MIGUEL DE SEMA;Votos en blanco;2;1439;0.138985
-SAN PABLO DE BORBUR;Centro Democrático;2604;3127;83.274704
-SAN PABLO DE BORBUR;Partido Liberal Colombiano;269;3127;8.602494
-SAN PABLO DE BORBUR;Pacto Histórico;222;3127;7.099456
-SAN PABLO DE BORBUR;Cambio Radical;18;3127;0.575632
-SAN PABLO DE BORBUR;Votos en blanco;8;3127;0.255836
-SAN PABLO DE BORBUR;Partido de la U;6;3127;0.191877
-SANTA MARIA;Centro Democrático;886;1531;57.870673
-SANTA MARIA;Pacto Histórico;338;1531;22.077074
-SANTA MARIA;Partido Liberal Colombiano;276;1531;18.027433
-SANTA MARIA;Partido de la U;21;1531;1.371653
-SANTA MARIA;Cambio Radical;9;1531;0.587851
-SANTA MARIA;Votos en blanco;1;1531;0.065317
-SANTA ROSA DE VITERBO;Centro Democrático;2536;5273;48.094064
-SANTA ROSA DE VITERBO;Pacto Histórico;1723;5273;32.675896
-SANTA ROSA DE VITERBO;Partido Liberal Colombiano;890;5273;16.878437
-SANTA ROSA DE VITERBO;Partido de la U;98;5273;1.858525
-SANTA ROSA DE VITERBO;Cambio Radical;17;5273;0.322397
-SANTA ROSA DE VITERBO;Votos en blanco;9;5273;0.170681
-SANTA SOFIA;Centro Democrático;1166;1679;69.446099
-SANTA SOFIA;Pacto Histórico;352;1679;20.96486
-SANTA SOFIA;Partido Liberal Colombiano;148;1679;8.814771
-SANTA SOFIA;Cambio Radical;8;1679;0.476474
-SANTA SOFIA;Partido de la U;5;1679;0.297796
-SANTANA;Centro Democrático;2100;3310;63.444109
-SANTANA;Partido Liberal Colombiano;662;3310;20.0
-SANTANA;Pacto Histórico;447;3310;13.504532
-SANTANA;Partido de la U;79;3310;2.386707
-SANTANA;Cambio Radical;19;3310;0.574018
-SANTANA;Votos en blanco;3;3310;0.090634
-SATIVANORTE;Centro Democrático;1040;1243;83.668544
-SATIVANORTE;Pacto Histórico;104;1243;8.366854
-SATIVANORTE;Partido Liberal Colombiano;88;1243;7.079646
-SATIVANORTE;Partido de la U;6;1243;0.482703
-SATIVANORTE;Cambio Radical;5;1243;0.402253
-SATIVASUR;Centro Democrático;299;495;60.40404
-SATIVASUR;Partido Liberal Colombiano;84;495;16.969697
-SATIVASUR;Pacto Histórico;62;495;12.525253
-SATIVASUR;Partido de la U;47;495;9.494949
-SATIVASUR;Votos en blanco;2;495;0.40404
-SATIVASUR;Cambio Radical;1;495;0.20202
-SIACHOQUE;Centro Democrático;1757;3198;54.940588
-SIACHOQUE;Pacto Histórico;819;3198;25.609756
-SIACHOQUE;Partido Liberal Colombiano;553;3198;17.292058
-SIACHOQUE;Partido de la U;44;3198;1.37586
-SIACHOQUE;Cambio Radical;17;3198;0.531582
-SIACHOQUE;Votos en blanco;8;3198;0.250156
-SOATA;Centro Democrático;3147;4488;70.120321
-SOATA;Pacto Histórico;655;4488;14.594474
-SOATA;Partido Liberal Colombiano;614;4488;13.680927
-SOATA;Partido de la U;56;4488;1.247772
-SOATA;Cambio Radical;9;4488;0.200535
-SOATA;Votos en blanco;7;4488;0.155971
-SOCHA;Centro Democrático;1413;2845;49.666081
-SOCHA;Partido Liberal Colombiano;718;2845;25.237258
-SOCHA;Pacto Histórico;544;2845;19.121265
-SOCHA;Partido de la U;140;2845;4.920914
-SOCHA;Cambio Radical;21;2845;0.738137
-SOCHA;Votos en blanco;9;2845;0.316344
-SOCOTA;Centro Democrático;2007;2855;70.297723
-SOCOTA;Partido Liberal Colombiano;505;2855;17.688266
-SOCOTA;Partido de la U;187;2855;6.549912
-SOCOTA;Pacto Histórico;125;2855;4.378284
-SOCOTA;Cambio Radical;28;2855;0.980736
-SOCOTA;Votos en blanco;3;2855;0.105079
-SOGAMOSO;Pacto Histórico;20896;58499;35.720269
-SOGAMOSO;Centro Democrático;20401;58499;34.8741
-SOGAMOSO;Partido Liberal Colombiano;15640;58499;26.7355
-SOGAMOSO;Partido de la U;1226;58499;2.095762
-SOGAMOSO;Cambio Radical;256;58499;0.437614
-SOGAMOSO;Votos en blanco;80;58499;0.136754
-SOMONDOCO;Centro Democrático;803;1310;61.29771
-SOMONDOCO;Pacto Histórico;257;1310;19.618321
-SOMONDOCO;Partido Liberal Colombiano;227;1310;17.328244
-SOMONDOCO;Partido de la U;15;1310;1.145038
-SOMONDOCO;Cambio Radical;6;1310;0.458015
-SOMONDOCO;Votos en blanco;2;1310;0.152672
-SORA;Centro Democrático;525;1270;41.338583
-SORA;Partido Liberal Colombiano;401;1270;31.574803
-SORA;Pacto Histórico;313;1270;24.645669
-SORA;Partido de la U;18;1270;1.417323
-SORA;Cambio Radical;7;1270;0.551181
-SORA;Votos en blanco;6;1270;0.472441
-SORACA;Centro Democrático;1566;3019;51.871481
-SORACA;Pacto Histórico;747;3019;24.743292
-SORACA;Partido Liberal Colombiano;642;3019;21.26532
-SORACA;Partido de la U;42;3019;1.391189
-SORACA;Cambio Radical;19;3019;0.629347
-SORACA;Votos en blanco;3;3019;0.099371
-SOTAQUIRA;Centro Democrático;2135;3512;60.791572
-SOTAQUIRA;Pacto Histórico;754;3512;21.469248
-SOTAQUIRA;Partido Liberal Colombiano;535;3512;15.233485
-SOTAQUIRA;Partido de la U;55;3512;1.566059
-SOTAQUIRA;Cambio Radical;26;3512;0.740319
-SOTAQUIRA;Votos en blanco;7;3512;0.199317
-SUSACON;Centro Democrático;1111;1420;78.239437
-SUSACON;Partido Liberal Colombiano;145;1420;10.211268
-SUSACON;Pacto Histórico;140;1420;9.859155
-SUSACON;Cambio Radical;9;1420;0.633803
-SUSACON;Partido de la U;9;1420;0.633803
-SUSACON;Votos en blanco;6;1420;0.422535
-SUTAMARCHAN;Centro Democrático;2403;3493;68.794732
-SUTAMARCHAN;Partido Liberal Colombiano;543;3493;15.545376
-SUTAMARCHAN;Pacto Histórico;496;3493;14.199828
-SUTAMARCHAN;Partido de la U;42;3493;1.202405
-SUTAMARCHAN;Cambio Radical;8;3493;0.229029
-SUTAMARCHAN;Votos en blanco;1;3493;0.028629
-SUTATENZA;Centro Democrático;1379;2024;68.132411
-SUTATENZA;Pacto Histórico;308;2024;15.217391
-SUTATENZA;Partido Liberal Colombiano;297;2024;14.673913
-SUTATENZA;Partido de la U;21;2024;1.037549
-SUTATENZA;Cambio Radical;11;2024;0.543478
-SUTATENZA;Votos en blanco;8;2024;0.395257
-TASCO;Centro Democrático;888;2015;44.069479
-TASCO;Partido Liberal Colombiano;576;2015;28.585608
-TASCO;Pacto Histórico;480;2015;23.82134
-TASCO;Partido de la U;55;2015;2.729529
-TASCO;Cambio Radical;13;2015;0.645161
-TASCO;Votos en blanco;3;2015;0.148883
-TENZA;Centro Democrático;1148;1718;66.821886
-TENZA;Pacto Histórico;324;1718;18.859139
-TENZA;Partido Liberal Colombiano;211;1718;12.281723
-TENZA;Cambio Radical;15;1718;0.873108
-TENZA;Partido de la U;15;1718;0.873108
-TENZA;Votos en blanco;5;1718;0.291036
-TIBANA;Centro Democrático;1518;2988;50.803213
-TIBANA;Partido Liberal Colombiano;734;2988;24.564926
-TIBANA;Pacto Histórico;565;2988;18.908969
-TIBANA;Partido de la U;145;2988;4.852744
-TIBANA;Cambio Radical;23;2988;0.769746
-TIBANA;Votos en blanco;3;2988;0.100402
-TIBASOSA;Centro Democrático;2071;5406;38.309286
-TIBASOSA;Pacto Histórico;1640;5406;30.336663
-TIBASOSA;Partido Liberal Colombiano;1549;5406;28.653348
-TIBASOSA;Partido de la U;97;5406;1.794303
-TIBASOSA;Cambio Radical;36;5406;0.665927
-TIBASOSA;Votos en blanco;13;5406;0.240474
-TINJACA;Centro Democrático;896;1748;51.258581
-TINJACA;Partido Liberal Colombiano;459;1748;26.258581
-TINJACA;Pacto Histórico;355;1748;20.308924
-TINJACA;Partido de la U;28;1748;1.601831
-TINJACA;Cambio Radical;9;1748;0.514874
-TINJACA;Votos en blanco;1;1748;0.057208
-TIPACOQUE;Centro Democrático;1192;1619;73.625695
-TIPACOQUE;Partido Liberal Colombiano;182;1619;11.241507
-TIPACOQUE;Pacto Histórico;175;1619;10.809141
-TIPACOQUE;Partido de la U;54;1619;3.335392
-TIPACOQUE;Cambio Radical;13;1619;0.802965
-TIPACOQUE;Votos en blanco;3;1619;0.1853
-TOCA;Centro Democrático;1731;3622;47.791276
-TOCA;Pacto Histórico;902;3622;24.903368
-TOCA;Partido Liberal Colombiano;891;3622;24.599669
-TOCA;Partido de la U;74;3622;2.04307
-TOCA;Cambio Radical;17;3622;0.469354
-TOCA;Votos en blanco;7;3622;0.193263
-TOGUI;Centro Democrático;1432;1953;73.323093
-TOGUI;Partido Liberal Colombiano;226;1953;11.571941
-TOGUI;Pacto Histórico;221;1953;11.315924
-TOGUI;Partido de la U;62;1953;3.174603
-TOGUI;Cambio Radical;11;1953;0.563236
-TOGUI;Votos en blanco;1;1953;0.051203
-TOPAGA;Centro Democrático;1031;1920;53.697917
-TOPAGA;Pacto Histórico;438;1920;22.8125
-TOPAGA;Partido Liberal Colombiano;417;1920;21.71875
-TOPAGA;Partido de la U;24;1920;1.25
-TOPAGA;Cambio Radical;6;1920;0.3125
-TOPAGA;Votos en blanco;4;1920;0.208333
-TOTA;Centro Democrático;1277;1670;76.467066
-TOTA;Partido Liberal Colombiano;194;1670;11.616766
-TOTA;Pacto Histórico;166;1670;9.94012
-TOTA;Cambio Radical;16;1670;0.958084
-TOTA;Partido de la U;14;1670;0.838323
-TOTA;Votos en blanco;3;1670;0.179641
-TUNJA;Pacto Histórico;32035;80237;39.925471
-TUNJA;Partido Liberal Colombiano;23151;80237;28.853272
-TUNJA;Centro Democrático;22388;80237;27.902339
-TUNJA;Partido de la U;2177;80237;2.713212
-TUNJA;Cambio Radical;399;80237;0.497277
-TUNJA;Votos en blanco;87;80237;0.108429
-TUNUNGUA;Centro Democrático;407;690;58.985507
-TUNUNGUA;Partido Liberal Colombiano;184;690;26.666667
-TUNUNGUA;Pacto Histórico;68;690;9.855072
-TUNUNGUA;Partido de la U;20;690;2.898551
-TUNUNGUA;Cambio Radical;10;690;1.449275
-TUNUNGUA;Votos en blanco;1;690;0.144928
-TURMEQUE;Centro Democrático;947;2451;38.637291
-TURMEQUE;Pacto Histórico;854;2451;34.842921
-TURMEQUE;Partido Liberal Colombiano;531;2451;21.664627
-TURMEQUE;Partido de la U;101;2451;4.120767
-TURMEQUE;Cambio Radical;12;2451;0.489596
-TURMEQUE;Votos en blanco;6;2451;0.244798
-TUTA;Centro Democrático;1734;4336;39.990775
-TUTA;Pacto Histórico;1477;4336;34.063653
-TUTA;Partido Liberal Colombiano;989;4336;22.809041
-TUTA;Partido de la U;117;4336;2.698339
-TUTA;Cambio Radical;12;4336;0.276753
-TUTA;Votos en blanco;7;4336;0.161439
-TUTAZA;Centro Democrático;478;1010;47.326733
-TUTAZA;Partido Liberal Colombiano;314;1010;31.089109
-TUTAZA;Pacto Histórico;175;1010;17.326733
-TUTAZA;Partido de la U;28;1010;2.772277
-TUTAZA;Cambio Radical;13;1010;1.287129
-TUTAZA;Votos en blanco;2;1010;0.19802
-UMBITA;Centro Democrático;2218;3193;69.464453
-UMBITA;Partido Liberal Colombiano;503;3193;15.75321
-UMBITA;Pacto Histórico;427;3193;13.373003
-UMBITA;Partido de la U;31;3193;0.970874
-UMBITA;Cambio Radical;11;3193;0.344504
-UMBITA;Votos en blanco;3;3193;0.093956
-VENTAQUEMADA;Centro Democrático;2201;5319;41.379959
-VENTAQUEMADA;Partido Liberal Colombiano;1673;5319;31.453281
-VENTAQUEMADA;Pacto Histórico;1302;5319;24.478285
-VENTAQUEMADA;Partido de la U;102;5319;1.917654
-VENTAQUEMADA;Cambio Radical;31;5319;0.582816
-VENTAQUEMADA;Votos en blanco;10;5319;0.188005
-VILLA DE LEYVA;Centro Democrático;3421;7442;45.968826
-VILLA DE LEYVA;Pacto Histórico;2585;7442;34.735286
-VILLA DE LEYVA;Partido Liberal Colombiano;1280;7442;17.199678
-VILLA DE LEYVA;Partido de la U;120;7442;1.61247
-VILLA DE LEYVA;Cambio Radical;31;7442;0.416555
-VILLA DE LEYVA;Votos en blanco;5;7442;0.067186
-VIRACACHA;Centro Democrático;934;1313;71.134806
-VIRACACHA;Pacto Histórico;189;1313;14.394516
-VIRACACHA;Partido Liberal Colombiano;159;1313;12.109673
-VIRACACHA;Partido de la U;17;1313;1.294745
-VIRACACHA;Cambio Radical;12;1313;0.913938
-VIRACACHA;Votos en blanco;2;1313;0.152323
-ZETAQUIRA;Centro Democrático;1261;1997;63.144717
-ZETAQUIRA;Partido Liberal Colombiano;425;1997;21.281923
-ZETAQUIRA;Pacto Histórico;265;1997;13.269905
-ZETAQUIRA;Partido de la U;27;1997;1.352028
-ZETAQUIRA;Cambio Radical;12;1997;0.600901
-ZETAQUIRA;Votos en blanco;7;1997;0.350526
+MUNNOMBRE;PARNOMBRE;VOTOS
+ALMEIDA;Cambio Radical;62
+ALMEIDA;Centro Democrático;648
+ALMEIDA;Centro Esperanza;114
+ALMEIDA;Pacto Histórico;122
+ALMEIDA;Partido Liberal Colombiano;10
+ALMEIDA;Partido Somos;4
+ALMEIDA;Promotores Voto En Blanco;1
+ALMEIDA;Todos Somos Colombia;1
+AQUITANIA;Cambio Radical;228
+AQUITANIA;Centro Democrático;5042
+AQUITANIA;Centro Esperanza;912
+AQUITANIA;Pacto Histórico;661
+AQUITANIA;Partido Liberal Colombiano;45
+AQUITANIA;Partido Somos;17
+AQUITANIA;Promotores Voto En Blanco;10
+AQUITANIA;Todos Somos Colombia;16
+ARCABUCO;Cambio Radical;93
+ARCABUCO;Centro Democrático;1110
+ARCABUCO;Centro Esperanza;739
+ARCABUCO;Pacto Histórico;557
+ARCABUCO;Partido Liberal Colombiano;31
+ARCABUCO;Partido Somos;4
+ARCABUCO;Promotores Voto En Blanco;6
+ARCABUCO;Todos Somos Colombia;7
+BELEN;Cambio Radical;140
+BELEN;Centro Democrático;1483
+BELEN;Centro Esperanza;877
+BELEN;Pacto Histórico;957
+BELEN;Partido Liberal Colombiano;127
+BELEN;Partido Somos;8
+BELEN;Promotores Voto En Blanco;5
+BELEN;Todos Somos Colombia;12
+BERBEO;Cambio Radical;35
+BERBEO;Centro Democrático;299
+BERBEO;Centro Esperanza;77
+BERBEO;Pacto Histórico;281
+BERBEO;Partido Liberal Colombiano;13
+BERBEO;Partido Somos;3
+BERBEO;Todos Somos Colombia;2
+BETEITIVA;Cambio Radical;80
+BETEITIVA;Centro Democrático;331
+BETEITIVA;Centro Esperanza;198
+BETEITIVA;Pacto Histórico;228
+BETEITIVA;Partido Liberal Colombiano;38
+BETEITIVA;Partido Somos;5
+BETEITIVA;Promotores Voto En Blanco;3
+BOAVITA;Cambio Radical;237
+BOAVITA;Centro Democrático;1494
+BOAVITA;Centro Esperanza;376
+BOAVITA;Pacto Histórico;279
+BOAVITA;Partido Liberal Colombiano;18
+BOAVITA;Partido Somos;6
+BOAVITA;Promotores Voto En Blanco;2
+BOAVITA;Todos Somos Colombia;5
+BOYACA;Cambio Radical;84
+BOYACA;Centro Democrático;849
+BOYACA;Centro Esperanza;264
+BOYACA;Pacto Histórico;404
+BOYACA;Partido Liberal Colombiano;73
+BOYACA;Partido Somos;5
+BOYACA;Promotores Voto En Blanco;2
+BOYACA;Todos Somos Colombia;4
+BRICENO;Cambio Radical;28
+BRICENO;Centro Democrático;872
+BRICENO;Centro Esperanza;99
+BRICENO;Pacto Histórico;116
+BRICENO;Partido Liberal Colombiano;7
+BRICENO;Partido Somos;1
+BRICENO;Promotores Voto En Blanco;2
+BRICENO;Todos Somos Colombia;1
+BUENAVISTA;Cambio Radical;437
+BUENAVISTA;Centro Democrático;1529
+BUENAVISTA;Centro Esperanza;190
+BUENAVISTA;Pacto Histórico;281
+BUENAVISTA;Partido Liberal Colombiano;25
+BUENAVISTA;Partido Somos;13
+BUENAVISTA;Promotores Voto En Blanco;3
+BUENAVISTA;Todos Somos Colombia;8
+BUSBANZA;Cambio Radical;31
+BUSBANZA;Centro Democrático;220
+BUSBANZA;Centro Esperanza;161
+BUSBANZA;Pacto Histórico;82
+BUSBANZA;Partido Liberal Colombiano;8
+BUSBANZA;Partido Somos;1
+BUSBANZA;Promotores Voto En Blanco;4
+BUSBANZA;Todos Somos Colombia;1
+CALDAS;Cambio Radical;113
+CALDAS;Centro Democrático;835
+CALDAS;Centro Esperanza;320
+CALDAS;Pacto Histórico;234
+CALDAS;Partido Liberal Colombiano;33
+CALDAS;Partido Somos;4
+CALDAS;Promotores Voto En Blanco;2
+CALDAS;Todos Somos Colombia;4
+CAMPOHERMOSO;Cambio Radical;264
+CAMPOHERMOSO;Centro Democrático;810
+CAMPOHERMOSO;Centro Esperanza;130
+CAMPOHERMOSO;Pacto Histórico;119
+CAMPOHERMOSO;Partido Liberal Colombiano;9
+CAMPOHERMOSO;Partido Somos;3
+CAMPOHERMOSO;Promotores Voto En Blanco;3
+CAMPOHERMOSO;Todos Somos Colombia;3
+CERINZA;Cambio Radical;112
+CERINZA;Centro Democrático;801
+CERINZA;Centro Esperanza;416
+CERINZA;Pacto Histórico;710
+CERINZA;Partido Liberal Colombiano;30
+CERINZA;Partido Somos;4
+CERINZA;Promotores Voto En Blanco;3
+CERINZA;Todos Somos Colombia;9
+CHINAVITA;Cambio Radical;97
+CHINAVITA;Centro Democrático;1015
+CHINAVITA;Centro Esperanza;238
+CHINAVITA;Pacto Histórico;171
+CHINAVITA;Partido Liberal Colombiano;9
+CHINAVITA;Promotores Voto En Blanco;1
+CHINAVITA;Todos Somos Colombia;2
+CHIQUINQUIRA;Cambio Radical;1577
+CHIQUINQUIRA;Centro Democrático;9545
+CHIQUINQUIRA;Centro Esperanza;7528
+CHIQUINQUIRA;Pacto Histórico;4805
+CHIQUINQUIRA;Partido Liberal Colombiano;317
+CHIQUINQUIRA;Partido Somos;36
+CHIQUINQUIRA;Promotores Voto En Blanco;29
+CHIQUINQUIRA;Todos Somos Colombia;61
+CHIQUIZA;Cambio Radical;104
+CHIQUIZA;Centro Democrático;342
+CHIQUIZA;Centro Esperanza;167
+CHIQUIZA;Pacto Histórico;705
+CHIQUIZA;Partido Liberal Colombiano;66
+CHIQUIZA;Partido Somos;5
+CHIQUIZA;Promotores Voto En Blanco;8
+CHIQUIZA;Todos Somos Colombia;5
+CHISCAS;Cambio Radical;84
+CHISCAS;Centro Democrático;1311
+CHISCAS;Centro Esperanza;88
+CHISCAS;Pacto Histórico;126
+CHISCAS;Partido Liberal Colombiano;30
+CHISCAS;Partido Somos;8
+CHISCAS;Promotores Voto En Blanco;2
+CHISCAS;Todos Somos Colombia;2
+CHITA;Cambio Radical;41
+CHITA;Centro Democrático;2315
+CHITA;Centro Esperanza;158
+CHITA;Pacto Histórico;320
+CHITA;Partido Liberal Colombiano;31
+CHITA;Partido Somos;8
+CHITA;Promotores Voto En Blanco;65
+CHITA;Todos Somos Colombia;10
+CHITARAQUE;Cambio Radical;357
+CHITARAQUE;Centro Democrático;1853
+CHITARAQUE;Centro Esperanza;147
+CHITARAQUE;Pacto Histórico;244
+CHITARAQUE;Partido Liberal Colombiano;15
+CHITARAQUE;Partido Somos;9
+CHITARAQUE;Promotores Voto En Blanco;1
+CHITARAQUE;Todos Somos Colombia;8
+CHIVATA;Cambio Radical;65
+CHIVATA;Centro Democrático;538
+CHIVATA;Centro Esperanza;528
+CHIVATA;Pacto Histórico;304
+CHIVATA;Partido Liberal Colombiano;23
+CHIVATA;Partido Somos;5
+CHIVATA;Promotores Voto En Blanco;3
+CHIVATA;Todos Somos Colombia;6
+CHIVOR;Cambio Radical;17
+CHIVOR;Centro Democrático;842
+CHIVOR;Centro Esperanza;109
+CHIVOR;Pacto Histórico;50
+CHIVOR;Partido Liberal Colombiano;3
+CHIVOR;Partido Somos;2
+CIENEGA;Cambio Radical;63
+CIENEGA;Centro Democrático;1377
+CIENEGA;Centro Esperanza;284
+CIENEGA;Pacto Histórico;195
+CIENEGA;Partido Liberal Colombiano;14
+CIENEGA;Partido Somos;6
+CIENEGA;Promotores Voto En Blanco;4
+CIENEGA;Todos Somos Colombia;3
+COMBITA;Cambio Radical;229
+COMBITA;Centro Democrático;1338
+COMBITA;Centro Esperanza;1541
+COMBITA;Pacto Histórico;1235
+COMBITA;Partido Liberal Colombiano;126
+COMBITA;Partido Somos;10
+COMBITA;Promotores Voto En Blanco;8
+COMBITA;Todos Somos Colombia;9
+COPER;Cambio Radical;295
+COPER;Centro Democrático;1083
+COPER;Centro Esperanza;74
+COPER;Pacto Histórico;108
+COPER;Partido Liberal Colombiano;13
+COPER;Partido Somos;1
+COPER;Promotores Voto En Blanco;5
+COPER;Todos Somos Colombia;3
+CORRALES;Cambio Radical;152
+CORRALES;Centro Democrático;409
+CORRALES;Centro Esperanza;414
+CORRALES;Pacto Histórico;368
+CORRALES;Partido Liberal Colombiano;22
+CORRALES;Partido Somos;3
+CORRALES;Promotores Voto En Blanco;1
+CORRALES;Todos Somos Colombia;2
+COVARACHIA;Cambio Radical;25
+COVARACHIA;Centro Democrático;1266
+COVARACHIA;Centro Esperanza;111
+COVARACHIA;Pacto Histórico;63
+COVARACHIA;Partido Liberal Colombiano;8
+COVARACHIA;Partido Somos;3
+COVARACHIA;Promotores Voto En Blanco;4
+COVARACHIA;Todos Somos Colombia;5
+CUBARA;Cambio Radical;59
+CUBARA;Centro Democrático;732
+CUBARA;Centro Esperanza;289
+CUBARA;Pacto Histórico;819
+CUBARA;Partido Liberal Colombiano;57
+CUBARA;Partido Somos;5
+CUBARA;Promotores Voto En Blanco;8
+CUBARA;Todos Somos Colombia;11
+CUCAITA;Cambio Radical;35
+CUCAITA;Centro Democrático;522
+CUCAITA;Centro Esperanza;385
+CUCAITA;Pacto Histórico;682
+CUCAITA;Partido Liberal Colombiano;23
+CUCAITA;Partido Somos;2
+CUCAITA;Promotores Voto En Blanco;4
+CUCAITA;Todos Somos Colombia;2
+CUITIVA;Cambio Radical;67
+CUITIVA;Centro Democrático;532
+CUITIVA;Centro Esperanza;179
+CUITIVA;Pacto Histórico;184
+CUITIVA;Partido Liberal Colombiano;13
+CUITIVA;Partido Somos;4
+CUITIVA;Todos Somos Colombia;2
+DUITAMA;Cambio Radical;1741
+DUITAMA;Centro Democrático;16485
+DUITAMA;Centro Esperanza;21777
+DUITAMA;Pacto Histórico;16179
+DUITAMA;Partido Liberal Colombiano;1141
+DUITAMA;Partido Somos;68
+DUITAMA;Promotores Voto En Blanco;56
+DUITAMA;Todos Somos Colombia;151
+EL COCUY;Cambio Radical;29
+EL COCUY;Centro Democrático;1526
+EL COCUY;Centro Esperanza;129
+EL COCUY;Pacto Histórico;139
+EL COCUY;Partido Liberal Colombiano;43
+EL COCUY;Partido Somos;3
+EL COCUY;Promotores Voto En Blanco;2
+EL COCUY;Todos Somos Colombia;2
+EL ESPINO;Cambio Radical;16
+EL ESPINO;Centro Democrático;1116
+EL ESPINO;Centro Esperanza;83
+EL ESPINO;Pacto Histórico;70
+EL ESPINO;Partido Liberal Colombiano;10
+EL ESPINO;Partido Somos;5
+EL ESPINO;Promotores Voto En Blanco;1
+EL ESPINO;Todos Somos Colombia;2
+FIRAVITOBA;Cambio Radical;209
+FIRAVITOBA;Centro Democrático;950
+FIRAVITOBA;Centro Esperanza;865
+FIRAVITOBA;Pacto Histórico;749
+FIRAVITOBA;Partido Liberal Colombiano;53
+FIRAVITOBA;Partido Somos;4
+FIRAVITOBA;Promotores Voto En Blanco;4
+FIRAVITOBA;Todos Somos Colombia;8
+FLORESTA;Cambio Radical;131
+FLORESTA;Centro Democrático;948
+FLORESTA;Centro Esperanza;336
+FLORESTA;Pacto Histórico;317
+FLORESTA;Partido Liberal Colombiano;22
+FLORESTA;Partido Somos;4
+FLORESTA;Promotores Voto En Blanco;7
+FLORESTA;Todos Somos Colombia;7
+GACHANTIVA;Cambio Radical;51
+GACHANTIVA;Centro Democrático;914
+GACHANTIVA;Centro Esperanza;323
+GACHANTIVA;Pacto Histórico;318
+GACHANTIVA;Partido Liberal Colombiano;24
+GACHANTIVA;Partido Somos;8
+GACHANTIVA;Promotores Voto En Blanco;6
+GACHANTIVA;Todos Somos Colombia;4
+GAMEZA;Cambio Radical;131
+GAMEZA;Centro Democrático;1148
+GAMEZA;Centro Esperanza;407
+GAMEZA;Pacto Histórico;279
+GAMEZA;Partido Liberal Colombiano;27
+GAMEZA;Partido Somos;5
+GAMEZA;Promotores Voto En Blanco;2
+GAMEZA;Todos Somos Colombia;8
+GARAGOA;Cambio Radical;506
+GARAGOA;Centro Democrático;2760
+GARAGOA;Centro Esperanza;2049
+GARAGOA;Pacto Histórico;1242
+GARAGOA;Partido Liberal Colombiano;99
+GARAGOA;Partido Somos;11
+GARAGOA;Promotores Voto En Blanco;12
+GARAGOA;Todos Somos Colombia;33
+GUACAMAYAS;Cambio Radical;18
+GUACAMAYAS;Centro Democrático;767
+GUACAMAYAS;Centro Esperanza;55
+GUACAMAYAS;Pacto Histórico;57
+GUACAMAYAS;Partido Liberal Colombiano;6
+GUACAMAYAS;Promotores Voto En Blanco;2
+GUACAMAYAS;Todos Somos Colombia;2
+GUATEQUE;Cambio Radical;736
+GUATEQUE;Centro Democrático;1857
+GUATEQUE;Centro Esperanza;1303
+GUATEQUE;Pacto Histórico;830
+GUATEQUE;Partido Liberal Colombiano;114
+GUATEQUE;Partido Somos;8
+GUATEQUE;Promotores Voto En Blanco;5
+GUATEQUE;Todos Somos Colombia;33
+GUAYATA;Cambio Radical;159
+GUAYATA;Centro Democrático;1367
+GUAYATA;Centro Esperanza;351
+GUAYATA;Pacto Histórico;189
+GUAYATA;Partido Liberal Colombiano;17
+GUAYATA;Partido Somos;7
+GUAYATA;Promotores Voto En Blanco;4
+GUAYATA;Todos Somos Colombia;6
+GUICAN DE LA SIERRA;Cambio Radical;19
+GUICAN DE LA SIERRA;Centro Democrático;1019
+GUICAN DE LA SIERRA;Centro Esperanza;133
+GUICAN DE LA SIERRA;Pacto Histórico;427
+GUICAN DE LA SIERRA;Partido Liberal Colombiano;9
+GUICAN DE LA SIERRA;Partido Somos;1
+GUICAN DE LA SIERRA;Promotores Voto En Blanco;4
+GUICAN DE LA SIERRA;Todos Somos Colombia;3
+IZA;Cambio Radical;55
+IZA;Centro Democrático;629
+IZA;Centro Esperanza;342
+IZA;Pacto Histórico;197
+IZA;Partido Liberal Colombiano;21
+IZA;Partido Somos;2
+IZA;Promotores Voto En Blanco;2
+JENESANO;Cambio Radical;112
+JENESANO;Centro Democrático;1277
+JENESANO;Centro Esperanza;511
+JENESANO;Pacto Histórico;544
+JENESANO;Partido Liberal Colombiano;101
+JENESANO;Partido Somos;13
+JENESANO;Promotores Voto En Blanco;7
+JENESANO;Todos Somos Colombia;12
+JERICO;Cambio Radical;22
+JERICO;Centro Democrático;1235
+JERICO;Centro Esperanza;90
+JERICO;Pacto Histórico;143
+JERICO;Partido Liberal Colombiano;10
+JERICO;Partido Somos;6
+JERICO;Promotores Voto En Blanco;1
+JERICO;Todos Somos Colombia;6
+LA CAPILLA;Cambio Radical;57
+LA CAPILLA;Centro Democrático;836
+LA CAPILLA;Centro Esperanza;187
+LA CAPILLA;Pacto Histórico;264
+LA CAPILLA;Partido Liberal Colombiano;10
+LA CAPILLA;Partido Somos;7
+LA CAPILLA;Promotores Voto En Blanco;2
+LA CAPILLA;Todos Somos Colombia;6
+LA UVITA;Cambio Radical;30
+LA UVITA;Centro Democrático;1077
+LA UVITA;Centro Esperanza;145
+LA UVITA;Pacto Histórico;67
+LA UVITA;Partido Liberal Colombiano;12
+LA UVITA;Partido Somos;2
+LA UVITA;Promotores Voto En Blanco;4
+LA UVITA;Todos Somos Colombia;2
+LA VICTORIA;Cambio Radical;59
+LA VICTORIA;Centro Democrático;626
+LA VICTORIA;Centro Esperanza;46
+LA VICTORIA;Pacto Histórico;76
+LA VICTORIA;Partido Liberal Colombiano;8
+LA VICTORIA;Partido Somos;5
+LA VICTORIA;Promotores Voto En Blanco;2
+LA VICTORIA;Todos Somos Colombia;3
+LABRANZAGRANDE;Cambio Radical;27
+LABRANZAGRANDE;Centro Democrático;1060
+LABRANZAGRANDE;Centro Esperanza;209
+LABRANZAGRANDE;Pacto Histórico;164
+LABRANZAGRANDE;Partido Liberal Colombiano;12
+LABRANZAGRANDE;Partido Somos;8
+LABRANZAGRANDE;Promotores Voto En Blanco;2
+LABRANZAGRANDE;Todos Somos Colombia;6
+MACANAL;Cambio Radical;91
+MACANAL;Centro Democrático;1291
+MACANAL;Centro Esperanza;290
+MACANAL;Pacto Histórico;198
+MACANAL;Partido Liberal Colombiano;14
+MACANAL;Partido Somos;10
+MACANAL;Promotores Voto En Blanco;3
+MACANAL;Todos Somos Colombia;4
+MARIPI;Cambio Radical;1060
+MARIPI;Centro Democrático;1433
+MARIPI;Centro Esperanza;145
+MARIPI;Pacto Histórico;185
+MARIPI;Partido Liberal Colombiano;13
+MARIPI;Partido Somos;8
+MARIPI;Promotores Voto En Blanco;1
+MARIPI;Todos Somos Colombia;4
+MIRAFLORES;Cambio Radical;269
+MIRAFLORES;Centro Democrático;1380
+MIRAFLORES;Centro Esperanza;898
+MIRAFLORES;Pacto Histórico;1577
+MIRAFLORES;Partido Liberal Colombiano;86
+MIRAFLORES;Partido Somos;12
+MIRAFLORES;Promotores Voto En Blanco;9
+MIRAFLORES;Todos Somos Colombia;17
+MONGUA;Cambio Radical;40
+MONGUA;Centro Democrático;2052
+MONGUA;Centro Esperanza;232
+MONGUA;Pacto Histórico;225
+MONGUA;Partido Liberal Colombiano;13
+MONGUA;Partido Somos;3
+MONGUA;Promotores Voto En Blanco;2
+MONGUA;Todos Somos Colombia;4
+MONGUI;Cambio Radical;59
+MONGUI;Centro Democrático;1026
+MONGUI;Centro Esperanza;527
+MONGUI;Pacto Histórico;440
+MONGUI;Partido Liberal Colombiano;25
+MONGUI;Partido Somos;3
+MONGUI;Promotores Voto En Blanco;1
+MONGUI;Todos Somos Colombia;4
+MONIQUIRA;Cambio Radical;491
+MONIQUIRA;Centro Democrático;4459
+MONIQUIRA;Centro Esperanza;2004
+MONIQUIRA;Pacto Histórico;2194
+MONIQUIRA;Partido Liberal Colombiano;157
+MONIQUIRA;Partido Somos;15
+MONIQUIRA;Promotores Voto En Blanco;13
+MONIQUIRA;Todos Somos Colombia;40
+MOTAVITA;Cambio Radical;121
+MOTAVITA;Centro Democrático;633
+MOTAVITA;Centro Esperanza;648
+MOTAVITA;Pacto Histórico;1153
+MOTAVITA;Partido Liberal Colombiano;67
+MOTAVITA;Partido Somos;4
+MOTAVITA;Promotores Voto En Blanco;5
+MOTAVITA;Todos Somos Colombia;3
+MUZO;Cambio Radical;156
+MUZO;Centro Democrático;2964
+MUZO;Centro Esperanza;336
+MUZO;Pacto Histórico;540
+MUZO;Partido Liberal Colombiano;30
+MUZO;Partido Somos;20
+MUZO;Promotores Voto En Blanco;7
+MUZO;Todos Somos Colombia;29
+NOBSA;Cambio Radical;715
+NOBSA;Centro Democrático;1400
+NOBSA;Centro Esperanza;2399
+NOBSA;Pacto Histórico;3668
+NOBSA;Partido Liberal Colombiano;177
+NOBSA;Partido Somos;6
+NOBSA;Promotores Voto En Blanco;8
+NOBSA;Todos Somos Colombia;27
+NUEVO COLON;Cambio Radical;202
+NUEVO COLON;Centro Democrático;702
+NUEVO COLON;Centro Esperanza;453
+NUEVO COLON;Pacto Histórico;593
+NUEVO COLON;Partido Liberal Colombiano;92
+NUEVO COLON;Partido Somos;10
+NUEVO COLON;Promotores Voto En Blanco;4
+NUEVO COLON;Todos Somos Colombia;7
+OICATA;Cambio Radical;72
+OICATA;Centro Democrático;628
+OICATA;Centro Esperanza;424
+OICATA;Pacto Histórico;420
+OICATA;Partido Liberal Colombiano;32
+OICATA;Partido Somos;3
+OICATA;Promotores Voto En Blanco;3
+OICATA;Todos Somos Colombia;6
+OTANCHE;Cambio Radical;96
+OTANCHE;Centro Democrático;2697
+OTANCHE;Centro Esperanza;276
+OTANCHE;Pacto Histórico;228
+OTANCHE;Partido Liberal Colombiano;22
+OTANCHE;Partido Somos;6
+OTANCHE;Promotores Voto En Blanco;3
+OTANCHE;Todos Somos Colombia;12
+PACHAVITA;Cambio Radical;30
+PACHAVITA;Centro Democrático;655
+PACHAVITA;Centro Esperanza;210
+PACHAVITA;Pacto Histórico;119
+PACHAVITA;Partido Liberal Colombiano;6
+PACHAVITA;Partido Somos;1
+PACHAVITA;Promotores Voto En Blanco;2
+PACHAVITA;Todos Somos Colombia;2
+PAEZ;Cambio Radical;71
+PAEZ;Centro Democrático;976
+PAEZ;Centro Esperanza;228
+PAEZ;Pacto Histórico;173
+PAEZ;Partido Liberal Colombiano;27
+PAEZ;Partido Somos;4
+PAEZ;Promotores Voto En Blanco;4
+PAEZ;Todos Somos Colombia;11
+PAIPA;Cambio Radical;823
+PAIPA;Centro Democrático;4650
+PAIPA;Centro Esperanza;6290
+PAIPA;Pacto Histórico;3918
+PAIPA;Partido Liberal Colombiano;317
+PAIPA;Partido Somos;26
+PAIPA;Promotores Voto En Blanco;16
+PAIPA;Todos Somos Colombia;35
+PAJARITO;Cambio Radical;9
+PAJARITO;Centro Democrático;638
+PAJARITO;Centro Esperanza;138
+PAJARITO;Pacto Histórico;80
+PAJARITO;Partido Liberal Colombiano;10
+PAJARITO;Partido Somos;3
+PAJARITO;Promotores Voto En Blanco;3
+PAJARITO;Todos Somos Colombia;5
+PANQUEBA;Cambio Radical;10
+PANQUEBA;Centro Democrático;627
+PANQUEBA;Centro Esperanza;147
+PANQUEBA;Pacto Histórico;56
+PANQUEBA;Partido Liberal Colombiano;15
+PANQUEBA;Partido Somos;2
+PANQUEBA;Todos Somos Colombia;1
+PAUNA;Cambio Radical;127
+PAUNA;Centro Democrático;2153
+PAUNA;Centro Esperanza;300
+PAUNA;Pacto Histórico;662
+PAUNA;Partido Liberal Colombiano;23
+PAUNA;Partido Somos;10
+PAUNA;Promotores Voto En Blanco;7
+PAUNA;Todos Somos Colombia;6
+PAYA;Cambio Radical;21
+PAYA;Centro Democrático;563
+PAYA;Centro Esperanza;113
+PAYA;Pacto Histórico;127
+PAYA;Partido Liberal Colombiano;13
+PAYA;Partido Somos;11
+PAYA;Promotores Voto En Blanco;5
+PAYA;Todos Somos Colombia;8
+PAZ DE RIO;Cambio Radical;269
+PAZ DE RIO;Centro Democrático;446
+PAZ DE RIO;Centro Esperanza;522
+PAZ DE RIO;Pacto Histórico;859
+PAZ DE RIO;Partido Liberal Colombiano;96
+PAZ DE RIO;Partido Somos;1
+PAZ DE RIO;Promotores Voto En Blanco;5
+PAZ DE RIO;Todos Somos Colombia;11
+PESCA;Cambio Radical;209
+PESCA;Centro Democrático;1714
+PESCA;Centro Esperanza;495
+PESCA;Pacto Histórico;436
+PESCA;Partido Liberal Colombiano;30
+PESCA;Partido Somos;5
+PESCA;Promotores Voto En Blanco;5
+PESCA;Todos Somos Colombia;7
+PISBA;Cambio Radical;7
+PISBA;Centro Democrático;341
+PISBA;Centro Esperanza;106
+PISBA;Pacto Histórico;89
+PISBA;Partido Liberal Colombiano;3
+PISBA;Partido Somos;1
+PISBA;Todos Somos Colombia;1
+PUERTO BOYACA;Cambio Radical;1045
+PUERTO BOYACA;Centro Democrático;10774
+PUERTO BOYACA;Centro Esperanza;4294
+PUERTO BOYACA;Pacto Histórico;3155
+PUERTO BOYACA;Partido Liberal Colombiano;290
+PUERTO BOYACA;Partido Somos;69
+PUERTO BOYACA;Promotores Voto En Blanco;40
+PUERTO BOYACA;Todos Somos Colombia;84
+QUIPAMA;Cambio Radical;101
+QUIPAMA;Centro Democrático;2058
+QUIPAMA;Centro Esperanza;198
+QUIPAMA;Pacto Histórico;256
+QUIPAMA;Partido Liberal Colombiano;10
+QUIPAMA;Partido Somos;10
+QUIPAMA;Promotores Voto En Blanco;2
+QUIPAMA;Todos Somos Colombia;6
+RAMIRIQUI;Cambio Radical;192
+RAMIRIQUI;Centro Democrático;1975
+RAMIRIQUI;Centro Esperanza;858
+RAMIRIQUI;Pacto Histórico;917
+RAMIRIQUI;Partido Liberal Colombiano;96
+RAMIRIQUI;Partido Somos;10
+RAMIRIQUI;Promotores Voto En Blanco;9
+RAMIRIQUI;Todos Somos Colombia;8
+RAQUIRA;Cambio Radical;63
+RAQUIRA;Centro Democrático;1462
+RAQUIRA;Centro Esperanza;612
+RAQUIRA;Pacto Histórico;449
+RAQUIRA;Partido Liberal Colombiano;69
+RAQUIRA;Partido Somos;9
+RAQUIRA;Promotores Voto En Blanco;11
+RAQUIRA;Todos Somos Colombia;9
+RONDON;Cambio Radical;148
+RONDON;Centro Democrático;679
+RONDON;Centro Esperanza;127
+RONDON;Pacto Histórico;223
+RONDON;Partido Liberal Colombiano;19
+RONDON;Partido Somos;5
+RONDON;Promotores Voto En Blanco;1
+RONDON;Todos Somos Colombia;2
+SABOYA;Cambio Radical;270
+SABOYA;Centro Democrático;2623
+SABOYA;Centro Esperanza;712
+SABOYA;Pacto Histórico;1277
+SABOYA;Partido Liberal Colombiano;123
+SABOYA;Partido Somos;9
+SABOYA;Promotores Voto En Blanco;5
+SABOYA;Todos Somos Colombia;14
+SACHICA;Cambio Radical;118
+SACHICA;Centro Democrático;896
+SACHICA;Centro Esperanza;563
+SACHICA;Pacto Histórico;480
+SACHICA;Partido Liberal Colombiano;53
+SACHICA;Partido Somos;6
+SACHICA;Promotores Voto En Blanco;4
+SACHICA;Todos Somos Colombia;1
+SAMACA;Cambio Radical;213
+SAMACA;Centro Democrático;3074
+SAMACA;Centro Esperanza;2248
+SAMACA;Pacto Histórico;1644
+SAMACA;Partido Liberal Colombiano;88
+SAMACA;Partido Somos;19
+SAMACA;Promotores Voto En Blanco;10
+SAMACA;Todos Somos Colombia;34
+SAN EDUARDO;Cambio Radical;40
+SAN EDUARDO;Centro Democrático;401
+SAN EDUARDO;Centro Esperanza;137
+SAN EDUARDO;Pacto Histórico;179
+SAN EDUARDO;Partido Liberal Colombiano;32
+SAN EDUARDO;Partido Somos;3
+SAN EDUARDO;Todos Somos Colombia;3
+SAN JOSE DE PARE;Cambio Radical;105
+SAN JOSE DE PARE;Centro Democrático;1769
+SAN JOSE DE PARE;Centro Esperanza;267
+SAN JOSE DE PARE;Pacto Histórico;302
+SAN JOSE DE PARE;Partido Liberal Colombiano;42
+SAN JOSE DE PARE;Partido Somos;12
+SAN JOSE DE PARE;Promotores Voto En Blanco;3
+SAN JOSE DE PARE;Todos Somos Colombia;5
+SAN LUIS DE GACENO;Cambio Radical;86
+SAN LUIS DE GACENO;Centro Democrático;1841
+SAN LUIS DE GACENO;Centro Esperanza;358
+SAN LUIS DE GACENO;Pacto Histórico;160
+SAN LUIS DE GACENO;Partido Liberal Colombiano;16
+SAN LUIS DE GACENO;Partido Somos;1
+SAN LUIS DE GACENO;Todos Somos Colombia;5
+SAN MATEO;Cambio Radical;54
+SAN MATEO;Centro Democrático;1665
+SAN MATEO;Centro Esperanza;142
+SAN MATEO;Pacto Histórico;86
+SAN MATEO;Partido Liberal Colombiano;8
+SAN MATEO;Partido Somos;5
+SAN MATEO;Todos Somos Colombia;3
+SAN MIGUEL DE SEMA;Cambio Radical;110
+SAN MIGUEL DE SEMA;Centro Democrático;858
+SAN MIGUEL DE SEMA;Centro Esperanza;261
+SAN MIGUEL DE SEMA;Pacto Histórico;153
+SAN MIGUEL DE SEMA;Partido Liberal Colombiano;46
+SAN MIGUEL DE SEMA;Partido Somos;3
+SAN MIGUEL DE SEMA;Promotores Voto En Blanco;2
+SAN MIGUEL DE SEMA;Todos Somos Colombia;6
+SAN PABLO DE BORBUR;Cambio Radical;69
+SAN PABLO DE BORBUR;Centro Democrático;2535
+SAN PABLO DE BORBUR;Centro Esperanza;222
+SAN PABLO DE BORBUR;Pacto Histórico;269
+SAN PABLO DE BORBUR;Partido Liberal Colombiano;6
+SAN PABLO DE BORBUR;Partido Somos;5
+SAN PABLO DE BORBUR;Promotores Voto En Blanco;8
+SAN PABLO DE BORBUR;Todos Somos Colombia;13
+SANTA MARIA;Cambio Radical;68
+SANTA MARIA;Centro Democrático;818
+SANTA MARIA;Centro Esperanza;338
+SANTA MARIA;Pacto Histórico;276
+SANTA MARIA;Partido Liberal Colombiano;21
+SANTA MARIA;Partido Somos;3
+SANTA MARIA;Promotores Voto En Blanco;1
+SANTA MARIA;Todos Somos Colombia;6
+SANTA ROSA DE VITERBO;Cambio Radical;173
+SANTA ROSA DE VITERBO;Centro Democrático;2363
+SANTA ROSA DE VITERBO;Centro Esperanza;1723
+SANTA ROSA DE VITERBO;Pacto Histórico;890
+SANTA ROSA DE VITERBO;Partido Liberal Colombiano;98
+SANTA ROSA DE VITERBO;Partido Somos;2
+SANTA ROSA DE VITERBO;Promotores Voto En Blanco;9
+SANTA ROSA DE VITERBO;Todos Somos Colombia;15
+SANTA SOFIA;Cambio Radical;75
+SANTA SOFIA;Centro Democrático;1091
+SANTA SOFIA;Centro Esperanza;352
+SANTA SOFIA;Pacto Histórico;148
+SANTA SOFIA;Partido Liberal Colombiano;5
+SANTA SOFIA;Partido Somos;3
+SANTA SOFIA;Todos Somos Colombia;5
+SANTANA;Cambio Radical;474
+SANTANA;Centro Democrático;1626
+SANTANA;Centro Esperanza;447
+SANTANA;Pacto Histórico;662
+SANTANA;Partido Liberal Colombiano;79
+SANTANA;Partido Somos;10
+SANTANA;Promotores Voto En Blanco;3
+SANTANA;Todos Somos Colombia;9
+SATIVANORTE;Cambio Radical;43
+SATIVANORTE;Centro Democrático;997
+SATIVANORTE;Centro Esperanza;104
+SATIVANORTE;Pacto Histórico;88
+SATIVANORTE;Partido Liberal Colombiano;6
+SATIVANORTE;Partido Somos;1
+SATIVANORTE;Todos Somos Colombia;4
+SATIVASUR;Cambio Radical;11
+SATIVASUR;Centro Democrático;288
+SATIVASUR;Centro Esperanza;62
+SATIVASUR;Pacto Histórico;84
+SATIVASUR;Partido Liberal Colombiano;47
+SATIVASUR;Promotores Voto En Blanco;2
+SATIVASUR;Todos Somos Colombia;1
+SIACHOQUE;Cambio Radical;94
+SIACHOQUE;Centro Democrático;1663
+SIACHOQUE;Centro Esperanza;819
+SIACHOQUE;Pacto Histórico;553
+SIACHOQUE;Partido Liberal Colombiano;44
+SIACHOQUE;Partido Somos;8
+SIACHOQUE;Promotores Voto En Blanco;8
+SIACHOQUE;Todos Somos Colombia;9
+SOATA;Cambio Radical;493
+SOATA;Centro Democrático;2654
+SOATA;Centro Esperanza;655
+SOATA;Pacto Histórico;614
+SOATA;Partido Liberal Colombiano;56
+SOATA;Partido Somos;4
+SOATA;Promotores Voto En Blanco;7
+SOATA;Todos Somos Colombia;5
+SOCHA;Cambio Radical;70
+SOCHA;Centro Democrático;1343
+SOCHA;Centro Esperanza;544
+SOCHA;Pacto Histórico;718
+SOCHA;Partido Liberal Colombiano;140
+SOCHA;Partido Somos;13
+SOCHA;Promotores Voto En Blanco;9
+SOCHA;Todos Somos Colombia;8
+SOCOTA;Cambio Radical;63
+SOCOTA;Centro Democrático;1944
+SOCOTA;Centro Esperanza;125
+SOCOTA;Pacto Histórico;505
+SOCOTA;Partido Liberal Colombiano;187
+SOCOTA;Partido Somos;14
+SOCOTA;Promotores Voto En Blanco;3
+SOCOTA;Todos Somos Colombia;14
+SOGAMOSO;Cambio Radical;3062
+SOGAMOSO;Centro Democrático;17339
+SOGAMOSO;Centro Esperanza;20896
+SOGAMOSO;Pacto Histórico;15640
+SOGAMOSO;Partido Liberal Colombiano;1226
+SOGAMOSO;Partido Somos;100
+SOGAMOSO;Promotores Voto En Blanco;80
+SOGAMOSO;Todos Somos Colombia;156
+SOMONDOCO;Cambio Radical;77
+SOMONDOCO;Centro Democrático;726
+SOMONDOCO;Centro Esperanza;257
+SOMONDOCO;Pacto Histórico;227
+SOMONDOCO;Partido Liberal Colombiano;15
+SOMONDOCO;Partido Somos;2
+SOMONDOCO;Promotores Voto En Blanco;2
+SOMONDOCO;Todos Somos Colombia;4
+SORA;Cambio Radical;71
+SORA;Centro Democrático;454
+SORA;Centro Esperanza;313
+SORA;Pacto Histórico;401
+SORA;Partido Liberal Colombiano;18
+SORA;Partido Somos;3
+SORA;Promotores Voto En Blanco;6
+SORA;Todos Somos Colombia;4
+SORACA;Cambio Radical;101
+SORACA;Centro Democrático;1465
+SORACA;Centro Esperanza;747
+SORACA;Pacto Histórico;642
+SORACA;Partido Liberal Colombiano;42
+SORACA;Partido Somos;14
+SORACA;Promotores Voto En Blanco;3
+SORACA;Todos Somos Colombia;5
+SOTAQUIRA;Cambio Radical;126
+SOTAQUIRA;Centro Democrático;2009
+SOTAQUIRA;Centro Esperanza;754
+SOTAQUIRA;Pacto Histórico;535
+SOTAQUIRA;Partido Liberal Colombiano;55
+SOTAQUIRA;Partido Somos;16
+SOTAQUIRA;Promotores Voto En Blanco;7
+SOTAQUIRA;Todos Somos Colombia;10
+SUSACON;Cambio Radical;56
+SUSACON;Centro Democrático;1055
+SUSACON;Centro Esperanza;140
+SUSACON;Pacto Histórico;145
+SUSACON;Partido Liberal Colombiano;9
+SUSACON;Partido Somos;4
+SUSACON;Promotores Voto En Blanco;6
+SUSACON;Todos Somos Colombia;5
+SUTAMARCHAN;Cambio Radical;658
+SUTAMARCHAN;Centro Democrático;1745
+SUTAMARCHAN;Centro Esperanza;496
+SUTAMARCHAN;Pacto Histórico;543
+SUTAMARCHAN;Partido Liberal Colombiano;42
+SUTAMARCHAN;Partido Somos;5
+SUTAMARCHAN;Promotores Voto En Blanco;1
+SUTAMARCHAN;Todos Somos Colombia;3
+SUTATENZA;Cambio Radical;174
+SUTATENZA;Centro Democrático;1205
+SUTATENZA;Centro Esperanza;308
+SUTATENZA;Pacto Histórico;297
+SUTATENZA;Partido Liberal Colombiano;21
+SUTATENZA;Partido Somos;8
+SUTATENZA;Promotores Voto En Blanco;8
+SUTATENZA;Todos Somos Colombia;3
+TASCO;Cambio Radical;143
+TASCO;Centro Democrático;745
+TASCO;Centro Esperanza;480
+TASCO;Pacto Histórico;576
+TASCO;Partido Liberal Colombiano;55
+TASCO;Partido Somos;5
+TASCO;Promotores Voto En Blanco;3
+TASCO;Todos Somos Colombia;8
+TENZA;Cambio Radical;84
+TENZA;Centro Democrático;1064
+TENZA;Centro Esperanza;324
+TENZA;Pacto Histórico;211
+TENZA;Partido Liberal Colombiano;15
+TENZA;Partido Somos;10
+TENZA;Promotores Voto En Blanco;5
+TENZA;Todos Somos Colombia;5
+TIBANA;Cambio Radical;200
+TIBANA;Centro Democrático;1318
+TIBANA;Centro Esperanza;565
+TIBANA;Pacto Histórico;734
+TIBANA;Partido Liberal Colombiano;145
+TIBANA;Partido Somos;9
+TIBANA;Promotores Voto En Blanco;3
+TIBANA;Todos Somos Colombia;14
+TIBASOSA;Cambio Radical;433
+TIBASOSA;Centro Democrático;1638
+TIBASOSA;Centro Esperanza;1640
+TIBASOSA;Pacto Histórico;1549
+TIBASOSA;Partido Liberal Colombiano;97
+TIBASOSA;Partido Somos;6
+TIBASOSA;Promotores Voto En Blanco;13
+TIBASOSA;Todos Somos Colombia;30
+TINJACA;Cambio Radical;61
+TINJACA;Centro Democrático;835
+TINJACA;Centro Esperanza;355
+TINJACA;Pacto Histórico;459
+TINJACA;Partido Liberal Colombiano;28
+TINJACA;Partido Somos;5
+TINJACA;Promotores Voto En Blanco;1
+TINJACA;Todos Somos Colombia;4
+TIPACOQUE;Cambio Radical;172
+TIPACOQUE;Centro Democrático;1020
+TIPACOQUE;Centro Esperanza;175
+TIPACOQUE;Pacto Histórico;182
+TIPACOQUE;Partido Liberal Colombiano;54
+TIPACOQUE;Partido Somos;4
+TIPACOQUE;Promotores Voto En Blanco;3
+TIPACOQUE;Todos Somos Colombia;9
+TOCA;Cambio Radical;313
+TOCA;Centro Democrático;1418
+TOCA;Centro Esperanza;902
+TOCA;Pacto Histórico;891
+TOCA;Partido Liberal Colombiano;74
+TOCA;Partido Somos;6
+TOCA;Promotores Voto En Blanco;7
+TOCA;Todos Somos Colombia;11
+TOGUI;Cambio Radical;151
+TOGUI;Centro Democrático;1281
+TOGUI;Centro Esperanza;221
+TOGUI;Pacto Histórico;226
+TOGUI;Partido Liberal Colombiano;62
+TOGUI;Partido Somos;6
+TOGUI;Promotores Voto En Blanco;1
+TOGUI;Todos Somos Colombia;5
+TOPAGA;Cambio Radical;114
+TOPAGA;Centro Democrático;917
+TOPAGA;Centro Esperanza;438
+TOPAGA;Pacto Histórico;417
+TOPAGA;Partido Liberal Colombiano;24
+TOPAGA;Promotores Voto En Blanco;4
+TOPAGA;Todos Somos Colombia;6
+TOTA;Cambio Radical;307
+TOTA;Centro Democrático;970
+TOTA;Centro Esperanza;166
+TOTA;Pacto Histórico;194
+TOTA;Partido Liberal Colombiano;14
+TOTA;Partido Somos;8
+TOTA;Promotores Voto En Blanco;3
+TOTA;Todos Somos Colombia;8
+TUNJA;Cambio Radical;4099
+TUNJA;Centro Democrático;18289
+TUNJA;Centro Esperanza;32035
+TUNJA;Pacto Histórico;23151
+TUNJA;Partido Liberal Colombiano;2177
+TUNJA;Partido Somos;130
+TUNJA;Promotores Voto En Blanco;87
+TUNJA;Todos Somos Colombia;269
+TUNUNGUA;Cambio Radical;51
+TUNUNGUA;Centro Democrático;356
+TUNUNGUA;Centro Esperanza;68
+TUNUNGUA;Pacto Histórico;184
+TUNUNGUA;Partido Liberal Colombiano;20
+TUNUNGUA;Partido Somos;6
+TUNUNGUA;Promotores Voto En Blanco;1
+TUNUNGUA;Todos Somos Colombia;4
+TURMEQUE;Cambio Radical;154
+TURMEQUE;Centro Democrático;793
+TURMEQUE;Centro Esperanza;854
+TURMEQUE;Pacto Histórico;531
+TURMEQUE;Partido Liberal Colombiano;101
+TURMEQUE;Partido Somos;7
+TURMEQUE;Promotores Voto En Blanco;6
+TURMEQUE;Todos Somos Colombia;5
+TUTA;Cambio Radical;155
+TUTA;Centro Democrático;1579
+TUTA;Centro Esperanza;1477
+TUTA;Pacto Histórico;989
+TUTA;Partido Liberal Colombiano;117
+TUTA;Partido Somos;6
+TUTA;Promotores Voto En Blanco;7
+TUTA;Todos Somos Colombia;6
+TUTAZA;Cambio Radical;20
+TUTAZA;Centro Democrático;458
+TUTAZA;Centro Esperanza;175
+TUTAZA;Pacto Histórico;314
+TUTAZA;Partido Liberal Colombiano;28
+TUTAZA;Partido Somos;9
+TUTAZA;Promotores Voto En Blanco;2
+TUTAZA;Todos Somos Colombia;4
+UMBITA;Cambio Radical;76
+UMBITA;Centro Democrático;2142
+UMBITA;Centro Esperanza;427
+UMBITA;Pacto Histórico;503
+UMBITA;Partido Liberal Colombiano;31
+UMBITA;Partido Somos;4
+UMBITA;Promotores Voto En Blanco;3
+UMBITA;Todos Somos Colombia;7
+VENTAQUEMADA;Cambio Radical;262
+VENTAQUEMADA;Centro Democrático;1939
+VENTAQUEMADA;Centro Esperanza;1302
+VENTAQUEMADA;Pacto Histórico;1673
+VENTAQUEMADA;Partido Liberal Colombiano;102
+VENTAQUEMADA;Partido Somos;12
+VENTAQUEMADA;Promotores Voto En Blanco;10
+VENTAQUEMADA;Todos Somos Colombia;19
+VILLA DE LEYVA;Cambio Radical;310
+VILLA DE LEYVA;Centro Democrático;3111
+VILLA DE LEYVA;Centro Esperanza;2585
+VILLA DE LEYVA;Pacto Histórico;1280
+VILLA DE LEYVA;Partido Liberal Colombiano;120
+VILLA DE LEYVA;Partido Somos;15
+VILLA DE LEYVA;Promotores Voto En Blanco;5
+VILLA DE LEYVA;Todos Somos Colombia;16
+VIRACACHA;Cambio Radical;65
+VIRACACHA;Centro Democrático;869
+VIRACACHA;Centro Esperanza;189
+VIRACACHA;Pacto Histórico;159
+VIRACACHA;Partido Liberal Colombiano;17
+VIRACACHA;Partido Somos;3
+VIRACACHA;Promotores Voto En Blanco;2
+VIRACACHA;Todos Somos Colombia;9
+ZETAQUIRA;Cambio Radical;90
+ZETAQUIRA;Centro Democrático;1171
+ZETAQUIRA;Centro Esperanza;265
+ZETAQUIRA;Pacto Histórico;425
+ZETAQUIRA;Partido Liberal Colombiano;27
+ZETAQUIRA;Partido Somos;6
+ZETAQUIRA;Promotores Voto En Blanco;7
+ZETAQUIRA;Todos Somos Colombia;6
