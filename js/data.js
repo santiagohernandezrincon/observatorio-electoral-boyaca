@@ -314,8 +314,11 @@ async function cargarDatos(anio, corporacion) {
     const archivos = archivosPorAnio[anio]?.[corporacion];
     if (!archivos) return;
     try {
+        console.log('Intentando cargar:', archivos.partido);
         const respPartido = await fetch(basePath + archivos.partido);
+        if (!respPartido.ok) throw new Error(`HTTP ${respPartido.status} cargando ${archivos.partido}`);
         const csvPartido = await respPartido.text();
+        console.log('CSV crudo (primeros 200 chars):', csvPartido.substring(0, 200));
         const excluir = ['CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
                          'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));

@@ -39,3 +39,15 @@ const COLORES_PARTIDO = {
   'Sin partido': '#BDC3C7',
   'Otro': '#D5D8DC',
 };
+
+function colorPartido(nombre) {
+    if (!nombre) return '#95a5a6';
+    return COLORES_PARTIDO[nombre] || COLORES_PARTIDO['Sin partido'] || '#95a5a6';
+}
+
+function normalizePartido(nombre) {
+    if (!nombre) return 'Partido sin identificar';
+    const limpio = nombre.trim();
+    if (COLORES_PARTIDO[limpio]) return limpio;
+    return limpio;
+}

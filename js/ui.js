@@ -374,26 +374,40 @@ function cerrarSidebar() {
 
 // ==================== KPI ANIMATION ====================
 function animarKPIs() {
-    const cards = document.querySelectorAll('.kpi-card[data-count]');
-    cards.forEach(card => {
-        const target = parseInt(card.dataset.count);
-        const el = card.querySelector('.kpi-number');
-        const duration = 1200;
-        const steps = 40;
-        const increment = target / steps;
-        let current = 0;
-        let step = 0;
-        const timer = setInterval(() => {
-            step++;
-            current = Math.min(Math.round(increment * step), target);
-            el.textContent = current.toLocaleString('es-CO');
-            if (step >= steps) clearInterval(timer);
-        }, duration / steps);
-    });
-    const kpiReg = document.getElementById('kpi-registros');
-    if (kpiReg) {
-        setTimeout(() => { kpiReg.textContent = '+50.000'; }, 800);
-    }
+  if (typeof DATOS_DISPONIBLES === 'undefined') return;
+
+  const anios  = Object.keys(DATOS_DISPONIBLES);
+  const corps  = [...new Set(anios.flatMap(a => DATOS_DISPONIBLES[a] || []))];
+
+  function animarElemento(el, target) {
+    if (!el) return;
+    let n = 0;
+    const step = Math.max(1, Math.ceil(target / 40));
+    const t = setInterval(() => {
+      n = Math.min(n + step, target);
+      el.textContent = n.toLocaleString('es-CO');
+      if (n >= target) clearInterval(t);
+    }, 40);
+  }
+
+  const elCiclos = document.querySelector('[data-kpi="ciclos"] .kpi-number')
+    || document.querySelector('.kpi-ciclos .kpi-number')
+    || document.getElementById('kpi-ciclos');
+  animarElemento(elCiclos, anios.length);
+
+  const elMun = document.querySelector('[data-kpi="municipios"] .kpi-number')
+    || document.querySelector('.kpi-municipios .kpi-number')
+    || document.getElementById('kpi-municipios');
+  animarElemento(elMun, 123);
+
+  const elCargos = document.querySelector('[data-kpi="cargos"] .kpi-number')
+    || document.querySelector('.kpi-cargos .kpi-number')
+    || document.getElementById('kpi-cargos');
+  animarElemento(elCargos, corps.length);
+
+  const elReg = document.getElementById('kpi-registros')
+    || document.querySelector('[data-kpi="registros"]');
+  if (elReg) setTimeout(() => { elReg.textContent = '+50.000'; }, 800);
 }
 
 // ==================== INIT + EVENTOS ====================
@@ -458,6 +472,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     inicializarSelectorAnio();
     actualizarSelectorCorporacion('2026');
+    animarKPIs();
     await cargarDatos('2026', 'camara');
 
     setTimeout(() => {
@@ -619,8 +634,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    animarKPIs();
-
     const hero = document.getElementById('hero-section');
     const colapsarHero = () => {
         if (hero) hero.classList.add('hero-collapsed');
@@ -646,9 +659,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.querySelectorAll('.obs-pill-modo').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             const modo = btn.dataset.modo;
-            const groupPartido = document.getElementById('group-partido');
-            if (groupPartido) {
-                groupPartido.style.display = (modo === 'partido') ? 'flex' : 'none';
+
+            const selectVista    = document.getElementById('tipo-vista');
+            const groupPartido   = document.getElementById('group-partido');
+            const groupCandidato = document.getElementById('group-candidato');
+
+            if (groupPartido)   groupPartido.style.display   = 'none';
+            if (groupCandidato) groupCandidato.style.display = 'none';
+
+            if (modo === 'ganadores' || modo === 'ganador') {
+                if (selectVista) selectVista.value = 'candidato_ganador';
+            } else if (modo === 'partido') {
+                if (selectVista) selectVista.value = 'partido_heat';
+                if (groupPartido) groupPartido.style.display = 'flex';
+            } else if (modo === 'calor' || modo === 'heatmap') {
+                if (selectVista) selectVista.value = 'partido_heat';
+            }
+
+            if (typeof actualizarMapaSimple === 'function') {
+                actualizarMapaSimple();
             }
         });
     });
