@@ -264,11 +264,11 @@
     <option value="comparacion">Comparación</option>
   </select>
 
-  <!-- Selectors de partido/candidato -->
-  <select id="partido-selector"></select>
-  <select id="candidato-selector"></select>
-  <select id="partido-ganador-selector"></select>
-  <select id="candidato-ganador-filtro"><option value="">Todos</option></select>
+  <!-- Selectors de partido/candidato — envueltos en sus contenedores originales (map.js los requiere) -->
+  <div id="partido-selector-container"><select id="partido-selector"></select></div>
+  <div id="candidato-selector-container"><select id="candidato-selector"></select></div>
+  <div id="partido-ganador-container"><select id="partido-ganador-selector"></select></div>
+  <div id="candidato-ganador-filtro-container"><select id="candidato-ganador-filtro"><option value="">Todos</option></select></div>
 
   <!-- Controles extra -->
   <input type="checkbox" id="heatmap-porcentaje-checkbox">
@@ -298,6 +298,13 @@
     <select id="comparar-valor-b"></select>
     <button id="comparar-update">Comparar</button>
   </div>
+
+  <!-- Contenedores de control referenciados por actualizarMapaSimple() -->
+  <!-- Sin estos IDs, .style.display lanza TypeError capturado por el catch de cargarDatos() -->
+  <div id="partido-selector-container"></div>
+  <div id="candidato-selector-container"></div>
+  <div id="partido-ganador-container"></div>
+  <div id="candidato-ganador-filtro-container"></div>
 
   <!-- Grupo candidato (referenciado en ui.js) -->
   <div id="group-candidato"></div>
