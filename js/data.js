@@ -48,64 +48,6 @@ const palabrasClave = {
     'POLO': ['POLO', 'POLO DEMOCRATICO ALTERNATIVO']
 };
 
-const coloresBase = {
-  'Partido Liberal Colombiano':     '#D80027',
-  'Partido Conservador Colombiano': '#0033A0',
-  'Partido de la U':                '#E8820C',
-  'Cambio Radical':                 '#D81B60',
-  'Alianza Verde':                  '#2E7D32',
-  'Partido Verde Oxígeno':          '#1B5E20',
-  'Partido Verde':                  '#2E7D32',
-  'Centro Democrático':             '#42A5F5',
-  'Polo Democrático Alternativo':   '#FDD835',
-  'Pacto Histórico':                '#7B1FA2',
-  'Opción Ciudadana':               '#FB8C00',
-  'Movimiento MIRA':                '#1E88E5',
-  'Alianza Social Independiente':   '#66BB6A',
-  'Comunes':                        '#B71C1C',
-  'Colombia Justa Libres':          '#283593',
-  'Liga de Gobernantes':            '#FF8F00',
-  'Centro Esperanza':               '#8BC34A',
-  'Coalición Colombia':             '#8BC34A',
-  'Equipo por Colombia':            '#546E7A',
-  'Gran Consulta por Colombia':     '#64B5F6',
-  'MAIS':                           '#8D4E2A',
-  'AICO':                           '#795548',
-  'Creemos':                        '#5C6BC0',
-  'MIO':                            '#FFA000',
-  'Nuevo Liberalismo':              '#E57373',
-  'Unión Patriótica':               '#880E4F',
-  'Fuerza Ciudadana':               '#00897B',
-  'Colombia Piensa en Grande':      '#FF7043',
-  'Partido PIN':                    '#78909C',
-  'Salvación Nacional':             '#1A237E',
-  'Con Toda por Colombia':          '#00838F',
-  'Valientes':                      '#0277BD',
-  'Colombia Renaciente':            '#26A69A',
-  'Todos Somos Colombia':           '#A1887F',
-  'Partido Somos':                  '#BCAAA4',
-  'Dignidad y Compromiso':          '#7E57C2',
-  'Sí':                             '#43A047',
-  'No':                             '#E53935',
-  'Movimiento Ciudadano':           '#B0B8C1',
-  'Partido sin identificar':        '#9CA3AF',
-  'Sin partido':                    '#9CA3AF',
-};
-
-function asignarColorPartido(nombre) {
-  if (!nombre) return '#9CA3AF';
-  // Primero intentar con la función curada de colores_partido.js
-  if (typeof colorPartido === 'function') {
-    const c = colorPartido(nombre);
-    if (c && c !== '#9CA3AF') return c;
-  }
-  // Fallback al objeto local
-  const canonical = typeof normalizePartido === 'function'
-    ? normalizePartido(nombre) : nombre;
-  return coloresBase[canonical] || coloresBase[nombre] || '#9CA3AF';
-}
-const coloresPartidos = new Proxy({}, { get: (target, prop) => asignarColorPartido(prop) });
-
 // ==================== COLORES PARA CANDIDATOS ====================
 function rgbToHsl(r, g, b) {
     r /= 255; g /= 255; b /= 255;
@@ -324,9 +266,7 @@ async function cargarDatos(anio, corporacion) {
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));
         currentPartidoData = partidosFiltrados.map(row => {
             const parNorm = resolverPartido(row['PARNOMBRE'], null);
-            const colorBase = (row['PARTIDO_BASE'] && coloresBase[row['PARTIDO_BASE']])
-                ? coloresBase[row['PARTIDO_BASE']]
-                : colorPartido(parNorm);
+            const colorBase = colorPartido(parNorm);
             return { ...row, PARNOMBRE: parNorm, _partidoNorm: parNorm, COLOR_BASE: colorBase };
         });
         console.log(`Partidos cargados: ${currentPartidoData.length} filas`);
