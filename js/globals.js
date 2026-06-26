@@ -129,6 +129,7 @@ let candidatoGanadorPorMunicipio = {};
 
 let trajectoryMunicipioChart = null;
 let todosLosCandidatosPorAnioCorp = {};
+let todosLosPartidosPorAnioCorp   = {};
 
 // Colores candidatos (poblado en data.js)
 const coloresCandidatos = {};

@@ -594,17 +594,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    document.getElementById('btn-agregar-comparacion').addEventListener('click', () => {
-        const container = document.getElementById('comparaciones-list');
-        container.appendChild(crearFilaComparacion(container.children.length));
-    });
-    document.getElementById('btn-actualizar-trayectoria-municipio').addEventListener('click', actualizarGraficoComparativoMunicipio);
+    // ==================== TRAYECTORIA: INICIALIZACIÓN ====================
+    const trayCargo = document.getElementById('tray-cargo');
+    if (trayCargo) {
+        const cuentaPorCargo = Object.values(DATOS_DISPONIBLES)
+            .flat()
+            .reduce((acc, c) => { acc[c] = (acc[c] || 0) + 1; return acc; }, {});
+        const cargosValidos = Object.entries(cuentaPorCargo)
+            .filter(([, n]) => n >= 2)
+            .map(([c]) => c)
+            .sort((a, b) => (LABELS_CORPORACION[a] || a).localeCompare(LABELS_CORPORACION[b] || b));
+        trayCargo.innerHTML = '<option value="">Seleccione cargo</option>' +
+            cargosValidos.map(c => `<option value="${c}">${LABELS_CORPORACION[c] || c}</option>`).join('');
 
-    const comparacionesList = document.getElementById('comparaciones-list');
-    if (comparacionesList) {
-        comparacionesList.innerHTML = '';
-        comparacionesList.appendChild(crearFilaComparacion(0));
+        trayCargo.addEventListener('change', async () => {
+            const cargo = trayCargo.value;
+            const trayPartido = document.getElementById('tray-partido');
+            if (!cargo || !trayPartido) return;
+            trayPartido.innerHTML = '<option value="">Cargando partidos…</option>';
+            const anioReciente = Object.entries(DATOS_DISPONIBLES)
+                .filter(([, corps]) => corps.includes(cargo))
+                .map(([a]) => Number(a))
+                .sort((a, b) => b - a)[0];
+            if (!anioReciente) return;
+            const datos = await cargarPartidosPorAnioCorp(String(anioReciente), cargo);
+            const partidos = [...new Set(datos.map(r => r['PARNOMBRE']))].filter(Boolean).sort();
+            trayPartido.innerHTML = '<option value="">Seleccione partido</option>' +
+                partidos.map(p => `<option value="${p}">${p}</option>`).join('');
+        });
     }
+
+    document.getElementById('btn-actualizar-trayectoria')
+        ?.addEventListener('click', actualizarTrayectoriaPartido);
+
+    ['tray-show-votos', 'tray-show-pct'].forEach(id => {
+        document.getElementById(id)?.addEventListener('change', () => {
+            if (trajectoryMunicipioChart) actualizarTrayectoriaPartido();
+        });
+    });
 
     document.getElementById('escala-selector')?.addEventListener('change', () => {
         if (!modoComparacion) actualizarMapaSimple();

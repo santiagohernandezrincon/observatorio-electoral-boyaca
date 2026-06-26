@@ -464,6 +464,26 @@ async function obtenerVotosCandidatoDepartamento(anio, corporacion, candidato) {
     return datos.filter(row => row['CANNOMBRE'] === candidato).reduce((sum, row) => sum + row['VOTOS'], 0);
 }
 
+// ==================== CARGA PARTIDOS POR AÑO/CORP (TRAYECTORIA) ====================
+async function cargarPartidosPorAnioCorp(anio, corp) {
+    const key = `${anio}_${corp}`;
+    if (todosLosPartidosPorAnioCorp[key]) return todosLosPartidosPorAnioCorp[key];
+    const archivos = archivosPorAnio[anio]?.[corp];
+    if (!archivos) return [];
+    const excluir = ['CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
+                     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
+    try {
+        const datos = parseCSV(await (await fetch(basePath + archivos.partido)).text())
+            .filter(row => !excluir.includes(row['PARNOMBRE']))
+            .map(row => ({ ...row, PARNOMBRE: resolverPartido(row['PARNOMBRE'], null) }));
+        todosLosPartidosPorAnioCorp[key] = datos;
+        return datos;
+    } catch (e) {
+        console.error(`Error cargando ${archivos.partido}:`, e);
+        return [];
+    }
+}
+
 // ==================== DATOS COMPARACIÓN ====================
 function obtenerDatosComparacion(tipo, valor) {
     const datos = {};

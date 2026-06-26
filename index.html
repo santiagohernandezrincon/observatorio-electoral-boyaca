@@ -253,10 +253,16 @@
         <!-- Tab: Trayectoria -->
         <div id="tab-trayectoria" class="tab-panel">
             <div class="trajectory-controls">
+                <select id="tray-cargo"><option value="">Seleccione cargo</option></select>
                 <select id="municipio-selector-trayectoria"><option value="">Seleccione municipio</option></select>
-                <div id="comparaciones-list" class="comparaciones-list"></div>
-                <button id="btn-agregar-comparacion" class="btn-secondary">+ Agregar comparación</button>
-                <button id="btn-actualizar-trayectoria-municipio" class="btn-primary">Actualizar gráfico</button>
+                <select id="tray-partido"><option value="">Seleccione partido</option></select>
+                <label style="display:flex;align-items:center;gap:4px;font-size:0.85rem">
+                    <input type="checkbox" id="tray-show-votos" checked> Votos
+                </label>
+                <label style="display:flex;align-items:center;gap:4px;font-size:0.85rem">
+                    <input type="checkbox" id="tray-show-pct" checked> %
+                </label>
+                <button id="btn-actualizar-trayectoria" class="btn-primary">Ver trayectoria</button>
             </div>
             <div class="trajectory-municipio-container">
                 <canvas id="trajectory-municipio-chart"></canvas>
