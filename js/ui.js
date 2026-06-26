@@ -390,23 +390,11 @@ function animarKPIs() {
     }, 40);
   }
 
-  const elCiclos = document.querySelector('[data-kpi="ciclos"] .kpi-number')
-    || document.querySelector('.kpi-ciclos .kpi-number')
-    || document.getElementById('kpi-ciclos');
-  animarElemento(elCiclos, anios.length);
+  animarElemento(document.getElementById('kpi-ciclos'),     anios.length);
+  animarElemento(document.getElementById('kpi-municipios'), 123);
+  animarElemento(document.getElementById('kpi-cargos'),     corps.length);
 
-  const elMun = document.querySelector('[data-kpi="municipios"] .kpi-number')
-    || document.querySelector('.kpi-municipios .kpi-number')
-    || document.getElementById('kpi-municipios');
-  animarElemento(elMun, 123);
-
-  const elCargos = document.querySelector('[data-kpi="cargos"] .kpi-number')
-    || document.querySelector('.kpi-cargos .kpi-number')
-    || document.getElementById('kpi-cargos');
-  animarElemento(elCargos, corps.length);
-
-  const elReg = document.getElementById('kpi-registros')
-    || document.querySelector('[data-kpi="registros"]');
+  const elReg = document.getElementById('kpi-registros');
   if (elReg) setTimeout(() => { elReg.textContent = '+50.000'; }, 800);
 }
 
@@ -472,8 +460,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     inicializarSelectorAnio();
     actualizarSelectorCorporacion('2026');
-    animarKPIs();
     await cargarDatos('2026', 'camara');
+    animarKPIs();
 
     setTimeout(() => {
         mapSimple.invalidateSize();

@@ -228,8 +228,9 @@ const NORMALIZAR_PARTIDO = {
   'MOVIMIENTO SALVACIÓN NACIONAL': 'Mov. Salvación Nacional',
   'MOVIMIENTO DE SALVACIÓN NACIONAL': 'Mov. Salvación Nacional',
   'MOVIMIENTO SALVACION NACIONAL': 'Mov. Salvación Nacional',
-  'PARTIDO CONSERVADOR - MOVIMIENTO SALVACIÓN NACIONAL': 'Mov. Salvación Nacional',
-  'PARTIDO CONSERVADOR - MOVIMIENTO SALVACION NACIONAL': 'Mov. Salvación Nacional',
+  'PARTIDO CONSERVADOR - MOVIMIENTO SALVACIÓN NACIONAL': 'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR - MOVIMIENTO SALVACION NACIONAL': 'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR - SALVACION NACIONAL':            'Partido Conservador Colombiano',
 
   // ── Nuevo Liberalismo ──
   'PARTIDO NUEVO LIBERALISMO': 'Nuevo Liberalismo',
