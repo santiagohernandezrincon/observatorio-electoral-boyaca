@@ -1915,3 +1915,89 @@ html, body {
   .obs-panel { display: none; }
   .obs-footer { left: 0; }
 }
+
+
+/* =================================================================
+   ESTILO EDITORIAL — v2 override
+   Reemplaza el acento gold por blanco puro sobre navy.
+   Más sobrio, tipográfico, de revista.
+   ================================================================= */
+
+/* Dot del topbar: blanco en vez de gold */
+.obs-topbar__dot { background: #fff; }
+
+/* Logo del panel: blanco brillante en vez de gold */
+.obs-panel__logo { color: rgba(255,255,255,0.92); }
+
+/* Pills de año/cargo activos: fondo blanco + texto navy (contraste máximo) */
+#pills-anio .obs-pill.active,
+#pills-anio .obs-pill-year.active,
+#pills-corp .obs-pill.active,
+.obs-panel #pills-anio .obs-pill.active,
+.obs-panel #pills-corp .obs-pill.active {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: var(--navy) !important;
+  font-weight: 800 !important;
+}
+
+/* Modos de color activos: fondo blanco + texto navy */
+.obs-pill-modo.active {
+  background: #fff !important;
+  border-color: rgba(255,255,255,0.6) !important;
+  color: var(--navy) !important;
+}
+
+/* Botón resumen activo: blanco */
+.obs-panel__btn-resumen.active,
+.obs-panel__btn-resumen:hover {
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.35) !important;
+  color: #fff !important;
+}
+
+/* Vista activa en topbar: blanco + navy (mismo principio) */
+.obs-view-btn.obs-view-btn--active {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: var(--navy) !important;
+}
+
+/* Stats del municipio: separador en blanco translúcido */
+.obs-panel__stats {
+  border-top: 1px solid rgba(255,255,255,0.18) !important;
+}
+
+/* Etiqueta MUNICIPIO SELECCIONADO: blanco suave en vez de gold */
+.obs-panel__stats-label {
+  color: rgba(255,255,255,0.5) !important;
+}
+
+/* Botón primario (trayectoria): navy sólido → hover blanco/navy */
+.obs-btn--primary {
+  background: var(--navy);
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.obs-btn--primary:hover {
+  background: #fff;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+/* Cabecera de vista (h2 trayectoria): borde inferior oscuro en vez de gold */
+.obs-vista__header {
+  border-bottom-color: rgba(11,25,41,0.25) !important;
+}
+
+/* Sublabels AÑO / TIPO dentro de la sección ELECCIÓN */
+.obs-subsection-label {
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
