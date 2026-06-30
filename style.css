@@ -2043,3 +2043,36 @@ html, body {
 
 /* Ocultar el canvas vacío hasta que haya datos */
 #chart-municipio:not(.activo) { display: none; }
+
+
+/* =================================================================
+   VISTA TRAYECTORIA — chart con altura fija
+   ================================================================= */
+.trajectory-municipio-container {
+  position: relative;
+  height: 420px;          /* altura fija para Chart.js con maintainAspectRatio:false */
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+}
+
+#trajectory-municipio-chart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Estado vacío / error bajo los controles */
+#tray-error-msg {
+  display: none;
+  background: #fff3f3;
+  border: 1px solid #fca5a5;
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.75rem;
+  color: #b91c1c;
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
