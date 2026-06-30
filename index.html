@@ -109,9 +109,13 @@
 
     </div><!-- /obs-panel__body -->
 
-    <!-- Stats municipio (aparece al hacer clic) -->
+    <!-- Stats municipio (siempre visible; se llena al hacer clic) -->
     <div class="obs-panel__stats" id="obs-panel-stats">
-      <div class="obs-panel__stats-label">MUNICIPIO SELECCIONADO</div>
+      <div class="obs-panel__empty">
+        <i class="fas fa-mouse-pointer"></i>
+        <span>Clic en un municipio para ver datos</span>
+      </div>
+      <div class="obs-panel__stats-label" style="display:none">MUNICIPIO SELECCIONADO</div>
       <div id="detalle-municipio"></div>
       <div class="obs-panel__chart-wrap">
         <canvas id="chart-municipio" height="200"></canvas>
