@@ -94,9 +94,9 @@
       <!-- Filtro partido (aparece en modo partido) -->
       <div class="obs-section" id="group-partido" style="display:none">
         <div class="obs-section__label">FILTRAR PARTIDO</div>
-        <input type="text" id="obs-partido-search" class="obs-search obs-search--sm"
-               placeholder="Buscar partido…" autocomplete="off">
-        <div class="obs-dropdown-list" id="partido-dropdown"></div>
+        <div class="obs-partido-list" id="partido-dropdown">
+          <div class="obs-partido-list__hint">Selecciona un partido</div>
+        </div>
       </div>
 
       <!-- SALTAR A PROVINCIA -->
@@ -169,17 +169,39 @@
 
       <!-- ── DRAWER DERECHO — detalle municipio ── -->
       <div class="obs-drawer" id="obs-drawer" aria-hidden="true">
-        <div class="obs-drawer__header">
-          <div class="obs-drawer__title" id="obs-drawer-title">—</div>
-          <button class="obs-drawer__close" id="obs-drawer-close" aria-label="Cerrar">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="obs-drawer__body">
-          <div id="detalle-municipio"></div>
-        </div>
-        <div class="obs-drawer__chart">
-          <canvas id="chart-municipio" height="220"></canvas>
+
+        <!-- Botón de colapso (lado izquierdo del drawer) -->
+        <button class="obs-drawer__toggle" id="obs-drawer-toggle" title="Colapsar/expandir">
+          <i class="fas fa-chevron-right" id="obs-drawer-toggle-icon"></i>
+        </button>
+
+        <div class="obs-drawer__content">
+          <div class="obs-drawer__header">
+            <div class="obs-drawer__title" id="obs-drawer-title">—</div>
+            <button class="obs-drawer__close" id="obs-drawer-close" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Tabs Datos / Gráfica -->
+          <div class="obs-drawer__tabs">
+            <button class="obs-drawer__tab obs-drawer__tab--active" data-drawtab="datos">
+              <i class="fas fa-list"></i> Datos
+            </button>
+            <button class="obs-drawer__tab" data-drawtab="grafica">
+              <i class="fas fa-chart-bar"></i> Gráfica
+            </button>
+          </div>
+
+          <!-- Contenido: Datos -->
+          <div class="obs-drawer__panel obs-drawer__panel--active" id="obs-draw-datos">
+            <div id="detalle-municipio"></div>
+          </div>
+
+          <!-- Contenido: Gráfica -->
+          <div class="obs-drawer__panel" id="obs-draw-grafica">
+            <canvas id="chart-municipio"></canvas>
+          </div>
         </div>
       </div>
 

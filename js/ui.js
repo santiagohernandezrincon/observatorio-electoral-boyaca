@@ -720,12 +720,44 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarNav();
     inicializarBuscador();
 
-    // ── Drawer derecho: botón cerrar ──
+    // ── Drawer: cerrar, minimizar, tabs ──
     document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);
-    // Cerrar también al hacer clic en el mapa (fuera del drawer)
-    document.getElementById('map')?.addEventListener('click', () => {
-        // Solo cierra si el click fue en el fondo del mapa (no en un municipio)
-        // Los clicks en municipios llaman abrirSidebar antes de que esto llegue
+
+    // Minimizar/expandir drawer
+    document.getElementById('obs-drawer-toggle')?.addEventListener('click', () => {
+        const drawer = document.getElementById('obs-drawer');
+        const icon   = document.getElementById('obs-drawer-toggle-icon');
+        if (!drawer) return;
+        const min = drawer.classList.toggle('obs-drawer--minimized');
+        if (icon) {
+            icon.className = min ? 'fas fa-chevron-left' : 'fas fa-chevron-right';
+        }
+        setTimeout(() => {
+            if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+        }, 320);
+    });
+
+    // Tabs Datos / Gráfica en el drawer
+    document.querySelectorAll('.obs-drawer__tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.obs-drawer__tab').forEach(t => t.classList.remove('obs-drawer__tab--active'));
+            document.querySelectorAll('.obs-drawer__panel').forEach(p => p.classList.remove('obs-drawer__panel--active'));
+            tab.classList.add('obs-drawer__tab--active');
+            const panel = document.getElementById('obs-draw-' + tab.dataset.drawtab);
+            if (panel) panel.classList.add('obs-drawer__panel--active');
+            // Si se activa la tab de gráfica, redibuja el chart (puede haber cambiado)
+            if (tab.dataset.drawtab === 'grafica' && ultimoElementoDetalle) {
+                const { datosPartidos, datosCandidatos, nombre, tipo } = ultimoElementoDetalle;
+                if (datosPartidos || datosCandidatos) {
+                    const tipoVista = document.getElementById('tipo-vista')?.value;
+                    const esC = tipoVista === 'candidato_ganador' || tipoVista === 'candidato_heat' || tipoVista === 'candidato_ganador_por_partido';
+                    const datos = esC
+                        ? (datosCandidatos || []).sort((a,b)=>b['VOTOS']-a['VOTOS']).map(f => ({ nombre: f['CANNOMBRE'], votos: f['VOTOS'], partido: f['PARNOMBRE'] }))
+                        : (datosPartidos || []).sort((a,b)=>b['VOTOS']-a['VOTOS']).map(p => ({ nombre: p['PARNOMBRE'], votos: p['VOTOS'], partido: p['PARNOMBRE'] }));
+                    dibujarGrafico(datos, nombre, esC);
+                }
+            }
+        });
     });
 
     // ── invalidateSize en arranque: da tiempo al browser de calcular el layout ──
@@ -774,43 +806,38 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Poblar dropdown visual de partidos y conectarlo al selector legacy
     function _poblarDropdownPartido() {
-        const dropdown    = document.getElementById('partido-dropdown');
-        const searchInput = document.getElementById('obs-partido-search');
-        const legacySel   = document.getElementById('partido-selector');
-        if (!dropdown || typeof currentPartidoData === 'undefined' || !currentPartidoData) return;
+        const lista     = document.getElementById('partido-dropdown');
+        const legacySel = document.getElementById('partido-selector');
+        if (!lista || typeof currentPartidoData === 'undefined' || !currentPartidoData) return;
 
         const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
-        const partidos = [...new Set(currentPartidoData.map(r => r['PARNOMBRE']))]
-            .filter(p => p && !excluir.includes(p))
-            .sort();
+        const conteo = {};
+        currentPartidoData.forEach(r => {
+            if (r['PARNOMBRE'] && !excluir.includes(r['PARNOMBRE'])) {
+                conteo[r['PARNOMBRE']] = (conteo[r['PARNOMBRE']] || 0) + r['VOTOS'];
+            }
+        });
+        const partidos = Object.entries(conteo).sort((a, b) => b[1] - a[1]).map(([p]) => p);
 
-        const render = filtro => {
-            const items = filtro
-                ? partidos.filter(p => p.toLowerCase().includes(filtro.toLowerCase()))
-                : partidos;
-            dropdown.innerHTML = items.map(p =>
-                `<div class="dropdown-item" data-partido="${p}">${p}</div>`
-            ).join('');
-            dropdown.querySelectorAll('.dropdown-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    dropdown.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('selected'));
-                    item.classList.add('selected');
-                    if (legacySel) {
-                        legacySel.value = item.dataset.partido;
-                        legacySel.dispatchEvent(new Event('change'));
-                    }
-                    if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
-                });
+        lista.innerHTML = partidos.map(p => {
+            const clr = typeof colorPartido === 'function' ? colorPartido(p) : '#9CA3AF';
+            return `<button class="obs-partido-btn" data-partido="${p}">
+                <span class="obs-partido-btn__dot" style="background:${clr}"></span>
+                <span class="obs-partido-btn__name">${p}</span>
+            </button>`;
+        }).join('');
+
+        lista.querySelectorAll('.obs-partido-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                lista.querySelectorAll('.obs-partido-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                if (legacySel) {
+                    legacySel.value = btn.dataset.partido;
+                    legacySel.dispatchEvent(new Event('change'));
+                }
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
             });
-        };
-
-        render('');
-        if (searchInput) {
-            searchInput.value = '';
-            const nuevo = searchInput.cloneNode(true);
-            searchInput.parentNode.replaceChild(nuevo, searchInput);
-            nuevo.addEventListener('input', () => render(nuevo.value));
-        }
+        });
     }
 });
 

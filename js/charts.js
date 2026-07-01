@@ -1,7 +1,16 @@
 // ==================== GRÁFICO MUNICIPIO / PARTIDO / CANDIDATO ====================
 function dibujarGrafico(datos, titulo, esCandidato) {
     if (!datos || datos.length === 0) return;
-    const ctx = document.getElementById('chart-municipio').getContext('2d');
+    // Pequeño delay: deja que el browser haga reflow del panel antes de que
+    // Chart.js mida el canvas. Sin esto el canvas queda 0×0 si el panel
+    // acaba de hacerse visible.
+    setTimeout(() => _renderGrafico(datos, titulo, esCandidato), 60);
+}
+
+function _renderGrafico(datos, titulo, esCandidato) {
+    const canvasEl = document.getElementById('chart-municipio');
+    if (!canvasEl) return;
+    const ctx = canvasEl.getContext('2d');
     if (window.municipioChart) window.municipioChart.destroy();
 
     let datosMostrar = [...datos];
@@ -18,33 +27,39 @@ function dibujarGrafico(datos, titulo, esCandidato) {
 
     const titulo_completo = `Votación en ${titulo}${esCandidato ? ' (Candidatos)' : ' (Partidos)'}`;
 
+    const darkTick = { color: 'rgba(255,255,255,0.55)', font: { size: 10 } };
+    const darkGrid = { color: 'rgba(255,255,255,0.07)' };
+
     if (graficoTipo === 'bar') {
         window.municipioChart = new Chart(ctx, {
             type: 'bar',
-            data: { labels, datasets: [{ label: 'Votos', data: valores, backgroundColor: colores, borderWidth: 1 }] },
+            data: { labels, datasets: [{ data: valores, backgroundColor: colores, borderWidth: 0, borderRadius: 3 }] },
             options: {
+                indexAxis: 'y',
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: { display: false },
-                    title: { display: true, text: titulo_completo }
+                    tooltip: { callbacks: { label: ctx => ' ' + ctx.raw.toLocaleString('es-CO') + ' votos' } }
                 },
                 scales: {
-                    y: { beginAtZero: true, title: { display: true, text: 'Votos' } },
-                    x: { ticks: { autoSkip: true, maxRotation: 45 } }
+                    x: { beginAtZero: true, ticks: { ...darkTick, callback: v => v >= 1000 ? (v/1000).toFixed(0)+'k' : v }, grid: darkGrid },
+                    y: { ticks: { ...darkTick, autoSkip: false, callback: function(val) {
+                        const l = this.getLabelForValue(val);
+                        return l && l.length > 22 ? l.substring(0,20)+'…' : l;
+                    }}, grid: { display: false } }
                 }
             }
         });
     } else {
         window.municipioChart = new Chart(ctx, {
             type: 'pie',
-            data: { labels, datasets: [{ data: valores, backgroundColor: colores, borderWidth: 1 }] },
+            data: { labels, datasets: [{ data: valores, backgroundColor: colores, borderWidth: 1, borderColor: 'rgba(0,0,0,0.3)' }] },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 plugins: {
-                    legend: { position: 'right', labels: { font: { size: 10 } } },
-                    title: { display: true, text: titulo_completo }
+                    legend: { position: 'right', labels: { ...darkTick, boxWidth: 12, padding: 8 } }
                 }
             }
         });
@@ -59,8 +74,39 @@ async function actualizarTrayectoriaPartido() {
     const showVotos  = document.getElementById('tray-show-votos').checked;
     const showPct    = document.getElementById('tray-show-pct').checked;
 
-    if (!municipio || !cargo || !partido) { alert('Seleccione municipio, cargo y partido'); return; }
-    if (!showVotos && !showPct) { alert('Active al menos un eje (Votos o %)'); return; }
+    // Mensaje inline en lugar de alert()
+    const mostrarError = msg => {
+        let el = document.getElementById('tray-error-msg');
+        if (!el) {
+            el = document.createElement('p');
+            el.id = 'tray-error-msg';
+            el.style.cssText = 'color:#c0392b;font-size:0.82rem;margin:0.4rem 0 0;';
+            document.querySelector('.trajectory-controls')?.after(el);
+        }
+        el.textContent = msg;
+        el.style.display = 'block';
+    };
+    const limpiarError = () => {
+        const el = document.getElementById('tray-error-msg');
+        if (el) el.style.display = 'none';
+    };
+
+    if (!municipio || !cargo || !partido) {
+        mostrarError('Seleccione municipio, cargo y partido para continuar.');
+        return;
+    }
+    if (!showVotos && !showPct) {
+        mostrarError('Active al menos un eje: Votos o %.');
+        return;
+    }
+    limpiarError();
+
+    // Estado de carga en el botón
+    const btn = document.getElementById('btn-actualizar-trayectoria');
+    const textoOriginal = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando…'; }
+
+    try {
 
     const anios = Object.entries(DATOS_DISPONIBLES)
         .filter(([, corps]) => corps.includes(cargo))
@@ -140,7 +186,7 @@ async function actualizarTrayectoriaPartido() {
         data: { labels: serie.map(s => s.anio), datasets },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             interaction: { mode: 'index', intersect: false },
             plugins: {
                 title: {
@@ -158,6 +204,9 @@ async function actualizarTrayectoriaPartido() {
             scales
         }
     });
+    } finally {
+        if (btn) { btn.disabled = false; btn.innerHTML = textoOriginal; }
+    }
 }
 
 // ==================== GRÁFICO TRAYECTORIA MUNICIPAL (CANDIDATOS) ====================
