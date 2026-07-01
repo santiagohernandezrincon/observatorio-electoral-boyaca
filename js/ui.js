@@ -53,8 +53,16 @@ function mostrarDetalleProvincia(provincia, datosProv) {
     let html = `<h4>${provincia}</h4><p><strong>Total votos válidos:</strong> ${datosProv.totalVotos.toLocaleString()}</p><div id="partidos-lista">`;
     partidosOrdenados.forEach(p => {
         const pct = (p['VOTOS'] / datosProv.totalVotos * 100).toFixed(1);
-        html += `<div class="partido-item" data-partido="${p['PARNOMBRE']}">${p['PARNOMBRE']} (${p['VOTOS'].toLocaleString()} votos, ${pct}%)</div>
-                 <div class="candidatos-list" data-partido="${p['PARNOMBRE']}" style="display:none;"></div>`;
+        const clr = typeof colorPartido === 'function' ? colorPartido(p['PARNOMBRE']) : '#9CA3AF';
+        html += `<div class="partido-item" data-partido="${p['PARNOMBRE']}">
+          <div class="pi-row">
+            <span class="pi-dot" style="background:${clr}"></span>
+            <span class="pi-nombre">${p['PARNOMBRE']}</span>
+            <span class="pi-pct">${pct}%</span>
+          </div>
+          <div class="pi-bar"><div class="pi-fill" style="width:${Math.min(pct,100)}%;background:${clr}"></div></div>
+        </div>
+        <div class="candidatos-list" data-partido="${p['PARNOMBRE']}" style="display:none;"></div>`;
     });
     html += '</div>';
     div.innerHTML = html;
@@ -107,8 +115,16 @@ function mostrarDetalleMunicipio(municipioNombre, partidosMunicipio, candidatosM
                 <div id="partidos-lista">`;
     partidosOrdenados.forEach(([partido, votos]) => {
         const pct = (votos / partidosMunicipio[0]['TOTAL_VOTOS'] * 100).toFixed(1);
-        html += `<div class="partido-item" data-partido="${partido}">${partido} (${votos.toLocaleString()} votos, ${pct}%)</div>
-                 <div class="candidatos-list" data-partido="${partido}" style="display:none;"></div>`;
+        const clr = typeof colorPartido === 'function' ? colorPartido(partido) : '#9CA3AF';
+        html += `<div class="partido-item" data-partido="${partido}">
+          <div class="pi-row">
+            <span class="pi-dot" style="background:${clr}"></span>
+            <span class="pi-nombre">${partido}</span>
+            <span class="pi-pct">${pct}%</span>
+          </div>
+          <div class="pi-bar"><div class="pi-fill" style="width:${Math.min(pct,100)}%;background:${clr}"></div></div>
+        </div>
+        <div class="candidatos-list" data-partido="${partido}" style="display:none;"></div>`;
     });
     html += '</div>';
     div.innerHTML = html;

@@ -2076,3 +2076,110 @@ html, body {
   margin-top: 0.5rem;
   width: 100%;
 }
+
+
+/* =================================================================
+   PANEL MUNICIPIO — partido-item rediseñado
+   ================================================================= */
+
+/* Reset del estilo viejo que aplica fondos grises */
+#detalle-municipio .partido-item,
+.partido-item {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 5px 0 4px !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+#detalle-municipio .partido-item:hover { background: rgba(255,255,255,0.05) !important; }
+#detalle-municipio .partido-item:last-of-type { border-bottom: none !important; }
+
+/* Fila nombre + punto + porcentaje */
+.pi-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+.pi-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+.pi-nombre {
+  flex: 1;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.88);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-body);
+}
+.pi-pct {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.55);
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  min-width: 38px;
+  text-align: right;
+}
+
+/* Barra proporcional */
+.pi-bar {
+  height: 3px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 1px;
+}
+.pi-fill {
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0.75;
+  transition: width 0.3s ease;
+}
+
+/* Lista de candidatos expandida */
+#detalle-municipio .candidatos-list { padding: 3px 0 3px 14px; }
+#detalle-municipio .candidato-item  {
+  font-size: 0.71rem;
+  color: rgba(255,255,255,0.55);
+  padding: 2px 0;
+  line-height: 1.4;
+}
+#detalle-municipio .candidato-item a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+#detalle-municipio .candidato-item a:hover { color: #fff; text-decoration: underline; }
+
+/* Header del municipio seleccionado */
+#detalle-municipio h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin: 0 0 2px;
+  line-height: 1.2;
+}
+#detalle-municipio > p {
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0 0 8px;
+}
+#detalle-municipio #partidos-lista { margin-top: 4px; }
+
+/* Chart en panel: separador superior */
+.obs-panel__chart-wrap {
+  padding: 6px 0.75rem 0.75rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-top: 4px;
+}

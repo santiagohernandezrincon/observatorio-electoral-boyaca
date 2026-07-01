@@ -134,7 +134,10 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         }
     }
 
-    if (!filas || !filas.length) return '#cccccc';
+    // calor y margen no usan 'filas' — saltan este early return
+    if (tipoVista !== 'calor' && tipoVista !== 'margen') {
+        if (!filas || !filas.length) return '#cccccc';
+    }
 
     if (tipoVista === 'partido') {
         return filas.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b).COLOR_BASE || '#95a5a6';
