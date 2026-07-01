@@ -299,27 +299,53 @@ function inicializarNav() {
   const pillsCorp = document.getElementById('pills-corp');
   if (!pillsAnio || !pillsCorp) return;
   const years = Object.keys(DATOS_DISPONIBLES).sort((a, b) => b - a);
-  pillsAnio.innerHTML = '';
+  const grupos = [
+    { label: 'Congresional', years: [] },
+    { label: 'Local',        years: [] },
+    { label: 'Otro',         years: [] }
+  ];
   years.forEach(y => {
-    const btn = document.createElement('button');
-    btn.className = 'obs-pill obs-pill-year' + (String(y) === String(currentAnio) ? ' active' : '');
-    btn.textContent = y;
-    btn.onclick = () => {
-      // 1. Actualizar variable global si existe
-      if (typeof currentAnio !== 'undefined') currentAnio = y;
-      // 2. Sincronizar el selector original para que el pipeline existente lo detecte
-      const sel = document.getElementById('anio-selector');
-      if (sel) {
-        sel.value = y;
-        sel.dispatchEvent(new Event('change'));
-      }
-      // 3. UI: marcar pill activa
-      pillsAnio.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      actualizarPillsCorp();
-    };
-    pillsAnio.appendChild(btn);
+    const corps = DATOS_DISPONIBLES[y] || [];
+    if (corps.includes('camara') || corps.includes('senado')) grupos[0].years.push(y);
+    else if (corps.includes('alcalde')) grupos[1].years.push(y);
+    else grupos[2].years.push(y);
   });
+
+  pillsAnio.innerHTML = '';
+  grupos.filter(g => g.years.length).forEach(grupo => {
+    const wrap = document.createElement('div');
+    wrap.className = 'obs-year-group';
+    const label = document.createElement('span');
+    label.className = 'obs-year-group__label';
+    label.textContent = grupo.label;
+    wrap.appendChild(label);
+
+    const row = document.createElement('div');
+    row.className = 'obs-pills-row';
+    grupo.years.forEach(y => {
+      const btn = document.createElement('button');
+      btn.className = 'obs-pill obs-pill-year' + (String(y) === String(currentAnio) ? ' active' : '');
+      btn.textContent = y;
+      btn.onclick = () => {
+        // 1. Actualizar variable global si existe
+        if (typeof currentAnio !== 'undefined') currentAnio = y;
+        // 2. Sincronizar el selector original para que el pipeline existente lo detecte
+        const sel = document.getElementById('anio-selector');
+        if (sel) {
+          sel.value = y;
+          sel.dispatchEvent(new Event('change'));
+        }
+        // 3. UI: marcar pill activa
+        pillsAnio.querySelectorAll('.obs-pill').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        actualizarPillsCorp();
+      };
+      row.appendChild(btn);
+    });
+    wrap.appendChild(row);
+    pillsAnio.appendChild(wrap);
+  });
+
   actualizarPillsCorp();
 }
 
@@ -347,6 +373,58 @@ function actualizarPillsCorp() {
       btn.classList.add('active');
     };
     pillsCorp.appendChild(btn);
+  });
+}
+
+function actualizarBreadcrumb() {
+  const el = document.getElementById('obs-breadcrumb');
+  if (!el) return;
+  const labels = typeof LABELS_CORPORACION !== 'undefined' ? LABELS_CORPORACION : {};
+  el.textContent = `${labels[currentCorporacion] || currentCorporacion} · ${currentAnio}`;
+}
+
+function inicializarActor() {
+  const input = document.getElementById('actor-search-input');
+  const autocomplete = document.getElementById('actor-autocomplete');
+  const loading = document.getElementById('actor-loading');
+  if (!input) return;
+
+  let indiceIniciado = false;
+  async function asegurarIndice() {
+    if (indiceIniciado) return;
+    indiceIniciado = true;
+    loading.style.display = 'flex';
+    await construirIndiceActor();
+    loading.style.display = 'none';
+  }
+  input.addEventListener('focus', asegurarIndice);
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    autocomplete.innerHTML = '';
+    if (!actorIndiceListo || q.length < 2) { autocomplete.style.display = 'none'; return; }
+    const qNorm = normalizarNombre(q);
+    const nombres = [...new Set(actorTodasLasFilas.map(r => r['CANNOMBRE']))]
+      .filter(n => normalizarNombre(n).includes(qNorm))
+      .sort((a, b) => a.localeCompare(b))
+      .slice(0, 8);
+    if (!nombres.length) { autocomplete.style.display = 'none'; return; }
+    autocomplete.style.display = 'block';
+    nombres.forEach(nombre => {
+      const item = document.createElement('div');
+      item.className = 'actor-autocomplete__item';
+      item.textContent = nombre;
+      item.addEventListener('click', () => {
+        input.value = nombre;
+        autocomplete.style.display = 'none';
+        // Selección completa del candidato: Paso 2
+      });
+      autocomplete.appendChild(item);
+    });
+  });
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.actor-search-wrap')) autocomplete.style.display = 'none';
   });
 }
 
@@ -431,14 +509,14 @@ function animarKPIs() {
 document.addEventListener('DOMContentLoaded', async () => {
     // Inicialización de mapas Leaflet
     mapSimple = L.map('map').setView([5.75, -73.0], 8);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO'
     }).addTo(mapSimple);
 
     mapA = L.map('map-a').setView([5.75, -73.0], 8);
     mapB = L.map('map-b').setView([5.75, -73.0], 8);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapA);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapB);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapA);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapB);
 
     // Carga GeoJSON
     try {
@@ -595,10 +673,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             renderCorpPills(currentAnio);
             cargarDatos(currentAnio, currentCorporacion);
         }
+        actualizarBreadcrumb();
     });
     document.getElementById('corporacion-selector').addEventListener('change', e => {
         currentCorporacion = e.target.value;
         cargarDatos(currentAnio, currentCorporacion);
+        actualizarBreadcrumb();
     });
 
     document.getElementById('tipo-vista').addEventListener('change', e => {
@@ -718,7 +798,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     inicializarNav();
+    actualizarBreadcrumb();
     inicializarBuscador();
+    inicializarActor();
 
     // ── Drawer: cerrar, minimizar, tabs ──
     document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);

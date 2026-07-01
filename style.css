@@ -2002,6 +2002,97 @@ html, body {
   margin-top: 2px;
 }
 
+/* ==================== VISTA 3: ACTOR / CANDIDATO ==================== */
+.actor-layout {
+  display: flex;
+  height: calc(100vh - 46px);
+}
+.actor-panel {
+  width: 320px;
+  min-width: 320px;
+  background: var(--navy);
+  color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.actor-panel__header { margin-bottom: 0.9rem; }
+.actor-panel__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.actor-panel__sub {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 2px;
+}
+.actor-search-wrap { position: relative; }
+.actor-search {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+}
+.actor-search::placeholder { color: rgba(255,255,255,0.35); }
+.actor-search:focus { outline: none; border-color: var(--gold); }
+.actor-autocomplete {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 50;
+}
+.actor-autocomplete__item {
+  padding: 0.5rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  cursor: pointer;
+}
+.actor-autocomplete__item:hover { background: var(--surface-2); }
+.actor-loading {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.5rem;
+}
+.actor-empty {
+  text-align: center;
+  color: rgba(255,255,255,0.35);
+  padding-top: 3rem;
+  font-size: 0.85rem;
+}
+.actor-empty i { font-size: 1.6rem; margin-bottom: 0.6rem; display: block; }
+.actor-main { flex: 1; position: relative; }
+.actor-map { width: 100%; height: 100%; }
+
+/* Grupos de años (Congresional/Local/Otro) dentro de #pills-anio */
+.obs-year-group { margin-bottom: 5px; }
+.obs-year-group:last-child { margin-bottom: 0; }
+.obs-year-group__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.52rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
 
 /* =================================================================
    FIX: Click municipio → panel stats

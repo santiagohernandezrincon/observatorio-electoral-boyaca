@@ -492,6 +492,45 @@ async function cargarPartidosPorAnioCorp(anio, corp) {
     }
 }
 
+// ==================== ÍNDICE DE CANDIDATOS (VISTA ACTOR) ====================
+let actorIndiceListo = false;
+let actorIndiceCargando = false;
+let actorTodasLasFilas = [];
+
+async function construirIndiceActor() {
+    if (actorIndiceListo || actorIndiceCargando) return;
+    actorIndiceCargando = true;
+    const excluir = ['CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
+                     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
+    const tareas = [];
+    Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
+        corps.forEach(corp => {
+            const key = `${anio}_${corp}`;
+            if (todosLosCandidatosPorAnioCorp[key]) return;
+            const archivos = archivosPorAnio[anio]?.[corp];
+            if (!archivos?.candidato) return;
+            tareas.push(
+                fetch(basePath + archivos.candidato)
+                    .then(r => r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`)))
+                    .then(text => { todosLosCandidatosPorAnioCorp[key] = parseCandidatosCSV(text).filter(row => !excluir.includes(row['CANNOMBRE'])); })
+                    .catch(err => console.warn(`No se pudo indexar ${key}:`, err))
+            );
+        });
+    });
+    await Promise.all(tareas);
+
+    actorTodasLasFilas = [];
+    Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
+        corps.forEach(corp => {
+            (todosLosCandidatosPorAnioCorp[`${anio}_${corp}`] || [])
+                .filter(row => String(row['CANNOMBRE']).trim() !== String(row['PARNOMBRE']).trim())
+                .forEach(row => actorTodasLasFilas.push({ ...row, ANIO: anio, CORP: corp }));
+        });
+    });
+    actorIndiceListo = true;
+    actorIndiceCargando = false;
+}
+
 // ==================== DATOS COMPARACIÓN ====================
 function obtenerDatosComparacion(tipo, valor) {
     const datos = {};
