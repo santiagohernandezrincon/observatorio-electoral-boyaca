@@ -383,6 +383,9 @@ function actualizarBreadcrumb() {
   el.textContent = `${labels[currentCorporacion] || currentCorporacion} · ${currentAnio}`;
 }
 
+let actorCandidatoActual = null; // { nombre, filas, listaCiclos }
+let actorCicloActivo = null;     // null = agregado; o `${anio}_${corp}`
+
 function seleccionarCandidatoActor(nombreCanonico) {
   const clave = normalizarNombre(nombreCanonico);
   const filas = actorTodasLasFilas.filter(r => normalizarNombre(r['CANNOMBRE']) === clave);
@@ -393,13 +396,16 @@ function seleccionarCandidatoActor(nombreCanonico) {
     const key = `${row.ANIO}_${row.CORP}`;
     if (!ciclos.has(key)) {
       const partido = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], row.ANIO, row.CORP);
-      ciclos.set(key, { anio: row.ANIO, corp: row.CORP, votos: 0, partido });
+      ciclos.set(key, { key, anio: row.ANIO, corp: row.CORP, votos: 0, partido });
     }
     ciclos.get(key).votos += row['VOTOS'];
   });
   const listaCiclos = [...ciclos.values()].sort((a, b) => b.anio - a.anio || a.corp.localeCompare(b.corp));
   const votosTotales = listaCiclos.reduce((s, c) => s + c.votos, 0);
   const partidosUnicos = [...new Set(listaCiclos.map(c => c.partido))];
+
+  actorCandidatoActual = { nombre: nombreCanonico, filas, listaCiclos };
+  actorCicloActivo = null;
 
   document.getElementById('actor-empty').style.display = 'none';
   document.getElementById('actor-info').style.display = 'block';
@@ -411,8 +417,25 @@ function seleccionarCandidatoActor(nombreCanonico) {
     <div class="actor-stat"><span class="actor-stat__num">${votosTotales.toLocaleString('es-CO')}</span><span class="actor-stat__label">Votos totales</span></div>
     <div class="actor-stat"><span class="actor-stat__num">${listaCiclos.length}</span><span class="actor-stat__label">${listaCiclos.length === 1 ? 'Ciclo electoral' : 'Ciclos electorales'}</span></div>
   `;
-  document.getElementById('actor-cycles').innerHTML = listaCiclos.map(c => `
-    <div class="actor-cycle-card">
+
+  renderCiclosActor();
+  aplicarFiltroCicloActor();
+}
+
+function renderCiclosActor() {
+  const { listaCiclos } = actorCandidatoActual;
+  const cont = document.getElementById('actor-cycles');
+
+  const cardTodos = `
+    <div class="actor-cycle-card actor-cycle-card--todos${actorCicloActivo === null ? ' actor-cycle-card--active' : ''}" data-key="">
+      <div class="actor-cycle-card__dot" style="background:rgba(255,255,255,0.25)"></div>
+      <div class="actor-cycle-card__info">
+        <div class="actor-cycle-card__title">Todos los ciclos</div>
+      </div>
+    </div>`;
+
+  const cards = listaCiclos.map(c => `
+    <div class="actor-cycle-card${actorCicloActivo === c.key ? ' actor-cycle-card--active' : ''}" data-key="${c.key}">
       <div class="actor-cycle-card__dot" style="background:${colorPartido(c.partido)}"></div>
       <div class="actor-cycle-card__info">
         <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
@@ -420,6 +443,34 @@ function seleccionarCandidatoActor(nombreCanonico) {
       </div>
     </div>
   `).join('');
+
+  cont.innerHTML = cardTodos + cards;
+  cont.querySelectorAll('.actor-cycle-card').forEach(el => {
+    el.addEventListener('click', () => {
+      actorCicloActivo = el.dataset.key || null;
+      renderCiclosActor();
+      aplicarFiltroCicloActor();
+    });
+  });
+}
+
+function aplicarFiltroCicloActor() {
+  const { filas, listaCiclos } = actorCandidatoActual;
+  let filasFiltradas, colorBase;
+  if (actorCicloActivo === null) {
+    filasFiltradas = filas;
+    colorBase = colorPartido(listaCiclos[0].partido);
+  } else {
+    const ciclo = listaCiclos.find(c => c.key === actorCicloActivo);
+    filasFiltradas = filas.filter(r => `${r.ANIO}_${r.CORP}` === actorCicloActivo);
+    colorBase = colorPartido(ciclo.partido);
+  }
+  const votosPorMunicipio = {};
+  filasFiltradas.forEach(row => {
+    const mun = normalizarNombre(row['MUNNOMBRE']);
+    votosPorMunicipio[mun] = (votosPorMunicipio[mun] || 0) + row['VOTOS'];
+  });
+  actualizarMapaActor(votosPorMunicipio, colorBase);
 }
 
 function inicializarActor() {

@@ -2142,7 +2142,15 @@ html, body {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-sm);
   padding: 0.45rem 0.6rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
+.actor-cycle-card:hover { background: rgba(255,255,255,0.09); }
+.actor-cycle-card--active {
+  background: var(--gold-light);
+  border-color: var(--gold);
+}
+.actor-cycle-card--todos { font-style: italic; }
 .actor-cycle-card__dot {
   width: 9px;
   height: 9px;

@@ -113,6 +113,10 @@ let puestosResultadosCargados = false;
 // Para comparación
 let mapA, mapB;
 let currentLayerA, currentLayerB;
+
+// Para Vista Actor
+let mapActor;
+let currentLayerActor;
 let comparacionDatosA = null;
 let comparacionDatosB = null;
 let comparacionValorA = '';
