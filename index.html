@@ -366,5 +366,37 @@
 <script src="js/charts.js"></script>
 <script src="js/ui.js"></script>
 
+<!-- View switching: script independiente, no depende del handler async de ui.js -->
+<script>
+(function() {
+  function initViewSwitching() {
+    document.querySelectorAll('.obs-view-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var view = btn.dataset.view;
+        document.querySelectorAll('.obs-view-btn').forEach(function(b) {
+          b.classList.remove('obs-view-btn--active');
+        });
+        btn.classList.add('obs-view-btn--active');
+        document.querySelectorAll('.obs-vista').forEach(function(v) {
+          v.classList.remove('obs-vista--active');
+        });
+        var vista = document.getElementById('obs-vista-' + view);
+        if (vista) vista.classList.add('obs-vista--active');
+        if (view === 'mapa') {
+          setTimeout(function() {
+            if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+          }, 80);
+        }
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initViewSwitching);
+  } else {
+    initViewSwitching();
+  }
+})();
+</script>
+
 </body>
 </html>
