@@ -166,10 +166,143 @@ const NORMALIZAR_PARTIDO = {
   'COALICION PACTO HISTORICO': 'Pacto Histórico',
   'COALICION EQUIPO POR COLOMBIA': 'Equipo por Colombia',
   'COALICION CENTRO ESPERANZA': 'Centro Esperanza',
+  // 2022 Senado: coalición Alianza Verde + Centro Esperanza → dominante = Verde en Boyacá
+  'COALICIÓN ALIANZA VERDE Y CENTRO ESPERANZA': 'Alianza Verde',
+  'COALICION ALIANZA VERDE Y CENTRO ESPERANZA': 'Alianza Verde',
+
+  // ── COALICIONES 2026 ────────────────────────────────────────────────
+  // Senado 2026: lista electoral de Alianza Verde
+  'ALIANZA POR COLOMBIA': 'Alianza Verde',
+  // Senado 2026: variante de Pacto Histórico
+  'PACTO HISTÓRICO SENADO': 'Pacto Histórico',
+  'PACTO HISTORICO SENADO': 'Pacto Histórico',
+  // Senado 2026: Polo Democrático + movimientos de izquierda (Robledo et al.)
+  'AHORA COLOMBIA': 'Movimiento MIRA',  // Coalición MIRA + Nuevo Liberalismo + Dignidad (2026 Senado)
+  // Senado 2026: lista de Cambio Radical con Alma
+  'COALICIÓN CAMBIO RADICAL - ALMA': 'Cambio Radical',
+  'COALICION CAMBIO RADICAL - ALMA': 'Cambio Radical',
+  // Cámara 2026: Partido Verde Oxígeno + Alma
+  'ALMA - OXÍGENO': 'Partido Verde Oxígeno',
+  'ALMA - OXIGENO': 'Partido Verde Oxígeno',
+  // Cámara 2026: Cambio Radical + Nuevo Liberalismo
+  'CR-NUEVO LIBERALISMO': 'Cambio Radical',
+  // Consultas 2026: coalición de izquierda (Petro-afines)
+  'FRENTE POR LA VIDA': 'Pacto Histórico',
+  // Consultas 2026: consulta interna independiente (soluciones Liga/Fuerza Ciudadana)
+  'CONSULTA DE LAS SOLUCIONES: SALUD, SEGURIDAD Y EDUCACIÓN': 'Fuerza Ciudadana',
+
+  // ── PARTIDO DE LA U — variantes coalición (2023/2026) ───────────────
+  'PARTIDO DE LA U-PARTIDO MIRA': 'Partido de la U',
+  'PARTIDO DE LA U Y PARTIDO MIRA': 'Partido de la U',
+  'PARTIDO DE LA U Y EL PARTIDO POLITICO MIRA': 'Partido de la U',
+  'PARTIDO DE LA U-PARTIDO EN MARCHA': 'Partido de la U',
+  'PARTIDO DE LA U-PARTIDO EN MARCHA-PARTIDO POLÍTICO MIRA': 'Partido de la U',
+  'PARTIDO DE LA U-PARTIDO CAMBIO RADICAL': 'Partido de la U',
+  'PARTIDO DE LA U - CAMBIO RADICAL': 'Partido de la U',
+  'PARTIDO DE LA U Y PARTIDO CONSERVADOR': 'Partido de la U',
+  'PARTIDO DE LA U-CAMBIO RADICAL-ALIANZA VERDE': 'Partido de la U',
+  'PARTIDO SOCIAL DE UNIDAD NACIONAL Y PARTIDO CAMBIO RADICAL': 'Partido de la U',
+  'PARTIDO DE LA UNION POR LA GENTE- PARTIDO CAMBIO RADICAL': 'Partido de la U',
+  'ACUERDO DE COALICÓN ENTRE EL PARTIDO DE LA U Y PARTIDO MIRA': 'Partido de la U',
+  'COALICION PARTIDO DE LA U -PARTIDO POLITICO MIRA': 'Partido de la U',
+  'COALICION PARTIDO DE LA U- PARTIDO POLITICO MIRA': 'Partido de la U',
+  'COALICION PARTIDO DE LA U -CAMBIO RADICAL': 'Partido de la U',
+  'CHIQUINQUIRA LA U MIRA': 'Partido de la U',
+  'PARTIDO DE LA U - PARTIDO MIRA': 'Partido de la U',
+
+  // ── CONSERVADOR — variantes coalición ───────────────────────────────
+  'PARTIDO CONSERVADOR COLOMBIANO Y EL PARTIDO ASI': 'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR - ASI': 'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR - PARTIDO LIBERAL': 'Partido Conservador Colombiano',
+  'PARTIDO CONSERVADOR COLOMBIANO - PARTIDO LIBERAL COLOMBIANO': 'Partido Conservador Colombiano',
+  'PCC - LIBERAL - SIACHOQUE': 'Partido Conservador Colombiano',
+  'PCC-ASI-CUCAITA': 'Partido Conservador Colombiano',
+  'COALICION LIBERAL-CONSERVADORA': 'Partido Conservador Colombiano',
+
+  // ── ALIANZA VERDE — variantes coalición local 2023 ──────────────────
+  'ALIANZAVERDE-PARTIDO SOCIAL DE UNIDAD NACIONAL': 'Alianza Verde',
+  'PARTIDO VERDE Y PARTIDO DE LA U': 'Alianza Verde',
+  'PARTIDO VERDE OXÍGENO': 'Partido Verde Oxígeno',
+  'PARTIDO POLÍTICO OXÍGENO': 'Partido Verde Oxígeno',
+  'BOYACÁ POTENCIA DE VIDA': 'Alianza Verde',  // Alcaldías 2023, coalición verde
+  'ARCABUCO VERDE UNIDO POR LA GENTE': 'Alianza Verde',
+
+  // ── CENTRO DEMOCRÁTICO — variantes ──────────────────────────────────
+  'PARTIDO CENTRO DEMOCRATICO-PARTIDO POLITICO MIRA': 'Centro Democrático',
+  'PARTIDO CENTRO DEMOCRATICO- PARTIDO POLITICO MIRA': 'Centro Democrático',
+  'COALICION ALIANZA LIBERAL DE CENTRO DEMOCRATICO': 'Centro Democrático',
+
+  // ── PACTO HISTÓRICO — variantes ─────────────────────────────────────
+  'MOVIMIENTO POLÍTICO COLOMBIA HUMANA': 'Pacto Histórico',
+  'BOYACÁ SOMOS TODOS': 'Pacto Histórico',  // 2023 candidato gobernación afín
+  // 'COLOMBIA SEGURA Y PRÓSPERA' — movimiento independiente pequeño (10.7k votos), sin partido claro — queda sin color
+
+  // ── SALVACIÓN NACIONAL / MIO — variantes ────────────────────────────
+  'MOVIMIENTO SALVACIÓN NACIONAL': 'Salvación Nacional',
+  'MOVIMIENTO DE SALVACIÓN NACIONAL': 'Salvación Nacional',
+  'Mov. Salvación Nacional': 'Salvación Nacional',
+
+  // ── LIBERAL — variantes coalición ───────────────────────────────────
+  'COALICION LIBERAL': 'Partido Liberal Colombiano',
+  'PARTIDO LA FUERZA DE LA PAZ-PARTIDO LIBERAL COLOMBIANO': 'Partido Liberal Colombiano',
 
   // CANDIDATOS MENORES 2022
   'COLOMBIA PIENSA EN GRANDE': 'Colombia Piensa en Grande',
-  'PARTIDO MOVIMIENTO DE SALVACION NACIONAL': 'Mov. Salvación Nacional',
+  'PARTIDO MOVIMIENTO DE SALVACION NACIONAL': 'Salvación Nacional',
+
+
+  // ── Coaliciones hiperlocales alcaldías (auto-generadas) ──
+  'COALICION ALCALDIA DE COPER': 'Partido de la U',
+  'COALICION AMOR POR VILLA DE LEYVA': 'Partido Liberal Colombiano',
+  'COALICION CONSTRUYENDO FUTURO': 'Partido Liberal Colombiano',
+  'COALICION ES EL MOMENTO DE UNIRNOS POR MONIQUIRA': 'Partido Liberal Colombiano',
+  'COALICION LIBERAL': 'Partido Liberal Colombiano',
+  'COALICION POR UN MEJOR MA├æANA': 'Alianza Verde',
+  'COALICI├ôN CONSTRUYAMOS OPORTUNIDADES PARA TODOS': 'Partido Liberal Colombiano',
+  'COALICI├ôN GOBIERNO EN EQUIPO PARA SEGUIR PROGRESANDO': 'Alianza Verde',
+  'CONSTRUYAMOS UNA NUEVA HISTORIA': 'Alianza Verde',
+  'CONSTRUYENDO CON AMOR': 'Alianza Verde',
+  'CONSTRUYENDO EL PAYA QUE TODOS QUEREMOS': 'Alianza Verde',
+  'CONSTRUYENDO PROGRESO PARA MOTAVITA': 'Partido Liberal Colombiano',
+  'EL PROGRESO DE SUTAMARCHAN DEBE CONTINUAR': 'Cambio Radical',
+  'EN EQUIPO HACEMOS MAS': 'Partido de la U',
+  'EXPERIENCIA Y CAMBIO PARA VOLVER AL PROGRESO': 'Partido Liberal Colombiano',
+  'JUNTOS #ESMOMENTO': 'Centro Democrático',
+  'JUNTOS LABRANDO FUTURO POR SAN JOSE DE PARE': 'Partido Liberal Colombiano',
+  'JUNTOS POR EL FUTURO DE BOYACA': 'Alianza Verde',
+  'JUNTOS POR UMBITA': 'Alianza Verde',
+  'JUNTOS SI PODEMOS': 'Alianza Verde',
+  'PARTIDO DE LA UNI├ôN POR LA GENTE - PARTIDO DE LA U': 'Partido de la U',
+  'POR EL BIENESTAR, LA SALUD Y EL CAMPO': 'Alianza Verde',
+  'POR EL RENACER DE TOGUI, JUNTOS PODEMOS MAS': 'Partido Liberal Colombiano',
+  'POR EL RENACER DE UN PUEBLO UNIDO': 'ASI',
+  'POR LA DIGNIDAD DE ARCABUCO': 'En Marcha',
+  'POR UN TOGUI PRODUCTIVO Y SOSTENIBLE': 'Partido Liberal Colombiano',
+  'PUERTO BOYACA PRIMERO': 'Cambio Radical',
+  'SAN PABLO DE BORBUR SIEMPRE CONTIGO': 'Partido Conservador Colombiano',
+  'SOATA JUNTOS POR UN MEJOR FUTURO': 'Centro Democrático',
+  'TENZA UNIDA PROGRESO DE TODOS': 'Centro Democrático',
+  'TIPACOQUE CONSTRUYE PROGRESO': 'Partido Liberal Colombiano',
+  'TODOS MARCHANDO POR UN CAMBIO': 'Alianza Verde',
+  'TODOS POR BRICE├æO': 'Alianza Verde',
+  'TODOS POR CUBARA': 'MAIS',
+  'TRABAJEMOS EN EQUIPO POR MOTAVITA': 'En Marcha',
+  'TRABAJEMOS UNIDOS POR SORACA': 'Alianza Verde',
+  'UINDOS POR UNA VICTORIA PROSPERA Y SOLIDARIA': 'Cambio Radical',
+  'UNIDOS CONSTRUIMOS DESARROLLO SOCIAL': 'Alianza Verde',
+  'UNIDOS DE VERDAD': 'Partido Liberal Colombiano',
+  'UNIDOS POR EL DESARROLLO DE BOAVITA': 'Alianza Verde',
+  'UNIDOS POR EL DESARROLLO DE PESCA': 'Alianza Verde',
+  'UNIDOS POR EL PROGRESO DE CALDAS': 'Partido Liberal Colombiano',
+  'UNIDOS POR GUICAN': 'Centro Democrático',
+  'UNIDOS POR NUESTRA TIERRA': 'Alianza Verde',
+  'UNIDOS POR PESCA': 'ASI',
+  'UNIDOS POR SATIVASUR': 'Centro Democrático',
+  'UNIDOS POR TINJACA': 'ASI',
+  'UNIDOS POR UN MEJOR FUTURO PARA PAEZ': 'Partido de la U',
+  'UNIDOS POR UN TIBANA DE OPORTUNIDADES': 'Alianza Verde',
+  'UNIDOS SOMOS EL EQUIPO DEL CAMBIO': 'Alianza Verde',
+  'UNIDOS SOMOS MAS': 'Centro Democrático',
 
   // VOTOS ESPECIALES
   'VOTOS NULOS': 'Votos nulos',
@@ -216,6 +349,10 @@ const NORMALIZAR_PARTIDO = {
   // ── Gran Consulta por Colombia ──
   'LA GRAN CONSULTA POR COLOMBIA': 'Gran Consulta por Colombia',
   'LA LISTA DE OVIEDO - CON TODA POR COLOMBIA': 'Gran Consulta por Colombia',
+  // Consultas 2026: sub-partidos dentro de La Gran Consulta por Colombia → unificar color
+  'Con Toda por Colombia': 'Gran Consulta por Colombia',   // Oviedo participó en Gran Consulta
+  'Valientes': 'Gran Consulta por Colombia',               // Dávila participó en Gran Consulta
+  'VALIENTES': 'Gran Consulta por Colombia',
 
   // ── Movimiento MIRA ──
   'PARTIDO POLITICO  MIRA': 'Movimiento MIRA',
@@ -224,10 +361,9 @@ const NORMALIZAR_PARTIDO = {
   'MOVIMIENTO INDEPENDIENTE DE RENOVACION ABSOLUTA  MIRA': 'Movimiento MIRA',
   'Movimiento Independiente De Renovacion Absoluta  Mira': 'Movimiento MIRA',
 
-  // ── Mov. Salvación Nacional ──
-  'MOVIMIENTO SALVACIÓN NACIONAL': 'Mov. Salvación Nacional',
-  'MOVIMIENTO DE SALVACIÓN NACIONAL': 'Mov. Salvación Nacional',
-  'MOVIMIENTO SALVACION NACIONAL': 'Mov. Salvación Nacional',
+  // ── Mov. Salvación Nacional — consolidado (apuntan a 'Salvación Nacional' en COLORES_PARTIDO) ──
+  'MOVIMIENTO SALVACION NACIONAL': 'Salvación Nacional',
+  'PARTIDO MOVIMIENTO DE SALVACION NACIONAL': 'Salvación Nacional',
   'PARTIDO CONSERVADOR - MOVIMIENTO SALVACIÓN NACIONAL': 'Partido Conservador Colombiano',
   'PARTIDO CONSERVADOR - MOVIMIENTO SALVACION NACIONAL': 'Partido Conservador Colombiano',
   'PARTIDO CONSERVADOR - SALVACION NACIONAL':            'Partido Conservador Colombiano',

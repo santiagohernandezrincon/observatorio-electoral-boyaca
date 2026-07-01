@@ -123,7 +123,7 @@
     <div class="obs-topbar">
       <div class="obs-topbar__brand">
         <span class="obs-topbar__dot"></span>
-        Presidencia 1ª Vuelta 2026 · Preconteo
+        <span id="obs-breadcrumb">Cámara de Representantes · 2026</span>
       </div>
       <nav class="obs-views" role="navigation" aria-label="Vistas del observatorio">
         <button class="obs-view-btn obs-view-btn--active" data-view="mapa">
@@ -245,13 +245,54 @@
 
     <!-- ─── VISTA 3: ACTOR / CANDIDATO ─── -->
     <div class="obs-vista" id="obs-vista-actor">
-      <div class="obs-vista-placeholder">
-        <div class="obs-placeholder__icon"><i class="fas fa-user-circle"></i></div>
-        <div class="obs-placeholder__label">ACTOR / CANDIDATO</div>
-        <p class="obs-placeholder__desc">
-          Seguir a cualquier candidato histórico de Boyacá a través del tiempo y el territorio.<br>
-          <em>Próximamente.</em>
-        </p>
+      <div class="actor-layout">
+
+        <!-- Panel izquierdo del actor -->
+        <aside class="actor-panel">
+          <div class="actor-panel__header">
+            <div class="actor-panel__title">ACTOR / CANDIDATO</div>
+            <div class="actor-panel__sub">Boyacá 2010 – 2026</div>
+          </div>
+
+          <!-- Buscador -->
+          <div class="actor-search-wrap">
+            <input type="text" id="actor-search-input" class="actor-search"
+                   placeholder="Nombre del candidato…" autocomplete="off">
+            <div class="actor-autocomplete" id="actor-autocomplete"></div>
+            <div class="actor-loading" id="actor-loading" style="display:none">
+              <i class="fas fa-spinner fa-spin"></i> Cargando índice…
+            </div>
+          </div>
+
+          <!-- Info candidato (se llena al seleccionar) -->
+          <div class="actor-info" id="actor-info" style="display:none">
+            <div class="actor-info__nombre" id="actor-nombre"></div>
+            <div class="actor-info__partido" id="actor-partido"></div>
+            <div class="actor-info__stats" id="actor-stats"></div>
+
+            <div class="actor-section-label">APARICIONES ELECTORALES</div>
+            <div class="actor-cycles" id="actor-cycles"></div>
+
+            <div class="actor-section-label">TOP MUNICIPIOS</div>
+            <div class="actor-table-wrap" id="actor-table"></div>
+          </div>
+
+          <!-- Estado vacío -->
+          <div class="actor-empty" id="actor-empty">
+            <i class="fas fa-search"></i>
+            <p>Busca un candidato para ver su trayectoria electoral en Boyacá</p>
+          </div>
+        </aside>
+
+        <!-- Área principal: mapa + timeline -->
+        <div class="actor-main">
+          <div id="map-actor" class="actor-map"></div>
+          <div class="actor-timeline" id="actor-timeline-wrap" style="display:none">
+            <div class="actor-timeline__label">VOTOS TOTALES POR CICLO</div>
+            <canvas id="actor-timeline-chart" height="90"></canvas>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -394,6 +435,7 @@
 
 
 <script src="js/colores_partido.js"></script>
+<script src="js/candidatos_partido.js"></script>
 <script src="js/globals.js"></script>
 <script src="js/data.js"></script>
 <script src="js/map.js"></script>

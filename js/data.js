@@ -238,12 +238,20 @@ function parseCandidatosCSV(text) {
 }
 
 // ==================== RESOLUCIÓN DE PARTIDO ====================
-function resolverPartido(partidoRaw, nombreCandidato) {
+function resolverPartido(partidoRaw, nombreCandidato, anio, cargo) {
     if (nombreCandidato && typeof CANDIDATOS_PARTIDO !== 'undefined') {
         const norm = s => String(s).toUpperCase()
-            .normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
             .replace(/\s+/g, ' ').trim();
         const cu = norm(nombreCandidato);
+        // 1. Clave scoped: 'ANIO_CARGO_NOMBRE' — sin conflictos entre años
+        if (anio && cargo) {
+            const keyScoped = norm(`${anio}_${cargo}_${cu}`);
+            for (const k of Object.keys(CANDIDATOS_PARTIDO)) {
+                if (norm(k) === keyScoped) return CANDIDATOS_PARTIDO[k];
+            }
+        }
+        // 2. Fallback: clave solo por nombre (compatibilidad con entradas antiguas)
         for (const k of Object.keys(CANDIDATOS_PARTIDO)) {
             if (norm(k) === cu) return CANDIDATOS_PARTIDO[k];
         }
@@ -265,7 +273,7 @@ async function cargarDatos(anio, corporacion) {
                          'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));
         currentPartidoData = partidosFiltrados.map(row => {
-            const parNorm = resolverPartido(row['PARNOMBRE'], null);
+            const parNorm = resolverPartido(row['PARNOMBRE'], null, anio, corporacion);
             const colorBase = colorPartido(parNorm);
             return { ...row, PARNOMBRE: parNorm, _partidoNorm: parNorm, COLOR_BASE: colorBase };
         });
@@ -277,7 +285,7 @@ async function cargarDatos(anio, corporacion) {
             .filter(row => !excluir.includes(row['CANNOMBRE']))
             .filter(row => String(row['CANNOMBRE'] || '').trim() !== String(row['PARNOMBRE'] || '').trim())
             .map(row => {
-                const partidoNorm = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE']);
+                const partidoNorm = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], anio, corporacion);
                 return { ...row, PARNOMBRE: partidoNorm, _partidoNorm: partidoNorm };
             });
         console.log(`Candidatos cargados: ${currentCandidatoData.length} filas`);
