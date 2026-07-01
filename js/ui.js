@@ -420,6 +420,60 @@ function seleccionarCandidatoActor(nombreCanonico) {
 
   renderCiclosActor();
   aplicarFiltroCicloActor();
+  renderTimelineActor(listaCiclos);
+}
+
+function renderTimelineActor(listaCiclos) {
+  const wrap = document.getElementById('actor-timeline-wrap');
+  wrap.style.display = 'block';
+  const ordenCronologico = [...listaCiclos].sort((a, b) => a.anio - b.anio || a.corp.localeCompare(b.corp));
+
+  // Delay: deja que el browser haga reflow del panel antes de que Chart.js
+  // mida el canvas (si no, queda 0×0 porque el wrap recién se hizo visible).
+  setTimeout(() => {
+    const canvasEl = document.getElementById('actor-timeline-chart');
+    if (!canvasEl) return;
+    const ctx = canvasEl.getContext('2d');
+    if (actorTimelineChart) actorTimelineChart.destroy();
+
+    const labels = ordenCronologico.map(c => `${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}`);
+    const valores = ordenCronologico.map(c => c.votos);
+    const colores = ordenCronologico.map(c => colorPartido(c.partido));
+    const colorLinea = colorPartido(ordenCronologico[ordenCronologico.length - 1].partido);
+
+    const darkTick = { color: 'rgba(255,255,255,0.55)', font: { size: 10 } };
+    const darkGrid = { color: 'rgba(255,255,255,0.07)' };
+
+    actorTimelineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          data: valores,
+          borderColor: colorLinea,
+          backgroundColor: colorLinea + '33',
+          pointBackgroundColor: colores,
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2,
+          tension: 0.3,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: ctx => `${ctx.raw.toLocaleString('es-CO')} votos` } }
+        },
+        scales: {
+          x: { ticks: darkTick, grid: { display: false } },
+          y: { beginAtZero: true, ticks: { ...darkTick, callback: v => v.toLocaleString('es-CO') }, grid: darkGrid }
+        }
+      }
+    });
+  }, 60);
 }
 
 function renderCiclosActor() {
@@ -471,6 +525,28 @@ function aplicarFiltroCicloActor() {
     votosPorMunicipio[mun] = (votosPorMunicipio[mun] || 0) + row['VOTOS'];
   });
   actualizarMapaActor(votosPorMunicipio, colorBase);
+  renderTablaMunicipiosActor(votosPorMunicipio, colorBase);
+}
+
+function renderTablaMunicipiosActor(votosPorMunicipio, colorBase) {
+  const cont = document.getElementById('actor-table');
+  const total = Object.values(votosPorMunicipio).reduce((s, v) => s + v, 0);
+  const top = Object.entries(votosPorMunicipio).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  if (!top.length) { cont.innerHTML = '<p class="actor-table-empty">Sin datos para este ciclo</p>'; return; }
+  cont.innerHTML = top.map(([munNorm, votos], i) => {
+    const pct = total > 0 ? (votos / total * 100).toFixed(1) : 0;
+    const feature = currentGeojson?.features.find(f => normalizarNombre(f.properties.MPIO_CNMBR) === munNorm);
+    const nombre = feature ? feature.properties.MPIO_CNMBR : munNorm;
+    return `
+      <div class="partido-item">
+        <div class="pi-row">
+          <span class="pi-rank">${i + 1}</span>
+          <span class="pi-nombre">${nombre}</span>
+          <span class="pi-pct">${votos.toLocaleString('es-CO')}</span>
+        </div>
+        <div class="pi-bar"><div class="pi-fill" style="width:${Math.min(pct,100)}%;background:${colorBase}"></div></div>
+      </div>`;
+  }).join('');
 }
 
 function inicializarActor() {

@@ -132,6 +132,7 @@ let candidatoEspecificoActual = null;
 let candidatoGanadorPorMunicipio = {};
 
 let trajectoryMunicipioChart = null;
+let actorTimelineChart = null;
 let todosLosCandidatosPorAnioCorp = {};
 let todosLosPartidosPorAnioCorp   = {};
 
