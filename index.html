@@ -109,18 +109,9 @@
 
     </div><!-- /obs-panel__body -->
 
-    <!-- Stats municipio (siempre visible; se llena al hacer clic) -->
-    <div class="obs-panel__stats" id="obs-panel-stats">
-      <div class="obs-panel__empty">
-        <i class="fas fa-mouse-pointer"></i>
-        <span>Clic en un municipio para ver datos</span>
-      </div>
-      <div class="obs-panel__stats-label" style="display:none">MUNICIPIO SELECCIONADO</div>
-      <div id="detalle-municipio"></div>
-      <div class="obs-panel__chart-wrap">
-        <canvas id="chart-municipio" height="200"></canvas>
-      </div>
-    </div>
+    <!-- Stats municipio: ahora en drawer derecho (#obs-drawer) -->
+    <!-- Se mantiene id=obs-panel-stats para compatibilidad con abrirSidebar -->
+    <div id="obs-panel-stats" style="display:none" aria-hidden="true"></div>
 
   </aside><!-- /obs-panel -->
 
@@ -175,6 +166,26 @@
           <div id="detalle-compare" class="detail-panel"></div>
         </div>
       </div>
+
+      <!-- ── DRAWER DERECHO — detalle municipio ── -->
+      <div class="obs-drawer" id="obs-drawer" aria-hidden="true">
+        <div class="obs-drawer__header">
+          <div class="obs-drawer__title" id="obs-drawer-title">—</div>
+          <button class="obs-drawer__close" id="obs-drawer-close" aria-label="Cerrar">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="obs-drawer__body">
+          <div id="detalle-municipio"></div>
+        </div>
+        <div class="obs-drawer__chart">
+          <canvas id="chart-municipio" height="220"></canvas>
+        </div>
+      </div>
+
+      <!-- ── LEYENDA DEL MAPA ── -->
+      <div class="obs-legend" id="obs-legend" aria-label="Leyenda del mapa"></div>
+
     </div>
 
     <!-- ─── VISTA 2: TRAYECTORIA ─── -->
@@ -266,6 +277,7 @@
     <option value="partido_heat">Por Partido</option>
     <option value="candidato_heat">Candidato</option>
     <option value="calor">Calor</option>
+    <option value="margen">Margen</option>
     <option value="candidato_ganador_por_partido">Candidato por Partido</option>
     <option value="comparacion">Comparación</option>
   </select>

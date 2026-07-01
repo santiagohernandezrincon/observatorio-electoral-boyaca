@@ -88,6 +88,8 @@ function mostrarDetalleMunicipio(municipioNombre, partidosMunicipio, candidatosM
         return;
     }
     abrirSidebar();
+    const drawerTitle = document.getElementById('obs-drawer-title');
+    if (drawerTitle) drawerTitle.textContent = municipioNombre;
     ultimoElementoDetalle = { nombre: municipioNombre, tipo: 'municipio', datosPartidos: partidosMunicipio, datosCandidatos: candidatosMunicipio };
 
     if (tipoVista === 'candidato_heat' || tipoVista === 'candidato_ganador' || tipoVista === 'candidato_ganador_por_partido') {
@@ -369,17 +371,24 @@ function inicializarBuscador() {
 
 // ==================== SIDEBAR ====================
 function abrirSidebar() {
-    const layout = document.getElementById('map-layout');
-    if (layout) layout.classList.add('sidebar-open');
-    // Marcar canvas como activo para que sea visible (ver CSS #chart-municipio.activo)
-    const canvas = document.getElementById('chart-municipio');
-    if (canvas) canvas.classList.add('activo');
-    // Ocultar placeholder vacío; mostrar label
-    const empty = document.querySelector('.obs-panel__empty');
-    if (empty) empty.style.display = 'none';
-    const label = document.querySelector('.obs-panel__stats-label');
-    if (label) label.style.display = 'block';
-    // No necesita invalidateSize aquí — lo hace el timeout inicial
+    // Abrir drawer derecho con los datos del municipio
+    const drawer = document.getElementById('obs-drawer');
+    if (drawer) {
+        drawer.classList.add('obs-drawer--open');
+        drawer.removeAttribute('aria-hidden');
+    }
+    // Invalidar tamaño del mapa levemente (drawer cubre sin redimensionar)
+    setTimeout(() => {
+        if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+    }, 320);
+}
+
+function cerrarDrawer() {
+    const drawer = document.getElementById('obs-drawer');
+    if (drawer) {
+        drawer.classList.remove('obs-drawer--open');
+        drawer.setAttribute('aria-hidden', 'true');
+    }
 }
 
 function cerrarSidebar() {
@@ -503,6 +512,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarSelectorAnio();
     actualizarSelectorCorporacion('2026');
     await cargarDatos('2026', 'camara');
+    if (typeof actualizarLeyenda === 'function') setTimeout(() => actualizarLeyenda('candidato_ganador'), 500);
     animarKPIs();
 
     setTimeout(() => {
@@ -710,6 +720,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarNav();
     inicializarBuscador();
 
+    // ── Drawer derecho: botón cerrar ──
+    document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);
+    // Cerrar también al hacer clic en el mapa (fuera del drawer)
+    document.getElementById('map')?.addEventListener('click', () => {
+        // Solo cierra si el click fue en el fondo del mapa (no en un municipio)
+        // Los clicks en municipios llaman abrirSidebar antes de que esto llegue
+    });
+
     // ── invalidateSize en arranque: da tiempo al browser de calcular el layout ──
     setTimeout(() => {
         if (typeof mapSimple !== 'undefined' && mapSimple) {
@@ -734,6 +752,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (modo === 'ganadores' || modo === 'ganador') {
                 if (selectVista) selectVista.value = 'candidato_ganador';
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') setTimeout(() => actualizarLeyenda('candidato_ganador'), 100);
 
             } else if (modo === 'partido') {
                 if (selectVista) selectVista.value = 'partido_heat';
@@ -743,10 +762,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else if (modo === 'calor') {
                 if (selectVista) selectVista.value = 'calor';
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('calor');
 
             } else if (modo === 'margen') {
                 if (selectVista) selectVista.value = 'margen';
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('margen');
             }
         });
     });
@@ -792,6 +813,45 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 });
+
+// ==================== LEYENDA DEL MAPA ====================
+function actualizarLeyenda(tipoVista) {
+    const el = document.getElementById('obs-legend');
+    if (!el) return;
+
+    if (tipoVista === 'candidato_ganador' || tipoVista === 'partido') {
+        // Leyenda de partidos presentes en el mapa actual
+        if (!currentPartidoData) { el.innerHTML = ''; return; }
+        const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
+        const partidos = [...new Set(currentPartidoData.map(r => r['PARNOMBRE']))]
+            .filter(p => p && !excluir.includes(p))
+            .slice(0, 10);  // máx 10 en leyenda
+        if (!partidos.length) { el.innerHTML = ''; return; }
+        el.innerHTML = `
+            <div class="ley-title">PARTIDOS</div>
+            ${partidos.map(p => {
+                const c = colorPartido(p);
+                return `<div class="ley-item"><span class="ley-dot" style="background:${c}"></span><span class="ley-label">${p}</span></div>`;
+            }).join('')}`;
+
+    } else if (tipoVista === 'calor') {
+        el.innerHTML = `
+            <div class="ley-title">DOMINANCIA DEL GANADOR</div>
+            <div class="ley-gradient ley-gradient--calor"></div>
+            <div class="ley-scale"><span>Competido</span><span>Dominado</span></div>
+            <div class="ley-note">% de votos del partido ganador</div>`;
+
+    } else if (tipoVista === 'margen') {
+        el.innerHTML = `
+            <div class="ley-title">MARGEN DE VICTORIA</div>
+            <div class="ley-gradient ley-gradient--margen"></div>
+            <div class="ley-scale"><span>Muy reñido</span><span>Dominio claro</span></div>
+            <div class="ley-note">Diferencia entre 1° y 2° lugar</div>`;
+
+    } else {
+        el.innerHTML = '';
+    }
+}
 
 function toggleMapSize() {
     const layout = document.getElementById('map-layout');

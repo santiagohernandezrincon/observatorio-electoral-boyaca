@@ -2183,3 +2183,170 @@ html, body {
   border-top: 1px solid rgba(255,255,255,0.07);
   margin-top: 4px;
 }
+
+
+/* =================================================================
+   DRAWER DERECHO — detalle municipio
+   ================================================================= */
+.obs-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  height: 100%;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 400;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+.obs-drawer.obs-drawer--open {
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+/* Para que el position absolute funcione sobre el mapa */
+#obs-vista-mapa { position: relative; }
+
+.obs-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem 0.7rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+.obs-drawer__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.obs-drawer__close {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.5);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  transition: var(--transition);
+}
+.obs-drawer__close:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+.obs-drawer__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 1rem;
+  min-height: 0;
+}
+.obs-drawer__body::-webkit-scrollbar { width: 3px; }
+.obs-drawer__body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+/* Quitamos los estilos de h4/p que eran para el panel izquierdo y los llevamos al drawer */
+.obs-drawer #detalle-municipio h4 { display: none; } /* el título ya está en el header */
+.obs-drawer #detalle-municipio > p {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  margin: 0 0 10px;
+}
+
+/* Chart en el drawer */
+.obs-drawer__chart {
+  padding: 0 1rem 1rem;
+  flex-shrink: 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 0.5rem;
+  height: 220px;
+}
+.obs-drawer__chart canvas { height: 100% !important; }
+
+/* Canvas siempre visible dentro del drawer */
+#obs-drawer #chart-municipio { display: block !important; }
+
+
+/* =================================================================
+   LEYENDA DEL MAPA
+   ================================================================= */
+.obs-legend {
+  position: absolute;
+  bottom: 30px;        /* sobre el footer */
+  left: 12px;
+  background: rgba(11,25,41,0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.75rem;
+  min-width: 160px;
+  max-width: 200px;
+  z-index: 450;
+  pointer-events: none;
+}
+.obs-legend:empty { display: none; }
+
+.ley-title {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+.ley-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+.ley-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ley-label {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+/* Gradientes para calor y margen */
+.ley-gradient {
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+.ley-gradient--calor {
+  background: linear-gradient(to right, rgb(220,220,230), rgb(45,50,150));
+}
+.ley-gradient--margen {
+  background: linear-gradient(to right, rgb(220,50,50), rgb(0,140,20));
+}
+.ley-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 3px;
+}
+.ley-note {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.3);
+  font-style: italic;
+}
