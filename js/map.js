@@ -72,6 +72,26 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
         }
     }
+    // Tooltips para modos calor y margen
+    if (tipoVista === 'calor') {
+        const filas = esProvincia
+            ? (obtenerDatosProvincia(elementoNombre)?.partidos || [])
+            : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === elementoNombre);
+        if (!filas.length) return `<strong>${elementoNombre}</strong><br>Sin datos`;
+        const g = filas.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+        return `<strong>${elementoNombre}</strong><br>Ganador: <b>${g['PARNOMBRE']}</b><br>Dominio: ${(g['PORCENTAJE'] || 0).toFixed(1)}% del voto`;
+    }
+    if (tipoVista === 'margen') {
+        const filas = esProvincia
+            ? (obtenerDatosProvincia(elementoNombre)?.partidos || [])
+            : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === elementoNombre);
+        if (filas.length < 2) return `<strong>${elementoNombre}</strong><br>Sin datos suficientes`;
+        const ord = [...filas].sort((a, b) => b['VOTOS'] - a['VOTOS']);
+        const total = ord[0]['TOTAL_VOTOS'] || ord.reduce((s, r) => s + r['VOTOS'], 0);
+        const margenPct = total ? ((ord[0]['VOTOS'] - ord[1]['VOTOS']) / total * 100).toFixed(1) : 0;
+        return `<strong>${elementoNombre}</strong><br>1°: ${ord[0]['PARNOMBRE']} (${ord[0]['VOTOS'].toLocaleString()})<br>2°: ${ord[1]['PARNOMBRE']} (${ord[1]['VOTOS'].toLocaleString()})<br>Margen: ${margenPct}%`;
+    }
+
     return `<strong>${elementoNombre}</strong><br>Sin datos`;
 }
 
@@ -168,6 +188,39 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         }
         return `rgb(${Math.floor(179+76*valor)}, ${Math.floor(179-179*valor)}, ${Math.floor(179-179*valor)})`;
     }
+    // ── MODO CALOR: dominancia del ganador (% votos) ──────────────────
+    if (tipoVista === 'calor') {
+        const filasMun = esProvincia
+            ? (obtenerDatosProvincia(nombreElemento)?.partidos || [])
+            : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === nombreElemento);
+        if (!filasMun.length) return '#cccccc';
+        const ganador = filasMun.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+        const pct = Math.min((ganador['PORCENTAJE'] || 0) / 100, 1);
+        // Gradiente: gris claro (empate) → azul navy oscuro (dominio total)
+        const r = Math.round(220 - 175 * pct);
+        const g = Math.round(220 - 170 * pct);
+        const b = Math.round(230 - 80 * pct);
+        return `rgb(${r},${g},${b})`;
+    }
+
+    // ── MODO MARGEN: diferencia entre 1° y 2° lugar ─────────────────
+    if (tipoVista === 'margen') {
+        const filasMun = esProvincia
+            ? (obtenerDatosProvincia(nombreElemento)?.partidos || [])
+            : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === nombreElemento);
+        if (filasMun.length < 2) return filasMun.length === 1 ? '#1A237E' : '#cccccc';
+        const ordenados = [...filasMun].sort((a, b) => b['VOTOS'] - a['VOTOS']);
+        const total = ordenados[0]['TOTAL_VOTOS'] || ordenados.reduce((s, r) => s + r['VOTOS'], 0);
+        if (!total) return '#cccccc';
+        const margen = (ordenados[0]['VOTOS'] - ordenados[1]['VOTOS']) / total;
+        // Rojo = muy reñido (margen < 5%) → verde = dominio claro (margen > 30%)
+        const t = Math.min(margen / 0.35, 1);  // 0 = empate, 1 = dominio absoluto
+        const r = Math.round(220 - 220 * t);
+        const g = Math.round(50  + 90  * t);
+        const b = Math.round(50  - 30  * t);
+        return `rgb(${r},${g},${b})`;
+    }
+
     return '#cccccc';
 }
 

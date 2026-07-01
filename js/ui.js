@@ -355,11 +355,15 @@ function inicializarBuscador() {
 function abrirSidebar() {
     const layout = document.getElementById('map-layout');
     if (layout) layout.classList.add('sidebar-open');
-    setTimeout(() => {
-        if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
-        if (typeof mapA !== 'undefined' && mapA) mapA.invalidateSize();
-        if (typeof mapB !== 'undefined' && mapB) mapB.invalidateSize();
-    }, 350);
+    // Marcar canvas como activo para que sea visible (ver CSS #chart-municipio.activo)
+    const canvas = document.getElementById('chart-municipio');
+    if (canvas) canvas.classList.add('activo');
+    // Ocultar placeholder vacío; mostrar label
+    const empty = document.querySelector('.obs-panel__empty');
+    if (empty) empty.style.display = 'none';
+    const label = document.querySelector('.obs-panel__stats-label');
+    if (label) label.style.display = 'block';
+    // No necesita invalidateSize aquí — lo hace el timeout inicial
 }
 
 function cerrarSidebar() {
@@ -427,6 +431,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         provinciasData = await (await fetch('data/provincias_boyaca.json')).json();
         console.log('Provincias cargadas:', Object.keys(provinciasData));
+
+        // ── Rellenar dropdown "Saltar a provincia" ──
+        const provJump = document.getElementById('provincia-jump');
+        if (provJump && provinciasData) {
+            Object.keys(provinciasData).sort().forEach(prov => {
+                const opt = document.createElement('option');
+                opt.value = prov;
+                opt.textContent = prov;
+                provJump.appendChild(opt);
+            });
+            provJump.addEventListener('change', e => {
+                const prov = e.target.value;
+                if (!prov || !provinciasData[prov] || typeof mapSimple === 'undefined' || !mapSimple || !currentGeojson) return;
+                const bounds = L.latLngBounds([]);
+                const munsProv = provinciasData[prov].map(m => m.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''));
+                currentGeojson.eachLayer(layer => {
+                    const nombre = (layer.feature?.properties?.MPIO_CNMBR || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+                    if (munsProv.some(m => nombre.includes(m) || m.includes(nombre))) bounds.extend(layer.getBounds());
+                });
+                if (bounds.isValid()) mapSimple.fitBounds(bounds, { padding: [30, 30] });
+            });
+        }
     } catch (error) {
         console.error('Error cargando provincias:', error);
     }
@@ -668,7 +694,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarNav();
     inicializarBuscador();
 
-    // Lógica botones de modo (Ganadores / Por partido / Mapa de calor)
+    // ── invalidateSize en arranque: da tiempo al browser de calcular el layout ──
+    setTimeout(() => {
+        if (typeof mapSimple !== 'undefined' && mapSimple) {
+            mapSimple.invalidateSize();
+        }
+    }, 400);
+
+    // Lógica botones de modo (Ganadores / Por partido / Calor / Margen)
     document.querySelectorAll('.obs-pill-modo').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.obs-pill-modo').forEach(b => b.classList.remove('active'));
@@ -684,18 +717,64 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (modo === 'ganadores' || modo === 'ganador') {
                 if (selectVista) selectVista.value = 'candidato_ganador';
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+
             } else if (modo === 'partido') {
                 if (selectVista) selectVista.value = 'partido_heat';
                 if (groupPartido) groupPartido.style.display = 'flex';
-            } else if (modo === 'calor' || modo === 'heatmap') {
-                if (selectVista) selectVista.value = 'partido_heat';
-            }
+                _poblarDropdownPartido();
 
-            if (typeof actualizarMapaSimple === 'function') {
-                actualizarMapaSimple();
+            } else if (modo === 'calor') {
+                if (selectVista) selectVista.value = 'calor';
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+
+            } else if (modo === 'margen') {
+                if (selectVista) selectVista.value = 'margen';
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
             }
         });
     });
+
+    // Poblar dropdown visual de partidos y conectarlo al selector legacy
+    function _poblarDropdownPartido() {
+        const dropdown    = document.getElementById('partido-dropdown');
+        const searchInput = document.getElementById('obs-partido-search');
+        const legacySel   = document.getElementById('partido-selector');
+        if (!dropdown || typeof currentPartidoData === 'undefined' || !currentPartidoData) return;
+
+        const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
+        const partidos = [...new Set(currentPartidoData.map(r => r['PARNOMBRE']))]
+            .filter(p => p && !excluir.includes(p))
+            .sort();
+
+        const render = filtro => {
+            const items = filtro
+                ? partidos.filter(p => p.toLowerCase().includes(filtro.toLowerCase()))
+                : partidos;
+            dropdown.innerHTML = items.map(p =>
+                `<div class="dropdown-item" data-partido="${p}">${p}</div>`
+            ).join('');
+            dropdown.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    dropdown.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('selected'));
+                    item.classList.add('selected');
+                    if (legacySel) {
+                        legacySel.value = item.dataset.partido;
+                        legacySel.dispatchEvent(new Event('change'));
+                    }
+                    if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                });
+            });
+        };
+
+        render('');
+        if (searchInput) {
+            searchInput.value = '';
+            const nuevo = searchInput.cloneNode(true);
+            searchInput.parentNode.replaceChild(nuevo, searchInput);
+            nuevo.addEventListener('input', () => render(nuevo.value));
+        }
+    }
 });
 
 function toggleMapSize() {
