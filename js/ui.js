@@ -383,6 +383,45 @@ function actualizarBreadcrumb() {
   el.textContent = `${labels[currentCorporacion] || currentCorporacion} · ${currentAnio}`;
 }
 
+function seleccionarCandidatoActor(nombreCanonico) {
+  const clave = normalizarNombre(nombreCanonico);
+  const filas = actorTodasLasFilas.filter(r => normalizarNombre(r['CANNOMBRE']) === clave);
+  if (!filas.length) return;
+
+  const ciclos = new Map();
+  filas.forEach(row => {
+    const key = `${row.ANIO}_${row.CORP}`;
+    if (!ciclos.has(key)) {
+      const partido = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], row.ANIO, row.CORP);
+      ciclos.set(key, { anio: row.ANIO, corp: row.CORP, votos: 0, partido });
+    }
+    ciclos.get(key).votos += row['VOTOS'];
+  });
+  const listaCiclos = [...ciclos.values()].sort((a, b) => b.anio - a.anio || a.corp.localeCompare(b.corp));
+  const votosTotales = listaCiclos.reduce((s, c) => s + c.votos, 0);
+  const partidosUnicos = [...new Set(listaCiclos.map(c => c.partido))];
+
+  document.getElementById('actor-empty').style.display = 'none';
+  document.getElementById('actor-info').style.display = 'block';
+  document.getElementById('actor-nombre').textContent = nombreCanonico;
+  document.getElementById('actor-partido').innerHTML = partidosUnicos.map(p =>
+    `<span class="actor-partido-badge" style="background:${colorPartido(p)}">${p}</span>`
+  ).join('');
+  document.getElementById('actor-stats').innerHTML = `
+    <div class="actor-stat"><span class="actor-stat__num">${votosTotales.toLocaleString('es-CO')}</span><span class="actor-stat__label">Votos totales</span></div>
+    <div class="actor-stat"><span class="actor-stat__num">${listaCiclos.length}</span><span class="actor-stat__label">${listaCiclos.length === 1 ? 'Ciclo electoral' : 'Ciclos electorales'}</span></div>
+  `;
+  document.getElementById('actor-cycles').innerHTML = listaCiclos.map(c => `
+    <div class="actor-cycle-card">
+      <div class="actor-cycle-card__dot" style="background:${colorPartido(c.partido)}"></div>
+      <div class="actor-cycle-card__info">
+        <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
+        <div class="actor-cycle-card__votos">${c.votos.toLocaleString('es-CO')} votos</div>
+      </div>
+    </div>
+  `).join('');
+}
+
 function inicializarActor() {
   const input = document.getElementById('actor-search-input');
   const autocomplete = document.getElementById('actor-autocomplete');
@@ -404,8 +443,9 @@ function inicializarActor() {
     autocomplete.innerHTML = '';
     if (!actorIndiceListo || q.length < 2) { autocomplete.style.display = 'none'; return; }
     const qNorm = normalizarNombre(q);
-    const nombres = [...new Set(actorTodasLasFilas.map(r => r['CANNOMBRE']))]
-      .filter(n => normalizarNombre(n).includes(qNorm))
+    const nombres = [...actorNombresPorClave.entries()]
+      .filter(([clave]) => clave.includes(qNorm))
+      .map(([, nombre]) => nombre)
       .sort((a, b) => a.localeCompare(b))
       .slice(0, 8);
     if (!nombres.length) { autocomplete.style.display = 'none'; return; }
@@ -417,7 +457,7 @@ function inicializarActor() {
       item.addEventListener('click', () => {
         input.value = nombre;
         autocomplete.style.display = 'none';
-        // Selección completa del candidato: Paso 2
+        seleccionarCandidatoActor(nombre);
       });
       autocomplete.appendChild(item);
     });

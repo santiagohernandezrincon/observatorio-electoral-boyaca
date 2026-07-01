@@ -2079,6 +2079,86 @@ html, body {
 .actor-main { flex: 1; position: relative; }
 .actor-map { width: 100%; height: 100%; }
 
+.actor-info { margin-top: 0.9rem; }
+.actor-info__nombre {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+.actor-info__partido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 0.4rem;
+}
+.actor-partido-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.actor-info__stats {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0.8rem 0;
+}
+.actor-stat { display: flex; flex-direction: column; }
+.actor-stat__num {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+.actor-stat__label {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.actor-section-label {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0.9rem 0 0.4rem;
+}
+.actor-cycles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.actor-cycle-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.6rem;
+}
+.actor-cycle-card__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.actor-cycle-card__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+}
+.actor-cycle-card__votos {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.5);
+}
+
 /* Grupos de años (Congresional/Local/Otro) dentro de #pills-anio */
 .obs-year-group { margin-bottom: 5px; }
 .obs-year-group:last-child { margin-bottom: 0; }

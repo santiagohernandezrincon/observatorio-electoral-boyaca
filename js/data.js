@@ -496,6 +496,7 @@ async function cargarPartidosPorAnioCorp(anio, corp) {
 let actorIndiceListo = false;
 let actorIndiceCargando = false;
 let actorTodasLasFilas = [];
+let actorNombresPorClave = new Map(); // clave normalizada -> nombre canónico (MAYÚSCULAS)
 
 async function construirIndiceActor() {
     if (actorIndiceListo || actorIndiceCargando) return;
@@ -527,6 +528,15 @@ async function construirIndiceActor() {
                 .forEach(row => actorTodasLasFilas.push({ ...row, ANIO: anio, CORP: corp }));
         });
     });
+
+    actorNombresPorClave = new Map();
+    actorTodasLasFilas.forEach(row => {
+        const clave = normalizarNombre(row['CANNOMBRE']);
+        if (!actorNombresPorClave.has(clave)) {
+            actorNombresPorClave.set(clave, row['CANNOMBRE'].toUpperCase().trim());
+        }
+    });
+
     actorIndiceListo = true;
     actorIndiceCargando = false;
 }
