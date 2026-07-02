@@ -2533,6 +2533,30 @@ html, body {
   letter-spacing: 0.12em;
   margin-bottom: 0.5rem;
 }
+.ley-title--toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.ley-chevron {
+  font-size: 0.55rem;
+  color: rgba(255,255,255,0.3);
+  transition: transform 0.15s ease;
+}
+.ley--open .ley-chevron { transform: rotate(180deg); }
+.ley-partidos-list {
+  display: none;
+  max-height: 180px;
+  overflow-y: auto;
+  pointer-events: auto;
+  margin-top: 2px;
+}
+.ley--open .ley-partidos-list { display: block; }
+.ley-partidos-list::-webkit-scrollbar { width: 3px; }
+.ley-partidos-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
 .ley-item {
   display: flex;
   align-items: center;

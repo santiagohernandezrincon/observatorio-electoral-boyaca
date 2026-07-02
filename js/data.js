@@ -349,6 +349,12 @@ async function cargarDatos(anio, corporacion) {
         if (modoComparacion) actualizarComparacion();
         else actualizarMapaSimple();
 
+        // La leyenda depende de los partidos con peso en ESTE año/corporación:
+        // debe refrescarse en cada carga, no solo al cambiar de modo de color.
+        if (typeof actualizarLeyenda === 'function') {
+            actualizarLeyenda(document.getElementById('tipo-vista')?.value);
+        }
+
     } catch (error) {
         console.error('Error cargando datos:', error);
         alert(`No se pudo cargar datos para ${anio} - ${corporacion}. Verifica los archivos.`);

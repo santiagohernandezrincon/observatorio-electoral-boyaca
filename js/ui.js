@@ -1175,6 +1175,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ==================== LEYENDA DEL MAPA ====================
+const RENOMBRAR_LEYENDA = {
+    'Partido Conservador Colombiano': 'Partido Conservador',
+    'Partido Liberal Colombiano': 'Partido Liberal',
+    'Dignidad y Compromiso': 'Dignidad & Compromiso'
+};
+function formatearNombrePartido(nombre) {
+    if (RENOMBRAR_LEYENDA[nombre]) return RENOMBRAR_LEYENDA[nombre];
+    // Nombres ya en formato mixto (ej. "Alianza Verde") se dejan intactos;
+    // solo se reformatean los que vienen todo en mayúsculas.
+    if (nombre !== nombre.toUpperCase()) return nombre;
+    return nombre.toLowerCase().replace(/(^|[\s-])([a-záéíóúñ])/g, (m, sep, c) => sep + c.toUpperCase());
+}
+
+document.getElementById('obs-legend')?.addEventListener('click', e => {
+    if (e.target.closest('.ley-title--toggle')) {
+        document.getElementById('obs-legend').classList.toggle('ley--open');
+    }
+});
+
 function actualizarLeyenda(tipoVista) {
     const el = document.getElementById('obs-legend');
     if (!el) return;
@@ -1183,16 +1202,29 @@ function actualizarLeyenda(tipoVista) {
         // Leyenda de partidos presentes en el mapa actual
         if (!currentPartidoData) { el.innerHTML = ''; return; }
         const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
-        const partidos = [...new Set(currentPartidoData.map(r => r['PARNOMBRE']))]
-            .filter(p => p && !excluir.includes(p))
-            .slice(0, 10);  // máx 10 en leyenda
+        const UMBRAL_LEYENDA = 0.005; // 0.5% del total: oculta listas hiperlocales sin peso real (consejos comunitarios, etc.)
+        const votosPorPartido = {};
+        currentPartidoData.forEach(r => {
+            if (r['PARNOMBRE'] && !excluir.includes(r['PARNOMBRE'])) {
+                votosPorPartido[r['PARNOMBRE']] = (votosPorPartido[r['PARNOMBRE']] || 0) + r['VOTOS'];
+            }
+        });
+        const totalVotos = Object.values(votosPorPartido).reduce((s, v) => s + v, 0);
+        const partidos = Object.keys(votosPorPartido)
+            .filter(p => totalVotos > 0 && (votosPorPartido[p] / totalVotos) >= UMBRAL_LEYENDA)
+            .sort((a, b) => votosPorPartido[b] - votosPorPartido[a]);
         if (!partidos.length) { el.innerHTML = ''; return; }
         el.innerHTML = `
-            <div class="ley-title">PARTIDOS</div>
-            ${partidos.map(p => {
-                const c = colorPartido(p);
-                return `<div class="ley-item"><span class="ley-dot" style="background:${c}"></span><span class="ley-label">${p}</span></div>`;
-            }).join('')}`;
+            <div class="ley-title ley-title--toggle" data-toggle="partidos">
+                <span>PARTIDOS (${partidos.length})</span>
+                <i class="fas fa-chevron-down ley-chevron"></i>
+            </div>
+            <div class="ley-partidos-list">
+                ${partidos.map(p => {
+                    const c = colorPartido(p);
+                    return `<div class="ley-item"><span class="ley-dot" style="background:${c}"></span><span class="ley-label">${formatearNombrePartido(p)}</span></div>`;
+                }).join('')}
+            </div>`;
 
     } else if (tipoVista === 'calor') {
         el.innerHTML = `

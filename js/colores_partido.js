@@ -37,7 +37,7 @@ const COLORES_PARTIDO = {
   'Colombia Renaciente':            '#26A69A',
   'Todos Somos Colombia':           '#A1887F',
   'Partido Somos':                  '#BCAAA4',
-  'Dignidad y Compromiso':          '#7E57C2',
+  'Dignidad y Compromiso':          '#FBC02D',
   // ── PLEBISCITO ──────────────────────────────────────────
   'Sí':                             '#43A047',
   'No':                             '#E53935',
@@ -360,6 +360,12 @@ const NORMALIZAR_PARTIDO = {
   'Partido Politico Mira': 'Movimiento MIRA',
   'MOVIMIENTO INDEPENDIENTE DE RENOVACION ABSOLUTA  MIRA': 'Movimiento MIRA',
   'Movimiento Independiente De Renovacion Absoluta  Mira': 'Movimiento MIRA',
+
+  // ── Dignidad y Compromiso — variantes ──
+  'PARTIDO POLÍTICO DIGNIDAD & COMPROMISO': 'Dignidad y Compromiso',
+  'PARTIDO POLITICO DIGNIDAD & COMPROMISO': 'Dignidad y Compromiso',
+  'PARTIDO POLÍTICO DIGNIDAD Y COMPROMISO': 'Dignidad y Compromiso',
+  'DIGNIDAD & COMPROMISO': 'Dignidad y Compromiso',
 
   // ── Mov. Salvación Nacional — consolidado (apuntan a 'Salvación Nacional' en COLORES_PARTIDO) ──
   'MOVIMIENTO SALVACION NACIONAL': 'Salvación Nacional',
