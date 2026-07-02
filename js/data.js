@@ -541,6 +541,20 @@ async function construirIndiceActor() {
     actorIndiceCargando = false;
 }
 
+// ==================== ÍNDICE DE DESVIACIÓN (municipio vs. promedio departamental) ====================
+function calcularPromedioDepartamental(partido) {
+    if (!currentPartidoData) return 0;
+    const totalesPorMunicipio = {};
+    let votosPartido = 0;
+    currentPartidoData.forEach(row => {
+        const mun = normalizarNombre(row['MUNNOMBRE']);
+        if (!(mun in totalesPorMunicipio)) totalesPorMunicipio[mun] = row['TOTAL_VOTOS'] || 0;
+        if (row['PARNOMBRE'] === partido) votosPartido += row['VOTOS'];
+    });
+    const votosTotal = Object.values(totalesPorMunicipio).reduce((s, v) => s + v, 0);
+    return votosTotal > 0 ? (votosPartido / votosTotal) * 100 : 0;
+}
+
 // ==================== ÍNDICE DE COMPETITIVIDAD (VISTA COMPETITIVIDAD) ====================
 function cargosConHistoria() {
     const conteo = {};

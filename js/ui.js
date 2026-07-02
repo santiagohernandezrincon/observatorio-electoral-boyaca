@@ -921,7 +921,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     document.getElementById('partido-selector').addEventListener('change', () => {
-        if (!modoComparacion && document.getElementById('tipo-vista').value === 'partido_heat') actualizarMapaSimple();
+        const vista = document.getElementById('tipo-vista').value;
+        if (!modoComparacion && (vista === 'partido_heat' || vista === 'partido_desviacion')) actualizarMapaSimple();
     });
     document.getElementById('candidato-selector').addEventListener('change', () => {
         candidatoEspecificoActual = document.getElementById('candidato-selector').value;
@@ -1103,6 +1104,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (selectVista) selectVista.value = 'margen';
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
                 if (typeof actualizarLeyenda === 'function') actualizarLeyenda('margen');
+
+            } else if (modo === 'desviacion') {
+                if (selectVista) selectVista.value = 'partido_desviacion';
+                if (groupPartido) groupPartido.style.display = 'flex';
+                _poblarDropdownPartido();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('partido_desviacion');
             }
         });
     });
@@ -1116,6 +1123,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     function _poblarDropdownPartido() {
         const lista     = document.getElementById('partido-dropdown');
         const legacySel = document.getElementById('partido-selector');
+        const wrap      = document.querySelector('.obs-partido-dropdown-wrap');
+        const trigger   = document.getElementById('partido-trigger');
+        const triggerDot   = document.getElementById('partido-trigger-dot');
+        const triggerLabel = document.getElementById('partido-trigger-label');
         if (!lista || typeof currentPartidoData === 'undefined' || !currentPartidoData) return;
 
         const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
@@ -1143,9 +1154,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                     legacySel.value = btn.dataset.partido;
                     legacySel.dispatchEvent(new Event('change'));
                 }
+                if (triggerLabel) triggerLabel.textContent = btn.dataset.partido;
+                if (triggerDot) {
+                    triggerDot.style.background = typeof colorPartido === 'function' ? colorPartido(btn.dataset.partido) : '#9CA3AF';
+                    triggerDot.style.display = 'inline-block';
+                }
+                if (wrap) wrap.classList.remove('obs-partido-dropdown-wrap--open');
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
             });
         });
+
+        if (trigger && wrap && !trigger.dataset.wired) {
+            trigger.dataset.wired = '1';
+            trigger.addEventListener('click', () => wrap.classList.toggle('obs-partido-dropdown-wrap--open'));
+            document.addEventListener('click', e => {
+                if (!wrap.contains(e.target)) wrap.classList.remove('obs-partido-dropdown-wrap--open');
+            });
+        }
     }
 });
 
@@ -1182,6 +1207,13 @@ function actualizarLeyenda(tipoVista) {
             <div class="ley-gradient ley-gradient--margen"></div>
             <div class="ley-scale"><span>Muy reñido</span><span>Dominio claro</span></div>
             <div class="ley-note">Diferencia entre 1° y 2° lugar</div>`;
+
+    } else if (tipoVista === 'partido_desviacion') {
+        el.innerHTML = `
+            <div class="ley-title">DESVIACIÓN VS. PROMEDIO</div>
+            <div class="ley-gradient ley-gradient--desviacion"></div>
+            <div class="ley-scale"><span>Bajo el promedio</span><span>Sobre el promedio</span></div>
+            <div class="ley-note">% local del partido menos su promedio departamental</div>`;
 
     } else {
         el.innerHTML = '';

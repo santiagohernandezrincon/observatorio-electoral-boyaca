@@ -88,6 +88,9 @@
           <button class="obs-pill-modo" data-modo="margen">
             <i class="fas fa-balance-scale"></i> Margen
           </button>
+          <button class="obs-pill-modo" data-modo="desviacion">
+            <i class="fas fa-arrows-alt-v"></i> Desviación
+          </button>
         </div>
         <div id="group-heat-toggle" style="display:none">
           <label class="obs-toggle-label">
@@ -99,8 +102,17 @@
       <!-- Filtro partido (aparece en modo partido) -->
       <div class="obs-section" id="group-partido" style="display:none">
         <div class="obs-section__label">FILTRAR PARTIDO</div>
-        <div class="obs-partido-list" id="partido-dropdown">
-          <div class="obs-partido-list__hint">Selecciona un partido</div>
+        <div class="obs-partido-dropdown-wrap">
+          <button type="button" class="obs-partido-trigger" id="partido-trigger">
+            <span class="obs-partido-trigger__left">
+              <span class="obs-partido-trigger__dot" id="partido-trigger-dot" style="display:none"></span>
+              <span id="partido-trigger-label">Selecciona un partido</span>
+            </span>
+            <i class="fas fa-chevron-down obs-partido-trigger__chevron"></i>
+          </button>
+          <div class="obs-partido-list" id="partido-dropdown">
+            <div class="obs-partido-list__hint">Selecciona un partido</div>
+          </div>
         </div>
       </div>
 
@@ -363,6 +375,7 @@
     <option value="candidato_heat">Candidato</option>
     <option value="calor">Calor</option>
     <option value="margen">Margen</option>
+    <option value="partido_desviacion">Desviación</option>
     <option value="candidato_ganador_por_partido">Candidato por Partido</option>
     <option value="comparacion">Comparación</option>
   </select>

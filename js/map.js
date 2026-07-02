@@ -13,6 +13,13 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             return porcentajeActivo
                 ? `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${row['PORCENTAJE'].toFixed(1)}% (${row['VOTOS'].toLocaleString()} votos)`
                 : `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${row['VOTOS'].toLocaleString()} votos`;
+        } else if (tipoVista === 'partido_desviacion') {
+            if (!partidoSeleccionado) return `<strong>${elementoNombre}</strong><br>Seleccione un partido`;
+            const row = datosProv.partidos.find(p => p['PARNOMBRE'] === partidoSeleccionado);
+            const localPct = row ? row['PORCENTAJE'] : 0;
+            const promedioDep = calcularPromedioDepartamental(partidoSeleccionado);
+            const desviacion = localPct - promedioDep;
+            return `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${localPct.toFixed(1)}% local<br>Promedio departamental: ${promedioDep.toFixed(1)}%<br>Desviación: ${desviacion >= 0 ? '+' : ''}${desviacion.toFixed(1)} pts`;
         } else if (tipoVista === 'candidato_heat') {
             if (!candidatoSeleccionado) return `<strong>${elementoNombre}</strong><br>Seleccione un candidato`;
             const row = datosProv.candidatos.find(c => c['CANNOMBRE'] === candidatoSeleccionado);
@@ -49,6 +56,14 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             return porcentajeActivo
                 ? `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${row['PORCENTAJE'].toFixed(1)}% (${row['VOTOS'].toLocaleString()} votos)`
                 : `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${row['VOTOS'].toLocaleString()} votos`;
+        } else if (tipoVista === 'partido_desviacion') {
+            if (!partidoSeleccionado) return `<strong>${elementoNombre}</strong><br>Seleccione un partido`;
+            const filas = currentPartidoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === elementoNombre);
+            const row = filas.find(f => f['PARNOMBRE'] === partidoSeleccionado);
+            const localPct = row ? row['PORCENTAJE'] : 0;
+            const promedioDep = calcularPromedioDepartamental(partidoSeleccionado);
+            const desviacion = localPct - promedioDep;
+            return `<strong>${elementoNombre}</strong><br>${partidoSeleccionado}: ${localPct.toFixed(1)}% local<br>Promedio departamental: ${promedioDep.toFixed(1)}%<br>Desviación: ${desviacion >= 0 ? '+' : ''}${desviacion.toFixed(1)} pts`;
         } else if (tipoVista === 'candidato_heat') {
             if (!candidatoSeleccionado) return `<strong>${elementoNombre}</strong><br>Seleccione un candidato`;
             const filas = currentCandidatoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === elementoNombre);
@@ -111,13 +126,30 @@ function colorPorMargen(margen) {
     return `rgb(${rv},${gv},${bv})`;
 }
 
+// ==================== PALETA DESVIACIÓN (rojo↔blanco↔azul, diverging) ====================
+function colorPorDesviacion(desviacion) {
+    const t = Math.max(-1, Math.min(1, desviacion / 25)); // clamp a ±25 puntos porcentuales
+    if (t < 0) {
+        const p = -t;
+        const r = Math.round(255 - (255 - 198) * p);
+        const g = Math.round(255 - (255 - 40) * p);
+        const b = Math.round(255 - (255 - 40) * p);
+        return `rgb(${r},${g},${b})`;
+    }
+    const p = t;
+    const r = Math.round(255 - (255 - 25) * p);
+    const g = Math.round(255 - (255 - 72) * p);
+    const b = Math.round(255 - (255 - 140) * p);
+    return `rgb(${r},${g},${b})`;
+}
+
 // ==================== COLORES DEL MAPA ====================
 function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo) {
     let filas;
     if (esProvincia) {
         const datosProv = obtenerDatosProvincia(nombreElemento);
         if (!datosProv) return '#cccccc';
-        if (tipoVista === 'partido' || tipoVista === 'partido_heat') {
+        if (tipoVista === 'partido' || tipoVista === 'partido_heat' || tipoVista === 'partido_desviacion') {
             filas = datosProv.partidos;
         } else if (tipoVista === 'candidato_heat') {
             filas = datosProv.candidatos;
@@ -133,7 +165,7 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
             return getColorCandidato(lista.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b)['CANNOMBRE']);
         }
     } else {
-        if (tipoVista === 'partido' || tipoVista === 'partido_heat') {
+        if (tipoVista === 'partido' || tipoVista === 'partido_heat' || tipoVista === 'partido_desviacion') {
             filas = currentPartidoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombreElemento);
         } else if (tipoVista === 'candidato_heat') {
             filas = currentCandidatoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombreElemento);
@@ -182,6 +214,12 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         const cb = row.COLOR_BASE || '#3498db';
         const factor = 1 - valor;
         return `rgb(${Math.floor(parseInt(cb.slice(1,3),16)*factor)}, ${Math.floor(parseInt(cb.slice(3,5),16)*factor)}, ${Math.floor(parseInt(cb.slice(5,7),16)*factor)})`;
+    } else if (tipoVista === 'partido_desviacion') {
+        if (!partidoSeleccionado) return '#cccccc';
+        const row = filas.find(f => f['PARNOMBRE'] === partidoSeleccionado);
+        const localPct = row ? row['PORCENTAJE'] : 0;
+        const promedioDep = calcularPromedioDepartamental(partidoSeleccionado);
+        return colorPorDesviacion(localPct - promedioDep);
     } else if (tipoVista === 'candidato_heat') {
         if (!candidatoSeleccionado) return '#cccccc';
         const row = filas.find(f => f['CANNOMBRE'] === candidatoSeleccionado);

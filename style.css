@@ -2566,6 +2566,9 @@ html, body {
 .ley-gradient--margen {
   background: linear-gradient(to right, rgb(220,50,50), rgb(0,140,20));
 }
+.ley-gradient--desviacion {
+  background: linear-gradient(to right, rgb(198,40,40), rgb(255,255,255), rgb(25,72,140));
+}
 .ley-scale {
   display: flex;
   justify-content: space-between;
@@ -2691,13 +2694,58 @@ html, body {
 /* =================================================================
    LISTA DE PARTIDOS — selección directa
    ================================================================= */
-.obs-partido-list {
-  max-height: 200px;
-  overflow-y: auto;
+.obs-partido-dropdown-wrap { position: relative; }
+
+.obs-partido-trigger {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 0.38rem 0.6rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.obs-partido-trigger:hover { border-color: rgba(255,255,255,0.25); }
+.obs-partido-trigger__left { display: flex; align-items: center; gap: 6px; overflow: hidden; }
+.obs-partido-trigger__left span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.obs-partido-trigger__dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.obs-partido-trigger__chevron {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.35);
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+.obs-partido-dropdown-wrap.obs-partido-dropdown-wrap--open .obs-partido-trigger__chevron { transform: rotate(180deg); }
+
+.obs-partido-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #0d2240;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  max-height: 220px;
+  overflow-y: auto;
   flex-direction: column;
   gap: 2px;
+  padding: 4px;
 }
+.obs-partido-dropdown-wrap--open .obs-partido-list { display: flex; }
 .obs-partido-list::-webkit-scrollbar { width: 3px; }
 .obs-partido-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
 .obs-partido-list__hint {
