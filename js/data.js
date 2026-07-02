@@ -541,6 +541,48 @@ async function construirIndiceActor() {
     actorIndiceCargando = false;
 }
 
+// ==================== ÍNDICE DE COMPETITIVIDAD (VISTA COMPETITIVIDAD) ====================
+function cargosConHistoria() {
+    const conteo = {};
+    Object.values(DATOS_DISPONIBLES).forEach(corps => {
+        corps.forEach(c => { conteo[c] = (conteo[c] || 0) + 1; });
+    });
+    return Object.keys(conteo).filter(c => conteo[c] >= 2);
+}
+
+async function calcularCompetitividad(cargo) {
+    const anios = Object.entries(DATOS_DISPONIBLES)
+        .filter(([, corps]) => corps.includes(cargo))
+        .map(([a]) => a)
+        .sort();
+    const datosPorAnio = await Promise.all(anios.map(a => cargarPartidosPorAnioCorp(a, cargo)));
+
+    const margenesPorMunicipio = {};
+    datosPorAnio.forEach(datos => {
+        const porMunicipio = {};
+        datos.forEach(row => {
+            const mun = normalizarNombre(row['MUNNOMBRE']);
+            if (!porMunicipio[mun]) porMunicipio[mun] = [];
+            porMunicipio[mun].push(row);
+        });
+        Object.entries(porMunicipio).forEach(([mun, filas]) => {
+            if (filas.length < 2) return;
+            const ordenados = [...filas].sort((a, b) => b['VOTOS'] - a['VOTOS']);
+            const total = ordenados[0]['TOTAL_VOTOS'] || ordenados.reduce((s, r) => s + r['VOTOS'], 0);
+            if (!total) return;
+            const margen = (ordenados[0]['VOTOS'] - ordenados[1]['VOTOS']) / total;
+            if (!margenesPorMunicipio[mun]) margenesPorMunicipio[mun] = [];
+            margenesPorMunicipio[mun].push(margen);
+        });
+    });
+
+    const promedioPorMunicipio = {};
+    Object.entries(margenesPorMunicipio).forEach(([mun, lista]) => {
+        promedioPorMunicipio[mun] = lista.reduce((s, m) => s + m, 0) / lista.length;
+    });
+    return promedioPorMunicipio;
+}
+
 // ==================== DATOS COMPARACIÓN ====================
 function obtenerDatosComparacion(tipo, valor) {
     const datos = {};

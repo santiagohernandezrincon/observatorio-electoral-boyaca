@@ -117,6 +117,10 @@ let currentLayerA, currentLayerB;
 // Para Vista Actor
 let mapActor;
 let currentLayerActor;
+
+// Para Vista Competitividad
+let mapCompetitividad;
+let currentLayerCompetitividad;
 let comparacionDatosA = null;
 let comparacionDatosB = null;
 let comparacionValorA = '';

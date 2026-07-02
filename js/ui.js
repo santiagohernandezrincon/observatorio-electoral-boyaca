@@ -549,6 +549,57 @@ function renderTablaMunicipiosActor(votosPorMunicipio, colorBase) {
   }).join('');
 }
 
+let competitividadIniciada = false;
+
+function inicializarCompetitividad() {
+  const selector = document.getElementById('comp-cargo-selector');
+  if (!selector) return;
+  const cargos = cargosConHistoria();
+  selector.innerHTML = cargos.map(c => `<option value="${c}">${LABELS_CORPORACION[c] || c}</option>`).join('');
+  selector.addEventListener('change', () => actualizarCompetitividad(selector.value));
+}
+
+async function cargarCompetitividadSiNecesario() {
+  if (competitividadIniciada) return;
+  competitividadIniciada = true;
+  const selector = document.getElementById('comp-cargo-selector');
+  if (selector && selector.value) await actualizarCompetitividad(selector.value);
+}
+
+async function actualizarCompetitividad(cargo) {
+  const loading = document.getElementById('comp-loading');
+  if (loading) loading.style.display = 'flex';
+  try {
+    const promedios = await calcularCompetitividad(cargo);
+    actualizarMapaCompetitividad(promedios);
+    renderRankingCompetitividad(promedios);
+  } finally {
+    if (loading) loading.style.display = 'none';
+  }
+}
+
+function renderRankingCompetitividad(promedios) {
+  const conNombre = Object.entries(promedios).map(([mun, margen]) => {
+    const feature = currentGeojson?.features.find(f => normalizarNombre(f.properties.MPIO_CNMBR) === mun);
+    return { nombre: feature ? feature.properties.MPIO_CNMBR : mun, margen };
+  });
+
+  const renidos = [...conNombre].sort((a, b) => a.margen - b.margen).slice(0, 10);
+  const dominados = [...conNombre].sort((a, b) => b.margen - a.margen).slice(0, 10);
+
+  const fila = ({ nombre, margen }) => `
+    <div class="partido-item">
+      <div class="pi-row">
+        <span class="pi-nombre">${nombre}</span>
+        <span class="pi-pct">${(margen * 100).toFixed(1)}%</span>
+      </div>
+      <div class="pi-bar"><div class="pi-fill" style="width:${Math.min(margen / 0.35 * 100, 100)}%;background:${colorPorMargen(margen)}"></div></div>
+    </div>`;
+
+  document.getElementById('comp-tabla-renidos').innerHTML = renidos.map(fila).join('') || '<p class="actor-table-empty">Sin datos</p>';
+  document.getElementById('comp-tabla-dominados').innerHTML = dominados.map(fila).join('') || '<p class="actor-table-empty">Sin datos</p>';
+}
+
 function inicializarActor() {
   const input = document.getElementById('actor-search-input');
   const autocomplete = document.getElementById('actor-autocomplete');
@@ -968,6 +1019,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     actualizarBreadcrumb();
     inicializarBuscador();
     inicializarActor();
+    inicializarCompetitividad();
 
     // ── Drawer: cerrar, minimizar, tabs ──
     document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);

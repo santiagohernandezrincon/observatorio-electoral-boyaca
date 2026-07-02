@@ -95,6 +95,20 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
     return `<strong>${elementoNombre}</strong><br>Sin datos`;
 }
 
+// ==================== PALETA MARGEN (rojo→ámbar→azul, colorblind-safe) ====================
+function colorPorMargen(margen) {
+    const t = Math.min(margen / 0.35, 1);
+    let rv, gv, bv;
+    if (t < 0.5) {                 // rojo → ámbar
+        const p = t * 2;
+        rv = 220; gv = Math.round(50 + 141 * p); bv = Math.round(50 - 50 * p);
+    } else {                       // ámbar → azul
+        const p = (t - 0.5) * 2;
+        rv = Math.round(220 - 184 * p); gv = Math.round(191 - 103 * p); bv = Math.round(0 + 210 * p);
+    }
+    return `rgb(${rv},${gv},${bv})`;
+}
+
 // ==================== COLORES DEL MAPA ====================
 function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo) {
     let filas;
@@ -216,17 +230,7 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         const total = ordenados[0]['TOTAL_VOTOS'] || ordenados.reduce((s, r) => s + r['VOTOS'], 0);
         if (!total) return '#cccccc';
         const margen = (ordenados[0]['VOTOS'] - ordenados[1]['VOTOS']) / total;
-        // Paleta rojo→ámbar→azul (colorblind-safe, alto contraste)
-        const t = Math.min(margen / 0.35, 1);
-        let rv, gv, bv;
-        if (t < 0.5) {                 // rojo → ámbar
-            const p = t * 2;
-            rv = 220; gv = Math.round(50 + 141*p); bv = Math.round(50 - 50*p);
-        } else {                       // ámbar → azul
-            const p = (t - 0.5) * 2;
-            rv = Math.round(220 - 184*p); gv = Math.round(191 - 103*p); bv = Math.round(0 + 210*p);
-        }
-        return `rgb(${rv},${gv},${bv})`;
+        return colorPorMargen(margen);
     }
 
     return '#cccccc';
@@ -340,6 +344,36 @@ function actualizarMapaActor(votosPorMunicipio, colorBase) {
 
     mapActor.fitBounds(currentLayerActor.getBounds());
     setTimeout(() => mapActor.invalidateSize(), 100);
+}
+
+// ==================== MAPA VISTA COMPETITIVIDAD ====================
+function actualizarMapaCompetitividad(promedioPorMunicipio) {
+    if (!currentGeojson) return;
+    if (!mapCompetitividad) {
+        mapCompetitividad = L.map('map-competitividad').setView([5.75, -73.0], 8);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapCompetitividad);
+    }
+    if (currentLayerCompetitividad) mapCompetitividad.removeLayer(currentLayerCompetitividad);
+
+    currentLayerCompetitividad = L.geoJSON(currentGeojson, {
+        style: feature => {
+            const nombreRaw = feature.properties.MPIO_CNMBR;
+            if (!nombreRaw) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
+            const margen = promedioPorMunicipio[normalizarNombre(nombreRaw)];
+            if (margen === undefined) return { fillColor: '#e9e9e9', weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
+            return { fillColor: colorPorMargen(margen), weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
+        },
+        onEachFeature: (feature, layer) => {
+            const nombreRaw = feature.properties.MPIO_CNMBR;
+            if (!nombreRaw) return;
+            const margen = promedioPorMunicipio[normalizarNombre(nombreRaw)];
+            const texto = margen === undefined ? 'Sin datos suficientes' : `Margen promedio: ${(margen * 100).toFixed(1)}%`;
+            layer.bindTooltip(`<strong>${nombreRaw}</strong><br>${texto}`, { sticky: true });
+        }
+    }).addTo(mapCompetitividad);
+
+    mapCompetitividad.fitBounds(currentLayerCompetitividad.getBounds());
+    setTimeout(() => mapCompetitividad.invalidateSize(), 100);
 }
 
 // ==================== BÚSQUEDA ====================

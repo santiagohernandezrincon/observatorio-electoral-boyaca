@@ -298,13 +298,30 @@
 
     <!-- ─── VISTA 4: COMPETITIVIDAD ─── -->
     <div class="obs-vista" id="obs-vista-competitividad">
-      <div class="obs-vista-placeholder">
-        <div class="obs-placeholder__icon"><i class="fas fa-bolt"></i></div>
-        <div class="obs-placeholder__label">ÍNDICE DE COMPETITIVIDAD</div>
-        <p class="obs-placeholder__desc">
-          Municipios más y menos reñidos de Boyacá por elección y ciclo.<br>
-          <em>Próximamente.</em>
-        </p>
+      <div class="actor-layout">
+
+        <aside class="actor-panel">
+          <div class="actor-panel__header">
+            <div class="actor-panel__title">ÍNDICE DE COMPETITIVIDAD</div>
+            <div class="actor-panel__sub">Margen promedio 1°-2° lugar por municipio</div>
+          </div>
+
+          <select id="comp-cargo-selector" class="obs-ctrl-select"></select>
+          <div class="actor-loading" id="comp-loading" style="display:none">
+            <i class="fas fa-spinner fa-spin"></i> Calculando…
+          </div>
+
+          <div class="actor-section-label">MÁS REÑIDOS</div>
+          <div class="actor-table-wrap" id="comp-tabla-renidos"></div>
+
+          <div class="actor-section-label">MENOS REÑIDOS</div>
+          <div class="actor-table-wrap" id="comp-tabla-dominados"></div>
+        </aside>
+
+        <div class="actor-main">
+          <div id="map-competitividad" class="actor-map"></div>
+        </div>
+
       </div>
     </div>
 
@@ -461,6 +478,10 @@
         if (view === 'mapa') {
           setTimeout(function() {
             if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+          }, 80);
+        } else if (view === 'competitividad') {
+          setTimeout(function() {
+            if (typeof cargarCompetitividadSiNecesario === 'function') cargarCompetitividadSiNecesario();
           }, 80);
         }
       });
