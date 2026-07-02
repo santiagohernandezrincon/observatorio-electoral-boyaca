@@ -79,7 +79,9 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === elementoNombre);
         if (!filas.length) return `<strong>${elementoNombre}</strong><br>Sin datos`;
         const g = filas.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
-        return `<strong>${elementoNombre}</strong><br>Ganador: <b>${g['PARNOMBRE']}</b><br>Dominio: ${(g['PORCENTAJE'] || 0).toFixed(1)}% del voto`;
+        return porcentajeActivo
+            ? `<strong>${elementoNombre}</strong><br>Ganador: <b>${g['PARNOMBRE']}</b><br>Dominio: ${(g['PORCENTAJE'] || 0).toFixed(1)}% del voto`
+            : `<strong>${elementoNombre}</strong><br>Ganador: <b>${g['PARNOMBRE']}</b><br>Votos: ${g['VOTOS'].toLocaleString('es-CO')}`;
     }
     if (tipoVista === 'margen') {
         const filas = esProvincia
@@ -205,18 +207,40 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         }
         return `rgb(${Math.floor(179+76*valor)}, ${Math.floor(179-179*valor)}, ${Math.floor(179-179*valor)})`;
     }
-    // ── MODO CALOR: dominancia del ganador (% votos) ──────────────────
+    // ── MODO CALOR: dominancia del ganador (% votos o votos absolutos) ─
     if (tipoVista === 'calor') {
         const filasMun = esProvincia
             ? (obtenerDatosProvincia(nombreElemento)?.partidos || [])
             : currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === nombreElemento);
         if (!filasMun.length) return '#cccccc';
         const ganador = filasMun.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
-        const pct = Math.min((ganador['PORCENTAJE'] || 0) / 100, 1);
-        // Gradiente: gris claro (empate) → azul navy oscuro (dominio total)
-        const r = Math.round(220 - 175 * pct);
-        const g = Math.round(220 - 170 * pct);
-        const b = Math.round(230 - 80 * pct);
+        let valor;
+        if (porcentajeActivo) {
+            valor = Math.min((ganador['PORCENTAJE'] || 0) / 100, 1);
+        } else {
+            let maxVotos = 0;
+            if (esProvincia) {
+                for (const prov of Object.keys(provinciasData)) {
+                    const dp = obtenerDatosProvincia(prov);
+                    if (dp?.partidos.length) {
+                        const g = dp.partidos.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+                        if (g['VOTOS'] > maxVotos) maxVotos = g['VOTOS'];
+                    }
+                }
+            } else {
+                for (const mun of Object.keys(candidatoGanadorPorMunicipio)) {
+                    const filas = currentPartidoData.filter(r => normalizarNombre(r['MUNNOMBRE']) === mun);
+                    if (!filas.length) continue;
+                    const g = filas.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+                    if (g['VOTOS'] > maxVotos) maxVotos = g['VOTOS'];
+                }
+            }
+            valor = maxVotos > 0 ? ganador['VOTOS'] / maxVotos : 0;
+        }
+        // Gradiente: gris claro (poco) → azul navy oscuro (dominio/volumen total)
+        const r = Math.round(220 - 175 * valor);
+        const g = Math.round(220 - 170 * valor);
+        const b = Math.round(230 - 80 * valor);
         return `rgb(${r},${g},${b})`;
     }
 
@@ -245,7 +269,7 @@ function actualizarMapaSimple() {
     const partidoSeleccionado     = document.getElementById('partido-selector').value;
     const candidatoSeleccionado   = document.getElementById('candidato-selector').value;
     const partidoGanadorSel       = document.getElementById('partido-ganador-selector').value;
-    const porcentajeActivo        = mapaCalorPorcentaje && (tipoVista === 'partido_heat' || tipoVista === 'candidato_heat');
+    const porcentajeActivo        = mapaCalorPorcentaje && (tipoVista === 'partido_heat' || tipoVista === 'candidato_heat' || tipoVista === 'calor');
     const candidatoFiltro         = document.getElementById('candidato-ganador-filtro').value;
     const escala                  = document.getElementById('escala-selector')?.value || 'municipio';
     escalaActual = escala;

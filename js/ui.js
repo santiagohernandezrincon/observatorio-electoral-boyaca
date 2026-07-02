@@ -1078,9 +1078,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const selectVista    = document.getElementById('tipo-vista');
             const groupPartido   = document.getElementById('group-partido');
             const groupCandidato = document.getElementById('group-candidato');
+            const groupHeatToggle = document.getElementById('group-heat-toggle');
 
             if (groupPartido)   groupPartido.style.display   = 'none';
             if (groupCandidato) groupCandidato.style.display = 'none';
+            if (groupHeatToggle) groupHeatToggle.style.display = (modo === 'partido' || modo === 'calor') ? 'block' : 'none';
 
             if (modo === 'ganadores' || modo === 'ganador') {
                 if (selectVista) selectVista.value = 'candidato_ganador';
@@ -1103,6 +1105,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (typeof actualizarLeyenda === 'function') actualizarLeyenda('margen');
             }
         });
+    });
+
+    document.getElementById('heat-pct-toggle')?.addEventListener('change', e => {
+        mapaCalorPorcentaje = e.target.checked;
+        if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
     });
 
     // Poblar dropdown visual de partidos y conectarlo al selector legacy
