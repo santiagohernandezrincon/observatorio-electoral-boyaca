@@ -38,6 +38,10 @@ const COLORES_PARTIDO = {
   'Todos Somos Colombia':           '#A1887F',
   'Partido Somos':                  '#BCAAA4',
   'Dignidad y Compromiso':          '#FBC02D',
+  // ── AGREGADOS SESIÓN JULIO 2026 (cierre backlog eslóganes) ──
+  'Nueva Fuerza Democrática':       '#F57F17',
+  'En Marcha':                      '#C2185B',
+  'Fuerza de la Paz':               '#00ACC1',
   // ── PLEBISCITO ──────────────────────────────────────────
   'Sí':                             '#43A047',
   'No':                             '#E53935',
@@ -249,6 +253,21 @@ const NORMALIZAR_PARTIDO = {
   // ── FUERZA DE LA PAZ (partido propio, no confundir con la lista
   // conjunta con el Liberal de arriba) ────────────────────────────────
   'PARTIDO POLÍTICO LA FUERZA DE LA PAZ': 'Fuerza de la Paz',
+
+  // ── NUEVA FUERZA DEMOCRÁTICA (partido real, no eslogan -- aparece en
+  // 248 combinaciones año/cargo/municipio en 2023, alias directo aqui
+  // en vez de palabrasClave porque el bucket ya existia sin resolver:
+  // el fallback de normalizePartido() mayuscula el nombre del bucket
+  // antes de buscarlo, así que sin este alias nunca hubiera encontrado
+  // la version Title Case que usa COLORES_PARTIDO) ─────────────────────
+  'NUEVA FUERZA DEMOCRÁTICA': 'Nueva Fuerza Democrática',
+
+  // ── EN MARCHA (Puerto Boyacá, movimiento local propio -- alias directo
+  // en vez de palabrasClave a propósito: ya existe 'EN MARCHA' -> Pacto
+  // Histórico arriba para una coalición nacional distinta; un bucket de
+  // palabrasClave llamado "En Marcha" habría colisionado con esa entrada
+  // porque el fallback compara en mayúsculas) ──────────────────────────
+  'PUERTO BOYACÁ ES DE TODOS': 'En Marcha',
 
   // CANDIDATOS MENORES 2022
   'COLOMBIA PIENSA EN GRANDE': 'Colombia Piensa en Grande',
