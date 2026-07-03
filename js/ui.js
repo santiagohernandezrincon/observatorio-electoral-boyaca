@@ -652,8 +652,8 @@ function inicializarBuscador() {
   input.addEventListener('input', function() {
     const q = this.value.trim().toLowerCase();
     if (!q || q.length < 2) return;
-    if (typeof mapSimple !== 'undefined' && mapSimple && typeof currentGeojson !== 'undefined' && currentGeojson) {
-      currentGeojson.eachLayer(layer => {
+    if (typeof mapSimple !== 'undefined' && mapSimple && typeof currentLayerSimple !== 'undefined' && currentLayerSimple) {
+      currentLayerSimple.eachLayer(layer => {
         const props = layer.feature?.properties || {};
         const nombre = (props.MPIO_CNMBR || props.nombre || props.NOM_MPIO || '').toLowerCase();
         if (nombre.includes(q)) {
@@ -764,10 +764,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
             provJump.addEventListener('change', e => {
                 const prov = e.target.value;
-                if (!prov || !provinciasData[prov] || typeof mapSimple === 'undefined' || !mapSimple || !currentGeojson) return;
+                if (!prov || !provinciasData[prov] || typeof mapSimple === 'undefined' || !mapSimple || typeof currentLayerSimple === 'undefined' || !currentLayerSimple) return;
                 const bounds = L.latLngBounds([]);
                 const munsProv = provinciasData[prov].map(m => m.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''));
-                currentGeojson.eachLayer(layer => {
+                currentLayerSimple.eachLayer(layer => {
                     const nombre = (layer.feature?.properties?.MPIO_CNMBR || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
                     if (munsProv.some(m => nombre.includes(m) || m.includes(nombre))) bounds.extend(layer.getBounds());
                 });
