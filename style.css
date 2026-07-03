@@ -1553,7 +1553,7 @@ html, body {
   gap: 4px;
 }
 
-.obs-pill-modo {
+.obs-pill-modo, .obs-pill-escala {
   padding: 6px 8px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.09);
@@ -1569,15 +1569,15 @@ html, body {
   align-items: center;
   gap: 5px;
 }
-.obs-pill-modo i { font-size: 0.7rem; opacity: 0.7; }
-.obs-pill-modo:hover { background: rgba(255,255,255,0.12); color: #fff; }
-.obs-pill-modo.active {
+.obs-pill-modo i, .obs-pill-escala i { font-size: 0.7rem; opacity: 0.7; }
+.obs-pill-modo:hover, .obs-pill-escala:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.obs-pill-modo.active, .obs-pill-escala.active {
   background: var(--gold);
   border-color: var(--gold);
   color: var(--navy);
   font-weight: 700;
 }
-.obs-pill-modo.active i { opacity: 1; }
+.obs-pill-modo.active i, .obs-pill-escala.active i { opacity: 1; }
 
 /* Dropdown lista partido */
 .obs-dropdown-list {

@@ -31,8 +31,8 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             }
             return `<strong>${elementoNombre}</strong><br>${candidatoSeleccionado}: ${row['VOTOS'].toLocaleString()} votos`;
         } else if (tipoVista === 'candidato_ganador') {
+            if (!datosProv.candidatos.length) return `<strong>${elementoNombre}</strong><br>Sin datos`;
             const g = datosProv.candidatos.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
-            if (!g) return `<strong>${elementoNombre}</strong><br>Sin datos`;
             if (candidatoFiltro && g['CANNOMBRE'] !== candidatoFiltro) return `<strong>${elementoNombre}</strong><br>Sin candidato filtrado`;
             return `<strong>${elementoNombre}</strong><br>Candidato ganador: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
         } else if (tipoVista === 'candidato_ganador_por_partido') {
@@ -154,7 +154,8 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
         } else if (tipoVista === 'candidato_heat') {
             filas = datosProv.candidatos;
         } else if (tipoVista === 'candidato_ganador') {
-            const g = datosProv.candidatos.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b, null);
+            if (!datosProv.candidatos.length) return '#cccccc';
+            const g = datosProv.candidatos.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b, datosProv.candidatos[0]);
             if (!g) return '#cccccc';
             const row = currentPartidoData.find(p => p['PARNOMBRE'] === g['PARNOMBRE']);
             return row ? row.COLOR_BASE : '#95a5a6';
@@ -302,6 +303,7 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
 function actualizarMapaSimple() {
     if (!currentGeojson || !currentPartidoData) return;
     if (currentLayerSimple) mapSimple.removeLayer(currentLayerSimple);
+    if (currentLayerProvincias) mapSimple.removeLayer(currentLayerProvincias);
 
     const tipoVista               = document.getElementById('tipo-vista').value;
     const partidoSeleccionado     = document.getElementById('partido-selector').value;
@@ -321,50 +323,55 @@ function actualizarMapaSimple() {
     document.getElementById('map-container-simple').style.display                 = 'flex';
     document.getElementById('map-container-comparison').style.display             = 'none';
 
+    // Capa de municipios: se construye siempre (el buscador y "saltar a
+    // provincia" dependen de currentLayerSimple.eachLayer), pero solo se
+    // agrega al mapa cuando la escala activa es 'municipio'.
     currentLayerSimple = L.geoJSON(currentGeojson, {
         style: feature => {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
             const nombre = normalizarNombre(nombreRaw);
-            let color;
-            if (escalaActual === 'provincia') {
-                const prov = obtenerProvinciaDeMunicipio(nombre);
-                if (!prov) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
-                color = getColorParaElemento(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
-            } else {
-                color = getColorParaElemento(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
-            }
+            const color = getColorParaElemento(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
             return { fillColor: color, weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
         },
         onEachFeature: (feature, layer) => {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return;
             const nombre = normalizarNombre(nombreRaw);
-            let tooltipText;
-            if (escalaActual === 'provincia') {
-                const prov = obtenerProvinciaDeMunicipio(nombre);
-                tooltipText = prov
-                    ? getTooltipText(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro)
-                    : `<strong>${nombreRaw}</strong><br>No pertenece a provincia conocida`;
-            } else {
-                tooltipText = getTooltipText(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro);
-            }
+            const tooltipText = getTooltipText(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro);
             layer.bindTooltip(tooltipText, { sticky: true });
             layer.on('click', () => {
                 const partidosMun    = currentPartidoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombre);
                 const candidatosMun  = currentCandidatoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombre);
-                if (escalaActual === 'provincia') {
-                    const prov = obtenerProvinciaDeMunicipio(nombre);
-                    if (prov) {
-                        const dp = obtenerDatosProvincia(prov);
-                        if (dp) { mostrarDetalleProvincia(prov, dp); return; }
-                    }
-                }
                 mostrarDetalleMunicipio(nombreRaw, partidosMun, candidatosMun, tipoVista);
             });
         }
-    }).addTo(mapSimple);
-    mapSimple.fitBounds(currentLayerSimple.getBounds());
+    });
+
+    // Capa de provincias: poligonos ya fusionados en geojson/boyaca_provincias.geojson
+    // (ver scripts/generar_geojson_provincias.py). Un feature = una provincia real.
+    if (escalaActual === 'provincia' && currentGeojsonProvincias) {
+        currentLayerProvincias = L.geoJSON(currentGeojsonProvincias, {
+            style: feature => {
+                const prov = feature.properties.PROVINCIA;
+                const color = getColorParaElemento(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
+                return { fillColor: color, weight: 1.5, opacity: 1, color: 'white', fillOpacity: 0.9 };
+            },
+            onEachFeature: (feature, layer) => {
+                const prov = feature.properties.PROVINCIA;
+                const tooltipText = getTooltipText(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro);
+                layer.bindTooltip(tooltipText, { sticky: true });
+                layer.on('click', () => {
+                    const dp = obtenerDatosProvincia(prov);
+                    if (dp) mostrarDetalleProvincia(prov, dp);
+                });
+            }
+        }).addTo(mapSimple);
+        mapSimple.fitBounds(currentLayerProvincias.getBounds());
+    } else {
+        currentLayerSimple.addTo(mapSimple);
+        mapSimple.fitBounds(currentLayerSimple.getBounds());
+    }
 
     const chkPuestos = document.getElementById('toggle-puestos');
     if (chkPuestos?.checked && capaPuestosVotacion) capaPuestosVotacion.addTo(mapSimple);

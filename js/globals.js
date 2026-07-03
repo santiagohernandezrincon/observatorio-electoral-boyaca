@@ -96,6 +96,8 @@ let currentLayerSimple;
 let currentPartidoData = null;
 let currentCandidatoData = null;
 let currentGeojson = null;
+let currentGeojsonProvincias = null;
+let currentLayerProvincias;
 let partidosUnicos = [];
 let candidatosUnicos = [];
 let currentAnio = '2026';

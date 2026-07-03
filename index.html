@@ -116,12 +116,17 @@
         </div>
       </div>
 
-      <!-- SALTAR A PROVINCIA -->
+      <!-- ESCALA DEL MAPA -->
       <div class="obs-section">
-        <div class="obs-section__label">SALTAR A PROVINCIA</div>
-        <select class="obs-select" id="provincia-jump">
-          <option value="">Todas las provincias</option>
-        </select>
+        <div class="obs-section__label">ESCALA</div>
+        <div class="obs-modo-grid">
+          <button class="obs-pill-escala active" data-escala="municipio">
+            <i class="fas fa-draw-polygon"></i> Municipio
+          </button>
+          <button class="obs-pill-escala" data-escala="provincia">
+            <i class="fas fa-layer-group"></i> Provincia
+          </button>
+        </div>
       </div>
 
     </div><!-- /obs-panel__body -->

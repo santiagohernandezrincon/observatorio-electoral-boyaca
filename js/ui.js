@@ -753,27 +753,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         provinciasData = await (await fetch('data/provincias_boyaca.json')).json();
         console.log('Provincias cargadas:', Object.keys(provinciasData));
 
-        // ── Rellenar dropdown "Saltar a provincia" ──
-        const provJump = document.getElementById('provincia-jump');
-        if (provJump && provinciasData) {
-            Object.keys(provinciasData).sort().forEach(prov => {
-                const opt = document.createElement('option');
-                opt.value = prov;
-                opt.textContent = prov;
-                provJump.appendChild(opt);
-            });
-            provJump.addEventListener('change', e => {
-                const prov = e.target.value;
-                if (!prov || !provinciasData[prov] || typeof mapSimple === 'undefined' || !mapSimple || typeof currentLayerSimple === 'undefined' || !currentLayerSimple) return;
-                const bounds = L.latLngBounds([]);
-                const munsProv = provinciasData[prov].map(m => m.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''));
-                currentLayerSimple.eachLayer(layer => {
-                    const nombre = (layer.feature?.properties?.MPIO_CNMBR || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-                    if (munsProv.some(m => nombre.includes(m) || m.includes(nombre))) bounds.extend(layer.getBounds());
-                });
-                if (bounds.isValid()) mapSimple.fitBounds(bounds, { padding: [30, 30] });
-            });
-        }
+        currentGeojsonProvincias = await (await fetch('geojson/boyaca_provincias.geojson')).json();
+        console.log(`GeoJSON de provincias cargado con ${currentGeojsonProvincias.features.length} provincias`);
     } catch (error) {
         console.error('Error cargando provincias:', error);
     }
@@ -1117,6 +1098,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('heat-pct-toggle')?.addEventListener('change', e => {
         mapaCalorPorcentaje = e.target.checked;
         if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+    });
+
+    // Toggle de escala del mapa (Municipio / Provincia) — independiente
+    // del dropdown "Saltar a provincia" (ese solo hace zoom).
+    document.querySelectorAll('.obs-pill-escala').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.obs-pill-escala').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const escalaSel = document.getElementById('escala-selector');
+            if (escalaSel) {
+                escalaSel.value = btn.dataset.escala;
+                escalaSel.dispatchEvent(new Event('change'));
+            }
+        });
     });
 
     // Poblar dropdown visual de partidos y conectarlo al selector legacy
