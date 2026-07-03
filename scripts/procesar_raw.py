@@ -298,6 +298,87 @@ def procesar_plebiscito():
     print(f"    ✅  {ruta_part.name}  ({len(part)} filas)")
 
 
+# ── Detección de formato ────────────────────────────────────────────────────
+def detectar_formato(ruta):
+    """'nuevo' = formato histórico por mesa (portal historicos-resultados,
+    columnas 'Código Departamento'/'Nombre Partido'/...); 'sql_abrev' =
+    mismo tipo de dato pero con columnas abreviadas (DEPNOMBRE/MUNNOMBRE/
+    PARNOMBRE/CANNOMBRE/VOTOS, visto en 2026); 'viejo' = formato original
+    CEDAE (columnas coddpto/codigo_partido/primer_apellido/...)."""
+    with open(ruta, encoding='utf-8', errors='ignore') as f:
+        header = f.readline()
+    if 'Código Departamento' in header:
+        return 'nuevo'
+    if 'DEPNOMBRE' in header and 'PARNOMBRE' in header:
+        return 'sql_abrev'
+    return 'viejo'
+
+
+# ── Procesador compartido de formatos "a nivel de mesa" ────────────────────────
+# (partido y candidato ya vienen resueltos como texto en el archivo, no hay
+# codigo que buscar en NOMBRES_PARTIDO; solo cambia el nombre de columna).
+def _procesar_generico_mesa(ruta, anio, cargo_raw, cols, etiqueta):
+    cargo = CARGO_MAP[cargo_raw]
+    sep(); print(f"  {ruta.name}  →  {anio} / {cargo}  ({etiqueta})")
+
+    df = leer_csv(ruta, separador=',')
+    df.columns = [c.strip() for c in df.columns]
+    print(f"    filas totales : {len(df)}")
+    print(f"    columnas      : {list(df.columns)}")
+
+    # Filtrar Boyacá por NOMBRE, no por código: estos formatos usan
+    # numeración interna de la Registraduría, no el código DANE (15) que
+    # usa el resto del pipeline. Filtrar por código daría 0 filas o el
+    # departamento equivocado, en silencio.
+    df['DEP_CLEAN'] = df[cols['depnombre']].astype(str).str.strip().str.upper()
+    df = df[df['DEP_CLEAN'] == 'BOYACA'].copy()
+    print(f"    filas Boyacá  : {len(df)}")
+    if df.empty:
+        print("    ⚠  Sin datos para Boyacá — archivo omitido.")
+        return
+
+    df['VOTOS']     = pd.to_numeric(df[cols['votos']], errors='coerce').fillna(0).astype(int)
+    df['MUNNOMBRE'] = df[cols['munnombre']].astype(str).str.strip().str.upper()
+    # Reusa formatear_nombre() para Title Case + manejo de 'RETIRADO', igual
+    # que el resto del pipeline -- aqui no hay apellidos separados que unir.
+    df['CANNOMBRE'] = df[cols['cannombre']].apply(
+        lambda n: formatear_nombre({'nombres': n, 'primer_apellido': '', 'segundo_apellido': ''})
+    )
+    # El nombre de partido ya viene resuelto como texto; la limpieza final
+    # la hace normalizePartido() en JS, igual que con los demas anios.
+    df['PARNOMBRE'] = df[cols['parnombre']].astype(str).str.strip()
+
+    df_valido = df[
+        ~df['CANNOMBRE'].str.upper().isin(EXCLUIR) &
+        ~df['PARNOMBRE'].str.upper().isin(EXCLUIR)
+    ].copy()
+
+    guardar_candidato(df_valido, anio, cargo)
+    guardar_partido(df_valido, anio, cargo)
+
+
+# ── Procesador formato histórico por mesa (2019-2023) ───────────────────────────
+def procesar_historico_mesa(ruta, anio, cargo_raw):
+    _procesar_generico_mesa(ruta, anio, cargo_raw, {
+        'depnombre': 'Nombre Departamento',
+        'munnombre': 'Nombre Municipio',
+        'parnombre': 'Nombre Partido',
+        'cannombre': 'Nombre Candidato',
+        'votos':     'Total Votos',
+    }, 'formato histórico por mesa')
+
+
+# ── Procesador formato columnas abreviadas (2026) ───────────────────────────────
+def procesar_sql_abrev(ruta, anio, cargo_raw):
+    _procesar_generico_mesa(ruta, anio, cargo_raw, {
+        'depnombre': 'DEPNOMBRE',
+        'munnombre': 'MUNNOMBRE',
+        'parnombre': 'PARNOMBRE',
+        'cannombre': 'CANNOMBRE',
+        'votos':     'VOTOS',
+    }, 'formato columnas abreviadas 2026')
+
+
 # ── Procesador MMV 2022 presidencia ───────────────────────────────────────────
 def procesar_mmv(vuelta):
     """vuelta: '1' o '2'"""
@@ -348,7 +429,13 @@ def main():
             print(f"⚠  Cargo no mapeado: '{cargo_raw}' en {ruta.name}")
             continue
         try:
-            procesar_dta(ruta, anio, cargo_raw)
+            formato = detectar_formato(ruta)
+            if formato == 'nuevo':
+                procesar_historico_mesa(ruta, anio, cargo_raw)
+            elif formato == 'sql_abrev':
+                procesar_sql_abrev(ruta, anio, cargo_raw)
+            else:
+                procesar_dta(ruta, anio, cargo_raw)
         except Exception as e:
             print(f"❌  ERROR en {ruta.name}: {e}")
             errores.append((ruta.name, str(e)))

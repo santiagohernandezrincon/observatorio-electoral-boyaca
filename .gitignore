@@ -1,3 +1,8 @@
 # Archivos raw grandes (>100MB, no permitidos por GitHub)
 data/raw/MMV_NACIONAL_PRESIDENTE_2022_1v.csv
 data/raw/MMV_NACIONAL_PRESIDENTE_2022_2v.csv
+
+# Crudos nuevos aun sin verificar / sin soporte en procesar_raw.py (JAL,
+# consultas, respaldo presidencial 2022) — no se comitean hasta decidir
+# como se integran.
+data/raw_staging/
