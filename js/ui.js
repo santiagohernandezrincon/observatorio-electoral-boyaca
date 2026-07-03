@@ -1071,6 +1071,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
                 if (typeof actualizarLeyenda === 'function') setTimeout(() => actualizarLeyenda('candidato_ganador'), 100);
 
+            } else if (modo === 'lista_ganadora') {
+                // Colorea por la lista/partido con mas votos SUMADOS en el
+                // municipio (currentPartidoData), a diferencia de 'ganadores'
+                // que colorea por el partido del candidato individual mas
+                // votado -- en listas abiertas estos dos pueden diferir.
+                if (selectVista) selectVista.value = 'partido';
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') setTimeout(() => actualizarLeyenda('partido'), 100);
+
             } else if (modo === 'partido') {
                 if (selectVista) selectVista.value = 'partido_heat';
                 if (groupPartido) groupPartido.style.display = 'flex';

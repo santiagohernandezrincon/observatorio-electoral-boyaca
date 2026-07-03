@@ -77,7 +77,10 @@
         <div class="obs-section__label">MODO DE COLOR</div>
         <div class="obs-modo-grid">
           <button class="obs-pill-modo active" data-modo="ganadores">
-            <i class="fas fa-trophy"></i> Ganador
+            <i class="fas fa-trophy"></i> Ganador (candidato)
+          </button>
+          <button class="obs-pill-modo" data-modo="lista_ganadora">
+            <i class="fas fa-list-ol"></i> Lista ganadora
           </button>
           <button class="obs-pill-modo" data-modo="partido">
             <i class="fas fa-flag"></i> Partido
@@ -376,6 +379,7 @@
   <!-- Tipo de vista / modo mapa -->
   <select id="tipo-vista">
     <option value="candidato_ganador">Ganadores</option>
+    <option value="partido">Lista ganadora</option>
     <option value="partido_heat">Por Partido</option>
     <option value="candidato_heat">Candidato</option>
     <option value="calor">Calor</option>
