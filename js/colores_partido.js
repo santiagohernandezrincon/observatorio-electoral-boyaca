@@ -246,6 +246,10 @@ const NORMALIZAR_PARTIDO = {
   'COALICION LIBERAL': 'Partido Liberal Colombiano',
   'PARTIDO LA FUERZA DE LA PAZ-PARTIDO LIBERAL COLOMBIANO': 'Partido Liberal Colombiano',
 
+  // ── FUERZA DE LA PAZ (partido propio, no confundir con la lista
+  // conjunta con el Liberal de arriba) ────────────────────────────────
+  'PARTIDO POLÍTICO LA FUERZA DE LA PAZ': 'Fuerza de la Paz',
+
   // CANDIDATOS MENORES 2022
   'COLOMBIA PIENSA EN GRANDE': 'Colombia Piensa en Grande',
   'PARTIDO MOVIMIENTO DE SALVACION NACIONAL': 'Salvación Nacional',
@@ -303,6 +307,11 @@ const NORMALIZAR_PARTIDO = {
   'UNIDOS POR UN TIBANA DE OPORTUNIDADES': 'Alianza Verde',
   'UNIDOS SOMOS EL EQUIPO DEL CAMBIO': 'Alianza Verde',
   'UNIDOS SOMOS MAS': 'Centro Democrático',
+  // Confirmado por Santiago: coalicion Colombia Renaciente + Nuevo Liberalismo +
+  // Salvación Nacional en Garagoa 2023 (alcaldia) -- primer partido = aval principal.
+  // Alias directo aqui (no en palabrasClave) para que no quede atrapado por el
+  // match de substring de 'SOMOS MAS' (Cambio Radical, ver palabrasClave).
+  'JUNTOS SOMOS MAS FUERTES': 'Colombia Renaciente',
 
   // VOTOS ESPECIALES
   'VOTOS NULOS': 'Votos nulos',
@@ -508,7 +517,33 @@ function normalizePartido(nombre) {
     }
   }
 
-  // 4. Fallback: devolver el string limpio
+  // 4. Eslóganes de campaña / coaliciones hiperlocales conocidas: busca si
+  // el texto crudo contiene alguna palabra clave de `palabrasClave`
+  // (heredado de asignarColorPartido() en data.js/script.js, portado aquí
+  // solo como resolución de NOMBRE, no de color). Si hay match, intenta
+  // canonizar el "partido base" contra NORMALIZAR_PARTIDO -- sin volver a
+  // llamar normalizePartido(), para no arriesgar recursión infinita si
+  // partidoBase coincide con una de sus propias palabras clave (pasa con
+  // 'PARTIDO ECOLOGISTA COLOMBIANO', cuya palabra clave es 'ECOLOGISTA').
+  if (typeof palabrasClave !== 'undefined') {
+    const stripTildes = str => str.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    for (const [partidoBase, palabras] of Object.entries(palabrasClave)) {
+      for (const palabra of palabras) {
+        if (stripTildes(u).includes(stripTildes(palabra.toUpperCase()))) {
+          if (NORMALIZAR_PARTIDO[partidoBase]) return NORMALIZAR_PARTIDO[partidoBase];
+          const ub = stripTildes(partidoBase.toUpperCase().replace(/\s+/g, ' '));
+          for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
+            if (stripTildes(k.toUpperCase().replace(/\s+/g, ' ')) === ub) {
+              return NORMALIZAR_PARTIDO[k];
+            }
+          }
+          return partidoBase;
+        }
+      }
+    }
+  }
+
+  // 5. Fallback: devolver el string limpio
   return s;
 }
 
