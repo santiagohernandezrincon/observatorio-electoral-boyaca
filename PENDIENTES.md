@@ -51,15 +51,44 @@ cualquier corrección de `CANDIDATOS_PARTIDO`. Verificar que esto no
 rompa el cálculo de `TOTAL_VOTOS`/`PORCENTAJE` que hoy vive en el CSV
 pre-agregado.
 
+**Nota (Vista Comparar, sesión julio 2026):** este gap sigue sin
+resolverse en la Vista Mapa principal, pero Vista Comparar lo evita
+estructuralmente en vez de heredarlo — usa `candidatoGanadorPorMunicipio`
+(vía `cargarCandidatosPorAnioCorp()` en `js/data.js`) para Alcaldía/
+Gobernación/Presidencia en lugar del agregado de partido, precisamente
+porque `CANDIDATOS_PARTIDO` solo tiene overrides para esos cargos.
+Verificado en vivo con el caso de referencia (Ezequiel Jiménez Cely,
+Paz de Río): Comparar resuelve "En Marcha" correctamente. Cámara/
+Senado/Asamblea/Concejo sí usan el agregado de partido en Comparar,
+pero ahí `CANDIDATOS_PARTIDO` no tiene ninguna entrada, así que no hay
+corrección que perder.
+
 ## Otros pendientes conocidos (de sesiones anteriores, sin resolver)
 
-- **JAL y consultas** no están soportados en `CARGO_MAP`
-  (`scripts/procesar_raw.py`) — los crudos de 2019/2023 (JAL) y 2026
-  (consultas) siguen en `data/raw_staging/` sin procesar.
+- **JAL y consultas** — corregido (sesión julio 2026): los CSV de
+  2019/2023 (JAL) y 2026 (consultas) **ya existen y están procesados**
+  con datos reales (`data/votos_partido_municipio_2019_jal.csv`, etc.);
+  la nota anterior de "sin procesar" estaba desactualizada. Se dejan
+  fuera de Vista Comparar por bajo volumen, no por falta de
+  procesamiento: JAL solo cubre 1-2 municipios de Boyacá (17 y 13 filas
+  totales en 2019 y 2023 respectivamente, nada representativo a escala
+  departamental) y consultas es un tipo de contienda distinto (interna
+  de coalición, sin ciclo previo/posterior comparable).
 - **Presidencial 2026** (primera y segunda vuelta) — Santiago va a
   bajar los CSV manualmente de la Registraduría cuando estén
-  disponibles.
-- **Vista Comparar / Sesión 3** — sigue sin empezar.
+  disponibles. Cuando esto pase, el par 2022→2026 de Presidencia
+  aparecerá automáticamente en Vista Comparar sin tocar código (los
+  pares se generan dinámicamente desde `DATOS_DISPONIBLES`).
+- **Vista Comparar / Sesión 3 — completa** (sesión julio 2026).
+  Selector de cargo + año A/B (26 pares válidos, generados
+  dinámicamente), regla fija Candidato/Lista por cargo (ver nota en la
+  sección del gap de `CANDIDATOS_PARTIDO` arriba), mapa "cambió/no
+  cambió" con modo ENP opcional (Laakso-Taagepera, rampa navy
+  secuencial), tabla ordenable de cambios y márgenes, KPIs (% cambio,
+  ENP A/B) con nota contextual para alta rotación en Alcaldía/
+  Gobernación. Verificado en vivo con 3 pares (Cámara 2022→2026,
+  Alcaldía 2019→2023, Asamblea 2019→2023), sin errores de consola, sin
+  romper la Vista Mapa principal.
 - **`asignarColorPartido()` / lógica huérfana en los archivos legacy
   de la raíz** (`data.js`, `script.js`, `charts.js`, `ui.js`, `map.js`)
   — no se cargan desde `index.html`, decisión pendiente de si
