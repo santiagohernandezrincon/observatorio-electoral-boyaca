@@ -600,6 +600,158 @@ function renderRankingCompetitividad(promedios) {
   document.getElementById('comp-tabla-dominados').innerHTML = dominados.map(fila).join('') || '<p class="actor-table-empty">Sin datos</p>';
 }
 
+let compararTablaSort = { campo: 'margenB', asc: true };
+
+function renderTablaComparar() {
+  const wrap = document.getElementById('comparar-tabla');
+  const cont = document.getElementById('comparar-tabla-body');
+  if (!wrap || !cont) return;
+  if (!comparacionActual) { wrap.style.display = 'none'; return; }
+
+  const filas = construirFilasTablaComparar(comparacionActual);
+  const { campo, asc } = compararTablaSort;
+  filas.sort((a, b) => {
+    let va = a[campo], vb = b[campo];
+    if (campo === 'cambio') { va = va ? 1 : 0; vb = vb ? 1 : 0; }
+    if (typeof va === 'string') return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+    va = va == null ? Infinity : va;
+    vb = vb == null ? Infinity : vb;
+    return asc ? va - vb : vb - va;
+  });
+
+  cont.innerHTML = filas.map(f => `
+    <div class="ct-row">
+      <span class="ct-col ct-col--mun">${f.municipio}</span>
+      <span class="ct-col ct-col--cambio">${f.cambio ? '<span class="ct-badge ct-badge--si">Sí</span>' : '<span class="ct-badge">No</span>'}</span>
+      <span class="ct-col ct-col--partido">
+        <span class="ct-dot" style="background:${colorPartido(f.partidoA)}"></span>${f.partidoA}
+        <span class="ct-arrow">→</span>
+        <span class="ct-dot" style="background:${colorPartido(f.partidoB)}"></span>${f.partidoB}
+      </span>
+      <span class="ct-col ct-col--margen">${f.margenB != null ? f.margenB.toFixed(1) + '%' : '—'}</span>
+    </div>`).join('') || '<p class="actor-table-empty">Sin municipios con datos en ambas elecciones</p>';
+
+  wrap.querySelectorAll('.comparar-tabla__header .ct-col[data-sort]').forEach(el => {
+    const activo = el.dataset.sort === campo;
+    el.classList.toggle('ct-col--activo', activo);
+    el.dataset.dir = activo ? (asc ? '▲' : '▼') : '';
+  });
+  wrap.style.display = 'block';
+}
+
+function inicializarComparar() {
+  const cargoSel = document.getElementById('comparar-cargo-selector');
+  const aSel = document.getElementById('comparar-anio-a');
+  const bSel = document.getElementById('comparar-anio-b');
+  const btn = document.getElementById('comparar-btn-actualizar');
+  if (!cargoSel || !aSel || !bSel) return;
+
+  const cargos = Object.keys(aniosPorCargoComparable());
+  cargoSel.innerHTML = cargos.map(c => `<option value="${c}">${LABELS_CORPORACION[c] || c}</option>`).join('');
+
+  function actualizarAnioA() {
+    const pares = paresComparables(cargoSel.value);
+    aSel.innerHTML = pares.map(([a]) => `<option value="${a}">${a}</option>`).join('');
+    actualizarAnioB();
+  }
+  function actualizarAnioB() {
+    const pares = paresComparables(cargoSel.value);
+    const par = pares.find(([a]) => String(a) === aSel.value);
+    bSel.innerHTML = par ? `<option value="${par[1]}">${par[1]}</option>` : '';
+  }
+
+  cargoSel.addEventListener('change', actualizarAnioA);
+  aSel.addEventListener('change', actualizarAnioB);
+  actualizarAnioA();
+
+  // Encabezados de la tabla: click para ordenar (toggle asc/desc en la misma columna)
+  document.querySelectorAll('#comparar-tabla .comparar-tabla__header .ct-col[data-sort]').forEach(el => {
+    el.addEventListener('click', () => {
+      const campo = el.dataset.sort;
+      compararTablaSort = compararTablaSort.campo === campo
+        ? { campo, asc: !compararTablaSort.asc }
+        : { campo, asc: true };
+      renderTablaComparar();
+    });
+  });
+
+  // Pills de modo de mapa: Cambios / ENP A / ENP B — solo re-renderizan, no recargan datos
+  document.querySelectorAll('#comparar-modo-mapa .pill').forEach(btnPill => {
+    btnPill.addEventListener('click', () => {
+      if (!comparacionActual) return;
+      comparaModoMapaActual = btnPill.dataset.modo;
+      document.querySelectorAll('#comparar-modo-mapa .pill').forEach(p => p.classList.remove('active'));
+      btnPill.classList.add('active');
+      actualizarMapaComparar(comparaModoMapaActual);
+    });
+  });
+
+  btn?.addEventListener('click', async () => {
+    const cargo = cargoSel.value;
+    const anioA = aSel.value;
+    const anioB = bSel.value;
+    if (!cargo || !anioA || !anioB) return;
+    const loading = document.getElementById('comparar-loading');
+    const kpis = document.getElementById('comparar-kpis');
+    const detalle = document.getElementById('comparar-kpi-detalle');
+    const nota = document.getElementById('comparar-kpi-nota');
+    if (loading) loading.style.display = 'flex';
+    if (kpis) kpis.style.display = 'none';
+    if (detalle) detalle.style.display = 'none';
+    if (nota) nota.style.display = 'none';
+    try {
+      const [resA, resB] = await Promise.all([
+        cargarDatosComparacion(anioA, cargo),
+        cargarDatosComparacion(anioB, cargo)
+      ]);
+      const ganadoresA = ganadorPorMunicipioComparacion(resA);
+      const ganadoresB = ganadorPorMunicipioComparacion(resB);
+      const cambios = calcularComparacionMunicipios(ganadoresA, ganadoresB);
+      const enpA = enpPorMunicipio(resA);
+      const enpB = enpPorMunicipio(resB);
+      const enpPromA = promedioEnpDepartamental(enpA);
+      const enpPromB = promedioEnpDepartamental(enpB);
+      const margenB = margenPorMunicipioComparacion(resB);
+
+      const conDatos = Object.values(cambios).filter(c => c.ganadorA && c.ganadorB);
+      const numCambios = conDatos.filter(c => c.cambio).length;
+      const pctCambio = conDatos.length ? (numCambios / conDatos.length * 100) : 0;
+
+      document.getElementById('comparar-kpi-pct-cambio').textContent = pctCambio.toFixed(1) + '%';
+      document.getElementById('comparar-kpi-enp-a').textContent = enpPromA.toFixed(2);
+      document.getElementById('comparar-kpi-enp-a-anio').textContent = anioA;
+      document.getElementById('comparar-kpi-enp-b').textContent = enpPromB.toFixed(2);
+      document.getElementById('comparar-kpi-enp-b-anio').textContent = anioB;
+      document.getElementById('comparar-pill-enp-a-anio').textContent = anioA;
+      document.getElementById('comparar-pill-enp-b-anio').textContent = anioB;
+      if (kpis) kpis.style.display = 'flex';
+      if (detalle) {
+        detalle.textContent = `${numCambios} de ${conDatos.length} municipios con datos en ambas elecciones`;
+        detalle.style.display = 'block';
+      }
+      if (nota && ['alcalde', 'gobernador'].includes(cargo) && pctCambio > 60) {
+        nota.textContent = 'Alta rotación es normal en este cargo: no hay reelección inmediata, así que el candidato siempre cambia y las coaliciones locales suelen renombrarse cada ciclo.';
+        nota.style.display = 'block';
+      }
+
+      comparacionActual = { cargo, anioA, anioB, ganadoresA, ganadoresB, cambios, enpA, enpB, margenB };
+
+      comparaModoMapaActual = 'cambios';
+      document.querySelectorAll('#comparar-modo-mapa .pill').forEach(p => p.classList.remove('active'));
+      document.querySelector('#comparar-modo-mapa .pill[data-modo="cambios"]')?.classList.add('active');
+      document.getElementById('comparar-modo-mapa').style.display = 'flex';
+      document.getElementById('comparar-empty').style.display = 'none';
+      document.getElementById('map-comparar').style.display = 'block';
+      actualizarMapaComparar('cambios');
+      renderTablaComparar();
+
+      console.log(`Comparar ${cargo} ${anioA}->${anioB}: ${numCambios}/${conDatos.length} cambiaron (${pctCambio.toFixed(1)}%), ENP ${anioA}=${enpPromA.toFixed(2)} ENP ${anioB}=${enpPromB.toFixed(2)}`);
+    } finally {
+      if (loading) loading.style.display = 'none';
+    }
+  });
+}
+
 function inicializarActor() {
   const input = document.getElementById('actor-search-input');
   const autocomplete = document.getElementById('actor-autocomplete');
@@ -1002,6 +1154,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarBuscador();
     inicializarActor();
     inicializarCompetitividad();
+    inicializarComparar();
 
     // ── Drawer: cerrar, minimizar, tabs ──
     document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);

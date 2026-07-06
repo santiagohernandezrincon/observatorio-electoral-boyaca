@@ -445,6 +445,83 @@ function actualizarMapaCompetitividad(promedioPorMunicipio) {
     setTimeout(() => mapCompetitividad.invalidateSize(), 100);
 }
 
+// ==================== MAPA VISTA COMPARAR ====================
+// Rampa secuencial de un solo tono (navy de marca, claro→oscuro) para ENP —
+// deliberadamente desaturada para no leerse como el color de ningún partido real.
+function colorPorEnp(valor, min, max) {
+    if (valor == null || max === min) return '#e9e9e9';
+    const t = Math.max(0, Math.min(1, (valor - min) / (max - min)));
+    const r0 = 0xE7, g0 = 0xEC, b0 = 0xF2; // pálido azul-gris
+    const r1 = 0x0B, g1 = 0x19, b1 = 0x29; // --navy
+    const r = Math.round(r0 + (r1 - r0) * t);
+    const g = Math.round(g0 + (g1 - g0) * t);
+    const b = Math.round(b0 + (b1 - b0) * t);
+    return `rgb(${r},${g},${b})`;
+}
+
+function actualizarMapaComparar(modo) {
+    if (!currentGeojson || !comparacionActual) return;
+    if (!mapComparar) {
+        mapComparar = L.map('map-comparar').setView([5.75, -73.0], 8);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapComparar);
+    }
+    if (currentLayerComparar) mapComparar.removeLayer(currentLayerComparar);
+
+    const { cambios, margenB, enpA, enpB, anioA, anioB } = comparacionActual;
+    const esEnp = modo === 'enpA' || modo === 'enpB';
+    let enpValores, enpMin, enpMax;
+    if (esEnp) {
+        enpValores = modo === 'enpA' ? enpA : enpB;
+        const vals = Object.values(enpValores).filter(v => v != null);
+        enpMin = vals.length ? Math.min(...vals) : 0;
+        enpMax = vals.length ? Math.max(...vals) : 1;
+    }
+
+    currentLayerComparar = L.geoJSON(currentGeojson, {
+        style: feature => {
+            const nombreRaw = feature.properties.MPIO_CNMBR;
+            if (!nombreRaw) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
+            const mun = normalizarNombre(nombreRaw);
+            if (esEnp) {
+                return { fillColor: colorPorEnp(enpValores[mun], enpMin, enpMax), weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
+            }
+            const c = cambios[mun];
+            if (!c || !c.ganadorA || !c.ganadorB) return { fillColor: '#e9e9e9', weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
+            const fillColor = c.cambio ? colorPartido(c.ganadorB.partido) : '#b0b0b0';
+            return { fillColor, weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
+        },
+        onEachFeature: (feature, layer) => {
+            const nombreRaw = feature.properties.MPIO_CNMBR;
+            if (!nombreRaw) return;
+            const mun = normalizarNombre(nombreRaw);
+            if (esEnp) {
+                const valor = enpValores[mun];
+                const anio = modo === 'enpA' ? anioA : anioB;
+                const texto = valor != null ? `ENP ${anio}: ${valor.toFixed(2)}` : `Sin datos suficientes (${anio})`;
+                layer.bindTooltip(`<strong>${nombreRaw}</strong><br>${texto}`, { sticky: true });
+                return;
+            }
+            const c = cambios[mun];
+            if (!c || !c.ganadorA || !c.ganadorB) {
+                layer.bindTooltip(`<strong>${nombreRaw}</strong><br>Sin datos en ambas elecciones`, { sticky: true });
+                return;
+            }
+            const margen = margenB[mun];
+            const margenTxt = margen != null ? `${margen.toFixed(1)}%` : 'N/D';
+            layer.bindTooltip(
+                `<strong>${nombreRaw}</strong><br>` +
+                `${anioA}: ${c.ganadorA.partido} (${c.ganadorA.votos.toLocaleString('es-CO')} votos)<br>` +
+                `${anioB}: ${c.ganadorB.partido} (${c.ganadorB.votos.toLocaleString('es-CO')} votos)<br>` +
+                `Margen ${anioB}: ${margenTxt}${c.cambio ? ' — <b>cambió</b>' : ''}`,
+                { sticky: true }
+            );
+        }
+    }).addTo(mapComparar);
+
+    mapComparar.fitBounds(currentLayerComparar.getBounds());
+    setTimeout(() => mapComparar.invalidateSize(), 100);
+}
+
 // ==================== BÚSQUEDA ====================
 function buscarMunicipio() {
     const nombre = document.getElementById('buscador-municipio').value.trim();

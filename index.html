@@ -352,13 +352,67 @@
 
     <!-- ─── VISTA 5: COMPARAR ─── -->
     <div class="obs-vista" id="obs-vista-comparar">
-      <div class="obs-vista-placeholder">
-        <div class="obs-placeholder__icon"><i class="fas fa-balance-scale"></i></div>
-        <div class="obs-placeholder__label">COMPARAR ELECCIONES</div>
-        <p class="obs-placeholder__desc">
-          Comparar dos momentos electorales y ver municipios que cambiaron de partido ganador.<br>
-          <em>Próximamente.</em>
-        </p>
+      <div class="actor-layout">
+
+        <aside class="actor-panel">
+          <div class="actor-panel__header">
+            <div class="actor-panel__title">COMPARAR ELECCIONES</div>
+            <div class="actor-panel__sub">Municipios que cambiaron de partido ganador</div>
+          </div>
+
+          <select id="comparar-cargo-selector" class="obs-ctrl-select"></select>
+          <div class="comparar-anios-row">
+            <select id="comparar-anio-a" class="obs-ctrl-select"></select>
+            <span class="comparar-anios-arrow">→</span>
+            <select id="comparar-anio-b" class="obs-ctrl-select" disabled></select>
+          </div>
+          <button id="comparar-btn-actualizar" class="obs-btn obs-btn--primary">Comparar</button>
+          <div class="actor-loading" id="comparar-loading" style="display:none">
+            <i class="fas fa-spinner fa-spin"></i> Cargando…
+          </div>
+
+          <div class="actor-info__stats comparar-kpis" id="comparar-kpis" style="display:none">
+            <div class="actor-stat">
+              <span class="actor-stat__num" id="comparar-kpi-pct-cambio">–</span>
+              <span class="actor-stat__label">Cambiaron de partido</span>
+            </div>
+            <div class="actor-stat">
+              <span class="actor-stat__num" id="comparar-kpi-enp-a">–</span>
+              <span class="actor-stat__label">ENP <span id="comparar-kpi-enp-a-anio"></span></span>
+            </div>
+            <div class="actor-stat">
+              <span class="actor-stat__num" id="comparar-kpi-enp-b">–</span>
+              <span class="actor-stat__label">ENP <span id="comparar-kpi-enp-b-anio"></span></span>
+            </div>
+          </div>
+          <div class="actor-panel__sub" id="comparar-kpi-detalle" style="display:none"></div>
+          <div class="actor-panel__sub" id="comparar-kpi-nota" style="display:none"></div>
+
+          <div class="actor-section-label">MUNICIPIOS: CAMBIOS Y MÁRGENES</div>
+          <div class="comparar-tabla" id="comparar-tabla">
+            <div class="comparar-tabla__header">
+              <span class="ct-col ct-col--mun" data-sort="municipio">Municipio</span>
+              <span class="ct-col ct-col--cambio" data-sort="cambio">Cambió</span>
+              <span class="ct-col ct-col--partido" data-sort="partidoB">A → B</span>
+              <span class="ct-col ct-col--margen" data-sort="margenB">Margen B</span>
+            </div>
+            <div class="comparar-tabla__body" id="comparar-tabla-body"></div>
+          </div>
+        </aside>
+
+        <div class="actor-main">
+          <div class="comparar-modo-mapa" id="comparar-modo-mapa" style="display:none">
+            <button class="pill active" data-modo="cambios">Cambios</button>
+            <button class="pill" data-modo="enpA">ENP <span id="comparar-pill-enp-a-anio"></span></button>
+            <button class="pill" data-modo="enpB">ENP <span id="comparar-pill-enp-b-anio"></span></button>
+          </div>
+          <div id="map-comparar" class="actor-map" style="display:none"></div>
+          <div class="actor-empty" id="comparar-empty">
+            <i class="fas fa-balance-scale"></i>
+            <p>Selecciona cargo y elecciones, luego pulsa "Comparar".</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -509,6 +563,10 @@
         } else if (view === 'competitividad') {
           setTimeout(function() {
             if (typeof cargarCompetitividadSiNecesario === 'function') cargarCompetitividadSiNecesario();
+          }, 80);
+        } else if (view === 'comparar') {
+          setTimeout(function() {
+            if (typeof mapComparar !== 'undefined' && mapComparar) mapComparar.invalidateSize();
           }, 80);
         }
       });
