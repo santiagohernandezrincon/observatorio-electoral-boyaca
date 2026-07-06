@@ -438,7 +438,7 @@ const CANDIDATOS_PARTIDO = {
     '2023_alcalde_GERMAN RICARDO CAMACHO BARRERA': 'Partido Liberal Colombiano',
     '2023_alcalde_GERMAN RICARDO ROBAYO HEREDIA': 'Partido de la U',
     '2023_alcalde_GILDARDO MURCIA BUITRAGO': 'Partido Conservador Colombiano',
-    '2023_alcalde_GIOVANNI VELA BERNAL': 'Dignidad y Comp.',
+    '2023_alcalde_GIOVANNI VELA BERNAL': 'Dignidad y Compromiso',
     '2023_alcalde_GLORIA EDY GOMEZ LOPEZ': 'Alianza Verde',
     '2023_alcalde_HECTOR DAVID AMADO SIERRA': 'Partido de la U',
     '2023_alcalde_HECTOR SEGUNDO RAMIREZ ESCOBAR': 'Partido Liberal Colombiano',

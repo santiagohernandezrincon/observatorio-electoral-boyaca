@@ -331,6 +331,10 @@ const NORMALIZAR_PARTIDO = {
   // Alias directo aqui (no en palabrasClave) para que no quede atrapado por el
   // match de substring de 'SOMOS MAS' (Cambio Radical, ver palabrasClave).
   'JUNTOS SOMOS MAS FUERTES': 'Colombia Renaciente',
+  // El bucket de palabrasClave 'PARTIDO COLOMBIA RENACIENTE' nunca tuvo alias
+  // hacia el nombre canonico -- caia sin color en Concejo 2019/2023 (auditoria
+  // sesión julio 2026, Tarea 1).
+  'PARTIDO COLOMBIA RENACIENTE': 'Colombia Renaciente',
 
   // VOTOS ESPECIALES
   'VOTOS NULOS': 'Votos nulos',
