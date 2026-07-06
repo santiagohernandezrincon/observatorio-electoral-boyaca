@@ -879,14 +879,18 @@ function animarKPIs() {
 document.addEventListener('DOMContentLoaded', async () => {
     // Inicialización de mapas Leaflet
     mapSimple = L.map('map').setView([5.75, -73.0], 8);
+    // crossOrigin: necesario para exportar el mapa a imagen (html2canvas) sin
+    // "tainted canvas" -- CartoDB ya envía CORS, pero Leaflet no lo pide sin esto.
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO'
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        crossOrigin: true
     }).addTo(mapSimple);
+    agregarControlExportar(mapSimple, '#obs-vista-mapa', 'mapa'); // incluye #obs-legend (hermano de .map-layout); el drawer se excluye en exportarComoImagen()
 
     mapA = L.map('map-a').setView([5.75, -73.0], 8);
     mapB = L.map('map-b').setView([5.75, -73.0], 8);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapA);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapB);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { crossOrigin: true }).addTo(mapA);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { crossOrigin: true }).addTo(mapB);
 
     // Carga GeoJSON
     try {

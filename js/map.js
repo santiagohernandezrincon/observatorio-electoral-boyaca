@@ -384,7 +384,8 @@ function actualizarMapaActor(votosPorMunicipio, colorBase) {
     if (!currentGeojson) return;
     if (!mapActor) {
         mapActor = L.map('map-actor').setView([5.75, -73.0], 8);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapActor);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { crossOrigin: true }).addTo(mapActor);
+        agregarControlExportar(mapActor, '#obs-vista-actor .actor-main', 'actor');
     }
     if (currentLayerActor) mapActor.removeLayer(currentLayerActor);
 
@@ -420,7 +421,8 @@ function actualizarMapaCompetitividad(promedioPorMunicipio) {
     if (!currentGeojson) return;
     if (!mapCompetitividad) {
         mapCompetitividad = L.map('map-competitividad').setView([5.75, -73.0], 8);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapCompetitividad);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { crossOrigin: true }).addTo(mapCompetitividad);
+        agregarControlExportar(mapCompetitividad, '#obs-vista-competitividad .actor-main', 'competitividad');
     }
     if (currentLayerCompetitividad) mapCompetitividad.removeLayer(currentLayerCompetitividad);
 
@@ -463,7 +465,8 @@ function actualizarMapaComparar(modo) {
     if (!currentGeojson || !comparacionActual) return;
     if (!mapComparar) {
         mapComparar = L.map('map-comparar').setView([5.75, -73.0], 8);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(mapComparar);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { crossOrigin: true }).addTo(mapComparar);
+        agregarControlExportar(mapComparar, '#obs-vista-comparar .actor-main', 'comparar');
     }
     if (currentLayerComparar) mapComparar.removeLayer(currentLayerComparar);
 
