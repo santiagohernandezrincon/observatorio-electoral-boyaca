@@ -503,6 +503,184 @@ async function cargarPartidosPorAnioCorp(anio, corp) {
     }
 }
 
+// ==================== VISTA COMPARAR: LOADER SIN EFECTOS SECUNDARIOS ====================
+// No toca currentPartidoData/currentCandidatoData ni el DOM — devuelve datos de un
+// año/cargo específico para usarlos en paralelo (elección A / elección B) sin pisar
+// el estado de la Vista Mapa principal.
+
+// Cargos excluidos de Comparar: JAL solo cubre 1-2 municipios de Boyacá (no es
+// representativo a escala departamental); plebiscito y consultas son ciclos únicos
+// o de otro tipo de contienda (sin elección previa/posterior comparable).
+const CARGOS_EXCLUIDOS_COMPARAR = ['jal', 'plebiscito', 'consultas'];
+
+// Cargos donde CANDIDATOS_PARTIDO tiene overrides manuales (solo Alcaldía/Gobernación/
+// Presidencia — ver PENDIENTES.md). Ahí el "partido ganador" debe salir del candidato
+// ganador (resolverPartido con nombre de candidato), no del agregado de partido, para
+// heredar esas correcciones. Cámara/Senado/Asamblea/Concejo no tienen overrides, así
+// que el agregado de partido (modo Lista) es seguro y además la noción correcta.
+const CARGOS_UNINOMINALES_COMPARAR = ['alcalde', 'gobernador', 'presidencia_1v', 'presidencia_2v'];
+
+function aniosPorCargoComparable() {
+    const aniosPorCargo = {};
+    Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
+        corps.forEach(corp => {
+            if (CARGOS_EXCLUIDOS_COMPARAR.includes(corp)) return;
+            if (!aniosPorCargo[corp]) aniosPorCargo[corp] = [];
+            aniosPorCargo[corp].push(Number(anio));
+        });
+    });
+    Object.values(aniosPorCargo).forEach(lista => lista.sort((a, b) => a - b));
+    return aniosPorCargo;
+}
+
+// Pares año-a-año consecutivos para un cargo (único par válido para cada año A).
+function paresComparables(cargo) {
+    const anios = aniosPorCargoComparable()[cargo] || [];
+    const pares = [];
+    for (let i = 0; i < anios.length - 1; i++) pares.push([anios[i], anios[i + 1]]);
+    return pares;
+}
+
+async function cargarCandidatosPorAnioCorp(anio, corp) {
+    const key = `${anio}_${corp}`;
+    if (comparaCandidatosPorAnioCorp[key]) return comparaCandidatosPorAnioCorp[key];
+    const archivos = archivosPorAnio[anio]?.[corp];
+    if (!archivos) return [];
+    const excluir = ['CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
+                     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
+    try {
+        const datos = parseCandidatosCSV(await (await fetch(basePath + archivos.candidato)).text())
+            .filter(row => !excluir.includes(row['CANNOMBRE']))
+            .filter(row => String(row['CANNOMBRE'] || '').trim() !== String(row['PARNOMBRE'] || '').trim())
+            .map(row => ({ ...row, PARNOMBRE: resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], anio, corp) }));
+        comparaCandidatosPorAnioCorp[key] = datos;
+        return datos;
+    } catch (e) {
+        console.error(`Error cargando ${archivos.candidato}:`, e);
+        return [];
+    }
+}
+
+// Punto de entrada único: dado año/cargo, devuelve el dataset correcto según la regla
+// fija (candidato para uninominales, partido para corporación). No calcula ganadores
+// todavía — eso es de la Vista Comparar (Etapa 2).
+async function cargarDatosComparacion(anio, cargo) {
+    if (CARGOS_UNINOMINALES_COMPARAR.includes(cargo)) {
+        const datos = await cargarCandidatosPorAnioCorp(anio, cargo);
+        return { tipo: 'candidato', datos };
+    }
+    const datos = await cargarPartidosPorAnioCorp(anio, cargo);
+    return { tipo: 'partido', datos };
+}
+
+// ==================== VISTA COMPARAR: GANADOR POR MUNICIPIO ====================
+// PARNOMBRE ya viene resuelto (resolverPartido aplicado en el loader), así que basta
+// con tomar la fila de mayor VOTOS por municipio — igual para ambos tipos de dataset.
+function ganadorPorMunicipioComparacion(resultado) {
+    const porMunicipio = {};
+    resultado.datos.forEach(row => {
+        const mun = normalizarNombre(row['MUNNOMBRE']);
+        if (!porMunicipio[mun] || row['VOTOS'] > porMunicipio[mun]['VOTOS']) porMunicipio[mun] = row;
+    });
+    const ganadores = {};
+    Object.entries(porMunicipio).forEach(([mun, row]) => {
+        ganadores[mun] = {
+            partido: row['PARNOMBRE'],
+            candidato: resultado.tipo === 'candidato' ? row['CANNOMBRE'] : null,
+            votos: row['VOTOS']
+        };
+    });
+    return ganadores;
+}
+
+// ==================== VISTA COMPARAR: NÚMERO EFECTIVO DE PARTIDOS (Laakso-Taagepera) ====================
+// ENP = 1 / Σ(cuota_partido²). Agrupa por partido dentro de cada municipio primero
+// (necesario en modo candidato, donde varias filas de un mismo partido pueden coexistir
+// en el mismo municipio); en modo partido el agrupamiento es un no-op seguro.
+function enpPorMunicipio(resultado) {
+    const votosPorMunicipioPartido = {};
+    resultado.datos.forEach(row => {
+        const mun = normalizarNombre(row['MUNNOMBRE']);
+        const partido = row['PARNOMBRE'];
+        if (!votosPorMunicipioPartido[mun]) votosPorMunicipioPartido[mun] = {};
+        votosPorMunicipioPartido[mun][partido] = (votosPorMunicipioPartido[mun][partido] || 0) + row['VOTOS'];
+    });
+    const enp = {};
+    Object.entries(votosPorMunicipioPartido).forEach(([mun, porPartido]) => {
+        const votos = Object.values(porPartido);
+        const total = votos.reduce((s, v) => s + v, 0);
+        if (!total) { enp[mun] = null; return; }
+        const sumaCuadrados = votos.reduce((s, v) => s + (v / total) ** 2, 0);
+        enp[mun] = sumaCuadrados > 0 ? 1 / sumaCuadrados : null;
+    });
+    return enp;
+}
+
+function promedioEnpDepartamental(enpMunicipios) {
+    const valores = Object.values(enpMunicipios).filter(v => v != null);
+    if (!valores.length) return 0;
+    return valores.reduce((s, v) => s + v, 0) / valores.length;
+}
+
+// ==================== VISTA COMPARAR: MARGEN 1º-2º LUGAR ====================
+// Margen entre las dos filas de mayor VOTOS por municipio (partido en modo Lista,
+// candidato en modo uninominal — en ambos casos es la lectura natural de "qué tan
+// reñido quedó"). Sirve para el tooltip del mapa y la columna "Margen B" de la tabla.
+function margenPorMunicipioComparacion(resultado) {
+    const porMunicipio = {};
+    resultado.datos.forEach(row => {
+        const mun = normalizarNombre(row['MUNNOMBRE']);
+        if (!porMunicipio[mun]) porMunicipio[mun] = [];
+        porMunicipio[mun].push(row);
+    });
+    const margenes = {};
+    Object.entries(porMunicipio).forEach(([mun, filas]) => {
+        if (filas.length < 2) { margenes[mun] = null; return; }
+        const ordenados = [...filas].sort((a, b) => b['VOTOS'] - a['VOTOS']);
+        const total = ordenados.reduce((s, r) => s + r['VOTOS'], 0);
+        margenes[mun] = total > 0 ? (ordenados[0]['VOTOS'] - ordenados[1]['VOTOS']) / total * 100 : null;
+    });
+    return margenes;
+}
+
+// Filas planas para la tabla "mayores cambios", solo municipios con ganador
+// conocido en A y B (mismo criterio que el % de cambio del KPI).
+function construirFilasTablaComparar(comparacion) {
+    const { cambios, margenB } = comparacion;
+    return Object.entries(cambios)
+        .filter(([, c]) => c.ganadorA && c.ganadorB)
+        .map(([mun, c]) => {
+            const feature = currentGeojson?.features.find(f => normalizarNombre(f.properties.MPIO_CNMBR) === mun);
+            const nombre = feature ? feature.properties.MPIO_CNMBR : mun;
+            return {
+                municipio: nombre,
+                cambio: c.cambio,
+                partidoA: c.ganadorA.partido,
+                partidoB: c.ganadorB.partido,
+                votosB: c.ganadorB.votos,
+                margenB: margenB[mun] != null ? margenB[mun] : null
+            };
+        });
+}
+
+// ==================== VISTA COMPARAR: CAMBIOS ENTRE A Y B ====================
+// Solo cuenta municipios con ganador conocido en ambas elecciones — un municipio sin
+// datos en A o B (p. ej. corporación no constituida ese año) no entra en el % de cambio.
+function calcularComparacionMunicipios(ganadoresA, ganadoresB) {
+    const municipios = new Set([...Object.keys(ganadoresA), ...Object.keys(ganadoresB)]);
+    const resultado = {};
+    municipios.forEach(mun => {
+        const a = ganadoresA[mun] || null;
+        const b = ganadoresB[mun] || null;
+        resultado[mun] = {
+            ganadorA: a,
+            ganadorB: b,
+            cambio: !!(a && b && a.partido !== b.partido)
+        };
+    });
+    return resultado;
+}
+
 // ==================== ÍNDICE DE CANDIDATOS (VISTA ACTOR) ====================
 let actorIndiceListo = false;
 let actorIndiceCargando = false;

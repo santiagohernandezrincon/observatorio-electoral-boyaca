@@ -123,6 +123,11 @@ let currentLayerActor;
 // Para Vista Competitividad
 let mapCompetitividad;
 let currentLayerCompetitividad;
+
+// Para Vista Comparar
+let mapComparar;
+let currentLayerComparar;
+let comparaModoMapaActual = 'cambios'; // 'cambios' | 'enpA' | 'enpB'
 let comparacionDatosA = null;
 let comparacionDatosB = null;
 let comparacionValorA = '';
@@ -141,6 +146,8 @@ let trajectoryMunicipioChart = null;
 let actorTimelineChart = null;
 let todosLosCandidatosPorAnioCorp = {};
 let todosLosPartidosPorAnioCorp   = {};
+let comparaCandidatosPorAnioCorp  = {}; // caché del loader de Vista Comparar (js/data.js)
+let comparacionActual = null; // último resultado calculado en Vista Comparar (para el mapa/tabla de Etapa 3)
 
 // Colores candidatos (poblado en data.js)
 const coloresCandidatos = {};
