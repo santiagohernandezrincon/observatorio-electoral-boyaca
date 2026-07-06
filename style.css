@@ -1700,7 +1700,40 @@ html, body {
   font-weight: 700;
   color: rgba(255,255,255,0.35);
   letter-spacing: 0.09em;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.obs-topbar__brand span#obs-breadcrumb {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+}
+
+/* Botón hamburguesa: solo visible en el breakpoint móvil (ver @media abajo) */
+.obs-mobile-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Fondo semitransparente detrás del panel móvil */
+.obs-mobile-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 590;
 }
 
 .obs-topbar__dot {
@@ -1935,7 +1968,35 @@ html, body {
 
 @media (max-width: 660px) {
   .obs-panel { display: none; }
-  .obs-footer { left: 0; }
+  .actor-panel { display: none; }
+  /* 3 items con gap fijo no caben en 375px sin envolver -- la altura fija de
+     26px los recortaba visualmente. Es solo atribución, no funcional. */
+  .obs-footer { display: none; }
+
+  .obs-mobile-menu-toggle { display: flex; }
+  .obs-topbar__brand { gap: 0.6rem; }
+
+  /* Panel activo (Mapa o Actor/Competitividad/Comparar) como overlay deslizante,
+     en vez de empujar el layout -- a este ancho .actor-panel (min-width:320px
+     sin este override) desbordaba horizontalmente. */
+  body.obs-mobile-panel-open .obs-mobile-backdrop { display: block; }
+  body.obs-mobile-panel-open .obs-panel,
+  body.obs-mobile-panel-open .actor-panel {
+    display: flex;
+    flex-direction: column; /* .actor-panel no es flex por defecto -- sin esto sus hijos (selects, botón) se estiran en fila */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 85vw;
+    max-width: 300px;
+    min-width: 0;
+    z-index: 600;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.35);
+  }
+
+  /* Drawer de detalle: ya no cabe cómodo a 340px fijos */
+  .obs-drawer { width: min(340px, calc(100vw - 24px)); }
 }
 
 

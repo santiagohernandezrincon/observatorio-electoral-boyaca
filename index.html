@@ -147,6 +147,9 @@
     <!-- Top bar con switcher de vistas -->
     <div class="obs-topbar">
       <div class="obs-topbar__brand">
+        <button class="obs-mobile-menu-toggle" id="obs-mobile-menu-toggle" aria-label="Abrir filtros">
+          <i class="fas fa-bars"></i>
+        </button>
         <span class="obs-topbar__dot"></span>
         <span id="obs-breadcrumb">Cámara de Representantes · 2026</span>
       </div>
@@ -418,6 +421,9 @@
 
   </main><!-- /obs-main -->
 
+  <!-- Fondo del panel de filtros en móvil (solo visible ≤660px, ver style.css) -->
+  <div class="obs-mobile-backdrop" id="obs-mobile-backdrop"></div>
+
 </div><!-- /obs-app -->
 
 
@@ -556,6 +562,7 @@
         });
         var vista = document.getElementById('obs-vista-' + view);
         if (vista) vista.classList.add('obs-vista--active');
+        document.body.classList.remove('obs-mobile-panel-open'); // cierra el overlay móvil al cambiar de vista
         if (view === 'mapa') {
           setTimeout(function() {
             if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();

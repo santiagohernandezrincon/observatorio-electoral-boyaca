@@ -1157,6 +1157,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarComparar();
 
     // ── Drawer: cerrar, minimizar, tabs ──
+    // ── Menú móvil: abre el panel activo (Mapa o Actor/Competitividad/Comparar)
+    // como overlay a ≤660px (ver style.css). El mismo botón/backdrop sirve para
+    // cualquier vista porque solo un panel (.obs-panel o .actor-panel) está
+    // visible a la vez.
+    document.getElementById('obs-mobile-menu-toggle')?.addEventListener('click', () => {
+        document.body.classList.toggle('obs-mobile-panel-open');
+    });
+    document.getElementById('obs-mobile-backdrop')?.addEventListener('click', () => {
+        document.body.classList.remove('obs-mobile-panel-open');
+    });
+
     document.getElementById('obs-drawer-close')?.addEventListener('click', cerrarDrawer);
 
     // Minimizar/expandir drawer
