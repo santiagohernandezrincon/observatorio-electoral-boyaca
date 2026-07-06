@@ -4,6 +4,60 @@ Notas de continuidad entre sesiones. Cada entrada indica qué falta,
 por qué no se hizo en el momento en que se encontró, y qué se necesita
 para retomarla.
 
+## Colores sin resolver: auditoría julio 2026 (Sesión 4, Tarea 1)
+
+El pendiente viejo de "~5 municipios sin colorear en alcaldías" estaba
+desactualizado (era de antes de la crisis de integridad de datos y el
+reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
+(modo Lista y Candidato) el 2026-07: **65 casos gris**, no 5.
+
+**Arreglado esta sesión (65 → 15), 3 commits:**
+1. `normalizePartido()` no ignoraba tildes en el match directo (solo en
+   el fallback de `palabrasClave`) — un nombre YA canónico con una
+   tilde de más/menos (ej. "Polo Democrático Alternativo") caía al
+   fallback y volvía sin color. Se notaba doble porque `colorPartido()`
+   vuelve a llamar `normalizePartido()` sobre un nombre ya resuelto.
+   -36 casos.
+2. Alias faltante `'PARTIDO COLOMBIA RENACIENTE'` → `'Colombia
+   Renaciente'`, y typo en override manual (`'Dignidad y Comp.'` →
+   `'Dignidad y Compromiso'`, Giovanni Vela Bernal, Turmequé 2023).
+   -5 casos.
+3. `parseCSV()`/`parseCandidatosCSV()` no manejaban comillas CSV
+   escapadas — un PARNOMBRE como `"MOVIMIENTO ALTERNATIVO INDÍGENA Y
+   SOCIAL ""MAIS"""` nunca hacía match con el alias limpio que ya
+   existía, y le quitaba votos reales a MAIS en 9 municipios de
+   Concejo 2023 (no solo dejaba gris — **misatribución real de
+   votos**). Nuevo `parseLineaCSV()` respeta comillas. -9 casos.
+
+**Quedan 15, sin tocar (decisión explícita: dejarlos pendientes esta
+sesión, ver conversación 2026-07-06):**
+
+- **7 correctos tal cual, no son bugs:** `"Partido sin identificar"`
+  (5, Alcaldía 2011 — así viene en el CSV crudo, no hay partido real
+  que resolver) e `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023 —
+  candidatos genuinamente sin partido).
+- **1 dato crudo corrupto:** Topagá, alcaldía 2011, candidato Jose
+  Oswaldo Castro Tejedor tiene literalmente `"20110064"` en la columna
+  de partido (parece un código de lista filtrado al campo equivocado
+  en el CSV original). Necesita cotejarse contra la Registraduría si
+  se quiere corregir. Bajo impacto (1 municipio, 1 año, 1282 votos).
+- **5 eslóganes/movimientos hiperlocales sin mapear (7 casos) —
+  necesitan que Santiago diga a qué partido corresponde cada uno, o
+  investigación contra fuentes públicas (Registraduría/prensa local):**
+  - `DE CORAZÓN POR VENTAQUEMADA` — alcaldía 2023, **ganó** (4673 votos)
+  - `SABEMOS HACERLO BIEN POR SAN JOSE DE PARE` — alcaldía 2019, **ganó**
+  - `GAMEZA UN PUEBLO QUE NOS UNE` — alcaldía 2023
+  - `RENOVACIÓN CIUDADANA` — Concejo Guayatá 2023 (candidato William
+    Alfonso Cardozo)
+  - `PODEMOS` — Concejo Santa Rosa de Viterbo 2023 (candidato Diego
+    Esteban Guio Rodríguez)
+
+**Para retomarlo:** una vez Santiago confirme el partido de cada uno
+(o se investigue), son ediciones directas a `palabrasClave`/
+`NORMALIZAR_PARTIDO` en `js/colores_partido.js` — mismo patrón que los
+"esloganes hiperlocales" de sesiones anteriores. El caso de Topagá
+2011 es aparte (dato crudo, no normalización) y de menor prioridad.
+
 ## Gap arquitectónico: `CANDIDATOS_PARTIDO` no se propaga al modo "Lista ganadora"
 
 **Encontrado:** sesión de conexión del modo Lista/Partido (después del
