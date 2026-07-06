@@ -210,13 +210,47 @@ function obtenerDatosProvincia(provincia) {
 }
 
 // ==================== PARSERS CSV ====================
+// Divide una línea respetando comillas CSV estándar: un campo entre comillas
+// puede contener el delimitador ';' literal, y "" dentro de comillas es una
+// comilla literal escapada. Sin esto, un PARNOMBRE como
+// "MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL ""MAIS""" (común quien cita un
+// sub-nombre entre comillas) nunca hace match con ningún alias limpio de
+// NORMALIZAR_PARTIDO y cae al matcher genérico de palabrasClave, quitándole
+// votos reales al partido correcto. Encontrado en la auditoría de colores
+// sin resolver (sesión julio 2026, Tarea 1).
+function parseLineaCSV(linea) {
+    const valores = [];
+    let actual = '';
+    let dentroDeComillas = false;
+    for (let i = 0; i < linea.length; i++) {
+        const c = linea[i];
+        if (dentroDeComillas) {
+            if (c === '"') {
+                if (linea[i + 1] === '"') { actual += '"'; i++; }
+                else { dentroDeComillas = false; }
+            } else {
+                actual += c;
+            }
+        } else if (c === '"') {
+            dentroDeComillas = true;
+        } else if (c === ';') {
+            valores.push(actual);
+            actual = '';
+        } else {
+            actual += c;
+        }
+    }
+    valores.push(actual);
+    return valores;
+}
+
 function parseCSV(text) {
     const lines = text.split('\n');
-    const headers = lines[0].split(';').map(h => h.trim());
+    const headers = parseLineaCSV(lines[0]).map(h => h.trim());
     const result = [];
     for (let i = 1; i < lines.length; i++) {
         if (!lines[i].trim()) continue;
-        const values = lines[i].split(';');
+        const values = parseLineaCSV(lines[i]);
         const row = {};
         headers.forEach((h, idx) => { row[h] = values[idx] ? values[idx].trim() : ''; });
         row['VOTOS'] = parseInt(row['VOTOS'], 10);
@@ -229,11 +263,11 @@ function parseCSV(text) {
 
 function parseCandidatosCSV(text) {
     const lines = text.split('\n');
-    const headers = lines[0].split(';').map(h => h.trim());
+    const headers = parseLineaCSV(lines[0]).map(h => h.trim());
     const result = [];
     for (let i = 1; i < lines.length; i++) {
         if (!lines[i].trim()) continue;
-        const values = lines[i].split(';');
+        const values = parseLineaCSV(lines[i]);
         const row = {};
         headers.forEach((h, idx) => { row[h] = values[idx] ? values[idx].trim() : ''; });
         row['VOTOS'] = parseInt(row['VOTOS'], 10);
