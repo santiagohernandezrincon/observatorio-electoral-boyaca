@@ -504,6 +504,7 @@ const NORMALIZAR_PARTIDO = {
 function normalizePartido(nombre) {
   if (!nombre) return 'Partido sin identificar';
   const s = String(nombre).trim();
+  const stripTildes = str => str.normalize('NFD').replace(/[̀-ͯ]/g, '');
 
   // 1. Lookup directo exacto
   if (NORMALIZAR_PARTIDO[s]) return NORMALIZAR_PARTIDO[s];
@@ -512,6 +513,22 @@ function normalizePartido(nombre) {
   const u = s.toUpperCase().replace(/\s+/g, ' ');
   for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
     if (k.toUpperCase().replace(/\s+/g, ' ') === u) {
+      return NORMALIZAR_PARTIDO[k];
+    }
+  }
+
+  // 2b. Igual que el paso 2, pero sin tildes. Necesario porque un nombre YA
+  // canónico (p. ej. "Polo Democrático Alternativo") puede diferir de la
+  // clave de NORMALIZAR_PARTIDO solo en una tilde ("POLO DEMOCRATICO
+  // ALTERNATIVO", sin tilde) -- sin este paso, ese nombre ya-correcto caía
+  // al fallback de palabrasClave (paso 4, que sí es sin tildes) y volvía con
+  // el nombre "base" del bucket (p. ej. "POLO"), sin color asignado. Esto se
+  // notaba doble: cargarDatos() ya resuelve bien la primera vez, pero
+  // colorPartido() vuelve a llamar normalizePartido() sobre el resultado ya
+  // resuelto, y esa segunda pasada era la que fallaba. Ver PENDIENTES.md.
+  const uSinTildes = stripTildes(u);
+  for (const k of Object.keys(NORMALIZAR_PARTIDO)) {
+    if (stripTildes(k.toUpperCase().replace(/\s+/g, ' ')) === uSinTildes) {
       return NORMALIZAR_PARTIDO[k];
     }
   }
@@ -545,7 +562,6 @@ function normalizePartido(nombre) {
   // partidoBase coincide con una de sus propias palabras clave (pasa con
   // 'PARTIDO ECOLOGISTA COLOMBIANO', cuya palabra clave es 'ECOLOGISTA').
   if (typeof palabrasClave !== 'undefined') {
-    const stripTildes = str => str.normalize('NFD').replace(/[̀-ͯ]/g, '');
     for (const [partidoBase, palabras] of Object.entries(palabrasClave)) {
       for (const palabra of palabras) {
         if (stripTildes(u).includes(stripTildes(palabra.toUpperCase()))) {
