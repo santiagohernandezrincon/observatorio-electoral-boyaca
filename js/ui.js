@@ -1137,7 +1137,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .sort((a, b) => b - a)[0];
             if (!anioReciente) return;
             const datos = await cargarPartidosPorAnioCorp(String(anioReciente), cargo);
-            const partidos = [...new Set(datos.map(r => r['PARNOMBRE']))].filter(Boolean).sort();
+            // Mismo umbral que la leyenda del mapa: oculta partidos/listas de
+            // circunscripción especial afrodescendiente/indígena y demás
+            // listas hiperlocales con volumen irrelevante para Boyacá.
+            const votosPorPartidoTray = {};
+            datos.forEach(r => {
+                if (r['PARNOMBRE']) votosPorPartidoTray[r['PARNOMBRE']] = (votosPorPartidoTray[r['PARNOMBRE']] || 0) + r['VOTOS'];
+            });
+            const totalVotosTray = Object.values(votosPorPartidoTray).reduce((s, v) => s + v, 0);
+            const partidos = Object.keys(votosPorPartidoTray)
+                .filter(p => totalVotosTray > 0 && (votosPorPartidoTray[p] / totalVotosTray) >= UMBRAL_LEYENDA)
+                .sort();
             trayPartido.innerHTML = '<option value="">Seleccione partido</option>' +
                 partidos.map(p => `<option value="${p}">${p}</option>`).join('');
         });
@@ -1474,7 +1484,6 @@ function actualizarLeyenda(tipoVista) {
         // Leyenda de partidos presentes en el mapa actual
         if (!currentPartidoData) { el.innerHTML = ''; return; }
         const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
-        const UMBRAL_LEYENDA = 0.005; // 0.5% del total: oculta listas hiperlocales sin peso real (consejos comunitarios, etc.)
         const votosPorPartido = {};
         currentPartidoData.forEach(r => {
             if (r['PARNOMBRE'] && !excluir.includes(r['PARNOMBRE'])) {

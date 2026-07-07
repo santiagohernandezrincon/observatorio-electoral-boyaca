@@ -53,6 +53,12 @@ const ABREV_PARTIDO = {
   'Movimiento Ciudadano':          'Mov. Ciudadano',
 };
 
+// 0.5% del total de votos: umbral de relevancia para ocultar listas
+// hiperlocales sin peso real (consejos comunitarios, circunscripciones
+// especiales, etc.) -- usado por la leyenda del mapa y por el selector
+// de partido de Trayectoria.
+const UMBRAL_LEYENDA = 0.005;
+
 const CIRCUNSCRIPCIONES_EXCLUIR = [
   'CIRCUNSCRIPCION ESPECIAL AFRODESCENDIENTE',
   'CIRCUNSCRIPCION ESPECIAL INDIGENA',
