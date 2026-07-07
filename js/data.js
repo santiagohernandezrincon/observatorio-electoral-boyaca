@@ -319,9 +319,10 @@ async function cargarDatos(anio, corporacion) {
                          'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
         const partidosFiltrados = parseCSV(csvPartido).filter(row => !excluir.includes(row['PARNOMBRE']));
         currentPartidoData = partidosFiltrados.map(row => {
-            const parNorm = resolverPartido(row['PARNOMBRE'], null, anio, corporacion);
+            const partidoRaw = row['PARNOMBRE'];
+            const parNorm = resolverPartido(partidoRaw, null, anio, corporacion);
             const colorBase = colorPartido(parNorm);
-            return { ...row, PARNOMBRE: parNorm, _partidoNorm: parNorm, COLOR_BASE: colorBase };
+            return { ...row, PARNOMBRE: parNorm, _partidoNorm: parNorm, _partidoRaw: partidoRaw, COLOR_BASE: colorBase };
         });
         console.log(`Partidos cargados: ${currentPartidoData.length} filas`);
 
@@ -331,10 +332,37 @@ async function cargarDatos(anio, corporacion) {
             .filter(row => !excluir.includes(row['CANNOMBRE']))
             .filter(row => String(row['CANNOMBRE'] || '').trim() !== String(row['PARNOMBRE'] || '').trim())
             .map(row => {
-                const partidoNorm = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], anio, corporacion);
-                return { ...row, PARNOMBRE: partidoNorm, _partidoNorm: partidoNorm };
+                const partidoRaw = row['PARNOMBRE'];
+                const partidoNorm = resolverPartido(partidoRaw, row['CANNOMBRE'], anio, corporacion);
+                return { ...row, PARNOMBRE: partidoNorm, _partidoNorm: partidoNorm, _partidoRaw: partidoRaw };
             });
         console.log(`Candidatos cargados: ${currentCandidatoData.length} filas`);
+
+        // Propaga a "Lista ganadora" las correcciones manuales de
+        // CANDIDATOS_PARTIDO que ya aplican en "Ganador (candidato)" via
+        // resolverPartido(). El agregado de partido (currentPartidoData) no
+        // tiene contexto de candidato individual y por eso nunca las
+        // consulta -- ver PENDIENTES.md. Solo renombra la etiqueta de
+        // partido de la fila exacta del municipio afectado (no re-suma ni
+        // toca TOTAL_VOTOS/PORCENTAJE), y solo en cargos uninominales,
+        // donde cada partido tiene un único candidato por municipio (ahí
+        // sí vale asumir que "misma fila de texto crudo, mismo municipio"
+        // identifica sin ambigüedad la fila a renombrar).
+        const CARGOS_UNINOMINALES = ['alcalde', 'gobernador', 'presidencia_1v', 'presidencia_2v'];
+        if (CARGOS_UNINOMINALES.includes(corporacion) && typeof CANDIDATOS_PARTIDO !== 'undefined') {
+            currentCandidatoData.forEach(candRow => {
+                const partidoSinOverride = normalizePartido(String(candRow['_partidoRaw'] || ''));
+                if (partidoSinOverride === candRow['_partidoNorm']) return; // sin override para este candidato
+                const filaPartido = currentPartidoData.find(p =>
+                    p['MUNNOMBRE'] === candRow['MUNNOMBRE'] && p['_partidoRaw'] === candRow['_partidoRaw']
+                );
+                if (filaPartido && filaPartido['_partidoNorm'] !== candRow['_partidoNorm']) {
+                    filaPartido.PARNOMBRE = candRow['_partidoNorm'];
+                    filaPartido._partidoNorm = candRow['_partidoNorm'];
+                    filaPartido.COLOR_BASE = colorPartido(candRow['_partidoNorm']);
+                }
+            });
+        }
 
         candidatoPartidoMap.clear();
         currentCandidatoData.forEach(row => {
