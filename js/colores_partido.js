@@ -42,6 +42,8 @@ const COLORES_PARTIDO = {
   'Nueva Fuerza Democrática':       '#F57F17',
   'En Marcha':                      '#C2185B',
   'Fuerza de la Paz':               '#00ACC1',
+  'Renovación Ciudadana':           '#6F4E37',
+  'Podemos':                        '#9575CD',
   // ── PLEBISCITO ──────────────────────────────────────────
   'Sí':                             '#43A047',
   'No':                             '#E53935',

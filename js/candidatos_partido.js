@@ -432,7 +432,7 @@ const CANDIDATOS_PARTIDO = {
     '2023_alcalde_FELIX ALEJANDRO GUTIERREZ VEGA': 'Cambio Radical',
     '2023_alcalde_FELKIN IVAN CASTELLANOS VALBUENA': 'Alianza Verde',
     '2023_alcalde_FREDY IOVANNY PARDO PINZON': 'Partido Liberal Colombiano',
-    '2023_alcalde_GERARDO RINCON CAMACHO': 'Partido Conservador Colombiano',
+    '2023_alcalde_GERARDO RINCON CAMACHO': 'Alianza Verde',
     '2023_alcalde_GERMAN ALONSO BECERRA LOPEZ': 'Alianza Verde',
     '2023_alcalde_GERMAN CAMILO MORALES RINCON': 'Partido Liberal Colombiano',
     '2023_alcalde_GERMAN RICARDO CAMACHO BARRERA': 'Partido Liberal Colombiano',
