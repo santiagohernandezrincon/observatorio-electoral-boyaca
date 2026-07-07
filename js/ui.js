@@ -200,11 +200,19 @@ function mostrarDetallePuesto(municipio, puesto, resultados) {
     renderPuestoDetalle(municipio, puesto, gruposOrdenados, candidatosFlat, totalVotos);
 }
 
-// helper interno: enlaza clicks en .partido-item para expandir candidatos
+// helper interno: enlaza clicks/teclado en .partido-item para expandir candidatos
 function _bindPartidoItemClicks(candidatosPorPartido) {
-    document.querySelectorAll('.partido-item').forEach(el => {
+    // Acotado a #detalle-municipio: .partido-item tambien se reutiliza (solo
+    // por estilos pi-row/pi-bar) en filas estaticas no interactivas de Vista
+    // Actor/Competitividad -- sin este scope, esas filas (sin data-partido)
+    // heredarian foco/click y romperian toggle() al no encontrar candidatos-list.
+    document.querySelectorAll('#detalle-municipio .partido-item').forEach(el => {
         const key = el.getAttribute('data-partido');
-        el.addEventListener('click', () => {
+        if (!key) return;
+        el.setAttribute('role', 'button');
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('aria-expanded', 'false');
+        const toggle = () => {
             const targetList = document.querySelector(`.candidatos-list[data-partido="${key}"]`);
             if (targetList.style.display === 'none') {
                 if (targetList.innerHTML === '') {
@@ -214,8 +222,17 @@ function _bindPartidoItemClicks(candidatosPorPartido) {
                         : '<div class="candidato-item">No hay candidatos individuales</div>';
                 }
                 targetList.style.display = 'block';
+                el.setAttribute('aria-expanded', 'true');
             } else {
                 targetList.style.display = 'none';
+                el.setAttribute('aria-expanded', 'false');
+            }
+        };
+        el.addEventListener('click', toggle);
+        el.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle();
             }
         });
     });
