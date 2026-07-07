@@ -583,6 +583,20 @@ async function cargarCompetitividadSiNecesario() {
   if (selector && selector.value) await actualizarCompetitividad(selector.value);
 }
 
+// GeoJSON de polígonos de provincia (~650KB): se carga bajo demanda, solo la
+// primera vez que se activa la escala "Provincia", en vez de en el
+// DOMContentLoaded inicial -- mismo patrón que mapActor/mapCompetitividad/
+// mapComparar (creación/carga diferida hasta el primer uso real).
+async function cargarGeoJSONProvinciasSiNecesario() {
+  if (currentGeojsonProvincias) return;
+  try {
+    currentGeojsonProvincias = await (await fetch('geojson/boyaca_provincias.geojson')).json();
+    console.log(`GeoJSON de provincias cargado con ${currentGeojsonProvincias.features.length} provincias`);
+  } catch (error) {
+    console.error('Error cargando GeoJSON de provincias:', error);
+  }
+}
+
 async function actualizarCompetitividad(cargo) {
   const loading = document.getElementById('comp-loading');
   if (loading) loading.style.display = 'flex';
@@ -921,16 +935,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Carga provincias
+    // Carga provincias (agregados livianos, usados en tooltips/coloreo a
+    // nivel provincia sin importar la escala activa)
     try {
         provinciasData = await (await fetch('data/provincias_boyaca.json')).json();
         console.log('Provincias cargadas:', Object.keys(provinciasData));
-
-        currentGeojsonProvincias = await (await fetch('geojson/boyaca_provincias.geojson')).json();
-        console.log(`GeoJSON de provincias cargado con ${currentGeojsonProvincias.features.length} provincias`);
     } catch (error) {
         console.error('Error cargando provincias:', error);
     }
+    // El GeoJSON de polígonos de provincia (~650KB) se carga bajo demanda,
+    // solo al activar la escala "Provincia" -- ver cargarGeoJSONProvinciasSiNecesario().
 
     // Selector de año
     function inicializarSelectorAnio() {
@@ -1138,7 +1152,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    document.getElementById('escala-selector')?.addEventListener('change', () => {
+    document.getElementById('escala-selector')?.addEventListener('change', async () => {
+        if (document.getElementById('escala-selector').value === 'provincia') {
+            await cargarGeoJSONProvinciasSiNecesario();
+        }
         if (!modoComparacion) actualizarMapaSimple();
     });
 
