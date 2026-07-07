@@ -1433,7 +1433,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.65rem;
   font-weight: 800;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.12em;
   margin-bottom: 0.45rem;
 }
@@ -1466,7 +1466,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.65rem;
   font-weight: 800;
-  color: rgba(255,255,255,0.38);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.13em;
   margin-bottom: 0.5rem;
 }
@@ -1483,7 +1483,7 @@ html, body {
   font-family: var(--font-body);
   transition: var(--transition);
 }
-.obs-search::placeholder { color: rgba(255,255,255,0.3); }
+.obs-search::placeholder { color: rgba(255,255,255,0.5); }
 .obs-search:focus {
   outline: none;
   border-color: var(--gold);
@@ -1698,7 +1698,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.09em;
   flex: 1;
   min-width: 0;
@@ -1951,7 +1951,7 @@ html, body {
   justify-content: center;
   gap: 1.5rem;
   font-size: 0.68rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   z-index: 50;
   padding: 0 1rem;
 }
@@ -2078,7 +2078,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.58rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -2129,7 +2129,7 @@ html, body {
   font-family: var(--font-body);
   font-size: 0.82rem;
 }
-.actor-search::placeholder { color: rgba(255,255,255,0.35); }
+.actor-search::placeholder { color: rgba(255,255,255,0.5); }
 .actor-search:focus { outline: none; border-color: var(--gold); }
 .actor-autocomplete {
   display: none;
@@ -2161,7 +2161,7 @@ html, body {
 }
 .actor-empty {
   text-align: center;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   padding-top: 3rem;
   font-size: 0.85rem;
 }
@@ -2241,7 +2241,7 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 .comparar-tabla__header .ct-col { cursor: pointer; user-select: none; }
@@ -2261,7 +2261,7 @@ html, body {
 .ct-col--partido { flex: 2.2; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 .ct-col--margen { flex: 0.7; text-align: right; }
 .ct-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
-.ct-arrow { color: rgba(255,255,255,0.3); margin: 0 2px; }
+.ct-arrow { color: rgba(255,255,255,0.5); margin: 0 2px; }
 .ct-badge {
   font-size: 0.65rem;
   font-weight: 700;
@@ -2286,7 +2286,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.6rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0.9rem 0 0.4rem;
@@ -2335,7 +2335,7 @@ html, body {
 }
 .actor-table-empty {
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
 }
 .pi-rank {
   width: 14px;
@@ -2343,7 +2343,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
 }
 
 /* Grupos de años (Congresional/Local/Otro) dentro de #pills-anio */
@@ -2673,7 +2673,7 @@ html, body {
 }
 .ley-chevron {
   font-size: 0.55rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   transition: transform 0.15s ease;
 }
 .ley--open .ley-chevron { transform: rotate(180deg); }
@@ -2732,7 +2732,7 @@ html, body {
 }
 .ley-note {
   font-size: 0.6rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   font-style: italic;
 }
 
@@ -2876,7 +2876,7 @@ html, body {
 .obs-partido-trigger__dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .obs-partido-trigger__chevron {
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.5);
   flex-shrink: 0;
   transition: transform 0.15s ease;
 }
@@ -2904,7 +2904,7 @@ html, body {
 .obs-partido-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
 .obs-partido-list__hint {
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.28);
+  color: rgba(255,255,255,0.5);
   font-style: italic;
   text-align: center;
   padding: 6px 0;
