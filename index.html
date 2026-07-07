@@ -83,6 +83,9 @@
           <button class="obs-pill-modo active" data-modo="ganadores">
             <i class="fas fa-trophy"></i> Ganador (candidato)
           </button>
+          <button class="obs-pill-modo" data-modo="candidato_partido">
+            <i class="fas fa-user-tie"></i> Candidato por Partido
+          </button>
           <button class="obs-pill-modo" data-modo="partido">
             <i class="fas fa-flag"></i> Partido
           </button>
@@ -115,6 +118,23 @@
             <i class="fas fa-chevron-down obs-partido-trigger__chevron"></i>
           </button>
           <div class="obs-partido-list" id="partido-dropdown">
+            <div class="obs-partido-list__hint">Selecciona un partido</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtro partido (aparece en modo "Candidato por Partido") -->
+      <div class="obs-section" id="group-candidato-partido" style="display:none">
+        <div class="obs-section__label">FILTRAR PARTIDO</div>
+        <div class="obs-partido-dropdown-wrap" id="cxp-dropdown-wrap">
+          <button type="button" class="obs-partido-trigger" id="cxp-trigger">
+            <span class="obs-partido-trigger__left">
+              <span class="obs-partido-trigger__dot" id="cxp-trigger-dot" style="display:none"></span>
+              <span id="cxp-trigger-label">Selecciona un partido</span>
+            </span>
+            <i class="fas fa-chevron-down obs-partido-trigger__chevron"></i>
+          </button>
+          <div class="obs-partido-list" id="cxp-dropdown">
             <div class="obs-partido-list__hint">Selecciona un partido</div>
           </div>
         </div>

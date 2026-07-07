@@ -88,8 +88,15 @@ function variarColorBase(colorBase, index) {
     let s = parseInt(match[2]);
     let l = parseInt(match[3]);
     const variation = (index % 20) - 10;
-    s = Math.min(85, Math.max(50, s + variation));
-    l = Math.min(70, Math.max(45, l + variation));
+    // Clamps absolutos (antes: s 50-85, l 45-70) asumían que el color
+    // base ya caía en ese rango. Colores de partido muy saturados/oscuros
+    // (ej. #0033A0, s=100% l=31%) quedan fuera de ambos y el clamp
+    // absorbía el 100% de la variación -- todos los candidatos de ese
+    // partido salían con el mismo color exacto. Variar solo luminosidad,
+    // relativa al valor base y con margen amplio, preserva el matiz/
+    // saturación del partido y sigue dando contraste real entre
+    // candidatos aunque el color de partido sea un extremo.
+    l = Math.min(88, Math.max(12, l + variation * 2));
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
 
