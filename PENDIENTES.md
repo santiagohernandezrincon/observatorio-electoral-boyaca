@@ -203,6 +203,21 @@ generador incluya todo lo que hoy existe a mano: `NORMALIZAR_PARTIDO`,
 Sin esto, cualquier necesidad futura de reprocesar datos desde crudo
 (ej. si aparece un error en un año ya publicado) es de alto riesgo.
 
+**Nota (procesamiento presidencial 2026, sesión julio 2026):** el
+formato "columnas abreviadas" (`procesar_sql_abrev()`/
+`_procesar_generico_mesa()`, usado por Cámara/Senado/Presidencia 2026)
+**no tiene el drift descrito arriba** — el nombre de partido ya viene
+como texto en el crudo, sin diccionario de códigos numéricos de por
+medio, así que reprocesar esos archivos específicamente sí reproduce
+lo commiteado. El problema es exclusivo del formato "viejo" CEDAE
+(`procesar_dta()`, años 2010-2018) y su `partido_map` frágil. Aun así,
+`_procesar_generico_mesa()` tiene el separador hardcodeado a `,`
+(rompe con archivos `;`, como los de presidencia 2026) y `CARGO_MAP`
+no reconoce `presidencia_1v`/`presidencia_2v` como `cargo_raw` (solo
+`presidencia_primera_vuelta`/`presidencia_segunda_vuelta`) — por eso
+se procesó con un script aparte (`scripts/procesar_presidencia_2026.py`)
+en vez de con `procesar_raw.py` directamente.
+
 ## Otros pendientes conocidos (de sesiones anteriores, sin resolver)
 
 - **JAL y consultas** — corregido (sesión julio 2026): los CSV de
@@ -214,11 +229,16 @@ Sin esto, cualquier necesidad futura de reprocesar datos desde crudo
   totales en 2019 y 2023 respectivamente, nada representativo a escala
   departamental) y consultas es un tipo de contienda distinto (interna
   de coalición, sin ciclo previo/posterior comparable).
-- **Presidencial 2026** (primera y segunda vuelta) — Santiago va a
-  bajar los CSV manualmente de la Registraduría cuando estén
-  disponibles. Cuando esto pase, el par 2022→2026 de Presidencia
-  aparecerá automáticamente en Vista Comparar sin tocar código (los
-  pares se generan dinámicamente desde `DATOS_DISPONIBLES`).
+- **Presidencial 2026** (primera y segunda vuelta) — **procesada y
+  publicada** (sesión julio 2026). Candidatos verificados: 2ª vuelta
+  Iván Cepeda Castro vs. Abelardo De La Espriella; 1ª vuelta incluye
+  además a Sergio Fajardo, Claudia López, Paloma Valencia, Miguel
+  Uribe, entre otros. El par 2022→2026 ya está disponible en Vista
+  Comparar (verificado en vivo, sin errores) para ambas vueltas. Se
+  mapearon a color 8 coaliciones nuevas sin equivalente previo,
+  incluida la ganadora ("Defensores de la Patria", Abelardo De La
+  Espriella) — ver detalle de procesamiento arriba, en la nota del
+  drift de pipelines.
 - **Vista Comparar / Sesión 3 — completa** (sesión julio 2026).
   Selector de cargo + año A/B (26 pares válidos, generados
   dinámicamente), regla fija Candidato/Lista por cargo (ver nota en la
