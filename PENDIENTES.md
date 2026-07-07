@@ -29,93 +29,171 @@ reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
    Concejo 2023 (no solo dejaba gris — **misatribución real de
    votos**). Nuevo `parseLineaCSV()` respeta comillas. -9 casos.
 
-**Quedan 15, sin tocar (decisión explícita: dejarlos pendientes esta
-sesión, ver conversación 2026-07-06):**
+**Quedaron 15 al cierre de esa sesión. Actualización 2026-07-07:**
 
-- **7 correctos tal cual, no son bugs:** `"Partido sin identificar"`
-  (5, Alcaldía 2011 — así viene en el CSV crudo, no hay partido real
-  que resolver) e `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023 —
-  candidatos genuinamente sin partido).
-- **1 dato crudo corrupto:** Topagá, alcaldía 2011, candidato Jose
-  Oswaldo Castro Tejedor tiene literalmente `"20110064"` en la columna
-  de partido (parece un código de lista filtrado al campo equivocado
-  en el CSV original). Necesita cotejarse contra la Registraduría si
-  se quiere corregir. Bajo impacto (1 municipio, 1 año, 1282 votos).
-- **5 eslóganes/movimientos hiperlocales sin mapear (7 casos) —
-  necesitan que Santiago diga a qué partido corresponde cada uno, o
-  investigación contra fuentes públicas (Registraduría/prensa local):**
-  - `DE CORAZÓN POR VENTAQUEMADA` — alcaldía 2023, **ganó** (4673 votos)
-  - `SABEMOS HACERLO BIEN POR SAN JOSE DE PARE` — alcaldía 2019, **ganó**
-  - `GAMEZA UN PUEBLO QUE NOS UNE` — alcaldía 2023
-  - `RENOVACIÓN CIUDADANA` — Concejo Guayatá 2023 (candidato William
-    Alfonso Cardozo)
-  - `PODEMOS` — Concejo Santa Rosa de Viterbo 2023 (candidato Diego
-    Esteban Guio Rodríguez)
+- **Topagá (alcaldía 2011, `"20110064"`) — RESUELTO.** No era dato
+  corrupto ni columnas cruzadas (verificado contra el crudo: código de
+  partido y código de lista están cada uno en su propia columna
+  correctamente). Era un código de aval/coalición local de 2011 sin
+  mapear, mismo patrón que otros ya resueltos (`'20100007':
+  'Movimiento Ciudadano'`). Identidad confirmada vía fuente pública
+  (El Tiempo, separata elecciones 2011): José Oswaldo Castro Tejedor
+  ganó con la "Coalición Para La Alcaldía de Tópaga". Aplicado como
+  edición directa a los 2 CSV de 2011 alcaldía (no vía pipeline —
+  ver sección de drift del pipeline más abajo) + entrada en
+  `NOMBRES_PARTIDO`/`COLORES_PARTIDO`.
 
-**Para retomarlo:** una vez Santiago confirme el partido de cada uno
-(o se investigue), son ediciones directas a `palabrasClave`/
-`NORMALIZAR_PARTIDO` en `js/colores_partido.js` — mismo patrón que los
-"esloganes hiperlocales" de sesiones anteriores. El caso de Topagá
-2011 es aparte (dato crudo, no normalización) y de menor prioridad.
+- **"Partido sin identificar" — la nota de "7 correctos, no son bugs"
+  estaba mal para 4 de los 5 casos.** Auditoría 2026-07-07: Cómbita
+  (`20110062`), Oicatá (`20110050`), Tota (`20110074`) y Villa de Leyva
+  (`20110178`) — los 4 alcaldes ganadores de 2011 — tienen el MISMO
+  tipo de código de aval local sin mapear que Tópaga, simplemente
+  enmascarado bajo la etiqueta genérica "Partido sin identificar" en
+  el archivo de Lista (el de Candidato sí conserva el código crudo).
+  Investigado vía búsqueda web: Cómbita y Tota confirmados como
+  candidaturas independientes por "Firmas"; Oicatá confirmado como
+  "Coalición" sin nombre propio encontrado; Villa de Leyva sin fuente
+  que confirme el movimiento. **No se aplicó fix con estos hallazgos**
+  porque los 4 YA tienen resolución en `CANDIDATOS_PARTIDO` de una
+  sesión anterior (Cómbita/Tota/Villa de Leyva → "Movimiento
+  Ciudadano", Oicatá → "Partido Conservador Colombiano") que no
+  coincide con la investigación nueva — se prioriza el trabajo previo
+  de Santiago. Debería resolverse solo cuando el pipeline de Python se
+  arregle (ver abajo) y el archivo de Lista de 2011 se pueda
+  regenerar con texto crudo consistente con el de Candidato; el parche
+  de `CANDIDATOS_PARTIDO`→Lista (ver sección de ese gap) no los
+  alcanza hoy porque el texto crudo entre ambos archivos ya no coincide
+  para estos 4 casos específicos.
+  Solo `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023) sigue siendo
+  el caso genuinamente correcto de la nota original.
 
-## Gap arquitectónico: `CANDIDATOS_PARTIDO` no se propaga al modo "Lista ganadora"
+- **5 eslóganes/movimientos hiperlocales sin mapear — siguen
+  pendientes del criterio de Santiago, sin tocar:**
+  - `DE CORAZÓN POR VENTAQUEMADA` — Alcaldía 2023, Oscar Camilo
+    Montañez Bohorquez, **ganó** (4.673 votos, 63%)
+  - `SABEMOS HACERLO BIEN POR SAN JOSE DE PARE` — Alcaldía 2019, Elder
+    Acuña Sanchez, **ganó por apenas 4 votos** (1.915 vs. 1.911 de
+    "UNIDOS POR SAN JOSE PARE") — margen muy ajustado, verificar bien
+    la fuente antes de asignar partido
+  - `GAMEZA UN PUEBLO QUE NOS UNE` — Alcaldía 2023, Gerardo Rincón
+    Camacho, ganó por 41 votos sobre Partido Conservador
+  - `RENOVACIÓN CIUDADANA` — Concejo Guayatá 2023, top candidato
+    William Alfonso Cardozo (183 votos; lista completa 247, 8.4%, 4°
+    lugar) — no gana en modo Lista, pero **sí pinta gris en modo
+    Candidato** (es el candidato individual más votado de Guayatá)
+  - `PODEMOS` — Concejo Santa Rosa de Viterbo 2023, top candidato Diego
+    Esteban Guio Rodríguez (306 votos; lista completa 610-904 según
+    cargo, 3° lugar en Concejo) — mismo caso que Renovación Ciudadana
+    (gris solo en modo Candidato). **Nota:** "PODEMOS" también aparece
+    en Alcaldía 2023 de Santa Rosa de Viterbo (610 votos, candidato
+    distinto, no ganó) — si es el mismo movimiento, un solo fix
+    resolvería ambos casos.
 
-**Encontrado:** sesión de conexión del modo Lista/Partido (después del
-cierre del backlog de integridad de datos, ~1.700 → 0 casos).
+  Para retomarlo: una vez Santiago confirme el partido de cada uno,
+  son ediciones directas a `palabrasClave`/`NORMALIZAR_PARTIDO` en
+  `js/colores_partido.js` — mismo patrón que sesiones anteriores.
 
-**El problema:** `CANDIDATOS_PARTIDO` (correcciones manuales de
-Santiago, clave scoped `año_cargo_nombre`) solo se consulta desde
-`resolverPartido()`, que requiere el nombre del candidato como
-argumento. El modo "Ganador (candidato)" pasa ese nombre y sí lo
-respeta. El modo "Lista ganadora" colorea usando el agregado por
-partido (`votos_partido_municipio_*.csv`, cargado en
-`currentPartidoData`), que se construye llamando a
-`resolverPartido(row['PARNOMBRE'], null, anio, corporacion)` — con
-`nombreCandidato = null` a propósito, porque ese archivo no tiene
-contexto de candidato. Como la rama que consulta `CANDIDATOS_PARTIDO`
-requiere `nombreCandidato` truthy, nunca se ejecuta ahí, y el partido
-se resuelve solo vía `normalizePartido()` (alias automáticos +
-`palabrasClave`), sin tu corrección manual.
+## Gap arquitectónico: `CANDIDATOS_PARTIDO` no se propaga al modo "Lista ganadora" — RESUELTO 2026-07-07
 
-**Casos conocidos de divergencia real (no error de datos):**
-- Alcaldía 2023: 5 de 123 municipios difieren entre los dos modos.
-- Gobernación 2023: 3 de 123 municipios difieren.
-- Caso de referencia: **Ezequiel Jiménez Cely (Paz de Río, alcaldía
-  2023)**. `CANDIDATOS_PARTIDO['2023_alcalde_EZEQUIEL JIMENEZ CELY']
-  = 'En Marcha'` (tu corrección manual). El texto crudo de su
-  candidatura es `"AGRUPACIÓN POLÍTICA EN MARCHA"`, que
-  `normalizePartido()` resuelve de forma automática a `'Pacto
-  Histórico'` — sin pasar por tu override, porque el agregado de lista
-  no tiene forma de saber a qué candidato pertenece esa fila.
+**El problema (histórico):** `CANDIDATOS_PARTIDO` (correcciones
+manuales de Santiago, clave scoped `año_cargo_nombre`) solo se
+consultaba desde `resolverPartido()` cuando se le pasaba el nombre del
+candidato. El modo "Ganador (candidato)" lo hacía y respetaba el
+override; "Lista ganadora" coloreaba usando el agregado por partido
+(`votos_partido_municipio_*.csv`), que llamaba a `resolverPartido(...,
+null, ...)` porque ese archivo no tiene contexto de candidato, así que
+el override nunca se ejecutaba ahí.
 
-**Por qué no se corrigió en el momento:** arreglar esto requiere que
-el agregado por partido sea consciente del candidato — por ejemplo,
-resolver cada fila del CSV de candidatos primero (con
-`resolverPartido()` completo, incluyendo `CANDIDATOS_PARTIDO`) y
-*después* sumar por partido resuelto, en vez de resolver directamente
-sobre el archivo ya agregado por partido. Es un cambio de arquitectura
-en `cargarDatos()` (js/data.js), no un fix puntual — se dejó pendiente
-a propósito para no mezclarlo con la conexión del pill.
+**Casos conocidos (ya corregidos):** Alcaldía 2023 (5 de 123
+municipios) y Gobernación 2023 (3 de 123). Caso de referencia: Ezequiel
+Jiménez Cely (Paz de Río, alcaldía 2023) — `CANDIDATOS_PARTIDO['2023_
+alcalde_EZEQUIEL JIMENEZ CELY'] = 'En Marcha'`, pero "Lista ganadora"
+mostraba "Pacto Histórico" (resolución automática del texto crudo
+`"AGRUPACIÓN POLÍTICA EN MARCHA"`).
 
-**Para retomarlo:** decidir si conviene reconstruir
-`currentPartidoData` a partir de `currentCandidatoData` ya resuelto
-(agrupando por `_partidoNorm` en vez de leer `votos_partido_*.csv`
-directamente), lo cual haría que el modo Lista herede automáticamente
-cualquier corrección de `CANDIDATOS_PARTIDO`. Verificar que esto no
-rompa el cálculo de `TOTAL_VOTOS`/`PORCENTAJE` que hoy vive en el CSV
-pre-agregado.
+**Fix aplicado (parche quirúrgico, NO reconstrucción):** en
+`cargarDatos()` (js/data.js), tras cargar `currentPartidoData` y
+`currentCandidatoData`, para cada candidato con override se busca en
+su mismo municipio la fila de `currentPartidoData` con el mismo texto
+crudo original (`_partidoRaw`, agregado a ambos datasets para este
+fix) y se renombra al partido correcto. Solo aplica a cargos
+uninominales (alcalde/gobernador/presidencia), donde un partido = un
+candidato por municipio, así que el match por texto crudo es
+inequívoco. No toca `TOTAL_VOTOS`/`PORCENTAJE` (vienen del CSV
+pre-agregado sin recalcular). Se descartó la reconstrucción completa
+desde `currentCandidatoData` que se había propuesto originalmente:
+ese archivo filtra las filas de "plancha" (`CANNOMBRE === PARNOMBRE`),
+así que reconstruir desde ahí habría subcontado votos en cualquier
+elección con voto de lista.
 
-**Nota (Vista Comparar, sesión julio 2026):** este gap sigue sin
-resolverse en la Vista Mapa principal, pero Vista Comparar lo evita
-estructuralmente en vez de heredarlo — usa `candidatoGanadorPorMunicipio`
-(vía `cargarCandidatosPorAnioCorp()` en `js/data.js`) para Alcaldía/
-Gobernación/Presidencia en lugar del agregado de partido, precisamente
-porque `CANDIDATOS_PARTIDO` solo tiene overrides para esos cargos.
-Verificado en vivo con el caso de referencia (Ezequiel Jiménez Cely,
-Paz de Río): Comparar resuelve "En Marcha" correctamente. Cámara/
-Senado/Asamblea/Concejo sí usan el agregado de partido en Comparar,
-pero ahí `CANDIDATOS_PARTIDO` no tiene ninguna entrada, así que no hay
-corrección que perder.
+**Verificado en vivo (2026-07-07):** Ezequiel Jiménez Cely muestra "En
+Marcha" en ambos modos. Barrido completo de los 123 municipios de
+Alcaldía y Gobernación 2023: **cero divergencias** entre modos (antes:
+5 + 3). `TOTAL_VOTOS`/`PORCENTAJE` verificados sin cambios.
+
+**Límite conocido:** los 4 casos de "Partido sin identificar" en
+alcaldía 2011 (Cómbita/Tota/Oicatá/Villa de Leyva — ver sección
+anterior) YA tienen override en `CANDIDATOS_PARTIDO` pero este parche
+no los resuelve: su archivo de Lista tiene el texto ya colapsado a la
+etiqueta genérica por un pase histórico de `normalizar_partidos.py`,
+mientras el de Candidato conserva el código crudo — no hay texto en
+común para matchear. Ver sección de drift del pipeline, abajo.
+
+**Vista Comparar:** no se ve afectada — ya evitaba este gap
+estructuralmente (usa `candidatoGanadorPorMunicipio` para Alcaldía/
+Gobernación/Presidencia en vez del agregado de partido), y
+`CANDIDATOS_PARTIDO` no tiene entradas para Cámara/Senado/Asamblea/
+Concejo, así que no había corrección que perder ahí. Confirmado sin
+excepciones tras el fix.
+
+## Drift entre pipelines de datos: `procesar_raw.py` vs. `normalizar_partidos.py` — pendiente, no resuelto (encontrado 2026-07-07)
+
+**El problema:** hay dos scripts Python que tocan los mismos archivos
+de salida, parcialmente solapados y no sincronizados:
+
+- `scripts/procesar_raw.py`: pipeline "principal", procesa TODOS los
+  crudos (`data/raw/*.dta.csv` + formatos nuevos) y genera tanto
+  `votos_candidato_municipio_*.csv` como `votos_partido_municipio_*.csv`.
+  Usa su propio diccionario `NOMBRES_PARTIDO` (más simple) para
+  códigos numéricos sin resolver.
+- `scripts/normalizar_partidos.py`: un **segundo paso**, que corre
+  **solo sobre `data/votos_partido_*.csv`** (nunca toca los de
+  candidato), con un diccionario `NORMALIZACION`/`CANDIDATOS_MAP` más
+  completo. Al final, **regenera `js/colores_partido.js` desde cero**,
+  sobrescribiéndolo con solo el diccionario de colores — **destruiría**
+  `NORMALIZAR_PARTIDO`, `normalizePartido()`, `colorPartido()` y toda
+  la lógica de `palabrasClave` que existen hoy en ese archivo si se
+  corriera tal cual.
+
+**Evidencia concreta:** corrí `procesar_raw.py` completo (2026-07-07)
+para agregar 4 códigos de 2011 a `NOMBRES_PARTIDO`. Resultado: **41
+archivos cambiaron**, no solo los de 2011 — y varios cambios son
+**misatribución real de partido** para el mismo candidato/mismos votos
+(ej. `ALMEIDA;Carlos Alberto Acevedo Velasquez` pasó de "Centro
+Democrático" a "Partido Liberal Colombiano"; `MONGUA;Reyes Bernardo
+Perez Alvarez` de "Cambio Radical" a "Partido de la U"). Esto prueba
+que **los datos commiteados hoy no fueron generados por la versión
+actual de `procesar_raw.py`** — el commit `49aff40` ("Fix final...")
+cambió `procesar_raw.py` en solo 2 líneas pero los datos cambiaron en
+miles, lo que indica que la regeneración real de ese momento vino de
+`normalizar_partidos.py` (o de ediciones manuales directas a los CSV)
+que nunca se replicaron de vuelta en `procesar_raw.py`.
+
+**Impacto práctico:** hoy no es seguro correr ninguno de los dos
+scripts de punta a punta para regenerar datos — `procesar_raw.py` solo
+produce resultados desactualizados/con misatribución, y
+`normalizar_partidos.py` rompería `js/colores_partido.js`. Cualquier
+fix de datos que requiera tocar el CSV debe hacerse como edición
+directa y quirúrgica al archivo afectado (como se hizo con Tópaga),
+no vía pipeline, hasta que esto se resuelva.
+
+**Para retomarlo:** decidir cuál de los dos scripts es la fuente de
+verdad (o fusionar ambos en uno solo), y hacer que
+`js/colores_partido.js` deje de regenerarse automáticamente (o que su
+generador incluya todo lo que hoy existe a mano: `NORMALIZAR_PARTIDO`,
+`normalizePartido()`, `colorPartido()`, soporte de `palabrasClave`).
+Sin esto, cualquier necesidad futura de reprocesar datos desde crudo
+(ej. si aparece un error en un año ya publicado) es de alto riesgo.
 
 ## Otros pendientes conocidos (de sesiones anteriores, sin resolver)
 
@@ -143,7 +221,6 @@ corrección que perder.
   Gobernación. Verificado en vivo con 3 pares (Cámara 2022→2026,
   Alcaldía 2019→2023, Asamblea 2019→2023), sin errores de consola, sin
   romper la Vista Mapa principal.
-- **`asignarColorPartido()` / lógica huérfana en los archivos legacy
-  de la raíz** (`data.js`, `script.js`, `charts.js`, `ui.js`, `map.js`)
-  — no se cargan desde `index.html`, decisión pendiente de si
-  eliminarlos del repo.
+- **Archivos legacy de la raíz** (`data.js`, `script.js`, `charts.js`,
+  `ui.js`, `map.js`) — eliminados (sesión julio 2026), confirmado que
+  no los cargaba `index.html`.
