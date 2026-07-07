@@ -44,6 +44,15 @@ const COLORES_PARTIDO = {
   'Fuerza de la Paz':               '#00ACC1',
   'Renovación Ciudadana':           '#6F4E37',
   'Podemos':                        '#9575CD',
+  // ── PRESIDENCIA 2026 ─────────────────────────────────────
+  'Defensores de la Patria':        '#7A0C0C',
+  'Con Claudia Imparables':         '#00BFA5',
+  'Romper el Sistema':              '#BF360C',
+  'Coalición F.A.M.I.L.I.A':        '#AD1457',
+  'Partido Político La Fuerza':     '#303F9F',
+  'Sondra Macollins':               '#C9A227',
+  'PARTIDO DEMÓCRATA COLOMBIANO':   '#455A64',
+  'PARTIDO ECOLOGISTA COLOMBIANO':  '#00695C',
   // ── PLEBISCITO ──────────────────────────────────────────
   'Sí':                             '#43A047',
   'No':                             '#E53935',

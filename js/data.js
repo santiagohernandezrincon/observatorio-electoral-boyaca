@@ -54,7 +54,14 @@ const palabrasClave = {
     // Eslóganes hiperlocales resueltos con criterio de Santiago (sesión julio 2026):
     // movimientos propios, no coaliciones de un partido mayor.
     'Renovación Ciudadana': ['RENOVACIÓN CIUDADANA'],
-    'Podemos': ['PODEMOS']
+    'Podemos': ['PODEMOS'],
+    // Coaliciones presidenciales 2026 sin equivalente en años/cargos previos.
+    'Defensores de la Patria': ['DEFENSORES DE LA PATRIA'],
+    'Con Claudia Imparables': ['CON CLAUDIA IMPARABLES'],
+    'Romper el Sistema': ['ROMPER EL SISTEMA'],
+    'Coalición F.A.M.I.L.I.A': ['COALICIÓN F.A.M.I.L.I.A'],
+    'Partido Político La Fuerza': ['PARTIDO POLÍTICO LA FUERZA'],
+    'Sondra Macollins': ['SONDRA MACOLLINS, LA ABOGADA DE HIERRO', 'SONDRA MACOLLINS']
 };
 
 // ==================== COLORES PARA CANDIDATOS ====================

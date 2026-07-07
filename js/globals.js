@@ -9,7 +9,7 @@ const DATOS_DISPONIBLES = {
     2019: ['alcalde', 'asamblea', 'concejo', 'gobernador', 'jal'],
     2022: ['camara', 'senado', 'presidencia_1v', 'presidencia_2v'],
     2023: ['alcalde', 'asamblea', 'concejo', 'gobernador', 'jal'],
-    2026: ['camara', 'senado', 'consultas']
+    2026: ['camara', 'senado', 'consultas', 'presidencia_1v', 'presidencia_2v']
 };
 
 const ABREV_PARTIDO = {
