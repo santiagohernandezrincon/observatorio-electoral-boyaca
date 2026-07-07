@@ -1957,6 +1957,8 @@ html, body {
 }
 .obs-footer i { margin-right: 4px; }
 .obs-footer strong { color: rgba(255,255,255,0.6); }
+.obs-footer a { color: inherit; text-decoration: none; }
+.obs-footer a:hover { text-decoration: underline; }
 
 /* ── Responsive: colapsar panel en pantallas pequeñas ────────── */
 @media (max-width: 900px) {
