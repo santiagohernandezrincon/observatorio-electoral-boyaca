@@ -67,31 +67,39 @@ reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
   Solo `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023) sigue siendo
   el caso genuinamente correcto de la nota original.
 
-- **5 eslóganes/movimientos hiperlocales sin mapear — siguen
-  pendientes del criterio de Santiago, sin tocar:**
-  - `DE CORAZÓN POR VENTAQUEMADA` — Alcaldía 2023, Oscar Camilo
-    Montañez Bohorquez, **ganó** (4.673 votos, 63%)
-  - `SABEMOS HACERLO BIEN POR SAN JOSE DE PARE` — Alcaldía 2019, Elder
-    Acuña Sanchez, **ganó por apenas 4 votos** (1.915 vs. 1.911 de
-    "UNIDOS POR SAN JOSE PARE") — margen muy ajustado, verificar bien
-    la fuente antes de asignar partido
-  - `GAMEZA UN PUEBLO QUE NOS UNE` — Alcaldía 2023, Gerardo Rincón
-    Camacho, ganó por 41 votos sobre Partido Conservador
-  - `RENOVACIÓN CIUDADANA` — Concejo Guayatá 2023, top candidato
-    William Alfonso Cardozo (183 votos; lista completa 247, 8.4%, 4°
-    lugar) — no gana en modo Lista, pero **sí pinta gris en modo
-    Candidato** (es el candidato individual más votado de Guayatá)
-  - `PODEMOS` — Concejo Santa Rosa de Viterbo 2023, top candidato Diego
-    Esteban Guio Rodríguez (306 votos; lista completa 610-904 según
-    cargo, 3° lugar en Concejo) — mismo caso que Renovación Ciudadana
-    (gris solo en modo Candidato). **Nota:** "PODEMOS" también aparece
-    en Alcaldía 2023 de Santa Rosa de Viterbo (610 votos, candidato
-    distinto, no ganó) — si es el mismo movimiento, un solo fix
-    resolvería ambos casos.
+- **5 eslóganes/movimientos hiperlocales — RESUELTOS 2026-07-07** con
+  criterio de Santiago, vía `palabrasClave` (`js/data.js`):
+  - `DE CORAZÓN POR VENTAQUEMADA` → **MAIS**
+  - `GAMEZA UN PUEBLO QUE NOS UNE` → **Alianza Verde**
+  - `SABEMOS HACERLO BIEN POR SAN JOSE DE PARE` → **Partido Liberal
+    Colombiano**
+  - `RENOVACIÓN CIUDADANA` → movimiento propio (bucket nuevo, color
+    `#6F4E37`)
+  - `PODEMOS` → movimiento propio (bucket nuevo, color `#9575CD`) —
+    el caso gemelo en Alcaldía 2023 de Santa Rosa de Viterbo (candidato
+    que no ganó) se resolvió solo, confirmando que era el mismo
+    movimiento.
 
-  Para retomarlo: una vez Santiago confirme el partido de cada uno,
-  son ediciones directas a `palabrasClave`/`NORMALIZAR_PARTIDO` en
-  `js/colores_partido.js` — mismo patrón que sesiones anteriores.
+  **Fix adicional encontrado al verificar:** `CANDIDATOS_PARTIDO` ya
+  tenía `'2023_alcalde_GERARDO RINCON CAMACHO': 'Partido Conservador
+  Colombiano'` de una sesión anterior, que ganaba sobre el nuevo mapeo
+  de Gámeza (vía el parche del gap Lista/Candidato, ver sección
+  siguiente) y producía un resultado incorrecto. Confirmado con
+  Santiago: Gerardo Rincón es Alianza Verde en 2023 — corregido. El
+  homónimo `'2015_alcalde_GERARDO RINCON CAMACHO'` es una persona
+  distinta (Busbanzá, no Gámeza; coincide con el dato crudo) — se dejó
+  intacto.
+
+  Verificado en vivo: los 3 casos de alcaldía coinciden entre "Ganador
+  (candidato)" y "Lista ganadora"; Guayatá/Santa Rosa (Concejo) pintan
+  correctamente en modo Candidato (no ganan en Lista, como se
+  documentó); los 2 colores nuevos se confirmaron visualmente
+  distintos entre sí y contra el resto de la paleta.
+
+  **Con esto se cierra el backlog completo de datos** (Topagá, gap
+  Lista/Candidato, y estos 5 eslóganes) — excluyendo el drift de
+  pipeline (sin resolver, ver sección siguiente) y presidencial 2026
+  (fuera de alcance hasta que se publique/procese).
 
 ## Gap arquitectónico: `CANDIDATOS_PARTIDO` no se propaga al modo "Lista ganadora" — RESUELTO 2026-07-07
 
