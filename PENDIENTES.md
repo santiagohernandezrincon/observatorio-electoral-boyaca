@@ -331,6 +331,65 @@ Tópaga/Cómbita/Tota/Oicatá) — sin pasar por ningún script. Verificado
 en vivo: "Ganador (candidato)" y "Lista ganadora" coinciden en Soatá
 2011, y `candidatos_partido.js` ya no está en contradicción con el CSV.
 
+## Consultas 2026: PARNOMBRE crudo es el nombre de la consulta, no el aval real — parcialmente resuelto 2026-07-08
+
+**El problema:** `votos_candidato_municipio_2026_consultas.csv` no tiene
+raw en `data/raw/` (se armó a mano en marzo 2026, antes de todo el
+trabajo de pipeline de esta sesión). Para las consultas
+**multi-candidato** (varios precandidatos bajo un mismo mecanismo de
+coalición), el PARNOMBRE crudo es el **nombre de la consulta**, no el
+partido real de cada candidato: "LA GRAN CONSULTA POR COLOMBIA" (6
+candidatos), "FRENTE POR LA VIDA" (4), "CONSULTA DE LAS SOLUCIONES..."
+(2) — 12 candidatos en total. Las consultas de un solo candidato
+(Peñalosa→Alianza Verde, Oviedo→Con Toda por Colombia, Dávila→Valientes)
+ya mostraban el partido real directamente, sin problema.
+
+**Resuelto (5 de 12), vía `CANDIDATOS_PARTIDO` (`js/candidatos_partido.js`),
+mismo mecanismo que alcaldía/gobernador/presidencia:**
+- Daniel Quintero Calle → AICO
+- David Andrés Luna Sánchez → Movimiento Sí Hay un Camino
+- Juan Manuel Galán Pachón → Nuevo Liberalismo
+- Juan Carlos Pinzón Bueno → Partido Verde Oxígeno
+- Aníbal Gaviria Correa → Unidos: La Fuerza de las Regiones (confirmado
+  que es el exgobernador de Antioquia/exalcalde de Medellín, candidato
+  por firmas — no homónimo)
+- Paloma Susana Valencia Laserna → Centro Democrático
+
+Se agregaron 2 colores nuevos (`Movimiento Sí Hay un Camino` `#8E24AA`,
+`Unidos: La Fuerza de las Regiones` `#37474F`) a `COLORES_PARTIDO`.
+
+**Bug real encontrado y corregido al verificar:** "Movimiento Sí Hay un
+Camino" colisionaba por substring con un bucket preexistente y no
+relacionado de `palabrasClave` (`'MOVIMIENTO SI': ['MOVIMIENTO SI']`,
+un partido real y distinto con 1-2 votos en Senado 2026) — `colorPartido()`
+lo pintaba gris porque `normalizePartido()` caía al matcher de palabras
+clave (paso 4) y truncaba a "Movimiento Si". Corregido agregando una
+entrada directa en `NORMALIZAR_PARTIDO` para que resuelva en el paso 1
+(match exacto) antes de llegar ahí. Verificado en vivo con CDP tras el
+fix: color correcto (`#8E24AA`).
+
+**Pendientes sin confirmar (4 de 12), sin tocar:** Edison Lucio Torres
+Moreno, Héctor Elías Pineda Salazar, Leonardo Humberto Huerta Gutiérrez,
+Martha Viviana Bernal Amaya — necesitan fuente externa o criterio de
+Santiago antes de mapear su aval real.
+
+**Límite conocido — "Lista ganadora" (agregado de partido) NO se
+corrigió:** el patrón usado para alcaldía/gobernador/presidencia (que
+renombra la fila del agregado buscando texto crudo + municipio en
+común) asume **un partido = un candidato por municipio** (cargo
+uninominal). Consultas rompe esa asunción: varios candidatos
+comparten la MISMA fila agregada de la consulta en un municipio (ej.
+los 6 de "La Gran Consulta por Colombia" suman a una sola fila). Aplicar
+el mismo patch ahí renombraría toda la fila combinada al aval de
+cualquiera de los 6, atribuyendo mal el resto de los votos — por eso
+NO se extendió `CARGOS_UNINOMINALES` a `consultas`. "Ganador
+(candidato)" y Vista Actor ya muestran el aval real (no dependen de esa
+propagación); "Lista ganadora"/mapa por partido para consultas sigue
+mostrando el nombre de la consulta agregado. Corregirlo requeriría
+recalcular el agregado de partido desde el candidato (redistribuir
+votos por aval real en vez de renombrar una fila), que es un problema
+distinto y más grande — no se hizo en esta sesión.
+
 **Nota (procesamiento presidencial 2026, sesión julio 2026):** el
 formato "columnas abreviadas" (`procesar_sql_abrev()`/
 `_procesar_generico_mesa()`, usado por Cámara/Senado/Presidencia 2026)

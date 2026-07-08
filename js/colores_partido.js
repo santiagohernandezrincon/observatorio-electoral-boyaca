@@ -51,6 +51,8 @@ const COLORES_PARTIDO = {
   'Coalición F.A.M.I.L.I.A':        '#AD1457',
   'Partido Político La Fuerza':     '#303F9F',
   'Sondra Macollins':               '#C9A227',
+  'Movimiento Sí Hay un Camino':    '#8E24AA',
+  'Unidos: La Fuerza de las Regiones': '#37474F',
   'PARTIDO DEMÓCRATA COLOMBIANO':   '#455A64',
   'PARTIDO ECOLOGISTA COLOMBIANO':  '#00695C',
   // ── PLEBISCITO ──────────────────────────────────────────
@@ -259,6 +261,12 @@ const NORMALIZAR_PARTIDO = {
   'MOVIMIENTO SALVACIÓN NACIONAL': 'Salvación Nacional',
   'MOVIMIENTO DE SALVACIÓN NACIONAL': 'Salvación Nacional',
   'Mov. Salvación Nacional': 'Salvación Nacional',
+
+  // Entrada directa necesaria: sin esto, cae al matcher de palabrasClave
+  // (paso 4) y colisiona por substring con el bucket preexistente y no
+  // relacionado 'MOVIMIENTO SI' (partido real y distinto, ~1-2 votos en
+  // Senado 2026) -- "Movimiento Sí Hay un Camino" lo contiene como prefijo.
+  'Movimiento Sí Hay un Camino': 'Movimiento Sí Hay un Camino',
 
   // ── LIBERAL — variantes coalición ───────────────────────────────────
   'COALICION LIBERAL': 'Partido Liberal Colombiano',

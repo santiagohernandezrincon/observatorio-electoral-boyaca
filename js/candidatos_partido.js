@@ -523,4 +523,16 @@ const CANDIDATOS_PARTIDO = {
     // ── 2023 GOBERNADOR ──
     '2023_gobernador_CARLOS ANDRES AMAYA RODRIGUEZ': 'Alianza Verde',
     '2023_gobernador_RODRIGO ARTURO ROJAS LARA': 'Partido Liberal Colombiano',
+
+    // ── 2026 CONSULTAS — aval real del candidato, no el nombre de la
+    // consulta interpartidista (que queda como PARNOMBRE crudo / dato de
+    // "evento"). Confirmado con Santiago 2026-07-08. Pendientes sin
+    // confirmar: Torres Moreno, Pineda Salazar, Huerta Gutiérrez, Bernal
+    // Amaya (ver PENDIENTES.md).
+    '2026_consultas_DANIEL QUINTERO CALLE': 'AICO',
+    '2026_consultas_DAVID ANDRES LUNA SANCHEZ': 'Movimiento Sí Hay un Camino',
+    '2026_consultas_JUAN MANUEL GALAN PACHON': 'Nuevo Liberalismo',
+    '2026_consultas_JUAN CARLOS PINZON BUENO': 'Partido Verde Oxígeno',
+    '2026_consultas_ANIBAL GAVIRIA CORREA': 'Unidos: La Fuerza de las Regiones',
+    '2026_consultas_PALOMA SUSANA VALENCIA LASERNA': 'Centro Democrático',
 };
