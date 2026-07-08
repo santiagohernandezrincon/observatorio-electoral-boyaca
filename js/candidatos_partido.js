@@ -261,7 +261,7 @@ const CANDIDATOS_PARTIDO = {
 
     // ── 2015 GOBERNADOR ──
     '2015_gobernador_CARLOS ANDRES AMAYA RODRIGUEZ': 'Alianza Verde',
-    '2015_gobernador_CESAR AUGUSTO PACHON ACHURY': 'Pacto Histórico',
+    '2015_gobernador_CESAR AUGUSTO PACHON ACHURY': 'MAIS',
     '2015_gobernador_GONZALO GUARIN VIVAS': 'Centro Democrático',
     '2015_gobernador_OSMAN HIPOLITO ROA SARMIENTO': 'Cambio Radical',
 
@@ -392,7 +392,7 @@ const CANDIDATOS_PARTIDO = {
 
     // ── 2019 GOBERNADOR ──
     '2019_gobernador_JONATAN SANCHEZ GARAVITO': 'Centro Democrático',
-    '2019_gobernador_JOSE GIOVANY PINZON BAEZ': 'Pacto Histórico',
+    '2019_gobernador_JOSE GIOVANY PINZON BAEZ': 'MAIS',
     '2019_gobernador_RAMIRO BARRAGAN ADAME': 'Alianza Verde',
 
     // ── 2023 ALCALDE ──

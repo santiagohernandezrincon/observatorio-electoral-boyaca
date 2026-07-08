@@ -70,21 +70,47 @@ reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
   Solo `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023) sigue siendo
   el caso genuinamente correcto de la nota original.
 
-- **Hallazgo nuevo, sin investigar (2026-07-07):** barrido completo de
-  Alcaldía 2011 encontró **11 municipios** con partido distinto entre
-  "Lista ganadora" y "Ganador (candidato)" (antes de este fix eran más,
-  pero no se había hecho un barrido completo de todo 2011 hasta ahora).
-  Villa de Leyva es el único explicado (ver arriba). Los otros 10 NO
-  parecen tener `CANDIDATOS_PARTIDO` de por medio — para alcaldía
-  (cargo uninominal, 1 partido = 1 candidato) Lista y Candidato
-  deberían coincidir siempre sin un override, así que esto es o bien
-  (a) divergencia legítima por cómo se agregan los votos, o (b) un
-  problema de normalización real (ej. `AQUITANIA`: Lista dice "Partido
-  Conservador Colombiano", Candidato dice "Alianza Verde" — partidos
-  completamente distintos, no solo una variante de nombre; en cambio
-  `CHINAVITA`/`SANTANA`/`SUTAMARCHAN` parecen ser el mismo partido con
-  dos nombres distintos, "Alianza Social Independiente" vs "ASI"). Sin
-  investigar a fondo — anotado para una sesión dedicada, no se tocó.
+- **Divergencia Lista/Candidato en Alcaldía 2011 — RESUELTO/EXPLICADO
+  2026-07-08 (cierre final).** Barrido completo de Alcaldía 2011 había
+  encontrado 11 municipios con partido distinto entre "Lista ganadora"
+  y "Ganador (candidato)". Villa de Leyva ya estaba explicado (código
+  de aval sin fuente, ver arriba). Los otros 10 se diagnosticaron
+  verificando los votos crudos de ambos archivos:
+
+  - **3 eran solo alias, ya resueltos en código, sin necesidad de
+    cambio:** Chinavita, Santana y Sutamarchán — sus candidatos ganan
+    con "Partido ASI" (texto del archivo de candidato) y el mismo
+    número exacto de votos aparece en el archivo de partido como
+    "Alianza Social Independiente". `js/colores_partido.js` ya tiene el
+    alias `'Partido ASI': 'Alianza Social Independiente'`, confirmado
+    en vivo que `normalizePartido()` converge ambos textos al mismo
+    nombre — no es una divergencia real, es un artefacto de comparar
+    el texto crudo de los dos CSV sin pasar por la normalización de la
+    app.
+
+  - **7 son comportamiento electoral real de 2011, no un bug — NO
+    requieren fix de código:** Aquitania, Beteitiva, Paz de Río,
+    Sáchica, San Eduardo, Santa Rosa de Viterbo y Turmequé. En 2011
+    varios municipios de Boyacá permitieron **más de un candidato a la
+    alcaldía inscrito por el mismo partido** (no era obligatorio un
+    solo aval por partido todavía). "Lista ganadora" suma correctamente
+    los votos de *todos* los candidatos de un partido en el municipio;
+    "Ganador (candidato)" es el candidato individual más votado, quien
+    es quien realmente asumió la alcaldía. Cuando un partido reparte su
+    votación entre 2 candidatos, la suma del partido puede superar al
+    ganador real aunque ese partido no haya ganado la alcaldía — **los
+    dos números son correctos, responden preguntas distintas** ("qué
+    partido sumó más votos" vs. "quién ganó realmente"). Ejemplo
+    verificado: Aquitania — Carlos Ernesto Torres Aguirre (Alianza
+    Verde) gana con 3.941 votos individuales; el Partido Conservador
+    Colombiano inscribió 2 candidatos que sumados dan 4.571, más que
+    cualquier candidato individual, pero ninguno de los dos ganó la
+    alcaldía. Mismo patrón exacto en los otros 6 (siempre un partido
+    con 2 candidatos registrados en el mismo municipio cuya suma supera
+    al ganador individual de otro partido). Corroborado con una fuente
+    independiente: `js/candidatos_partido.js` (generado aparte, desde
+    plantillas de candidatos, no desde estos CSV de votos) coincide con
+    "Ganador (candidato)" en los 7 casos.
 
 - **5 eslóganes/movimientos hiperlocales — RESUELTOS 2026-07-07** con
   criterio de Santiago, vía `palabrasClave` (`js/data.js`):
@@ -173,7 +199,7 @@ Gobernación/Presidencia en vez del agregado de partido), y
 Concejo, así que no había corrección que perder ahí. Confirmado sin
 excepciones tras el fix.
 
-## Drift entre pipelines de datos: `procesar_raw.py` vs. `normalizar_partidos.py` — pendiente, no resuelto (encontrado 2026-07-07)
+## Drift entre pipelines de datos: `procesar_raw.py` vs. `normalizar_partidos.py` — CERRADO 2026-07-08
 
 **El problema:** hay dos scripts Python que tocan los mismos archivos
 de salida, parcialmente solapados y no sincronizados:
@@ -214,13 +240,96 @@ fix de datos que requiera tocar el CSV debe hacerse como edición
 directa y quirúrgica al archivo afectado (como se hizo con Tópaga),
 no vía pipeline, hasta que esto se resuelva.
 
-**Para retomarlo:** decidir cuál de los dos scripts es la fuente de
-verdad (o fusionar ambos en uno solo), y hacer que
-`js/colores_partido.js` deje de regenerarse automáticamente (o que su
-generador incluya todo lo que hoy existe a mano: `NORMALIZAR_PARTIDO`,
-`normalizePartido()`, `colorPartido()`, soporte de `palabrasClave`).
-Sin esto, cualquier necesidad futura de reprocesar datos desde crudo
-(ej. si aparece un error en un año ya publicado) es de alto riesgo.
+**Cierre 2026-07-08 — consolidación aplicada, sin lograr reproducción
+byte-exacta, decisión de política adoptada:**
+
+Se consolidó en `procesar_raw.py` (único de los 3 scripts activamente
+mantenido) la lógica de los otros dos, acotada al único formato que
+realmente tiene el drift (CEDAE viejo, `procesar_dta()`, 2010-2018):
+
+- `NORMALIZAR_PARTIDO_TEXTO`: fusión de los diccionarios `NORMALIZACION`
+  de `normalizar_partidos.py` (191 alias) y `reconstruir_partido.py` (88
+  alias, 24 exclusivos no cubiertos por el otro) en una sola tabla
+  (211 entradas).
+- `CANDIDATOS_MAP`: traído tal cual de `reconstruir_partido.py` (127
+  entradas, reasignación por candidato+año), con 2 correcciones
+  aplicadas también en `candidatos_partido.js` (ver hallazgo Pachón/
+  Pinzón más abajo).
+- **Deliberadamente NO se aplicó a los formatos 2019-2023/2026** (ver
+  nota ya existente más abajo sobre por qué esos formatos no tienen el
+  drift): se intentó primero aplicarlo ahí también y rompió 24 archivos
+  que antes reproducían la data commiteada exacta, porque esos formatos
+  guardan el PARNOMBRE crudo a propósito y dejan toda la normalización
+  a `normalizePartido()` en JS. Revertido.
+- **Tampoco se aplicó la regeneración de `js/colores_partido.js`** que
+  hacía `normalizar_partidos.py` — sigue siendo mantenido a mano en JS.
+
+**Verificación (reprocesamiento completo desde crudo, sin tocar
+`data/` — corrido en un directorio scratch y comparado archivo por
+archivo contra producción):**
+
+| Versión | Archivos que difieren de los 70 committeados |
+|---|---|
+| `procesar_raw.py` original (sin consolidar) | 41 |
+| Consolidado (acotado a CEDAE 2010-2018) | **37** — mejora neta, 0 regresiones nuevas, 4 archivos que antes fallaban ahora coinciden, y el tamaño del diff bajó drásticamente en el resto (ej. candidato Concejo 2011: 11.384→864 líneas) |
+
+**No se logró reproducción byte-exacta de 2010-2018**, y se decidió
+NO perseguirla más allá de este punto. Causas raíz identificadas para
+los 37 archivos que aún difieren:
+1. El archivo de candidato committeado nunca pasó por alias de texto
+   (solo el de partido, porque `normalizar_partidos.py` históricamente
+   solo tocaba `votos_partido_*.csv`) — asimetría real pero inofensiva,
+   porque `normalizePartido()` en JS ya unifica ambos en tiempo de
+   render (confirmado con el caso ASI de la sección anterior).
+2. `reconstruir_partido.py` tenía un fallback "candidato sin año" (si
+   no hay entrada exacta para ese año, usa la de cualquier otro año del
+   mismo candidato) que sí quedó grabado en varios datos ya
+   committeados, pero que se excluyó deliberadamente de la consolidación
+   por riesgoso (puede confundir personas distintas con el mismo
+   nombre en años distintos).
+3. Correcciones manuales puntuales de sesiones antiguas (2010-2018)
+   aplicadas directo al CSV en su momento y nunca capturadas de vuelta
+   en ningún diccionario de ningún script.
+
+**Decisión de política final:** el CSV es la fuente de verdad aceptada
+para 2010-2018. Ningún script (ni el original ni el consolidado) debe
+usarse para regenerar esos años desde cero — cualquier fix futuro que
+toque un año ya publicado se hace como edición quirúrgica directa al
+CSV (como Tópaga, Cómbita/Tota/Oicatá, y Soatá — ver más abajo), nunca
+vía pipeline. El código consolidado en `procesar_raw.py` sí queda como
+base para reprocesar años **nuevos** que usen el formato CEDAE viejo
+(muy improbable ya que no habrá más elecciones con ese formato) o como
+referencia de qué reglas de normalización existen.
+
+`reconstruir_partido.py` y `normalizar_partidos.py` **no se eliminan**
+— quedan en `scripts/` como referencia histórica de las reglas que
+llevaron a la data actual, sin ningún uso activo en el flujo de hoy.
+
+**Hallazgo aparte encontrado durante el diagnóstico, ya resuelto:**
+diff entre `CANDIDATOS_MAP` (127 entradas) y `CANDIDATOS_PARTIDO`
+(`candidatos_partido.js`, 503 entradas) encontró solo 2 contradicciones
+reales de 503 comparadas (las otras 2 diferencias eran solo estilo de
+etiqueta, "ASI" vs. "Alianza Social Independiente", mismo partido): Cesar
+Augusto Pachón Achury (gobernación 2015) y José Giovany Pinzón Báez
+(gobernación 2019) estaban como "Pacto Histórico" en
+`candidatos_partido.js` pero como "MAIS" en `CANDIDATOS_MAP`. Verificado
+con fuentes externas (La Silla Vacía, Boyacá 7 Días, Boyacá Radio):
+ambos corrieron por MAIS en esos años (Pacto Histórico no existía como
+marca antes de 2022; ambos se pasaron a esa coalición después, en años
+distintos). Corregido en `candidatos_partido.js` → MAIS en ambas
+entradas.
+
+**Caso Soatá/Pinzón Báez (alcaldía 2011) — ejemplo resuelto de esta
+ronda final.** El CSV de Alcaldía 2011 tenía a José Giovany Pinzón Báez
+(Soatá) como MAIS, en contradicción directa con `candidatos_partido.js`
+(que ya tenía "Partido de la U" correcto para esa misma clave
+`2011_alcalde_JOSE GIOVANY PINZON BAEZ`). Confirmado con dos fuentes
+externas independientes (informe MOE 2011, separata oficial de
+resultados): era Partido de la U, no MAIS. Corregido con edición
+quirúrgica directa a los 2 CSV de 2011 alcaldía (mismo patrón que
+Tópaga/Cómbita/Tota/Oicatá) — sin pasar por ningún script. Verificado
+en vivo: "Ganador (candidato)" y "Lista ganadora" coinciden en Soatá
+2011, y `candidatos_partido.js` ya no está en contradicción con el CSV.
 
 **Nota (procesamiento presidencial 2026, sesión julio 2026):** el
 formato "columnas abreviadas" (`procesar_sql_abrev()`/
