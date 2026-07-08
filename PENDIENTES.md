@@ -53,19 +53,38 @@ reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
   Investigado vía búsqueda web: Cómbita y Tota confirmados como
   candidaturas independientes por "Firmas"; Oicatá confirmado como
   "Coalición" sin nombre propio encontrado; Villa de Leyva sin fuente
-  que confirme el movimiento. **No se aplicó fix con estos hallazgos**
-  porque los 4 YA tienen resolución en `CANDIDATOS_PARTIDO` de una
-  sesión anterior (Cómbita/Tota/Villa de Leyva → "Movimiento
-  Ciudadano", Oicatá → "Partido Conservador Colombiano") que no
-  coincide con la investigación nueva — se prioriza el trabajo previo
-  de Santiago. Debería resolverse solo cuando el pipeline de Python se
-  arregle (ver abajo) y el archivo de Lista de 2011 se pueda
-  regenerar con texto crudo consistente con el de Candidato; el parche
-  de `CANDIDATOS_PARTIDO`→Lista (ver sección de ese gap) no los
-  alcanza hoy porque el texto crudo entre ambos archivos ya no coincide
-  para estos 4 casos específicos.
+  que confirme el movimiento.
+
+  **Cómbita/Tota/Oicatá — RESUELTOS 2026-07-07 (segunda pasada).** El
+  primer intento no se aplicó porque ya existía un override distinto
+  en `CANDIDATOS_PARTIDO` de una sesión anterior. Confirmado con
+  Santiago: usar la investigación nueva. Actualizado en las 3 capas
+  (`NOMBRES_PARTIDO`, `CANDIDATOS_PARTIDO`, los 2 CSV de 2011 alcaldía)
+  para que Lista y Candidato queden consistentes — Cómbita/Tota →
+  "Independiente" (`#9E9E9E`), Oicatá → "Coalición" (`#A4ADBA`).
+  Verificado en vivo, sin excepciones.
+
+  **Villa de Leyva sigue sin tocar** — sin fuente que confirme el
+  movimiento, decisión explícita. Es hoy el único caso de "Partido sin
+  identificar" restante en el dataset.
   Solo `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023) sigue siendo
   el caso genuinamente correcto de la nota original.
+
+- **Hallazgo nuevo, sin investigar (2026-07-07):** barrido completo de
+  Alcaldía 2011 encontró **11 municipios** con partido distinto entre
+  "Lista ganadora" y "Ganador (candidato)" (antes de este fix eran más,
+  pero no se había hecho un barrido completo de todo 2011 hasta ahora).
+  Villa de Leyva es el único explicado (ver arriba). Los otros 10 NO
+  parecen tener `CANDIDATOS_PARTIDO` de por medio — para alcaldía
+  (cargo uninominal, 1 partido = 1 candidato) Lista y Candidato
+  deberían coincidir siempre sin un override, así que esto es o bien
+  (a) divergencia legítima por cómo se agregan los votos, o (b) un
+  problema de normalización real (ej. `AQUITANIA`: Lista dice "Partido
+  Conservador Colombiano", Candidato dice "Alianza Verde" — partidos
+  completamente distintos, no solo una variante de nombre; en cambio
+  `CHINAVITA`/`SANTANA`/`SUTAMARCHAN` parecen ser el mismo partido con
+  dos nombres distintos, "Alianza Social Independiente" vs "ASI"). Sin
+  investigar a fondo — anotado para una sesión dedicada, no se tocó.
 
 - **5 eslóganes/movimientos hiperlocales — RESUELTOS 2026-07-07** con
   criterio de Santiago, vía `palabrasClave` (`js/data.js`):
