@@ -507,7 +507,7 @@
           </div>
         </aside>
 
-        <!-- Panel derecho: lente + gráfico/tabla (placeholder en Etapa 1) -->
+        <!-- Panel derecho: lente + gráfico/tabla -->
         <div class="actor-main series-main">
           <div class="series-lente">
             <div class="obs-pills-row" id="series-lente-pills">
@@ -518,12 +518,20 @@
             <select id="serie-lente-municipio" class="obs-ctrl-select">
               <option value="">O elige un municipio específico…</option>
             </select>
+            <span class="series-lente-actual" id="series-lente-actual-label">Lente actual: Departamental</span>
           </div>
+
+          <!-- Estado vacío: sin puntos en Serie A todavía -->
           <div class="series-viz-placeholder" id="series-viz-placeholder">
             <i class="fas fa-chart-line"></i>
-            <p>Etapa 2: acá va el gráfico y la tabla de la serie, recalculados
-               según la lente elegida.</p>
-            <p class="series-lente-actual" id="series-lente-actual-label">Lente actual: Departamental</p>
+            <p>Busca un candidato en el panel izquierdo y agrega puntos a la
+               Serie A para ver aquí su gráfico y tabla.</p>
+          </div>
+
+          <!-- Gráfico + tabla de la serie, recalculados según la lente -->
+          <div class="series-viz-content" id="series-viz-content" style="display:none">
+            <canvas id="series-chart" height="90"></canvas>
+            <div class="series-tabla-wrap" id="series-tabla-wrap"></div>
           </div>
         </div>
 

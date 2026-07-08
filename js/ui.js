@@ -454,6 +454,7 @@ function renderSerieA() {
   if (!serieA.puntos.length) {
     cont.innerHTML = '';
     if (empty) empty.style.display = 'block';
+    renderVistaSeries();
     return;
   }
   if (empty) empty.style.display = 'none';
@@ -479,6 +480,8 @@ function renderSerieA() {
   cont.querySelectorAll('[data-mover]').forEach(btn => {
     btn.addEventListener('click', () => moverPuntoSerieA(Number(btn.dataset.idx), Number(btn.dataset.mover)));
   });
+
+  renderVistaSeries();
 }
 
 function inicializarSerieA() {
@@ -583,9 +586,9 @@ function renderCiclosParaSerie() {
 }
 
 // ── Lente: Departamental (default no obligatorio) o un municipio específico.
-// Etapa 1: solo cambia el estado y un label de confirmación -- el gráfico/
-// tabla real que recalculan con obtenerVotosCandidatoMunicipio/Departamento
-// son Etapa 2. ──
+// Cambiar de lente recalcula el gráfico/tabla (Etapa 2) sin volver a
+// pedir datos -- obtenerVotosCandidatoMunicipio/Departamento ya cachean
+// por (año, cargo) en todosLosCandidatosPorAnioCorp. ──
 let serieLenteActual = { tipo: 'departamental', municipio: null };
 
 function inicializarLenteSerie() {
@@ -597,6 +600,7 @@ function inicializarLenteSerie() {
       btnDepto.classList.add('active');
       if (selectMun) selectMun.value = '';
       actualizarLenteLabel();
+      renderVistaSeries();
     });
   }
   if (selectMun) {
@@ -609,6 +613,7 @@ function inicializarLenteSerie() {
         if (btnDepto) btnDepto.classList.add('active');
       }
       actualizarLenteLabel();
+      renderVistaSeries();
     });
   }
 }
@@ -618,6 +623,140 @@ function actualizarLenteLabel() {
   if (!label) return;
   label.textContent = 'Lente actual: ' +
     (serieLenteActual.tipo === 'departamental' ? 'Departamental' : serieLenteActual.municipio);
+}
+
+// ==================== VISTA SERIES — ETAPA 2: gráfico + tabla reales ====================
+// Cargos de un solo municipio: si la lente es un municipio distinto de donde
+// corrió ese candidato, no hay "0 votos" que mostrar -- no aplica. Asamblea/
+// Cámara/Senado/Gobernador/Presidencia/Consultas son de cobertura
+// departamental o nacional, ahí un 0 real sí es un dato válido.
+const CARGOS_LOCALES_SERIE = ['alcalde', 'concejo'];
+
+function candidatoTieneFilaEnMunicipio(punto, municipioNorm) {
+  return actorTodasLasFilas.some(r =>
+    r.ANIO === punto.anio && r.CORP === punto.corp &&
+    claveIdentidad(r['CANNOMBRE']) === normalizarNombre(punto.candidato) &&
+    normalizarNombre(r['MUNNOMBRE']) === municipioNorm
+  );
+}
+
+async function obtenerValorPuntoEnLente(punto) {
+  if (serieLenteActual.tipo === 'departamental') {
+    const valor = await obtenerVotosCandidatoDepartamento(punto.anio, punto.corp, punto.candidatoExacto);
+    return { valor, sinDatos: false };
+  }
+  const municipio = serieLenteActual.municipio;
+  const munNorm = normalizarNombre(municipio);
+  const valor = await obtenerVotosCandidatoMunicipio(punto.anio, punto.corp, punto.candidatoExacto, municipio);
+  if (valor === 0 && CARGOS_LOCALES_SERIE.includes(punto.corp) && !candidatoTieneFilaEnMunicipio(punto, munNorm)) {
+    return { valor: null, sinDatos: true };
+  }
+  return { valor, sinDatos: false };
+}
+
+let serieAChart = null;
+let renderVistaSeriesToken = 0;
+
+async function renderVistaSeries() {
+  const placeholder = document.getElementById('series-viz-placeholder');
+  const content = document.getElementById('series-viz-content');
+  if (!placeholder || !content) return;
+
+  if (!serieA.puntos.length) {
+    placeholder.style.display = 'flex';
+    content.style.display = 'none';
+    if (serieAChart) { serieAChart.destroy(); serieAChart = null; }
+    return;
+  }
+  placeholder.style.display = 'none';
+  content.style.display = 'block';
+
+  const miToken = ++renderVistaSeriesToken;
+  const valores = await Promise.all(serieA.puntos.map(p => obtenerValorPuntoEnLente(p)));
+  if (miToken !== renderVistaSeriesToken) return; // llegó una actualización más reciente mientras esperábamos
+
+  const labels = serieA.puntos.map(p => `${LABELS_CORPORACION[p.corp] || p.corp} · ${p.anio}`);
+  const colores = serieA.puntos.map(p => colorPartido(p.partido));
+  const datosGrafico = valores.map(v => v.sinDatos ? null : v.valor); // null = hueco en la línea (Chart.js)
+
+  const darkTick = { color: 'rgba(255,255,255,0.55)', font: { size: 10 } };
+  const darkGrid = { color: 'rgba(255,255,255,0.07)' };
+
+  const canvasEl = document.getElementById('series-chart');
+  if (canvasEl) {
+    if (serieAChart) serieAChart.destroy();
+    serieAChart = new Chart(canvasEl.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          data: datosGrafico,
+          borderColor: 'rgba(255,255,255,0.35)',
+          backgroundColor: 'rgba(255,255,255,0.05)',
+          pointBackgroundColor: colores,
+          pointBorderColor: colores,
+          pointRadius: 6,
+          pointHoverRadius: 8,
+          borderWidth: 2,
+          tension: 0.2,
+          fill: true,
+          spanGaps: false
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: ctx => serieA.puntos[ctx[0].dataIndex].candidato,
+              label: ctx => {
+                const p = serieA.puntos[ctx.dataIndex];
+                const v = valores[ctx.dataIndex];
+                if (v.sinDatos) return [p.partido, 'Sin datos en este municipio'];
+                return [p.partido, v.valor.toLocaleString('es-CO') + ' votos'];
+              }
+            }
+          }
+        },
+        scales: {
+          x: { ticks: darkTick, grid: { display: false } },
+          y: { beginAtZero: true, ticks: { ...darkTick, callback: v => v.toLocaleString('es-CO') }, grid: darkGrid }
+        }
+      }
+    });
+  }
+
+  renderTablaSeries(valores);
+}
+
+function renderTablaSeries(valores) {
+  const cont = document.getElementById('series-tabla-wrap');
+  if (!cont) return;
+  const filas = serieA.puntos.map((p, i) => {
+    const v = valores[i];
+    const votosTexto = v.sinDatos
+      ? '<span class="series-sin-datos">Sin datos</span>'
+      : v.valor.toLocaleString('es-CO');
+    return `
+      <tr>
+        <td>${p.candidato}</td>
+        <td>${p.anio}</td>
+        <td>${LABELS_CORPORACION[p.corp] || p.corp}</td>
+        <td><span class="serie-punto__dot" style="background:${colorPartido(p.partido)};display:inline-block;margin-right:5px;"></span>${p.partido}</td>
+        <td>${votosTexto}</td>
+      </tr>
+    `;
+  }).join('');
+  cont.innerHTML = `
+    <table class="serie-a-tabla">
+      <thead>
+        <tr><th>Candidato</th><th>Año</th><th>Cargo</th><th>Partido</th><th>Votos (lente actual)</th></tr>
+      </thead>
+      <tbody>${filas}</tbody>
+    </table>
+  `;
 }
 
 function seleccionarCandidatoActor(nombreCanonico) {
