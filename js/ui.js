@@ -1279,6 +1279,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (groupCandidato) groupCandidato.style.display = 'none';
             if (groupCandidatoPartido) groupCandidatoPartido.style.display = 'none';
             if (groupHeatToggle) groupHeatToggle.style.display = (modo === 'partido' || modo === 'calor') ? 'block' : 'none';
+            // Cambiar de modo (incluso re-entrar a "Candidato por Partido")
+            // vuelve a empezar sin candidato resaltado.
+            candidatoGanadorFiltro = null;
+            const cxpChip = document.getElementById('cxp-candidato-chip');
+            if (cxpChip) cxpChip.style.display = 'none';
 
             if (modo === 'ganadores' || modo === 'ganador') {
                 if (selectVista) selectVista.value = 'candidato_ganador';
@@ -1441,6 +1446,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     triggerDot.style.display = 'inline-block';
                 }
                 if (wrap) wrap.classList.remove('obs-partido-dropdown-wrap--open');
+                // Elegir partido manualmente vuelve al color por candidato
+                // (rueda de colores), no al resaltado binario de un candidato
+                // específico -- si había uno seleccionado, ya no aplica.
+                candidatoGanadorFiltro = null;
+                document.getElementById('cxp-candidato-chip').style.display = 'none';
                 if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
                 if (typeof actualizarLeyenda === 'function') actualizarLeyenda('candidato_ganador_por_partido');
             });
@@ -1454,6 +1464,80 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
         }
     }
+
+    // Buscador de candidato dentro de "Candidato por Partido": permite elegir
+    // un candidato directamente (deriva el partido vía candidatoPartidoMap,
+    // sin obligar a elegir partido primero) y resalta en el mapa solo los
+    // municipios donde ese candidato fue el más votado de su propia lista.
+    function _inicializarBusquedaCandidatoGanador() {
+        const input       = document.getElementById('cxp-candidato-search');
+        const autocomplete = document.getElementById('cxp-candidato-autocomplete');
+        const searchWrap   = document.getElementById('cxp-candidato-search-wrap');
+        const chip         = document.getElementById('cxp-candidato-chip');
+        const chipLabel    = document.getElementById('cxp-candidato-chip-label');
+        const chipClear    = document.getElementById('cxp-candidato-chip-clear');
+        const legacySel    = document.getElementById('partido-ganador-selector');
+        const triggerLabel = document.getElementById('cxp-trigger-label');
+        const triggerDot   = document.getElementById('cxp-trigger-dot');
+        const dropdownWrap = document.getElementById('cxp-dropdown-wrap');
+        if (!input || !autocomplete) return;
+
+        function seleccionarCandidatoGanador(nombre) {
+            const partido = candidatoPartidoMap.get(nombre.toUpperCase().trim());
+            if (!partido) return;
+            candidatoGanadorFiltro = nombre;
+            if (legacySel) {
+                legacySel.value = partido;
+                legacySel.dispatchEvent(new Event('change'));
+            }
+            if (triggerLabel) triggerLabel.textContent = partido;
+            if (triggerDot) {
+                triggerDot.style.background = typeof colorPartido === 'function' ? colorPartido(partido) : '#9CA3AF';
+                triggerDot.style.display = 'inline-block';
+            }
+            if (dropdownWrap) dropdownWrap.classList.remove('obs-partido-dropdown-wrap--open');
+            if (chip && chipLabel) {
+                chipLabel.textContent = nombre;
+                chip.style.display = 'block';
+            }
+            input.value = '';
+            autocomplete.style.display = 'none';
+            if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+            if (typeof actualizarLeyenda === 'function') actualizarLeyenda('candidato_ganador_por_partido');
+        }
+
+        input.addEventListener('input', () => {
+            const q = input.value.trim();
+            autocomplete.innerHTML = '';
+            if (q.length < 2 || !currentCandidatoData) { autocomplete.style.display = 'none'; return; }
+            const qNorm = normalizarNombre(q);
+            const nombres = [...new Set(currentCandidatoData.map(r => r['CANNOMBRE']))]
+                .filter(n => normalizarNombre(n).includes(qNorm))
+                .sort((a, b) => a.localeCompare(b))
+                .slice(0, 8);
+            if (!nombres.length) { autocomplete.style.display = 'none'; return; }
+            autocomplete.style.display = 'block';
+            nombres.forEach(nombre => {
+                const item = document.createElement('div');
+                item.className = 'actor-autocomplete__item';
+                item.textContent = nombre;
+                item.addEventListener('click', () => seleccionarCandidatoGanador(nombre));
+                autocomplete.appendChild(item);
+            });
+        });
+
+        document.addEventListener('click', e => {
+            if (searchWrap && !searchWrap.contains(e.target)) autocomplete.style.display = 'none';
+        });
+
+        chipClear?.addEventListener('click', () => {
+            candidatoGanadorFiltro = null;
+            if (chip) chip.style.display = 'none';
+            if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+            if (typeof actualizarLeyenda === 'function') actualizarLeyenda('candidato_ganador_por_partido');
+        });
+    }
+    _inicializarBusquedaCandidatoGanador();
 });
 
 // ==================== LEYENDA DEL MAPA ====================
@@ -1532,6 +1616,17 @@ function actualizarLeyenda(tipoVista) {
         const partidoSel = document.getElementById('partido-ganador-selector')?.value;
         if (!partidoSel || typeof ganadorPorPartidoPorMunicipio === 'undefined' || !ganadorPorPartidoPorMunicipio[partidoSel]) {
             el.innerHTML = `<div class="ley-note">Selecciona un partido para ver sus candidatos</div>`;
+            return;
+        }
+        if (candidatoGanadorFiltro) {
+            const municipios = Object.values(ganadorPorPartidoPorMunicipio[partidoSel]);
+            const nGano = municipios.filter(row => row['CANNOMBRE'] === candidatoGanadorFiltro).length;
+            el.innerHTML = `
+                <div class="ley-title">${candidatoGanadorFiltro.toUpperCase()}</div>
+                <div class="ley-partidos-list">
+                    <div class="ley-item"><span class="ley-dot" style="background:#E8A400"></span><span class="ley-label">Fue el más votado de su lista aquí (${nGano})</span></div>
+                    <div class="ley-item"><span class="ley-dot" style="background:#6B7280"></span><span class="ley-label">No lo fue</span></div>
+                </div>`;
             return;
         }
         const votosPorCandidato = {};

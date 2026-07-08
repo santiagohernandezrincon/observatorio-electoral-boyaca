@@ -1,5 +1,5 @@
 // ==================== TOOLTIPS ====================
-function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo, candidatoFiltro) {
+function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo, candidatoFiltro, candidatoGanadorFiltro) {
     if (esProvincia) {
         const datosProv = obtenerDatosProvincia(elementoNombre);
         if (!datosProv) return `<strong>${elementoNombre}</strong><br>Sin datos`;
@@ -40,7 +40,10 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             const lista = datosProv.candidatos.filter(c => c['PARNOMBRE'] === partidoGanadorSeleccionado);
             if (!lista.length) return `<strong>${elementoNombre}</strong><br>No hay candidatos de ${partidoGanadorSeleccionado}`;
             const g = lista.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
-            return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
+            const notaFiltro = candidatoGanadorFiltro
+                ? (g['CANNOMBRE'] === candidatoGanadorFiltro ? '<br><strong>✓ Candidato seleccionado</strong>' : '<br><em>No es el candidato seleccionado</em>')
+                : '';
+            return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}${notaFiltro}`;
         }
     } else {
         if (tipoVista === 'partido') {
@@ -84,7 +87,10 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
             if (!partidoGanadorSeleccionado) return `<strong>${elementoNombre}</strong><br>Seleccione un partido`;
             const g = ganadorPorPartidoPorMunicipio[partidoGanadorSeleccionado]?.[elementoNombre];
             if (!g) return `<strong>${elementoNombre}</strong><br>No hay candidatos de ${partidoGanadorSeleccionado}`;
-            return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
+            const notaFiltro = candidatoGanadorFiltro
+                ? (g['CANNOMBRE'] === candidatoGanadorFiltro ? '<br><strong>✓ Candidato seleccionado</strong>' : '<br><em>No es el candidato seleccionado</em>')
+                : '';
+            return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}${notaFiltro}`;
         }
     }
     // Tooltips para modos calor y margen
@@ -144,7 +150,7 @@ function colorPorDesviacion(desviacion) {
 }
 
 // ==================== COLORES DEL MAPA ====================
-function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo) {
+function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo, candidatoGanadorFiltro) {
     let filas;
     if (esProvincia) {
         const datosProv = obtenerDatosProvincia(nombreElemento);
@@ -163,7 +169,9 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
             if (!partidoGanadorSeleccionado) return '#cccccc';
             const lista = datosProv.candidatos.filter(c => c['PARNOMBRE'] === partidoGanadorSeleccionado);
             if (!lista.length) return '#cccccc';
-            return getColorCandidato(lista.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b)['CANNOMBRE']);
+            const gp = lista.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+            if (candidatoGanadorFiltro) return gp['CANNOMBRE'] === candidatoGanadorFiltro ? '#E8A400' : '#6B7280';
+            return getColorCandidato(gp['CANNOMBRE']);
         }
     } else {
         if (tipoVista === 'partido' || tipoVista === 'partido_heat' || tipoVista === 'partido_desviacion') {
@@ -179,6 +187,7 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
             if (!partidoGanadorSeleccionado) return '#cccccc';
             const g = ganadorPorPartidoPorMunicipio[partidoGanadorSeleccionado]?.[nombreElemento];
             if (!g) return '#cccccc';
+            if (candidatoGanadorFiltro) return g['CANNOMBRE'] === candidatoGanadorFiltro ? '#E8A400' : '#6B7280';
             return getColorCandidato(g['CANNOMBRE']);
         }
     }
@@ -331,14 +340,14 @@ function actualizarMapaSimple() {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
             const nombre = normalizarNombre(nombreRaw);
-            const color = getColorParaElemento(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
+            const color = getColorParaElemento(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoGanadorFiltro);
             return { fillColor: color, weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
         },
         onEachFeature: (feature, layer) => {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return;
             const nombre = normalizarNombre(nombreRaw);
-            const tooltipText = getTooltipText(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro);
+            const tooltipText = getTooltipText(nombre, false, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro, candidatoGanadorFiltro);
             layer.bindTooltip(tooltipText, { sticky: true });
             layer.on('click', () => {
                 const partidosMun    = currentPartidoData.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombre);
@@ -354,12 +363,12 @@ function actualizarMapaSimple() {
         currentLayerProvincias = L.geoJSON(currentGeojsonProvincias, {
             style: feature => {
                 const prov = feature.properties.PROVINCIA;
-                const color = getColorParaElemento(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo);
+                const color = getColorParaElemento(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoGanadorFiltro);
                 return { fillColor: color, weight: 1.5, opacity: 1, color: 'white', fillOpacity: 0.9 };
             },
             onEachFeature: (feature, layer) => {
                 const prov = feature.properties.PROVINCIA;
-                const tooltipText = getTooltipText(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro);
+                const tooltipText = getTooltipText(prov, true, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSel, porcentajeActivo, candidatoFiltro, candidatoGanadorFiltro);
                 layer.bindTooltip(tooltipText, { sticky: true });
                 layer.on('click', () => {
                     const dp = obtenerDatosProvincia(prov);

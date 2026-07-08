@@ -147,6 +147,7 @@ let ganadorPorPartidoPorMunicipio = {};
 let mapaCalorPorcentaje = false;
 let candidatoEspecificoActual = null;
 let candidatoGanadorPorMunicipio = {};
+let candidatoGanadorFiltro = null; // candidato específico resaltado dentro de "Candidato por Partido"
 
 let trajectoryMunicipioChart = null;
 let actorTimelineChart = null;
