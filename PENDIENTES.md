@@ -368,10 +368,21 @@ entrada directa en `NORMALIZAR_PARTIDO` para que resuelva en el paso 1
 (match exacto) antes de llegar ahí. Verificado en vivo con CDP tras el
 fix: color correcto (`#8E24AA`).
 
-**Pendientes sin confirmar (4 de 12), sin tocar:** Edison Lucio Torres
-Moreno, Héctor Elías Pineda Salazar, Leonardo Humberto Huerta Gutiérrez,
-Martha Viviana Bernal Amaya — necesitan fuente externa o criterio de
-Santiago antes de mapear su aval real.
+**Resuelto también (3 más, sesión 2026-07-08 posterior) — "Frente por
+la Vida" (consulta de Roy Barreras) completa:** Roy Leonardo Barreras
+Montealegre, Edison Lucio Torres Moreno y Martha Viviana Bernal Amaya
+→ Fuerza de la Paz (confirmado por Santiago; Quintero, el 4º de esta
+misma consulta, ya estaba resuelto aparte como AICO). Antes de este
+fix, los 3 caían sin querer en el bucket `palabrasClave` de "Partido de
+la U" (que ya tenía "FRENTE POR LA VIDA" y "ROY LEONARDO BARRERAS
+MONTEALEGRE" como palabras clave de una resolución previa, ahora
+superado por el override explícito en `CANDIDATOS_PARTIDO`, que tiene
+prioridad).
+
+**Pendientes sin confirmar (2 de 12), sin tocar — no son parte de
+"Frente por la Vida":** Héctor Elías Pineda Salazar, Leonardo Humberto
+Huerta Gutiérrez — necesitan fuente externa o criterio de Santiago
+antes de mapear su aval real.
 
 **Límite conocido — "Lista ganadora" (agregado de partido) NO se
 corrigió:** el patrón usado para alcaldía/gobernador/presidencia (que

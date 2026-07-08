@@ -527,12 +527,19 @@ const CANDIDATOS_PARTIDO = {
     // ── 2026 CONSULTAS — aval real del candidato, no el nombre de la
     // consulta interpartidista (que queda como PARNOMBRE crudo / dato de
     // "evento"). Confirmado con Santiago 2026-07-08. Pendientes sin
-    // confirmar: Torres Moreno, Pineda Salazar, Huerta Gutiérrez, Bernal
-    // Amaya (ver PENDIENTES.md).
+    // confirmar (no son parte de "Frente por la Vida"): Pineda Salazar,
+    // Huerta Gutiérrez (ver PENDIENTES.md).
     '2026_consultas_DANIEL QUINTERO CALLE': 'AICO',
     '2026_consultas_DAVID ANDRES LUNA SANCHEZ': 'Movimiento Sí Hay un Camino',
     '2026_consultas_JUAN MANUEL GALAN PACHON': 'Nuevo Liberalismo',
     '2026_consultas_JUAN CARLOS PINZON BUENO': 'Partido Verde Oxígeno',
     '2026_consultas_ANIBAL GAVIRIA CORREA': 'Unidos: La Fuerza de las Regiones',
     '2026_consultas_PALOMA SUSANA VALENCIA LASERNA': 'Centro Democrático',
+    // "Frente por la Vida" (consulta de Roy Barreras) -- confirmado
+    // 2026-07-08: Barreras, Torres Moreno y Bernal Amaya corrieron los 3
+    // por Fuerza de la Paz (Quintero, el 4º de esta consulta, ya estaba
+    // resuelto aparte como AICO).
+    '2026_consultas_ROY LEONARDO BARRERAS MONTEALEGRE': 'Fuerza de la Paz',
+    '2026_consultas_EDISON LUCIO TORRES MORENO': 'Fuerza de la Paz',
+    '2026_consultas_MARTHA VIVIANA BERNAL AMAYA': 'Fuerza de la Paz',
 };
