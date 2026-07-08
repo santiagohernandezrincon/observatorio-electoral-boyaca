@@ -535,12 +535,13 @@ const CANDIDATOS_PARTIDO = {
     '2026_consultas_ANIBAL GAVIRIA CORREA': 'Unidos: La Fuerza de las Regiones',
     '2026_consultas_PALOMA SUSANA VALENCIA LASERNA': 'Centro Democrático',
     // "Frente por la Vida" (consulta de Roy Barreras) -- confirmado
-    // 2026-07-08: Barreras, Torres Moreno y Bernal Amaya corrieron los 3
-    // por Fuerza de la Paz (Quintero, el 4º de esta consulta, ya estaba
-    // resuelto aparte como AICO).
+    // 2026-07-08: los 4 candidatos de esta consulta corrieron por Fuerza
+    // de la Paz (Quintero, el 4º de la lista original, ya estaba resuelto
+    // aparte como AICO).
     '2026_consultas_ROY LEONARDO BARRERAS MONTEALEGRE': 'Fuerza de la Paz',
     '2026_consultas_EDISON LUCIO TORRES MORENO': 'Fuerza de la Paz',
     '2026_consultas_MARTHA VIVIANA BERNAL AMAYA': 'Fuerza de la Paz',
+    '2026_consultas_HECTOR ELIAS PINEDA SALAZAR': 'Fuerza de la Paz',
     // "Consulta de las Soluciones" (Claudia López + Leonardo Huerta) --
     // sin esto, ambos caían en NORMALIZAR_PARTIDO's match exacto para el
     // texto crudo de la consulta ("Fuerza Ciudadana", ver

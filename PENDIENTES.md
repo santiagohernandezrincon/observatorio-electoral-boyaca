@@ -397,9 +397,11 @@ Se agregó 1 color nuevo (`Una Nueva Historia` `#F57C00`) a
 `NORMALIZAR_PARTIDO` que ya se usó para "Movimiento Sí Hay un Camino"
 (evita depender de si colisiona con algún keyword de `palabrasClave`).
 
-**Pendiente sin confirmar (1 de 12), sin tocar:** Héctor Elías Pineda
-Salazar — necesita fuente externa o criterio de Santiago antes de
-mapear su aval real.
+**Resuelto (último de 12), sesión 2026-07-08 posterior:** Héctor Elías
+Pineda Salazar → Fuerza de la Paz, confirmado por Santiago (mismo aval
+que Roy Barreras, Torres Moreno y Bernal Amaya — "Frente por la Vida"
+completa). **Con esto se cierran los 12 candidatos de consultas
+multi-candidato de 2026 sin excepción.**
 
 **Límite conocido — "Lista ganadora" (agregado de partido) NO se
 corrigió:** el patrón usado para alcaldía/gobernador/presidencia (que
