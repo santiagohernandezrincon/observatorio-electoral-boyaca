@@ -1587,7 +1587,7 @@ html, body {
   gap: 4px;
 }
 
-.obs-pill-modo, .obs-pill-escala {
+.obs-pill-modo, .obs-pill-escala, .obs-pill-lente {
   padding: 6px 8px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.09);
@@ -2204,6 +2204,37 @@ html, body {
 .actor-empty i { font-size: 1.6rem; margin-bottom: 0.6rem; display: block; }
 .actor-main { flex: 1; display: flex; flex-direction: column; position: relative; }
 .actor-map { flex: 1; min-height: 0; width: 100%; }
+
+/* Vista Series (trayectorias personalizadas) -- Layout B: lente arriba,
+   gráfico/tabla debajo (placeholder en Etapa 1). */
+.series-main { padding: 1rem 1.2rem; overflow-y: auto; }
+.series-lente {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 1rem;
+}
+.series-lente .obs-ctrl-select { max-width: 260px; }
+.series-viz-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255,255,255,0.45);
+  gap: 0.4rem;
+  min-height: 240px;
+}
+.series-viz-placeholder i { font-size: 2rem; opacity: 0.5; }
+.series-lente-actual {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
 .actor-timeline {
   height: 150px;
   flex-shrink: 0;

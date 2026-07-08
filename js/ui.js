@@ -403,23 +403,27 @@ function actualizarBreadcrumb() {
 let actorCandidatoActual = null; // { nombre, filas, listaCiclos }
 let actorCicloActivo = null;     // null = agregado; o `${anio}_${corp}`
 
-// ==================== TRAYECTORIAS PERSONALIZADAS (Etapa 1) ====================
+// ==================== TRAYECTORIAS PERSONALIZADAS (Vista Series) ====================
 // Serie A: lista ordenada de puntos (candidato+año+cargo) armada a mano por el
 // usuario -- puede mezclar personas y cargos distintos (no requiere que la
 // herramienta "sepa" que es un grupo político, solo guarda lo que el usuario
-// arma). Etapa 1 = solo la lista en memoria (agregar/quitar/reordenar/nombrar);
-// gráfico y mapa combinados son etapas futuras, no implementadas todavía.
-let serieA = { nombre: '', puntos: [] }; // punto: { candidato, anio, corp, partido, votos }
+// arma). Vive en su propia vista (#obs-vista-series), no en Vista Actor --
+// reutiliza el buscador/índice de Actor (construirIndiceActor, claveIdentidad)
+// pero con su propio estado de candidato seleccionado (serieCandidatoActual),
+// independiente de actorCandidatoActual.
+let serieA = { nombre: '', puntos: [] }; // punto: { candidato, candidatoExacto, anio, corp, partido, votos }
+let serieCandidatoActual = null; // { nombre, filas, listaCiclos } -- análogo a actorCandidatoActual
 
 function agregarPuntoASerieA(cicloKey) {
-  if (!actorCandidatoActual) return;
-  const ciclo = actorCandidatoActual.listaCiclos.find(c => c.key === cicloKey);
+  if (!serieCandidatoActual) return;
+  const ciclo = serieCandidatoActual.listaCiclos.find(c => c.key === cicloKey);
   if (!ciclo) return;
   const yaExiste = serieA.puntos.some(p =>
-    p.candidato === actorCandidatoActual.nombre && p.anio === ciclo.anio && p.corp === ciclo.corp);
+    p.candidato === serieCandidatoActual.nombre && p.anio === ciclo.anio && p.corp === ciclo.corp);
   if (yaExiste) return; // mismo candidato+año+cargo ya está en la serie
   serieA.puntos.push({
-    candidato: actorCandidatoActual.nombre,
+    candidato: serieCandidatoActual.nombre,   // forma normalizada/canónica -- para mostrar
+    candidatoExacto: ciclo.candidatoExacto,   // forma EXACTA del CSV -- para obtenerVotosCandidatoMunicipio/Departamento
     anio: ciclo.anio,
     corp: ciclo.corp,
     partido: ciclo.partido,
@@ -481,6 +485,139 @@ function inicializarSerieA() {
   const input = document.getElementById('serie-a-nombre');
   if (!input) return;
   input.addEventListener('input', () => { serieA.nombre = input.value; });
+}
+
+// ── Buscador de candidato para la Vista Series (independiente del de Actor,
+// mismo índice compartido construirIndiceActor()/actorTodasLasFilas) ──
+function inicializarSeriesBuscador() {
+  const input = document.getElementById('series-search-input');
+  const autocomplete = document.getElementById('series-autocomplete');
+  const loading = document.getElementById('series-loading');
+  if (!input) return;
+
+  let indiceIniciado = false;
+  async function asegurarIndice() {
+    if (indiceIniciado) return;
+    indiceIniciado = true;
+    loading.style.display = 'flex';
+    await construirIndiceActor();
+    loading.style.display = 'none';
+  }
+  input.addEventListener('focus', asegurarIndice);
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    autocomplete.innerHTML = '';
+    if (!actorIndiceListo || q.length < 2) { autocomplete.style.display = 'none'; return; }
+    const qNorm = normalizarNombre(q);
+    const nombres = [...actorNombresPorClave.entries()]
+      .filter(([clave]) => {
+        if (clave.includes(qNorm)) return true;
+        return Object.entries(ALIAS_IDENTIDAD).some(([aliasCorto, formaLarga]) =>
+          normalizarNombre(formaLarga) === clave && aliasCorto.includes(qNorm)
+        );
+      })
+      .map(([, nombre]) => nombre)
+      .sort((a, b) => a.localeCompare(b))
+      .slice(0, 8);
+    if (!nombres.length) { autocomplete.style.display = 'none'; return; }
+    autocomplete.style.display = 'block';
+    nombres.forEach(nombre => {
+      const item = document.createElement('div');
+      item.className = 'actor-autocomplete__item';
+      item.textContent = nombre;
+      item.addEventListener('click', () => {
+        input.value = nombre;
+        autocomplete.style.display = 'none';
+        seleccionarCandidatoParaSerie(nombre);
+      });
+      autocomplete.appendChild(item);
+    });
+  });
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.series-search-wrap')) autocomplete.style.display = 'none';
+  });
+}
+
+function seleccionarCandidatoParaSerie(nombreCanonico) {
+  const clave = normalizarNombre(nombreCanonico);
+  const filas = actorTodasLasFilas.filter(r => claveIdentidad(r['CANNOMBRE']) === clave);
+  if (!filas.length) return;
+
+  const ciclos = new Map();
+  filas.forEach(row => {
+    const key = `${row.ANIO}_${row.CORP}`;
+    if (!ciclos.has(key)) {
+      const partido = resolverPartido(row['PARNOMBRE'], row['CANNOMBRE'], row.ANIO, row.CORP);
+      ciclos.set(key, { key, anio: row.ANIO, corp: row.CORP, votos: 0, partido, candidatoExacto: row['CANNOMBRE'] });
+    }
+    ciclos.get(key).votos += row['VOTOS'];
+  });
+  const listaCiclos = [...ciclos.values()].sort((a, b) => b.anio - a.anio || a.corp.localeCompare(b.corp));
+
+  serieCandidatoActual = { nombre: nombreCanonico, filas, listaCiclos };
+
+  document.getElementById('series-empty').style.display = 'none';
+  document.getElementById('series-candidato-info').style.display = 'block';
+  document.getElementById('series-candidato-nombre').textContent = nombreCanonico;
+  renderCiclosParaSerie();
+}
+
+function renderCiclosParaSerie() {
+  const { listaCiclos } = serieCandidatoActual;
+  const cont = document.getElementById('series-candidato-cycles');
+  cont.innerHTML = listaCiclos.map(c => `
+    <div class="actor-cycle-card">
+      <div class="actor-cycle-card__dot" style="background:${colorPartido(c.partido)}"></div>
+      <div class="actor-cycle-card__info">
+        <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
+        <div class="actor-cycle-card__votos">${c.votos.toLocaleString('es-CO')} votos</div>
+      </div>
+      <button class="actor-cycle-card__add" data-add-key="${c.key}" title="Agregar a Serie A">+ Serie A</button>
+    </div>
+  `).join('');
+  cont.querySelectorAll('.actor-cycle-card__add').forEach(btn => {
+    btn.addEventListener('click', () => agregarPuntoASerieA(btn.dataset.addKey));
+  });
+}
+
+// ── Lente: Departamental (default no obligatorio) o un municipio específico.
+// Etapa 1: solo cambia el estado y un label de confirmación -- el gráfico/
+// tabla real que recalculan con obtenerVotosCandidatoMunicipio/Departamento
+// son Etapa 2. ──
+let serieLenteActual = { tipo: 'departamental', municipio: null };
+
+function inicializarLenteSerie() {
+  const btnDepto = document.getElementById('lente-departamental');
+  const selectMun = document.getElementById('serie-lente-municipio');
+  if (btnDepto) {
+    btnDepto.addEventListener('click', () => {
+      serieLenteActual = { tipo: 'departamental', municipio: null };
+      btnDepto.classList.add('active');
+      if (selectMun) selectMun.value = '';
+      actualizarLenteLabel();
+    });
+  }
+  if (selectMun) {
+    selectMun.addEventListener('change', () => {
+      if (selectMun.value) {
+        serieLenteActual = { tipo: 'municipio', municipio: selectMun.value };
+        if (btnDepto) btnDepto.classList.remove('active');
+      } else {
+        serieLenteActual = { tipo: 'departamental', municipio: null };
+        if (btnDepto) btnDepto.classList.add('active');
+      }
+      actualizarLenteLabel();
+    });
+  }
+}
+
+function actualizarLenteLabel() {
+  const label = document.getElementById('series-lente-actual-label');
+  if (!label) return;
+  label.textContent = 'Lente actual: ' +
+    (serieLenteActual.tipo === 'departamental' ? 'Departamental' : serieLenteActual.municipio);
 }
 
 function seleccionarCandidatoActor(nombreCanonico) {
@@ -592,7 +729,6 @@ function renderCiclosActor() {
         <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
         <div class="actor-cycle-card__votos">${c.votos.toLocaleString('es-CO')} votos</div>
       </div>
-      <button class="actor-cycle-card__add" data-add-key="${c.key}" title="Agregar a Serie A">+ Serie A</button>
     </div>
   `).join('');
 
@@ -602,12 +738,6 @@ function renderCiclosActor() {
       actorCicloActivo = el.dataset.key || null;
       renderCiclosActor();
       aplicarFiltroCicloActor();
-    });
-  });
-  cont.querySelectorAll('.actor-cycle-card__add').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      agregarPuntoASerieA(btn.dataset.addKey);
     });
   });
 }
@@ -1026,6 +1156,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentGeojson = await response.json();
         console.log(`GeoJSON cargado con ${currentGeojson.features.length} municipios`);
         llenarSelectorMunicipios();
+        llenarSelectorMunicipios('serie-lente-municipio');
     } catch (error) {
         console.error('Error cargando GeoJSON:', error);
         alert('No se pudo cargar el mapa base.');
@@ -1299,6 +1430,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarBuscador();
     inicializarActor();
     inicializarSerieA();
+    inicializarSeriesBuscador();
+    inicializarLenteSerie();
     inicializarCompetitividad();
     inicializarComparar();
 

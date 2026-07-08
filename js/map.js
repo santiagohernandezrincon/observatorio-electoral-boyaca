@@ -573,10 +573,12 @@ function crearCapaPuestosVotacion() {
     return capaPuestosVotacion;
 }
 
-function llenarSelectorMunicipios() {
-    const selector = document.getElementById('municipio-selector-trayectoria');
-    if (!currentGeojson) return;
-    selector.innerHTML = '<option value="">Seleccione un municipio</option>' +
+function llenarSelectorMunicipios(selectorId = 'municipio-selector-trayectoria', textoVacio = 'Seleccione un municipio') {
+    const selector = document.getElementById(selectorId);
+    if (!selector || !currentGeojson) return;
+    const opcionVacia = selector.querySelector('option[value=""]');
+    const textoOpcionVacia = opcionVacia ? opcionVacia.textContent : textoVacio;
+    selector.innerHTML = `<option value="">${textoOpcionVacia}</option>` +
         currentGeojson.features.map(f => f.properties.MPIO_CNMBR).sort()
             .map(m => `<option value="${m}">${m}</option>`).join('');
 }
