@@ -1320,6 +1320,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 320);
     });
 
+    // Minimizar/expandir panel izquierdo (año/tipo/modo color) -- mismo
+    // patrón que el drawer derecho, espejado (icono invertido: colapsa
+    // hacia la izquierda, expande hacia la derecha).
+    document.getElementById('obs-panel-toggle')?.addEventListener('click', () => {
+        const panel = document.querySelector('.obs-panel');
+        const icon  = document.getElementById('obs-panel-toggle-icon');
+        if (!panel) return;
+        const min = panel.classList.toggle('obs-panel--minimized');
+        if (icon) {
+            icon.className = min ? 'fas fa-chevron-right' : 'fas fa-chevron-left';
+        }
+        setTimeout(() => {
+            if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();
+            if (typeof mapActor !== 'undefined' && mapActor) mapActor.invalidateSize();
+            if (typeof mapA !== 'undefined' && mapA) mapA.invalidateSize();
+            if (typeof mapB !== 'undefined' && mapB) mapB.invalidateSize();
+        }, 320);
+    });
+
     // Tabs Datos / Gráfica en el drawer
     document.querySelectorAll('.obs-drawer__tab').forEach(tab => {
         tab.addEventListener('click', () => {

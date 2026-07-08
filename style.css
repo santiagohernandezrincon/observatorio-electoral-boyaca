@@ -1368,7 +1368,41 @@ html, body {
   box-shadow: 2px 0 8px rgba(0,0,0,0.18);
   position: relative;
   z-index: 10;
+  transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Colapso -- mismo patrón que .obs-drawer--minimized, espejado (panel
+   izquierdo en vez de derecho). El botón vive dentro del panel (no en
+   offset negativo como el del drawer) porque .obs-panel tiene
+   overflow:hidden y lo recortaría. */
+.obs-panel__toggle {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 56px;
+  background: var(--navy);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+  transition: var(--transition);
+}
+.obs-panel__toggle:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.obs-panel__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.obs-panel--minimized .obs-panel__content { display: none; }
+.obs-panel--minimized { width: 32px !important; min-width: 32px !important; }
+.obs-panel--minimized .obs-panel__toggle { right: 3px; }
 
 .obs-panel__header {
   display: flex;

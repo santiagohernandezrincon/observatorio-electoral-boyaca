@@ -40,6 +40,13 @@
   <!-- ===== PANEL IZQUIERDO ===== -->
   <aside class="obs-panel">
 
+    <!-- Botón de colapso (mismo patrón que el drawer derecho, espejado) -->
+    <button class="obs-panel__toggle" id="obs-panel-toggle" title="Colapsar/expandir">
+      <i class="fas fa-chevron-left" id="obs-panel-toggle-icon"></i>
+    </button>
+
+    <div class="obs-panel__content">
+
     <div class="obs-panel__header">
       <div class="obs-panel__title">
         <div class="obs-panel__logo">OBSERVATORIO ELECTORAL</div>
@@ -171,6 +178,8 @@
     <!-- Stats municipio: ahora en drawer derecho (#obs-drawer) -->
     <!-- Se mantiene id=obs-panel-stats para compatibilidad con abrirSidebar -->
     <div id="obs-panel-stats" style="display:none" aria-hidden="true"></div>
+
+    </div><!-- /obs-panel__content -->
 
   </aside><!-- /obs-panel -->
 
