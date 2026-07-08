@@ -403,6 +403,86 @@ function actualizarBreadcrumb() {
 let actorCandidatoActual = null; // { nombre, filas, listaCiclos }
 let actorCicloActivo = null;     // null = agregado; o `${anio}_${corp}`
 
+// ==================== TRAYECTORIAS PERSONALIZADAS (Etapa 1) ====================
+// Serie A: lista ordenada de puntos (candidato+año+cargo) armada a mano por el
+// usuario -- puede mezclar personas y cargos distintos (no requiere que la
+// herramienta "sepa" que es un grupo político, solo guarda lo que el usuario
+// arma). Etapa 1 = solo la lista en memoria (agregar/quitar/reordenar/nombrar);
+// gráfico y mapa combinados son etapas futuras, no implementadas todavía.
+let serieA = { nombre: '', puntos: [] }; // punto: { candidato, anio, corp, partido, votos }
+
+function agregarPuntoASerieA(cicloKey) {
+  if (!actorCandidatoActual) return;
+  const ciclo = actorCandidatoActual.listaCiclos.find(c => c.key === cicloKey);
+  if (!ciclo) return;
+  const yaExiste = serieA.puntos.some(p =>
+    p.candidato === actorCandidatoActual.nombre && p.anio === ciclo.anio && p.corp === ciclo.corp);
+  if (yaExiste) return; // mismo candidato+año+cargo ya está en la serie
+  serieA.puntos.push({
+    candidato: actorCandidatoActual.nombre,
+    anio: ciclo.anio,
+    corp: ciclo.corp,
+    partido: ciclo.partido,
+    votos: ciclo.votos
+  });
+  renderSerieA();
+}
+
+function quitarPuntoDeSerieA(idx) {
+  serieA.puntos.splice(idx, 1);
+  renderSerieA();
+}
+
+function moverPuntoSerieA(idx, delta) {
+  const nuevoIdx = idx + delta;
+  if (nuevoIdx < 0 || nuevoIdx >= serieA.puntos.length) return;
+  const tmp = serieA.puntos[idx];
+  serieA.puntos[idx] = serieA.puntos[nuevoIdx];
+  serieA.puntos[nuevoIdx] = tmp;
+  renderSerieA();
+}
+
+function renderSerieA() {
+  const cont = document.getElementById('serie-a-lista');
+  const empty = document.getElementById('serie-a-empty');
+  if (!cont) return;
+
+  if (!serieA.puntos.length) {
+    cont.innerHTML = '';
+    if (empty) empty.style.display = 'block';
+    return;
+  }
+  if (empty) empty.style.display = 'none';
+
+  cont.innerHTML = serieA.puntos.map((p, i) => `
+    <div class="serie-punto">
+      <div class="serie-punto__dot" style="background:${colorPartido(p.partido)}"></div>
+      <div class="serie-punto__info">
+        <div class="serie-punto__candidato">${p.candidato}</div>
+        <div class="serie-punto__meta">${LABELS_CORPORACION[p.corp] || p.corp} · ${p.anio} · ${p.partido}</div>
+      </div>
+      <div class="serie-punto__acciones">
+        <button data-mover="-1" data-idx="${i}" ${i === 0 ? 'disabled' : ''} title="Subir">↑</button>
+        <button data-mover="1" data-idx="${i}" ${i === serieA.puntos.length - 1 ? 'disabled' : ''} title="Bajar">↓</button>
+        <button data-quitar="${i}" title="Quitar de la serie">✕</button>
+      </div>
+    </div>
+  `).join('');
+
+  cont.querySelectorAll('[data-quitar]').forEach(btn => {
+    btn.addEventListener('click', () => quitarPuntoDeSerieA(Number(btn.dataset.quitar)));
+  });
+  cont.querySelectorAll('[data-mover]').forEach(btn => {
+    btn.addEventListener('click', () => moverPuntoSerieA(Number(btn.dataset.idx), Number(btn.dataset.mover)));
+  });
+}
+
+function inicializarSerieA() {
+  const input = document.getElementById('serie-a-nombre');
+  if (!input) return;
+  input.addEventListener('input', () => { serieA.nombre = input.value; });
+}
+
 function seleccionarCandidatoActor(nombreCanonico) {
   const clave = normalizarNombre(nombreCanonico);
   const filas = actorTodasLasFilas.filter(r => normalizarNombre(r['CANNOMBRE']) === clave);
@@ -512,6 +592,7 @@ function renderCiclosActor() {
         <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
         <div class="actor-cycle-card__votos">${c.votos.toLocaleString('es-CO')} votos</div>
       </div>
+      <button class="actor-cycle-card__add" data-add-key="${c.key}" title="Agregar a Serie A">+ Serie A</button>
     </div>
   `).join('');
 
@@ -521,6 +602,12 @@ function renderCiclosActor() {
       actorCicloActivo = el.dataset.key || null;
       renderCiclosActor();
       aplicarFiltroCicloActor();
+    });
+  });
+  cont.querySelectorAll('.actor-cycle-card__add').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      agregarPuntoASerieA(btn.dataset.addKey);
     });
   });
 }
@@ -1201,6 +1288,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     actualizarBreadcrumb();
     inicializarBuscador();
     inicializarActor();
+    inicializarSerieA();
     inicializarCompetitividad();
     inicializarComparar();
 

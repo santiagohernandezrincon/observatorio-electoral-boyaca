@@ -2330,6 +2330,107 @@ html, body {
   font-size: 0.7rem;
   color: rgba(255,255,255,0.5);
 }
+.actor-cycle-card__add {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.actor-cycle-card__add:hover {
+  background: var(--gold-light);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+/* Trayectorias personalizadas -- Serie A (Etapa 1) */
+.serie-panel {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.serie-nombre-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: 0.78rem;
+  padding: 0.45rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.serie-nombre-input::placeholder { color: rgba(255,255,255,0.4); }
+.serie-punto-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.serie-punto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.6rem;
+}
+.serie-punto__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.serie-punto__info { min-width: 0; flex: 1; }
+.serie-punto__candidato {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.serie-punto__meta {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.5);
+}
+.serie-punto__acciones {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.serie-punto__acciones button {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.7rem;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.serie-punto__acciones button:hover:not(:disabled) {
+  background: var(--gold-light);
+  border-color: var(--gold);
+  color: #fff;
+}
+.serie-punto__acciones button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.serie-empty {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.4;
+}
 
 .actor-table-wrap {
   max-height: 260px;
