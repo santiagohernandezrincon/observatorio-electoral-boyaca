@@ -390,6 +390,29 @@ recalcular el agregado de partido desde el candidato (redistribuir
 votos por aval real en vez de renombrar una fila), que es un problema
 distinto y más grande — no se hizo en esta sesión.
 
+## Duitama, Alcaldía 2019 — Coalición Somos Duitama Ciudad Creativa → Alianza Verde — RESUELTO 2026-07-08
+
+**Caso oportunista** (primer caso de este enfoque: se investiga cuando
+Santiago trae un caso puntual, no auditoría exhaustiva de coaliciones).
+
+German Tiberio Ojeda Pedraza, alcaldía de Duitama 2019, corrió bajo
+"Coalición Somos Duitama Ciudad Creativa" (tercer lugar, 18.15%).
+Confirmado por Santiago: la coalición era Alianza Verde + Polo, con
+Alianza Verde como partido principal (regla de siempre: primer partido
+listado). Investigación previa (fuentes externas) ya había encontrado
+evidencia consistente: El Diario de Boyacá (mayo 2019, antes de la
+inscripción) reportaba que Ojeda —diputado en ejercicio por Alianza
+Verde— sería el candidato del partido.
+
+**Aplicado:** a diferencia de Tópaga (formato CEDAE viejo, código
+numérico sin resolver, requería edición directa del CSV), este caso es
+del formato "histórico por mesa" (2019-2023), donde el PARNOMBRE crudo
+ya es texto real y se deja así a propósito en el CSV — la
+canonización se hace en JS. Se agregó `'SOMOS DUITAMA CIUDAD CREATIVA':
+'Alianza Verde'` a `NORMALIZAR_PARTIDO` (`js/colores_partido.js`), no
+una edición de CSV. Verificado en vivo: "Ganador (candidato)", "Lista
+ganadora" y Vista Actor muestran Alianza Verde para Duitama 2019.
+
 **Nota (procesamiento presidencial 2026, sesión julio 2026):** el
 formato "columnas abreviadas" (`procesar_sql_abrev()`/
 `_procesar_generico_mesa()`, usado por Cámara/Senado/Presidencia 2026)

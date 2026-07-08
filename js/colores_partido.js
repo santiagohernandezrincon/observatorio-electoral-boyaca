@@ -484,6 +484,12 @@ const NORMALIZAR_PARTIDO = {
   'RESULTADOS PARA BOYACA': 'Partido Liberal Colombiano',
   'RESULTADOS PARA BOYACÁ': 'Partido Liberal Colombiano',
 
+  // Coalición Somos Duitama Ciudad Creativa (alcaldía Duitama 2019,
+  // German Tiberio Ojeda Pedraza) -- Alianza Verde + Polo, confirmado por
+  // Santiago; Alianza Verde como partido principal (regla de siempre:
+  // primer partido de la coalición). Ver PENDIENTES.md.
+  'SOMOS DUITAMA CIUDAD CREATIVA': 'Alianza Verde',
+
   // ── MAIS ──
   'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL  MAIS': 'MAIS',
   'MOVIMIENTO ALTERNATIVO INDIGENA Y SOCIAL MAIS': 'MAIS',
