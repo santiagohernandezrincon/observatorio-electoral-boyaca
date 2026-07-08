@@ -59,6 +59,8 @@ const COLORES_PARTIDO = {
   // ── MOVIMIENTOS Y FALLBACKS ─────────────────────────────
   'Movimiento Ciudadano':           '#B0B8C1',
   'Coalición Para La Alcaldía de Tópaga': '#8D99AE',
+  'Independiente':                  '#9E9E9E',
+  'Coalición':                      '#A4ADBA',
   'Partido sin identificar':        '#9CA3AF',
   'Sin partido':                    '#9CA3AF',
   'Votos nulos':                    '#EAECEE',

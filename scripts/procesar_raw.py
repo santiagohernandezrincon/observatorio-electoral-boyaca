@@ -95,6 +95,9 @@ NOMBRES_PARTIDO = {
     '20000036': 'Movimiento MIRA',                # MIRA código 2000
     '20100007': 'Movimiento Ciudadano',            # Aval local Boyacá 2011
     '20110064': 'Coalición Para La Alcaldía de Tópaga', # Aval local Boyacá 2011 (José Oswaldo Castro Tejedor)
+    '20110062': 'Independiente',                    # Aval local Boyacá 2011, candidatura por Firmas (Cómbita, Giovanni Díaz Ramos)
+    '20110074': 'Independiente',                    # Aval local Boyacá 2011, candidatura por Firmas (Tota, Yury Neill Díaz Aranguren)
+    '20110050': 'Coalición',                        # Aval local Boyacá 2011, coalición sin nombre propio confirmado (Oicatá, Ever Niño Cuervo)
     '20170002': 'Cambio Radical',
     # Códigos 2015 gobernación Boyacá
     '20150606': 'Alianza Verde',

@@ -32,7 +32,7 @@ const CANDIDATOS_PARTIDO = {
     '2011_alcalde_EDGAR PARRA': 'Partido Conservador Colombiano',
     '2011_alcalde_EDUAR ESCAMILLA CORREA': 'Partido de la U',
     '2011_alcalde_ERMES URIEL COMBITA SANTANA': 'Partido de la U',
-    '2011_alcalde_EVER NINO CUERVO': 'Partido Conservador Colombiano',
+    '2011_alcalde_EVER NINO CUERVO': 'Coalición',
     '2011_alcalde_EZEQUIEL GUERRA PARADA': 'Partido de la U',
     '2011_alcalde_FABIAN BULLA SANCHEZ': 'Cambio Radical',
     '2011_alcalde_FABIAN CAMILO IGUA ROBLES': 'Movimiento Ciudadano',
@@ -42,7 +42,7 @@ const CANDIDATOS_PARTIDO = {
     '2011_alcalde_FLORENTINO TORRES SANABRIA': 'ASI',
     '2011_alcalde_GERMAN DARIO CASTANEDA AGUDELO': 'Cambio Radical',
     '2011_alcalde_GERSON AYMER RUIZ CARRENO': 'Partido Liberal Colombiano',
-    '2011_alcalde_GIOVANNI DIAZ RAMOS': 'Movimiento Ciudadano',
+    '2011_alcalde_GIOVANNI DIAZ RAMOS': 'Independiente',
     '2011_alcalde_GONZALO ALFREDO CORTES CANON': 'Partido Liberal Colombiano',
     '2011_alcalde_GONZALO CASTRO TRIANA': 'Partido de Integración Nacional',
     '2011_alcalde_HECTOR ALFONSO GARCIA GARCIA': 'Cambio Radical',
@@ -127,7 +127,7 @@ const CANDIDATOS_PARTIDO = {
     '2011_alcalde_WILSON FERNANDO BARON GOMEZ': 'Partido de Integración Nacional',
     '2011_alcalde_WILSON GUERRERO VASQUEZ': 'Partido Conservador Colombiano',
     '2011_alcalde_WILSON RICARDO BAEZ SOLANO': 'Partido Conservador Colombiano',
-    '2011_alcalde_YURY NEILL DIAZ ARANGUREN': 'Movimiento Ciudadano',
+    '2011_alcalde_YURY NEILL DIAZ ARANGUREN': 'Independiente',
 
     // ── 2011 GOBERNADOR ──
     '2011_gobernador_GONZALO GUARIN VIVAS': 'Alianza Verde',
