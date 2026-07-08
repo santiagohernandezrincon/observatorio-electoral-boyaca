@@ -485,7 +485,7 @@ function inicializarSerieA() {
 
 function seleccionarCandidatoActor(nombreCanonico) {
   const clave = normalizarNombre(nombreCanonico);
-  const filas = actorTodasLasFilas.filter(r => normalizarNombre(r['CANNOMBRE']) === clave);
+  const filas = actorTodasLasFilas.filter(r => claveIdentidad(r['CANNOMBRE']) === clave);
   if (!filas.length) return;
 
   const ciclos = new Map();
@@ -892,7 +892,17 @@ function inicializarActor() {
     if (!actorIndiceListo || q.length < 2) { autocomplete.style.display = 'none'; return; }
     const qNorm = normalizarNombre(q);
     const nombres = [...actorNombresPorClave.entries()]
-      .filter(([clave]) => clave.includes(qNorm))
+      .filter(([clave]) => {
+        if (clave.includes(qNorm)) return true;
+        // ALIAS_IDENTIDAD fusiona a la forma larga (ver claveIdentidad()), pero
+        // el usuario suele buscar por la forma corta (ej. "Gustavo Petro"), que
+        // deja de ser substring contiguo del nombre largo cuando este tiene un
+        // nombre intermedio ("Gustavo FRANCISCO Petro Urrego"). Revisa también
+        // los alias cortos que apuntan a esta clave.
+        return Object.entries(ALIAS_IDENTIDAD).some(([aliasCorto, formaLarga]) =>
+          normalizarNombre(formaLarga) === clave && aliasCorto.includes(qNorm)
+        );
+      })
       .map(([, nombre]) => nombre)
       .sort((a, b) => a.localeCompare(b))
       .slice(0, 8);

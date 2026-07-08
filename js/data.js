@@ -806,9 +806,12 @@ async function construirIndiceActor() {
 
     actorNombresPorClave = new Map();
     actorTodasLasFilas.forEach(row => {
-        const clave = normalizarNombre(row['CANNOMBRE']);
+        const clave = claveIdentidad(row['CANNOMBRE']);
+        // Si es un alias conocido (forma corta), muestra la forma larga/
+        // canónica en vez del texto crudo de esta fila -- ver ALIAS_IDENTIDAD.
+        const alias = ALIAS_IDENTIDAD[normalizarNombre(row['CANNOMBRE'])];
         if (!actorNombresPorClave.has(clave)) {
-            actorNombresPorClave.set(clave, row['CANNOMBRE'].toUpperCase().trim());
+            actorNombresPorClave.set(clave, alias ? alias.toUpperCase().trim() : row['CANNOMBRE'].toUpperCase().trim());
         }
     });
 
