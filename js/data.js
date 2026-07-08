@@ -793,7 +793,13 @@ async function construirIndiceActor() {
     Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
         corps.forEach(corp => {
             (todosLosCandidatosPorAnioCorp[`${anio}_${corp}`] || [])
-                .filter(row => String(row['CANNOMBRE']).trim() !== String(row['PARNOMBRE']).trim())
+                // Excluye filas de "plancha" (voto de lista sin candidato):
+                // comparación normalizada (mayúsculas/tildes/espacios), no
+                // exacta -- una fila de plancha puede tener CANNOMBRE con
+                // distinta capitalización/tilde que PARNOMBRE (ej. "Movimiento
+                // Mira" vs "Movimiento MIRA"). Ver PENDIENTES.md para los 2
+                // casos que ni así se detectan (texto genuinamente distinto).
+                .filter(row => normalizarNombre(row['CANNOMBRE']) !== normalizarNombre(row['PARNOMBRE']))
                 .forEach(row => actorTodasLasFilas.push({ ...row, ANIO: anio, CORP: corp }));
         });
     });

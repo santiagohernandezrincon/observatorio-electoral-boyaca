@@ -462,3 +462,44 @@ en vez de con `procesar_raw.py` directamente.
 - **Archivos legacy de la raíz** (`data.js`, `script.js`, `charts.js`,
   `ui.js`, `map.js`) — eliminados (sesión julio 2026), confirmado que
   no los cargaba `index.html`.
+
+## Vista Actor: nombres de partido colados en el índice de candidatos — parcialmente resuelto 2026-07-08
+
+**El problema:** filas de "plancha" (voto de lista sin candidato
+específico, donde `CANNOMBRE` termina siendo una copia o casi-copia de
+`PARNOMBRE`) se colaban en `actorTodasLasFilas`/`actorNombresPorClave`
+como si fueran candidatos buscables en Vista Actor. El filtro que ya
+existía (`CANNOMBRE === PARNOMBRE`, comparación exacta) solo atrapaba
+coincidencias byte-a-byte — se descubrió al revisar
+`revision_nombres_duplicados.csv`: 6 de los 40 pares que Santiago
+confirmó como "el mismo candidato" eran en realidad partidos/
+movimientos, no personas.
+
+**Resuelto:** cambiada la comparación a normalizada
+(`normalizarNombre(CANNOMBRE) !== normalizarNombre(PARNOMBRE)`,
+`construirIndiceActor()` en `js/data.js`) — atrapa coincidencias que
+solo difieren en mayúsculas/tildes/espacios. Verificado en vivo:
+"Movimiento Mira", "Polo Democrático Alternativo", "Partido Político
+Dignidad" y "Movimiento Salvación Nacional" ya no aparecen como
+candidatos buscables. De paso resolvió sin querer un caso adicional no
+buscado (`"PARTIDO CENTRO DEMOCRATICO- PARTIDO POLITICO MIRA"`, una
+coalición completa colada como candidato).
+
+**Quedan 2 casos sin resolver** (el texto es genuinamente distinto, no
+solo formato, así que la comparación normalizada no los atrapa):
+- `PARTIDO CENTRO DEMOCRATICO` / `CENTRO DEMOCRATICO MANO FIRME CORAZON
+  GRANDE` (CANNOMBRE) vs. `Centro Democrático` (PARNOMBRE) — al primero
+  le sobra el prefijo "PARTIDO ", al segundo el sufijo "MANO FIRME
+  CORAZON GRANDE".
+- `Alianza Social Indigena` (CANNOMBRE) vs. `Alianza Social
+  Independiente` (PARNOMBRE) — palabra distinta ("Indigena" vs.
+  "Independiente"), no una variante de formato.
+
+**Por qué no se persiguió una solución más agresiva:** una heurística
+de similaridad de texto más permisiva reintroduciría el mismo riesgo de
+falsos positivos que ya vimos al generar `revision_nombres_duplicados.csv`
+(nombres comunes calzando por casualidad). La solución correcta para
+estos 2 es una lista de exclusión explícita (mismo patrón que el
+`excluir` ya existente para "VOTOS EN BLANCO" etc.), no una heurística —
+pendiente para cuando aparezca un motivo concreto para tocarlo
+(oportunista, no auditoría).
