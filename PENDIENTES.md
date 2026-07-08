@@ -379,10 +379,27 @@ MONTEALEGRE" como palabras clave de una resolución previa, ahora
 superado por el override explícito en `CANDIDATOS_PARTIDO`, que tiene
 prioridad).
 
-**Pendientes sin confirmar (2 de 12), sin tocar — no son parte de
-"Frente por la Vida":** Héctor Elías Pineda Salazar, Leonardo Humberto
-Huerta Gutiérrez — necesitan fuente externa o criterio de Santiago
-antes de mapear su aval real.
+**Resuelto también (2 más, sesión 2026-07-08 posterior) — "Consulta de
+las Soluciones" (Claudia López + Leonardo Huerta) completa:**
+- Claudia Nayibe López Hernández → Con Claudia Imparables (el mismo
+  movimiento que ya usaba en Presidencia 1ª vuelta 2026 — antes de este
+  fix, en Consultas caía en una regla directa de `NORMALIZAR_PARTIDO`
+  que mapea el texto crudo de esta consulta a "Fuerza Ciudadana", sin
+  override propio que la interceptara antes).
+- Leonardo Humberto Huerta Gutiérrez → Una Nueva Historia (confirmado
+  con múltiples fuentes externas: es "Leonardo Huerta", precandidato
+  presidencial por firmas con el comité "Colombia: Una Nueva Historia",
+  quedó 2º en esta consulta y fue fórmula vicepresidencial de López —
+  no homónimo, mismo patrón de verificación que el caso Gaviria).
+
+Se agregó 1 color nuevo (`Una Nueva Historia` `#F57C00`) a
+`COLORES_PARTIDO`, con la misma entrada directa preventiva en
+`NORMALIZAR_PARTIDO` que ya se usó para "Movimiento Sí Hay un Camino"
+(evita depender de si colisiona con algún keyword de `palabrasClave`).
+
+**Pendiente sin confirmar (1 de 12), sin tocar:** Héctor Elías Pineda
+Salazar — necesita fuente externa o criterio de Santiago antes de
+mapear su aval real.
 
 **Límite conocido — "Lista ganadora" (agregado de partido) NO se
 corrigió:** el patrón usado para alcaldía/gobernador/presidencia (que

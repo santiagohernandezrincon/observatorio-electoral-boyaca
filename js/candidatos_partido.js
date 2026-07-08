@@ -526,9 +526,8 @@ const CANDIDATOS_PARTIDO = {
 
     // ── 2026 CONSULTAS — aval real del candidato, no el nombre de la
     // consulta interpartidista (que queda como PARNOMBRE crudo / dato de
-    // "evento"). Confirmado con Santiago 2026-07-08. Pendientes sin
-    // confirmar (no son parte de "Frente por la Vida"): Pineda Salazar,
-    // Huerta Gutiérrez (ver PENDIENTES.md).
+    // "evento"). Confirmado con Santiago 2026-07-08. Pendiente sin
+    // confirmar: Pineda Salazar (ver PENDIENTES.md).
     '2026_consultas_DANIEL QUINTERO CALLE': 'AICO',
     '2026_consultas_DAVID ANDRES LUNA SANCHEZ': 'Movimiento Sí Hay un Camino',
     '2026_consultas_JUAN MANUEL GALAN PACHON': 'Nuevo Liberalismo',
@@ -542,4 +541,12 @@ const CANDIDATOS_PARTIDO = {
     '2026_consultas_ROY LEONARDO BARRERAS MONTEALEGRE': 'Fuerza de la Paz',
     '2026_consultas_EDISON LUCIO TORRES MORENO': 'Fuerza de la Paz',
     '2026_consultas_MARTHA VIVIANA BERNAL AMAYA': 'Fuerza de la Paz',
+    // "Consulta de las Soluciones" (Claudia López + Leonardo Huerta) --
+    // sin esto, ambos caían en NORMALIZAR_PARTIDO's match exacto para el
+    // texto crudo de la consulta ("Fuerza Ciudadana", ver
+    // js/colores_partido.js) en vez de su propio movimiento. Confirmado
+    // 2026-07-08: Huerta Gutiérrez es Leonardo Huerta ("Colombia: Una
+    // Nueva Historia"), quedó 2º y fue fórmula vicepresidencial de López.
+    '2026_consultas_CLAUDIA NAYIBE LOPEZ HERNANDEZ': 'Con Claudia Imparables',
+    '2026_consultas_LEONARDO HUMBERTO HUERTA GUTIERREZ': 'Una Nueva Historia',
 };

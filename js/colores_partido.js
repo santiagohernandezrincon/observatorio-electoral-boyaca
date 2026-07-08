@@ -53,6 +53,7 @@ const COLORES_PARTIDO = {
   'Sondra Macollins':               '#C9A227',
   'Movimiento Sí Hay un Camino':    '#8E24AA',
   'Unidos: La Fuerza de las Regiones': '#37474F',
+  'Una Nueva Historia':             '#F57C00',
   'PARTIDO DEMÓCRATA COLOMBIANO':   '#455A64',
   'PARTIDO ECOLOGISTA COLOMBIANO':  '#00695C',
   // ── PLEBISCITO ──────────────────────────────────────────
@@ -267,6 +268,11 @@ const NORMALIZAR_PARTIDO = {
   // relacionado 'MOVIMIENTO SI' (partido real y distinto, ~1-2 votos en
   // Senado 2026) -- "Movimiento Sí Hay un Camino" lo contiene como prefijo.
   'Movimiento Sí Hay un Camino': 'Movimiento Sí Hay un Camino',
+
+  // Mismo motivo que arriba -- entrada directa preventiva para que
+  // resuelva en el paso 1 (match exacto) y no dependa de si colisiona
+  // con algún keyword de palabrasClave.
+  'Una Nueva Historia': 'Una Nueva Historia',
 
   // ── LIBERAL — variantes coalición ───────────────────────────────────
   'COALICION LIBERAL': 'Partido Liberal Colombiano',
