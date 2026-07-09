@@ -44,6 +44,12 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
                 ? (g['CANNOMBRE'] === candidatoGanadorFiltro ? '<br><strong>✓ Candidato seleccionado</strong>' : '<br><em>No es el candidato seleccionado</em>')
                 : '';
             return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}${notaFiltro}`;
+        } else if (tipoVista === 'cabeza_a_cabeza') {
+            if (!cabezaAElegidos.length) return `<strong>${elementoNombre}</strong><br>Elige hasta 4 candidatos o listas para comparar`;
+            const campoNombre = cabezaAModoLista ? 'PARNOMBRE' : 'CANNOMBRE';
+            const g = ganadorEntreElegidos(cabezaAModoLista ? datosProv.partidos : datosProv.candidatos, cabezaAElegidos, campoNombre);
+            if (!g) return `<strong>${elementoNombre}</strong><br>Ninguno de los elegidos tuvo votos aquí`;
+            return `<strong>${elementoNombre}</strong><br>Ganador entre los elegidos: ${g[campoNombre]}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
         }
     } else {
         if (tipoVista === 'partido') {
@@ -91,6 +97,14 @@ function getTooltipText(elementoNombre, esProvincia, tipoVista, partidoSeleccion
                 ? (g['CANNOMBRE'] === candidatoGanadorFiltro ? '<br><strong>✓ Candidato seleccionado</strong>' : '<br><em>No es el candidato seleccionado</em>')
                 : '';
             return `<strong>${elementoNombre}</strong><br>Candidato ganador de ${partidoGanadorSeleccionado}: ${g['CANNOMBRE']}<br>Votos: ${g['VOTOS'].toLocaleString()}${notaFiltro}`;
+        } else if (tipoVista === 'cabeza_a_cabeza') {
+            if (!cabezaAElegidos.length) return `<strong>${elementoNombre}</strong><br>Elige hasta 4 candidatos o listas para comparar`;
+            const campoNombre = cabezaAModoLista ? 'PARNOMBRE' : 'CANNOMBRE';
+            const dataset = cabezaAModoLista ? currentPartidoData : currentCandidatoData;
+            const filasMun = dataset ? dataset.filter(row => normalizarNombre(row['MUNNOMBRE']) === elementoNombre) : [];
+            const g = ganadorEntreElegidos(filasMun, cabezaAElegidos, campoNombre);
+            if (!g) return `<strong>${elementoNombre}</strong><br>Ninguno de los elegidos tuvo votos aquí`;
+            return `<strong>${elementoNombre}</strong><br>Ganador entre los elegidos: ${g[campoNombre]}<br>Votos: ${g['VOTOS'].toLocaleString()}`;
         }
     }
     // Tooltips para modos calor y margen
@@ -149,6 +163,17 @@ function colorPorDesviacion(desviacion) {
     return `rgb(${r},${g},${b})`;
 }
 
+// ==================== CABEZA A CABEZA (N candidatos/listas elegidos) ====
+// Mismo primitivo que candidato_ganador/candidato_ganador_por_partido/partido
+// (reduce de máximo VOTOS), pero filtrando primero a solo los elegidos --
+// ignora a cualquier otro candidato/partido de la fila.
+function ganadorEntreElegidos(filas, elegidos, campoNombre) {
+    if (!filas || !elegidos || !elegidos.length) return null;
+    const filtradas = filas.filter(row => elegidos.includes(row[campoNombre]));
+    if (!filtradas.length) return null;
+    return filtradas.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
+}
+
 // ==================== COLORES DEL MAPA ====================
 function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSeleccionado, candidatoSeleccionado, partidoGanadorSeleccionado, porcentajeActivo, candidatoGanadorFiltro) {
     let filas;
@@ -172,6 +197,11 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
             const gp = lista.reduce((a, b) => a['VOTOS'] > b['VOTOS'] ? a : b);
             if (candidatoGanadorFiltro) return gp['CANNOMBRE'] === candidatoGanadorFiltro ? '#E8A400' : '#6B7280';
             return getColorCandidato(gp['CANNOMBRE']);
+        } else if (tipoVista === 'cabeza_a_cabeza') {
+            const campoNombre = cabezaAModoLista ? 'PARNOMBRE' : 'CANNOMBRE';
+            const g = ganadorEntreElegidos(cabezaAModoLista ? datosProv.partidos : datosProv.candidatos, cabezaAElegidos, campoNombre);
+            if (!g) return '#cccccc';
+            return PALETA_CABEZA_A_CABEZA[cabezaAElegidos.indexOf(g[campoNombre])] || '#cccccc';
         }
     } else {
         if (tipoVista === 'partido' || tipoVista === 'partido_heat' || tipoVista === 'partido_desviacion') {
@@ -189,6 +219,13 @@ function getColorParaElemento(nombreElemento, esProvincia, tipoVista, partidoSel
             if (!g) return '#cccccc';
             if (candidatoGanadorFiltro) return g['CANNOMBRE'] === candidatoGanadorFiltro ? '#E8A400' : '#6B7280';
             return getColorCandidato(g['CANNOMBRE']);
+        } else if (tipoVista === 'cabeza_a_cabeza') {
+            const campoNombre = cabezaAModoLista ? 'PARNOMBRE' : 'CANNOMBRE';
+            const dataset = cabezaAModoLista ? currentPartidoData : currentCandidatoData;
+            const filasMun = dataset ? dataset.filter(row => normalizarNombre(row['MUNNOMBRE']) === nombreElemento) : [];
+            const g = ganadorEntreElegidos(filasMun, cabezaAElegidos, campoNombre);
+            if (!g) return '#cccccc';
+            return PALETA_CABEZA_A_CABEZA[cabezaAElegidos.indexOf(g[campoNombre])] || '#cccccc';
         }
     }
 

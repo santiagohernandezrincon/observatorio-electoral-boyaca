@@ -149,6 +149,12 @@ let candidatoEspecificoActual = null;
 let candidatoGanadorPorMunicipio = {};
 let candidatoGanadorFiltro = null; // candidato específico resaltado dentro de "Candidato por Partido"
 
+// Modo "Cabeza a cabeza": ganador entre un conjunto acotado de
+// candidatos o listas elegidos por el usuario, ignorando al resto.
+let cabezaAModoLista = false; // false = candidatos individuales, true = listas/partidos
+let cabezaAElegidos = [];     // nombres elegidos (hasta 4), en orden de selección
+const PALETA_CABEZA_A_CABEZA = ['#D62839', '#1D7874', '#F2A541', '#4C3BCF'];
+
 let trajectoryMunicipioChart = null;
 let actorTimelineChart = null;
 let todosLosCandidatosPorAnioCorp = {};

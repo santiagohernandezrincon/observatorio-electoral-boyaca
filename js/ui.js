@@ -92,7 +92,8 @@ function mostrarDetalleMunicipio(municipioNombre, partidosMunicipio, candidatosM
     if (drawerTitle) drawerTitle.textContent = municipioNombre;
     ultimoElementoDetalle = { nombre: municipioNombre, tipo: 'municipio', datosPartidos: partidosMunicipio, datosCandidatos: candidatosMunicipio };
 
-    if (tipoVista === 'candidato_heat' || tipoVista === 'candidato_ganador' || tipoVista === 'candidato_ganador_por_partido') {
+    if (tipoVista === 'candidato_heat' || tipoVista === 'candidato_ganador' || tipoVista === 'candidato_ganador_por_partido' ||
+        (tipoVista === 'cabeza_a_cabeza' && !cabezaAModoLista)) {
         const ordenado = [...candidatosMunicipio].sort((a, b) => b['VOTOS'] - a['VOTOS']);
         let html = `<h4>${municipioNombre}</h4>
                     <p><strong>Total votos válidos:</strong> ${candidatosMunicipio.reduce((s,f)=>s+f['VOTOS'],0).toLocaleString()}</p>
@@ -1787,17 +1788,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             const groupPartido   = document.getElementById('group-partido');
             const groupCandidato = document.getElementById('group-candidato');
             const groupCandidatoPartido = document.getElementById('group-candidato-partido');
+            const groupCabezaACabeza = document.getElementById('group-cabeza-a-cabeza');
             const groupHeatToggle = document.getElementById('group-heat-toggle');
 
             if (groupPartido)   groupPartido.style.display   = 'none';
             if (groupCandidato) groupCandidato.style.display = 'none';
             if (groupCandidatoPartido) groupCandidatoPartido.style.display = 'none';
+            if (groupCabezaACabeza) groupCabezaACabeza.style.display = 'none';
             if (groupHeatToggle) groupHeatToggle.style.display = (modo === 'partido' || modo === 'calor') ? 'block' : 'none';
             // Cambiar de modo (incluso re-entrar a "Candidato por Partido")
             // vuelve a empezar sin candidato resaltado.
             candidatoGanadorFiltro = null;
             const cxpChip = document.getElementById('cxp-candidato-chip');
             if (cxpChip) cxpChip.style.display = 'none';
+            // Mismo criterio para "Cabeza a cabeza": reentrar limpia la selección.
+            cabezaAElegidos = [];
 
             if (modo === 'ganadores' || modo === 'ganador') {
                 if (selectVista) selectVista.value = 'candidato_ganador';
@@ -1842,6 +1847,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (groupPartido) groupPartido.style.display = 'flex';
                 _poblarDropdownPartido();
                 if (typeof actualizarLeyenda === 'function') actualizarLeyenda('partido_desviacion');
+
+            } else if (modo === 'cabeza_a_cabeza') {
+                if (selectVista) selectVista.value = 'cabeza_a_cabeza';
+                if (groupCabezaACabeza) groupCabezaACabeza.style.display = 'flex';
+                if (typeof _renderChipsCabezaACabeza === 'function') _renderChipsCabezaACabeza();
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('cabeza_a_cabeza');
             }
         });
     });
@@ -2052,6 +2064,114 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
     _inicializarBusquedaCandidatoGanador();
+
+    // Buscador + chips para "Cabeza a cabeza": generaliza el chip único de
+    // _inicializarBusquedaCandidatoGanador a una lista acumulable de hasta
+    // MAX_CABEZA_A_CABEZA candidatos o listas, coloreando el mapa según cuál
+    // de los elegidos ganó en cada municipio, ignorando al resto.
+    const MAX_CABEZA_A_CABEZA = 4;
+
+    function _renderChipsCabezaACabeza() {
+        const cont = document.getElementById('cabeza-a-chips');
+        if (!cont) return;
+        if (!cabezaAElegidos.length) {
+            cont.innerHTML = `<p class="obs-multichip-hint">Busca y elige hasta ${MAX_CABEZA_A_CABEZA} ${cabezaAModoLista ? 'listas/partidos' : 'candidatos'}.</p>`;
+            return;
+        }
+        cont.innerHTML = cabezaAElegidos.map((nombre, i) => `
+            <div class="obs-multichip">
+                <span class="obs-multichip__dot" style="background:${PALETA_CABEZA_A_CABEZA[i]}"></span>
+                <span class="obs-multichip__label">${nombre}</span>
+                <button type="button" class="obs-multichip__remove" data-idx="${i}" aria-label="Quitar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        `).join('');
+        cont.querySelectorAll('.obs-multichip__remove').forEach(btn => {
+            btn.addEventListener('click', () => {
+                cabezaAElegidos.splice(Number(btn.dataset.idx), 1);
+                _renderChipsCabezaACabeza();
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('cabeza_a_cabeza');
+            });
+        });
+    }
+
+    function _inicializarBusquedaCabezaACabeza() {
+        const input = document.getElementById('cabeza-a-search');
+        const autocomplete = document.getElementById('cabeza-a-autocomplete');
+        const searchWrap = document.getElementById('cabeza-a-search-wrap');
+        const btnCandidatos = document.getElementById('cabeza-a-tipo-candidatos');
+        const btnListas = document.getElementById('cabeza-a-tipo-listas');
+        if (!input || !autocomplete) return;
+
+        function actualizarPlaceholder() {
+            input.placeholder = cabezaAModoLista ? 'Buscar lista/partido…' : 'Buscar candidato…';
+        }
+
+        [btnCandidatos, btnListas].forEach(btn => {
+            btn?.addEventListener('click', () => {
+                const esLista = btn.dataset.tipo === 'listas';
+                if (esLista === cabezaAModoLista) return;
+                cabezaAModoLista = esLista;
+                cabezaAElegidos = [];
+                btnCandidatos.classList.toggle('active', !esLista);
+                btnListas.classList.toggle('active', esLista);
+                actualizarPlaceholder();
+                input.value = '';
+                autocomplete.innerHTML = '';
+                autocomplete.style.display = 'none';
+                _renderChipsCabezaACabeza();
+                if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                if (typeof actualizarLeyenda === 'function') actualizarLeyenda('cabeza_a_cabeza');
+            });
+        });
+
+        input.addEventListener('input', () => {
+            autocomplete.innerHTML = '';
+            if (cabezaAElegidos.length >= MAX_CABEZA_A_CABEZA) {
+                autocomplete.innerHTML = `<div class="actor-autocomplete__item" style="opacity:.6;cursor:default;">Máximo ${MAX_CABEZA_A_CABEZA} alcanzado — quita uno para agregar otro</div>`;
+                autocomplete.style.display = 'block';
+                return;
+            }
+            const q = input.value.trim();
+            if (q.length < 2) { autocomplete.style.display = 'none'; return; }
+            const qNorm = normalizarNombre(q);
+            let nombres;
+            if (cabezaAModoLista) {
+                const excluir = ['CANDIDATOS TOTALES','VOTOS EN BLANCO','VOTOS NO MARCADOS','VOTOS NULOS'];
+                nombres = [...new Set((currentPartidoData || []).map(r => r['PARNOMBRE']))]
+                    .filter(n => n && !excluir.includes(n) && normalizarNombre(n).includes(qNorm));
+            } else {
+                nombres = [...new Set((currentCandidatoData || []).map(r => r['CANNOMBRE']))]
+                    .filter(n => normalizarNombre(n).includes(qNorm));
+            }
+            nombres = nombres.filter(n => !cabezaAElegidos.includes(n)).sort((a, b) => a.localeCompare(b)).slice(0, 8);
+            if (!nombres.length) { autocomplete.style.display = 'none'; return; }
+            autocomplete.style.display = 'block';
+            nombres.forEach(nombre => {
+                const item = document.createElement('div');
+                item.className = 'actor-autocomplete__item';
+                item.textContent = nombre;
+                item.addEventListener('click', () => {
+                    if (cabezaAElegidos.length >= MAX_CABEZA_A_CABEZA) return;
+                    cabezaAElegidos.push(nombre);
+                    input.value = '';
+                    autocomplete.innerHTML = '';
+                    autocomplete.style.display = 'none';
+                    _renderChipsCabezaACabeza();
+                    if (typeof actualizarMapaSimple === 'function') actualizarMapaSimple();
+                    if (typeof actualizarLeyenda === 'function') actualizarLeyenda('cabeza_a_cabeza');
+                });
+                autocomplete.appendChild(item);
+            });
+        });
+
+        document.addEventListener('click', e => {
+            if (searchWrap && !searchWrap.contains(e.target)) autocomplete.style.display = 'none';
+        });
+    }
+    _inicializarBusquedaCabezaACabeza();
 });
 
 // ==================== LEYENDA DEL MAPA ====================
@@ -2158,6 +2278,18 @@ function actualizarLeyenda(tipoVista) {
                     const clr = getColorCandidato(c);
                     return `<div class="ley-item"><span class="ley-dot" style="background:${clr}"></span><span class="ley-label">${c}</span></div>`;
                 }).join('')}
+            </div>`;
+
+    } else if (tipoVista === 'cabeza_a_cabeza') {
+        if (!cabezaAElegidos.length) {
+            el.innerHTML = `<div class="ley-note">Elige hasta 4 ${cabezaAModoLista ? 'listas/partidos' : 'candidatos'} para comparar</div>`;
+            return;
+        }
+        el.innerHTML = `
+            <div class="ley-title">CABEZA A CABEZA</div>
+            <div class="ley-partidos-list">
+                ${cabezaAElegidos.map((nombre, i) => `<div class="ley-item"><span class="ley-dot" style="background:${PALETA_CABEZA_A_CABEZA[i]}"></span><span class="ley-label">${nombre}</span></div>`).join('')}
+                <div class="ley-item"><span class="ley-dot" style="background:#cccccc"></span><span class="ley-label">Ninguno tuvo votos aquí</span></div>
             </div>`;
 
     } else {

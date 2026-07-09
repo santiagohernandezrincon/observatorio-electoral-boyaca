@@ -97,6 +97,9 @@
           <button class="obs-pill-modo" data-modo="partido">
             <i class="fas fa-flag"></i> Partido
           </button>
+          <button class="obs-pill-modo" data-modo="cabeza_a_cabeza">
+            <i class="fas fa-users"></i> Cabeza a cabeza
+          </button>
           <button class="obs-pill-modo" data-modo="calor">
             <i class="fas fa-fire"></i> Calor
           </button>
@@ -158,6 +161,25 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
+      </div>
+
+      <!-- Filtro cabeza a cabeza: hasta 4 candidatos o listas elegidos,
+           ignorando al resto en el mapa. -->
+      <div class="obs-section" id="group-cabeza-a-cabeza" style="display:none">
+        <div class="obs-section__label">CABEZA A CABEZA (MÁX. 4)</div>
+        <div class="obs-modo-grid">
+          <button type="button" class="obs-pill-escala active" id="cabeza-a-tipo-candidatos" data-tipo="candidatos">
+            <i class="fas fa-user"></i> Candidatos
+          </button>
+          <button type="button" class="obs-pill-escala" id="cabeza-a-tipo-listas" data-tipo="listas">
+            <i class="fas fa-flag"></i> Listas/Partidos
+          </button>
+        </div>
+        <div class="actor-search-wrap" id="cabeza-a-search-wrap" style="margin-top:8px">
+          <input type="text" class="actor-search" id="cabeza-a-search" placeholder="Buscar candidato…" autocomplete="off">
+          <div class="actor-autocomplete" id="cabeza-a-autocomplete"></div>
+        </div>
+        <div class="obs-multichip-list" id="cabeza-a-chips"></div>
       </div>
 
       <!-- ESCALA DEL MAPA -->
@@ -604,6 +626,7 @@
     <option value="margen">Margen</option>
     <option value="partido_desviacion">Desviación</option>
     <option value="candidato_ganador_por_partido">Candidato por Partido</option>
+    <option value="cabeza_a_cabeza">Cabeza a cabeza</option>
   </select>
 
   <!-- Selectors de partido/candidato — envueltos en sus contenedores originales (map.js los requiere) -->
