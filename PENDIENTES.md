@@ -493,7 +493,7 @@ en vez de con `procesar_raw.py` directamente.
   `ui.js`, `map.js`) — eliminados (sesión julio 2026), confirmado que
   no los cargaba `index.html`.
 
-## Vista Actor: nombres de partido colados en el índice de candidatos — parcialmente resuelto 2026-07-08
+## Vista Actor: nombres de partido colados en el índice de candidatos — resuelto 2026-07-08
 
 **El problema:** filas de "plancha" (voto de lista sin candidato
 específico, donde `CANNOMBRE` termina siendo una copia o casi-copia de
@@ -515,21 +515,20 @@ candidatos buscables. De paso resolvió sin querer un caso adicional no
 buscado (`"PARTIDO CENTRO DEMOCRATICO- PARTIDO POLITICO MIRA"`, una
 coalición completa colada como candidato).
 
-**Quedan 2 casos sin resolver** (el texto es genuinamente distinto, no
-solo formato, así que la comparación normalizada no los atrapa):
-- `PARTIDO CENTRO DEMOCRATICO` / `CENTRO DEMOCRATICO MANO FIRME CORAZON
-  GRANDE` (CANNOMBRE) vs. `Centro Democrático` (PARNOMBRE) — al primero
-  le sobra el prefijo "PARTIDO ", al segundo el sufijo "MANO FIRME
-  CORAZON GRANDE".
-- `Alianza Social Indigena` (CANNOMBRE) vs. `Alianza Social
-  Independiente` (PARNOMBRE) — palabra distinta ("Indigena" vs.
-  "Independiente"), no una variante de formato.
-
-**Por qué no se persiguió una solución más agresiva:** una heurística
-de similaridad de texto más permisiva reintroduciría el mismo riesgo de
-falsos positivos que ya vimos al generar `revision_nombres_duplicados.csv`
-(nombres comunes calzando por casualidad). La solución correcta para
-estos 2 es una lista de exclusión explícita (mismo patrón que el
-`excluir` ya existente para "VOTOS EN BLANCO" etc.), no una heurística —
-pendiente para cuando aparezca un motivo concreto para tocarlo
-(oportunista, no auditoría).
+**Los 2 casos residuales, resueltos también (sesión 2026-07-08
+posterior):** como se anticipó arriba, se resolvieron con una lista de
+exclusión explícita (mismo patrón que el `excluir` ya existente para
+"VOTOS EN BLANCO" etc.), no con una heurística de similaridad de texto
+(que habría reintroducido el mismo riesgo de falsos positivos visto al
+generar `revision_nombres_duplicados.csv`). Un barrido exhaustivo de
+todo el dataset (todas las variantes de CANNOMBRE que contienen "Centro
+Democratico"/"Alianza Social Indigena", con y sin tilde, cruzadas
+contra su PARNOMBRE real) encontró 7 variantes que necesitaban
+exclusión explícita, 2 más de las 2 originalmente documentadas aquí
+(había variantes con tilde que no se habían detectado):
+`PARTIDO CENTRO DEMOCRATICO`, `Partido Centro Democratico`,
+`PARTIDO CENTRO DEMOCRÁTICO`, `Partido Centro Democrático`,
+`Centro Democratico Mano Firme Corazon Grande`,
+`Partido Centro Democratico Mano Firme Corazon Grande`,
+`Alianza Social Indigena`. Verificado en vivo: ninguna es buscable en
+Vista Actor/Series. **Sin casos residuales pendientes.**
