@@ -785,7 +785,17 @@ async function construirIndiceActor() {
     if (actorIndiceListo || actorIndiceCargando) return;
     actorIndiceCargando = true;
     const excluir = ['CANDIDATOS TOTALES', 'VOTOS EN BLANCO', 'VOTOS NO MARCADOS', 'VOTOS NULOS',
-                     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL'];
+                     'VOTOS EN BLANCO TERRITORIAL', 'VOTOS NO MARCADOS TERRITORIAL', 'VOTOS NULOS TERRITORIAL',
+                     // Filas de "plancha" donde CANNOMBRE es un nombre de partido, no una
+                     // persona, y el texto difiere genuinamente de PARNOMBRE (no solo
+                     // mayúsculas/tildes/espacios) -- la comparación normalizada de abajo
+                     // no las atrapa. Confirmado 2026-07: se colaban como "candidatos"
+                     // buscables en Vista Actor/Series. Ver PENDIENTES.md.
+                     'PARTIDO CENTRO DEMOCRATICO', 'Partido Centro Democratico',
+                     'PARTIDO CENTRO DEMOCRÁTICO', 'Partido Centro Democrático',
+                     'Centro Democratico Mano Firme Corazon Grande',
+                     'Partido Centro Democratico Mano Firme Corazon Grande',
+                     'Alianza Social Indigena'];
     const tareas = [];
     Object.entries(DATOS_DISPONIBLES).forEach(([anio, corps]) => {
         corps.forEach(corp => {
