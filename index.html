@@ -323,6 +323,10 @@
 
         <!-- Panel izquierdo del actor -->
         <aside class="actor-panel">
+          <button class="actor-panel__toggle" title="Colapsar/expandir">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="actor-panel__content">
           <div class="actor-panel__header">
             <div class="actor-panel__title">ACTOR / CANDIDATO</div>
             <div class="actor-panel__sub">Boyacá 2010 – 2026</div>
@@ -356,6 +360,7 @@
             <i class="fas fa-search"></i>
             <p>Busca un candidato para ver su trayectoria electoral en Boyacá</p>
           </div>
+          </div><!-- /actor-panel__content -->
         </aside>
 
         <!-- Área principal: mapa + timeline -->
@@ -375,6 +380,10 @@
       <div class="actor-layout">
 
         <aside class="actor-panel">
+          <button class="actor-panel__toggle" title="Colapsar/expandir">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="actor-panel__content">
           <div class="actor-panel__header">
             <div class="actor-panel__title">ÍNDICE DE COMPETITIVIDAD</div>
             <div class="actor-panel__sub">Margen promedio 1°-2° lugar por municipio</div>
@@ -390,6 +399,7 @@
 
           <div class="actor-section-label">MENOS REÑIDOS</div>
           <div class="actor-table-wrap" id="comp-tabla-dominados"></div>
+          </div><!-- /actor-panel__content -->
         </aside>
 
         <div class="actor-main">
@@ -404,6 +414,10 @@
       <div class="actor-layout">
 
         <aside class="actor-panel">
+          <button class="actor-panel__toggle" title="Colapsar/expandir">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="actor-panel__content">
           <div class="actor-panel__header">
             <div class="actor-panel__title">COMPARAR ELECCIONES</div>
             <div class="actor-panel__sub">Municipios que cambiaron de partido ganador</div>
@@ -447,6 +461,7 @@
             </div>
             <div class="comparar-tabla__body" id="comparar-tabla-body"></div>
           </div>
+          </div><!-- /actor-panel__content -->
         </aside>
 
         <div class="actor-main">
@@ -471,6 +486,10 @@
 
         <!-- Panel izquierdo: armar Serie A (mecánica de Etapa 1 de Vista Actor, movida acá) -->
         <aside class="actor-panel">
+          <button class="actor-panel__toggle" title="Colapsar/expandir">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="actor-panel__content">
           <div class="actor-panel__header">
             <div class="actor-panel__title">TRAYECTORIAS PERSONALIZADAS</div>
             <div class="actor-panel__sub">Arma tu propia serie, aunque cambien persona o cargo</div>
@@ -522,6 +541,7 @@
               Todavía no has agregado ningún punto a la Serie B.
             </p>
           </div>
+          </div><!-- /actor-panel__content -->
         </aside>
 
         <!-- Panel derecho: lente + gráfico/tabla -->
@@ -701,6 +721,10 @@
         var vista = document.getElementById('obs-vista-' + view);
         if (vista) vista.classList.add('obs-vista--active');
         document.body.classList.remove('obs-mobile-panel-open'); // cierra el overlay móvil al cambiar de vista
+        // .obs-panel (año/cargo/modo color/escala) solo aplica a Vista Mapa --
+        // en las demás vistas cada una tiene sus propios controles.
+        var obsPanel = document.querySelector('.obs-panel');
+        if (obsPanel) obsPanel.classList.toggle('obs-panel--view-hidden', view !== 'mapa');
         if (view === 'mapa') {
           setTimeout(function() {
             if (typeof mapSimple !== 'undefined' && mapSimple) mapSimple.invalidateSize();

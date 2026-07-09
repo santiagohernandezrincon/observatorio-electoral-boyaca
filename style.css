@@ -1404,6 +1404,11 @@ html, body {
 .obs-panel--minimized { width: 32px !important; min-width: 32px !important; }
 .obs-panel--minimized .obs-panel__toggle { right: 3px; }
 
+/* .obs-panel (año/cargo/modo color/escala) solo aplica a Vista Mapa --
+   !important necesario para ganarle a la regla móvil
+   body.obs-mobile-panel-open .obs-panel (ver media query ≤660px). */
+.obs-panel.obs-panel--view-hidden { display: none !important; }
+
 .obs-panel__header {
   display: flex;
   align-items: center;
@@ -2131,9 +2136,43 @@ html, body {
   min-width: 320px;
   background: var(--navy);
   color: #fff;
-  padding: 1rem;
-  overflow-y: auto;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.actor-panel__content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+}
+/* Colapso -- mismo patrón que .obs-panel__toggle/.obs-panel--minimized,
+   botón más pequeño. .actor-panel__content aisla el scroll del contenido
+   para que el botón (hijo directo de .actor-panel) no se mueva con él.
+   Un solo bloque cubre las 4 vistas que comparten .actor-panel (Actor,
+   Competitividad, Comparar, Series). */
+.actor-panel__toggle {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 40px;
+  background: var(--navy);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  z-index: 6;
+  transition: var(--transition);
+}
+.actor-panel__toggle:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.actor-panel--minimized .actor-panel__content { display: none; }
+.actor-panel--minimized { width: 32px !important; min-width: 32px !important; }
+.actor-panel--minimized .actor-panel__toggle { right: 3px; }
 .actor-panel__header { margin-bottom: 0.9rem; }
 .actor-panel .obs-btn--primary {
   width: 100%;

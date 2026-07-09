@@ -1728,6 +1728,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 320);
     });
 
+    // Minimizar/expandir .actor-panel -- mismo patrón, un solo listener
+    // delegado cubre las 4 vistas que comparten la clase (Actor,
+    // Competitividad, Comparar, Series).
+    document.querySelectorAll('.actor-panel__toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const panel = btn.closest('.actor-panel');
+            const icon  = btn.querySelector('i');
+            if (!panel) return;
+            const min = panel.classList.toggle('actor-panel--minimized');
+            if (icon) icon.className = min ? 'fas fa-chevron-right' : 'fas fa-chevron-left';
+            setTimeout(() => {
+                if (typeof mapActor !== 'undefined' && mapActor) mapActor.invalidateSize();
+                if (typeof mapCompetitividad !== 'undefined' && mapCompetitividad) mapCompetitividad.invalidateSize();
+                if (typeof mapComparar !== 'undefined' && mapComparar) mapComparar.invalidateSize();
+            }, 320);
+        });
+    });
+
     // Tabs Datos / Gráfica en el drawer
     document.querySelectorAll('.obs-drawer__tab').forEach(tab => {
         tab.addEventListener('click', () => {
