@@ -84,6 +84,22 @@ function rgbToHsl(r, g, b) {
     return [Math.round(h * 360), Math.round(s * 100), Math.round(l * 100)];
 }
 
+// 16 combinaciones (4 rotaciones de matiz × 4 bandas de luminosidad),
+// perceptualmente distintas entre sí -- reemplaza la variación de solo
+// luminosidad (ver historial abajo), que con partidos de muchos
+// candidatos en un mismo municipio (ej. 17 en Concejo Tunja 2023,
+// Alianza Verde) producía colores idénticos o casi idénticos entre
+// personas distintas. ±42° se queda lejos del matiz de cualquier otro
+// partido (el más cercano a Alianza Verde, Partido de la U, está a 90°
+// de distancia), así que el candidato sigue leyéndose como "de este
+// partido", no se confunde con otro. Propuesta revisada y aprobada por
+// Santiago (ver PENDIENTES.md) con los 17 candidatos reales de ese caso.
+const VARIACION_CANDIDATO_HUE = [-42, -14, 14, 42];
+const VARIACION_CANDIDATO_LUM = [-22, -7, 8, 23];
+const VARIACION_CANDIDATO_PASOS = VARIACION_CANDIDATO_HUE.flatMap(
+    dh => VARIACION_CANDIDATO_LUM.map(dl => ({ dh, dl }))
+); // 16 pasos
+
 function variarColorBase(colorBase, index) {
     let hsl = colorBase;
     if (colorBase.startsWith('#')) {
@@ -98,16 +114,14 @@ function variarColorBase(colorBase, index) {
     let h = parseInt(match[1]);
     let s = parseInt(match[2]);
     let l = parseInt(match[3]);
-    const variation = (index % 20) - 10;
-    // Clamps absolutos (antes: s 50-85, l 45-70) asumían que el color
-    // base ya caía en ese rango. Colores de partido muy saturados/oscuros
-    // (ej. #0033A0, s=100% l=31%) quedan fuera de ambos y el clamp
-    // absorbía el 100% de la variación -- todos los candidatos de ese
-    // partido salían con el mismo color exacto. Variar solo luminosidad,
-    // relativa al valor base y con margen amplio, preserva el matiz/
-    // saturación del partido y sigue dando contraste real entre
-    // candidatos aunque el color de partido sea un extremo.
-    l = Math.min(88, Math.max(12, l + variation * 2));
+    const paso = VARIACION_CANDIDATO_PASOS[Math.abs(index) % VARIACION_CANDIDATO_PASOS.length];
+    h = (h + paso.dh + 360) % 360;
+    l = Math.min(82, Math.max(20, l + paso.dl));
+    // Compensa la percepción: los tonos más oscuros se ven más saturados
+    // de lo que son, los más claros se ven más lavados -- ajustar la
+    // saturación en dirección opuesta a la luminosidad mantiene el
+    // "peso" visual parejo entre las 4 bandas.
+    s = Math.min(95, Math.max(35, s + (paso.dl < 0 ? 12 : paso.dl > 10 ? -8 : 0)));
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
 
@@ -135,7 +149,7 @@ function getColorCandidato(nombreCandidato) {
     const colorBase = colorPartido(partido);
     let hash = 0;
     for (let i = 0; i < nombreUpper.length; i++) { hash = ((hash << 5) - hash) + nombreUpper.charCodeAt(i); hash |= 0; }
-    const colorFinal = variarColorBase(colorBase, Math.abs(hash % 30));
+    const colorFinal = variarColorBase(colorBase, hash);
     coloresCandidatos[nombreUpper] = colorFinal;
     return colorFinal;
 }
