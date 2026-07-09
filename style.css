@@ -2233,6 +2233,7 @@ html, body {
   color: #fff;
 }
 .series-lente .obs-ctrl-select:focus { border-color: var(--gold); }
+.series-lente .obs-ctrl-select option { background: #0d2240; color: #fff; }
 .series-viz-placeholder {
   flex: 1;
   display: flex;
