@@ -64,11 +64,34 @@ reemplazo de 24 CSV). Auditoría real contra los 39 combos año/cargo
   "Independiente" (`#9E9E9E`), Oicatá → "Coalición" (`#A4ADBA`).
   Verificado en vivo, sin excepciones.
 
-  **Villa de Leyva sigue sin tocar** — sin fuente que confirme el
-  movimiento, decisión explícita. Es hoy el único caso de "Partido sin
-  identificar" restante en el dataset.
+  **Villa de Leyva — RESUELTO 2026-07-08 (sesión posterior).** Fabián
+  Camilo Igua Robles, ganador con 2.820 votos, avalado por el
+  movimiento local "Marcamos La Diferencia" — confirmado con 2 fuentes
+  externas independientes (resultados de colombia.com y la separata
+  oficial de elecciones 2011 de la Registraduría, la misma fuente ya
+  usada para Tópaga). Aplicado a los 2 CSV de 2011 alcaldía + entrada
+  en `COLORES_PARTIDO`. De paso se encontró y corrigió un override
+  viejo y equivocado en `CANDIDATOS_PARTIDO`
+  (`'2011_alcalde_FABIAN CAMILO IGUA ROBLES': 'Movimiento Ciudadano'`,
+  de una sesión anterior a esta investigación) que sobreescribía el
+  texto crudo ya corregido del CSV — sin ese ajuste, el candidato
+  seguía mostrando "Movimiento Ciudadano" pese a la edición del CSV.
+  Verificado en vivo, sin excepciones.
+
   Solo `"INDEPENDIENTES"` (2, Concejo Nuevo Colón 2023) sigue siendo
   el caso genuinamente correcto de la nota original.
+
+  **Nuevo hallazgo, sin resolver — Nobsa (alcaldía 2011, `20110195`,
+  534 votos, candidato perdedor 4/5).** La auditoría original de
+  "Partido sin identificar" solo revisó a los ganadores; este caso
+  (Mario Alexander Monroy Gallo) quedó fuera de su alcance y solo
+  apareció al re-verificar el dataset completo por el string exacto
+  "Partido sin identificar" antes de cerrar esta sección. Búsqueda web
+  (4 intentos: nombre directo, separata de la Registraduría, listado de
+  candidatos de Scribd) sin resultado — es un candidato menor sin
+  cobertura de prensa encontrada. Queda pendiente para cuando aparezca
+  una fuente (no es prioritario: es un candidato perdedor, no altera
+  quién ganó ningún municipio).
 
 - **Divergencia Lista/Candidato en Alcaldía 2011 — RESUELTO/EXPLICADO
   2026-07-08 (cierre final).** Barrido completo de Alcaldía 2011 había
@@ -331,7 +354,7 @@ Tópaga/Cómbita/Tota/Oicatá) — sin pasar por ningún script. Verificado
 en vivo: "Ganador (candidato)" y "Lista ganadora" coinciden en Soatá
 2011, y `candidatos_partido.js` ya no está en contradicción con el CSV.
 
-## Consultas 2026: PARNOMBRE crudo es el nombre de la consulta, no el aval real — parcialmente resuelto 2026-07-08
+## Consultas 2026: PARNOMBRE crudo es el nombre de la consulta, no el aval real — resuelto 2026-07-08
 
 **El problema:** `votos_candidato_municipio_2026_consultas.csv` no tiene
 raw en `data/raw/` (se armó a mano en marzo 2026, antes de todo el
@@ -458,7 +481,7 @@ no reconoce `presidencia_1v`/`presidencia_2v` como `cargo_raw` (solo
 se procesó con un script aparte (`scripts/procesar_presidencia_2026.py`)
 en vez de con `procesar_raw.py` directamente.
 
-## Otros pendientes conocidos (de sesiones anteriores, sin resolver)
+## Otros ítems de sesiones anteriores — todos resueltos
 
 - **JAL y consultas** — corregido (sesión julio 2026): los CSV de
   2019/2023 (JAL) y 2026 (consultas) **ya existen y están procesados**

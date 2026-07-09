@@ -35,7 +35,7 @@ const CANDIDATOS_PARTIDO = {
     '2011_alcalde_EVER NINO CUERVO': 'Coalición',
     '2011_alcalde_EZEQUIEL GUERRA PARADA': 'Partido de la U',
     '2011_alcalde_FABIAN BULLA SANCHEZ': 'Cambio Radical',
-    '2011_alcalde_FABIAN CAMILO IGUA ROBLES': 'Movimiento Ciudadano',
+    '2011_alcalde_FABIAN CAMILO IGUA ROBLES': 'Marcamos La Diferencia',
     '2011_alcalde_FABIO ERNESTO HUERTAS LEGUIZAMON': 'Partido Conservador Colombiano',
     '2011_alcalde_FERNANDO FLOREZ ESPINOSA': 'Alianza Verde',
     '2011_alcalde_FERNANDO RUBIO LOPEZ': 'Partido de la U',

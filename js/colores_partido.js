@@ -64,6 +64,7 @@ const COLORES_PARTIDO = {
   'Coalición Para La Alcaldía de Tópaga': '#8D99AE',
   'Independiente':                  '#9E9E9E',
   'Coalición':                      '#A4ADBA',
+  'Marcamos La Diferencia':         '#527A7A',
   'Partido sin identificar':        '#9CA3AF',
   'Sin partido':                    '#9CA3AF',
   'Votos nulos':                    '#EAECEE',
