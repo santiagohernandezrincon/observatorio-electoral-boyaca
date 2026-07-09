@@ -24,6 +24,43 @@ function obsSolicitarPermisoSinMarca() {
     return false;
 }
 
+// html2canvas no compone bien las capas de Leaflet: el panel de tiles se
+// mueve con el transform de .leaflet-map-pane, pero el SVG de los polígonos
+// (overlayPane) tiene ADEMÁS su propio transform anidado (truco de Leaflet
+// para viewBox), y html2canvas 1.4.1 no aplica ambos transforms en conjunto
+// -- el resultado es que los polígonos salen desplazados de los tiles en
+// TODA exportación, con o sin pan/zoom. Antes de capturar, convertimos cada
+// transform anidado a left/top absolutos (posición real en pantalla via
+// getBoundingClientRect, que el navegador sí compone bien) y lo restauramos
+// después -- así html2canvas ya no tiene que interpretar el transform.
+function bakeLeafletTransforms(contenedor) {
+    const elementos = contenedor.querySelectorAll(
+        '.leaflet-pane[style*="transform"], .leaflet-pane [style*="transform"]'
+    );
+    const restaurar = [];
+    const contRect = contenedor.getBoundingClientRect();
+    elementos.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        restaurar.push({
+            el,
+            transform: el.style.transform,
+            position: el.style.position,
+            left: el.style.left,
+            top: el.style.top
+        });
+        el.style.transform = 'none';
+        el.style.position = 'absolute';
+        el.style.left = (rect.left - contRect.left) + 'px';
+        el.style.top = (rect.top - contRect.top) + 'px';
+    });
+    return () => restaurar.forEach(r => {
+        r.el.style.transform = r.transform;
+        r.el.style.position = r.position;
+        r.el.style.left = r.left;
+        r.el.style.top = r.top;
+    });
+}
+
 async function exportarComoImagen(selectorContenedor, nombreArchivoBase) {
     const contenedor = document.querySelector(selectorContenedor);
     if (!contenedor) { console.error('exportarComoImagen: no se encontró', selectorContenedor); return; }
@@ -35,6 +72,7 @@ async function exportarComoImagen(selectorContenedor, nombreArchivoBase) {
     const sinMarca = obsSolicitarPermisoSinMarca();
 
     let capturado;
+    const restaurarTransforms = bakeLeafletTransforms(contenedor);
     try {
         capturado = await html2canvas(contenedor, {
             useCORS: true,
@@ -48,6 +86,8 @@ async function exportarComoImagen(selectorContenedor, nombreArchivoBase) {
         console.error('Error exportando el mapa:', e);
         alert('No se pudo generar la imagen. Revisa la consola para más detalle.');
         return;
+    } finally {
+        restaurarTransforms();
     }
 
     // El canvas que devuelve html2canvas no admite dibujado posterior en esta
