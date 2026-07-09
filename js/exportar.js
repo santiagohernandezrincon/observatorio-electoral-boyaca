@@ -8,6 +8,7 @@
 // nada sensible, solo evita que un visitante casual quite la marca de agua.
 const OBS_EXPORT_CLAVE = 'boyaca2026';
 const OBS_EXPORT_LOCALSTORAGE_KEY = 'obsExportSinMarca';
+const OBS_HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
 
 function obsTienePermisoSinMarca() {
     return localStorage.getItem(OBS_EXPORT_LOCALSTORAGE_KEY) === 'true';
@@ -64,7 +65,10 @@ function bakeLeafletTransforms(contenedor) {
 async function exportarComoImagen(selectorContenedor, nombreArchivoBase) {
     const contenedor = document.querySelector(selectorContenedor);
     if (!contenedor) { console.error('exportarComoImagen: no se encontró', selectorContenedor); return; }
-    if (typeof html2canvas === 'undefined') {
+    try {
+        await cargarScriptSiNecesario(OBS_HTML2CANVAS_URL, () => typeof html2canvas !== 'undefined');
+    } catch (e) {
+        console.error('Error cargando html2canvas:', e);
         alert('No se pudo cargar la librería de exportación (revisa tu conexión) — intenta de nuevo.');
         return;
     }

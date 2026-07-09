@@ -96,6 +96,25 @@ const LABELS_CORPORACION = {
     consultas:      'Consultas'
 };
 
+// ==================== CARGA DIFERIDA DE LIBRERÍAS PESADAS ====================
+// Chart.js (~200KB) y html2canvas (~195KB) solo hacen falta si el usuario
+// abre una gráfica o exporta un mapa -- no en la carga inicial (Vista Mapa
+// no las usa). Se cargan bajo demanda, una sola vez, la primera vez que se
+// necesitan.
+const _obsScriptsCargados = {};
+function cargarScriptSiNecesario(url, yaCargado) {
+    if (yaCargado()) return Promise.resolve();
+    if (_obsScriptsCargados[url]) return _obsScriptsCargados[url];
+    _obsScriptsCargados[url] = new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = resolve;
+        script.onerror = () => { delete _obsScriptsCargados[url]; reject(new Error(`No se pudo cargar ${url}`)); };
+        document.head.appendChild(script);
+    });
+    return _obsScriptsCargados[url];
+}
+
 // ==================== GLOBALES ====================
 let mapSimple;
 let currentLayerSimple;

@@ -1,6 +1,12 @@
 // ==================== GRÁFICO MUNICIPIO / PARTIDO / CANDIDATO ====================
-function dibujarGrafico(datos, titulo, esCandidato) {
+const OBS_CHARTJS_URL = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js';
+function cargarChartJsSiNecesario() {
+    return cargarScriptSiNecesario(OBS_CHARTJS_URL, () => typeof Chart !== 'undefined');
+}
+
+async function dibujarGrafico(datos, titulo, esCandidato) {
     if (!datos || datos.length === 0) return;
+    await cargarChartJsSiNecesario();
     // Pequeño delay: deja que el browser haga reflow del panel antes de que
     // Chart.js mida el canvas. Sin esto el canvas queda 0×0 si el panel
     // acaba de hacerse visible.
@@ -68,6 +74,7 @@ function _renderGrafico(datos, titulo, esCandidato) {
 
 // ==================== TRAYECTORIA DE PARTIDO EN EL TIEMPO ====================
 async function actualizarTrayectoriaPartido() {
+    await cargarChartJsSiNecesario();
     const municipio  = document.getElementById('municipio-selector-trayectoria').value;
     const cargo      = document.getElementById('tray-cargo').value;
     const partido    = document.getElementById('tray-partido').value;
@@ -211,6 +218,7 @@ async function actualizarTrayectoriaPartido() {
 
 // ==================== GRÁFICO TRAYECTORIA MUNICIPAL (CANDIDATOS) ====================
 async function actualizarGraficoComparativoMunicipio() {
+    await cargarChartJsSiNecesario();
     const municipio = document.getElementById('municipio-selector-trayectoria').value;
     if (!municipio) { alert('Seleccione un municipio'); return; }
 
