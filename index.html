@@ -353,6 +353,11 @@
 
             <div class="actor-section-label">TOP MUNICIPIOS</div>
             <div class="actor-table-wrap" id="actor-table"></div>
+
+            <div class="actor-timeline" id="actor-timeline-wrap" style="display:none">
+              <div class="actor-timeline__label">VOTOS TOTALES POR CICLO</div>
+              <canvas id="actor-timeline-chart" height="90"></canvas>
+            </div>
           </div>
 
           <!-- Estado vacío -->
@@ -363,13 +368,9 @@
           </div><!-- /actor-panel__content -->
         </aside>
 
-        <!-- Área principal: mapa + timeline -->
+        <!-- Área principal: mapa -->
         <div class="actor-main">
           <div id="map-actor" class="actor-map"></div>
-          <div class="actor-timeline" id="actor-timeline-wrap" style="display:none">
-            <div class="actor-timeline__label">VOTOS TOTALES POR CICLO</div>
-            <canvas id="actor-timeline-chart" height="90"></canvas>
-          </div>
         </div>
 
       </div>
