@@ -2354,8 +2354,10 @@ html, body {
 }
 .serie-badge--b { background: var(--gold-light); color: var(--gold); }
 /* Vive dentro de .actor-panel__content (no en .actor-main compitiendo con
-   el mapa) -- mismo presupuesto de altura que #series-chart en Vista
-   Series, que ya funciona bien sin amontonarse. */
+   el mapa). Barras horizontales (indexAxis:'y', un ciclo por fila) --
+   el ancho angosto del panel aplastaba la línea de tendencia original;
+   con barras, más ciclos solo suman filas, absorbidas por scroll propio
+   en vez de aplastar todo para que quepa. */
 .actor-timeline {
   margin-top: 0.9rem;
   padding-top: 0.8rem;
@@ -2370,7 +2372,13 @@ html, body {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-#actor-timeline-chart { max-height: 280px; }
+/* max-height fijo + scroll propio -- #actor-timeline-chart-wrap recibe su
+   alto real en px vía JS (proporcional al número de ciclos), así que este
+   contenedor recorta y scrollea en vez de estirar el resto del panel. */
+.actor-timeline__scroll {
+  max-height: 280px;
+  overflow-y: auto;
+}
 
 .actor-info { margin-top: 0.9rem; }
 .actor-info__nombre {

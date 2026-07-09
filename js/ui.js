@@ -903,44 +903,66 @@ function seleccionarCandidatoActor(nombreCanonico) {
   renderTimelineActor(listaCiclos);
 }
 
+// Etiquetas cortas solo para este gráfico -- el eje Y de la barra horizontal
+// es angosto (comparte ancho con las barras), y los nombres completos de
+// LABELS_CORPORACION ("Cámara de Representantes", "Concejo Municipal") se
+// recortaban al medirse contra el panel de 320px.
+const LABELS_CORPORACION_TIMELINE = {
+  alcalde: 'Alcaldía',
+  asamblea: 'Asamblea',
+  concejo: 'Concejo',
+  gobernador: 'Gobernación',
+  jal: 'JAL',
+  camara: 'Cámara',
+  senado: 'Senado',
+  presidencia_1v: 'Pres. 1ª V.',
+  presidencia_2v: 'Pres. 2ª V.'
+};
+
 function renderTimelineActor(listaCiclos) {
   const wrap = document.getElementById('actor-timeline-wrap');
   wrap.style.display = 'block';
-  const ordenCronologico = [...listaCiclos].sort((a, b) => a.anio - b.anio || a.corp.localeCompare(b.corp));
+  // Más reciente arriba, igual orden que las tarjetas de "apariciones
+  // electorales" justo encima en el mismo panel.
+  const ordenado = [...listaCiclos].sort((a, b) => b.anio - a.anio || a.corp.localeCompare(b.corp));
 
   // Delay: deja que el browser haga reflow del panel antes de que Chart.js
   // mida el canvas (si no, queda 0×0 porque el wrap recién se hizo visible).
   setTimeout(() => {
     const canvasEl = document.getElementById('actor-timeline-chart');
-    if (!canvasEl) return;
+    const wrapEl = document.getElementById('actor-timeline-chart-wrap');
+    if (!canvasEl || !wrapEl) return;
     const ctx = canvasEl.getContext('2d');
     if (actorTimelineChart) actorTimelineChart.destroy();
 
-    const labels = ordenCronologico.map(c => `${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}`);
-    const valores = ordenCronologico.map(c => c.votos);
-    const colores = ordenCronologico.map(c => colorPartido(c.partido));
-    const colorLinea = colorPartido(ordenCronologico[ordenCronologico.length - 1].partido);
+    const labels = ordenado.map(c => `${LABELS_CORPORACION_TIMELINE[c.corp] || LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}`);
+    const valores = ordenado.map(c => c.votos);
+    const colores = ordenado.map(c => colorPartido(c.partido));
 
     const darkTick = { color: 'rgba(255,255,255,0.55)', font: { size: 10 } };
     const darkGrid = { color: 'rgba(255,255,255,0.07)' };
 
+    // Alto real proporcional al número de ciclos -- con muchos (8-10+),
+    // .actor-timeline__scroll (max-height fijo) recorta y scrollea en vez
+    // de aplastar todas las filas para que quepan en el mismo espacio.
+    const ROW_HEIGHT = 34;
+    const MIN_HEIGHT = 140;
+    wrapEl.style.height = `${Math.max(MIN_HEIGHT, ordenado.length * ROW_HEIGHT)}px`;
+
     actorTimelineChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: {
         labels,
         datasets: [{
           data: valores,
-          borderColor: colorLinea,
-          backgroundColor: colorLinea + '33',
-          pointBackgroundColor: colores,
-          pointRadius: 5,
-          pointHoverRadius: 7,
-          borderWidth: 2,
-          tension: 0.3,
-          fill: true
+          backgroundColor: colores,
+          borderRadius: 3,
+          barPercentage: 0.7,
+          categoryPercentage: 0.8
         }]
       },
       options: {
+        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
@@ -948,8 +970,8 @@ function renderTimelineActor(listaCiclos) {
           tooltip: { callbacks: { label: ctx => `${ctx.raw.toLocaleString('es-CO')} votos` } }
         },
         scales: {
-          x: { ticks: darkTick, grid: { display: false } },
-          y: { beginAtZero: true, ticks: { ...darkTick, callback: v => v.toLocaleString('es-CO') }, grid: darkGrid }
+          x: { beginAtZero: true, ticks: { ...darkTick, callback: v => v.toLocaleString('es-CO') }, grid: darkGrid },
+          y: { ticks: darkTick, grid: { display: false } }
         }
       }
     });
