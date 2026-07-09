@@ -411,17 +411,24 @@ let actorCicloActivo = null;     // null = agregado; o `${anio}_${corp}`
 // reutiliza el buscador/índice de Actor (construirIndiceActor, claveIdentidad)
 // pero con su propio estado de candidato seleccionado (serieCandidatoActual),
 // independiente de actorCandidatoActual.
-let serieA = { nombre: '', puntos: [] }; // punto: { candidato, candidatoExacto, anio, corp, partido, votos }
+// Serie B es opcional (null hasta que el usuario pulsa "Agregar Serie B") --
+// misma mecánica de armado que Serie A, genérica por letra ('a'/'b') para no
+// duplicar la lógica de agregar/quitar/reordenar/pintar.
+let series = {
+  a: { nombre: '', puntos: [] }, // punto: { candidato, candidatoExacto, anio, corp, partido, votos }
+  b: null
+};
 let serieCandidatoActual = null; // { nombre, filas, listaCiclos } -- análogo a actorCandidatoActual
 
-function agregarPuntoASerieA(cicloKey) {
-  if (!serieCandidatoActual) return;
+function agregarPuntoASerie(letra, cicloKey) {
+  const serie = series[letra];
+  if (!serie || !serieCandidatoActual) return;
   const ciclo = serieCandidatoActual.listaCiclos.find(c => c.key === cicloKey);
   if (!ciclo) return;
-  const yaExiste = serieA.puntos.some(p =>
+  const yaExiste = serie.puntos.some(p =>
     p.candidato === serieCandidatoActual.nombre && p.anio === ciclo.anio && p.corp === ciclo.corp);
-  if (yaExiste) return; // mismo candidato+año+cargo ya está en la serie
-  serieA.puntos.push({
+  if (yaExiste) return; // mismo candidato+año+cargo ya está en esta serie
+  serie.puntos.push({
     candidato: serieCandidatoActual.nombre,   // forma normalizada/canónica -- para mostrar
     candidatoExacto: ciclo.candidatoExacto,   // forma EXACTA del CSV -- para obtenerVotosCandidatoMunicipio/Departamento
     anio: ciclo.anio,
@@ -429,29 +436,34 @@ function agregarPuntoASerieA(cicloKey) {
     partido: ciclo.partido,
     votos: ciclo.votos
   });
-  renderSerieA();
+  renderSerie(letra);
 }
 
-function quitarPuntoDeSerieA(idx) {
-  serieA.puntos.splice(idx, 1);
-  renderSerieA();
+function quitarPuntoDeSerie(letra, idx) {
+  const serie = series[letra];
+  if (!serie) return;
+  serie.puntos.splice(idx, 1);
+  renderSerie(letra);
 }
 
-function moverPuntoSerieA(idx, delta) {
+function moverPuntoSerie(letra, idx, delta) {
+  const serie = series[letra];
+  if (!serie) return;
   const nuevoIdx = idx + delta;
-  if (nuevoIdx < 0 || nuevoIdx >= serieA.puntos.length) return;
-  const tmp = serieA.puntos[idx];
-  serieA.puntos[idx] = serieA.puntos[nuevoIdx];
-  serieA.puntos[nuevoIdx] = tmp;
-  renderSerieA();
+  if (nuevoIdx < 0 || nuevoIdx >= serie.puntos.length) return;
+  const tmp = serie.puntos[idx];
+  serie.puntos[idx] = serie.puntos[nuevoIdx];
+  serie.puntos[nuevoIdx] = tmp;
+  renderSerie(letra);
 }
 
-function renderSerieA() {
-  const cont = document.getElementById('serie-a-lista');
-  const empty = document.getElementById('serie-a-empty');
-  if (!cont) return;
+function renderSerie(letra) {
+  const serie = series[letra];
+  const cont = document.getElementById(`serie-${letra}-lista`);
+  const empty = document.getElementById(`serie-${letra}-empty`);
+  if (!serie || !cont) return;
 
-  if (!serieA.puntos.length) {
+  if (!serie.puntos.length) {
     cont.innerHTML = '';
     if (empty) empty.style.display = 'block';
     renderVistaSeries();
@@ -459,7 +471,7 @@ function renderSerieA() {
   }
   if (empty) empty.style.display = 'none';
 
-  cont.innerHTML = serieA.puntos.map((p, i) => `
+  cont.innerHTML = serie.puntos.map((p, i) => `
     <div class="serie-punto">
       <div class="serie-punto__dot" style="background:${colorPartido(p.partido)}"></div>
       <div class="serie-punto__info">
@@ -467,18 +479,18 @@ function renderSerieA() {
         <div class="serie-punto__meta">${LABELS_CORPORACION[p.corp] || p.corp} · ${p.anio} · ${p.partido}</div>
       </div>
       <div class="serie-punto__acciones">
-        <button data-mover="-1" data-idx="${i}" ${i === 0 ? 'disabled' : ''} title="Subir">↑</button>
-        <button data-mover="1" data-idx="${i}" ${i === serieA.puntos.length - 1 ? 'disabled' : ''} title="Bajar">↓</button>
-        <button data-quitar="${i}" title="Quitar de la serie">✕</button>
+        <button data-mover="-1" data-idx="${i}" data-serie="${letra}" ${i === 0 ? 'disabled' : ''} title="Subir">↑</button>
+        <button data-mover="1" data-idx="${i}" data-serie="${letra}" ${i === serie.puntos.length - 1 ? 'disabled' : ''} title="Bajar">↓</button>
+        <button data-quitar="${i}" data-serie="${letra}" title="Quitar de la serie">✕</button>
       </div>
     </div>
   `).join('');
 
   cont.querySelectorAll('[data-quitar]').forEach(btn => {
-    btn.addEventListener('click', () => quitarPuntoDeSerieA(Number(btn.dataset.quitar)));
+    btn.addEventListener('click', () => quitarPuntoDeSerie(btn.dataset.serie, Number(btn.dataset.quitar)));
   });
   cont.querySelectorAll('[data-mover]').forEach(btn => {
-    btn.addEventListener('click', () => moverPuntoSerieA(Number(btn.dataset.idx), Number(btn.dataset.mover)));
+    btn.addEventListener('click', () => moverPuntoSerie(btn.dataset.serie, Number(btn.dataset.idx), Number(btn.dataset.mover)));
   });
 
   renderVistaSeries();
@@ -487,7 +499,39 @@ function renderSerieA() {
 function inicializarSerieA() {
   const input = document.getElementById('serie-a-nombre');
   if (!input) return;
-  input.addEventListener('input', () => { serieA.nombre = input.value; });
+  input.addEventListener('input', () => { series.a.nombre = input.value; renderVistaSeries(); });
+}
+
+function crearSerieB() {
+  if (series.b) return;
+  series.b = { nombre: '', puntos: [] };
+  const btnAgregar = document.getElementById('btn-agregar-serie-b');
+  const panel = document.getElementById('serie-b-panel');
+  if (btnAgregar) btnAgregar.style.display = 'none';
+  if (panel) panel.style.display = 'block';
+  if (serieCandidatoActual) renderCiclosParaSerie(); // repinta tarjetas: ahora con botón "+ B"
+  renderVistaSeries();
+}
+
+function quitarSerieB() {
+  series.b = null;
+  const btnAgregar = document.getElementById('btn-agregar-serie-b');
+  const panel = document.getElementById('serie-b-panel');
+  if (btnAgregar) btnAgregar.style.display = 'block';
+  if (panel) panel.style.display = 'none';
+  if (serieCandidatoActual) renderCiclosParaSerie();
+  renderVistaSeries();
+}
+
+function inicializarSerieB() {
+  const input = document.getElementById('serie-b-nombre');
+  if (input) input.addEventListener('input', () => {
+    if (series.b) { series.b.nombre = input.value; renderVistaSeries(); }
+  });
+  const btnAgregar = document.getElementById('btn-agregar-serie-b');
+  if (btnAgregar) btnAgregar.addEventListener('click', crearSerieB);
+  const btnQuitar = document.getElementById('btn-quitar-serie-b');
+  if (btnQuitar) btnQuitar.addEventListener('click', quitarSerieB);
 }
 
 // ── Buscador de candidato para la Vista Series (independiente del de Actor,
@@ -577,11 +621,14 @@ function renderCiclosParaSerie() {
         <div class="actor-cycle-card__title">${LABELS_CORPORACION[c.corp] || c.corp} · ${c.anio}</div>
         <div class="actor-cycle-card__votos">${c.votos.toLocaleString('es-CO')} votos</div>
       </div>
-      <button class="actor-cycle-card__add" data-add-key="${c.key}" title="Agregar a Serie A">+ Serie A</button>
+      <div class="actor-cycle-card__acciones">
+        <button class="actor-cycle-card__add" data-add-serie="a" data-add-key="${c.key}" title="Agregar a Serie A">+ A</button>
+        ${series.b ? `<button class="actor-cycle-card__add actor-cycle-card__add--b" data-add-serie="b" data-add-key="${c.key}" title="Agregar a Serie B">+ B</button>` : ''}
+      </div>
     </div>
   `).join('');
   cont.querySelectorAll('.actor-cycle-card__add').forEach(btn => {
-    btn.addEventListener('click', () => agregarPuntoASerieA(btn.dataset.addKey));
+    btn.addEventListener('click', () => agregarPuntoASerie(btn.dataset.addSerie, btn.dataset.addKey));
   });
 }
 
@@ -657,12 +704,63 @@ async function obtenerValorPuntoEnLente(punto) {
 let serieAChart = null;
 let renderVistaSeriesToken = 0;
 
+// Serie A: círculo, línea sólida. Serie B: triángulo, línea punteada -- dos
+// señales no-color (forma + trazo) para distinguir a qué serie pertenece
+// cada punto, además del color propio del partido de ese punto.
+const ESTILO_SERIE = {
+  a: { pointStyle: 'circle', dash: [], radio: 6 },
+  b: { pointStyle: 'triangle', dash: [6, 4], radio: 7 }
+};
+
+function construirDatasetSerie(letra, puntos, valores, longitud) {
+  const datos = Array.from({ length: longitud }, (_, i) =>
+    i >= puntos.length || valores[i].sinDatos ? null : valores[i].valor
+  );
+  const colores = Array.from({ length: longitud }, (_, i) =>
+    i < puntos.length ? colorPartido(puntos[i].partido) : 'transparent'
+  );
+  const estilo = ESTILO_SERIE[letra];
+  return {
+    data: datos,
+    borderColor: 'rgba(255,255,255,0.35)',
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    pointBackgroundColor: colores,
+    pointBorderColor: colores,
+    pointStyle: estilo.pointStyle,
+    pointRadius: estilo.radio,
+    pointHoverRadius: estilo.radio + 2,
+    borderWidth: 2,
+    borderDash: estilo.dash,
+    tension: 0.2,
+    fill: false, // con 2 series superpuestas, rellenar área ensucia la lectura
+    spanGaps: false
+  };
+}
+
+function renderLeyendaSeries() {
+  const cont = document.getElementById('series-legend');
+  if (!cont) return;
+  if (!series.b) {
+    // una sola serie no necesita leyenda -- el título del panel ya la nombra
+    cont.innerHTML = '';
+    cont.style.display = 'none';
+    return;
+  }
+  cont.style.display = 'flex';
+  cont.innerHTML = `
+    <span class="series-legend__item"><span class="series-legend__marker series-legend__marker--circle"></span>${series.a.nombre || 'Serie A'}</span>
+    <span class="series-legend__item"><span class="series-legend__marker series-legend__marker--triangle"></span>${series.b.nombre || 'Serie B'}</span>
+  `;
+}
+
 async function renderVistaSeries() {
   const placeholder = document.getElementById('series-viz-placeholder');
   const content = document.getElementById('series-viz-content');
   if (!placeholder || !content) return;
 
-  if (!serieA.puntos.length) {
+  const puntosA = series.a.puntos;
+  const puntosB = series.b ? series.b.puntos : [];
+  if (!puntosA.length && !puntosB.length) {
     placeholder.style.display = 'flex';
     content.style.display = 'none';
     if (serieAChart) { serieAChart.destroy(); serieAChart = null; }
@@ -672,12 +770,17 @@ async function renderVistaSeries() {
   content.style.display = 'block';
 
   const miToken = ++renderVistaSeriesToken;
-  const valores = await Promise.all(serieA.puntos.map(p => obtenerValorPuntoEnLente(p)));
+  const [valoresA, valoresB] = await Promise.all([
+    Promise.all(puntosA.map(p => obtenerValorPuntoEnLente(p))),
+    Promise.all(puntosB.map(p => obtenerValorPuntoEnLente(p)))
+  ]);
   if (miToken !== renderVistaSeriesToken) return; // llegó una actualización más reciente mientras esperábamos
 
-  const labels = serieA.puntos.map(p => `${LABELS_CORPORACION[p.corp] || p.corp} · ${p.anio}`);
-  const colores = serieA.puntos.map(p => colorPartido(p.partido));
-  const datosGrafico = valores.map(v => v.sinDatos ? null : v.valor); // null = hueco en la línea (Chart.js)
+  const longitud = Math.max(puntosA.length, puntosB.length);
+  const labels = Array.from({ length: longitud }, (_, i) => `Punto ${i + 1}`);
+
+  const datasets = [construirDatasetSerie('a', puntosA, valoresA, longitud)];
+  if (series.b) datasets.push(construirDatasetSerie('b', puntosB, valoresB, longitud));
 
   const darkTick = { color: 'rgba(255,255,255,0.55)', font: { size: 10 } };
   const darkGrid = { color: 'rgba(255,255,255,0.07)' };
@@ -687,35 +790,29 @@ async function renderVistaSeries() {
     if (serieAChart) serieAChart.destroy();
     serieAChart = new Chart(canvasEl.getContext('2d'), {
       type: 'line',
-      data: {
-        labels,
-        datasets: [{
-          data: datosGrafico,
-          borderColor: 'rgba(255,255,255,0.35)',
-          backgroundColor: 'rgba(255,255,255,0.05)',
-          pointBackgroundColor: colores,
-          pointBorderColor: colores,
-          pointRadius: 6,
-          pointHoverRadius: 8,
-          borderWidth: 2,
-          tension: 0.2,
-          fill: true,
-          spanGaps: false
-        }]
-      },
+      data: { labels, datasets },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { display: false },
+          legend: { display: false }, // leyenda propia en HTML (series-legend) -- ver renderLeyendaSeries
           tooltip: {
             callbacks: {
-              title: ctx => serieA.puntos[ctx[0].dataIndex].candidato,
+              title: ctx => {
+                const puntos = ctx[0].datasetIndex === 0 ? puntosA : puntosB;
+                const p = puntos[ctx[0].dataIndex];
+                return p ? p.candidato : '';
+              },
               label: ctx => {
-                const p = serieA.puntos[ctx.dataIndex];
+                const esA = ctx.datasetIndex === 0;
+                const puntos = esA ? puntosA : puntosB;
+                const valores = esA ? valoresA : valoresB;
+                const p = puntos[ctx.dataIndex];
+                if (!p) return '';
                 const v = valores[ctx.dataIndex];
-                if (v.sinDatos) return [p.partido, 'Sin datos en este municipio'];
-                return [p.partido, v.valor.toLocaleString('es-CO') + ' votos'];
+                const etiquetaSerie = esA ? (series.a.nombre || 'Serie A') : (series.b.nombre || 'Serie B');
+                const votosTxt = v.sinDatos ? 'Sin datos en este municipio' : v.valor.toLocaleString('es-CO') + ' votos';
+                return [`${etiquetaSerie} · ${LABELS_CORPORACION[p.corp] || p.corp} ${p.anio}`, `${p.partido} · ${votosTxt}`];
               }
             }
           }
@@ -728,19 +825,23 @@ async function renderVistaSeries() {
     });
   }
 
-  renderTablaSeries(valores);
+  renderLeyendaSeries();
+  renderTablaSeries(puntosA, valoresA, puntosB, valoresB);
 }
 
-function renderTablaSeries(valores) {
+function renderTablaSeries(puntosA, valoresA, puntosB, valoresB) {
   const cont = document.getElementById('series-tabla-wrap');
   if (!cont) return;
-  const filas = serieA.puntos.map((p, i) => {
-    const v = valores[i];
+  const conSerieB = !!series.b;
+
+  function filaHTML(p, v, etiqueta) {
     const votosTexto = v.sinDatos
       ? '<span class="series-sin-datos">Sin datos</span>'
       : v.valor.toLocaleString('es-CO');
+    const colSerie = conSerieB ? `<td><span class="serie-badge serie-badge--${etiqueta.toLowerCase()}">${etiqueta}</span></td>` : '';
     return `
       <tr>
+        ${colSerie}
         <td>${p.candidato}</td>
         <td>${p.anio}</td>
         <td>${LABELS_CORPORACION[p.corp] || p.corp}</td>
@@ -748,13 +849,18 @@ function renderTablaSeries(valores) {
         <td>${votosTexto}</td>
       </tr>
     `;
-  }).join('');
+  }
+
+  const filasA = puntosA.map((p, i) => filaHTML(p, valoresA[i], 'A')).join('');
+  const filasB = conSerieB ? puntosB.map((p, i) => filaHTML(p, valoresB[i], 'B')).join('') : '';
+  const thSerie = conSerieB ? '<th>Serie</th>' : '';
+
   cont.innerHTML = `
     <table class="serie-a-tabla">
       <thead>
-        <tr><th>Candidato</th><th>Año</th><th>Cargo</th><th>Partido</th><th>Votos (lente actual)</th></tr>
+        <tr>${thSerie}<th>Candidato</th><th>Año</th><th>Cargo</th><th>Partido</th><th>Votos (lente actual)</th></tr>
       </thead>
-      <tbody>${filas}</tbody>
+      <tbody>${filasA}${filasB}</tbody>
     </table>
   `;
 }
@@ -1569,6 +1675,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     inicializarBuscador();
     inicializarActor();
     inicializarSerieA();
+    inicializarSerieB();
     inicializarSeriesBuscador();
     inicializarLenteSerie();
     inicializarCompetitividad();

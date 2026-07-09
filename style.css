@@ -2269,6 +2269,28 @@ html, body {
   color: rgba(255,255,255,0.4);
   font-style: italic;
 }
+.series-legend {
+  display: none; /* JS lo activa (flex) solo cuando hay Serie B */
+  gap: 1.2rem;
+  font-size: 0.76rem;
+  color: rgba(255,255,255,0.7);
+}
+.series-legend__item { display: inline-flex; align-items: center; gap: 0.4rem; }
+.series-legend__marker { width: 10px; height: 10px; flex-shrink: 0; background: rgba(255,255,255,0.7); }
+.series-legend__marker--circle { border-radius: 50%; }
+.series-legend__marker--triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.serie-badge {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.8);
+}
+.serie-badge--b { background: var(--gold-light); color: var(--gold); }
 .actor-timeline {
   height: 150px;
   flex-shrink: 0;
@@ -2429,8 +2451,13 @@ html, body {
   font-size: 0.7rem;
   color: rgba(255,255,255,0.5);
 }
-.actor-cycle-card__add {
+.actor-cycle-card__acciones {
   margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  gap: 4px;
+}
+.actor-cycle-card__add {
   flex-shrink: 0;
   font-size: 0.65rem;
   font-weight: 600;
@@ -2448,6 +2475,7 @@ html, body {
   border-color: var(--gold);
   color: #fff;
 }
+.actor-cycle-card__add--b:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.4); }
 
 /* Trayectorias personalizadas -- Serie A (Etapa 1) */
 .serie-panel {
@@ -2530,6 +2558,39 @@ html, body {
   color: rgba(255,255,255,0.45);
   line-height: 1.4;
 }
+.serie-b-agregar-btn {
+  width: 100%;
+  margin-top: 0.9rem;
+  padding: 0.55rem;
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,0.25);
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.serie-b-agregar-btn:hover {
+  border-color: var(--gold);
+  border-style: solid;
+  color: var(--gold);
+}
+.serie-panel .actor-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.serie-b-quitar {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0 0.2rem;
+  transition: var(--transition);
+}
+.serie-b-quitar:hover { color: #fff; }
 
 .actor-table-wrap {
   max-height: 260px;

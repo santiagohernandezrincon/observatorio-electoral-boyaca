@@ -505,6 +505,23 @@
               Todavía no has agregado ningún punto a la Serie A.
             </p>
           </div>
+
+          <button class="serie-b-agregar-btn" id="btn-agregar-serie-b">
+            <i class="fas fa-plus"></i> Agregar Serie B (comparar)
+          </button>
+
+          <div class="serie-panel" id="serie-b-panel" style="display:none">
+            <div class="actor-section-label">
+              <span>SERIE B</span>
+              <button class="serie-b-quitar" id="btn-quitar-serie-b" title="Quitar Serie B">✕</button>
+            </div>
+            <input type="text" id="serie-b-nombre" class="serie-nombre-input"
+                   placeholder="Nombre de la serie (opcional)…" autocomplete="off">
+            <div class="serie-punto-lista" id="serie-b-lista"></div>
+            <p class="serie-empty" id="serie-b-empty">
+              Todavía no has agregado ningún punto a la Serie B.
+            </p>
+          </div>
         </aside>
 
         <!-- Panel derecho: lente + gráfico/tabla -->
@@ -530,6 +547,7 @@
 
           <!-- Gráfico + tabla de la serie, recalculados según la lente -->
           <div class="series-viz-content" id="series-viz-content" style="display:none">
+            <div class="series-legend" id="series-legend"></div>
             <canvas id="series-chart" height="90"></canvas>
             <div class="series-tabla-wrap" id="series-tabla-wrap"></div>
           </div>
