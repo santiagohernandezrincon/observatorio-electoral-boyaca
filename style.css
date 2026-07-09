@@ -2206,8 +2206,17 @@ html, body {
 .actor-map { flex: 1; min-height: 0; width: 100%; }
 
 /* Vista Series (trayectorias personalizadas) -- Layout B: lente arriba,
-   gráfico/tabla debajo (placeholder en Etapa 1). */
-.series-main { padding: 1rem 1.2rem; overflow-y: auto; }
+   gráfico/tabla debajo. Sin mapa Leaflet en este panel (a diferencia de
+   .actor-map), así que necesita su propio fondo oscuro explícito -- el
+   texto blanco/gris de la leyenda, tabla y ejes del gráfico está pensado
+   para el navy del sidebar, no para el --bg claro por defecto de la
+   página. Mismo patrón que .actor-timeline (fondo navy) y .obs-panel. */
+.series-main {
+  padding: 1rem 1.2rem;
+  overflow-y: auto;
+  background: var(--navy);
+  color: #fff;
+}
 .series-lente {
   display: flex;
   align-items: center;
@@ -2217,7 +2226,13 @@ html, body {
   border-bottom: 1px solid rgba(255,255,255,0.08);
   margin-bottom: 1rem;
 }
-.series-lente .obs-ctrl-select { max-width: 260px; }
+.series-lente .obs-ctrl-select {
+  max-width: 260px;
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.series-lente .obs-ctrl-select:focus { border-color: var(--gold); }
 .series-viz-placeholder {
   flex: 1;
   display: flex;
@@ -2271,11 +2286,18 @@ html, body {
 }
 .series-legend {
   display: none; /* JS lo activa (flex) solo cuando hay Serie B */
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
+  column-gap: 1.2rem;
   font-size: 0.76rem;
   color: rgba(255,255,255,0.7);
 }
-.series-legend__item { display: inline-flex; align-items: center; gap: 0.4rem; }
+.series-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 100%;
+}
 .series-legend__marker { width: 10px; height: 10px; flex-shrink: 0; background: rgba(255,255,255,0.7); }
 .series-legend__marker--circle { border-radius: 50%; }
 .series-legend__marker--triangle { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }

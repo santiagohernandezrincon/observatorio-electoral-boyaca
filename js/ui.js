@@ -701,7 +701,7 @@ async function obtenerValorPuntoEnLente(punto) {
   return { valor, sinDatos: false };
 }
 
-let serieAChart = null;
+let seriesChart = null; // sostiene el gráfico combinado de Serie A (y B si existe)
 let renderVistaSeriesToken = 0;
 
 // Serie A: círculo, línea sólida. Serie B: triángulo, línea punteada -- dos
@@ -763,7 +763,7 @@ async function renderVistaSeries() {
   if (!puntosA.length && !puntosB.length) {
     placeholder.style.display = 'flex';
     content.style.display = 'none';
-    if (serieAChart) { serieAChart.destroy(); serieAChart = null; }
+    if (seriesChart) { seriesChart.destroy(); seriesChart = null; }
     return;
   }
   placeholder.style.display = 'none';
@@ -787,8 +787,8 @@ async function renderVistaSeries() {
 
   const canvasEl = document.getElementById('series-chart');
   if (canvasEl) {
-    if (serieAChart) serieAChart.destroy();
-    serieAChart = new Chart(canvasEl.getContext('2d'), {
+    if (seriesChart) seriesChart.destroy();
+    seriesChart = new Chart(canvasEl.getContext('2d'), {
       type: 'line',
       data: { labels, datasets },
       options: {
