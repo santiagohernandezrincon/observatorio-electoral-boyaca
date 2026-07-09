@@ -1000,11 +1000,23 @@ function aplicarFiltroCicloActor() {
     colorBase = colorPartido(ciclo.partido);
   }
   const votosPorMunicipio = {};
+  // Denominador para el % de fuerza local (mapa de calor) -- se acumula
+  // por fila usando el total del ciclo propio de esa fila, para que
+  // "Todos los ciclos" (trayectorias que mezclan años/cargos distintos)
+  // dé un % ponderado por votos en vez de mezclar bases incompatibles.
+  const totalValidosPorMunicipio = {};
   filasFiltradas.forEach(row => {
     const mun = normalizarNombre(row['MUNNOMBRE']);
     votosPorMunicipio[mun] = (votosPorMunicipio[mun] || 0) + row['VOTOS'];
+    const totalesCiclo = totalesPorMunicipioParaCiclo(row.ANIO, row.CORP);
+    totalValidosPorMunicipio[mun] = (totalValidosPorMunicipio[mun] || 0) + (totalesCiclo[mun] || 0);
   });
-  actualizarMapaActor(votosPorMunicipio, colorBase);
+  const porcentajePorMunicipio = {};
+  Object.keys(votosPorMunicipio).forEach(mun => {
+    const total = totalValidosPorMunicipio[mun];
+    porcentajePorMunicipio[mun] = total > 0 ? (votosPorMunicipio[mun] / total * 100) : 0;
+  });
+  actualizarMapaActor(votosPorMunicipio, colorBase, porcentajePorMunicipio);
   renderTablaMunicipiosActor(votosPorMunicipio, colorBase);
 }
 

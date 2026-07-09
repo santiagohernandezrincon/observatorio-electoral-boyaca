@@ -843,6 +843,25 @@ async function construirIndiceActor() {
     actorIndiceCargando = false;
 }
 
+// ==================== TOTALES POR MUNICIPIO DE UN CICLO (mapa de calor Actor) ====================
+// Suma los votos de TODOS los candidatos (no solo el buscado) de ese
+// municipio+ciclo -- ya cargados en todosLosCandidatosPorAnioCorp por
+// construirIndiceActor(), sin fetch adicional. Denominador = votos por
+// candidato (no incluye voto en blanco, que el CSV de candidato no trae),
+// una aproximación consistente con el resto de Vista Actor.
+const totalesMunicipioPorCicloCache = {};
+function totalesPorMunicipioParaCiclo(anio, corp) {
+    const key = `${anio}_${corp}`;
+    if (totalesMunicipioPorCicloCache[key]) return totalesMunicipioPorCicloCache[key];
+    const totales = {};
+    (todosLosCandidatosPorAnioCorp[key] || []).forEach(row => {
+        const mun = normalizarNombre(row['MUNNOMBRE']);
+        totales[mun] = (totales[mun] || 0) + row['VOTOS'];
+    });
+    totalesMunicipioPorCicloCache[key] = totales;
+    return totales;
+}
+
 // ==================== ÍNDICE DE DESVIACIÓN (municipio vs. promedio departamental) ====================
 function calcularPromedioDepartamental(partido) {
     if (!currentPartidoData) return 0;

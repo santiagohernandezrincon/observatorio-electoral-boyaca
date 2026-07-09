@@ -426,7 +426,7 @@ function actualizarMapaSimple() {
 }
 
 // ==================== MAPA VISTA ACTOR ====================
-function actualizarMapaActor(votosPorMunicipio, colorBase) {
+function actualizarMapaActor(votosPorMunicipio, colorBase, porcentajePorMunicipio) {
     if (!currentGeojson) return;
     if (!mapActor) {
         mapActor = L.map('map-actor').setView([5.75, -73.0], 8);
@@ -435,7 +435,6 @@ function actualizarMapaActor(votosPorMunicipio, colorBase) {
     }
     if (currentLayerActor) mapActor.removeLayer(currentLayerActor);
 
-    const maxVotos = Math.max(...Object.values(votosPorMunicipio), 1);
     const r = parseInt(colorBase.slice(1, 3), 16);
     const g = parseInt(colorBase.slice(3, 5), 16);
     const b = parseInt(colorBase.slice(5, 7), 16);
@@ -444,17 +443,26 @@ function actualizarMapaActor(votosPorMunicipio, colorBase) {
         style: feature => {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return { fillColor: '#cccccc', weight: 1, color: 'white', fillOpacity: 0.9 };
-            const votos = votosPorMunicipio[normalizarNombre(nombreRaw)] || 0;
+            const mun = normalizarNombre(nombreRaw);
+            const votos = votosPorMunicipio[mun] || 0;
             if (!votos) return { fillColor: '#e9e9e9', weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
-            const factor = 1 - (votos / maxVotos);
+            // Fuerza LOCAL del candidato (% sobre el total de votos de ese
+            // municipio), no votos crudos -- si no, el color queda dominado
+            // por población (Tunja/Duitama/Sogamoso siempre oscuros) en vez
+            // de reflejar dónde tuvo mayor peso político real.
+            const pct = porcentajePorMunicipio?.[mun] || 0;
+            const factor = 1 - Math.min(pct / 100, 1);
             const fillColor = `rgb(${Math.floor(r * factor)}, ${Math.floor(g * factor)}, ${Math.floor(b * factor)})`;
             return { fillColor, weight: 1, opacity: 1, color: 'white', fillOpacity: 0.9 };
         },
         onEachFeature: (feature, layer) => {
             const nombreRaw = feature.properties.MPIO_CNMBR;
             if (!nombreRaw) return;
-            const votos = votosPorMunicipio[normalizarNombre(nombreRaw)] || 0;
-            layer.bindTooltip(`<strong>${nombreRaw}</strong><br>${votos.toLocaleString('es-CO')} votos`, { sticky: true });
+            const mun = normalizarNombre(nombreRaw);
+            const votos = votosPorMunicipio[mun] || 0;
+            const pct = porcentajePorMunicipio?.[mun];
+            const pctTexto = (votos && pct !== undefined) ? ` (${pct.toFixed(1)}%)` : '';
+            layer.bindTooltip(`<strong>${nombreRaw}</strong><br>${votos.toLocaleString('es-CO')} votos${pctTexto}`, { sticky: true });
         }
     }).addTo(mapActor);
 
